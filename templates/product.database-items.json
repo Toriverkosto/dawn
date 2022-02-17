@@ -67,16 +67,16 @@
             "show_type": false
           }
         },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
         "56d3d8ad-8dcb-4146-bf63-5a3a9862d94b": {
           "type": "text",
           "settings": {
             "text": "Kamerastore Digital Database",
             "text_style": "body"
-          }
-        },
-        "title": {
-          "type": "title",
-          "settings": {
           }
         },
         "5c4679de-0254-4571-be14-a70eb36ed4b6": {
@@ -131,7 +131,6 @@
         "adb68119-c110-4444-8e79-22a829981fd4",
         "630170a4-891c-4adc-9e5b-984494792005",
         "56d3d8ad-8dcb-4146-bf63-5a3a9862d94b",
-        "title",
         "5c4679de-0254-4571-be14-a70eb36ed4b6",
         "0a9a6be0-2265-416b-b0f3-048e7cfb2dab",
         "96c45658-7a4f-4bbe-8af4-a6f32859a982",

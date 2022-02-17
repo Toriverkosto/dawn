@@ -39,12 +39,6 @@
           "settings": {
           }
         },
-        "94c18297-7071-4788-a294-49e32bd91e32": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<div class=\"spr-starrating spr-summary-starrating\" data-product-id=\"7168376340678\">"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
@@ -187,7 +181,6 @@
       "block_order": [
         "5875f51c-da6b-4990-b273-8ddfdb2d7397",
         "title",
-        "94c18297-7071-4788-a294-49e32bd91e32",
         "price",
         "a01329cd-da87-4153-b7a4-04796b35d6d6",
         "99452d1b-4d7e-4077-a88b-abeded9e84f2",

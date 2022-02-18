@@ -27,7 +27,7 @@
             "stars_fill_color": "#ffc315",
             "star_size": 18,
             "text_align": "flex-start",
-            "product": "{{ product.metafields.kameratori.host.value }}",
+            "product": "{{product}}",
             "stars_text_empty": "No reviews"
           }
         },

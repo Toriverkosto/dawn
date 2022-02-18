@@ -2,6 +2,7 @@
   "sections": {
     "16334152711e2727b9": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"page-width page-width--wide\">\n<p style=\"color: #b3b3b3\">{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span> ID: {{ current_variant.sku }}<\/span> {% if current_variant.barcode %}{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span>\/ Code: {{ current_variant.barcode }}  <\/span><\/p>{% endif %}<\/div>"
       }
@@ -29,6 +30,14 @@
             "text_align": "flex-start",
             "product": "{{ product.metafields.my_fields.database_parent.value }}",
             "stars_text_empty": "No reviews"
+          }
+        },
+        "4fc29c5e-0b98-42c8-a1a5-ed16d11bfc57": {
+          "type": "link_to_review",
+          "settings": {
+            "link_text": "Read or Write Reviews",
+            "only_show_when_no_reviews": true,
+            "link_to_host": true
           }
         },
         "price": {
@@ -117,6 +126,7 @@
         "5875f51c-da6b-4990-b273-8ddfdb2d7397",
         "title",
         "5dd63250-d7d5-4820-8932-ece16c594707",
+        "4fc29c5e-0b98-42c8-a1a5-ed16d11bfc57",
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
         "83754794-92b8-452f-98b4-999eea3e6967",
@@ -133,7 +143,8 @@
         "enable_sticky_info": true,
         "hide_variants": false,
         "enable_video_looping": false,
-        "show_breadcrumbs": true
+        "show_breadcrumbs": true,
+        "show_sku_and_barcode": true
       }
     },
     "163178438845c86d64": {

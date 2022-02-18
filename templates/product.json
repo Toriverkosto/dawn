@@ -32,6 +32,14 @@
             "stars_text_empty": "No reviews"
           }
         },
+        "a3ca7016-1f16-4d9e-844f-e638eb512a61": {
+          "type": "link_to_review",
+          "settings": {
+            "link_text": "Read or Write Reviews",
+            "only_show_when_no_reviews": true,
+            "link_to_host": true
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -40,13 +48,7 @@
         "f0c9e60b-84e2-4c7b-a294-cab454328d82": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<p style=\"color: #ababab\">{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable' | t }}\n{% else %}\n    {{ 'products.product.not_taxable' | t }}\n{% endif %}<\/p>"
-          }
-        },
-        "dcdc883c-ccee-421d-85a2-40dd62b3af08": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"supplies\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n          <\/div>\n{% endunless %}"
+            "custom_liquid": "<p style=\"color: #ababab\">{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable' | t }}\n{% else %}\n    {{ 'products.product.not_taxable' | t }}\n{% endif %}<\/p>\n\n\n{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"supplies\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n          <\/div>\n{% endunless %}"
           }
         },
         "quantity_selector": {
@@ -129,9 +131,9 @@
         "a94549f5-c31f-4923-aa60-cf99ab30772a",
         "title",
         "3e022f72-085a-4854-bf94-64f0bb65bbb1",
+        "a3ca7016-1f16-4d9e-844f-e638eb512a61",
         "price",
         "f0c9e60b-84e2-4c7b-a294-cab454328d82",
-        "dcdc883c-ccee-421d-85a2-40dd62b3af08",
         "quantity_selector",
         "variant_picker",
         "8147fef3-f897-408d-b34f-f23460eed6c9",

@@ -34,7 +34,7 @@
             "stars_fill_color": "#ffc315",
             "star_size": 18,
             "text_align": "flex-start",
-            "product": "{{ product.metafields.my_fields.database_parent.value }}",
+            "product": "{{ product.metafields.kameratori.host.value }}",
             "stars_text_empty": "No reviews"
           }
         },
@@ -62,7 +62,7 @@
           "type": "custom_liquid",
           "disabled": true,
           "settings": {
-            "custom_liquid": "{{ product.metafields.my_fields.database_parent | metafield_tag }}\n\n{{ product.metafields.my_fields.database_parent.value.id }}"
+            "custom_liquid": "{{ product.metafields.kameratori.host | metafield_tag }}\n\n{{ product.metafields.kameratori.host.value.id }}"
           }
         },
         "buy_buttons": {

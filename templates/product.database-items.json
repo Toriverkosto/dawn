@@ -111,13 +111,6 @@
             "text_style": "body"
           }
         },
-        "e219a1fc-1ee3-4a6d-b930-58d0a71bff0a": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "{% if collections.canon-fd.products.size > 0 %}\n\n{% for product in collections.canon-fd.products %}\n\n  <li>\n  <img src=\"{{ product.featured_image | product_img_url: 'medium' }}\" alt=\"{{ product.title | escape  }}\" \/>    \n  <a class=\"shop-now\" href=\"{{ product.url }}\">{{ product.title | escape  }}<\/a>                              \n  <\/li>  \n\n{% endfor %}\n\n{% endif %}"
-          }
-        },
         "7d983aca-264b-468a-a9fb-7a08f97e8331": {
           "type": "popup",
           "disabled": true,
@@ -152,7 +145,6 @@
         "7e4478e8-83f8-4946-b146-0594dc094db3",
         "96c45658-7a4f-4bbe-8af4-a6f32859a982",
         "0a9a6be0-2265-416b-b0f3-048e7cfb2dab",
-        "e219a1fc-1ee3-4a6d-b930-58d0a71bff0a",
         "7d983aca-264b-468a-a9fb-7a08f97e8331",
         "82004e4e-d026-4c02-b9ee-21d1643d0fa5",
         "587ddfa6-3235-4da0-be5b-d249ecf8991d"
@@ -161,7 +153,7 @@
         "enable_sticky_info": true,
         "hide_variants": false,
         "enable_video_looping": false,
-        "show_breadcrumbs": true,
+        "show_breadcrumbs": false,
         "show_sku_and_barcode": false
       }
     },

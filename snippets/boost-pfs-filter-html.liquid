@@ -1,32 +1,31 @@
 {%- capture bc_layout -%}
 {%- case layout -%}
 {%- when 'productGridItemHtml' -%}
-{%- raw -%}
 <div class="grid__item">
   <div class="card-wrapper">
-    <a href="{{itemUrl}}" class="full-unstyled-link">
-      <span class="visually-hidden">{{itemTitle}}</span>
-      <div class="card card--product {{cardProductClass}}" tabindex="-1">
+    <a href="[[itemUrl]]" class="full-unstyled-link">
+      <span class="visually-hidden">[[itemTitle]]</span>
+      <div class="card card--product [[cardProductClass]]" tabindex="-1">
         <div class="card__inner">
-          {{itemImages}}
+          [[itemImages]]
           <div class="card__badge">
-            {{itemSoldOut}}
-            {{itemSale}}
+            [[itemSoldOut]]
+            [[itemSale]]
           </div>
         </div>
       </div>
       <div class="card-information">
         <div class="card-information__wrapper">
-          {{itemVendor}}
-          <span class="card-information__text h5">{{itemTitle}}</span>
-          {{itemReviews}}
-          {{itemPrice}}
+          [[itemVendor]]
+          <span class="card-information__text h5">[[itemTitle]]</span>
+          [[itemReviews]]
+          [[itemPrice]]
         </div>
       </div>
     </a>
   </div>
 </div>
-{%- endraw -%}
+
 
 {%- when 'soldOutLabelHtml' -%}
 <span class="badge badge--bottom-left color-[[soldOutBadgeClass]]" aria-hidden="true">

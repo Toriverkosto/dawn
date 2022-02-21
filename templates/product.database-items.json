@@ -129,7 +129,7 @@
         "587ddfa6-3235-4da0-be5b-d249ecf8991d": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Sell or Trade you {{ product.vendor }} gear",
+            "heading": "Sell or Trade your {{ product.vendor }} gear",
             "content": "<p>Do you have a {{ product.title }} you want to sell to us? Fill out our simple form and request a quote from us.<\/p><p><a href=\"https:\/\/app.kamerastore.com\/sell_to_us?language=eng\" target=\"_blank\" title=\"https:\/\/app.kamerastore.com\/sell_to_us?language=eng\"><strong>START QUOTE<\/strong><\/a><\/p>",
             "page": "",
             "icon": "price_tag"

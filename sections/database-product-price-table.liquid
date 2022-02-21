@@ -1,0 +1,277 @@
+
+<style>
+  /* info (hed, dek, source, credit) */
+  .rg-container {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 1em 0.5em;
+    color: #222;
+  }
+  .rg-header {
+    margin-bottom: 1em;
+    text-align: left;
+  }
+
+  .rg-header > * {
+    display: block;
+  }
+  .rg-hed {
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+  .rg-dek {
+    font-size: 1em;
+  }
+
+  /* table */
+  table.rg-table {
+    width: 100%;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  table.rg-table tr {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-align: left;
+    color: #333;
+  }
+
+  table.rg-table tr.available-product {
+    cursor: pointer;
+  }
+
+  table.rg-table tr.available-product td {
+    color: rgba(var(--color-button),var(--alpha-button-background));
+    font-weight: bold;
+  }
+
+  table.rg-table thead {
+    border-bottom: 3px solid #ddd;
+  }
+  table.rg-table tr {
+    border-bottom: 1px solid #ddd;
+    color: #222;
+  }
+  table.rg-table tr.available-product:hover {
+    transition: transform 0.125s;
+    transform: scale(1.025);
+  }
+  table.rg-table tr.highlight {
+    background-color: #dcf1f0 !important;
+  }
+  table.rg-table.zebra tr:nth-child(even) {
+    background-color: #f6f6f6;
+  }
+  table.rg-table.zebra tr.available-product:nth-child(even) {
+    background-color: rgba(var(--color-button), 0.75);
+  }
+  table.rg-table.zebra tr.available-product:nth-child(even) td {
+    color: rgb(var(--color-button-text));
+  }
+  table.rg-table th {
+    font-weight: bold;
+    padding: 0.35em;
+    font-size: 0.9em;
+  }
+  table.rg-table td {
+    padding: 0.35em;
+    font-size: 0.9em;
+    vertical-align: middle;
+  }
+  table.rg-table .highlight td {
+    font-weight: bold;
+  }
+  table.rg-table th.number, td.number {
+    text-align: right;
+  }
+  table.rg-table th.image, td.image {
+    text-align: center;
+  }
+
+  /* media queries */
+  @media screen and (max-width: 600px) {
+    .rg-container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    table.rg-table {
+      width: 100%;
+    }
+    table.rg-table tr.hide-mobile,
+    table.rg-table th.hide-mobile,
+    table.rg-table td.hide-mobile {
+      display: none;
+    }
+    table.rg-table thead {
+      display: none;
+    }
+    table.rg-table tbody {
+      width: 100%;
+    }
+    table.rg-table tr,
+    table.rg-table th,
+    table.rg-table td {
+      display: block;
+      padding: 0;
+    }
+    table.rg-table tr {
+      border-bottom: none;
+      margin: 0 0 1em 0;
+      padding: 0.5em;
+    }
+    table.rg-table tr.highlight {
+      background-color: inherit !important;
+    }
+    table.rg-table.zebra tr.available-product:nth-child(even),
+    table.rg-table.zebra tr:nth-child(even) {
+      background-color: transparent;
+    }
+    table.rg-table.zebra td:nth-child(even) {
+      background-color: #f6f6f6;
+    }
+    table.rg-table tr.available-product:nth-child(even),
+    table.rg-table tr:nth-child(even) {
+      background-color: transparent;
+    }
+    table.rg-table tr.available-product:nth-child(even) td {
+      color: rgba(var(--color-button),var(--alpha-button-background)) !important;
+    }
+    table.rg-table td {
+      padding: 0.5em 0 0.25em 0;
+      border-bottom: 1px dotted #ccc;
+      text-align: right;
+    }
+    table.rg-table td[data-title]:before {
+      content: attr(data-title);
+      font-weight: bold;
+      display: inline-block;
+      content: attr(data-title);
+      float: left;
+      margin-right: 0.5em;
+      font-size: 0.95em;
+    }
+    table.rg-table td:last-child {
+      padding-right: 0;
+      border-bottom: 2px solid #ccc;
+    }
+    table.rg-table td:empty {
+      display: none;
+    }
+    table.rg-table .highlight td {
+      background-color: inherit;
+      font-weight: normal;
+    }
+  }
+</style>
+
+<section class="page-width">
+  {% if product.metafields.kameratori.sales %}
+    {% assign condition_map = shop.metafields.kameratori.condition_map.value %}
+
+    <div class="rg-container">
+      <table class="rg-table zebra">
+        <caption class="rg-header">
+          <span class="rg-hed">{{ product.title }}</span>
+          <span class="rg-dek">Availability & Price History</span>
+        </caption>
+        <thead>
+          <tr>
+            <th class="text">Date Sold</th>
+            <th class="text">SKU</th>
+            <th class="text">Mechanics</th>
+            <th class="text">Optics</th>
+            <th class="text">Cosmetics</th>
+            <th class="number">Price</th>
+            <th class="image">Thumbnail</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% comment %}Available products: {% endcomment %}
+          {% assign current_product = product %}
+
+          {% for tag in product.tags %}
+            {% if tag contains "_gid-" %}
+              {% assign group_id = tag | slice: 5, 8 %}
+            {% endif %}
+          {% endfor %}
+
+          {% if group_id %}
+            {% for collection in product.collections %}
+              {% if collection.metafields.kameratori.group_id == group_id and collection.products_count > 0 %}
+                {% for product in collection.products %}
+                  {% unless product.handle == current_product.handle or product.tags contains 'item-database' %}
+                    {% if product.available %}
+                      <tr class="available-product" onclick="window.location='{{ product.url }}';">
+                        <td class="text" data-title="Date Sold">Available</td>
+                        <td class="text" data-title="SKU">{{ product.selected_or_first_available_variant.sku }}</td>
+                        {% assign condition = product.metafields.kameratori.condition.value %}
+
+                        {% assign mechanical = condition.mechanical | append: "" %}
+                        <td class="text" data-title="Mechanics">{{ condition_map[mechanical] }}</td>
+                        {% assign optical = condition.optical | append: "" %}
+                        <td class="text" data-title="Optics">{{ condition_map[optical] }}</td>
+                        <td class="text" data-title="Cosmetics">{{ condition.cosmetic }}/5</td>
+
+                        <td class="number" data-title="Price">{{ product.selected_or_first_available_variant.price | money }}</td>
+                        <td class="image" data-title="Thumbnail">
+                          {{ product | image_url: height: 50 | image_tag }}
+                        </td>
+                      </tr>
+                    {% endif %}
+                  {% endunless %}
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+
+          {% comment %}Sold products: {% endcomment %}
+          {% for sale in product.metafields.kameratori.sales.value.sales %}
+            <tr>
+              <td class="text" data-title="Date Sold">{{ sale.sold_at | date : "%d %b %Y" }}</td>
+              <td class="text" data-title="SKU">{{ sale.sku }}</td>
+              {% assign mechanical = sale.condition.mechanical | append: "" %}
+              <td class="text" data-title="Mechanics">{{ condition_map[mechanical] }}</td>
+              {% assign optical = sale.condition.optical | append: "" %}
+              <td class="text" data-title="Optics">{{ condition_map[optical] }}</td>
+              <td class="text" data-title="Cosmetics">{{ sale.condition.cosmetic }}/5</td>
+              <td class="number" data-title="Price">{{ sale.price | times: 100 | money }}</td>
+              <td class="image" data-title="Thumbnail">
+                <a href="{{ sale.image.src }}" target="_blank">
+                  <img
+                          src="{{ sale.image.src | append: "&height=50" }}"
+                          alt="{{ product.title }} thumbnail"
+                          height="50" />
+                </a>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% endif %}
+</section>
+
+
+{% schema %}
+{
+  "name": "t:sections.database-product-price-table.name",
+  "tag": "section",
+  "class": "spaced-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "t:sections.database-product-price-table.presets.name"
+    }
+  ]
+}
+{% endschema %}

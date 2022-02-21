@@ -473,6 +473,12 @@
         "name": "Product Items in Stock"
       }
     },
+    "database-product-price-table": {
+      "name": "Database product price table [DB pages only]",
+      "presets": {
+        "name": "Database product price table"
+      }
+    },
     "featured-blog": {
       "name": "Blog posts",
       "settings": {

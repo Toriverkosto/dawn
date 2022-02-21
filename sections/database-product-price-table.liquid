@@ -73,11 +73,11 @@
     background-color: #f6f6f6;
   }
   table.rg-table.zebra tr.available-product:nth-child(even) {
-    background-color: rgba(var(--color-button), 0.75);
+    background-color: rgba(var(--color-button), 0.25);
   }
-  table.rg-table.zebra tr.available-product:nth-child(even) td {
-    color: rgb(var(--color-button-text));
-  }
+  /*table.rg-table.zebra tr.available-product:nth-child(even) td {*/
+  /*  color: rgb(var(--color-button-text));*/
+  /*}*/
   table.rg-table th {
     font-weight: bold;
     padding: 0.35em;
@@ -174,8 +174,31 @@
   }
 </style>
 
+
+{% assign products_available = false %}
+
+{% for tag in product.tags %}
+  {% if tag contains "_gid-" %}
+    {% assign group_id = tag | slice: 5, 8 %}
+  {% endif %}
+{% endfor %}
+
+{% if group_id %}
+  {% for collection in product.collections %}
+    {% if collection.metafields.kameratori.group_id == group_id and collection.products_count > 0 %}
+      {% for product in collection.products %}
+        {% unless product.handle == current_product.handle or product.tags contains 'item-database' %}
+          {% if product.available %}
+            {% assign products_available = true %}
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
 <section class="page-width">
-  {% if product.metafields.kameratori.sales %}
+  {% if product.metafields.kameratori.sales or products_available %}
     {% assign condition_map = shop.metafields.kameratori.condition_map.value %}
 
     <div class="rg-container">
@@ -199,13 +222,7 @@
           {% comment %}Available products: {% endcomment %}
           {% assign current_product = product %}
 
-          {% for tag in product.tags %}
-            {% if tag contains "_gid-" %}
-              {% assign group_id = tag | slice: 5, 8 %}
-            {% endif %}
-          {% endfor %}
-
-          {% if group_id %}
+          {% if products_available and group_id %}
             {% for collection in product.collections %}
               {% if collection.metafields.kameratori.group_id == group_id and collection.products_count > 0 %}
                 {% for product in collection.products %}
@@ -235,26 +252,28 @@
           {% endif %}
 
           {% comment %}Sold products: {% endcomment %}
-          {% for sale in product.metafields.kameratori.sales.value.sales %}
-            <tr>
-              <td class="text" data-title="Date Sold">{{ sale.sold_at | date : "%d %b %Y" }}</td>
-              <td class="text" data-title="SKU">{{ sale.sku }}</td>
-              {% assign mechanical = sale.condition.mechanical | append: "" %}
-              <td class="text" data-title="Mechanics">{{ condition_map[mechanical] }}</td>
-              {% assign optical = sale.condition.optical | append: "" %}
-              <td class="text" data-title="Optics">{{ condition_map[optical] }}</td>
-              <td class="text" data-title="Cosmetics">{{ sale.condition.cosmetic }}/5</td>
-              <td class="number" data-title="Price">{{ sale.price | times: 100 | money }}</td>
-              <td class="image" data-title="Thumbnail">
-                <a href="{{ sale.image.src }}" target="_blank">
-                  <img
-                          src="{{ sale.image.src | append: "&height=50" }}"
-                          alt="{{ product.title }} thumbnail"
-                          height="50" />
-                </a>
-              </td>
-            </tr>
-          {% endfor %}
+          {% if product.metafields.kameratori.sales %}
+            {% for sale in product.metafields.kameratori.sales.value.sales %}
+              <tr>
+                <td class="text" data-title="Date Sold">{{ sale.sold_at | date : "%d %b %Y" }}</td>
+                <td class="text" data-title="SKU">{{ sale.sku }}</td>
+                {% assign mechanical = sale.condition.mechanical | append: "" %}
+                <td class="text" data-title="Mechanics">{{ condition_map[mechanical] }}</td>
+                {% assign optical = sale.condition.optical | append: "" %}
+                <td class="text" data-title="Optics">{{ condition_map[optical] }}</td>
+                <td class="text" data-title="Cosmetics">{{ sale.condition.cosmetic }}/5</td>
+                <td class="number" data-title="Price">{{ sale.price | times: 100 | money }}</td>
+                <td class="image" data-title="Thumbnail">
+                  <a href="{{ sale.image.src }}" target="_blank">
+                    <img
+                            src="{{ sale.image.src | append: "&height=50" }}"
+                            alt="{{ product.title }} thumbnail"
+                            height="50" />
+                  </a>
+                </td>
+              </tr>
+            {% endfor %}
+          {% endif %}
         </tbody>
       </table>
     </div>

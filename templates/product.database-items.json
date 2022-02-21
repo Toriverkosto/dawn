@@ -96,19 +96,11 @@
             "custom_liquid": "<p>{%- assign current_variant = product.selected_or_first_available_variant -%}\n<b>Item:<\/b>  {{product.title}}\n<br>\n<b>Type:<\/b> {{product.type}}\n<br>\n<b>Database ID:<\/b> {{ current_variant.sku | upcase}}\n<br>\n<\/span><\/p>"
           }
         },
-        "2bb10445-ce46-48e1-b3f7-e303f109e201": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Kamerastore Database for the {{ product.title }}. You can see info about this item, if we have one for sale, or offer to sell one to us.",
-            "text_style": "body"
-          }
-        },
         "96c45658-7a4f-4bbe-8af4-a6f32859a982": {
           "type": "custom_liquid",
           "disabled": true,
           "settings": {
-            "custom_liquid": "{% if product.metafields.my_fields.system != blank %}\n<b>System:<\/b> <a href= '\/collections\/\n{{ product.metafields.my_fields.system | handleize }}'>{{ product.metafields.my_fields.system }}<\/a>\n<hr>\n{% else %}\n{% endif %}"
+            "custom_liquid": "<div class=\"product__breadcrumbs-container\">\n      {% for t in product.tags %}\n        {% assign parts = t | split: '-'%}\n        {% assign prefix = parts | first %}\n        {% assign value = parts | last %}\n        {% if prefix == 'Category'%}\n          {% assign category = value %}\n        {% elsif prefix == 'SubCategory' %}\n          {% assign sub_category = value %}\n        {% endif %}\n      {% endfor %}\n      {% comment %}TODO: Make configurable, omit parts? {% endcomment %}\n      {% if category %}<a href=\"\/collections\/{{ category | downcase | replace: \"\/\", \"\" | replace: \"  \", \" \" | replace: \" \", \"-\" }}\" class=\"link\">{{ category }}<\/a> ›{% endif %}\n      {% if sub_category %}<a href=\"\/collections\/{{ sub_category | downcase| replace: \"\/\", \"\" | replace: \"  \", \" \" | replace: \" \", \"-\" }}\" class=\"link\">{{ sub_category }}<\/a> ›{% endif %}\n      <a href=\"\/collections\/{{ product.type | downcase | replace: \"\/\", \"\" | replace: \"  \", \" \" | replace: \" \", \"-\" }}\" class=\"link\">{{ product.type }}<\/a> ›\n      <a href=\"{{ product.url }}\" class=\"link\">{{ product.title }}<\/a>\n    <\/div>"
           }
         },
         "587ddfa6-3235-4da0-be5b-d249ecf8991d": {
@@ -158,7 +150,6 @@
         "title",
         "5c4679de-0254-4571-be14-a70eb36ed4b6",
         "7e4478e8-83f8-4946-b146-0594dc094db3",
-        "2bb10445-ce46-48e1-b3f7-e303f109e201",
         "96c45658-7a4f-4bbe-8af4-a6f32859a982",
         "587ddfa6-3235-4da0-be5b-d249ecf8991d",
         "0a9a6be0-2265-416b-b0f3-048e7cfb2dab",

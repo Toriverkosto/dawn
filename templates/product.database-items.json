@@ -103,16 +103,6 @@
             "custom_liquid": "<p>{%- assign current_variant = product.selected_or_first_available_variant -%}<b>Item:<\/b>  {{product.title}}\n      {% for t in product.tags %}\n        {% assign parts = t | split: '-'%}\n        {% assign prefix = parts | first %}\n        {% assign value = parts | last %}\n        {% if prefix == 'Category'%}\n          {% assign category = value %}\n        {% elsif prefix == 'SubCategory' %}\n          {% assign sub_category = value %}\n        {% endif %}\n      {% endfor %}\n      {% if category %}<br>\n<b>Category:<\/b> {{ category }}{% endif %}\n<br>\n      {% if sub_category %}<b>Sub Category:<\/b> {{ sub_category }}{% endif %}\n  <br>\n<b>Type:<\/b> {{ product.type }}<\/a>\n<br>\n<b>Database ID:<\/b> {{ current_variant.sku | upcase}}\n    <\/span><\/p>"
           }
         },
-        "587ddfa6-3235-4da0-be5b-d249ecf8991d": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Sell or Trade you {{ product.vendor }} gear",
-            "content": "<p>Do you have a {{ product.title }} you want to sell to us? Fill out our simple form and request a quote from us.<\/p><p><a href=\"https:\/\/app.kamerastore.com\/sell_to_us?language=eng\" target=\"_blank\" title=\"https:\/\/app.kamerastore.com\/sell_to_us?language=eng\"><strong>START QUOTE<\/strong><\/a><\/p>",
-            "page": "",
-            "icon": "price_tag"
-          }
-        },
         "0a9a6be0-2265-416b-b0f3-048e7cfb2dab": {
           "type": "text",
           "disabled": true,
@@ -130,6 +120,7 @@
         },
         "7d983aca-264b-468a-a9fb-7a08f97e8331": {
           "type": "popup",
+          "disabled": true,
           "settings": {
             "text": "Sell This Item",
             "page": "sell-or-trade-your-used-camera-gear",
@@ -141,6 +132,15 @@
           "settings": {
             "custom_liquid": "<a class=\"button\" style=\"margin-left: 0.5rem;\" href=\"\/search?q={{ product.selected_or_first_available_variant.sku}}&options%5Bprefix%5D=last\">Check if Available<\/a>"
           }
+        },
+        "587ddfa6-3235-4da0-be5b-d249ecf8991d": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Sell or Trade you {{ product.vendor }} gear",
+            "content": "<p>Do you have a {{ product.title }} you want to sell to us? Fill out our simple form and request a quote from us.<\/p><p><a href=\"https:\/\/app.kamerastore.com\/sell_to_us?language=eng\" target=\"_blank\" title=\"https:\/\/app.kamerastore.com\/sell_to_us?language=eng\"><strong>START QUOTE<\/strong><\/a><\/p>",
+            "page": "",
+            "icon": "price_tag"
+          }
         }
       },
       "block_order": [
@@ -151,11 +151,11 @@
         "5c4679de-0254-4571-be14-a70eb36ed4b6",
         "7e4478e8-83f8-4946-b146-0594dc094db3",
         "96c45658-7a4f-4bbe-8af4-a6f32859a982",
-        "587ddfa6-3235-4da0-be5b-d249ecf8991d",
         "0a9a6be0-2265-416b-b0f3-048e7cfb2dab",
         "e219a1fc-1ee3-4a6d-b930-58d0a71bff0a",
         "7d983aca-264b-468a-a9fb-7a08f97e8331",
-        "82004e4e-d026-4c02-b9ee-21d1643d0fa5"
+        "82004e4e-d026-4c02-b9ee-21d1643d0fa5",
+        "587ddfa6-3235-4da0-be5b-d249ecf8991d"
       ],
       "settings": {
         "enable_sticky_info": true,

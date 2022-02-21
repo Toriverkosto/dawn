@@ -103,7 +103,7 @@
   "products": {
     "product": {
       "add_to_cart": "Lisää ostoskoriin",
-      "description": "Kuvaus",
+      "description": "Tuotteen kuvaus",
       "on_sale": "ALE",
       "product_variants": "Tuoteversiot",
       "quantity": {

@@ -5,6 +5,7 @@
       "blocks": {
         "16418169621e3e0468-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Kamerastore Product Database (Beta)",
             "heading_size": "h2"
@@ -12,9 +13,8 @@
         },
         "16418169621e3e0468-1": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p><strong>Kamerastore Product Database (Beta)<\/strong><\/p><p>Details, images, availability price history, and reviews for the {{ product.title }}<\/p>"
           }
         },
         "16418169621e3e0468-2": {
@@ -33,7 +33,7 @@
         "16418169621e3e0468-2"
       ],
       "settings": {
-        "color_scheme": "accent-1",
+        "color_scheme": "background-1",
         "full_width": true
       }
     },
@@ -169,7 +169,8 @@
         "enable_sticky_info": true,
         "hide_variants": false,
         "enable_video_looping": false,
-        "show_breadcrumbs": true
+        "show_breadcrumbs": true,
+        "show_sku_and_barcode": false
       }
     },
     "1642020754f04c9667": {

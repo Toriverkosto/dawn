@@ -18,7 +18,9 @@
         <div class="card-information__wrapper">
           [[itemVendor]]
           <span class="card-information__text h5">[[itemTitle]]</span>
+          {% if section.settings.show_rating %}
           [[itemReviews]]
+          {% endif %}
           [[itemPrice]]
         </div>
       </div>

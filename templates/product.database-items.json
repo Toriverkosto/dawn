@@ -14,7 +14,7 @@
         "16418169621e3e0468-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Kamerastore Product Database (Beta)<\/strong><\/p><p>Details, images, availability price history, and reviews for the {{ product.title }}<\/p>"
+            "text": "<p><strong>Kamerastore Product Database (Beta)<\/strong><\/p><p>Details, images, availability, price history, and reviews for the {{ product.title }}<\/p>"
           }
         },
         "16418169621e3e0468-2": {

@@ -33,7 +33,7 @@
     "pagination": {
       "label": "Paginación",
       "page": "Página {{ number }}",
-      "next": "Página siguiente",
+      "next": "Siguiente página",
       "previous": "Pagina anterior"
     },
     "search": {
@@ -41,14 +41,14 @@
     },
     "cart": {
       "view": "Ver mi carrito ({{ count }})",
-      "item_added": "Artículo agregado a tu carrito"
+      "item_added": "Artículo añadido a tu carrito"
     },
     "share": {
       "copy_to_clipboard": "Copiar enlace",
       "share": "Compartir",
       "share_url": "Enlace",
       "success_message": "Enlace copiado al portapapeles",
-      "close": "Cerrar compartición"
+      "close": "Cerrar compartir"
     }
   },
   "newsletter": {

@@ -157,11 +157,6 @@
         "show_sku_and_barcode": false
       }
     },
-    "164543512984681dd4": {
-      "type": "database-product-price-table",
-      "settings": {
-      }
-    },
     "1642020754f04c9667": {
       "type": "product-items-in-stock",
       "disabled": true,
@@ -172,6 +167,11 @@
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<H2><\/h2><H3>Database Description<\/h3>{{ product.description }}<\/div>"
+      }
+    },
+    "164543512984681dd4": {
+      "type": "database-product-price-table",
+      "settings": {
       }
     },
     "16450990378461246d": {
@@ -278,9 +278,9 @@
     "1634194655a811a44b",
     "16340245700ec1844e",
     "main",
-    "164543512984681dd4",
     "1642020754f04c9667",
     "1632393643eca7584e",
+    "164543512984681dd4",
     "16450990378461246d",
     "16324019941e428b8f",
     "product-recommendations",

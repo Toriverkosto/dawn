@@ -157,8 +157,14 @@
         "show_sku_and_barcode": false
       }
     },
+    "164543512984681dd4": {
+      "type": "database-product-price-table",
+      "settings": {
+      }
+    },
     "1642020754f04c9667": {
       "type": "product-items-in-stock",
+      "disabled": true,
       "settings": {
       }
     },
@@ -262,7 +268,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/minolta-8320-0002.jpg",
         "height": "adapt",
-        "color_scheme": "background-1",
+        "color_scheme": "background-2",
         "layout": "image_first"
       }
     }
@@ -272,6 +278,7 @@
     "1634194655a811a44b",
     "16340245700ec1844e",
     "main",
+    "164543512984681dd4",
     "1642020754f04c9667",
     "1632393643eca7584e",
     "16450990378461246d",

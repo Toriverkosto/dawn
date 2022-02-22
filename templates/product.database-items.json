@@ -207,8 +207,8 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
+        "button_label": "Full Condition Rating Details",
+        "button_link": "shopify:\/\/pages\/condition-ratings",
         "swipe_on_mobile": true
       }
     },

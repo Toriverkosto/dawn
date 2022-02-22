@@ -150,11 +150,6 @@
         "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<H2><\/h2><H3>Database Description<\/h3>{{ product.description }}<\/div>"
       }
     },
-    "164543512984681dd4": {
-      "type": "database-product-price-table",
-      "settings": {
-      }
-    },
     "16450990378461246d": {
       "type": "apps",
       "blocks": {
@@ -169,6 +164,11 @@
       ],
       "settings": {
         "include_margins": true
+      }
+    },
+    "164543512984681dd4": {
+      "type": "database-product-price-table",
+      "settings": {
       }
     },
     "1645516896bd0ceef6": {
@@ -274,8 +274,8 @@
     "main",
     "1642020754f04c9667",
     "1632393643eca7584e",
-    "164543512984681dd4",
     "16450990378461246d",
+    "164543512984681dd4",
     "1645516896bd0ceef6",
     "16324019941e428b8f",
     "product-recommendations",

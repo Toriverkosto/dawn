@@ -241,6 +241,18 @@
             },
             "link": {
               "label": "Link"
+            },
+            "header_alternative_color": {
+              "content": "Alternative color settings"
+            },
+            "use_alternative_color": {
+              "label": "Use alternative color settings"
+            },
+            "color_text": {
+              "label": "Text color"
+            },
+            "color_background": {
+              "label": "Background color"
             }
           }
         }

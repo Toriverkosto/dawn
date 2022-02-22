@@ -37,7 +37,7 @@
               "text": "We Hit 60K Followers on Instagram! Giveaway Info Here!",
               "color_scheme": "accent-2",
               "link": "shopify:\/\/pages\/60k-giveaway",
-              "use_alternative_color": false,
+              "use_custom_color": false,
               "color_text": "#121212",
               "color_background": "linear-gradient(#4AB6FF, #4AB6FF)"
             }
@@ -48,7 +48,7 @@
               "text": "Europe's Film Camera Specialists since 2010",
               "color_scheme": "accent-2",
               "link": "shopify:\/\/pages\/about-kamerastore",
-              "use_alternative_color": false,
+              "use_custom_color": false,
               "color_text": "#121212",
               "color_background": "linear-gradient(#4AB6FF, #4AB6FF)"
             }
@@ -59,7 +59,7 @@
               "text": "Shipping to: 🇫🇮 Finland 5€ |  🇪🇺 EU 10€ | 🇺🇸 USA ~$23 | Most other countries 20€",
               "color_scheme": "background-1",
               "link": "\/policies\/shipping-policy",
-              "use_alternative_color": false,
+              "use_custom_color": false,
               "color_text": "#121212",
               "color_background": "linear-gradient(#4AB6FF, #4AB6FF)"
             }
@@ -71,7 +71,7 @@
               "text": "We're Hiring! The Deadline to Apply is February 13th 2022!",
               "color_scheme": "accent-1",
               "link": "shopify:\/\/pages\/were-hiring-2022",
-              "use_alternative_color": false,
+              "use_custom_color": false,
               "color_text": "#121212",
               "color_background": "linear-gradient(#4AB6FF, #4AB6FF)"
             }

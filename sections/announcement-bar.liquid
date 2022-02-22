@@ -1,7 +1,7 @@
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'announcement' -%}
-      {% if block.settings.use_alternative_color %}
+      {% if block.settings.use_custom_color %}
         <div class="announcement-bar" style="background: {{ block.settings.color_background }};" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
       {% else %}
         <div class="announcement-bar color-{{ block.settings.color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
@@ -10,7 +10,7 @@
           {%- if block.settings.link != blank -%}
             <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
           {%- endif -%}
-              {% if block.settings.use_alternative_color %}
+              {% if block.settings.use_custom_color %}
                 <p class="announcement-bar__message h5" style="color: {{ block.settings.color_text }};">
               {% else %}
                 <p class="announcement-bar__message h5">
@@ -78,13 +78,13 @@
         },
         {
           "type": "header",
-          "content": "t:sections.announcement-bar.blocks.announcement.settings.header_alternative_color.content"
+          "content": "t:sections.announcement-bar.blocks.announcement.settings.header_custom_color.content"
         },
         {
           "type": "checkbox",
-          "id": "use_alternative_color",
+          "id": "use_custom_color",
           "default": false,
-          "label": "t:sections.announcement-bar.blocks.announcement.settings.use_alternative_color.label"
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.use_custom_color.label"
         },
         {
           "type": "color",

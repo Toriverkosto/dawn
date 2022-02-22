@@ -242,11 +242,11 @@
             "link": {
               "label": "Link"
             },
-            "header_alternative_color": {
-              "content": "Alternative color settings"
+            "header_custom_color": {
+              "content": "Custom color settings"
             },
-            "use_alternative_color": {
-              "label": "Use alternative color settings"
+            "use_custom_color": {
+              "label": "Use custom color settings"
             },
             "color_text": {
               "label": "Text color"

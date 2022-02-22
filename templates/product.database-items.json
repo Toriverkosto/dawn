@@ -190,6 +190,19 @@
         "include_margins": true
       }
     },
+    "1645516896bd0ceef6": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Latest Blog Posts",
+        "blog": "posts",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": true,
+        "show_author": true,
+        "soft_background": true,
+        "show_view_all": true
+      }
+    },
     "16324019941e428b8f": {
       "type": "multicolumn",
       "blocks": {
@@ -219,7 +232,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
-        "background_style": "secondary",
+        "background_style": "primary",
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false
@@ -282,6 +295,7 @@
     "1632393643eca7584e",
     "164543512984681dd4",
     "16450990378461246d",
+    "1645516896bd0ceef6",
     "16324019941e428b8f",
     "product-recommendations",
     "163239432974b497b2"

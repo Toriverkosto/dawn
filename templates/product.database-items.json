@@ -206,10 +206,10 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "Button label",
+        "background_style": "primary",
+        "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false
+        "swipe_on_mobile": true
       }
     },
     "1645516896bd0ceef6": {

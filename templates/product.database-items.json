@@ -171,6 +171,47 @@
       "settings": {
       }
     },
+    "1645526962d5bc21bf": {
+      "type": "multicolumn",
+      "blocks": {
+        "1645526962cdb5fda8-0": {
+          "type": "column",
+          "settings": {
+            "title": "Mechanics",
+            "text": "<p>5\/5 = New or Serviced<\/p><p>4\/5 = Excellent<\/p><p>3\/5 = Good<\/p><p>2\/5 = Poor but Usable<\/p><p>1\/5 = Untested or Broken<\/p>"
+          }
+        },
+        "1645526962cdb5fda8-1": {
+          "type": "column",
+          "settings": {
+            "title": "Optics",
+            "text": "<p>5\/5 = New or Serviced<\/p><p>4\/5 = Excellent<\/p><p>3\/5 = Good<\/p><p>2\/5 = Poor but Usable<\/p><p>1\/5 = Untested or Broken<\/p>"
+          }
+        },
+        "1645526962cdb5fda8-2": {
+          "type": "column",
+          "settings": {
+            "title": "Cosmetics",
+            "text": "<p>5\/5 = Best<\/p><p>4\/5<\/p><p>3\/5 = Average<\/p><p>2\/5<\/p><p>1\/5 = Worst<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1645526962cdb5fda8-0",
+        "1645526962cdb5fda8-1",
+        "1645526962cdb5fda8-2"
+      ],
+      "settings": {
+        "title": "Condition Ratings Summary",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
     "1645516896bd0ceef6": {
       "type": "featured-blog",
       "settings": {
@@ -265,48 +306,6 @@
         "color_scheme": "background-2",
         "layout": "image_first"
       }
-    },
-    "1645526962d5bc21bf": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "1645526962cdb5fda8-0": {
-          "type": "column",
-          "settings": {
-            "title": "Mechanics",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
-        "1645526962cdb5fda8-1": {
-          "type": "column",
-          "settings": {
-            "title": "Optics",
-            "text": "<p>5\/5 = New or Serviced<\/p><p>4\/5 = Excellent<br\/>3\/5 = Good<br\/>2\/5 = Poor<br\/>1\/5 = <\/p>"
-          }
-        },
-        "1645526962cdb5fda8-2": {
-          "type": "column",
-          "settings": {
-            "title": "Cosmetics",
-            "text": "<p>The cosmetic condition of an item can alter the monetary or collectible value of an item, but is not an indication of Mechanical or Optical inability.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1645526962cdb5fda8-0",
-        "1645526962cdb5fda8-1",
-        "1645526962cdb5fda8-2"
-      ],
-      "settings": {
-        "title": "Condition Ratings",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "swipe_on_mobile": false
-      }
     }
   },
   "order": [
@@ -318,10 +317,10 @@
     "1632393643eca7584e",
     "16450990378461246d",
     "164543512984681dd4",
+    "1645526962d5bc21bf",
     "1645516896bd0ceef6",
     "16324019941e428b8f",
     "product-recommendations",
-    "163239432974b497b2",
-    "1645526962d5bc21bf"
+    "163239432974b497b2"
   ]
 }

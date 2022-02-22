@@ -71,7 +71,7 @@
         "56d3d8ad-8dcb-4146-bf63-5a3a9862d94b": {
           "type": "text",
           "settings": {
-            "text": "Kamerastore Product Database",
+            "text": "Kamerastore Digital Database",
             "text_style": "uppercase"
           }
         },
@@ -97,26 +97,10 @@
             "text_style": "subtitle"
           }
         },
-        "7e4478e8-83f8-4946-b146-0594dc094db3": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "<p>{%- assign current_variant = product.selected_or_first_available_variant -%}\n<b>Item:<\/b>  {{product.title}}\n<br>\n<b>Type:<\/b> {{product.type}}\n<br>\n<b>Database ID:<\/b> {{ current_variant.sku | upcase}}\n<br>\n<\/span><\/p>"
-          }
-        },
         "96c45658-7a4f-4bbe-8af4-a6f32859a982": {
           "type": "custom_liquid",
           "settings": {
             "custom_liquid": "<p>{%- assign current_variant = product.selected_or_first_available_variant -%}<b>Item:<\/b>  {{product.title}}\n      {% for t in product.tags %}\n        {% assign parts = t | split: '-'%}\n        {% assign prefix = parts | first %}\n        {% assign value = parts | last %}\n        {% if prefix == 'Category'%}\n          {% assign category = value %}\n        {% elsif prefix == 'SubCategory' %}\n          {% assign sub_category = value %}\n        {% endif %}\n      {% endfor %}\n      {% if category %}<br>\n<b>Category:<\/b> {{ category }}{% endif %}\n<br>\n      {% if sub_category %}<b>Sub Category:<\/b> {{ sub_category }}{% endif %}\n  <br>\n<b>Type:<\/b> {{ product.type }}<\/a>\n<br>\n<b>Database ID:<\/b> {{ current_variant.sku | upcase}}\n    <\/span><\/p>"
-          }
-        },
-        "7d983aca-264b-468a-a9fb-7a08f97e8331": {
-          "type": "popup",
-          "disabled": true,
-          "settings": {
-            "text": "Sell This Item",
-            "page": "sell-or-trade-your-used-camera-gear",
-            "show_button": true
           }
         },
         "82004e4e-d026-4c02-b9ee-21d1643d0fa5": {
@@ -142,9 +126,7 @@
         "title",
         "5c4679de-0254-4571-be14-a70eb36ed4b6",
         "0a9a6be0-2265-416b-b0f3-048e7cfb2dab",
-        "7e4478e8-83f8-4946-b146-0594dc094db3",
         "96c45658-7a4f-4bbe-8af4-a6f32859a982",
-        "7d983aca-264b-468a-a9fb-7a08f97e8331",
         "82004e4e-d026-4c02-b9ee-21d1643d0fa5",
         "587ddfa6-3235-4da0-be5b-d249ecf8991d"
       ],

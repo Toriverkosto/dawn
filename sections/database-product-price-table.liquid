@@ -7,7 +7,7 @@
     line-height: 1.4;
     margin: 0;
     padding: 1em 0.5em;
-    color: #222;
+    color: rgb(var(--color-foreground)) !important;
   }
   .rg-header {
     margin-bottom: 1em;
@@ -51,8 +51,11 @@
   }
 
   table.rg-table tr.available-product td {
-    color: rgba(var(--color-button),var(--alpha-button-background));
-    font-weight: bold;
+    color: rgb(var(--color-foreground));
+  }
+
+  table.rg-table tr.available-product td.date-sold {
+    color: rgb(var(--color-button));
   }
 
   table.rg-table thead {
@@ -60,7 +63,7 @@
   }
   table.rg-table tr {
     border-bottom: 1px solid #ddd;
-    color: #222;
+    color: rgb(var(--color-foreground)) !important;
   }
   table.rg-table tr.available-product:hover {
     transition: transform 0.125s;
@@ -72,12 +75,6 @@
   table.rg-table.zebra tr:nth-child(even) {
     background-color: #f6f6f6;
   }
-  table.rg-table.zebra tr.available-product:nth-child(even) {
-    background-color: rgba(var(--color-button), 0.25);
-  }
-  /*table.rg-table.zebra tr.available-product:nth-child(even) td {*/
-  /*  color: rgb(var(--color-button-text));*/
-  /*}*/
   table.rg-table th {
     font-weight: bold;
     padding: 0.35em;
@@ -144,7 +141,7 @@
       background-color: transparent;
     }
     table.rg-table tr.available-product:nth-child(even) td {
-      color: rgba(var(--color-button),var(--alpha-button-background)) !important;
+      color: rgb(var(--color-foreground)) !important;
     }
     table.rg-table td {
       padding: 0.5em 0 0.25em 0;
@@ -215,7 +212,7 @@
             <th class="text">Optics</th>
             <th class="text">Cosmetics</th>
             <th class="number">Price</th>
-            <th class="image">Thumbnail</th>
+            <th class="image">Image</th>
           </tr>
         </thead>
         <tbody>
@@ -229,7 +226,7 @@
                   {% unless product.handle == current_product.handle or product.tags contains 'item-database' %}
                     {% if product.available %}
                       <tr class="available-product" onclick="window.location='{{ product.url }}';">
-                        <td class="text" data-title="Date Sold">Available</td>
+                        <td class="text date-sold" data-title="Date Sold">Available</td>
                         <td class="text" data-title="SKU">{{ product.selected_or_first_available_variant.sku }}</td>
                         {% assign condition = product.metafields.kameratori.condition.value %}
 
@@ -240,7 +237,7 @@
                         <td class="text" data-title="Cosmetics">{{ condition.cosmetic }}/5</td>
 
                         <td class="number" data-title="Price">{{ product.selected_or_first_available_variant.price | money }}</td>
-                        <td class="image" data-title="Thumbnail">
+                        <td class="image" data-title="Image">
                           {{ product | image_url: height: 50 | image_tag }}
                         </td>
                       </tr>
@@ -263,11 +260,11 @@
                 <td class="text" data-title="Optics">{{ condition_map[optical] }}</td>
                 <td class="text" data-title="Cosmetics">{{ sale.condition.cosmetic }}/5</td>
                 <td class="number" data-title="Price">{{ sale.price | times: 100 | money }}</td>
-                <td class="image" data-title="Thumbnail">
+                <td class="image" data-title="Image">
                   <a href="{{ sale.image.src }}" target="_blank">
                     <img
                             src="{{ sale.image.src | append: "&height=50" }}"
-                            alt="{{ product.title }} thumbnail"
+                            alt="{{ product.title }} Image"
                             height="50" />
                   </a>
                 </td>

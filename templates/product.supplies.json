@@ -24,6 +24,14 @@
             "stars_text_empty": "No reviews yet"
           }
         },
+        "50ffba02-1a4d-4db1-855c-9ade81f138d2": {
+          "type": "link_to_review",
+          "settings": {
+            "link_text": "Read or Write Reviews",
+            "only_show_when_no_reviews": true,
+            "link_to_host": true
+          }
+        },
         "d2f0204f-1c5f-46fd-81d6-a9e4069c2ae4": {
           "type": "custom_liquid",
           "disabled": true,
@@ -146,6 +154,7 @@
       "block_order": [
         "title",
         "1205e67f-ba58-4cb7-9cba-ebad9222146c",
+        "50ffba02-1a4d-4db1-855c-9ade81f138d2",
         "d2f0204f-1c5f-46fd-81d6-a9e4069c2ae4",
         "price",
         "f0c9e60b-84e2-4c7b-a294-cab454328d82",
@@ -164,7 +173,8 @@
         "enable_sticky_info": true,
         "hide_variants": false,
         "enable_video_looping": false,
-        "show_breadcrumbs": true
+        "show_breadcrumbs": true,
+        "show_sku_and_barcode": false
       }
     },
     "1632393643eca7584e": {

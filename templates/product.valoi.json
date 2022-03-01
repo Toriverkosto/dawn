@@ -67,7 +67,7 @@
           "settings": {
             "link_text": "Read or Write Reviews",
             "only_show_when_no_reviews": true,
-            "link_to_host": true
+            "link_to_host": false
           }
         },
         "6e329fbd-c3b0-4cfe-a6f4-9911df60910e": {

@@ -583,12 +583,19 @@
   document.addEventListener('DOMContentLoaded', function() {
     const product_tags = JSON.parse('{{ product.tags | json }}');
     const host_product_url = '{{ product.metafields.kameratori.host.value.url }}';
+    const REVIEWS_HASH = `shopify-product-reviews`;
     if (product_tags.includes('item-stock') && host_product_url) {
       const reviewsLink = document.querySelector('div.spr-starrating.spr-summary-starrating > a');
       if (reviewsLink) {
-        reviewsLink.href = `{{ product.metafields.kameratori.host.value.url }}#shopify-product-reviews`;
+        reviewsLink.href = `{{ product.metafields.kameratori.host.value.url }}#${REVIEWS_HASH}`;
         reviewsLink.removeAttribute('onclick');
       }
+    }
+
+    if (window.location.hash.split('?')[0].slice(1) === REVIEWS_HASH) {
+      setTimeout(() => {
+        document.querySelector(`#${REVIEWS_HASH}`).scrollIntoView({behavior: 'smooth'});
+      }, 1250);
     }
   });
 </script>

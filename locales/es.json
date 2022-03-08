@@ -470,7 +470,17 @@
       },
       "delivery_options": {
         "pick_up": "Recogida",
-        "pick_up_locations": "Lugares de recogida"
+        "pick_up_locations": "Lugares de recogida",
+        "pick_up_in_zero_to_two_hours": "Listo para recogida en 2 horas",
+        "pick_up_in_two_to_four_hours": "Listo para recogida en 4 horas",
+        "pick_up_immediately": "Listo para ser recogido ahora",
+        "pick_up_next_day": "Listo para recogido al día siguiente"
+      },
+      "customer_account": {
+        "save_my_information_label": "Guardar mi información para la próxima vez"
+      },
+      "order_summary": {
+        "apply_discount_button_label": "Aplicar"
       }
     }
   }

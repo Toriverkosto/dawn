@@ -461,5 +461,13 @@
     "review_token_expired": "You're late. The link is expired!",
     "view_on_instagram": "View on Instagram",
     "login_required_to_review": "Please log in to leave your review"
+  },
+  "shopify": {
+    "checkout": {
+      "general": {
+        "continue_to_review": "Revisar tu pedido",
+        "autocomplete_single_item": "1 articulo disponible"
+      }
+    }
   }
 }

@@ -500,7 +500,9 @@
       },
       "payment": {
         "credit_card_vaulting_sign_in_banner_info": "Inicia sesión o crea una cuenta para guardar tu tarjeta de crédito para futuras compras.",
-        "card_expired": "Caducada"
+        "card_expired": "Caducada",
+        "card_start_label": "Fecha (MM \/ AA)",
+        "card_start_placeholder": "Fecha (MM \/ AA)"
       }
     }
   }

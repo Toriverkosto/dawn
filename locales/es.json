@@ -467,6 +467,10 @@
       "general": {
         "continue_to_review": "Revisar tu pedido",
         "autocomplete_single_item": "1 articulo disponible"
+      },
+      "delivery_options": {
+        "pick_up": "Recogida",
+        "pick_up_locations": "Lugares de recogida"
       }
     }
   }

@@ -497,6 +497,10 @@
           "prepaid_initial_order_discounted_with_renewal": "Coste del primer envío %{discounted_shipping_price} %{prepaid_delivery_frequency}, luego %{shipping_price} %{billing_cycle}",
           "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "Coste del primer envío %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), luego %{shipping_price} %{billing_cycle}"
         }
+      },
+      "payment": {
+        "credit_card_vaulting_sign_in_banner_info": "Inicia sesión o crea una cuenta para guardar tu tarjeta de crédito para futuras compras.",
+        "card_expired": "Caducada"
       }
     }
   }

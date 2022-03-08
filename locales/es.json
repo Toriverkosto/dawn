@@ -480,7 +480,11 @@
         "save_my_information_label": "Guardar mi información para la próxima vez"
       },
       "order_summary": {
-        "apply_discount_button_label": "Aplicar"
+        "apply_discount_button_label": "Aplicar",
+        "pickup_label": "Recogida",
+        "no_pickup_location": "Tu pedido no está disponible para recogida. Introduce tu dirección de envío.",
+        "shipping_policy_link": "Costes de envío",
+        "total_outstanding_label": "Cantidad a pagar"
       }
     }
   }

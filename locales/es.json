@@ -484,7 +484,8 @@
         "pickup_label": "Recogida",
         "no_pickup_location": "Tu pedido no está disponible para recogida. Introduce tu dirección de envío.",
         "shipping_policy_link": "Costes de envío",
-        "total_outstanding_label": "Cantidad a pagar"
+        "total_outstanding_label": "Cantidad a pagar",
+        "cost_table_title": "Resumen de costes"
       }
     }
   }

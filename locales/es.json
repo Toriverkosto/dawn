@@ -486,6 +486,17 @@
         "shipping_policy_link": "Costes de envío",
         "total_outstanding_label": "Cantidad a pagar",
         "cost_table_title": "Resumen de costes"
+      },
+      "shipping": {
+        "waiting_on_pickup_location_notice": "Obtención de las sucursales para recoger productos...",
+        "no_pickup_location_notice": "Al menos uno de tus productos no está disponible para ser recogido",
+        "subscription_delivery_description": {
+          "initial_order_discounted": "Coste del primer envío %{discounted_shipping_cost}, luego %{frequency_description}",
+          "prepaid_initial_order_discounted": "Coste del primer envío %{discounted_shipping_price} %{prepaid_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "Coste del primer envío %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "Coste del primer envío %{discounted_shipping_price} %{prepaid_delivery_frequency}, luego %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "Coste del primer envío %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), luego %{shipping_price} %{billing_cycle}"
+        }
       }
     }
   }

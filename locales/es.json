@@ -512,6 +512,9 @@
       "payment_errors": {
         "checkout_amount_changed": "No se ha podido procesar el pago porque la cantidad ha cambiado. Revisa tu pedido e intenta de nuevo.",
         "deferred_amount_changed": "No se ha podido procesar el pago porque la cantidad del pago diferido ha cambiado. Revisa tu pedido e intenta de nuevo."
+      },
+      "payment_gateway": {
+        "cash_on_delivery_label": "Pago contra reembolso"
       }
     }
   }

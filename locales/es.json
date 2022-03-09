@@ -519,7 +519,12 @@
       "thank_you": {
         "order_updates_current_step_prefix": "Paso actual: ",
         "order_updates_past_step_prefix": "Paso anterior: ",
-        "order_updates_upcoming_step_prefix": "Próxima paso: "
+        "order_updates_upcoming_step_prefix": "Próxima paso: ",
+        "login_title": "Iniciar sesión para ver todos los detalles del pedido",
+        "login_description": "Puedes encontrar tu número de pedido en la factura que recibiste mediante correo electrónico.",
+        "pick_up_in_store_marker": {
+          "shipping": "Lugar de recogida"
+        }
       }
     }
   }

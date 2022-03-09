@@ -503,6 +503,15 @@
         "card_expired": "Caducada",
         "card_start_label": "Fecha (MM \/ AA)",
         "card_start_placeholder": "Fecha (MM \/ AA)"
+      },
+      "field_errors": {
+        "credit_card_expiry_invalid": "Introduce una fecha de caducidad de tarjeta válida",
+        "credit_card_month_invalid": "Introduce un mes de caducidad de tarjeta válido",
+        "credit_card_year_invalid": "Introduce un año de caducidad de tarjeta válido"
+      },
+      "payment_errors": {
+        "checkout_amount_changed": "No se ha podido procesar el pago porque la cantidad ha cambiado. Revisa tu pedido e intenta de nuevo.",
+        "deferred_amount_changed": "No se ha podido procesar el pago porque la cantidad del pago diferido ha cambiado. Revisa tu pedido e intenta de nuevo."
       }
     }
   }

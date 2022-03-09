@@ -542,7 +542,8 @@
       "order": {
         "financial_status": {
           "expired": "Caducado"
-        }
+        },
+        "cash_on_delivery": "Pago contra reembolso"
       }
     }
   }

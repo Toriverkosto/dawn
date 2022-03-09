@@ -534,6 +534,9 @@
       "order_payment_collection": {
         "custom_line_item_description": "Cantidad a pagar por el pedido %{order_name}"
       }
+    },
+    "errors": {
+      "taken": "ya esta en uso"
     }
   }
 }

@@ -525,6 +525,14 @@
         "pick_up_in_store_marker": {
           "shipping": "Lugar de recogida"
         }
+      },
+      "remember_me": {
+        "installments": {
+          "view_schedule": "Ver calendario"
+        }
+      },
+      "order_payment_collection": {
+        "custom_line_item_description": "Cantidad a pagar por el pedido %{order_name}"
       }
     }
   }

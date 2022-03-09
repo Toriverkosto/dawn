@@ -515,6 +515,11 @@
       },
       "payment_gateway": {
         "cash_on_delivery_label": "Pago contra reembolso"
+      },
+      "thank_you": {
+        "order_updates_current_step_prefix": "Paso actual: ",
+        "order_updates_past_step_prefix": "Paso anterior: ",
+        "order_updates_upcoming_step_prefix": "Próxima paso: "
       }
     }
   }

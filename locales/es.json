@@ -545,6 +545,11 @@
         },
         "cash_on_delivery": "Pago contra reembolso"
       }
+    },
+    "email_marketing": {
+      "unsubscribed": {
+        "confirmation": "Has cancelado tu suscripción a nuestra lista de emails."
+      }
     }
   }
 }

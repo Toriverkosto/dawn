@@ -615,6 +615,8 @@
   {% endif %}
 {% endfor %}
 
+{% assign low_price = 999999999999999 %}
+{% assign high_price = 0 %}
 {% if group_id %}
   {% for collection in product.collections %}
     {% if collection.metafields.kameratori.group_id == group_id and collection.products_count > 0 %}
@@ -624,6 +626,12 @@
           {% if product.available %}
             {% assign products_available = true %}
             {% assign last_available_index = forloop.index0 %}
+            {% if product.first_available_variant.price > high_price %}
+              {% assign high_price = product.first_available_variant.price %}
+            {% endif %}
+            {% if product.first_available_variant.price < low_price %}
+              {% assign low_price = product.first_available_variant.price %}
+            {% endif %}
           {% endif %}
         {% endunless %}
         {% if product.tags contains 'item-database'  %}
@@ -686,27 +694,13 @@
             "priceValidUntil": "{{ 'now' | date: "%s" | plus: 31536000 | date: "%Y-%m-%dT%H:%M:%S%z" }}"
           }{% unless forloop.last %},{% endunless %}
         {%- endfor %}
-      ]{%- elsif section.settings.product_role == "database" and products_available and group_id -%}
-      "offers": [
-        {%- for product in product.collections[group_collection_index].products -%}
-          {%- unless product.handle == current_product.handle or product.tags contains 'item-database' -%}
-            {%- if product.available -%}
-              {%- assign variant = product.first_available_variant %}
-        {
-          "@type" : "Offer",
-          {%- if variant.sku != blank %}
-          "sku": {{ variant.sku | json }},
-          {%- endif %}
-          "availability" : "http://schema.org/InStock",
-          "price" : "{{ variant.price | divided_by: 100.00 | json }}",
-          "priceCurrency" : {{ cart.currency.iso_code | json }},
-          "url" : {{ shop.url | append: variant.url | json }},
-          "priceValidUntil": "{{ 'now' | date: "%s" | plus: 31536000 | date: "%Y-%m-%dT%H:%M:%S%z" }}"
-        }{% unless forloop.index0 == last_available_index %},{% endunless %}
-            {%- endif -%}
-          {%- endunless -%}
-        {%- endfor -%}
-      ]{%- endif -%}
+      ]{%- elsif section.settings.product_role == "database" and products_available and group_id %}
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "{{ low_price | divided_by: 100.00 | json }}",
+        "highPrice": "{{ high_price | divided_by: 100.00 | json}}",
+        "priceCurrency": "EUR"
+      }{%- endif -%}
       {% if rating %},
       "aggregateRating": {
         "@type": "AggregateRating",

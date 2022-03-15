@@ -131,6 +131,7 @@
         "587ddfa6-3235-4da0-be5b-d249ecf8991d"
       ],
       "settings": {
+        "product_role": "database",
         "enable_sticky_info": true,
         "hide_variants": false,
         "enable_video_looping": false,

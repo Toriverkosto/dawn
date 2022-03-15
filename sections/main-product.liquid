@@ -617,6 +617,7 @@
 
 {% assign low_price = 999999999999999 %}
 {% assign high_price = 0 %}
+{% assign offer_count = 0 %}
 {% if group_id %}
   {% for collection in product.collections %}
     {% if collection.metafields.kameratori.group_id == group_id and collection.products_count > 0 %}
@@ -625,6 +626,7 @@
         {% unless product.handle == current_product.handle or product.tags contains 'item-database' %}
           {% if product.available %}
             {% assign products_available = true %}
+            {% assign offer_count = offer_count | plus: 1 %}
             {% assign last_available_index = forloop.index0 %}
             {% if product.first_available_variant.price > high_price %}
               {% assign high_price = product.first_available_variant.price %}
@@ -699,6 +701,7 @@
         "@type": "AggregateOffer",
         "lowPrice": "{{ low_price | divided_by: 100.00 | json }}",
         "highPrice": "{{ high_price | divided_by: 100.00 | json}}",
+        "offerCount": {{ offer_count }},
         "priceCurrency": "EUR"
       }{%- endif -%}
       {% if rating %},

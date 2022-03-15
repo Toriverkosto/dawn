@@ -1563,6 +1563,11 @@
           "content": "Media",
           "info": "Learn more about [media types.](https:\/\/help.shopify.com\/manual\/products\/product-media)"
         },
+        "product_role": {
+          "label": "Is the template for a \"stock\" or \"database\" item",
+          "option_stock": "Stock item",
+          "option_database": "Database item"
+        },
         "enable_sticky_info": {
           "label": "Enable sticky product information on large screens"
         },

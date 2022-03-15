@@ -183,6 +183,7 @@
 {% if group_id %}
   {% for collection in product.collections %}
     {% if collection.metafields.kameratori.group_id == group_id and collection.products_count > 0 %}
+      {% assign group_collection_index = forloop.index0 %}
       {% for product in collection.products %}
         {% unless product.handle == current_product.handle or product.tags contains 'item-database' %}
           {% if product.available %}
@@ -219,34 +220,28 @@
           {% comment %}Available products: {% endcomment %}
           {% assign current_product = product %}
 
-          {% if products_available and group_id %}
-            {% for collection in product.collections %}
-              {% if collection.metafields.kameratori.group_id == group_id and collection.products_count > 0 %}
-                {% for product in collection.products %}
-                  {% unless product.handle == current_product.handle or product.tags contains 'item-database' %}
-                    {% if product.available %}
-                      <tr class="available-product" onclick="window.location='{{ product.url }}';">
-                        <td class="text date-sold" data-title="Date Sold">Available</td>
-                        <td class="text" data-title="SKU">{{ product.selected_or_first_available_variant.sku }}</td>
-                        {% assign condition = product.metafields.kameratori.condition.value %}
+          {% for product in product.collections[group_collection_index].products %}
+            {% unless product.handle == current_product.handle or product.tags contains 'item-database' %}
+              {% if product.available %}
+                <tr class="available-product" onclick="window.location='{{ product.url }}';">
+                  <td class="text date-sold" data-title="Date Sold">Available</td>
+                  <td class="text" data-title="SKU">{{ product.selected_or_first_available_variant.sku }}</td>
+                  {% assign condition = product.metafields.kameratori.condition.value %}
 
-                        {% assign mechanical = condition.mechanical | append: "" %}
-                        <td class="text" data-title="Mechanics">{{ condition_map[mechanical] }}</td>
-                        {% assign optical = condition.optical | append: "" %}
-                        <td class="text" data-title="Optics">{{ condition_map[optical] }}</td>
-                        <td class="text" data-title="Cosmetics">{{ condition.cosmetic }}/5</td>
+                  {% assign mechanical = condition.mechanical | append: "" %}
+                  <td class="text" data-title="Mechanics">{{ condition_map[mechanical] }}</td>
+                  {% assign optical = condition.optical | append: "" %}
+                  <td class="text" data-title="Optics">{{ condition_map[optical] }}</td>
+                  <td class="text" data-title="Cosmetics">{{ condition.cosmetic }}/5</td>
 
-                        <td class="number" data-title="Price">{{ product.selected_or_first_available_variant.price | money }}</td>
-                        <td class="image" data-title="Image">
-                          {{ product | image_url: height: 50 | image_tag }}
-                        </td>
-                      </tr>
-                    {% endif %}
-                  {% endunless %}
-                {% endfor %}
+                  <td class="number" data-title="Price">{{ product.selected_or_first_available_variant.price | money }}</td>
+                  <td class="image" data-title="Image">
+                    {{ product | image_url: height: 50 | image_tag }}
+                  </td>
+                </tr>
               {% endif %}
-            {% endfor %}
-          {% endif %}
+            {% endunless %}
+          {% endfor %}
 
           {% comment %}Sold products: {% endcomment %}
           {% if product.metafields.kameratori.sales %}

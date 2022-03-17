@@ -582,6 +582,12 @@
         "price_ascending": "Pris, stigande",
         "price_descending": "Pris, fallande"
       }
+    },
+    "search": {
+      "sorting": {
+        "price_ascending": "Pris, stigande",
+        "price_descending": "Pris, fallande"
+      }
     }
   }
 }

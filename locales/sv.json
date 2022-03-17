@@ -467,7 +467,8 @@
       "general": {
         "page_title": "Kassa",
         "contact_us_html": "Kontakta oss för mer information",
-        "autocomplete_close": "Liknande förslag"
+        "autocomplete_close": "Liknande förslag",
+        "back_to_cart": "Återgå till varukorgen"
       },
       "contact": {
         "country_code": "Land-\/Postnummer"
@@ -480,7 +481,13 @@
         "items_unavailable_notice": "Vissa objekt är inte längre tillgängliga ELLER har reserverats av en annan kund.",
         "removed_from_cart_notice": "Ta bort från varukorgen",
         "sold_out_label": "Såld",
-        "remove_from_cart_button_label": "Ta bort från varukorgen"
+        "remove_from_cart_button_label": "Ta bort från varukorgen",
+        "go_back_to_cart_button_label": "Gå tillbaka till min varukorgen"
+      }
+    },
+    "notices": {
+      "cart": {
+        "link_expired": "Länk ogiltig"
       }
     }
   }

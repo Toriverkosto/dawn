@@ -524,10 +524,36 @@
         "order_status_confirmed_order_with_phone_pick_up": "Du får ett sms när din order är klar för upphämtning.",
         "order_status_confirmed_order_with_email_and_phone_pick_up": "Du får ett e-postmeddelande och ett sms när din order är klar för upphämtning.",
         "thank_you_confirmed_order_with_phone_pick_up": "Du får ett sms när din order är klar för upphämtning.",
-        "ready_for_pickup_title": "Din order är klar för upphämtning"
+        "ready_for_pickup_title": "Din order är klar för upphämtning",
+        "cancelled_title": "Din beställning har makulerats",
+        "pick_up_in_store_marker": {
+          "shipping": "Upphämtningsplats"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "Varor i denna leverans"
+        },
+        "track_shipment": "Spåra leverans"
       },
       "shipping": {
         "no_pickup_location_notice": "Minst en av dina produkter är inte tillgänglig för upphämtning"
+      },
+      "marketing": {
+        "sms": {
+          "disclaimer": {
+            "description_html": "Om du registrerar dig via sms godkänner du att ta emot återkommande automatiserade marknadsföringsmeddelanden, inklusive varukorgspåminnelser på telefonnumret du anger. Ditt samtycke är inte ett villkor för köp. Svara STOP för att avsluta din prenumeration. Svara HELP för hjälp. Antal meddelanden varierar. Mobil- och datakostnader kan tillkomma. Se våra %{privacy_policy_link} och %{terms_of_service_link}."
+          }
+        }
+      },
+      "tips": {
+        "custom_label": "Anpassat dricks"
+      },
+      "subscriptions": {
+        "recurring_totals_with_initial_order_shipping_discount": "Första betalningen %{total_price_with_discount}, sedan%{recurring_total}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "Första betalningen %{total_price}"
+          }
+        }
       }
     },
     "notices": {
@@ -539,6 +565,12 @@
       "pick_up_time": {
         "immediately": "Klar för upphämtning nu",
         "next_day": "Klar för upphämtning nästa dag"
+      }
+    },
+    "collections": {
+      "sorting": {
+        "price_ascending": "Pris, stigande",
+        "price_descending": "Pris, fallande"
       }
     }
   }

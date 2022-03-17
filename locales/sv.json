@@ -558,7 +558,9 @@
     },
     "notices": {
       "cart": {
-        "link_expired": "Länk ogiltig"
+        "link_expired": "Länk ogiltig",
+        "missing_parameters": "inget giltigt id eller giltig parameter",
+        "generic_error": "Varukorgs Fel"
       },
       "order": {
         "financial_status": {

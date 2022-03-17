@@ -483,6 +483,12 @@
         "sold_out_label": "Såld",
         "remove_from_cart_button_label": "Ta bort från varukorgen",
         "go_back_to_cart_button_label": "Gå tillbaka till min varukorgen"
+      },
+      "order_summary": {
+        "pickup_label": "Hämta ut",
+        "no_pickup_location": "Din order kan inte hämtas ut. Ange en leveransadress.",
+        "vat_label_html": "Inklusive %{amount} i skatt",
+        "total_already_paid_label": "Redan betalad"
       }
     },
     "notices": {

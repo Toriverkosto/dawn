@@ -559,6 +559,14 @@
     "notices": {
       "cart": {
         "link_expired": "Länk ogiltig"
+      },
+      "order": {
+        "financial_status": {
+          "pending": "Vilande"
+        },
+        "fulfillment_status": {
+          "fulfilled": "Fulländad"
+        }
       }
     },
     "store_availability": {

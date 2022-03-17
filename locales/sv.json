@@ -128,9 +128,9 @@
       "pickup_availability": {
         "view_store_info": "Visa butiksinformation",
         "check_other_stores": "Kontrollerar tillgänglighet i andra butiker",
-        "pick_up_available": "Hämtning tillgänglig",
-        "pick_up_available_at_html": "Hämtning tillgänglig på <span class=\"color-foreground\">{{ location_name }}<\/span>",
-        "pick_up_unavailable_at_html": "Det går för närvarande inte att få hämtning på <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "pick_up_available": "Upphämtning tillgänglig",
+        "pick_up_available_at_html": "Upphämtning tillgänglig på <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "pick_up_unavailable_at_html": "Det går för närvarande inte att få upphämtning på <span class=\"color-foreground\">{{ location_name }}<\/span>",
         "unavailable": "Det gick inte att ladda hämtningstillgänglighet",
         "refresh": "Uppdatera"
       },
@@ -474,7 +474,7 @@
         "country_code": "Land-\/Postnummer"
       },
       "delivery_options": {
-        "pick_up_in_four_hours": "Du får ett mejl när din beställning är klar för avhämtning."
+        "pick_up_in_four_hours": "Du får ett mejl när din beställning är klar för upphämtning."
       },
       "stock": {
         "title": "Slutsåld",
@@ -518,16 +518,27 @@
         "shipping_address_map_title": "Google-kartan visar positionen av din leveransadress: %{address}",
         "gift_card_confirmation_by_text": "Presentkortet skickas via sms. Försök att skicka dem igen eller kontakta oss, om du inte har fått dina presentkort.",
         "gift_card_confirmation_by_email": "Presentkort skickas via e-mail. Försök att skicka dem igen eller kontakta oss, om du inte har fått dina presentkort.",
-        "thank_you_confirmed_order_with_email_pick_up": "Du får ett e-postmeddelande när din order är klar för uthämtning.",
-        "thank_you_confirmed_order_with_email_and_phone_pick_up": "Du får ett e-postmeddelande när din order är klar för uthämtning.",
-        "order_status_confirmed_order_with_email_pick_up": "Du får ett e-postmeddelande när din order är klar för uthämtning.",
-        "order_status_confirmed_order_with_phone_pick_up": "Du får ett sms när din order är klar för uthämtning.",
-        "order_status_confirmed_order_with_email_and_phone_pick_up": "Du får ett e-postmeddelande och ett sms när din order är klar för uthämtning."
+        "thank_you_confirmed_order_with_email_pick_up": "Du får ett e-postmeddelande när din order är klar för upphämtning.",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "Du får ett e-postmeddelande när din order är klar för upphämtning.",
+        "order_status_confirmed_order_with_email_pick_up": "Du får ett e-postmeddelande när din order är klar för upphämtning.",
+        "order_status_confirmed_order_with_phone_pick_up": "Du får ett sms när din order är klar för upphämtning.",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "Du får ett e-postmeddelande och ett sms när din order är klar för upphämtning.",
+        "thank_you_confirmed_order_with_phone_pick_up": "Du får ett sms när din order är klar för upphämtning.",
+        "ready_for_pickup_title": "Din order är klar för upphämtning"
+      },
+      "shipping": {
+        "no_pickup_location_notice": "Minst en av dina produkter är inte tillgänglig för upphämtning"
       }
     },
     "notices": {
       "cart": {
         "link_expired": "Länk ogiltig"
+      }
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "immediately": "Klar för upphämtning nu",
+        "next_day": "Klar för upphämtning nästa dag"
       }
     }
   }

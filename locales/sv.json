@@ -468,6 +468,12 @@
         "page_title": "Kassa",
         "contact_us_html": "Kontakta oss för mer information",
         "autocomplete_close": "Liknande förslag"
+      },
+      "contact": {
+        "country_code": "Land-\/Postnummer"
+      },
+      "delivery_options": {
+        "pick_up_in_four_hours": "Du får ett mejl när din beställning är klar för avhämtning."
       }
     }
   }

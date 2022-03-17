@@ -157,7 +157,8 @@
     "tax": {
       "taxable_property_name": "Inklusive moms.",
       "taxable_property_value": "Endast EU.",
-      "not_taxable_property_name": "moms"
+      "not_taxable_property_name": "moms",
+      "not_taxable_property_value": "Pris som visat. Begagnad artikel, ej avdragsgill."
     }
   },
   "templates": {

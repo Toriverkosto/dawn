@@ -491,7 +491,9 @@
         "total_already_paid_label": "Redan betalad"
       },
       "payment": {
-        "amazon_payments_could_not_enqueue_authorize": "Det uppstod ett fel vid behandlingen av betalningen. Försök igen eller använd en annan betalningsmetod."
+        "amazon_payments_could_not_enqueue_authorize": "Det uppstod ett fel vid behandlingen av betalningen. Försök igen eller använd en annan betalningsmetod.",
+        "card_fields_processing_error": "Det uppstod ett fel när betalningen skulle behandlas. Prova att uppdatera den här sidan eller kontrollera din internetanslutning.",
+        "billing_address_not_supported_for_payment_method_error": "Den här betalningsmetoden är inte tillgänglig för faktureringsadressen och -valutan. Försök med en annan betalningsmetod."
       }
     },
     "notices": {

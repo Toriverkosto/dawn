@@ -489,6 +489,9 @@
         "no_pickup_location": "Din order kan inte hämtas ut. Ange en leveransadress.",
         "vat_label_html": "Inklusive %{amount} i skatt",
         "total_already_paid_label": "Redan betalad"
+      },
+      "payment": {
+        "amazon_payments_could_not_enqueue_authorize": "Det uppstod ett fel vid behandlingen av betalningen. Försök igen eller använd en annan betalningsmetod."
       }
     },
     "notices": {

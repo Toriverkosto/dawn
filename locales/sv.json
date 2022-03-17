@@ -131,7 +131,7 @@
         "pick_up_available": "Upphämtning tillgänglig",
         "pick_up_available_at_html": "Upphämtning tillgänglig på <span class=\"color-foreground\">{{ location_name }}<\/span>",
         "pick_up_unavailable_at_html": "Det går för närvarande inte att få upphämtning på <span class=\"color-foreground\">{{ location_name }}<\/span>",
-        "unavailable": "Det gick inte att ladda hämtningstillgänglighet",
+        "unavailable": "Det gick inte att ladda upphämtnings tillgänglighet",
         "refresh": "Uppdatera"
       },
       "media": {
@@ -140,10 +140,24 @@
         "play_model": "Spela 3D-visaren",
         "play_video": "Spela video"
       },
-      "view_full_details": "Visa alla uppgifter"
+      "view_full_details": "Visa alla uppgifter",
+      "taxable": "Inklusive moms",
+      "not_taxable": "Pris som visat. Begagnad artikel, ej avdragsgill.",
+      "product_condition_heading": "Produkt skick:",
+      "optical_condition_heading": "Optik: {{ condition }} \/ 5",
+      "mechanical_condition_heading": "Mekanik: {{ condition }} \/ 5",
+      "cosmetic_condition_heading": "Kosmetik: {{ condition }} \/ 5"
     },
     "modal": {
       "label": "Mediagalleri"
+    },
+    "database": {
+      "none_available": "Inga produkter tillgängliga för närvarande."
+    },
+    "tax": {
+      "taxable_property_name": "Inklusive moms.",
+      "taxable_property_value": "Endast EU.",
+      "not_taxable_property_name": "moms"
     }
   },
   "templates": {

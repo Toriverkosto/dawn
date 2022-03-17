@@ -497,6 +497,13 @@
         "no_real_orders_dev_store": "Denna butik kan inte acceptera verkliga ordrar eller verkliga betalningar.",
         "taxes_not_included": "Skatt ingår ej",
         "no_taxes_banner_content": "Skatt debiteras inte på denna order. När du väl har accepterat betalningen, kan skatt inte längre läggas till."
+      },
+      "field_errors": {
+        "tips_invalid_tip_amount": "Ange dricks som inte är mer än %{amount}",
+        "physical_gift_card_invalid_quantity": "Artiklar för fysiska presentkort måste ha en kvantitet som matchar antalet presentkortskoder."
+      },
+      "payment_errors": {
+        "three_d_secure_failed_duplicate": "3D Secure-autentiseringen för kreditkortet misslyckades eftersom ett annat kort redan behandlas."
       }
     },
     "notices": {

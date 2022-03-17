@@ -513,6 +513,14 @@
         "wait": {
           "long": "Du får ett mail så snart din order har behandlats. Vi får för närvarande en hög volym ordrar."
         }
+      },
+      "thank_you": {
+        "shipping_address_map_title": "Google-kartan visar positionen av din leveransadress: %{address}",
+        "gift_card_confirmation_by_text": "Presentkortet skickas via sms. Försök att skicka dem igen eller kontakta oss, om du inte har fått dina presentkort.",
+        "gift_card_confirmation_by_email": "Presentkort skickas via e-mail. Försök att skicka dem igen eller kontakta oss, om du inte har fått dina presentkort.",
+        "thank_you_confirmed_order_with_email_pick_up": "Du får ett e-postmeddelande när din order är klar för uthämtning.",
+        "thank_you_confirmed_order_with_email_and_phone_pick_up": "Du får ett e-postmeddelande när din order är klar för uthämtning.",
+        "order_status_confirmed_order_with_email_pick_up": "Du får ett e-postmeddelande när din order är klar för uthämtning."
       }
     },
     "notices": {

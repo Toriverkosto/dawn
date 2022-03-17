@@ -520,7 +520,9 @@
         "gift_card_confirmation_by_email": "Presentkort skickas via e-mail. Försök att skicka dem igen eller kontakta oss, om du inte har fått dina presentkort.",
         "thank_you_confirmed_order_with_email_pick_up": "Du får ett e-postmeddelande när din order är klar för uthämtning.",
         "thank_you_confirmed_order_with_email_and_phone_pick_up": "Du får ett e-postmeddelande när din order är klar för uthämtning.",
-        "order_status_confirmed_order_with_email_pick_up": "Du får ett e-postmeddelande när din order är klar för uthämtning."
+        "order_status_confirmed_order_with_email_pick_up": "Du får ett e-postmeddelande när din order är klar för uthämtning.",
+        "order_status_confirmed_order_with_phone_pick_up": "Du får ett sms när din order är klar för uthämtning.",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "Du får ett e-postmeddelande och ett sms när din order är klar för uthämtning."
       }
     },
     "notices": {

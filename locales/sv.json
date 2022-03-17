@@ -504,6 +504,15 @@
       },
       "payment_errors": {
         "three_d_secure_failed_duplicate": "3D Secure-autentiseringen för kreditkortet misslyckades eftersom ett annat kort redan behandlas."
+      },
+      "shipping_errors": {
+        "shipping_method": "Din varukorg har uppdaterats och den tidigare fraktkostnad är inte giltig. Välj ett nytt alternativ."
+      },
+      "processing": {
+        "complete_your_purchase_title_error": "Korrigera din betalningsinformation",
+        "wait": {
+          "long": "Du får ett mail så snart din order har behandlats. Vi får för närvarande en hög volym ordrar."
+        }
       }
     },
     "notices": {

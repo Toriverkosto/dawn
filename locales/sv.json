@@ -474,6 +474,13 @@
       },
       "delivery_options": {
         "pick_up_in_four_hours": "Du får ett mejl när din beställning är klar för avhämtning."
+      },
+      "stock": {
+        "title": "Slutsåld",
+        "items_unavailable_notice": "Vissa objekt är inte längre tillgängliga ELLER har reserverats av en annan kund.",
+        "removed_from_cart_notice": "Ta bort från varukorgen",
+        "sold_out_label": "Såld",
+        "remove_from_cart_button_label": "Ta bort från varukorgen"
       }
     }
   }

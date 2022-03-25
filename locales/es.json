@@ -145,7 +145,8 @@
       "cosmetic_condition_heading": "Estado Estetico: {{ condition }} \/ 5",
       "taxable": "El IVA de tu país incluido (UE solo). ",
       "product_condition_heading": "Condiciones Producto:",
-      "optical_condition_heading": "Estado Optico: {{ condition }} \/ 5"
+      "optical_condition_heading": "Estado Optico: {{ condition }} \/ 5",
+      "not_taxable": "Precio final. Artículos usados no tiene IVA deducible. "
     },
     "modal": {
       "label": "Galería multimedia"

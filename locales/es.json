@@ -227,7 +227,8 @@
         "title": "¿Tienes una cuenta?",
         "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Inicia sesión<\/a> para finalizar tus compras con mayor rapidez."
       },
-      "terms_and_conditions_alert": "Tienes que aceptar los términos y condiciones para finalizar la compra. "
+      "terms_and_conditions_alert": "Tienes que aceptar los términos y condiciones para finalizar la compra. ",
+      "terms_and_conditions_checkbox_label_html": "He leído y estoy de acuerdo con los<a class=\"link underlined-link\" href=\"{{ link }}\">terminos y condiciones<\/a>."
     },
     "footer": {
       "payment": "Formas de pago",

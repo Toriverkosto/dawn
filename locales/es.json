@@ -140,10 +140,21 @@
         "play_model": "Reproducir el visor 3D",
         "play_video": "Reproducir video"
       },
-      "view_full_details": "Ver todos los detalles"
+      "view_full_details": "Ver todos los detalles",
+      "mechanical_condition_heading": "Estado Estetico: {{ condition }} \/ 5",
+      "cosmetic_condition_heading": "Estado Estetico: {{ condition }} \/ 5"
     },
     "modal": {
       "label": "Galería multimedia"
+    },
+    "database": {
+      "none_available": "No hay articulos disponibles en estos momentos. "
+    },
+    "tax": {
+      "taxable_property_name": "El IVA de tu pais incluido. ",
+      "taxable_property_value": "Solo UE. ",
+      "not_taxable_property_name": "IVA",
+      "not_taxable_property_value": "Precio final. Artículos usados no tiene IVA deducible. "
     }
   },
   "templates": {

@@ -142,7 +142,10 @@
       },
       "view_full_details": "Ver todos los detalles",
       "mechanical_condition_heading": "Estado Estetico: {{ condition }} \/ 5",
-      "cosmetic_condition_heading": "Estado Estetico: {{ condition }} \/ 5"
+      "cosmetic_condition_heading": "Estado Estetico: {{ condition }} \/ 5",
+      "taxable": "El IVA de tu país incluido (UE solo). ",
+      "product_condition_heading": "Condiciones Producto:",
+      "optical_condition_heading": "Estado Optico: {{ condition }} \/ 5"
     },
     "modal": {
       "label": "Galería multimedia"
@@ -222,7 +225,8 @@
       "login": {
         "title": "¿Tienes una cuenta?",
         "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Inicia sesión<\/a> para finalizar tus compras con mayor rapidez."
-      }
+      },
+      "terms_and_conditions_alert": "Tienes que aceptar los términos y condiciones para finalizar la compra. "
     },
     "footer": {
       "payment": "Formas de pago",

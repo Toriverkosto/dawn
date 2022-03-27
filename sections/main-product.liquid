@@ -650,10 +650,10 @@
   {%- assign featured_media = product.featured_media -%}
 {%- endif -%}
 
-{% if section.settings.product_role == "database" -%}
+{% if section.settings.product_role == "database" and product.metafields.reviews.rating_count.value > 0 -%}
   {%- assign rating = product.metafields.reviews.rating.value -%}
   {%- assign rating_count = product.metafields.reviews.rating_count.value -%}
-{%- elsif section.settings.product_role == "stock" and database_product -%}
+{%- elsif section.settings.product_role == "stock" and database_product and database_product.metafields.reviews.rating_count.value > 0 -%}
   {%- assign rating = database_product.metafields.reviews.rating.value -%}
   {%- assign rating_count = database_product.metafields.reviews.rating_count.value -%}
 {%- endif %}

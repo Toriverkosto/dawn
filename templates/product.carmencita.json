@@ -1,11 +1,5 @@
 {
   "sections": {
-    "1633415810f8958dcd": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"page-width page-width--wide\">\n<p style=\"color: #b3b3b3\">{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span> ID: {{ current_variant.sku }}<\/span> {% if current_variant.barcode %}{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span>\/ Code: {{ current_variant.barcode }}<\/span><\/p>{% endif %}<\/div>"
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -87,11 +81,12 @@
         "60478f14-689d-44eb-b06c-7525ecd07f62"
       ],
       "settings": {
+        "product_role": "stock",
         "enable_sticky_info": true,
         "hide_variants": false,
         "enable_video_looping": false,
         "show_breadcrumbs": true,
-        "show_sku_and_barcode": false
+        "show_sku_and_barcode": true
       }
     },
     "1632393643eca7584e": {
@@ -222,7 +217,6 @@
     }
   },
   "order": [
-    "1633415810f8958dcd",
     "main",
     "1632393643eca7584e",
     "163292242191680787",

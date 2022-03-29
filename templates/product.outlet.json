@@ -1,11 +1,5 @@
 {
   "sections": {
-    "16334152711e2727b9": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"page-width page-width--wide\">\n<p style=\"color: #b3b3b3\">{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span> ID: {{ current_variant.sku }}<\/span> {% if current_variant.barcode %}{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span>\/ Code: {{ current_variant.barcode }} \/ {{ product.metafields.kameratori.host | metafield_text }}<\/span><\/p>{% endif %}<\/div>"
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -18,7 +12,8 @@
         },
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+          }
         },
         "671ba54b-0342-4dd7-bdfe-26cccec6c528": {
           "type": "custom_liquid",
@@ -29,7 +24,8 @@
         },
         "price": {
           "type": "price",
-          "settings": {}
+          "settings": {
+          }
         },
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d": {
           "type": "custom_liquid",
@@ -48,7 +44,8 @@
           "disabled": true,
           "settings": {
             "text": "Camera Condition Ratings",
-            "page": "camera-condition-ratings"
+            "page": "camera-condition-ratings",
+            "show_button": false
           }
         },
         "buy_buttons": {
@@ -111,10 +108,12 @@
         "a41a8e68-deb3-4414-bc77-846ae026a7ec"
       ],
       "settings": {
+        "product_role": "stock",
         "enable_sticky_info": true,
         "hide_variants": false,
         "enable_video_looping": false,
-        "show_breadcrumbs": true
+        "show_breadcrumbs": true,
+        "show_sku_and_barcode": true
       }
     },
     "163178438845c86d64": {
@@ -234,7 +233,6 @@
     }
   },
   "order": [
-    "16334152711e2727b9",
     "main",
     "163178438845c86d64",
     "1632735936daa328ef",

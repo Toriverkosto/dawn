@@ -1,11 +1,5 @@
 {
   "sections": {
-    "1633415698595a2b5a": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"page-width page-width--wide\">\n<p style=\"color: #b3b3b3\">{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span> ID: {{ current_variant.sku }}<\/span> {% if current_variant.barcode %}{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span>\/ Code: {{ current_variant.barcode }}<\/span><\/p>{% endif %}<\/div>"
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -81,6 +75,7 @@
           "settings": {
             "em_email_inline_button_display": true,
             "em_email_float_button_display": false,
+            "em_email_btn_all_display": false,
             "em_email_button_color": "#ffffff",
             "em_email_button_hover_color": "#202223",
             "em_email_button_background": "#333333",
@@ -93,7 +88,6 @@
             "border_radius": 2,
             "em_email_button_font_family": "inherit",
             "em_email_button_font_weight": "inherit",
-            "em_email_float_button_top": 0,
             "em_show_powered_by": "block",
             "em_email_popup_btn_value": "EMAIL ME WHEN AVAILABLE",
             "em_email_popup_header_text": "EMAIL ME WHEN AVAILABLE",
@@ -170,11 +164,12 @@
         "d77e20c7-084d-471a-954d-4bc9d03753ea"
       ],
       "settings": {
+        "product_role": "stock",
         "enable_sticky_info": true,
         "hide_variants": false,
         "enable_video_looping": false,
         "show_breadcrumbs": true,
-        "show_sku_and_barcode": false
+        "show_sku_and_barcode": true
       }
     },
     "1632393643eca7584e": {
@@ -283,7 +278,6 @@
     }
   },
   "order": [
-    "1633415698595a2b5a",
     "main",
     "1632393643eca7584e",
     "16324019941e428b8f",

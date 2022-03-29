@@ -609,40 +609,56 @@
 {%- endif -%}
 
 
-{% for tag in product.tags %}
-  {% if tag contains "_gid-" %}
-    {% assign group_id = tag | slice: 5, 8 %}
-  {% endif %}
-{% endfor %}
+{%- for tag in product.tags -%}
+  {%- if tag contains "_gid-" -%}
+    {%- assign group_id = tag | slice: 5, 8 -%}
+  {%- endif -%}
+{%- endfor -%}
 
-{% assign low_price = 999999999999999 %}
-{% assign high_price = 0 %}
-{% assign offer_count = 0 %}
-{% if group_id %}
-  {% for collection in product.collections %}
-    {% if collection.metafields.kameratori.group_id == group_id and collection.products_count > 0 %}
-      {% assign group_collection_index = forloop.index0 %}
-      {% for product in collection.products %}
-        {% unless product.handle == current_product.handle or product.tags contains 'item-database' %}
-          {% if product.available %}
-            {% assign products_available = true %}
-            {% assign offer_count = offer_count | plus: 1 %}
-            {% assign last_available_index = forloop.index0 %}
-            {% if product.first_available_variant.price > high_price %}
-              {% assign high_price = product.first_available_variant.price %}
-            {% endif %}
-            {% if product.first_available_variant.price < low_price %}
-              {% assign low_price = product.first_available_variant.price %}
-            {% endif %}
-          {% endif %}
-        {% endunless %}
-        {% if product.tags contains 'item-database'  %}
-          {% assign database_product = product %}
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-  {% endfor %}
-{% endif %}
+{% comment %}Look at available products for offers{% endcomment %}
+{%- assign low_price = 999999999999999 -%}
+{%- assign high_price = 0 -%}
+{%- assign offer_count = 0 -%}
+{%- if group_id -%}
+  {%- for collection in product.collections -%}
+    {%- if collection.metafields.kameratori.group_id == group_id and collection.products_count > 0 -%}
+      {%- assign group_collection_index = forloop.index0 -%}
+      {%- for product in collection.products -%}
+        {%- unless product.handle == current_product.handle or product.tags contains 'item-database' -%}
+          {%- if product.available -%}
+            {%- assign offer_count = offer_count | plus: 1 -%}
+            {%- assign last_available_index = forloop.index0 -%}
+            {%- if product.first_available_variant.price > high_price -%}
+              {%- assign high_price = product.first_available_variant.price -%}
+            {%- endif -%}
+            {%- if product.first_available_variant.price < low_price -%}
+              {%- assign low_price = product.first_available_variant.price -%}
+            {%- endif -%}
+          {%- endif -%}
+        {%- endunless -%}
+        {%- if product.tags contains 'item-database'  -%}
+          {%- assign database_product = product -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{% comment %}Look at sold products for offers{% endcomment %}
+{%- assign products_sold = false -%}
+{%- if section.settings.product_role == "database" and product.metafields.kameratori.sales and offer_count == 0 -%}
+  {%- for sale in product.metafields.kameratori.sales.value.sales -%}
+    {%- assign products_sold = true -%}
+    {%- assign price = sale.price | times: 100 -%}
+    {%- if price > high_price -%}
+      {%- assign high_price = price -%}
+    {%- endif -%}
+    {%- if price < low_price -%}
+      {%- assign low_price = price -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
 
 {%- if product.selected_or_first_available_variant.featured_media -%}
   {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
@@ -650,14 +666,21 @@
   {%- assign featured_media = product.featured_media -%}
 {%- endif -%}
 
-{% if section.settings.product_role == "database" and product.metafields.reviews.rating_count.value > 0 -%}
+{%- assign rating = false -%}
+{%- if section.settings.product_role == "database" and product.metafields.reviews.rating_count.value > 0 -%}
   {%- assign rating = product.metafields.reviews.rating.value -%}
   {%- assign rating_count = product.metafields.reviews.rating_count.value -%}
 {%- elsif section.settings.product_role == "stock" and database_product and database_product.metafields.reviews.rating_count.value > 0 -%}
   {%- assign rating = database_product.metafields.reviews.rating.value -%}
   {%- assign rating_count = database_product.metafields.reviews.rating_count.value -%}
-{%- endif %}
+{%- endif -%}
 
+{% assign add_offers = false -%}
+{% if offer_count > 0 or products_sold -%}
+  {% assign add_offers = true -%}
+{% endif %}
+
+{%- if section.settings.product_role == "stock" or add_offers or rating -%}
 <script type="application/ld+json">
     {
       "@context": "http://schema.org/",
@@ -695,12 +718,14 @@
             "priceValidUntil": "{{ 'now' | date: "%s" | plus: 31536000 | date: "%Y-%m-%dT%H:%M:%S%z" }}"
           }{% unless forloop.last %},{% endunless %}
         {%- endfor %}
-      ]{%- elsif section.settings.product_role == "database" and products_available and group_id %},
+      ]{%- elsif section.settings.product_role == "database" and add_offers %},
       "offers": {
         "@type": "AggregateOffer",
         "lowPrice": "{{ low_price | divided_by: 100.00 | json }}",
         "highPrice": "{{ high_price | divided_by: 100.00 | json}}",
+        {%- if offer_count > 0 %}
         "offerCount": {{ offer_count }},
+        {% endif %}
         "priceCurrency": "EUR"
       }{%- endif -%}
       {% if rating %},
@@ -713,6 +738,7 @@
       }{% endif %}
     }
 </script>
+{%- endif -%}
 
 {% schema %}
 {

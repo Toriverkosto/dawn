@@ -38,22 +38,18 @@
         "full_width": true
       }
     },
-    "16334155223f575e74": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"page-width page-width--wide\">\n<p style=\"color: #b3b3b3\">{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span> ID: {{ current_variant.sku }}<\/span> {% if current_variant.barcode %}{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span>\/ Code: {{ current_variant.barcode }}<\/span><\/p>{% endif %}<\/div>"
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+          }
         },
         "price": {
           "type": "price",
-          "settings": {}
+          "settings": {
+          }
         },
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d": {
           "type": "custom_liquid",
@@ -63,7 +59,8 @@
         },
         "8a1f013f-3fbd-4ebb-b70b-fd9e114e338b": {
           "type": "quantity_selector",
-          "settings": {}
+          "settings": {
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -124,7 +121,8 @@
           "type": "popup",
           "settings": {
             "text": "About VALOI",
-            "page": "about-valoi"
+            "page": "about-valoi",
+            "show_button": false
           }
         }
       },
@@ -143,10 +141,12 @@
         "9b20a83b-fe5d-4d60-80fb-5e93ee1a61c2"
       ],
       "settings": {
+        "product_role": "stock",
         "enable_sticky_info": true,
         "hide_variants": false,
         "enable_video_looping": false,
-        "show_breadcrumbs": true
+        "show_breadcrumbs": true,
+        "show_sku_and_barcode": true
       }
     },
     "163178438845c86d64": {
@@ -224,7 +224,6 @@
   },
   "order": [
     "163282385185599d93",
-    "16334155223f575e74",
     "main",
     "163178438845c86d64",
     "16321391205a6cb4a0",

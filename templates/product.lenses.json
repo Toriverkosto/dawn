@@ -1,11 +1,5 @@
 {
   "sections": {
-    "163179108960277131": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"page-width page-width--wide\">\n<p style=\"color: #b3b3b3\">{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span> ID: {{ current_variant.sku }}<\/span> {% if current_variant.barcode %}{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span>\/ Code: {{ current_variant.barcode }} {{ product.metafields.kameratori.host | metafield_text }}<\/span><\/p>{% endif %}<\/div>"
-      }
-    },
     "1645191454f79a9ff8": {
       "type": "apps",
       "settings": {
@@ -154,11 +148,12 @@
         "a41a8e68-deb3-4414-bc77-846ae026a7ec"
       ],
       "settings": {
+        "product_role": "stock",
         "enable_sticky_info": true,
         "hide_variants": false,
         "enable_video_looping": false,
         "show_breadcrumbs": true,
-        "show_sku_and_barcode": false
+        "show_sku_and_barcode": true
       }
     },
     "163178438845c86d64": {
@@ -269,7 +264,6 @@
     }
   },
   "order": [
-    "163179108960277131",
     "1645191454f79a9ff8",
     "main",
     "163178438845c86d64",

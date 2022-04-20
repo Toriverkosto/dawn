@@ -70,6 +70,13 @@
             "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"supplies\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n          <\/div>\n{% endunless %}"
           }
         },
+        "5a165a99-b822-4508-b265-c2496f14294e": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<b>Have one?\n<a href=\"\/pages\/sell-or-trade-your-used-camera-gear\">Sell to us!<\/a><\/b>"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -139,6 +146,7 @@
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
         "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e",
+        "5a165a99-b822-4508-b265-c2496f14294e",
         "buy_buttons",
         "4fc793ac-a118-4f11-a2c8-eaa352ca1d8c",
         "9201f616-91de-46a1-910a-4702d782a6ca",

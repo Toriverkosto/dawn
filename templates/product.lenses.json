@@ -70,11 +70,13 @@
             "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"supplies\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n          <\/div>\n{% endunless %}"
           }
         },
-        "5a165a99-b822-4508-b265-c2496f14294e": {
-          "type": "custom_liquid",
+        "1c28b91b-10db-4a64-8a10-5a06f85ccf14": {
+          "type": "popup",
           "disabled": true,
           "settings": {
-            "custom_liquid": "<b>Have one?\n<a href=\"\/pages\/sell-or-trade-your-used-camera-gear\">Sell to us!<\/a><\/b>"
+            "text": "Sell Your {{ product.vendor }} Gear!",
+            "page": "sell-or-trade-your-used-camera-gear",
+            "show_button": false
           }
         },
         "buy_buttons": {
@@ -134,6 +136,16 @@
             "page": "",
             "icon": "eye"
           }
+        },
+        "57f7f440-8529-43fc-b001-797465faabcf": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Sell Your Gear to Us!",
+            "content": "<p>We sell & trade cameras on top of buying! If you're looking to upgrade or change your gear, why not sell directly to us and save yourself the hassle?<\/p><p><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\"><strong>Click here to fill out our form!<\/strong><\/a><\/p>",
+            "page": "",
+            "icon": "price_tag"
+          }
         }
       },
       "block_order": [
@@ -146,14 +158,15 @@
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
         "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e",
-        "5a165a99-b822-4508-b265-c2496f14294e",
+        "1c28b91b-10db-4a64-8a10-5a06f85ccf14",
         "buy_buttons",
         "4fc793ac-a118-4f11-a2c8-eaa352ca1d8c",
         "9201f616-91de-46a1-910a-4702d782a6ca",
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
-        "a41a8e68-deb3-4414-bc77-846ae026a7ec"
+        "a41a8e68-deb3-4414-bc77-846ae026a7ec",
+        "57f7f440-8529-43fc-b001-797465faabcf"
       ],
       "settings": {
         "product_role": "stock",

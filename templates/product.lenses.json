@@ -72,7 +72,6 @@
         },
         "1c28b91b-10db-4a64-8a10-5a06f85ccf14": {
           "type": "popup",
-          "disabled": true,
           "settings": {
             "text": "Sell Your {{ product.vendor }} Gear!",
             "page": "sell-or-trade-your-used-camera-gear",
@@ -139,7 +138,6 @@
         },
         "57f7f440-8529-43fc-b001-797465faabcf": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "heading": "Sell Your Gear to Us!",
             "content": "<p>We sell & trade cameras on top of buying! If you're looking to upgrade or change your gear, why not sell directly to us and save yourself the hassle?<\/p><p><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\"><strong>Click here to fill out our form!<\/strong><\/a><\/p>",

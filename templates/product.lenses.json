@@ -73,7 +73,7 @@
         "1c28b91b-10db-4a64-8a10-5a06f85ccf14": {
           "type": "popup",
           "settings": {
-            "text": "Sell Your {{ product.vendor }} Gear!",
+            "text": "Have one? Sell it to us!",
             "page": "sell-or-trade-your-used-camera-gear",
             "show_button": false
           }

@@ -65,6 +65,14 @@
             "custom_liquid": "{{ product.metafields.kameratori.host | metafield_tag }}\n\n{{ product.metafields.kameratori.host.value.id }}"
           }
         },
+        "92fd3d60-c515-429c-a9e4-6bb9e3712c80": {
+          "type": "popup",
+          "settings": {
+            "text": "Sell Your {{ product.vendor }} Gear!",
+            "page": "sell-or-trade-your-used-camera-gear",
+            "show_button": false
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -128,6 +136,15 @@
             "page": "",
             "icon": "eye"
           }
+        },
+        "f8962c4a-da22-4a3d-8f73-05ff4d13ed57": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Sell Your Gear to Us!",
+            "content": "<p>We sell & trade cameras on top of buying! If you're looking to upgrade or change your gear, why not sell directly to us and save yourself the hassle?<br\/><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\">Click here to fill out our form!<\/a><\/p>",
+            "page": "",
+            "icon": "price_tag"
+          }
         }
       },
       "block_order": [
@@ -138,6 +155,7 @@
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
         "99452d1b-4d7e-4077-a88b-abeded9e84f2",
+        "92fd3d60-c515-429c-a9e4-6bb9e3712c80",
         "buy_buttons",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
         "235b8cd5-c263-4cde-9104-81a9203d4384",
@@ -145,9 +163,11 @@
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
-        "a41a8e68-deb3-4414-bc77-846ae026a7ec"
+        "a41a8e68-deb3-4414-bc77-846ae026a7ec",
+        "f8962c4a-da22-4a3d-8f73-05ff4d13ed57"
       ],
       "settings": {
+        "product_role": "stock",
         "enable_sticky_info": true,
         "hide_variants": false,
         "enable_video_looping": false,

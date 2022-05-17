@@ -4,7 +4,7 @@
     "theme": "Dawn STABLE",
     "primaryLocale": "en"
   },
-  "tsPublished": 1646819585,
+  "tsPublished": 1652790417,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -334,12 +334,12 @@
         "sv": "Bibehållande"
       },
       "declFirstParty": {
-        "da": "Første fest",
+        "da": "First-party",
         "en": "First-party",
-        "es": "Primera fiesta",
-        "fi": "Ensimmäiset juhlat",
-        "fr": "Première fête",
-        "sv": "Första fest"
+        "es": "First-party",
+        "fi": "First-party",
+        "fr": "First-party",
+        "sv": "First-party"
       },
       "declThirdParty": {
         "da": "Tredje part",
@@ -619,10 +619,10 @@
       }
     },
     "content": {
-      "href": "https:\/\/kamerastore.com\/policies\/privacy-policy",
+      "href": "https:\/\/kamerastore.fi\/policies\/privacy-policy",
       "close": "&#10005;",
       "target": "",
-      "logo": "<img class=\"cc-banner-logo\" style=\"height: 30px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0521\/9496\/7750\/t\/14\/assets\/pandectes-logo.png?v=1643116419\" \/>"
+      "logo": "<img class=\"cc-banner-logo\" style=\"height: 30px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0521\/9496\/7750\/t\/14\/assets\/pandectes-logo.png?v=1643116419\" alt=\"Kamerastore.com\" \/>"
     },
     "window": "<div role=\"dialog\" aria-live=\"polite\" aria-label=\"cookieconsent\" aria-describedby=\"cookieconsent:desc\" id=\"pandectes-banner\" class=\"cc-window-wrapper cc-top-wrapper\"><div class=\"pd-cookie-banner-window cc-window {{classes}}\"><!--googleoff: all-->{{children}}<!--googleon: all--><\/div><\/div>",
     "compliance": {
@@ -667,7 +667,7 @@
     "blockingPage": false,
     "showOnlyLandingPage": false,
     "leaveSiteUrl": "https:\/\/www.google.com",
-    "linkRespectStoreLang": false
+    "linkRespectStoreLang": true
   },
   "cookies": {
     "0": [

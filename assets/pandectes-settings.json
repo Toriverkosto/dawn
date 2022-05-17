@@ -4,7 +4,7 @@
     "theme": "Dawn STABLE",
     "primaryLocale": "en"
   },
-  "tsPublished": 1652790513,
+  "tsPublished": 1652790561,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -659,7 +659,7 @@
     "showPoweredBy": false,
     "isActive": true,
     "implicitSavePreferences": false,
-    "cookieIcon": true,
+    "cookieIcon": false,
     "blockBots": false,
     "showCookiesDetails": true,
     "cookiesBlockedByDefault": "0",

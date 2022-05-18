@@ -17,7 +17,7 @@
     "16528584685f19cc5f": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"tagcloud page-width page-width--wide\">\n\tAll Items: <a class=\"pill important\" href=\"\/collections\/new-products-in-last-24-hours\">Today: <b>{{ collections['new-products-in-last-24-hours'].all_products_count }}<\/b><\/a>\n\t<a class=\"pill\" href=\"\/collections\/new-last-7-days\">This week: <b>{{ collections['new-last-7-days'].all_products_count }}<\/b><\/a>\n<a class=\"pill important\" href=\"\/collections\/all-items\">Total in-stock: <b>{{ collections['all-items'].all_products_count }}<\/b><\/a>\n<\/div>"
+        "custom_liquid": "<div class=\"tagcloud page-width page-width--wide\">\n\tAll Items: <a class=\"pill important\" href=\"\/collections\/new-products-in-last-24-hours\">Today: <b>{{ collections['new-products-in-last-24-hours'].all_products_count }}<\/b><\/a>\n\t<a class=\"pill\" href=\"\/collections\/new-last-7-days\">This week: <b>{{ collections['new-last-7-days'].all_products_count }}<\/b><\/a>\n<\/div>"
       }
     },
     "product-grid": {

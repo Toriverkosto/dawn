@@ -9,7 +9,6 @@
     },
     "1652858265324f2f78": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"tagcloud page-width page-width--wide\">\n\tKamerastore Statistics: <a class=\"pill important\" href=\"\/collections\/new-products-in-last-24-hours\"><b>{{ collections['new-products-in-last-24-hours'].all_products_count }}<\/b> Items added today<\/a>\n\t<a class=\"pill\" href=\"\/collections\/new-last-7-days\"><b>{{ collections['new-last-7-days'].all_products_count }}<\/b> Added this week<\/a>\n<\/div>"
       }

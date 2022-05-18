@@ -35,7 +35,7 @@
             "settings": {
               "text": "We buy & trade cameras!",
               "color_scheme": "accent-1",
-              "link": "https:\/\/kamerastore.com\/pages\/sell-or-trade-your-used-camera-gear?utm_source=Homepage&utm_medium=SELL+Button+Click&utm_campaign=SELL+Button&utm_id=Homepage+SELL+click",
+              "link": "shopify:\/\/pages\/sell-or-trade-your-used-camera-gear",
               "use_custom_color": false,
               "color_text": "#121212",
               "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"

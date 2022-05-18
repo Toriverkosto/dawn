@@ -2,6 +2,7 @@
   "sections": {
     "16528584685f19cc5f": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"tagcloud page-width page-width--wide\">\n\tAll Items: <a class=\"pill important\" href=\"\/collections\/new-products-in-last-24-hours\">Today: <b>{{ collections['new-products-in-last-24-hours'].all_products_count }}<\/b><\/a>\n\t<a class=\"pill\" href=\"\/collections\/new-last-7-days\">This week: <b>{{ collections['new-last-7-days'].all_products_count }}<\/b><\/a>\n<\/div>"
       }

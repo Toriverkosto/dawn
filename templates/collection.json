@@ -1,5 +1,11 @@
 {
   "sections": {
+    "16528584685f19cc5f": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"tagcloud page-width page-width--wide\">\n\tAll Items: <a class=\"pill important\" href=\"\/collections\/new-products-in-last-24-hours\">Today: <b>{{ collections['new-products-in-last-24-hours'].all_products_count }}<\/b><\/a>\n\t<a class=\"pill\" href=\"\/collections\/new-last-7-days\">This week: <b>{{ collections['new-last-7-days'].all_products_count }}<\/b><\/a>\n<\/div>"
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -12,12 +18,6 @@
       "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"tagcloud page-width page-width--wide\">\n\tKamerastore Statistics: <a class=\"pill important\" href=\"\/collections\/new-products-in-last-24-hours\"><b>{{ collections['new-products-in-last-24-hours'].all_products_count }}<\/b> Items added today<\/a>\n\t<a class=\"pill\" href=\"\/collections\/new-last-7-days\"><b>{{ collections['new-last-7-days'].all_products_count }}<\/b> Added this week<\/a>\n<\/div>"
-      }
-    },
-    "16528584685f19cc5f": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"tagcloud page-width page-width--wide\">\n\tAll Items: <a class=\"pill important\" href=\"\/collections\/new-products-in-last-24-hours\">Today: <b>{{ collections['new-products-in-last-24-hours'].all_products_count }}<\/b><\/a>\n\t<a class=\"pill\" href=\"\/collections\/new-last-7-days\">This week: <b>{{ collections['new-last-7-days'].all_products_count }}<\/b><\/a>\n<\/div>"
       }
     },
     "product-grid": {
@@ -39,9 +39,9 @@
     }
   },
   "order": [
+    "16528584685f19cc5f",
     "banner",
     "1652858265324f2f78",
-    "16528584685f19cc5f",
     "product-grid"
   ]
 }

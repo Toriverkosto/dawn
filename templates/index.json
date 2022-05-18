@@ -6,23 +6,23 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Quality Used Camera Gear",
+            "heading": "Thousands of items added each month.",
             "heading_size": "medium"
           }
         },
         "e7f26e54-ad71-4089-8715-2c5bed1d5f1f": {
           "type": "text",
           "settings": {
-            "text": "We use period-appropriate, professional-grade testing equipment to provide you with accurate condition ratings."
+            "text": "Large volume and high quality camera gear! We use period-appropriate, professional-grade testing equipment to provide you with accurate condition ratings."
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "BUY",
-            "button_link_1": "\/collections\/all-items?utm_source=Homepage&utm_medium=BUY+Button+Click&utm_campaign=Buy+Button&utm_id=Homepage+BUY+click",
-            "button_style_secondary_1": true,
-            "button_label_2": "SELL",
+            "button_label_1": "Newly Added Items",
+            "button_link_1": "shopify:\/\/collections\/all-items",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
             "button_link_2": "\/pages\/sell-or-trade-your-used-camera-gear?utm_source=Homepage&utm_medium=SELL+Button+Click&utm_campaign=SELL+Button&utm_id=Homepage+SELL+click",
             "button_style_secondary_2": false
           }

@@ -474,7 +474,17 @@
       },
       "delivery_options": {
         "pick_up_in_four_hours": "Vous recevrez un email quand votre commande est prête à être récupérée",
-        "pick_up": "Récupérer en point de retrait"
+        "pick_up": "Récupérer en point de retrait",
+        "pick_up_in_zero_to_two_hours": "Prêt pour le retrait dans 2 heures",
+        "pick_up_in_two_to_four_hours": "Prêt pour le retrait dans 4 heures",
+        "pick_up_immediately": "Prêt pour le retrait maintenant",
+        "pick_up_next_day": "Prêt pour le retrait le jour suivant"
+      },
+      "stock": {
+        "reduced_label": "Disponibilité réduite"
+      },
+      "order_summary": {
+        "title": "Résumé de la commande"
       }
     }
   }

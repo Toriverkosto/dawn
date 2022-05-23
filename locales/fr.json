@@ -473,7 +473,8 @@
         }
       },
       "delivery_options": {
-        "pick_up_in_four_hours": "Vous recevrez un email quand votre commande est prête à être récupérée"
+        "pick_up_in_four_hours": "Vous recevrez un email quand votre commande est prête à être récupérée",
+        "pick_up": "Récupérer en point de retrait"
       }
     }
   }

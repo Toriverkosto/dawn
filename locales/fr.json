@@ -461,5 +461,17 @@
     "review_token_expired": "You're late. The link is expired!",
     "view_on_instagram": "View on Instagram",
     "login_required_to_review": "Please log in to leave your review"
+  },
+  "shopify": {
+    "checkout": {
+      "general": {
+        "complete_purchase_button_label": "Valider la commande",
+        "continue_to_shipping_method": "Continuer vers les informations de livraison",
+        "choose_shipping_method": "Choisissez un mode de livraison",
+        "errors": {
+          "session_identifier_not_unique_error": "Une erreur s'est produite avec votre commande. Essayez de la valider à nouveau."
+        }
+      }
+    }
   }
 }

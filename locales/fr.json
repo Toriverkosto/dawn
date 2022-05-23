@@ -471,6 +471,9 @@
         "errors": {
           "session_identifier_not_unique_error": "Une erreur s'est produite avec votre commande. Essayez de la valider à nouveau."
         }
+      },
+      "delivery_options": {
+        "pick_up_in_four_hours": "Vous recevrez un email quand votre commande est prête à être récupérée"
       }
     }
   }

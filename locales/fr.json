@@ -492,7 +492,8 @@
         "amount_left_to_pay_label": "Paiement dû :",
         "gift_card_balance_label": "Crédit sur votre carte cadeau :",
         "card_information_notice": "Toutes les transactions sont sécurisées et chiffrées. Les informations de votre carte de crédit ne sont jamais enregistrées.",
-        "card_expired": "Carte Expirée"
+        "card_expired": "Carte Expirée",
+        "card_verification_value_explanation": "Code de sécurité à 3 chiffres généralement situé au dos de votre carte. Le code de sécurité pour les cartes American Express se compose de 4 chiffre et est situé à l'avant de votre carte."
       }
     }
   }

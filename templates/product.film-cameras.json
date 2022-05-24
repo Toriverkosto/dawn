@@ -85,15 +85,6 @@
             "show_button": false
           }
         },
-        "92fd3d60-c515-429c-a9e4-6bb9e3712c80": {
-          "type": "popup",
-          "disabled": true,
-          "settings": {
-            "text": "Have this {{ product.vendor }}? Sell it to us!",
-            "page": "sell-or-trade-your-used-camera-gear",
-            "show_button": false
-          }
-        },
         "f8962c4a-da22-4a3d-8f73-05ff4d13ed57": {
           "type": "collapsible_tab",
           "settings": {
@@ -138,6 +129,14 @@
             "page": "",
             "icon": "eye"
           }
+        },
+        "92fd3d60-c515-429c-a9e4-6bb9e3712c80": {
+          "type": "popup",
+          "settings": {
+            "text": "Have this {{ product.vendor }}? Sell it to us!",
+            "page": "sell-or-trade-your-used-camera-gear",
+            "show_button": false
+          }
         }
       },
       "block_order": [
@@ -152,12 +151,12 @@
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
         "235b8cd5-c263-4cde-9104-81a9203d4384",
         "cd07da4b-ae00-46ee-bf67-5c7799d93921",
-        "92fd3d60-c515-429c-a9e4-6bb9e3712c80",
         "f8962c4a-da22-4a3d-8f73-05ff4d13ed57",
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
-        "a41a8e68-deb3-4414-bc77-846ae026a7ec"
+        "a41a8e68-deb3-4414-bc77-846ae026a7ec",
+        "92fd3d60-c515-429c-a9e4-6bb9e3712c80"
       ],
       "settings": {
         "product_role": "stock",

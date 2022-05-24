@@ -55,7 +55,7 @@
           "type": "custom_liquid",
           "disabled": true,
           "settings": {
-            "custom_liquid": "<p>{%- assign current_variant = product.selected_or_first_available_variant -%}• <b> Item:<\/b>  {{product.title}}\n      {% for t in product.tags %}\n        {% assign parts = t | split: '-'%}\n        {% assign prefix = parts | first %}\n        {% assign value = parts | last %}\n        {% if prefix == 'Category'%}\n          {% assign category = value %}\n        {% elsif prefix == 'SubCategory' %}\n          {% assign sub_category = value %}\n        {% endif %}\n      {% endfor %}\n      {% if category %}<br>\n• <b> Category:<\/b> {{ category }}{% endif %}\n<br>\n      {% if sub_category %}• <b> Sub Category:<\/b> {{ sub_category }}{% endif %}\n  <br>\n• <b> Type:<\/b> {{ product.type }}<\/a>\n<br>\n• <b> Database ID:<\/b> {{ current_variant.sku | upcase}}\n    <\/span><\/p>"
+            "custom_liquid": "<p>{%- assign current_variant = product.selected_or_first_available_variant -%}\n{% for t in product.tags %}\n        {% assign parts = t | split: '-'%}\n        {% assign prefix = parts | first %}\n        {% assign value = parts | last %}\n        {% if prefix == 'System'%}\n          {% assign system = value %}\n        {% endif %}\n      {% endfor %}\n      {% if system %}<br>\n• <b> System:<\/b> {{ system }}{% endif %}\n  <br>\n• <b> Type:<\/b> {{ product.type }}<\/a>\n<br>\n• <b> Database ID:<\/b> {{ current_variant.sku | upcase}}\n    <\/span><\/p>"
           }
         },
         "buy_buttons": {

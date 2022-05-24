@@ -485,6 +485,14 @@
       },
       "order_summary": {
         "title": "Résumé de la commande"
+      },
+      "payment": {
+        "amazon_payments_login_hint": "Il vous sera demandé de vous connecter à votre compte Amazon.",
+        "amazon_payments_logout": "Connectez-vous à partir d'Amazon Pay",
+        "amount_left_to_pay_label": "Paiement dû :",
+        "gift_card_balance_label": "Crédit sur votre carte cadeau :",
+        "card_information_notice": "Toutes les transactions sont sécurisées et chiffrées. Les informations de votre carte de crédit ne sont jamais enregistrées.",
+        "card_expired": "Carte Expirée"
       }
     }
   }

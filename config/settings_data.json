@@ -61,7 +61,7 @@
               "link": "\/policies\/shipping-policy",
               "use_custom_color": false,
               "color_text": "#121212",
-              "color_background": "linear-gradient(#4AB6FF, #4AB6FF)"
+              "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"
             }
           },
           "0ecfe010-1221-43ee-94ac-6330a1a38fb4": {

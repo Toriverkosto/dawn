@@ -30,8 +30,20 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
+          "32123667-f42b-4bb3-a246-106bddb95fa7": {
+            "type": "announcement",
+            "settings": {
+              "text": "Our store is CLOSED for Helatorstai on Thursday, 26.5.",
+              "color_scheme": "accent-1",
+              "link": "",
+              "use_custom_color": true,
+              "color_text": "#121212",
+              "color_background": "linear-gradient(180deg, rgba(249, 229, 0, 1), rgba(249, 229, 0, 1) 97%)"
+            }
+          },
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "We buy & trade cameras!",
               "color_scheme": "accent-1",
@@ -39,6 +51,17 @@
               "use_custom_color": false,
               "color_text": "#121212",
               "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"
+            }
+          },
+          "4c1a92eb-53d3-4f1d-ad29-76811ffcecfe": {
+            "type": "announcement",
+            "settings": {
+              "text": "Shipping to: 🇫🇮 Finland 5€ |  🇪🇺 EU 10€ | 🇺🇸 USA ~$23 | Most other countries 20€",
+              "color_scheme": "background-1",
+              "link": "\/policies\/shipping-policy",
+              "use_custom_color": false,
+              "color_text": "#121212",
+              "color_background": "linear-gradient(#4AB6FF, #4AB6FF)"
             }
           },
           "0ecfe010-1221-43ee-94ac-6330a1a38fb4": {
@@ -60,17 +83,6 @@
               "text": "Europe's Film Camera Specialists since 2010",
               "color_scheme": "accent-2",
               "link": "shopify:\/\/pages\/about-kamerastore",
-              "use_custom_color": false,
-              "color_text": "#121212",
-              "color_background": "linear-gradient(#4AB6FF, #4AB6FF)"
-            }
-          },
-          "4c1a92eb-53d3-4f1d-ad29-76811ffcecfe": {
-            "type": "announcement",
-            "settings": {
-              "text": "Shipping to: 🇫🇮 Finland 5€ |  🇪🇺 EU 10€ | 🇺🇸 USA ~$23 | Most other countries 20€",
-              "color_scheme": "background-1",
-              "link": "\/policies\/shipping-policy",
               "use_custom_color": false,
               "color_text": "#121212",
               "color_background": "linear-gradient(#4AB6FF, #4AB6FF)"
@@ -102,10 +114,11 @@
           }
         },
         "block_order": [
+          "32123667-f42b-4bb3-a246-106bddb95fa7",
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec",
+          "4c1a92eb-53d3-4f1d-ad29-76811ffcecfe",
           "0ecfe010-1221-43ee-94ac-6330a1a38fb4",
           "39d85c5b-b96e-42e4-b90d-5d4e816742eb",
-          "4c1a92eb-53d3-4f1d-ad29-76811ffcecfe",
           "2e0296fe-51ad-44a1-93ae-816b91172f02",
           "1b706781-8f33-4d39-86a0-dccbabbbb12e"
         ],

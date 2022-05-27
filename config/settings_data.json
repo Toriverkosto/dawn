@@ -32,6 +32,7 @@
         "blocks": {
           "32123667-f42b-4bb3-a246-106bddb95fa7": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Our store is CLOSED for Helatorstai on Thursday, 26.5.",
               "color_scheme": "accent-1",
@@ -43,7 +44,6 @@
           },
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "We buy & trade cameras!",
               "color_scheme": "accent-1",

@@ -100,16 +100,15 @@
               "color_background": "linear-gradient(#4AB6FF, #4AB6FF)"
             }
           },
-          "1b706781-8f33-4d39-86a0-dccbabbbb12e": {
+          "1d24da1d-60de-4605-8ed4-d0a450f41a92": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
-              "text": "We Hit 60K Followers on Instagram! Giveaway Info Here!",
-              "color_scheme": "accent-2",
-              "link": "shopify:\/\/pages\/60k-giveaway",
+              "text": "[LS_LANGUAGES_SWITCHER 2441992400]",
+              "color_scheme": "accent-1",
+              "link": "",
               "use_custom_color": false,
               "color_text": "#121212",
-              "color_background": "linear-gradient(#4AB6FF, #4AB6FF)"
+              "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"
             }
           }
         },
@@ -120,7 +119,7 @@
           "0ecfe010-1221-43ee-94ac-6330a1a38fb4",
           "39d85c5b-b96e-42e4-b90d-5d4e816742eb",
           "2e0296fe-51ad-44a1-93ae-816b91172f02",
-          "1b706781-8f33-4d39-86a0-dccbabbbb12e"
+          "1d24da1d-60de-4605-8ed4-d0a450f41a92"
         ],
         "settings": {
         }

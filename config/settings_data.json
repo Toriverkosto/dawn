@@ -102,8 +102,9 @@
           },
           "1d24da1d-60de-4605-8ed4-d0a450f41a92": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
-              "text": "[LS_LANGUAGES_SWITCHER 2441992400]",
+              "text": "",
               "color_scheme": "accent-1",
               "link": "",
               "use_custom_color": false,

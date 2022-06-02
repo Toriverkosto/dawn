@@ -67,8 +67,66 @@
         "show_rating": false
       }
     },
+    "165416468256763b39": {
+      "type": "collection-list",
+      "blocks": {
+        "16541646820345eb76-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "film-cameras"
+          }
+        },
+        "85941df5-a143-4e6a-b5af-97eb8aaa757b": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "digital-cameras"
+          }
+        },
+        "16541646820345eb76-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "lenses"
+          }
+        },
+        "16541646820345eb76-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "accessories"
+          }
+        },
+        "f5444e3e-de5a-4313-8503-d0094cdf263a": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "film"
+          }
+        },
+        "7b853353-ae5a-4b5a-a0e9-6f117bbdc39a": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "lab"
+          }
+        }
+      },
+      "block_order": [
+        "16541646820345eb76-0",
+        "85941df5-a143-4e6a-b5af-97eb8aaa757b",
+        "16541646820345eb76-1",
+        "16541646820345eb76-2",
+        "f5444e3e-de5a-4313-8503-d0094cdf263a",
+        "7b853353-ae5a-4b5a-a0e9-6f117bbdc39a"
+      ],
+      "settings": {
+        "title": "Collections",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": true,
+        "image_padding": true,
+        "show_view_all": false
+      }
+    },
     "16328192199ca25f9a": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Film Cameras",
         "collection": "film-cameras",
@@ -240,10 +298,10 @@
         "swipe_on_mobile": true,
         "image_ratio": "adapt",
         "show_secondary_image": true,
-        "add_image_padding": false,
+        "add_image_padding": true,
         "show_image_outline": false,
         "show_vendor": true,
-        "show_rating": false
+        "show_rating": true
       }
     },
     "16328199566df3daf4": {
@@ -382,6 +440,7 @@
     "image_banner",
     "16336738395370bc94",
     "featured_products",
+    "165416468256763b39",
     "16328192199ca25f9a",
     "1645107907864cbb1c",
     "1637242258da800a0c",

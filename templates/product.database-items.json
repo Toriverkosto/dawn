@@ -109,6 +109,14 @@
             "custom_liquid": "<a class=\"button\" style=\"margin-left: 0.5rem;\" href=\"\/search?q={{ product.selected_or_first_available_variant.sku}}&options%5Bprefix%5D=last\">Check if Available<\/a>"
           }
         },
+        "b44551dc-08f3-410c-91b5-8893f2b4a2d7": {
+          "type": "popup",
+          "settings": {
+            "text": "Sell to Us",
+            "page": "sell-or-trade-your-used-camera-gear",
+            "show_button": true
+          }
+        },
         "587ddfa6-3235-4da0-be5b-d249ecf8991d": {
           "type": "collapsible_tab",
           "settings": {
@@ -128,6 +136,7 @@
         "0a9a6be0-2265-416b-b0f3-048e7cfb2dab",
         "96c45658-7a4f-4bbe-8af4-a6f32859a982",
         "82004e4e-d026-4c02-b9ee-21d1643d0fa5",
+        "b44551dc-08f3-410c-91b5-8893f2b4a2d7",
         "587ddfa6-3235-4da0-be5b-d249ecf8991d"
       ],
       "settings": {

@@ -72,7 +72,7 @@
           "type": "text",
           "settings": {
             "text": "Kamerastore Digital Database",
-            "text_style": "uppercase"
+            "text_style": "body"
           }
         },
         "title": {
@@ -100,7 +100,7 @@
         "96c45658-7a4f-4bbe-8af4-a6f32859a982": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<p>{%- assign current_variant = product.selected_or_first_available_variant -%}• <b> Item:<\/b>  {{product.title}}\n      {% for t in product.tags %}\n        {% assign parts = t | split: '-'%}\n        {% assign prefix = parts | first %}\n        {% assign value = parts | last %}\n        {% if prefix == 'Category'%}\n          {% assign category = value %}\n        {% elsif prefix == 'SubCategory' %}\n          {% assign sub_category = value %}\n        {% endif %}\n      {% endfor %}\n      {% if category %}<br>\n• <b> Category:<\/b> {{ category }}{% endif %}\n<br>\n      {% if sub_category %}• <b> Sub Category:<\/b> {{ sub_category }}{% endif %}\n  <br>\n• <b> Type:<\/b> {{ product.type }}<\/a>\n<br>\n• <b> Database ID:<\/b> {{ current_variant.sku | upcase}}\n    <\/span><\/p>"
+            "custom_liquid": "<p>{%- assign current_variant = product.selected_or_first_available_variant -%}• <b> Item:<\/b>  {{product.title}}\n      {% for t in product.tags %}\n        {% assign parts = t | split: '-'%}\n        {% assign prefix = parts | first %}\n        {% assign value = parts | last %}\n        {% if prefix == 'Category'%}\n          {% assign category = value %}\n        {% elsif prefix == 'SubCategory' %}\n          {% assign sub_category = value %}\n{% elsif prefix == 'System' %}\n          {% assign system = value %}\n        {% endif %}\n      {% endfor %}\n      {% if category %}<br>\n• <b> Category:<\/b> {{ category }}{% endif %}\n<br>\n      {% if sub_category %}• <b> Sub Category:<\/b> {{ sub_category }}{% endif %}\n  <br>\n• <b> Type:<\/b> {{ product.type }}<\/a>\n<br>\n{% if system %}• <b> System:<\/b> {{ system }}{% endif %}\n• <b> Database ID:<\/b> {{ current_variant.sku | upcase}}\n\n  <br>\n    <\/span><\/p>"
           }
         },
         "82004e4e-d026-4c02-b9ee-21d1643d0fa5": {
@@ -119,6 +119,7 @@
         },
         "587ddfa6-3235-4da0-be5b-d249ecf8991d": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Sell or Trade your {{ product.vendor }} gear",
             "content": "<p>Do you have a {{ product.title }} you want to sell to us? Fill out our simple form and request a quote from us.<\/p><p><a href=\"https:\/\/app.kamerastore.com\/sell_to_us?language=eng\" target=\"_blank\" title=\"https:\/\/app.kamerastore.com\/sell_to_us?language=eng\"><strong>START QUOTE<\/strong><\/a><\/p>",

@@ -128,7 +128,6 @@
         },
         "520ec92d-c272-4c67-8275-8a90bd7eb1eb": {
           "type": "popup",
-          "disabled": true,
           "settings": {
             "text": "Pop-up link text{{ product.vendor }}",
             "page": "",

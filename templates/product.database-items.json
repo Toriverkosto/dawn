@@ -62,10 +62,9 @@
         },
         "630170a4-891c-4adc-9e5b-984494792005": {
           "type": "system_and_type",
-          "disabled": true,
           "settings": {
             "show_system": true,
-            "show_type": true
+            "show_type": false
           }
         },
         "56d3d8ad-8dcb-4146-bf63-5a3a9862d94b": {

@@ -22,6 +22,7 @@
       })(window,document,'script','dataLayer','GTM-WB6W9KG');
     </script>
     <!-- End Google Tag Manager -->
+    {% if first_time_accessed %}
       <script>
         // TODO: Maybe needed?
         // gtag('config', 'AW-868520289', {'allow_enhanced_conversions': true});
@@ -49,7 +50,8 @@
           {% unless billing_address.phone == blank %}"phone_number": "{{ billing_address.phone }}",{% endunless %}
           {% unless billing_address.first_name == blank %}"first_name": "{{ billing_address.first_name }}",{% endunless %}
           {% unless billing_address.last_name == blank %}"last_name": "{{ billing_address.last_name }}",{% endunless %}
-          "home_address": {
+          // TODO: Try better at finding name and address
+          "address": {
             {% unless billing_address.street == blank %}"street": "{{ billing_address.street }}",{% endunless %}
             {% unless billing_address.city == blank %}"city": "{{ billing_address.city }}",{% endunless %}
             {% unless billing_address.province_code == blank %}"region": "{{ billing_address.province_code }}",{% endunless %}
@@ -58,9 +60,9 @@
           }
         };
 
-        gtag({enhanced_conversion_data: enhanced_conversion_data});
+        gtm({enhanced_conversion_data: enhanced_conversion_data});
 
-        gtag('event', 'purchase', {
+        gtm('event', 'purchase', {
           currency: Shopify.checkout.total_price_set.presentment_money.currency_code,
           transaction_id: '{{ order.order_number }}',
           value: Shopify.checkout.total_price_set.presentment_money.amount,
@@ -76,7 +78,10 @@
             quantity: item.quantity,
           }))
         });
+
+        console.log(`DATALAYER?`, JSON.stringify(window.dataLayer, null, 4));
       </script>
+    {% endif %}
   </head>
 
   <body>

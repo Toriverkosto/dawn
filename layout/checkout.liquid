@@ -28,22 +28,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
 
-        function discount(){
-          return (Shopify.checkout.discount == null) ? 0 : Shopify.checkout.discount.amount;
-        }
-
-        function items(){
-          var jsonarray = [];
-          for (var line_item_count = 0; line_item_count < Shopify.checkout.line_items.length; line_item_count++){
-            jsonarray.push({
-              item_id: {% if product_id == "product_id_variant-id" %}'{{ product_id_prefix }}' + Shopify.checkout.line_items[line_item_count].product_id + '_' + Shopify.checkout.line_items[line_item_count].variant_id{% elsif product_id == 'variant-id' %}Shopify.checkout.line_items[line_item_count].variant_id{% elsif product_id == 'sku' %}Shopify.checkout.line_items[line_item_count].sku{% endif %},
-              quantity: Shopify.checkout.line_items[line_item_count].quantity,
-              price: Shopify.checkout.line_items[line_item_count].line_price
-            })
-          }
-          return jsonarray;
-        }
-
         var enhanced_conversion_data = {
           {% unless checkout.email == blank %}"email": "{{ checkout.email }}",{% endunless %}
           {% unless billing_address.phone == blank %}"phone_number": "{{ billing_address.phone }}",{% endunless %}
@@ -65,7 +49,7 @@
           currency: Shopify.checkout.total_price_set.presentment_money.currency_code,
           transaction_id: '{{ order.order_number }}',
           value: Shopify.checkout.total_price_set.presentment_money.amount,
-          discount: discount(),
+          discount: Shopify.checkout.discount == null ? 0 : Shopify.checkout.discount.amount,
           coupon: Shopify.checkout.discount.code,
           shipping: Shopify.checkout.shipping_rate.price,
           tax: Shopify.checkout.total_tax,

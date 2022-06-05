@@ -22,6 +22,7 @@
       })(window,document,'script','dataLayer','GTM-WB6W9KG');
     </script>
     <!-- End Google Tag Manager -->
+    {% if first_time_accessed %}
       <script>
         // TODO: Maybe needed?
         // gtag('config', 'AW-868520289', {'allow_enhanced_conversions': true});
@@ -43,9 +44,9 @@
           }
         };
 
-        gtm({enhanced_conversion_data: enhanced_conversion_data});
+        gtag({enhanced_conversion_data: enhanced_conversion_data});
 
-        gtm('event', 'purchase', {
+        gtag('event', 'purchase', {
           currency: Shopify.checkout.total_price_set.presentment_money.currency_code,
           transaction_id: '{{ order.order_number }}',
           value: Shopify.checkout.total_price_set.presentment_money.amount,
@@ -64,6 +65,7 @@
 
         console.log(`DATALAYER?`, JSON.stringify(window.dataLayer, null, 4));
       </script>
+    {% endif %}
   </head>
 
   <body>

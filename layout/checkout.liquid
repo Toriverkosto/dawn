@@ -22,29 +22,23 @@
       })(window,document,'script','dataLayer','GTM-WB6W9KG');
     </script>
     <!-- End Google Tag Manager -->
-    {% if first_time_accessed %}
+    {% comment %}{% if first_time_accessed %}{% endcomment %}
       <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
 
-        var enhanced_conversion_data = {
-          {% unless checkout.email == blank %}"email": "{{ checkout.email }}",{% endunless %}
-          {% unless billing_address.phone == blank %}"phone_number": "{{ billing_address.phone }}",{% endunless %}
-          {% unless billing_address.first_name == blank %}"first_name": "{{ billing_address.first_name }}",{% endunless %}
-          {% unless billing_address.last_name == blank %}"last_name": "{{ billing_address.last_name }}",{% endunless %}
-          // TODO: Try better at finding name and address
-          "address": {
-            {% unless billing_address.street == blank %}"street": "{{ billing_address.street }}",{% endunless %}
-            {% unless billing_address.city == blank %}"city": "{{ billing_address.city }}",{% endunless %}
-            {% unless billing_address.province_code == blank %}"region": "{{ billing_address.province_code }}",{% endunless %}
-            {% unless billing_address.zip == blank %}"postal_code": "{{ billing_address.zip }}",{% endunless %}
-            {% unless billing_address.country_code == blank %}"country": "{{ billing_address.country_code }}"{% endunless %}
-          }
-        };
+        window.dataLayer.push({user_data: {
+          email: Shopify.checkout.email,
+          phone_number: Shopify.checkout.billing_address.phone || Shopify.checkout.shipping_address.phone || null,
+          first_name: Shopify.checkout.billing_address.first_name || Shopify.checkout.shipping_address.first_name || null,
+          last_name: Shopify.checkout.billing_address.last_name || Shopify.checkout.shipping_address.last_name || null,
+          street: Shopify.checkout.billing_address.address1 || Shopify.checkout.shipping_address.address1 || null,
+          city: Shopify.checkout.billing_address.city || Shopify.checkout.shipping_address.city || null,
+          region: Shopify.checkout.billing_address.province || Shopify.checkout.shipping_address.province || null,
+          country: Shopify.checkout.billing_address.country || Shopify.checkout.shipping_address.country || null,
+          postcode: Shopify.checkout.billing_address.zip || Shopify.checkout.shipping_address.zip || null
+        }});
 
-        gtag({enhanced_conversion_data: enhanced_conversion_data});
-
-        gtag('event', 'purchase', {
+        window.dataLayer.push('event', 'purchase', {
           currency: Shopify.checkout.total_price_set.presentment_money.currency_code,
           transaction_id: '{{ order.order_number }}',
           value: Shopify.checkout.total_price_set.presentment_money.amount,
@@ -61,7 +55,7 @@
           }))
         });
       </script>
-    {% endif %}
+    {% comment %}{% endif %}{% endcomment %}
   </head>
 
   <body>

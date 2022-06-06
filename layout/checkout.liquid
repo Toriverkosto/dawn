@@ -22,7 +22,7 @@
       })(window,document,'script','dataLayer','GTM-WB6W9KG');
     </script>
     <!-- End Google Tag Manager -->
-    {% comment %}TODO: Add {% if first_time_accessed %}{% endif %}{% endcomment %}
+    {% if first_time_accessed %}
       <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -56,6 +56,7 @@
           }))
         });
       </script>
+    {% endif %}
   </head>
 
   <body>

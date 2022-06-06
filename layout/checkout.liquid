@@ -22,6 +22,7 @@
       })(window,document,'script','dataLayer','GTM-WB6W9KG');
     </script>
     <!-- End Google Tag Manager -->
+    {% comment %}TODO: Add {% if first_time_accessed %}{% endif %}{% endcomment %}
       <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -37,7 +38,8 @@
           postcode: Shopify.checkout.billing_address.zip || Shopify.checkout.shipping_address.zip || null
         }});
 
-        window.dataLayer.push('event', 'purchase', {
+        window.dataLayer.push({
+          event: 'purchase',
           currency: Shopify.checkout.total_price_set.presentment_money.currency_code,
           transaction_id: '{{ order.order_number }}',
           value: Shopify.checkout.total_price_set.presentment_money.amount,

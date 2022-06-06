@@ -45,8 +45,7 @@
 
         gtag({enhanced_conversion_data: enhanced_conversion_data});
 
-        gtag({
-          event: 'purchase',
+        gtag('event', 'purchase', {
           currency: Shopify.checkout.total_price_set.presentment_money.currency_code,
           transaction_id: '{{ order.order_number }}',
           value: Shopify.checkout.total_price_set.presentment_money.amount,
@@ -62,8 +61,6 @@
             quantity: item.quantity,
           }))
         });
-
-        console.log(`DATALAYER?`, JSON.stringify(window.dataLayer, null, 4));
       </script>
   </head>
 

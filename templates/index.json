@@ -34,12 +34,12 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Kamerastore_all_cameras_ad.jpg",
+        "image": "shopify:\/\/shop_images\/get_attachment_url.jpg",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
-        "show_text_box": false,
-        "image_overlay_opacity": 50,
-        "color_scheme": "background-2",
+        "show_text_box": true,
+        "image_overlay_opacity": 30,
+        "color_scheme": "accent-2",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }

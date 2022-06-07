@@ -33,9 +33,9 @@
           "a0ea9c0c-7939-4476-8c79-3abbcd43ff94": {
             "type": "announcement",
             "settings": {
-              "text": "Kamerastore X Stockholm: We're Buying Cameras in Sweden!",
+              "text": "We're Buying Cameras in Sweden!",
               "color_scheme": "accent-1",
-              "link": "",
+              "link": "shopify:\/\/blogs\/posts\/kamerastore-buying-in-stockholm-june-2022",
               "use_custom_color": true,
               "color_text": "#ffffff",
               "color_background": "linear-gradient(180deg, rgba(0, 75, 135, 1) 85%, rgba(255, 205, 0, 1) 85%)"

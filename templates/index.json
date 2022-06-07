@@ -365,14 +365,6 @@
             "text": "<p>We sell quality used film cameras, lenses, accessories, film, adapters, and digital gear. Around 8000 items in stock with dozens added daily.<\/p><p><a href=\"\/collections\/all-items\" title=\"All Items\">Newly Listed<\/a><\/p>"
           }
         },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Kamerastore_all_cameras_ad_small_f7386a3a-4fcf-48be-914b-777d8976bf5b.jpg",
-            "title": "Trade",
-            "text": "<p>In the mood for something new? Pay less or pay nothing by trading in your unwanted gear towards the purchase of something new. <\/p><p><a href=\"mailto:info@kamerastore.com\" title=\"mailto:info@kamerastore.com\">Email Us<\/a> \/ <a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\">Get a Quote<\/a><\/p>"
-          }
-        },
         "column2": {
           "type": "column",
           "settings": {
@@ -380,12 +372,20 @@
             "title": "Sell",
             "text": "<p>We are interested in buying almost all types of camera gear. Get a free quote with no selling commitment. <\/p><p><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\">Get a Quote<\/a><\/p>"
           }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kamerastore_all_cameras_ad_small_f7386a3a-4fcf-48be-914b-777d8976bf5b.jpg",
+            "title": "Trade",
+            "text": "<p>In the mood for something new? Pay less or pay nothing by trading in your unwanted gear towards the purchase of something new. <\/p><p><a href=\"mailto:info@kamerastore.com\" title=\"mailto:info@kamerastore.com\">Email Us<\/a> \/ <a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\">Get a Quote<\/a><\/p>"
+          }
         }
       },
       "block_order": [
         "column1",
-        "column3",
-        "column2"
+        "column2",
+        "column3"
       ],
       "settings": {
         "title": "",

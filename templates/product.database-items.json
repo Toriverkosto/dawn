@@ -125,14 +125,6 @@
             "page": "",
             "icon": "price_tag"
           }
-        },
-        "520ec92d-c272-4c67-8275-8a90bd7eb1eb": {
-          "type": "popup",
-          "settings": {
-            "text": "Pop-up link text{{ product.vendor }}",
-            "page": "",
-            "show_button": false
-          }
         }
       },
       "block_order": [
@@ -145,8 +137,7 @@
         "96c45658-7a4f-4bbe-8af4-a6f32859a982",
         "82004e4e-d026-4c02-b9ee-21d1643d0fa5",
         "b44551dc-08f3-410c-91b5-8893f2b4a2d7",
-        "587ddfa6-3235-4da0-be5b-d249ecf8991d",
-        "520ec92d-c272-4c67-8275-8a90bd7eb1eb"
+        "587ddfa6-3235-4da0-be5b-d249ecf8991d"
       ],
       "settings": {
         "product_role": "database",

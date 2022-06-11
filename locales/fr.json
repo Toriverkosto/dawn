@@ -140,10 +140,25 @@
         "play_model": "Lire la visionneuse 3D",
         "play_video": "Lire la vidéo"
       },
-      "view_full_details": "Afficher tous les détails"
+      "view_full_details": "Afficher tous les détails",
+      "taxable": "TVA de votre pays inclue (UE uniquement).",
+      "not_taxable": "Prix tel qu'indiqué. Article d'occasion, pas de TVA déductible.",
+      "product_condition_heading": "État du produit :",
+      "optical_condition_heading": "Optique : {{ condition }} \/ 5",
+      "mechanical_condition_heading": "Mécanique : {{ condition }} \/ 5",
+      "cosmetic_condition_heading": "Esthétique : {{ condition }} \/ 5"
     },
     "modal": {
       "label": "Galerie de supports multimédias"
+    },
+    "database": {
+      "none_available": "Actuellement non disponible."
+    },
+    "tax": {
+      "taxable_property_name": "TVA de votre pays inclue",
+      "taxable_property_value": "UE uniquement.",
+      "not_taxable_property_name": "TVA",
+      "not_taxable_property_value": "Prix ​​tel qu'indiqué. Article d'occasion, pas de TVA déductible."
     }
   },
   "templates": {
@@ -211,7 +226,9 @@
       "login": {
         "title": "Vous possédez un compte ?",
         "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Connectez-vous<\/a> pour payer plus vite."
-      }
+      },
+      "terms_and_conditions_checkbox_label_html": "J'ai lu et j'accepte les <a class=\"link underlined-link\" href=\"{{ link }}\">termes et conditions<\/a>.",
+      "terms_and_conditions_alert": "Vous devez être d'accord avec les termes et conditions de vente pour continuer."
     },
     "footer": {
       "payment": "Moyens de paiement",

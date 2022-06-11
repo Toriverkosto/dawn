@@ -399,7 +399,7 @@
       "subtext": "Votre carte-cadeau",
       "gift_card_code": "Code de la carte-cadeau",
       "shop_link": "Continuer les achats",
-      "remaining_html": "Reste {{ balance }}",
+      "remaining_html": "Il reste {{ balance }}",
       "add_to_apple_wallet": "Ajouter à Apple Wallet",
       "qr_image_alt": "Code QR : scannez-le pour utiliser votre carte-cadeau",
       "copy_code": "Copier le code",

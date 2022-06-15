@@ -148,12 +148,6 @@
         "show_sku_and_barcode": false
       }
     },
-    "1642020754f04c9667": {
-      "type": "product-items-in-stock",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "1632393643eca7584e": {
       "type": "custom-liquid",
       "settings": {
@@ -323,7 +317,6 @@
     "1634194655a811a44b",
     "16340245700ec1844e",
     "main",
-    "1642020754f04c9667",
     "1632393643eca7584e",
     "16450990378461246d",
     "164543512984681dd4",

@@ -479,12 +479,6 @@
         "name": "Custom Liquid"
       }
     },
-    "product-items-in-stock": {
-      "name": "Product Items in Stock [DB pages only]",
-      "presets": {
-        "name": "Product Items in Stock"
-      }
-    },
     "database-product-price-table": {
       "name": "Database product price table [DB pages only]",
       "presets": {

@@ -619,30 +619,20 @@
 {%- assign low_price = 999999999999999 -%}
 {%- assign high_price = 0 -%}
 {%- assign offer_count = 0 -%}
-{%- if group_id -%}
-  {%- for collection in product.collections -%}
-    {%- if collection.metafields.kameratori.group_id == group_id and collection.products_count > 0 -%}
-      {%- assign group_collection_index = forloop.index0 -%}
-      {%- for product in collection.products -%}
-        {%- unless product.handle == current_product.handle or product.tags contains 'item-database' -%}
-          {%- if product.available -%}
-            {%- assign offer_count = offer_count | plus: 1 -%}
-            {%- assign last_available_index = forloop.index0 -%}
-            {%- if product.first_available_variant.price > high_price -%}
-              {%- assign high_price = product.first_available_variant.price -%}
-            {%- endif -%}
-            {%- if product.first_available_variant.price < low_price -%}
-              {%- assign low_price = product.first_available_variant.price -%}
-            {%- endif -%}
-          {%- endif -%}
-        {%- endunless -%}
-        {%- if product.tags contains 'item-database'  -%}
-          {%- assign database_product = product -%}
-        {%- endif -%}
-      {%- endfor -%}
+
+{%- for product in product.metafields.kameratori.stock_items.value -%}
+  {%- if product.available -%}
+    {%- assign offer_count = offer_count | plus: 1 -%}
+    {%- assign last_available_index = forloop.index0 -%}
+    {%- if product.first_available_variant.price > high_price -%}
+      {%- assign high_price = product.first_available_variant.price -%}
     {%- endif -%}
-  {%- endfor -%}
-{%- endif -%}
+    {%- if product.first_available_variant.price < low_price -%}
+      {%- assign low_price = product.first_available_variant.price -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+
 
 {% comment %}Look at sold products for offers{% endcomment %}
 {%- assign products_sold = false -%}

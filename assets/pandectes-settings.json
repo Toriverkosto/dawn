@@ -4,7 +4,7 @@
     "theme": "Dawn STABLE",
     "primaryLocale": "en"
   },
-  "tsPublished": 1655374234,
+  "tsPublished": 1655374495,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -619,7 +619,7 @@
       }
     },
     "content": {
-      "href": "https:\/\/kamerastore.fi\/policies\/privacy-policy",
+      "href": "\/policies\/privacy-policy",
       "close": "&#10005;",
       "target": "",
       "logo": "<img class=\"cc-banner-logo\" style=\"height: 40px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0521\/9496\/7750\/t\/26\/assets\/pandectes-logo.png?v=1652790456\" alt=\"Kamerastore.com\" \/>"

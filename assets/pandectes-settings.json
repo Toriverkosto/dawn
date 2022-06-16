@@ -4,7 +4,7 @@
     "theme": "Dawn STABLE",
     "primaryLocale": "en"
   },
-  "tsPublished": 1655374495,
+  "tsPublished": 1655374654,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -667,7 +667,7 @@
     "blockingPage": false,
     "showOnlyLandingPage": false,
     "leaveSiteUrl": "https:\/\/www.google.com",
-    "linkRespectStoreLang": true
+    "linkRespectStoreLang": false
   },
   "cookies": {
     "0": [

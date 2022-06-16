@@ -35,6 +35,48 @@
         "layout": "image_first"
       }
     },
+    "16553912346ad77219": {
+      "type": "collage",
+      "blocks": {
+        "16553912345d4aa027-1": {
+          "type": "product",
+          "settings": {
+            "product": "starter-kit",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        },
+        "55debb65-e2ad-4448-8f1f-6362b4086b1b": {
+          "type": "product",
+          "settings": {
+            "product": "pro-kit",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        },
+        "2fa27346-a405-4929-9764-3c5ce2ee4662": {
+          "type": "product",
+          "settings": {
+            "product": "complete-kit",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        }
+      },
+      "block_order": [
+        "16553912345d4aa027-1",
+        "55debb65-e2ad-4448-8f1f-6362b4086b1b",
+        "2fa27346-a405-4929-9764-3c5ce2ee4662"
+      ],
+      "settings": {
+        "heading": "VALOI Kit Options",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
+    },
     "163274530333c96e90": {
       "type": "image-banner",
       "disabled": true,
@@ -108,6 +150,7 @@
   },
   "order": [
     "163715637672ee2874",
+    "16553912346ad77219",
     "163274530333c96e90",
     "banner",
     "product-grid"

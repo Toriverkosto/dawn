@@ -4,7 +4,7 @@
     "theme": "Dawn STABLE",
     "primaryLocale": "en"
   },
-  "tsPublished": 1652790561,
+  "tsPublished": 1655374234,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -53,7 +53,7 @@
         "da": "Lær mere",
         "en": "Learn more",
         "es": "Aprende más",
-        "fi": "Lisätietoja",
+        "fi": "Lue lisää.",
         "fr": "Apprendre encore plus",
         "sv": "Läs mer"
       },

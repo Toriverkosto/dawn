@@ -19,10 +19,10 @@
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "View Newly Added",
+            "button_label_1": "Buy from us!",
             "button_link_1": "shopify:\/\/collections\/all-items",
             "button_style_secondary_1": false,
-            "button_label_2": "View Premium Cameras",
+            "button_label_2": "Sell to us!",
             "button_link_2": "\/collections\/premium-film-cameras",
             "button_style_secondary_2": false
           }

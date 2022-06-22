@@ -202,6 +202,22 @@
         "full_width": false
       }
     },
+    "1632819820cfe9c4e7": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Popular Films In Stock Now!",
+        "collection": "popular-film-in-stock",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": true,
+        "show_image_outline": false,
+        "show_vendor": true,
+        "show_rating": true
+      }
+    },
     "165416468256763b39": {
       "type": "collection-list",
       "blocks": {
@@ -406,22 +422,6 @@
         "show_view_all": false
       }
     },
-    "1632819820cfe9c4e7": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Popular Films In Stock Now!",
-        "collection": "popular-film-in-stock",
-        "products_to_show": 8,
-        "show_view_all": true,
-        "swipe_on_mobile": true,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "add_image_padding": true,
-        "show_image_outline": false,
-        "show_vendor": true,
-        "show_rating": true
-      }
-    },
     "16328199566df3daf4": {
       "type": "featured-collection",
       "disabled": true,
@@ -517,13 +517,13 @@
     "1655878837fa505e49",
     "1655879063dce72fc4",
     "1632470234f73d3bc0",
+    "1632819820cfe9c4e7",
     "165416468256763b39",
     "featured_products",
     "1645107907864cbb1c",
     "16328192199ca25f9a",
     "1637242258da800a0c",
     "1632819284873cdad3",
-    "1632819820cfe9c4e7",
     "16328199566df3daf4",
     "16328202527d1c0448",
     "16328203716b324724",

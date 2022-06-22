@@ -44,6 +44,12 @@
         "show_text_below": true
       }
     },
+    "16336738395370bc94": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"reputon-google-reviews-widget\" id=\"bf91f8b0-88a8-11eb-9209-f960a060549e\" ><\/div>"
+      }
+    },
     "multi_column": {
       "type": "multicolumn",
       "blocks": {
@@ -86,12 +92,6 @@
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": true
-      }
-    },
-    "16336738395370bc94": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"reputon-google-reviews-widget\" id=\"bf91f8b0-88a8-11eb-9209-f960a060549e\" ><\/div>"
       }
     },
     "1655878837fa505e49": {
@@ -512,8 +512,8 @@
   },
   "order": [
     "image_banner",
-    "multi_column",
     "16336738395370bc94",
+    "multi_column",
     "1655878837fa505e49",
     "1655879063dce72fc4",
     "1632470234f73d3bc0",

@@ -123,6 +123,17 @@
               "color_text": "#121212",
               "color_background": "linear-gradient(#4AB6FF, #4AB6FF)"
             }
+          },
+          "dc640612-8f8d-4ed8-8bfd-0f7a6df40773": {
+            "type": "announcement",
+            "settings": {
+              "text": "Midsummer Sale! Get 30% Off 2,500+ items!",
+              "color_scheme": "accent-1",
+              "link": "\/collections\/midsummersale",
+              "use_custom_color": true,
+              "color_text": "#9f5112",
+              "color_background": "linear-gradient(180deg, rgba(246, 227, 16, 1), rgba(246, 227, 16, 1) 100%)"
+            }
           }
         },
         "block_order": [
@@ -133,7 +144,8 @@
           "a0ea9c0c-7939-4476-8c79-3abbcd43ff94",
           "32123667-f42b-4bb3-a246-106bddb95fa7",
           "39d85c5b-b96e-42e4-b90d-5d4e816742eb",
-          "2e0296fe-51ad-44a1-93ae-816b91172f02"
+          "2e0296fe-51ad-44a1-93ae-816b91172f02",
+          "dc640612-8f8d-4ed8-8bfd-0f7a6df40773"
         ],
         "settings": {
         }

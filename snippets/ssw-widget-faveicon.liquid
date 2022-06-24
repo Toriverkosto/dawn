@@ -21,7 +21,7 @@
     <div class="ssw-faveiticon sswfaveicon{{ productId }}">
       <i data-product-id="{{ productId }}" data-count="0" class="ssw-icon-heart-o ssw-fave-icon ssw-wishlist-element ssw-not-synch"
          title="{{ shop.metafields.ssw[customer_locale].value.fave }}"
-         data-params='{"product_id":"{{ productId }}","event":"fave_button","page":"product_profile"}'></i>
+         data-params='{"product_id":"{{ productId }}","event":"fave_button","page":"product_profile"}' tabindex="0" aria-label="{{ shop.metafields.ssw[customer_locale].value.instagram_gallery }}"></i>
       <span class="faves-count"></span>
     </div>
   {% endif %}

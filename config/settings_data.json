@@ -32,6 +32,7 @@
         "blocks": {
           "c3026742-d5b5-4132-8d20-364bad6e0021": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "We will be CLOSED on June 24th for Midsummer - Expect Processing Delays",
               "color_scheme": "accent-1",
@@ -43,14 +44,13 @@
           },
           "dc640612-8f8d-4ed8-8bfd-0f7a6df40773": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "Midsummer Sale! Get 30% Off 2,500+ items!",
               "color_scheme": "accent-1",
               "link": "\/collections\/midsummersale",
               "use_custom_color": true,
-              "color_text": "#9f5112",
-              "color_background": "linear-gradient(180deg, rgba(246, 227, 16, 1), rgba(246, 227, 16, 1) 100%)"
+              "color_text": "#000000",
+              "color_background": "linear-gradient(180deg, rgba(246, 227, 16, 1), rgba(246, 130, 7, 1) 100%)"
             }
           },
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec": {

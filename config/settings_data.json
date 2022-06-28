@@ -30,32 +30,8 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
-          "c3026742-d5b5-4132-8d20-364bad6e0021": {
-            "type": "announcement",
-            "disabled": true,
-            "settings": {
-              "text": "We will be CLOSED on June 24th for Midsummer - Expect Processing Delays",
-              "color_scheme": "accent-1",
-              "link": "",
-              "use_custom_color": true,
-              "color_text": "#121212",
-              "color_background": "linear-gradient(180deg, rgba(74, 255, 89, 1), rgba(74, 255, 89, 1) 100%)"
-            }
-          },
-          "dc640612-8f8d-4ed8-8bfd-0f7a6df40773": {
-            "type": "announcement",
-            "settings": {
-              "text": "Midsummer Sale! Get 30% Off 2,500+ items!",
-              "color_scheme": "accent-1",
-              "link": "\/collections\/midsummersale",
-              "use_custom_color": true,
-              "color_text": "#000000",
-              "color_background": "linear-gradient(180deg, rgba(246, 227, 16, 1), rgba(246, 130, 7, 1) 100%)"
-            }
-          },
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "We buy & trade cameras!",
               "color_scheme": "accent-1",
@@ -76,16 +52,28 @@
               "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"
             }
           },
-          "0ecfe010-1221-43ee-94ac-6330a1a38fb4": {
+          "dc640612-8f8d-4ed8-8bfd-0f7a6df40773": {
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "text": "Film for Peace in Ukraine!",
-              "color_scheme": "accent-2",
-              "link": "shopify:\/\/pages\/film-for-peace",
+              "text": "Midsummer Sale! Get 30% Off 2,500+ items!",
+              "color_scheme": "accent-1",
+              "link": "\/collections\/midsummersale",
+              "use_custom_color": true,
+              "color_text": "#000000",
+              "color_background": "linear-gradient(180deg, rgba(246, 227, 16, 1), rgba(246, 130, 7, 1) 100%)"
+            }
+          },
+          "c3026742-d5b5-4132-8d20-364bad6e0021": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "We will be CLOSED on June 24th for Midsummer - Expect Processing Delays",
+              "color_scheme": "accent-1",
+              "link": "",
               "use_custom_color": true,
               "color_text": "#121212",
-              "color_background": "linear-gradient(136deg, rgba(254, 211, 48, 1) 100%, rgba(13, 94, 184, 1) 100%)"
+              "color_background": "linear-gradient(180deg, rgba(74, 255, 89, 1), rgba(74, 255, 89, 1) 100%)"
             }
           },
           "a0ea9c0c-7939-4476-8c79-3abbcd43ff94": {
@@ -98,6 +86,18 @@
               "use_custom_color": true,
               "color_text": "#ffffff",
               "color_background": "linear-gradient(180deg, rgba(0, 75, 135, 1) 91%, rgba(255, 205, 0, 1) 91%)"
+            }
+          },
+          "0ecfe010-1221-43ee-94ac-6330a1a38fb4": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "Film for Peace in Ukraine!",
+              "color_scheme": "accent-2",
+              "link": "shopify:\/\/pages\/film-for-peace",
+              "use_custom_color": true,
+              "color_text": "#121212",
+              "color_background": "linear-gradient(136deg, rgba(254, 211, 48, 1) 100%, rgba(13, 94, 184, 1) 100%)"
             }
           },
           "32123667-f42b-4bb3-a246-106bddb95fa7": {
@@ -138,12 +138,12 @@
           }
         },
         "block_order": [
-          "c3026742-d5b5-4132-8d20-364bad6e0021",
-          "dc640612-8f8d-4ed8-8bfd-0f7a6df40773",
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec",
           "4c1a92eb-53d3-4f1d-ad29-76811ffcecfe",
-          "0ecfe010-1221-43ee-94ac-6330a1a38fb4",
+          "dc640612-8f8d-4ed8-8bfd-0f7a6df40773",
+          "c3026742-d5b5-4132-8d20-364bad6e0021",
           "a0ea9c0c-7939-4476-8c79-3abbcd43ff94",
+          "0ecfe010-1221-43ee-94ac-6330a1a38fb4",
           "32123667-f42b-4bb3-a246-106bddb95fa7",
           "39d85c5b-b96e-42e4-b90d-5d4e816742eb",
           "2e0296fe-51ad-44a1-93ae-816b91172f02"

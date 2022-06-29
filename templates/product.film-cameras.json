@@ -53,6 +53,7 @@
         },
         "99452d1b-4d7e-4077-a88b-abeded9e84f2": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{%if product.metafields.kameratori.new_light_seals %}\n<b>New Light Seals<\/b>: Yes\n{% endif %}"
           }

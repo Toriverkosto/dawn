@@ -315,7 +315,7 @@
       "type": "custom-liquid",
       "disabled": true,
       "settings": {
-        "custom_liquid": "{{product.metafields.kameratori.stock_items.value | metafield_list}}\n\n<ul class=\"recommended-products\">\n  {% if product.metafields.kameratori.stock_items != blank %}\n    {% assign stock =  product.metafields.kameratori.stock_items.value %}\n    <li>\n      <a href=\"{{ stock.url }}\" target=\"_blank\">\n        <img src=\"{{ stock.featured_image | img_url: '100x' }}\">\n        <div>\n          <p>{{ stock.title }}<\/p>\n          <p class=\"uaf__price\">{{stock.price | money }}<\/p>\n        <\/div>\n       <\/a>\n      <\/li>\n  {% endif %}\n<\/ul>"
+        "custom_liquid": "{{product.metafields.kameratori.stock_items.value | metafield_list}}\n\n{% assign current_product = product %}\n\n          {% for product in current_product.metafields.kameratori.stock_items.value %}\n            {% if product.available %}\n{{ product.price | money }}\n {% endif %}\n          {% endfor %}"
       }
     }
   },

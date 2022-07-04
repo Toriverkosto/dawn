@@ -16,7 +16,7 @@
   <link id="ModelViewerStyle" rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'">
   <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
-
+<section class="page-width">
   {% if section.settings.show_sku_and_barcode %}
     <p class="product__sku_and_barcode">
       <span> ID: {{ product.selected_or_first_available_variant.sku }}</span>
@@ -44,6 +44,7 @@
       <a href="/collections/{{ product.type | downcase | replace: "/", "" | replace: "  ", " " | replace: " ", "-" }}" class="link">{{ product.type }}</a> ›
       <a href="{{ product.url }}" class="link">{{ product.title }}</a>
     </div>
+</section>
   {% endif %}
   <section class="page-width">
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">

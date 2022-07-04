@@ -17,7 +17,6 @@
   <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
-
   {% if section.settings.show_sku_and_barcode %}
     <p class="product__sku_and_barcode">
       <span> ID: {{ product.selected_or_first_available_variant.sku }}</span>
@@ -39,7 +38,6 @@
           {% assign sub_category = value %}
         {% endif %}
       {% endfor %}
-<section class="page-width">
       {% comment %}TODO: Make configurable, omit parts? {% endcomment %}
       {% if category %}<a href="/collections/{{ category | downcase | replace: "/", "" | replace: "  ", " " | replace: " ", "-" }}" class="link">{{ category }}</a> ›{% endif %}
       {% if sub_category %}<a href="/collections/{{ sub_category | downcase| replace: "/", "" | replace: "  ", " " | replace: " ", "-" }}" class="link">{{ sub_category }}</a> ›{% endif %}
@@ -47,6 +45,7 @@
       <a href="{{ product.url }}" class="link">{{ product.title }}</a>
     </div>
   {% endif %}
+  <section class="page-width">
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper">
       <slider-component class="slider-mobile-gutter">

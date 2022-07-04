@@ -76,29 +76,21 @@
             "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"film-cameras\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n          <\/div>\n{% endunless %}"
           }
         },
-        "235b8cd5-c263-4cde-9104-81a9203d4384": {
-          "type": "condition",
-          "settings": {
-            "show_mechanical": true,
-            "show_optical": true,
-            "show_cosmetic": false
-          }
-        },
         "cd07da4b-ae00-46ee-bf67-5c7799d93921": {
           "type": "popup",
+          "disabled": true,
           "settings": {
             "text": "Camera Condition Ratings",
             "page": "camera-condition-ratings",
             "show_button": false
           }
         },
-        "f8962c4a-da22-4a3d-8f73-05ff4d13ed57": {
-          "type": "collapsible_tab",
+        "235b8cd5-c263-4cde-9104-81a9203d4384": {
+          "type": "condition",
           "settings": {
-            "heading": "Sell Your Gear to Us!",
-            "content": "<p>We buy & trade cameras, lenses, and accessories on top of selling! If you're looking to upgrade or change your gear, why not sell directly to us?<br\/><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\"><strong>Click here to fill out our form!<\/strong><\/a><\/p>",
-            "page": "",
-            "icon": "price_tag"
+            "show_mechanical": true,
+            "show_optical": true,
+            "show_cosmetic": false
           }
         },
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6": {
@@ -137,8 +129,18 @@
             "icon": "eye"
           }
         },
+        "f8962c4a-da22-4a3d-8f73-05ff4d13ed57": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Sell Your Gear to Us!",
+            "content": "<p>We buy & trade cameras, lenses, and accessories on top of selling! If you're looking to upgrade or change your gear, why not sell directly to us?<br\/><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\"><strong>Click here to fill out our form!<\/strong><\/a><\/p>",
+            "page": "",
+            "icon": "price_tag"
+          }
+        },
         "92fd3d60-c515-429c-a9e4-6bb9e3712c80": {
           "type": "popup",
+          "disabled": true,
           "settings": {
             "text": "Have this {{ product.vendor }}? Sell it to us!",
             "page": "sell-or-trade-your-used-camera-gear",
@@ -156,13 +158,13 @@
         "99452d1b-4d7e-4077-a88b-abeded9e84f2",
         "buy_buttons",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
-        "235b8cd5-c263-4cde-9104-81a9203d4384",
         "cd07da4b-ae00-46ee-bf67-5c7799d93921",
-        "f8962c4a-da22-4a3d-8f73-05ff4d13ed57",
+        "235b8cd5-c263-4cde-9104-81a9203d4384",
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "a41a8e68-deb3-4414-bc77-846ae026a7ec",
+        "f8962c4a-da22-4a3d-8f73-05ff4d13ed57",
         "92fd3d60-c515-429c-a9e4-6bb9e3712c80"
       ],
       "settings": {

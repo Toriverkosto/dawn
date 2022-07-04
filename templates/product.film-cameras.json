@@ -60,6 +60,7 @@
         },
         "99452d1b-4d7e-4077-a88b-abeded9e84f2": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<div class=\"product-single__store-availability-container\"\n  data-store-availability-container\n  data-product-title=\"\"\n  data-has-only-default-variant=\"\"\n  data-base-url=\"\"\n>\n<\/div>"
           }

@@ -70,6 +70,17 @@
             "custom_liquid": "Ships from: Tampere, Finland"
           }
         },
+        "8a1f013f-3fbd-4ebb-b70b-fd9e114e338b": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -81,15 +92,10 @@
             "custom_liquid": "<p style=\"color: #ababab\">{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable' | t }}\n{% else %}\n    Price as shown. No deductible VAT. \n{% endif %}<\/p>"
           }
         },
-        "8a1f013f-3fbd-4ebb-b70b-fd9e114e338b": {
-          "type": "quantity_selector",
+        "94f403ff-3385-43d7-865b-0b0000459f54": {
+          "type": "custom_liquid",
           "settings": {
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false
+            "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<\/h3>{{ product.description }}<\/div>"
           }
         },
         "80fbe6e3-0e56-4ee6-be9c-6a5e5c5f985c": {
@@ -148,10 +154,11 @@
         "cf29d553-05b4-4684-9080-1bcc4b961df2",
         "7204a9ac-d9c4-4659-be9a-3662cfbc43c5",
         "6e329fbd-c3b0-4cfe-a6f4-9911df60910e",
-        "price",
-        "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
         "8a1f013f-3fbd-4ebb-b70b-fd9e114e338b",
         "buy_buttons",
+        "price",
+        "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
+        "94f403ff-3385-43d7-865b-0b0000459f54",
         "80fbe6e3-0e56-4ee6-be9c-6a5e5c5f985c",
         "f8b9a89d-8fdd-4b79-b6e1-80fbde58346d",
         "a5a11cfe-80a9-4294-953b-395acd66d02f",
@@ -170,6 +177,7 @@
     },
     "163178438845c86d64": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<H2>Description<\/h2><H3>{{ product.title }}<\/h3>{{ product.description }}<\/div>"
       }

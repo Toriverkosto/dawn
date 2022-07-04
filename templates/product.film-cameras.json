@@ -1,17 +1,16 @@
 {
   "sections": {
-    "1656932661dc5f33b1": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<div class=\"page-width page-width--wide\"><H1>{{product.title}}<\/H1><\/div>"
-      }
-    },
     "16334152711e2727b9": {
       "type": "custom-liquid",
       "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"page-width page-width--wide\">\n<p style=\"color: #b3b3b3\">{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span> ID: {{ current_variant.sku }}<\/span> {% if current_variant.barcode %}{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span>\/ Code: {{ current_variant.barcode }}  <\/span><\/p>{% endif %}<\/div>"
+      }
+    },
+    "1656932661dc5f33b1": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--wide\"><H1>{{product.title}}<\/H1><\/div>"
       }
     },
     "main": {
@@ -106,7 +105,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "True Condition",
-            "content": "<p>Our used item condition ratings are over 99,5% accurate! Our highly skilled technicians use period-appropriate machinery to evaluate an item's true condition.<\/p>",
+            "content": "<p>Our used item condition ratings are over 99,5% accurate! Our highly skilled technicians use period-appropriate machinery to evaluate an item's true condition.<\/p><p><a href=\"\/pages\/camera-condition-ratings\" target=\"_blank\" title=\"Camera Condition Ratings\">Camera Condition Ratings<\/a><\/p>",
             "page": "",
             "icon": "star"
           }
@@ -289,8 +288,8 @@
     }
   },
   "order": [
-    "1656932661dc5f33b1",
     "16334152711e2727b9",
+    "1656932661dc5f33b1",
     "main",
     "1656487051d3ce587c",
     "163178438845c86d64",

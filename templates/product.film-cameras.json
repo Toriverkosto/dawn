@@ -9,6 +9,7 @@
     },
     "1656932661dc5f33b1": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"page-width page-width--wide\"><H1>{{product.title}}<\/H1><\/div>"
       }

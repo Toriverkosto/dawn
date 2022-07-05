@@ -55,7 +55,7 @@
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<p style=\"color: #ababab\">{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable' | t }}\n{% else %}\n    {{ 'products.product.not_taxable' | t }}\n{% endif %}<\/p>"
+            "custom_liquid": "<p style=\"color: #ababab\";>{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable' | t }}\n{% else %}\n    {{ 'products.product.not_taxable' | t }}\n{% endif %}<\/p>"
           }
         },
         "99452d1b-4d7e-4077-a88b-abeded9e84f2": {
@@ -86,30 +86,12 @@
             "show_button": false
           }
         },
-        "235b8cd5-c263-4cde-9104-81a9203d4384": {
+        "6ff4987b-8f35-4a2e-89e3-3f40f342da38": {
           "type": "condition",
           "settings": {
             "show_mechanical": true,
             "show_optical": true,
             "show_cosmetic": false
-          }
-        },
-        "ad4fef74-222f-422b-a2e1-33623ff7b9e6": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "True Condition",
-            "content": "<p>Our used item condition ratings are over 99,5% accurate! Our highly skilled technicians use period-appropriate machinery to evaluate an item's true condition.<\/p><p><a href=\"\/pages\/camera-condition-ratings\" target=\"_blank\" title=\"Camera Condition Ratings\">Camera Condition Ratings<\/a><\/p>",
-            "page": "",
-            "icon": "star"
-          }
-        },
-        "a4908876-2ec2-4049-8519-f88aac2c716e": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "30 Day Returns",
-            "content": "<p>Change your mind? Not satisfied? Let us know within 30 days of delivery for a return and refund.<\/p><p><a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"\/policies\/refund-policy\">Read More<\/a><\/p>",
-            "page": "",
-            "icon": "return"
           }
         },
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b": {
@@ -121,8 +103,27 @@
             "icon": "plane"
           }
         },
+        "a4908876-2ec2-4049-8519-f88aac2c716e": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "30 Day Returns",
+            "content": "<p>Change your mind? Not satisfied? Let us know within 30 days of delivery for a return and refund.<\/p><p><a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"\/policies\/refund-policy\">Read More<\/a><\/p>",
+            "page": "",
+            "icon": "return"
+          }
+        },
+        "ad4fef74-222f-422b-a2e1-33623ff7b9e6": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "True Condition",
+            "content": "<p>Our used item condition ratings (1 to 5 scale) are over 99,5% accurate! Our highly skilled technicians use period-appropriate machinery to evaluate an item's true condition.<\/p><p><a href=\"\/pages\/camera-condition-ratings\" target=\"_blank\" title=\"Camera Condition Ratings\">Camera Condition Ratings<\/a><\/p>",
+            "page": "",
+            "icon": "star"
+          }
+        },
         "a41a8e68-deb3-4414-bc77-846ae026a7ec": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Actual Item Pictured",
             "content": "<p>We take the time to photograph every used item. When you buy from us you are getting the item you see in the photos.<\/p>",
@@ -132,6 +133,7 @@
         },
         "f8962c4a-da22-4a3d-8f73-05ff4d13ed57": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Sell Your Gear to Us!",
             "content": "<p>We buy & trade cameras, lenses, and accessories on top of selling! If you're looking to upgrade or change your gear, why not sell directly to us?<br\/><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\"><strong>Click here to fill out our form!<\/strong><\/a><\/p>",
@@ -147,6 +149,33 @@
             "page": "sell-or-trade-your-used-camera-gear",
             "show_button": false
           }
+        },
+        "acee846d-90ef-4f58-9075-b2513c31753c": {
+          "type": "popup",
+          "disabled": true,
+          "settings": {
+            "text": "Conditions",
+            "page": "",
+            "show_button": false
+          }
+        },
+        "6cc72963-d1c6-405d-a2b7-35264953cc18": {
+          "type": "popup",
+          "disabled": true,
+          "settings": {
+            "text": "Shipping",
+            "page": "packing-shipping",
+            "show_button": false
+          }
+        },
+        "669b8d80-ccb3-4728-867d-ef53d814398d": {
+          "type": "popup",
+          "disabled": true,
+          "settings": {
+            "text": "Returns",
+            "page": "about-kamerastore",
+            "show_button": false
+          }
         }
       },
       "block_order": [
@@ -160,13 +189,16 @@
         "buy_buttons",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
         "cd07da4b-ae00-46ee-bf67-5c7799d93921",
-        "235b8cd5-c263-4cde-9104-81a9203d4384",
-        "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
-        "a4908876-2ec2-4049-8519-f88aac2c716e",
+        "6ff4987b-8f35-4a2e-89e3-3f40f342da38",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
+        "a4908876-2ec2-4049-8519-f88aac2c716e",
+        "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
         "a41a8e68-deb3-4414-bc77-846ae026a7ec",
         "f8962c4a-da22-4a3d-8f73-05ff4d13ed57",
-        "92fd3d60-c515-429c-a9e4-6bb9e3712c80"
+        "92fd3d60-c515-429c-a9e4-6bb9e3712c80",
+        "acee846d-90ef-4f58-9075-b2513c31753c",
+        "6cc72963-d1c6-405d-a2b7-35264953cc18",
+        "669b8d80-ccb3-4728-867d-ef53d814398d"
       ],
       "settings": {
         "product_role": "stock",
@@ -180,7 +212,7 @@
     "1656487051d3ce587c": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div style=\"background-color:#F6F6F6;\"><br>\n<div class=\"page-width page-width--wide\"><p>\n  {%- assign current_variant = product.selected_or_first_available_variant -%}\n\n  {% if product.metafields.kameratori.serial_number and product.metafields.kameratori.serial_number != \"\" %}\n    Serial Number:  <b>{{product.metafields.kameratori.serial_number}}<\/b><br>\n  {% endif %}\n\n{%if product.metafields.kameratori.new_light_seals %}\nNew Light Seals: <b>Yes<\/b>\n<br>{% endif %}\n\n  {% if product.metafields.kameratori.body_accessories and product.metafields.kameratori.body_accessories.value.size > 0%} Also includes:\n    {% for accessory in product.metafields.kameratori.body_accessories.value %}\n     <b> {{accessory}}<\/b>\n      {% if forloop.last != true %}, {% endif %}\n    {% endfor %}\n<br>\n  {% endif %}\n\n  {% if product.metafields.kameratori.batteries and product.metafields.kameratori.batteries.value.size > 0 %}\n    Battery: \n    {% for battery in product.metafields.kameratori.batteries.value %}\n     <b> {{battery}}<\/b>\n      {% if forloop.last != true %}, {% endif %}\n    {% endfor %}\n  {% endif %}\n<\/p>\n<br><\/div><\/body>"
+        "custom_liquid": "<div style=\"background-color:#F6F6F6;\"><br>\n<div class=\"page-width page-width--wide\"><p>\n  {%- assign current_variant = product.selected_or_first_available_variant -%}\nActual item pictured<br>\n  {% if product.metafields.kameratori.serial_number and product.metafields.kameratori.serial_number != \"\" %}\n    Serial Number:  <b>{{product.metafields.kameratori.serial_number}}<\/b><br>\n  {% endif %}\n\n{%if product.metafields.kameratori.new_light_seals %}\nNew Light Seals: <b>Yes<\/b>\n<br>{% endif %}\n\n  {% if product.metafields.kameratori.body_accessories and product.metafields.kameratori.body_accessories.value.size > 0%} Also includes:\n    {% for accessory in product.metafields.kameratori.body_accessories.value %}\n     <b> {{accessory}}<\/b>\n      {% if forloop.last != true %}, {% endif %}\n    {% endfor %}\n<br>\n  {% endif %}\n\n  {% if product.metafields.kameratori.batteries and product.metafields.kameratori.batteries.value.size > 0 %}\n    Battery: \n    {% for battery in product.metafields.kameratori.batteries.value %}\n     <b> {{battery}}<\/b>\n      {% if forloop.last != true %}, {% endif %}\n    {% endfor %}\n  {% endif %}\n<\/p>\n<br><\/div><\/body>"
       }
     },
     "163178438845c86d64": {

@@ -53,12 +53,14 @@
         },
         "83754794-92b8-452f-98b4-999eea3e6967": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<p>{%- assign current_variant = product.selected_or_first_available_variant -%}\n\n{% if product.metafields.kameratori.shutter_count and product.metafields.kameratori.shutter_count != \"\" %}\n  Shutter Count:  <b>{{product.metafields.kameratori.shutter_count}}<\/b><br>\n{% else %}\n{% endif %}\n\n\n{% if product.metafields.kameratori.sensor_cleaned == true %}\n  Sensor Cleaned: <b>Yes<\/b><br>\n{% else %}\n{% endif %}\n\n\n{% if product.metafields.kameratori.settings_reset == true %}\n  Settings Reset: <b>Yes<\/b><br>\n{% else %}\n{% endif %}\n\n\n{% if product.metafields.kameratori.firmware_updated == true %}\n  Firmware Updated: <b>Yes<\/b><br>\n{% else %}\n{% endif %}\n\n{% if product.metafields.kameratori.batteries and product.metafields.kameratori.batteries.value.size > 0 %}\n  Battery: \n  {% for battery in product.metafields.kameratori.batteries.value %}\n   <b> {{battery}}<\/b>\n    {% if forloop.last != true %}, {% endif %}\n  {% endfor %}\n{% endif %}\n<\/p>"
           }
         },
         "0cffe7b5-b771-473e-bee0-fb83094d383c": {
           "type": "popup",
+          "disabled": true,
           "settings": {
             "text": "Have this {{ product.vendor }}? Sell it to us!",
             "page": "sell-or-trade-your-used-camera-gear",
@@ -73,6 +75,7 @@
         },
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"supplies\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n          <\/div>\n{% endunless %}"
           }
@@ -87,6 +90,7 @@
         },
         "cd07da4b-ae00-46ee-bf67-5c7799d93921": {
           "type": "popup",
+          "disabled": true,
           "settings": {
             "text": "Camera Condition Ratings",
             "page": "camera-condition-ratings",
@@ -97,7 +101,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "True Condition",
-            "content": "<p>Our used item condition ratings are over 99,5% accurate! Our highly skilled technicians use period-appropriate machinery to evaluate an item's true condition.<\/p>",
+            "content": "<p>Our used item condition ratings are over 99,5% accurate! Our highly skilled technicians use period-appropriate machinery to evaluate an item's true condition.<\/p><p><a href=\"\/pages\/camera-condition-ratings\" target=\"_blank\" title=\"Camera Condition Ratings\">Camera Condition Ratings<\/a><\/p>",
             "page": "",
             "icon": "star"
           }
@@ -132,7 +136,7 @@
         "781bf0a9-e0c8-47ec-92ab-5829e7802200": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Sell Your Gear to Us!",
+            "heading": "Sell Your {{ product.vendor }} Gear to Us!",
             "content": "<p>We buy & trade cameras, lenses, and accessories on top of selling! If you're looking to upgrade or change your gear, why not sell directly to us?<br\/><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\"><strong>Click here to fill out our form!<\/strong><\/a><\/p>",
             "page": "",
             "icon": "price_tag"
@@ -165,6 +169,12 @@
         "enable_video_looping": false,
         "show_breadcrumbs": true,
         "show_sku_and_barcode": true
+      }
+    },
+    "16570183091e26c1a6": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"background-color:#F6F6F6;\"><br>\n<div class=\"page-width page-width--wide\">\n\n<p>{%- assign current_variant = product.selected_or_first_available_variant -%}\n\n{% if product.metafields.kameratori.shutter_count and product.metafields.kameratori.shutter_count != \"\" %}\n  Shutter Count:  <b>{{product.metafields.kameratori.shutter_count}}<\/b><br>\n{% else %}\n{% endif %}\n\n\n{% if product.metafields.kameratori.sensor_cleaned == true %}\n  Sensor Cleaned: <b>Yes<\/b><br>\n{% else %}\n{% endif %}\n\n\n{% if product.metafields.kameratori.settings_reset == true %}\n  Settings Reset: <b>Yes<\/b><br>\n{% else %}\n{% endif %}\n\n\n{% if product.metafields.kameratori.firmware_updated == true %}\n  Firmware Updated: <b>Yes<\/b><br>\n{% else %}\n{% endif %}\n\n{% if product.metafields.kameratori.batteries and product.metafields.kameratori.batteries.value.size > 0 %}\n  Battery: \n  {% for battery in product.metafields.kameratori.batteries.value %}\n   <b> {{battery}}<\/b>\n    {% if forloop.last != true %}, {% endif %}\n  {% endfor %}\n{% endif %}\n<br>\n {% if product.metafields.kameratori.serial_number and product.metafields.kameratori.serial_number != \"\" %}\n    Serial Number:  <b>{{product.metafields.kameratori.serial_number}}<\/b><br>\n  {% endif %}\n\n  {% if product.metafields.kameratori.body_accessories and product.metafields.kameratori.body_accessories.value.size > 0%} Also includes:\n    {% for accessory in product.metafields.kameratori.body_accessories.value %}\n     <b> {{accessory}}<\/b>\n      {% if forloop.last != true %}, {% endif %}\n    {% endfor %}\n<br>\n  {% endif %}\n<\/p>\n<br><\/div><\/body>"
       }
     },
     "163178438845c86d64": {
@@ -291,6 +301,7 @@
   "order": [
     "16334152711e2727b9",
     "main",
+    "16570183091e26c1a6",
     "163178438845c86d64",
     "1632735936daa328ef",
     "16321391205a6cb4a0",

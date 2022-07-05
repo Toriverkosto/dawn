@@ -209,6 +209,48 @@
         "show_sku_and_barcode": true
       }
     },
+    "16570234280b4eba7b": {
+      "type": "multicolumn",
+      "disabled": true,
+      "blocks": {
+        "16570234289b665c0d-0": {
+          "type": "column",
+          "settings": {
+            "title": "FAST SHIPPING",
+            "text": "<p>🇫🇮 <strong>Finland<\/strong> 5€ <strong><br\/><\/strong>🇪🇺 <strong>EU<\/strong> 10€<br\/>🇺🇸 <strong>USA<\/strong> 20€<br\/> <a href=\"\/policies\/shipping-policy\" title=\"Shipping Policy\">See full list<\/a><\/p>"
+          }
+        },
+        "16570234289b665c0d-1": {
+          "type": "column",
+          "settings": {
+            "title": "30 DAY RETURNS",
+            "text": "<p>Change your mind? Not satisfied? Let us know within 30 days of delivery for a return and refund.<\/p><p><a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"\/policies\/refund-policy\">Read More<\/a><\/p>"
+          }
+        },
+        "16570234289b665c0d-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16570234289b665c0d-0",
+        "16570234289b665c0d-1",
+        "16570234289b665c0d-2"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "secondary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
     "1656487051d3ce587c": {
       "type": "custom-liquid",
       "settings": {
@@ -326,6 +368,7 @@
     "16334152711e2727b9",
     "1656932661dc5f33b1",
     "main",
+    "16570234280b4eba7b",
     "1656487051d3ce587c",
     "163178438845c86d64",
     "16321391205a6cb4a0",

@@ -1,12 +1,5 @@
 {
   "sections": {
-    "16334152711e2727b9": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<div class=\"page-width page-width--wide\">\n<p style=\"color: #b3b3b3\">{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span> ID: {{ current_variant.sku }}<\/span> {% if current_variant.barcode %}{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span>\/ Code: {{ current_variant.barcode }}  <\/span><\/p>{% endif %}<\/div>"
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -183,6 +176,13 @@
         "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<H2>Description<\/h2><H3>{{ product.title }}<\/h3>{{ product.description }}<\/div>"
       }
     },
+    "16334152711e2727b9": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "{{product.metafields.kameratori.host.value.description}}\n\n<div class=\"page-width page-width--wide\">\n<p style=\"color: #b3b3b3\">{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span> ID: {{ current_variant.sku }}<\/span> {% if current_variant.barcode %}{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span>\/ Code: {{ current_variant.barcode }}  <\/span><\/p>{% endif %}<\/div>"
+      }
+    },
     "1632735936daa328ef": {
       "type": "apps",
       "disabled": true,
@@ -299,10 +299,10 @@
     }
   },
   "order": [
-    "16334152711e2727b9",
     "main",
     "16570183091e26c1a6",
     "163178438845c86d64",
+    "16334152711e2727b9",
     "1632735936daa328ef",
     "16321391205a6cb4a0",
     "product-recommendations",

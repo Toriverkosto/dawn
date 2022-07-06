@@ -154,12 +154,6 @@
             "page": "about-valoi",
             "show_button": false
           }
-        },
-        "f9901b03-7564-4fa2-911a-9bb933489daa": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<a href=\"valoi.kamerastore.com\">VALOI<\/a>"
-          }
         }
       },
       "block_order": [
@@ -178,8 +172,7 @@
         "a4908876-2ec2-4049-8519-f88aac2c716e",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "94f403ff-3385-43d7-865b-0b0000459f54",
-        "9b20a83b-fe5d-4d60-80fb-5e93ee1a61c2",
-        "f9901b03-7564-4fa2-911a-9bb933489daa"
+        "9b20a83b-fe5d-4d60-80fb-5e93ee1a61c2"
       ],
       "settings": {
         "product_role": "stock",

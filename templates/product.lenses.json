@@ -57,6 +57,12 @@
             "custom_liquid": "<p style=\"color: #ababab\">{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable' | t }}\n{% else %}\n    {{ 'products.product.not_taxable' | t }} \n{% endif %}<\/p>"
           }
         },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
         "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e": {
           "type": "custom_liquid",
           "settings": {
@@ -70,12 +76,6 @@
             "text": "Have this {{ product.vendor }}? Sell it to us!",
             "page": "sell-or-trade-your-used-camera-gear",
             "show_button": false
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false
           }
         },
         "4fc793ac-a118-4f11-a2c8-eaa352ca1d8c": {
@@ -151,9 +151,9 @@
         "241631da-98aa-4528-be61-73d8d8c6b988",
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
+        "buy_buttons",
         "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e",
         "1c28b91b-10db-4a64-8a10-5a06f85ccf14",
-        "buy_buttons",
         "4fc793ac-a118-4f11-a2c8-eaa352ca1d8c",
         "9201f616-91de-46a1-910a-4702d782a6ca",
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",

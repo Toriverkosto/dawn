@@ -93,8 +93,8 @@
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "True Condition",
-            "content": "<p>Our used item condition ratings are over 99,5% accurate! Our highly skilled technicians use period-appropriate machinery to evaluate an item's true condition.<\/p><p><a href=\"\/pages\/camera-condition-ratings\" target=\"_blank\" title=\"Camera Condition Ratings\">Camera Condition Ratings<\/a><\/p>",
+            "heading": "Condition Ratings",
+            "content": "<p>Our technicians use the appropriate tools to check every item's function and we use these results to assign ratings of 1 to 5. Cosmetic condition can be determined by each customer by viewing the photos.<\/p><p><a href=\"\/pages\/camera-condition-ratings\" target=\"_blank\" title=\"Camera Condition Ratings\">How we Rate Cameras<\/a><\/p>",
             "page": "",
             "icon": "star"
           }
@@ -119,6 +119,7 @@
         },
         "a41a8e68-deb3-4414-bc77-846ae026a7ec": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Actual Item Pictured",
             "content": "<p>We take the time to photograph every used item. When you buy from us you are getting the item you see in the photos.<\/p>",
@@ -128,6 +129,7 @@
         },
         "781bf0a9-e0c8-47ec-92ab-5829e7802200": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Sell Your {{ product.vendor }} Gear to Us!",
             "content": "<p>We buy & trade cameras, lenses, and accessories on top of selling! If you're looking to upgrade or change your gear, why not sell directly to us?<br\/><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\"><strong>Click here to fill out our form!<\/strong><\/a><\/p>",

@@ -65,6 +65,7 @@
         },
         "1c28b91b-10db-4a64-8a10-5a06f85ccf14": {
           "type": "popup",
+          "disabled": true,
           "settings": {
             "text": "Have this {{ product.vendor }}? Sell it to us!",
             "page": "sell-or-trade-your-used-camera-gear",
@@ -87,6 +88,7 @@
         },
         "9201f616-91de-46a1-910a-4702d782a6ca": {
           "type": "popup",
+          "disabled": true,
           "settings": {
             "text": "Lens Condition Ratings",
             "page": "lens-condition-ratings",

@@ -47,9 +47,23 @@
             "link_to_host": true
           }
         },
+        "a01329cd-da87-4153-b7a4-04796b35d6d6": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div class=\"card-information\">\n    <div class=\"card-information__wrapper\">\n      <div class=\"caption-with-letter-spacing light\">{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable' | t }}\n{% else %}\n    {{ 'products.product.not_taxable' | t }}\n{% endif %}<\/div>\n      {{product.title}}\n    <\/div>\n  <\/div>"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
+          }
+        },
+        "99452d1b-4d7e-4077-a88b-abeded9e84f2": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div class=\"card-information\">\n    <div class=\"card-information__wrapper\">\n      <span class=\"visually-hidden\">{{ 'accessibility.vendor' | t }}<\/span>\n      <div class=\"caption-with-letter-spacing light\">{{ 'products.product.vendor' | t }}<\/div>\n      {{ product.price | money}}\n    <\/div>\n  <\/div>"
           }
         },
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d": {
@@ -114,13 +128,6 @@
             "icon": "plane"
           }
         },
-        "99452d1b-4d7e-4077-a88b-abeded9e84f2": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "<div class=\"card-information\">\n    <div class=\"card-information__wrapper\">\n      <span class=\"visually-hidden\">{{ 'accessibility.vendor' | t }}<\/span>\n      <div class=\"caption-with-letter-spacing light\">{{ 'products.product.vendor' | t }}<\/div>\n      {{ product.price | money}}\n    <\/div>\n  <\/div>"
-          }
-        },
         "a41a8e68-deb3-4414-bc77-846ae026a7ec": {
           "type": "collapsible_tab",
           "disabled": true,
@@ -183,7 +190,9 @@
         "title",
         "0df71d04-5b16-4ca9-a92f-43724c825900",
         "3489098b-b626-48b9-9b69-4aca9ec53063",
+        "a01329cd-da87-4153-b7a4-04796b35d6d6",
         "price",
+        "99452d1b-4d7e-4077-a88b-abeded9e84f2",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
         "buy_buttons",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
@@ -192,7 +201,6 @@
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
-        "99452d1b-4d7e-4077-a88b-abeded9e84f2",
         "a41a8e68-deb3-4414-bc77-846ae026a7ec",
         "f8962c4a-da22-4a3d-8f73-05ff4d13ed57",
         "92fd3d60-c515-429c-a9e4-6bb9e3712c80",

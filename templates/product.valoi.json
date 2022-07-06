@@ -41,11 +41,11 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "f1a00ebf-5dcf-451a-a5ef-85ac75f52a37": {
-          "type": "system_and_type",
+        "0e8dca92-f1ad-420f-95ae-8f0144483798": {
+          "type": "text",
           "settings": {
-            "show_system": true,
-            "show_type": false
+            "text": "VALOI{{ product.vendor }}",
+            "text_style": "body"
           }
         },
         "title": {
@@ -157,7 +157,7 @@
         }
       },
       "block_order": [
-        "f1a00ebf-5dcf-451a-a5ef-85ac75f52a37",
+        "0e8dca92-f1ad-420f-95ae-8f0144483798",
         "title",
         "cf29d553-05b4-4684-9080-1bcc4b961df2",
         "7204a9ac-d9c4-4659-be9a-3662cfbc43c5",

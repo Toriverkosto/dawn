@@ -4,9 +4,9 @@
     "colors_accent_1": "#4ab6ff",
     "gradient_accent_1": "linear-gradient(141deg, rgba(74, 182, 255, 1) 6%, rgba(74, 182, 255, 1) 100%)",
     "colors_accent_2": "#1878b9",
-    "gradient_accent_2": "linear-gradient(141deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 98%)",
-    "colors_text": "#121212",
-    "colors_outline_button_labels": "#004878",
+    "gradient_accent_2": "linear-gradient(141deg, rgba(255, 195, 21, 1), rgba(255, 195, 21, 1) 98%)",
+    "colors_text": "#3e3e3e",
+    "colors_outline_button_labels": "#027ed2",
     "colors_background_1": "#ffffff",
     "colors_background_2": "#f7f7f7",
     "type_header_font": "asap_n4",
@@ -155,7 +155,6 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-2",
-          "logo": "shopify:\/\/shop_images\/Kamerastore_Logo.png",
           "logo_width": 140,
           "logo_position": "top-center",
           "menu": "main-menu",
@@ -177,7 +176,7 @@
             "type": "link_list",
             "settings": {
               "heading": "FAQ",
-              "menu": "questions-answered"
+              "menu": ""
             }
           },
           "footer-1": {
@@ -244,18 +243,6 @@
       },
       "15323590465973626552": {
         "type": "shopify:\/\/apps\/translate-currency-langshop\/blocks\/langshop\/84899e01-2b29-42af-99d6-46d16daa2111",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "15351435345818755577": {
-        "type": "shopify:\/\/apps\/gdpr-compliance-center\/blocks\/banner\/58c0baa2-6cc1-480c-9ea6-38d6d559556a",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {
         }

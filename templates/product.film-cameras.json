@@ -50,7 +50,7 @@
         "b5ed9bc2-73ac-4438-a0f0-79dae862f36c": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "dropdown"
+            "picker_type": "button"
           }
         },
         "buy_buttons": {

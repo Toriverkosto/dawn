@@ -2,15 +2,16 @@
   "sections": {
     "1644845255ea764830": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
-        "custom_liquid": "{% if product.tags contains 'Sold' %}\n<style>\n.restricted {\n  background-color: #D6D8D9;\n  color: #666;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-bottom: 20px;\n  border: 2px solid #999;\n  margin: 5%;\n  border-radius: 5px;\n}\n<\/style>\n<\/head>\n<body>\n\n<div class=\"restricted\">\n<h2><b>Sold<\/b> on {{ product.metafields.my_fields.last_updated.value | date: \"%a, %b %d, %Y at %H:%M\" }}<\/h2>\n<p>\"{{product.title}}\" sold on \n{{ product.metafields.my_fields.last_updated.value | date: \"%a, %b %d, %Y at %H:%M\" }} We believe in transparent pricing & sharing information with the photographic community. By keeping our sold product pages visible, you can use the data for your own research. Check out our <a href=\"\/collections\/all-items\">newly listed items<\/a> to make sure you don't miss out again.\n<\/p>\n<\/div>\n{% endif %}"
+        "custom_liquid": "<div class=\"page-width page-width--wide\">\n<p style=\"color: #b3b3b3\">{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span> ID: {{ current_variant.sku }}<\/span> {% if current_variant.barcode %}{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span>\/ Code: {{ current_variant.barcode }}  <\/span><\/p>{% endif %}<\/div>"
       }
     },
     "16334152711e2727b9": {
       "type": "custom-liquid",
       "disabled": true,
       "settings": {
-        "custom_liquid": "<div class=\"page-width page-width--wide\">\n<p style=\"color: #b3b3b3\">{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span> ID: {{ current_variant.sku }}<\/span> {% if current_variant.barcode %}{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span>\/ Code: {{ current_variant.barcode }}  <\/span><\/p>{% endif %}<\/div>"
+        "custom_liquid": "{% if product.tags contains 'From-Fototapio' %}\n<style>\n.restricted {\n  background-color: #FEF7EA;\n  color: #3E4447;\n  padding-left: 15px;\n  padding-right: 15px;\n  padding-bottom: 20px;\n  border: 2px solid #F6DFBB;\n  margin: 50px;\n  border-radius: 5px;\n}\n<\/style>\n<\/head>\n<body>\n\n<div class=\"restricted\">\n<h3><\/h3>\n<p><h2><b>This item has sold!<\/b><\/h2>\n\"{{product.title}}\" cannot be shipped outside of Finland, this is due to the items content or size.<\/p>\n<\/div>\n{% endif %}"
       }
     },
     "main": {
@@ -34,16 +35,6 @@
             "custom_liquid": "<a href=\"{{ product.metafields.my_fields.database_parent.value.url }}\" class=\"link link--text underlined-link\">Read or Write Reviews<\/a>"
           }
         },
-        "0df71d04-5b16-4ca9-a92f-43724c825900": {
-          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
-          "settings": {
-            "stars_fill_color": "#ffc315",
-            "star_size": 18,
-            "text_align": "flex-start",
-            "product": "{{ product.metafields.my_fields.database_parent.value }}",
-            "stars_text_empty": "No reviews"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
@@ -56,10 +47,10 @@
             "custom_liquid": "<div class=\"card-information\">\n    <div class=\"card-information__wrapper\">\n      <div class=\"caption-with-letter-spacing light\">{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable' | t }}\n{% else %}\n    {{ 'products.product.not_taxable' | t }}\n{% endif %}<\/div>\n      Ships to: 100+ Countries\n    <\/div>\n  <\/div>"
           }
         },
-        "99452d1b-4d7e-4077-a88b-abeded9e84f2": {
-          "type": "custom_liquid",
+        "b5ed9bc2-73ac-4438-a0f0-79dae862f36c": {
+          "type": "variant_picker",
           "settings": {
-            "custom_liquid": "{{ product.metafields.my_fields.database_parent.value.url }}\n<a href=\"{{ product.metafields.my_fields.database_parent.value.url }}\" class=\"link link--text underlined-link\">Read or Write Reviews<\/a>\n{{ \nproduct.metafields.my_fields.database_parent.value }}\n\n{{ product.metafields.reviews.rating.value }}"
+            "picker_type": "dropdown"
           }
         },
         "buy_buttons": {
@@ -75,23 +66,6 @@
           }
         },
         "235b8cd5-c263-4cde-9104-81a9203d4384": {
-          "type": "condition",
-          "settings": {
-            "show_mechanical": true,
-            "show_optical": true,
-            "show_cosmetic": false
-          }
-        },
-        "cd07da4b-ae00-46ee-bf67-5c7799d93921": {
-          "type": "popup",
-          "disabled": true,
-          "settings": {
-            "text": "Camera Condition Ratings",
-            "page": "camera-condition-ratings",
-            "show_button": false
-          }
-        },
-        "6ff4987b-8f35-4a2e-89e3-3f40f342da38": {
           "type": "condition",
           "settings": {
             "show_mechanical": true,
@@ -187,16 +161,12 @@
         "5875f51c-da6b-4990-b273-8ddfdb2d7397",
         "title",
         "74fe16dc-fae7-4902-b96b-a73338f83400",
-        "0df71d04-5b16-4ca9-a92f-43724c825900",
         "price",
-        "a01329cd-da87-4153-b7a4-04796b35d6d6",
-        "99452d1b-4d7e-4077-a88b-abeded9e84f2",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
-        "4f0717e0-34d7-44d7-9543-6fdf50a55941",
+        "b5ed9bc2-73ac-4438-a0f0-79dae862f36c",
         "buy_buttons",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
-        "cd07da4b-ae00-46ee-bf67-5c7799d93921",
-        "6ff4987b-8f35-4a2e-89e3-3f40f342da38",
+        "235b8cd5-c263-4cde-9104-81a9203d4384",
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
@@ -213,55 +183,7 @@
         "hide_variants": false,
         "enable_video_looping": false,
         "show_breadcrumbs": true,
-        "show_sku_and_barcode": true
-      }
-    },
-    "16570234280b4eba7b": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "16570234289b665c0d-0": {
-          "type": "column",
-          "settings": {
-            "title": "FAST SHIPPING",
-            "text": "<p>🇫🇮 <strong>Finland<\/strong> 5€ <strong><br\/><\/strong>🇪🇺 <strong>EU<\/strong> 10€<br\/>🇺🇸 <strong>USA<\/strong> 20€<br\/> <a href=\"\/policies\/shipping-policy\" title=\"Shipping Policy\">See full list<\/a><\/p>"
-          }
-        },
-        "16570234289b665c0d-1": {
-          "type": "column",
-          "settings": {
-            "title": "30 DAY RETURNS",
-            "text": "<p>Change your mind? Not satisfied? Let us know within 30 days of delivery for a return and refund.<\/p><p><a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"\/policies\/refund-policy\">Read More<\/a><\/p>"
-          }
-        },
-        "16570234289b665c0d-2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "16570234289b665c0d-0",
-        "16570234289b665c0d-1",
-        "16570234289b665c0d-2"
-      ],
-      "settings": {
-        "title": "Multicolumn",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "secondary",
-        "button_label": "Button label",
-        "button_link": "",
-        "swipe_on_mobile": false
-      }
-    },
-    "1656487051d3ce587c": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div style=\"background-color:#F6F6F6;\"><br>\n<div class=\"page-width page-width--wide\"><p>\n  {%- assign current_variant = product.selected_or_first_available_variant -%}\nActual item pictured<br>\n  {% if product.metafields.kameratori.serial_number and product.metafields.kameratori.serial_number != \"\" %}\n    Serial Number:  <b>{{product.metafields.kameratori.serial_number}}<\/b><br>\n  {% endif %}\n\n{%if product.metafields.kameratori.new_light_seals %}\nNew Light Seals: <b>Yes<\/b>\n<br>{% endif %}\n\n  {% if product.metafields.kameratori.body_accessories and product.metafields.kameratori.body_accessories.value.size > 0%} Also includes:\n    {% for accessory in product.metafields.kameratori.body_accessories.value %}\n     <b> {{accessory}}<\/b>\n      {% if forloop.last != true %}, {% endif %}\n    {% endfor %}\n<br>\n  {% endif %}\n\n  {% if product.metafields.kameratori.batteries and product.metafields.kameratori.batteries.value.size > 0 %}\n    Battery: \n    {% for battery in product.metafields.kameratori.batteries.value %}\n     <b> {{battery}}<\/b>\n      {% if forloop.last != true %}, {% endif %}\n    {% endfor %}\n  {% endif %}\n<\/p>\n<br><\/div><\/body>"
+        "show_sku_and_barcode": false
       }
     },
     "163178438845c86d64": {
@@ -276,7 +198,6 @@
         "6ac9b599-c067-409f-818e-24aa63217351": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_0101_Cropped.jpg",
             "title": "Light Seals",
             "text": "<p>Light seals, are thin strips of black foam that keep unwanted light from leaking into your camera body. Since they degrade with time, we replace them on every camera that needs it. This keeps your images free of light leaks.<\/p>"
           }
@@ -284,7 +205,6 @@
         "16321391205a6cb4a0-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2021-09-20_at_16.36.47_Cropped.png",
             "title": "Automatic Exposure \/ Metering",
             "text": "<p>The amount of automatic features in a camera will determine the path of machine testing we must perform. These tests can check light meters and automatic features through a range of exposure values. Calibrated lenses and calibrated light boxes also assist in this process.<\/p>"
           }
@@ -292,7 +212,6 @@
         "16321391205a6cb4a0-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2021-09-20_at_16.30.17_Cropped.png",
             "title": "Shutter Speeds",
             "text": "<p>We use period-appropriate, professional-grade testing equipment as necessary to accurately assess shutter performance. These machines tell us how long a shutter stays open and whether or not the shutter curtains are moving correctly. We have multiple machines that allow us to test nearly every camera type available.<\/p>"
           }
@@ -300,7 +219,6 @@
         "16321391205a6cb4a0-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_0233_Cropped-3.jpg",
             "title": "Infinity Focusing & Rangefinder Alignment",
             "text": "<p>Our collimator is used to simulate infinity focus for the purpose of ensuring lens alignment & focus at any distance. We also use a special high-contrast target board to ensure that rangefinders are properly aligned both vertically & horizontally.<\/p>"
           }
@@ -364,7 +282,6 @@
         "16321339467e367887-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/minolta-8320-0002.jpg",
         "height": "small",
         "color_scheme": "inverse",
         "layout": "text_first"

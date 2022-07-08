@@ -416,7 +416,7 @@
       },
       "payment": {
         "title": "Payment Options",
-        "card_security_notice": "Select \"Paytrail\" for Finnish payment methods (Online banks & mobile payments). All transactions are secure and encrypted. "
+        "card_security_notice": "All transactions are secure and encrypted. "
       }
     },
     "store_availability": {

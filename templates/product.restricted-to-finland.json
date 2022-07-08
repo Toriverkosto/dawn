@@ -66,7 +66,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "30 Day Returns",
-            "content": "<p>Change your mind? Let us know within 30 days of delivery for a return and refund if your item is unopened.<\/p><p><a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"\/policies\/refund-policy\">Read More<\/a><\/p>",
+            "content": "<p>Change your mind? Let us know within 30 days of delivery for a return and refund.<\/p><p><a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"\/policies\/refund-policy\">Read More<\/a><\/p>",
             "page": "",
             "icon": "return"
           }

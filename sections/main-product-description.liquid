@@ -11,16 +11,6 @@
   }
 </style>
 
-
-{% comment %}Calculate whether any products are available to know if the table should be shown at all{% endcomment %}
-{% assign products_available = false %}
-
-{% for product in product.metafields.kameratori.stock_items.value %}
-  {% if product.available %}
-    {% assign products_available = true %}
-  {% endif %}
-{% endfor %}
-
 <section class="page-width page-width--narrow">
   <h2>Description</h2>
   <h3>{{ product.title }}</h3>
@@ -39,9 +29,11 @@
 
     {% comment %}Main DB product desription{% endcomment %}
     {% assign host_product = product.metafields.kameratori.host.value %}
-    <hr class="main-product-description shallow" />
-    <b>{{ host_product.title }}</b>
-    <p>{{ host_product.description }}</p>
+    {% if host_product != nil and host_product.description != blank %}
+      <hr class="main-product-description shallow" />
+      <b>{{ host_product.title }}</b>
+      <p>{{ host_product.description }}</p>
+    {% endif %}
 
     {% comment %}Kit DB descriptions{% endcomment %}
     {% for kit_product in product.metafields.kameratori.kit_products.value %}

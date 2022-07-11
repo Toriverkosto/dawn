@@ -485,6 +485,12 @@
         "name": "Database product price table"
       }
     },
+    "main-product-description": {
+      "name": "Product description",
+      "presets": {
+        "name": "Product descriptions"
+      }
+    },
     "featured-blog": {
       "name": "Blog posts",
       "settings": {

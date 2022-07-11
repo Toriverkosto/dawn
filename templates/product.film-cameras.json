@@ -274,8 +274,14 @@
     },
     "163178438845c86d64": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<H2>Description<\/h2>{{ product.description }}<\/div>"
+      }
+    },
+    "1657531617639545ac": {
+      "type": "main-product-description",
+      "settings": {
       }
     },
     "16321391205a6cb4a0": {
@@ -386,6 +392,7 @@
     "16570234280b4eba7b",
     "1656487051d3ce587c",
     "163178438845c86d64",
+    "1657531617639545ac",
     "16321391205a6cb4a0",
     "product-recommendations",
     "16321339467e367887"

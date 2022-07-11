@@ -40,11 +40,11 @@
           "settings": {
           }
         },
-        "a01329cd-da87-4153-b7a4-04796b35d6d6": {
+        "853cea71-8e8d-4b3a-8d41-fda13fdf751d": {
           "type": "custom_liquid",
           "disabled": true,
           "settings": {
-            "custom_liquid": "<div class=\"card-information\">\n    <div class=\"card-information__wrapper\">\n      <div class=\"caption-with-letter-spacing light\">{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable' | t }}\n{% else %}\n    {{ 'products.product.not_taxable' | t }}\n{% endif %}<\/div>\n      Ships to: 100+ Countries\n    <\/div>\n  <\/div>"
+            "custom_liquid": "<p style=\"color: #ababab\">{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable' | t }}\n{% else %}\n    {{ 'products.product.not_taxable' | t }}\n{% endif %}<\/p>"
           }
         },
         "b5ed9bc2-73ac-4438-a0f0-79dae862f36c": {
@@ -76,8 +76,8 @@
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Condition Ratings",
-            "content": "<p>Our technicians use the appropriate tools to check every item's function and we use these results to assign ratings of 1 to 5. Cosmetic condition can be determined by each customer by viewing the photos.<\/p><p><a href=\"\/pages\/camera-condition-ratings\" target=\"_blank\" title=\"Camera Condition Ratings\">How we Rate Cameras<\/a><\/p>",
+            "heading": "True Condition",
+            "content": "<p>Our used item condition ratings are over 99,5% accurate! Our highly skilled technicians use period-appropriate machinery to evaluate an item's true condition.<\/p>",
             "page": "",
             "icon": "star"
           }
@@ -85,8 +85,8 @@
         "a4908876-2ec2-4049-8519-f88aac2c716e": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "30 Day Returns",
-            "content": "<p>Change your mind? Not satisfied? Let us know within 30 days of delivery for a return and refund.<\/p><p><a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"\/policies\/refund-policy\">Read More<\/a><\/p>",
+            "heading": "14 Day Returns",
+            "content": "<p>Change your mind? Not satisfied? Let us know within 14 days of delivery for a return and refund.<\/p><p><a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"\/policies\/refund-policy\">Read More<\/a><\/p>",
             "page": "",
             "icon": "return"
           }
@@ -94,66 +94,19 @@
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Ships to 100+ countries",
-            "content": "<p><span style=\"text-decoration:underline\"><strong>Handling Time<br\/><\/strong><\/span>0-3 business days<\/p><p><span style=\"text-decoration:underline\"><strong>Transit Time<br\/><\/strong><\/span>🇫🇮 <strong>Finland<\/strong> 5\/10€ | 1-3 days<strong><br\/><\/strong>🇪🇺 <strong>EU<\/strong> 10€ | 1-3 days<br\/>🇺🇸 <strong>USA<\/strong> 20€ (~$24) | 3-5 days<br\/>Most others 20€ | 3-7 days<\/p><p><a href=\"\/policies\/shipping-policy\" title=\"Shipping Policy\">See full list<\/a><\/p>",
+            "heading": "Fast Shipping",
+            "content": "<p><span style=\"text-decoration:underline\"><strong>Handling Time<br\/><\/strong><\/span>Up to 3 business days<\/p><p><span style=\"text-decoration:underline\"><strong>Transit Time<br\/><\/strong><\/span>🇫🇮 <strong>Finland<\/strong> 5€ | 1-3 days<strong><br\/><\/strong>🇪🇺 <strong>EU<\/strong> 10€ | 1-3 days<br\/>🇺🇸 <strong>USA<\/strong> 20€ (~$24) | 3-5 days<br\/>Most others 20€ | 3-7 days<\/p><p><a href=\"\/policies\/shipping-policy\" title=\"Shipping Policy\">See full list<\/a><\/p>",
             "page": "",
-            "icon": "box"
+            "icon": "plane"
           }
         },
         "a41a8e68-deb3-4414-bc77-846ae026a7ec": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "heading": "Actual Item Pictured",
             "content": "<p>We take the time to photograph every used item. When you buy from us you are getting the item you see in the photos.<\/p>",
             "page": "",
             "icon": "eye"
-          }
-        },
-        "f8962c4a-da22-4a3d-8f73-05ff4d13ed57": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Sell Your Gear to Us!",
-            "content": "<p>We buy & trade cameras, lenses, and accessories on top of selling! If you're looking to upgrade or change your gear, why not sell directly to us?<br\/><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\"><strong>Click here to fill out our form!<\/strong><\/a><\/p>",
-            "page": "",
-            "icon": "price_tag"
-          }
-        },
-        "92fd3d60-c515-429c-a9e4-6bb9e3712c80": {
-          "type": "popup",
-          "disabled": true,
-          "settings": {
-            "text": "Have this {{ product.vendor }}? Sell it to us!",
-            "page": "sell-or-trade-your-used-camera-gear",
-            "show_button": false
-          }
-        },
-        "acee846d-90ef-4f58-9075-b2513c31753c": {
-          "type": "popup",
-          "disabled": true,
-          "settings": {
-            "text": "Conditions",
-            "page": "",
-            "show_button": false
-          }
-        },
-        "6cc72963-d1c6-405d-a2b7-35264953cc18": {
-          "type": "popup",
-          "disabled": true,
-          "settings": {
-            "text": "Shipping",
-            "page": "packing-shipping",
-            "show_button": false
-          }
-        },
-        "669b8d80-ccb3-4728-867d-ef53d814398d": {
-          "type": "popup",
-          "disabled": true,
-          "settings": {
-            "text": "Returns",
-            "page": "about-kamerastore",
-            "show_button": false
           }
         }
       },
@@ -170,12 +123,7 @@
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
-        "a41a8e68-deb3-4414-bc77-846ae026a7ec",
-        "f8962c4a-da22-4a3d-8f73-05ff4d13ed57",
-        "92fd3d60-c515-429c-a9e4-6bb9e3712c80",
-        "acee846d-90ef-4f58-9075-b2513c31753c",
-        "6cc72963-d1c6-405d-a2b7-35264953cc18",
-        "669b8d80-ccb3-4728-867d-ef53d814398d"
+        "a41a8e68-deb3-4414-bc77-846ae026a7ec"
       ],
       "settings": {
         "product_role": "stock",
@@ -186,10 +134,16 @@
         "show_sku_and_barcode": false
       }
     },
+    "1657529286c3580908": {
+      "type": "main-product-description",
+      "settings": {
+      }
+    },
     "163178438845c86d64": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
-        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<H2>Description<\/h2>{{ product.description }}<\/div>"
+        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<H2>Description<\/h2><H3>{{ product.title }}<\/h3>{{ product.description }}<\/div>"
       }
     },
     "16321391205a6cb4a0": {
@@ -292,8 +246,7 @@
     "1644845255ea764830",
     "16334152711e2727b9",
     "main",
-    "16570234280b4eba7b",
-    "1656487051d3ce587c",
+    "1657529286c3580908",
     "163178438845c86d64",
     "16321391205a6cb4a0",
     "product-recommendations",

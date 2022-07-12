@@ -175,18 +175,11 @@
       "type": "main-product-description",
       "settings": {
         "heading": "Description",
-        "show_main_stock_title": true,
+        "show_main_stock_title": false,
         "show_main_stock_description": true,
         "show_main_database": true,
         "show_main_kit_stock": true,
         "show_main_kit_database": true
-      }
-    },
-    "163178438845c86d64": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<H2>Description<\/h2><H3>{{ product.title }}<\/h3>{{ product.description }}<\/div>"
       }
     },
     "16334152711e2727b9": {
@@ -315,7 +308,6 @@
     "main",
     "16570183091e26c1a6",
     "1657613053963482a1",
-    "163178438845c86d64",
     "16334152711e2727b9",
     "1632735936daa328ef",
     "16321391205a6cb4a0",

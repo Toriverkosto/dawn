@@ -142,6 +142,12 @@
     "1657531617639545ac": {
       "type": "main-product-description",
       "settings": {
+        "heading": "Description",
+        "show_main_stock_title": false,
+        "show_main_stock_description": true,
+        "show_main_database": true,
+        "show_main_kit_stock": true,
+        "show_main_kit_database": true
       }
     },
     "16321391205a6cb4a0": {

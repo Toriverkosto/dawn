@@ -137,10 +137,15 @@
         "show_sku_and_barcode": true
       }
     },
-    "1632393643eca7584e": {
-      "type": "custom-liquid",
+    "16576207645e5327b7": {
+      "type": "main-product-description",
       "settings": {
-        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<H2>Description<\/h2><H3>{{ product.title }}<\/h3>{{ product.description }}<\/div>"
+        "heading": "Description",
+        "show_main_stock_title": false,
+        "show_main_stock_description": true,
+        "show_main_database": false,
+        "show_main_kit_stock": false,
+        "show_main_kit_database": false
       }
     },
     "164510582956c346c8": {
@@ -260,7 +265,7 @@
   },
   "order": [
     "main",
-    "1632393643eca7584e",
+    "16576207645e5327b7",
     "164510582956c346c8",
     "16324019941e428b8f",
     "1633072662af6d667c",

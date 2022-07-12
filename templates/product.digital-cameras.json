@@ -162,8 +162,20 @@
         "custom_liquid": "<div style=\"background-color:#F6F6F6;\"><br>\n<div class=\"page-width page-width--wide\">\n\n<p>{%- assign current_variant = product.selected_or_first_available_variant -%}\n\n{% if product.metafields.kameratori.shutter_count and product.metafields.kameratori.shutter_count != \"\" %}\n  Shutter Count:  <b>{{product.metafields.kameratori.shutter_count}}<\/b><br>\n{% else %}\n{% endif %}\n\n\n{% if product.metafields.kameratori.sensor_cleaned == true %}\n  Sensor Cleaned: <b>Yes<\/b><br>\n{% else %}\n{% endif %}\n\n\n{% if product.metafields.kameratori.settings_reset == true %}\n  Settings Reset: <b>Yes<\/b><br>\n{% else %}\n{% endif %}\n\n\n{% if product.metafields.kameratori.firmware_updated == true %}\n  Firmware Updated: <b>Yes<\/b><br>\n{% else %}\n{% endif %}\n\n{% if product.metafields.kameratori.batteries and product.metafields.kameratori.batteries.value.size > 0 %}\n  Battery: \n  {% for battery in product.metafields.kameratori.batteries.value %}\n   <b> {{battery}}<\/b>\n    {% if forloop.last != true %}, {% endif %}\n  {% endfor %}\n{% endif %}\n<br>\n {% if product.metafields.kameratori.serial_number and product.metafields.kameratori.serial_number != \"\" %}\n    Serial Number:  <b>{{product.metafields.kameratori.serial_number}}<\/b><br>\n  {% endif %}\n\n  {% if product.metafields.kameratori.body_accessories and product.metafields.kameratori.body_accessories.value.size > 0%} Also includes:\n    {% for accessory in product.metafields.kameratori.body_accessories.value %}\n     <b> {{accessory}}<\/b>\n      {% if forloop.last != true %}, {% endif %}\n    {% endfor %}\n<br>\n  {% endif %}\n<\/p>\n<br><\/div><\/body>"
       }
     },
+    "1657613053963482a1": {
+      "type": "main-product-description",
+      "settings": {
+        "heading": "Description",
+        "show_main_stock_title": true,
+        "show_main_stock_description": true,
+        "show_main_database": true,
+        "show_main_kit_stock": true,
+        "show_main_kit_database": true
+      }
+    },
     "163178438845c86d64": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<H2>Description<\/h2><H3>{{ product.title }}<\/h3>{{ product.description }}<\/div>"
       }
@@ -293,6 +305,7 @@
   "order": [
     "main",
     "16570183091e26c1a6",
+    "1657613053963482a1",
     "163178438845c86d64",
     "16334152711e2727b9",
     "1632735936daa328ef",

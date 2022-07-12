@@ -157,14 +157,14 @@
         "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<H2>Description<\/h2><H3>{{ product.title }}<\/h3>{{ product.description }}<\/div>"
       }
     },
-    "1657531617639545ac": {
+    "1657621107d8d01beb": {
       "type": "main-product-description",
       "settings": {
-        "heading": "Description",
+        "heading": "",
         "show_main_stock_title": false,
-        "show_main_stock_description": true,
+        "show_main_stock_description": false,
         "show_main_database": true,
-        "show_main_kit_stock": true,
+        "show_main_kit_stock": false,
         "show_main_kit_database": true
       }
     },

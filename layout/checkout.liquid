@@ -21,15 +21,6 @@
               'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','{{ shop.metafields.global.google_tag_manager_id }}');
     </script>
-    <script>
-    console.log('HERE');
-    console.log({
-      'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL',
-      'value': {{ order.subtotal_price | money_without_currency | remove: ',' }},
-      'currency': '{{ shop.currency }}',
-      'transaction_id': '{{ order.order_number }}'
-    });
-    </script>
     <!-- End Google Tag Manager -->
     {% if first_time_accessed %}
       <script>

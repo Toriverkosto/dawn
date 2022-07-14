@@ -28,31 +28,31 @@
 
         window.dataLayer.push({user_data: {
           email: Shopify.checkout.email,
-          phone_number: Shopify.checkout.billing_address.phone || Shopify.checkout.shipping_address.phone || null,
-          first_name: Shopify.checkout.billing_address.first_name || Shopify.checkout.shipping_address.first_name || null,
-          last_name: Shopify.checkout.billing_address.last_name || Shopify.checkout.shipping_address.last_name || null,
-          street: Shopify.checkout.billing_address.address1 || Shopify.checkout.shipping_address.address1 || null,
-          city: Shopify.checkout.billing_address.city || Shopify.checkout.shipping_address.city || null,
-          region: Shopify.checkout.billing_address.province || Shopify.checkout.shipping_address.province || null,
-          country: Shopify.checkout.billing_address.country || Shopify.checkout.shipping_address.country || null,
-          postcode: Shopify.checkout.billing_address.zip || Shopify.checkout.shipping_address.zip || null
+          phone_number: Shopify?.checkout?.billing_address?.phone || Shopify?.checkout?.shipping_address?.phone || null,
+          first_name: Shopify?.checkout?.billing_address?.first_name || Shopify?.checkout?.shipping_address?.first_name || null,
+          last_name: Shopify?.checkout?.billing_address?.last_name || Shopify?.checkout?.shipping_address?.last_name || null,
+          street: Shopify?.checkout?.billing_address?.address1 || Shopify?.checkout?.shipping_address?.address1 || null,
+          city: Shopify?.checkout?.billing_address?.city || Shopify?.checkout?.shipping_address?.city || null,
+          region: Shopify?.checkout?.billing_address?.province || Shopify?.checkout?.shipping_address?.province || null,
+          country: Shopify?.checkout?.billing_address?.country || Shopify?.checkout?.shipping_address?.country || null,
+          postcode: Shopify?.checkout?.billing_address?.zip || Shopify?.checkout?.shipping_address?.zip || null
         }});
 
         window.dataLayer.push({
           event: 'purchase',
-          currency: Shopify.checkout.total_price_set.presentment_money.currency_code,
+          currency: Shopify?.checkout?.total_price_set?.presentment_money?.currency_code,
           transaction_id: '{{ order.order_number }}',
-          value: Shopify.checkout.total_price_set.presentment_money.amount,
-          discount: Shopify.checkout.discount == null ? 0 : Shopify.checkout.discount.amount,
-          coupon: Shopify.checkout.discount.code,
-          shipping: Shopify.checkout.shipping_rate.price,
-          tax: Shopify.checkout.total_tax,
-          items: Shopify.checkout.line_items.map(item => ({
-            item_id: item.sku,
-            item_name: item.title,
-            item_brand: item.vendor,
-            price: item.price,
-            quantity: item.quantity,
+          value: Shopify?.checkout?.total_price_set?.presentment_money?.amount,
+          discount: Shopify?.checkout?.discount?.amount,
+          coupon: Shopify?.checkout?.discount?.code,
+          shipping: Shopify?.checkout?.shipping_rate?.price,
+          tax: Shopify?.checkout?.total_tax,
+          items: (Shopify?.checkout?.line_items || []).map(item => ({
+            item_id: item?.sku,
+            item_name: item?.title,
+            item_brand: item?.vendor,
+            price: item?.price,
+            quantity: item?.quantity,
           }))
         });
       </script>

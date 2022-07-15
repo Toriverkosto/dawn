@@ -41,7 +41,7 @@
     },
     "cart": {
       "view": "Näytä ostoskori ({{ count }})",
-      "item_added": "Tuote lisätty ostoskoriisi"
+      "item_added": "Tuote lisätty ostoskoriisi!"
     },
     "share": {
       "copy_to_clipboard": "Kopioi linkki",

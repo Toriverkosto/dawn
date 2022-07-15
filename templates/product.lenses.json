@@ -43,7 +43,7 @@
           "type": "custom_liquid",
           "disabled": true,
           "settings": {
-            "custom_liquid": "{% for t in product.tags %}\n                  {% assign prefix = t | slice: 0, 7 %}\n                  {% if prefix == 'System-' %}\n                    {% assign product_system = t | slice: 7, 57 %}\n                  {% endif %}\n                {% endfor %}\n                {% if product_system == 'Four Thirds' %}\n                 <b>Four Thirds<\/b> is not the same as \"Micro Four Thirds\". This item is not compatible with the Mirco Four Thirds System. \n                  <\/a>\n                {% endif %}"
+            "custom_liquid": "{% for t in product.tags %}\n                  {% assign prefix = t | slice: 0, 7 %}\n                  {% if prefix == 'System-' %}\n                    {% assign product_system = t | slice: 7, 57 %}\n                  {% endif %}\n                {% endfor %}\n                {% if product_system == 'Four Thirds' %}\n                 <b>Four Thirds<\/b> is not the same as <b>Micro Four Thirds<\/b>. This item is not compatible with the Mirco Four Thirds System. \n                  <\/a>\n                {% endif %}"
           }
         },
         "price": {

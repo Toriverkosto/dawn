@@ -490,6 +490,32 @@
       "presets": {
         "name": "Product descriptions"
       },
+      "blocks": {
+        "heading": {
+          "name": "Section main heading",
+          "settings": {
+            "label": "Section main heading. Default \"Description\""
+          }
+        },
+        "main_stock_title": {
+          "name": "Main product title"
+        },
+        "main_stock_description": {
+          "name": "Main product description"
+        },
+        "main_database": {
+          "name": "Main product database description (with title)"
+        },
+        "main_kit_stock": {
+          "name": "Kit items main (inventory item) descriptions (with title)"
+        },
+        "main_kit_database": {
+          "name": "Kit items database products descriptions (with title)"
+        },
+        "metafields": {
+          "name": "Metafields data"
+        }
+      },
       "settings": {
         "heading": {
           "label": "Section main heading. Default \"Description\""
@@ -499,7 +525,7 @@
           "kit_products": "Kit products"
         },
         "show_main_stock_title": {
-          "label": "Shop main product title"
+          "label": "Show main product title"
         },
         "show_main_stock_description": {
           "label": "Show main product description"

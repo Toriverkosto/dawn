@@ -43,6 +43,7 @@
           },
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "We buy & trade cameras!",
               "color_scheme": "accent-1",

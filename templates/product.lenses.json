@@ -43,7 +43,7 @@
           "type": "custom_liquid",
           "disabled": true,
           "settings": {
-            "custom_liquid": "<a href=\"{{product.metafields.kameratori.host.value.url}}\" class=\"link modal__toggle-open\">Read or Write Reviews<\/a>"
+            "custom_liquid": "{% for t in product.tags %}\n                  {% assign prefix = t | slice: 0, 7 %}\n                  {% if prefix == 'System-' %}\n                    {% assign product_system = t | slice: 7, 57 %}\n                  {% endif %}\n                {% endfor %}\n                {% if product_system == 'Four Thirds' %}\n                 message\n                  <\/a>\n                {% endif %}"
           }
         },
         "price": {

@@ -24,7 +24,7 @@
         "241631da-98aa-4528-be61-73d8d8c6b988": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<style>\n.restricted {\n  background-color: #FEF7EA;\n  color: #3E4447;\n  padding-left: 15px;\n  padding-right: 15px;\n  border: 2px solid #F6DFBB;\n  margin: 0px;\n  border-radius: 5px;\n}\n<\/style>\n<\/head>\n<body>\n\n<div class=\"restricted\">\n{% for t in product.tags %}\n  {% assign prefix = t | slice: 0, 7 %}\n    {% if prefix == 'System-' %}\n      {% assign product_system = t | slice: 7, 57 %}\n    {% endif %}\n{% endfor %}\n\n{% if product_system == 'Four Thirds' %}\n   <p>This item is made for the <b>Four Thirds<\/b> system, it is not compatible with <b>Micro Four Thirds<\/b>.<\/p>\n{% endif %}   \n            <\/div>"
+            "custom_liquid": "{% for t in product.tags %}\n  {% assign prefix = t | slice: 0, 7 %}\n    {% if prefix == 'System-' %}\n      {% assign product_system = t | slice: 7, 57 %}\n    {% endif %}\n{% endfor %}\n\n{% if product_system == 'Four Thirds' %}\n   <p>This item is made for the <b>Four Thirds<\/b><\/a> system, it is <u>not compatible<\/u> with <b>Micro Four Thirds<\/b>.<\/p>\n{% endif %}"
           }
         },
         "c312f42b-e37a-405e-b2aa-7ff730360f4e": {

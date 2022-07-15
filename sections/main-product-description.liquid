@@ -1,5 +1,20 @@
 
 <style>
+  section.main-product-description {
+    max-width: calc(72.6rem + 6rem);
+  }
+
+  section.main-product-description > * {
+    padding: 0 3rem;
+  }
+
+  section.main-product-description > div.metafields-container {
+    background-color:#F6F6F6;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 0.25rem 3rem;
+  }
+
   hr.main-product-description.shallow {
     margin: 2rem 0;
   }
@@ -9,10 +24,17 @@
       margin: 3rem 0;
     }
   }
+
+  @media screen and (max-width: 750px) {
+    section.main-product-description {
+      padding: 0;
+    }
+  }
 </style>
 
-<section class="page-width page-width--narrow">
+<section class="main-product-description page-width page-width--narrow">
   {% assign previous_section_shown = false %}
+
   {% if section.settings.heading != blank %}
     <h2>{{ section.settings.heading }}</h2>
   {% endif %}
@@ -20,9 +42,10 @@
   {% if section.settings.show_main_stock_title and product.title != blank %}
     <h3>{{ product.title }}</h3>
   {% endif %}
+
   {% if section.settings.show_main_stock_description and product.description != blank %}
     {% assign previous_section_shown = true %}
-    <p>{{ product.description }}</p>
+    <div>{{ product.description }}</div>
   {% endif %}
 
   {% comment %}If global.description_tag is filled then the product description doesn't contain the database description any more{% endcomment %}
@@ -34,7 +57,7 @@
         {% if kit_description.description != nil %}
           {% assign previous_section_shown = true %}
           <b>{{ kit_description.brand }} {{ kit_description.model }}</b>
-          <p>{{ kit_description.description }}</p>
+          <div>{{ kit_description.description }}</div>
         {% endif %}
       {% endfor %}
     {% endif %}
@@ -47,7 +70,7 @@
           <hr class="main-product-description shallow" />
         {% endif %}
         <b>{{ host_product.title }}</b>
-        <p>{{ host_product.description }}</p>
+        <div>{{ host_product.description }}</div>
         {% assign previous_section_shown = true %}
       {% endif %}
     {% endif %}
@@ -60,12 +83,110 @@
             <hr class="main-product-description shallow" />
           {% endif %}
           <b>{{ kit_product.title }}</b>
-          <p>{{ kit_product.description }}</p>
+          <div>{{ kit_product.description }}</div>
           {% assign previous_section_shown = true %}
         {% endif %}
       {% endfor %}
     {% endif %}
   {% endif %}
+
+  {% assign previous_content_section_shown = false %}
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
+      {%- when 'heading' -%}
+        {% if block.settings.heading != blank %}
+          <h2>{{ block.settings.heading }}</h2>
+          {% assign previous_content_section_shown = false %}
+        {% endif %}
+      {%- when 'main_stock_title' -%}
+        {% if product.title != blank %}
+          <h3>{{ product.title }}</h3>
+        {% endif %}
+      {%- when 'main_stock_description' -%}
+        {% if product.description != blank %}
+          {% assign previous_content_section_shown = true %}
+          <div>{{ product.description }}</div>
+        {% endif %}
+      {%- when 'main_database' -%}
+        {% assign host_product = product.metafields.kameratori.host.value %}
+        {% if host_product != nil and host_product.description != blank %}
+          {% if previous_content_section_shown %}
+            <hr class="main-product-description shallow" />
+          {% endif %}
+          <b>{{ host_product.title }}</b>
+          <div>{{ host_product.description }}</div>
+          {% assign previous_content_section_shown = true %}
+        {% endif %}
+      {%- when 'main_kit_stock' -%}
+        {% for kit_description in product.metafields.kameratori.kit_product_descriptions.value %}
+          {% if kit_description.description != nil %}
+            {% assign previous_content_section_shown = true %}
+            <b>{{ kit_description.brand }} {{ kit_description.model }}</b>
+            <div>{{ kit_description.description }}</div>
+          {% endif %}
+        {% endfor %}
+      {%- when 'main_kit_database' -%}
+        {% comment %}TODO: Fix the HR STUFF{% endcomment %}
+        {% for kit_product in product.metafields.kameratori.kit_products.value %}
+          {% if kit_product.description != blank %}
+            {% if previous_content_section_shown %}
+              <hr class="main-product-description shallow" />
+            {% endif %}
+            <b>{{ kit_product.title }}</b>
+            <div>{{ kit_product.description }}</div>
+            {% assign previous_section_shown = true %}
+          {% endif %}
+        {% endfor %}
+      {%- when 'metafields' -%}
+        {% assign previous_content_section_shown = false %}
+        <div class="metafields-container">
+          <p>
+            {%- assign current_variant = product.selected_or_first_available_variant -%}
+            Actual item pictured <br />
+
+            {% if product.metafields.kameratori.serial_number and product.metafields.kameratori.serial_number != "" %}
+              Serial Number: <b>{{product.metafields.kameratori.serial_number}}</b><br />
+            {% endif %}
+
+            {% if product.metafields.kameratori.new_light_seals %}
+              New Light Seals: <b>Yes</b><br/>
+            {% endif %}
+
+            {% if product.metafields.kameratori.body_accessories and product.metafields.kameratori.body_accessories.value.size > 0%} Also includes:
+              {% for accessory in product.metafields.kameratori.body_accessories.value %}
+                <b>{{accessory}}</b>
+                {% if forloop.last != true %}, {% endif %}
+              {% endfor %}
+              <br />
+            {% endif %}
+
+            {% if product.metafields.kameratori.batteries and product.metafields.kameratori.batteries.value.size > 0 %}
+              Battery:
+              {% for battery in product.metafields.kameratori.batteries.value %}
+                <b> {{battery}}</b>
+                {% if forloop.last != true %}, {% endif %}
+              {% endfor %}
+            {% endif %}
+
+            {% if product.metafields.kameratori.shutter_count and product.metafields.kameratori.shutter_count != "" %}
+              Shutter Count: <b>{{product.metafields.kameratori.shutter_count}}</b><br />
+            {% endif %}
+
+            {% if product.metafields.kameratori.sensor_cleaned == true %}
+              Sensor Cleaned: <b>Yes</b><br />
+            {% endif %}
+
+            {% if product.metafields.kameratori.settings_reset == true %}
+              Settings Reset: <b>Yes</b><br />
+            {% endif %}
+
+            {% if product.metafields.kameratori.firmware_updated == true %}
+              Firmware Updated: <b>Yes</b><br />
+            {% endif %}
+          </p>
+        </div>
+    {%- endcase -%}
+  {%- endfor -%}
 </section>
 
 
@@ -74,6 +195,44 @@
   "name": "t:sections.main-product-description.name",
   "tag": "section",
   "class": "spaced-section",
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.main-product-description.blocks.heading.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Description",
+          "label": "t:sections.main-product-description.blocks.heading.settings.label"
+        }
+      ]
+    },
+    {
+      "type": "main_stock_title",
+      "name": "t:sections.main-product-description.blocks.main_stock_title.name"
+    },
+    {
+      "type": "main_stock_description",
+      "name": "t:sections.main-product-description.blocks.main_stock_description.name"
+    },
+    {
+      "type": "main_database",
+      "name": "t:sections.main-product-description.blocks.main_database.name"
+    },
+    {
+      "type": "main_kit_stock",
+      "name": "t:sections.main-product-description.blocks.main_kit_stock.name"
+    },
+    {
+      "type": "main_kit_database",
+      "name": "t:sections.main-product-description.blocks.main_kit_database.name"
+    },
+    {
+      "type": "metafields",
+      "name": "t:sections.main-product-description.blocks.metafields.name"
+    }
+  ],
   "settings": [
     {
       "type": "text",

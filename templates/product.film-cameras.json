@@ -153,6 +153,7 @@
     },
     "1657621107d8d01beb": {
       "type": "main-product-description",
+      "disabled": true,
       "settings": {
       }
     },
@@ -177,6 +178,7 @@
     },
     "1657621107d8d01beb": {
       "type": "main-product-description",
+      "disabled": true,
       "settings": {
         "heading": "",
         "show_main_stock_title": false,
@@ -184,6 +186,58 @@
         "show_main_database": true,
         "show_main_kit_stock": false,
         "show_main_kit_database": true
+      }
+    },
+    "16579008498f69713d": {
+      "type": "main-product-description",
+      "blocks": {
+        "12286322-2e1b-4eee-adce-8ae8a65a4410": {
+          "type": "heading",
+          "settings": {
+            "heading": "Description"
+          }
+        },
+        "216f7b39-9422-4414-932d-cbd9b044d926": {
+          "type": "main_stock_description",
+          "settings": {
+          }
+        },
+        "a725a730-96c5-49e4-b4d2-dd5cf72ab205": {
+          "type": "main_kit_stock",
+          "settings": {
+          }
+        },
+        "7b6cb45c-66c9-4b94-b857-b7ef5207183a": {
+          "type": "metafields",
+          "settings": {
+          }
+        },
+        "84ea576e-62c3-493b-9b4d-4333e9cf4a31": {
+          "type": "main_database",
+          "settings": {
+          }
+        },
+        "92be0530-c477-4b47-b90d-b7a107f21188": {
+          "type": "main_kit_database",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "12286322-2e1b-4eee-adce-8ae8a65a4410",
+        "216f7b39-9422-4414-932d-cbd9b044d926",
+        "a725a730-96c5-49e4-b4d2-dd5cf72ab205",
+        "7b6cb45c-66c9-4b94-b857-b7ef5207183a",
+        "84ea576e-62c3-493b-9b4d-4333e9cf4a31",
+        "92be0530-c477-4b47-b90d-b7a107f21188"
+      ],
+      "settings": {
+        "heading": "",
+        "show_main_stock_title": false,
+        "show_main_stock_description": false,
+        "show_main_database": false,
+        "show_main_kit_stock": false,
+        "show_main_kit_database": false
       }
     },
     "16321391205a6cb4a0": {

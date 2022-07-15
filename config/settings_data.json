@@ -30,6 +30,17 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
+          "5c5748b2-a0e4-42fb-a381-4397267aab0f": {
+            "type": "announcement",
+            "settings": {
+              "text": "Digital Sale! 15% off digital bodies & elnses!",
+              "color_scheme": "accent-1",
+              "link": "\/pages\/digital-sale",
+              "use_custom_color": true,
+              "color_text": "#121212",
+              "color_background": "linear-gradient(180deg, rgba(255, 108, 0, 1), rgba(255, 108, 0, 1) 98%)"
+            }
+          },
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec": {
             "type": "announcement",
             "settings": {
@@ -138,6 +149,7 @@
           }
         },
         "block_order": [
+          "5c5748b2-a0e4-42fb-a381-4397267aab0f",
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec",
           "4c1a92eb-53d3-4f1d-ad29-76811ffcecfe",
           "dc640612-8f8d-4ed8-8bfd-0f7a6df40773",

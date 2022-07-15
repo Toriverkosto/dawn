@@ -32,8 +32,9 @@
         "blocks": {
           "5c5748b2-a0e4-42fb-a381-4397267aab0f": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
-              "text": "Digital Sale! 15% off digital bodies & elnses!",
+              "text": "Digital Sale! 15% off digital bodies & lenses!",
               "color_scheme": "accent-1",
               "link": "\/pages\/digital-sale",
               "use_custom_color": true,

@@ -21,6 +21,12 @@
           "settings": {
           }
         },
+        "241631da-98aa-4528-be61-73d8d8c6b988": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>\n.restricted {\n  background-color: #FEF7EA;\n  color: #3E4447;\n  padding-left: 15px;\n  padding-right: 15px;\n  border: 2px solid #F6DFBB;\n  margin: 0px;\n  border-radius: 5px;\n}\n<\/style>\n<\/head>\n<body>\n\n<div class=\"restricted\">\n{% for t in product.tags %}\n  {% assign prefix = t | slice: 0, 7 %}\n    {% if prefix == 'System-' %}\n      {% assign product_system = t | slice: 7, 57 %}\n    {% endif %}\n{% endfor %}\n\n{% if product_system == 'Four Thirds' %}\n   <p>This item is made for the <b>Four Thirds<\/b> system, it is not compatible with <b>Micro Four Thirds<\/b>.<\/p>\n{% endif %}   \n            <\/div>"
+          }
+        },
         "c312f42b-e37a-405e-b2aa-7ff730360f4e": {
           "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
           "settings": {
@@ -37,13 +43,6 @@
             "link_text": "Read or Write Reviews",
             "only_show_when_no_reviews": true,
             "link_to_host": true
-          }
-        },
-        "241631da-98aa-4528-be61-73d8d8c6b988": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "{% for t in product.tags %}\n                  {% assign prefix = t | slice: 0, 7 %}\n                  {% if prefix == 'System-' %}\n                    {% assign product_system = t | slice: 7, 57 %}\n                  {% endif %}\n                {% endfor %}\n                {% if product_system == 'Four Thirds' %}\n                 <b>Four Thirds<\/b> is not the same as <b>Micro Four Thirds<\/b>. This item is not compatible with the Mirco Four Thirds System. \n                  <\/a>\n                {% endif %}"
           }
         },
         "price": {
@@ -146,9 +145,9 @@
       "block_order": [
         "f16dfcff-e3a5-4b44-b809-ac9d7baf3f9f",
         "title",
+        "241631da-98aa-4528-be61-73d8d8c6b988",
         "c312f42b-e37a-405e-b2aa-7ff730360f4e",
         "cad180e3-9d21-40fc-b7c7-b619604bd2a5",
-        "241631da-98aa-4528-be61-73d8d8c6b988",
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
         "buy_buttons",

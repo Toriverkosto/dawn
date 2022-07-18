@@ -26,8 +26,7 @@
     {% endif %}
       <script>
         window.dataLayer = window.dataLayer || [];
-
-        window.dataLayer.push({user_data: {
+        window.userData = {
           email: Shopify.checkout.email,
           phone_number: Shopify?.checkout?.billing_address?.phone || Shopify?.checkout?.shipping_address?.phone || null,
           first_name: Shopify?.checkout?.billing_address?.first_name || Shopify?.checkout?.shipping_address?.first_name || null,
@@ -37,7 +36,9 @@
           region: Shopify?.checkout?.billing_address?.province || Shopify?.checkout?.shipping_address?.province || null,
           country: Shopify?.checkout?.billing_address?.country || Shopify?.checkout?.shipping_address?.country || null,
           postcode: Shopify?.checkout?.billing_address?.zip || Shopify?.checkout?.shipping_address?.zip || null
-        }});
+        }
+
+        window.dataLayer.push({user_data: window.userData});
 
         window.dataLayer.push({
           event: 'purchase',

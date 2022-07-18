@@ -56,6 +56,12 @@
             quantity: item?.quantity,
           }))
         });
+
+        gtag('event', 'conversion', {
+          'value': {{ order.subtotal_price | money_without_currency | replace: ',', '.'}},
+          'currency': '{{ shop.currency }}',
+          'transaction_id': '{{ order.order_number }}'
+        });
       </script>
   </head>
 

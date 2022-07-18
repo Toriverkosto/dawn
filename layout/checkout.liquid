@@ -42,9 +42,9 @@
 
         window.dataLayer.push({
           event: 'purchase',
-          currency: Shopify?.checkout?.total_price_set?.presentment_money?.currency_code,
+          currency: '{{ shop.currency }}',
           transaction_id: '{{ order.order_number }}',
-          value: parseFloat(Shopify?.checkout?.total_price_set?.presentment_money?.amount) || null,
+          value: {{ order.subtotal_price | money_without_currency | remove: ',' }},
           discount: Shopify?.checkout?.discount?.amount,
           coupon: Shopify?.checkout?.discount?.code,
           shipping: parseFloat(Shopify?.checkout?.shipping_rate?.price) || null,

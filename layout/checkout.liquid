@@ -24,6 +24,7 @@
       </script>
       <!-- End Google Tag Manager -->
     {% endif %}
+    {% if first_time_accessed %}
       <script>
         window.dataLayer = window.dataLayer || [];
         window.userData = {
@@ -66,6 +67,7 @@
         });
 
       </script>
+    {% endif %}
   </head>
 
   <body>

@@ -43,7 +43,7 @@
           event: 'purchase',
           currency: '{{ shop.currency }}',
           transaction_id: '{{ order.order_number }}',
-          value: {{ order.subtotal_price | money_without_currency }},
+          value: {{ order.subtotal_price | money_without_currency | replace ',', '.'}},
           discount: Shopify?.checkout?.discount?.amount,
           coupon: Shopify?.checkout?.discount?.code,
           shipping: parseFloat(Shopify?.checkout?.shipping_rate?.price) || null,

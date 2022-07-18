@@ -58,11 +58,13 @@
           }))
         });
 
-        gtag('event', 'conversion', {
+        window.dataLayer.push('event', 'conversion', {
+          'send_to': 'AW-868520289/8YOGCLvE880DEOGikp4D',
           'value': {{ order.subtotal_price | money_without_currency | replace: ',', '.'}},
           'currency': '{{ shop.currency }}',
           'transaction_id': '{{ order.order_number }}'
         });
+
       </script>
   </head>
 

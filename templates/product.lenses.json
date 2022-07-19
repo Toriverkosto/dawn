@@ -27,16 +27,6 @@
             "custom_liquid": "{% for t in product.tags %}\n  {% assign prefix = t | slice: 0, 7 %}\n    {% if prefix == 'System-' %}\n      {% assign product_system = t | slice: 7, 57 %}\n    {% endif %}\n{% endfor %}\n\n{% if product_system == 'Four Thirds' %}\n   <p>This item is made for the <b>Four Thirds<\/b><\/a> system, it is <u>not compatible<\/u> with <b>Micro Four Thirds<\/b>.<\/p>\n{% endif %}"
           }
         },
-        "c312f42b-e37a-405e-b2aa-7ff730360f4e": {
-          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
-          "settings": {
-            "stars_fill_color": "#ffc315",
-            "star_size": 18,
-            "text_align": "flex-start",
-            "product": "{{product}}",
-            "stars_text_empty": "No reviews"
-          }
-        },
         "cad180e3-9d21-40fc-b7c7-b619604bd2a5": {
           "type": "link_to_review",
           "settings": {
@@ -146,7 +136,6 @@
         "f16dfcff-e3a5-4b44-b809-ac9d7baf3f9f",
         "title",
         "241631da-98aa-4528-be61-73d8d8c6b988",
-        "c312f42b-e37a-405e-b2aa-7ff730360f4e",
         "cad180e3-9d21-40fc-b7c7-b619604bd2a5",
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",

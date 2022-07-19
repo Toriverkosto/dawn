@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }}">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
-    <meta name="referrer" content="origin">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
+  <meta name="referrer" content="origin">
 
-    <title>{{ page_title }}TEST</title>
+  <title>{{ page_title }}</title>
 
-    {{ content_for_header }}
+  {{ content_for_header }}
 
-    {{ checkout_stylesheets }}
-    {{ checkout_scripts }}
+  {{ checkout_stylesheets }}
+  {{ checkout_scripts }}
 
+  {% if shop.metafields.global.google_tag_manager_id != nil %}
     <!-- Google Tag Manager -->
     <script>
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -22,94 +23,95 @@
       })(window,document,'script','dataLayer','{{ shop.metafields.global.google_tag_manager_id }}');
     </script>
     <!-- End Google Tag Manager -->
-    {% if first_time_accessed %}
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        window.userData = {
-          email: Shopify.checkout.email,
-          phone_number: Shopify?.checkout?.billing_address?.phone || Shopify?.checkout?.shipping_address?.phone || null,
-          first_name: Shopify?.checkout?.billing_address?.first_name || Shopify?.checkout?.shipping_address?.first_name || null,
-          last_name: Shopify?.checkout?.billing_address?.last_name || Shopify?.checkout?.shipping_address?.last_name || null,
-          street: Shopify?.checkout?.billing_address?.address1 || Shopify?.checkout?.shipping_address?.address1 || null,
-          city: Shopify?.checkout?.billing_address?.city || Shopify?.checkout?.shipping_address?.city || null,
-          region: Shopify?.checkout?.billing_address?.province || Shopify?.checkout?.shipping_address?.province || null,
-          country: Shopify?.checkout?.billing_address?.country || Shopify?.checkout?.shipping_address?.country || null,
-          postcode: Shopify?.checkout?.billing_address?.zip || Shopify?.checkout?.shipping_address?.zip || null
-        }
+  {% endif %}
+  {% if first_time_accessed %}
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.userData = {
+        email: Shopify.checkout.email,
+        phone_number: Shopify?.checkout?.billing_address?.phone || Shopify?.checkout?.shipping_address?.phone || null,
+        first_name: Shopify?.checkout?.billing_address?.first_name || Shopify?.checkout?.shipping_address?.first_name || null,
+        last_name: Shopify?.checkout?.billing_address?.last_name || Shopify?.checkout?.shipping_address?.last_name || null,
+        street: Shopify?.checkout?.billing_address?.address1 || Shopify?.checkout?.shipping_address?.address1 || null,
+        city: Shopify?.checkout?.billing_address?.city || Shopify?.checkout?.shipping_address?.city || null,
+        region: Shopify?.checkout?.billing_address?.province || Shopify?.checkout?.shipping_address?.province || null,
+        country: Shopify?.checkout?.billing_address?.country || Shopify?.checkout?.shipping_address?.country || null,
+        postcode: Shopify?.checkout?.billing_address?.zip || Shopify?.checkout?.shipping_address?.zip || null
+      }
 
-        window.dataLayer.push({user_data: window.userData});
+      window.dataLayer.push({user_data: window.userData});
 
-        window.dataLayer.push({
-          event: 'purchase',
-          currency: '{{ shop.currency }}',
-          transaction_id: '{{ order.order_number }}',
-          value: {{ order.subtotal_price | money_without_currency | replace: ',', '.'}},
-          discount: Shopify?.checkout?.discount?.amount,
-          coupon: Shopify?.checkout?.discount?.code,
-          shipping: parseFloat(Shopify?.checkout?.shipping_rate?.price) || null,
-          tax: parseFloat(Shopify?.checkout?.total_tax) || null,
-          items: (Shopify?.checkout?.line_items || []).map(item => ({
-            item_id: item?.sku,
-            item_name: item?.title,
-            item_brand: item?.vendor,
-            price: parseFloat(item?.price) || null,
-            quantity: item?.quantity,
-          }))
-        });
+      window.dataLayer.push({
+        event: 'purchase',
+        currency: '{{ shop.currency }}',
+        transaction_id: '{{ order.order_number }}',
+        value: {{ order.subtotal_price | money_without_currency | replace: ',', '.'}},
+        discount: Shopify?.checkout?.discount?.amount,
+        coupon: Shopify?.checkout?.discount?.code,
+        shipping: parseFloat(Shopify?.checkout?.shipping_rate?.price) || null,
+        tax: parseFloat(Shopify?.checkout?.total_tax) || null,
+        items: (Shopify?.checkout?.line_items || []).map(item => ({
+          item_id: item?.sku,
+          item_name: item?.title,
+          item_brand: item?.vendor,
+          price: parseFloat(item?.price) || null,
+          quantity: item?.quantity,
+        }))
+      });
 
-        window.dataLayer.push('event', 'conversion', {
-          'send_to': 'AW-868520289/8YOGCLvE880DEOGikp4D',
-          'value': {{ order.subtotal_price | money_without_currency | replace: ',', '.'}},
-          'currency': '{{ shop.currency }}',
-          'transaction_id': '{{ order.order_number }}'
-        });
+      window.dataLayer.push('event', 'conversion', {
+        'send_to': 'AW-868520289/8YOGCLvE880DEOGikp4D',
+        'value': {{ order.subtotal_price | money_without_currency | replace: ',', '.'}},
+        'currency': '{{ shop.currency }}',
+        'transaction_id': '{{ order.order_number }}'
+      });
 
-      </script>
-    {% endif %}
-  </head>
+    </script>
+  {% endif %}
+</head>
 
-  <body>
-    {% if shop.metafields.global.google_tag_manager_id != nil %}
-      <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WB6W9KG"
-                        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
-    {% endif %}
-    {{ skip_to_content_link }}
+<body>
+{% if shop.metafields.global.google_tag_manager_id != nil %}
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WB6W9KG"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+{% endif %}
+{{ skip_to_content_link }}
 
-    <header class="banner" data-header role="banner">
-      <div class="wrap">
+<header class="banner" data-header role="banner">
+  <div class="wrap">
+    {{ content_for_logo }}
+  </div>
+</header>
+
+{{ order_summary_toggle }}
+<div class="content" data-content>
+  <div class="wrap">
+    <div class="main">
+      <header class="main__header" role="banner">
+        {{ content_for_logo }}
+        {{ breadcrumb }}
+        {{ alternative_payment_methods }}
+      </header>
+      <main class="main__content" role="main">
+        {{ content_for_layout }}
+      </main>
+      <footer class="main__footer" role="contentinfo">
+        {{ content_for_footer }}
+      </footer>
+    </div>
+    <aside class="sidebar" role="complementary">
+      <div class="sidebar__header">
         {{ content_for_logo }}
       </div>
-    </header>
-
-    {{ order_summary_toggle }}
-    <div class="content" data-content>
-      <div class="wrap">
-        <div class="main">
-          <header class="main__header" role="banner">
-            {{ content_for_logo }}
-            {{ breadcrumb }}
-            {{ alternative_payment_methods }}
-          </header>
-          <main class="main__content" role="main">
-            {{ content_for_layout }}
-          </main>
-          <footer class="main__footer" role="contentinfo">
-            {{ content_for_footer }}
-          </footer>
-        </div>
-        <aside class="sidebar" role="complementary">
-          <div class="sidebar__header">
-            {{ content_for_logo }}
-          </div>
-          <div class="sidebar__content">
-            {{ content_for_order_summary }}
-          </div>
-        </aside>
+      <div class="sidebar__content">
+        {{ content_for_order_summary }}
       </div>
-    </div>
+    </aside>
+  </div>
+</div>
 
-    {{ tracking_code }}
-  </body>
+{{ tracking_code }}
+</body>
 </html>

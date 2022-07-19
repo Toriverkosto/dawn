@@ -24,50 +24,42 @@
       </script>
       <!-- End Google Tag Manager -->
     {% endif %}
-    {% if first_time_accessed %}
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        window.userData = {
-          email: Shopify.checkout.email,
-          phone_number: Shopify?.checkout?.billing_address?.phone || Shopify?.checkout?.shipping_address?.phone || null,
-          first_name: Shopify?.checkout?.billing_address?.first_name || Shopify?.checkout?.shipping_address?.first_name || null,
-          last_name: Shopify?.checkout?.billing_address?.last_name || Shopify?.checkout?.shipping_address?.last_name || null,
-          street: Shopify?.checkout?.billing_address?.address1 || Shopify?.checkout?.shipping_address?.address1 || null,
-          city: Shopify?.checkout?.billing_address?.city || Shopify?.checkout?.shipping_address?.city || null,
-          region: Shopify?.checkout?.billing_address?.province || Shopify?.checkout?.shipping_address?.province || null,
-          country: Shopify?.checkout?.billing_address?.country || Shopify?.checkout?.shipping_address?.country || null,
-          postcode: Shopify?.checkout?.billing_address?.zip || Shopify?.checkout?.shipping_address?.zip || null
-        }
 
-        window.dataLayer.push({user_data: window.userData});
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.userData = {
+        email: Shopify.checkout.email,
+        phone_number: Shopify?.checkout?.billing_address?.phone || Shopify?.checkout?.shipping_address?.phone || null,
+        first_name: Shopify?.checkout?.billing_address?.first_name || Shopify?.checkout?.shipping_address?.first_name || null,
+        last_name: Shopify?.checkout?.billing_address?.last_name || Shopify?.checkout?.shipping_address?.last_name || null,
+        street: Shopify?.checkout?.billing_address?.address1 || Shopify?.checkout?.shipping_address?.address1 || null,
+        city: Shopify?.checkout?.billing_address?.city || Shopify?.checkout?.shipping_address?.city || null,
+        region: Shopify?.checkout?.billing_address?.province || Shopify?.checkout?.shipping_address?.province || null,
+        country: Shopify?.checkout?.billing_address?.country || Shopify?.checkout?.shipping_address?.country || null,
+        postcode: Shopify?.checkout?.billing_address?.zip || Shopify?.checkout?.shipping_address?.zip || null
+      }
 
-        window.dataLayer.push({
-          event: 'purchase',
-          currency: '{{ shop.currency }}',
-          transaction_id: '{{ order.order_number }}',
-          value: {{ order.subtotal_price | money_without_currency | replace: ',', '.'}},
-          discount: Shopify?.checkout?.discount?.amount,
-          coupon: Shopify?.checkout?.discount?.code,
-          shipping: parseFloat(Shopify?.checkout?.shipping_rate?.price) || null,
-          tax: parseFloat(Shopify?.checkout?.total_tax) || null,
-          items: (Shopify?.checkout?.line_items || []).map(item => ({
-            item_id: item?.sku,
-            item_name: item?.title,
-            item_brand: item?.vendor,
-            price: parseFloat(item?.price) || null,
-            quantity: item?.quantity,
-          }))
-        });
+      window.dataLayer.push({user_data: window.userData});
 
-        window.dataLayer.push('event', 'conversion', {
-          'send_to': 'AW-868520289/8YOGCLvE880DEOGikp4D',
-          'value': {{ order.subtotal_price | money_without_currency | replace: ',', '.'}},
-          'currency': '{{ shop.currency }}',
-          'transaction_id': '{{ order.order_number }}'
-        });
+      window.dataLayer.push({
+        event: 'purchase',
+        currency: '{{ shop.currency }}',
+        transaction_id: '{{ order.order_number }}',
+        value: {{ order.subtotal_price | money_without_currency | replace: ',', '.'}},
+        discount: Shopify?.checkout?.discount?.amount,
+        coupon: Shopify?.checkout?.discount?.code,
+        shipping: parseFloat(Shopify?.checkout?.shipping_rate?.price) || null,
+        tax: parseFloat(Shopify?.checkout?.total_tax) || null,
+        items: (Shopify?.checkout?.line_items || []).map(item => ({
+          item_id: item?.sku,
+          item_name: item?.title,
+          item_brand: item?.vendor,
+          price: parseFloat(item?.price) || null,
+          quantity: item?.quantity,
+        }))
+      });
 
-      </script>
-    {% endif %}
+    </script>
   </head>
 
   <body>

@@ -171,8 +171,18 @@
           "settings": {
           }
         },
-        "a5514ed3-1902-493e-96c0-aa0c6eea2d98": {
-          "type": "metafields",
+        "751f4c6a-dfa4-4095-8fc4-a2c506d3cf4e": {
+          "type": "main_kit_stock",
+          "settings": {
+          }
+        },
+        "96219f3f-e446-499c-b291-e5d7e92b407c": {
+          "type": "main_database",
+          "settings": {
+          }
+        },
+        "06eafaeb-bd98-4b7e-a696-499323ec5794": {
+          "type": "main_kit_database",
           "settings": {
           }
         }
@@ -180,7 +190,9 @@
       "block_order": [
         "3c54629a-3819-4e6c-a800-8fcf3cee8f7e",
         "377fb4ea-4c27-48d3-aff6-703d9b678bff",
-        "a5514ed3-1902-493e-96c0-aa0c6eea2d98"
+        "751f4c6a-dfa4-4095-8fc4-a2c506d3cf4e",
+        "96219f3f-e446-499c-b291-e5d7e92b407c",
+        "06eafaeb-bd98-4b7e-a696-499323ec5794"
       ],
       "settings": {
         "heading": "",

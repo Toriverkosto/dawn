@@ -91,10 +91,27 @@
     },
     "1657620302ad90beba": {
       "type": "main-product-description",
+      "blocks": {
+        "83f6575a-646d-428f-94fa-89fa8b2a3773": {
+          "type": "heading",
+          "settings": {
+            "heading": "Description"
+          }
+        },
+        "45818365-eae0-49da-b9c9-a05c3935eb47": {
+          "type": "main_stock_description",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "83f6575a-646d-428f-94fa-89fa8b2a3773",
+        "45818365-eae0-49da-b9c9-a05c3935eb47"
+      ],
       "settings": {
-        "heading": "Description",
+        "heading": "",
         "show_main_stock_title": false,
-        "show_main_stock_description": true,
+        "show_main_stock_description": false,
         "show_main_database": false,
         "show_main_kit_stock": false,
         "show_main_kit_database": false

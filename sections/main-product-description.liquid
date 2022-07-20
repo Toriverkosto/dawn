@@ -164,7 +164,7 @@
               Battery:
               {% for battery in product.metafields.kameratori.batteries.value %}
                 <b> {{battery}}</b>
-                {% if forloop.last != true %}, {% endif %}
+                {% if forloop.last != true %}, {% else %}<br />{% endif %}
               {% endfor %}
             {% endif %}
 

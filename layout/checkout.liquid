@@ -40,6 +40,8 @@
         postcode: Shopify?.checkout?.billing_address?.zip || Shopify?.checkout?.shipping_address?.zip || null
       }
 
+      console.log('User Data', JSON.stringify(window.userData, null, 4));
+
       window.dataLayer.push({user_data: window.userData});
 
       window.dataLayer.push({

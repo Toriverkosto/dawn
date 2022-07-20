@@ -33,10 +33,10 @@
         first_name: '{{ checkout.customer.first_name }}' || undefined,
         last_name: '{{ checkout.customer.last_name }}' || undefined,
         street: '{{ checkout.shipping_address.street }}' || undefined,
-        city: Shopify?.checkout?.billing_address?.city || Shopify?.checkout?.shipping_address?.city || undefined,
-        region: Shopify?.checkout?.billing_address?.province || Shopify?.checkout?.shipping_address?.province || undefined,
-        country: Shopify?.checkout?.billing_address?.country || Shopify?.checkout?.shipping_address?.country || undefined,
-        postcode: Shopify?.checkout?.billing_address?.zip || Shopify?.checkout?.shipping_address?.zip || undefined
+        city:  '{{ checkout.shipping_address.city }}' || undefined,
+        region:  '{{ checkout.shipping_address.province }}' || undefined,
+        country:  '{{ checkout.shipping_address.country }}' || undefined,
+        postcode:  '{{ checkout.shipping_address.zip }}' || undefined,
       }
 
       console.log('User Data', JSON.stringify(window.userData, null, 4));

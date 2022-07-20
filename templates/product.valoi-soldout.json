@@ -1,0 +1,336 @@
+{
+  "sections": {
+    "1632824788edf71f2f": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "1632824788edf71f2f-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "1632824788edf71f2f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>VALOI <\/strong>makes equipment for  digitizing film using a digital camera. <a href=\"\/pages\/what-is-camera-scanning\" target=\"_blank\" title=\"What is Camera Scanning\">Learn more about camera scanning.<\/a><\/p>"
+          }
+        },
+        "1632824788edf71f2f-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1632824788edf71f2f-0",
+        "1632824788edf71f2f-1",
+        "1632824788edf71f2f-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "0e8dca92-f1ad-420f-95ae-8f0144483798": {
+          "type": "text",
+          "settings": {
+            "text": "VALOI",
+            "text_style": "body"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "cf29d553-05b4-4684-9080-1bcc4b961df2": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+            "stars_fill_color": "#ffc315",
+            "star_size": 18,
+            "text_align": "flex-start",
+            "product": "{{product}}",
+            "stars_text_empty": "No reviews"
+          }
+        },
+        "7204a9ac-d9c4-4659-be9a-3662cfbc43c5": {
+          "type": "link_to_review",
+          "settings": {
+            "link_text": "Read or Write Reviews",
+            "only_show_when_no_reviews": true,
+            "link_to_host": false
+          }
+        },
+        "6e329fbd-c3b0-4cfe-a6f4-9911df60910e": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "Ships from: Tampere, Finland"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "853cea71-8e8d-4b3a-8d41-fda13fdf751d": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<p style=\"color: #ababab\">{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable' | t }}\n{% else %}\n    Price as shown. No deductible VAT. \n{% endif %}<\/p>"
+          }
+        },
+        "8a1f013f-3fbd-4ebb-b70b-fd9e114e338b": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "80fbe6e3-0e56-4ee6-be9c-6a5e5c5f985c": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "f8b9a89d-8fdd-4b79-b6e1-80fbde58346d": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Modular Scanning System",
+            "content": "<p>Start small according to your needs and grow the system as you improve your process. Just what you need, when you need it.<\/p><p><a href=\"\/collections\/valoi-360\" title=\"Valoi 360\">See the full system<\/a><\/p>",
+            "page": "",
+            "icon": "dryer"
+          }
+        },
+        "a5a11cfe-80a9-4294-953b-395acd66d02f": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Learn Camera Scanning",
+            "content": "<p>VALOI is committed to providing information about our products specifically and camera scanning generally.<\/p><p><a href=\"\/pages\/learn-with-valoi\" title=\"Learn with VALOI\">Learn More<\/a><\/p>",
+            "page": "",
+            "icon": "question_mark"
+          }
+        },
+        "a4908876-2ec2-4049-8519-f88aac2c716e": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "30 Day Returns",
+            "content": "<p>Change your mind? Not satisfied? Let us know within 30 days of delivery for a return and refund. <\/p><p><a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"\/policies\/refund-policy\">Read More<\/a><\/p>",
+            "page": "",
+            "icon": "return"
+          }
+        },
+        "0d54122a-b1cd-4ad5-9065-a50ef63c420b": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ships to 100+ Countries",
+            "content": "<p><span style=\"text-decoration:underline\"><strong>Handling Time<br\/><\/strong><\/span>0-3 business days<\/p><p><span style=\"text-decoration:underline\"><strong>Transit Time<br\/><\/strong><\/span>🇫🇮 <strong>Finland<\/strong> 5\/10€ | 1-3 days<strong><br\/><\/strong>🇪🇺 <strong>EU<\/strong> 10€ | 1-3 days<br\/>🇺🇸 <strong>USA<\/strong> 20€ (~$24) | 3-5 days<br\/>Most others 20€ | 3-7 days<\/p><p><a href=\"\/policies\/shipping-policy\" title=\"Shipping Policy\">See full list<\/a><\/p>",
+            "page": "",
+            "icon": "box"
+          }
+        },
+        "94f403ff-3385-43d7-865b-0b0000459f54": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<\/h3>{{ product.description }}<\/div>"
+          }
+        },
+        "9b20a83b-fe5d-4d60-80fb-5e93ee1a61c2": {
+          "type": "popup",
+          "settings": {
+            "text": "About VALOI",
+            "page": "about-valoi",
+            "show_button": false
+          }
+        }
+      },
+      "block_order": [
+        "0e8dca92-f1ad-420f-95ae-8f0144483798",
+        "title",
+        "cf29d553-05b4-4684-9080-1bcc4b961df2",
+        "7204a9ac-d9c4-4659-be9a-3662cfbc43c5",
+        "6e329fbd-c3b0-4cfe-a6f4-9911df60910e",
+        "price",
+        "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
+        "8a1f013f-3fbd-4ebb-b70b-fd9e114e338b",
+        "buy_buttons",
+        "80fbe6e3-0e56-4ee6-be9c-6a5e5c5f985c",
+        "f8b9a89d-8fdd-4b79-b6e1-80fbde58346d",
+        "a5a11cfe-80a9-4294-953b-395acd66d02f",
+        "a4908876-2ec2-4049-8519-f88aac2c716e",
+        "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
+        "94f403ff-3385-43d7-865b-0b0000459f54",
+        "9b20a83b-fe5d-4d60-80fb-5e93ee1a61c2"
+      ],
+      "settings": {
+        "product_role": "stock",
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "show_breadcrumbs": true,
+        "show_sku_and_barcode": true
+      }
+    },
+    "163178438845c86d64": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<H2>Description<\/h2><H3>{{ product.title }}<\/h3>{{ product.description }}<\/div>"
+      }
+    },
+    "16461179422d882da6": {
+      "type": "apps",
+      "blocks": {
+        "a550d9bc-978e-43d0-9cf3-fc1fbd973321": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "a550d9bc-978e-43d0-9cf3-fc1fbd973321"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "163213238375145c93": {
+      "type": "multicolumn",
+      "disabled": true,
+      "blocks": {
+        "163213238375145c93-0": {
+          "type": "column",
+          "settings": {
+            "title": "Preliminary Check",
+            "text": "<p>Missing parts<\/p><p>External damage<\/p><p>Cover\/leatherette condition<\/p><p>Winding related mechanism functions<\/p><p>Button functions<\/p><p>Lever functions<\/p><p>Electronic connection functions<\/p><p>Self-timer<\/p>"
+          }
+        },
+        "163213238375145c93-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>This item has been thoroughly inspected by our technicians and assigned the above condition rating based on a 50+ point inspection in the following areas when applicable:<\/p><p><br\/><\/p><p>Cosmetic condition<\/p><p>Shutter speed accuracy<\/p><p>Focusing function<\/p><p>Optical integrity<\/p><p>Metering<\/p><p>Automatic exposure<\/p><p>Viewfinder<\/p><p>Shutter & mirror<\/p><p>Film advance<\/p><p>Light seals \/foams<\/p><p>Batteries<\/p><p>Button, lever, & connection functions<\/p>"
+          }
+        },
+        "c3a5df44-7cfe-4c2b-83dd-a494475f2514": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>General Condition (8)<\/p><p>Lens & Focusing (6)<\/p><p>Viewfinder (5)<\/p><p>Metering (4)<\/p><p>Shutter & Mirror (4)<\/p><p>Film Advance (4)<\/p><p>Light Seals \/Foams (3)<\/p><p>Batteries (2)<\/p><p>Shutter speeds (2)<\/p><p>Other Functions (6)<\/p>"
+          }
+        },
+        "f110b363-3922-4e6a-961e-fdbfb116face": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163213238375145c93-0",
+        "163213238375145c93-1",
+        "c3a5df44-7cfe-4c2b-83dd-a494475f2514",
+        "f110b363-3922-4e6a-961e-fdbfb116face"
+      ],
+      "settings": {
+        "title": "Quality Control",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "16321391205a6cb4a0": {
+      "type": "multicolumn",
+      "disabled": true,
+      "blocks": {
+        "6ac9b599-c067-409f-818e-24aa63217351": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_0101_Cropped.jpg",
+            "title": "Light Seals",
+            "text": "<p>Light seals, on most models, are small strips of black foam that keep unwanted light from leaking into your cameras body. They very often degrade with time, compromising your images. We install brand new light seals on almost all our cameras. <\/p>"
+          }
+        },
+        "16321391205a6cb4a0-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2021-09-20_at_16.36.47_Cropped.png",
+            "title": "Automatic Exposure \/ Metering",
+            "text": "<p>The amount of automatic features in a camera will determine the path of machine testing we must perform. These tests can check for correct metering, aperture, & shutter speed, through a range of exposure values. Calibrated lenses and calibrated light boxes also assist in this process.<\/p>"
+          }
+        },
+        "16321391205a6cb4a0-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2021-09-20_at_16.33.46_Cropped.png",
+            "title": "Infinity Focusing & Rangefinder Alignment",
+            "text": "<p>Using a \"Collimator\" to simulate focusing at infinity, we are able to check a lenses focus from near to far.  We also use a special high-contrast target board to check that a rangefinder lens is<em> <\/em>in<em> <\/em>alignment with its viewfinders rangefinder. <\/p>"
+          }
+        },
+        "16321391205a6cb4a0-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2021-09-20_at_16.30.17_Cropped.png",
+            "title": "Shutter Speeds",
+            "text": "<p>We the have authentic modern & film-era machinery required to accurately test shutter speed performance. They tell us how long the shutter is open and wether the shutter curtains are moving correctly or not. Different camera types require different machines.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "6ac9b599-c067-409f-818e-24aa63217351",
+        "16321391205a6cb4a0-1",
+        "16321391205a6cb4a0-2",
+        "16321391205a6cb4a0-0"
+      ],
+      "settings": {
+        "title": "Camera Scanning",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": false
+      }
+    }
+  },
+  "order": [
+    "1632824788edf71f2f",
+    "main",
+    "163178438845c86d64",
+    "16461179422d882da6",
+    "163213238375145c93",
+    "16321391205a6cb4a0",
+    "product-recommendations"
+  ]
+}

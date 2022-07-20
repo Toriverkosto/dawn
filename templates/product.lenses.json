@@ -172,13 +172,56 @@
     },
     "165762036647fa041d": {
       "type": "main-product-description",
+      "blocks": {
+        "ab4f859b-f022-4c4a-ab92-f189f7557a56": {
+          "type": "heading",
+          "settings": {
+            "heading": "Description"
+          }
+        },
+        "1f0b3efd-c98f-482c-b84c-6da7bb0be101": {
+          "type": "main_stock_description",
+          "settings": {
+          }
+        },
+        "a904007d-02dd-477b-8521-e038f80d2f51": {
+          "type": "main_kit_stock",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "9e9f3e19-3e39-4d27-a71b-c1852d90bbf7": {
+          "type": "metafields",
+          "settings": {
+          }
+        },
+        "0e00f6ae-ac29-4724-88a3-07e2c80016b9": {
+          "type": "main_database",
+          "settings": {
+          }
+        },
+        "a756aab8-6d90-4ed6-99e3-b3e91ae2e55c": {
+          "type": "main_kit_database",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "ab4f859b-f022-4c4a-ab92-f189f7557a56",
+        "1f0b3efd-c98f-482c-b84c-6da7bb0be101",
+        "a904007d-02dd-477b-8521-e038f80d2f51",
+        "9e9f3e19-3e39-4d27-a71b-c1852d90bbf7",
+        "0e00f6ae-ac29-4724-88a3-07e2c80016b9",
+        "a756aab8-6d90-4ed6-99e3-b3e91ae2e55c"
+      ],
       "settings": {
-        "heading": "Description",
+        "heading": "",
         "show_main_stock_title": false,
-        "show_main_stock_description": true,
-        "show_main_database": true,
-        "show_main_kit_stock": true,
-        "show_main_kit_database": true
+        "show_main_stock_description": false,
+        "show_main_database": false,
+        "show_main_kit_stock": false,
+        "show_main_kit_database": false
       }
     },
     "16321391205a6cb4a0": {

@@ -217,37 +217,6 @@
         "show_sku_and_barcode": true
       }
     },
-    "1657531617639545ac": {
-      "type": "main-product-description",
-      "disabled": true,
-      "settings": {
-        "heading": "Description",
-        "show_main_stock_title": false,
-        "show_main_stock_description": true,
-        "show_main_database": false,
-        "show_main_kit_stock": true,
-        "show_main_kit_database": false
-      }
-    },
-    "1656487051d3ce587c": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<section class=\"page-width page-width--narrow\" style=\"max-width: calc(72.6rem + 2 * 3rem); padding: 0\">\n  <div style=\"background-color:#F6F6F6; padding: 0.25rem 3rem;\">\n    <p>\n      {%- assign current_variant = product.selected_or_first_available_variant -%}\n      Actual item pictured <br \/>\n      \n      {% if product.metafields.kameratori.serial_number and product.metafields.kameratori.serial_number != \"\" %}\n        Serial Number: <b>{{product.metafields.kameratori.serial_number}}<\/b><br \/>\n      {% endif %}\n\n      {% if product.metafields.kameratori.new_light_seals %}\n        New Light Seals: <b>Yes<\/b><br\/>\n      {% endif %}\n\n      {% if product.metafields.kameratori.body_accessories and product.metafields.kameratori.body_accessories.value.size > 0%} Also includes:\n        {% for accessory in product.metafields.kameratori.body_accessories.value %}\n         <b>{{accessory}}<\/b>\n         {% if forloop.last != true %}, {% endif %}\n        {% endfor %}\n        <br \/>\n      {% endif %}\n\n      {% if product.metafields.kameratori.batteries and product.metafields.kameratori.batteries.value.size > 0 %}\n        Battery: \n        {% for battery in product.metafields.kameratori.batteries.value %}\n         <b> {{battery}}<\/b>\n          {% if forloop.last != true %}, {% endif %}\n        {% endfor %}\n      {% endif %}\n    <\/p>\n  <\/div>\n<\/section>"
-      }
-    },
-    "1657621107d8d01beb": {
-      "type": "main-product-description",
-      "disabled": true,
-      "settings": {
-        "heading": "",
-        "show_main_stock_title": false,
-        "show_main_stock_description": false,
-        "show_main_database": true,
-        "show_main_kit_stock": false,
-        "show_main_kit_database": true
-      }
-    },
     "16579008498f69713d": {
       "type": "main-product-description",
       "blocks": {
@@ -404,9 +373,6 @@
   "order": [
     "16334152711e2727b9",
     "main",
-    "1657531617639545ac",
-    "1656487051d3ce587c",
-    "1657621107d8d01beb",
     "16579008498f69713d",
     "16321391205a6cb4a0",
     "product-recommendations",

@@ -28,16 +28,15 @@
     <script>
       window.dataLayer = window.dataLayer || [];
       window.userData = {
-        // TODO: Use liquid variables here??
-        email: '{{ checkout.customer }}',
-        phone_number: Shopify?.checkout?.billing_address?.phone || Shopify?.checkout?.shipping_address?.phone || null,
-        first_name: Shopify?.checkout?.billing_address?.first_name || Shopify?.checkout?.shipping_address?.first_name || null,
-        last_name: Shopify?.checkout?.billing_address?.last_name || Shopify?.checkout?.shipping_address?.last_name || null,
-        street: Shopify?.checkout?.billing_address?.address1 || Shopify?.checkout?.shipping_address?.address1 || null,
-        city: Shopify?.checkout?.billing_address?.city || Shopify?.checkout?.shipping_address?.city || null,
-        region: Shopify?.checkout?.billing_address?.province || Shopify?.checkout?.shipping_address?.province || null,
-        country: Shopify?.checkout?.billing_address?.country || Shopify?.checkout?.shipping_address?.country || null,
-        postcode: Shopify?.checkout?.billing_address?.zip || Shopify?.checkout?.shipping_address?.zip || null
+        email: '{{ checkout.customer.email }}' || undefined,
+        phone_number: '{{ checkout.customer.phone }}' || undefined,
+        first_name: '{{ checkout.customer.first_name }}' || undefined,
+        last_name: '{{ checkout.customer.last_name }}' || undefined,
+        street: '{{ checkout.shipping_address.street }}' || undefined,
+        city: Shopify?.checkout?.billing_address?.city || Shopify?.checkout?.shipping_address?.city || undefined,
+        region: Shopify?.checkout?.billing_address?.province || Shopify?.checkout?.shipping_address?.province || undefined,
+        country: Shopify?.checkout?.billing_address?.country || Shopify?.checkout?.shipping_address?.country || undefined,
+        postcode: Shopify?.checkout?.billing_address?.zip || Shopify?.checkout?.shipping_address?.zip || undefined
       }
 
       console.log('User Data', JSON.stringify(window.userData, null, 4));

@@ -174,6 +174,12 @@
     {% endif %}
   {% include 'store-credit-launcher' %}
   
+<script type="text/javascript">if(typeof window.hulkappsWishlist === 'undefined') {
+        window.hulkappsWishlist = {};
+        }
+        window.hulkappsWishlist.baseURL = '/apps/advanced-wishlist/api';
+        window.hulkappsWishlist.hasAppBlockSupport = '1';
+        </script>
 </head>
 
   <body class="gradient template-{{template}}">
@@ -243,5 +249,6 @@
 <!--begin-boost-pfs-js-->
   {% render 'boost-pfs' %}
 <!--end-boost-pfs-js-->
+{% render 'hulkappsWishlistPopup' %}
 </body>
 </html>

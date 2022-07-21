@@ -71,12 +71,6 @@
             "picker_type": "button"
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false
-          }
-        },
         "544372e8-f86d-4543-aa94-172d88ad169e": {
           "type": "shopify:\/\/apps\/advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
           "settings": {
@@ -89,6 +83,12 @@
             "button_text_color": "#ffffff",
             "button_background": "#5c6ac4",
             "border_color": "#5c6ac4"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
           }
         },
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb": {
@@ -208,8 +208,8 @@
         "99452d1b-4d7e-4077-a88b-abeded9e84f2",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
         "4f0717e0-34d7-44d7-9543-6fdf50a55941",
-        "buy_buttons",
         "544372e8-f86d-4543-aa94-172d88ad169e",
+        "buy_buttons",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
         "cd07da4b-ae00-46ee-bf67-5c7799d93921",
         "6ff4987b-8f35-4a2e-89e3-3f40f342da38",

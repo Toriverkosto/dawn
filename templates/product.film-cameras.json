@@ -182,6 +182,21 @@
             "page": "about-kamerastore",
             "show_button": false
           }
+        },
+        "544372e8-f86d-4543-aa94-172d88ad169e": {
+          "type": "shopify:\/\/apps\/advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
+          "disabled": true,
+          "settings": {
+            "theme_color": "#5c6ac4",
+            "button_style": "style_1",
+            "button_border": 0,
+            "button_border_radius": 0,
+            "button_vertical_space": 9,
+            "button_horizontal_space": 16,
+            "button_text_color": "#ffffff",
+            "button_background": "#5c6ac4",
+            "border_color": "#5c6ac4"
+          }
         }
       },
       "block_order": [
@@ -206,7 +221,8 @@
         "92fd3d60-c515-429c-a9e4-6bb9e3712c80",
         "acee846d-90ef-4f58-9075-b2513c31753c",
         "6cc72963-d1c6-405d-a2b7-35264953cc18",
-        "669b8d80-ccb3-4728-867d-ef53d814398d"
+        "669b8d80-ccb3-4728-867d-ef53d814398d",
+        "544372e8-f86d-4543-aa94-172d88ad169e"
       ],
       "settings": {
         "product_role": "stock",
@@ -261,12 +277,6 @@
         "92be0530-c477-4b47-b90d-b7a107f21188"
       ],
       "settings": {
-        "heading": "",
-        "show_main_stock_title": false,
-        "show_main_stock_description": false,
-        "show_main_database": false,
-        "show_main_kit_stock": false,
-        "show_main_kit_database": false
       }
     },
     "16321391205a6cb4a0": {

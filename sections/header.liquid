@@ -463,7 +463,7 @@
           </div>
         </details>
       </details-modal>
-
+   <a href="/apps/advanced-wishlist" class="header_icon icon-wishlist-heart-empty focus-inset"></a›
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link link--text focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
           {% render 'icon-account' %}
@@ -478,7 +478,6 @@
           </span>
         </a>
       {%- endif -%}
-       <a href="/apps/advanced-wishlist" class="header_icon icon-wishlist-heart-empty focus-inset"></a›
 
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link link--text focus-inset" id="cart-icon-bubble">
         {%- liquid

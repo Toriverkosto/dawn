@@ -22,8 +22,23 @@
           "settings": {
           }
         },
+        "977b845e-4c7a-4d63-b5f1-d9c5828569d7": {
+          "type": "shopify:\/\/apps\/advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
+          "settings": {
+            "theme_color": "#f15975",
+            "button_style": "style_3",
+            "button_border": 0,
+            "button_border_radius": 0,
+            "button_vertical_space": 9,
+            "button_horizontal_space": 16,
+            "button_text_color": "#ffffff",
+            "button_background": "#5c6ac4",
+            "border_color": "#5c6ac4"
+          }
+        },
         "3e022f72-085a-4854-bf94-64f0bb65bbb1": {
           "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "disabled": true,
           "settings": {
             "stars_fill_color": "#ffc315",
             "star_size": 18,
@@ -34,6 +49,7 @@
         },
         "a3ca7016-1f16-4d9e-844f-e638eb512a61": {
           "type": "link_to_review",
+          "disabled": true,
           "settings": {
             "link_text": "Read or Write Reviews",
             "only_show_when_no_reviews": true,
@@ -138,6 +154,7 @@
       "block_order": [
         "a94549f5-c31f-4923-aa60-cf99ab30772a",
         "title",
+        "977b845e-4c7a-4d63-b5f1-d9c5828569d7",
         "3e022f72-085a-4854-bf94-64f0bb65bbb1",
         "a3ca7016-1f16-4d9e-844f-e638eb512a61",
         "price",
@@ -165,13 +182,49 @@
     },
     "1657620235cdd65344": {
       "type": "main-product-description",
+      "blocks": {
+        "cda43d7e-451d-4596-8004-beca45636302": {
+          "type": "heading",
+          "settings": {
+            "heading": "Description"
+          }
+        },
+        "6c613396-64b8-47a8-871c-0a21236a5007": {
+          "type": "main_stock_description",
+          "settings": {
+          }
+        },
+        "6a252b36-a6b7-423b-b81c-c96536edb140": {
+          "type": "main_kit_stock",
+          "settings": {
+          }
+        },
+        "1c800851-eb7b-4546-b4db-6a3bb217bde4": {
+          "type": "metafields",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "eba7dac3-45dc-4523-b06e-333da3db7556": {
+          "type": "main_database",
+          "settings": {
+          }
+        },
+        "e284fc8f-1163-4ecb-b568-aa836de1fa8c": {
+          "type": "main_kit_database",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "cda43d7e-451d-4596-8004-beca45636302",
+        "6c613396-64b8-47a8-871c-0a21236a5007",
+        "6a252b36-a6b7-423b-b81c-c96536edb140",
+        "1c800851-eb7b-4546-b4db-6a3bb217bde4",
+        "eba7dac3-45dc-4523-b06e-333da3db7556",
+        "e284fc8f-1163-4ecb-b568-aa836de1fa8c"
+      ],
       "settings": {
-        "heading": "Description",
-        "show_main_stock_title": false,
-        "show_main_stock_description": true,
-        "show_main_database": true,
-        "show_main_kit_stock": true,
-        "show_main_kit_database": true
       }
     },
     "163292242191680787": {

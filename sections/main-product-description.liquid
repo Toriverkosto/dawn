@@ -33,63 +33,6 @@
 </style>
 
 <section class="main-product-description page-width page-width--narrow">
-  {% assign previous_section_shown = false %}
-
-  {% if section.settings.heading != blank %}
-    <h2>{{ section.settings.heading }}</h2>
-  {% endif %}
-
-  {% if section.settings.show_main_stock_title and product.title != blank %}
-    <h3>{{ product.title }}</h3>
-  {% endif %}
-
-  {% if section.settings.show_main_stock_description and product.description != blank %}
-    {% assign previous_section_shown = true %}
-    <div>{{ product.description }}</div>
-  {% endif %}
-
-  {% comment %}If global.description_tag is filled then the product description doesn't contain the database description any more{% endcomment %}
-  {% if product.metafields.global.description_tag != nil %}
-
-    {% if section.settings.show_main_kit_stock %}
-      {% comment %}Kit item inventory descriptions{% endcomment %}
-      {% for kit_description in product.metafields.kameratori.kit_product_descriptions.value %}
-        {% if kit_description.description != nil %}
-          {% assign previous_section_shown = true %}
-          <b>{{ kit_description.brand }} {{ kit_description.model }}</b>
-          <div>{{ kit_description.description }}</div>
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-
-    {% if section.settings.show_main_database %}
-      {% comment %}Main DB product desription{% endcomment %}
-      {% assign host_product = product.metafields.kameratori.host.value %}
-      {% if host_product != nil and host_product.description != blank %}
-        {% if previous_section_shown %}
-          <hr class="main-product-description shallow" />
-        {% endif %}
-        <b>{{ host_product.title }}</b>
-        <div>{{ host_product.description }}</div>
-        {% assign previous_section_shown = true %}
-      {% endif %}
-    {% endif %}
-
-    {% if section.settings.show_main_kit_database %}
-      {% comment %}Kit DB descriptions{% endcomment %}
-      {% for kit_product in product.metafields.kameratori.kit_products.value %}
-        {% if kit_product.description != blank %}
-          {% if previous_section_shown %}
-            <hr class="main-product-description shallow" />
-          {% endif %}
-          <b>{{ kit_product.title }}</b>
-          <div>{{ kit_product.description }}</div>
-          {% assign previous_section_shown = true %}
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-  {% endif %}
-
   {% assign previous_content_section_shown = false %}
   {%- for block in section.blocks -%}
     {%- case block.type -%}
@@ -126,7 +69,6 @@
           {% endif %}
         {% endfor %}
       {%- when 'main_kit_database' -%}
-        {% comment %}TODO: Fix the HR STUFF{% endcomment %}
         {% for kit_product in product.metafields.kameratori.kit_products.value %}
           {% if kit_product.description != blank %}
             {% if previous_content_section_shown %}
@@ -134,7 +76,7 @@
             {% endif %}
             <b>{{ kit_product.title }}</b>
             <div>{{ kit_product.description }}</div>
-            {% assign previous_section_shown = true %}
+            {% assign previous_content_section_shown = true %}
           {% endif %}
         {% endfor %}
       {%- when 'metafields' -%}
@@ -164,7 +106,7 @@
               Battery:
               {% for battery in product.metafields.kameratori.batteries.value %}
                 <b> {{battery}}</b>
-                {% if forloop.last != true %}, {% endif %}
+                {% if forloop.last != true %}, {% else %}<br />{% endif %}
               {% endfor %}
             {% endif %}
 
@@ -233,52 +175,7 @@
       "name": "t:sections.main-product-description.blocks.metafields.name"
     }
   ],
-  "settings": [
-    {
-      "type": "text",
-      "id": "heading",
-      "default": "Description",
-      "label": "t:sections.main-product-description.settings.heading.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.main-product-description.settings.header.main_product"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_main_stock_title",
-      "default": true,
-      "label": "t:sections.main-product-description.settings.show_main_stock_title.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_main_stock_description",
-      "default": true,
-      "label": "t:sections.main-product-description.settings.show_main_stock_description.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_main_database",
-      "default": true,
-      "label": "t:sections.main-product-description.settings.show_main_database.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.main-product-description.settings.header.kit_products"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_main_kit_stock",
-      "default": true,
-      "label": "t:sections.main-product-description.settings.show_main_kit_stock.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_main_kit_database",
-      "default": true,
-      "label": "t:sections.main-product-description.settings.show_main_kit_database.label"
-    }
-  ],
+  "settings": [],
   "presets": [
     {
       "name": "t:sections.main-product-description.presets.name"

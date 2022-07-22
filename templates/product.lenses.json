@@ -27,8 +27,23 @@
             "custom_liquid": "{% for t in product.tags %}\n  {% assign prefix = t | slice: 0, 7 %}\n    {% if prefix == 'System-' %}\n      {% assign product_system = t | slice: 7, 57 %}\n    {% endif %}\n{% endfor %}\n\n{% if product_system == 'Four Thirds' %}\n   <p>This item is made for the <b>Four Thirds<\/b><\/a> system, it is <u>not compatible<\/u> with <b>Micro Four Thirds<\/b>.<\/p>\n{% endif %}"
           }
         },
+        "68432eec-9888-4c80-8923-910130f65bc2": {
+          "type": "shopify:\/\/apps\/advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
+          "settings": {
+            "theme_color": "#f15975",
+            "button_style": "style_3",
+            "button_border": 0,
+            "button_border_radius": 0,
+            "button_vertical_space": 9,
+            "button_horizontal_space": 16,
+            "button_text_color": "#ffffff",
+            "button_background": "#5c6ac4",
+            "border_color": "#5c6ac4"
+          }
+        },
         "c312f42b-e37a-405e-b2aa-7ff730360f4e": {
           "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "disabled": true,
           "settings": {
             "stars_fill_color": "#ffc315",
             "star_size": 18,
@@ -39,6 +54,7 @@
         },
         "cad180e3-9d21-40fc-b7c7-b619604bd2a5": {
           "type": "link_to_review",
+          "disabled": true,
           "settings": {
             "link_text": "Read or Write Reviews",
             "only_show_when_no_reviews": true,
@@ -146,6 +162,7 @@
         "f16dfcff-e3a5-4b44-b809-ac9d7baf3f9f",
         "title",
         "241631da-98aa-4528-be61-73d8d8c6b988",
+        "68432eec-9888-4c80-8923-910130f65bc2",
         "c312f42b-e37a-405e-b2aa-7ff730360f4e",
         "cad180e3-9d21-40fc-b7c7-b619604bd2a5",
         "price",
@@ -172,13 +189,50 @@
     },
     "165762036647fa041d": {
       "type": "main-product-description",
+      "blocks": {
+        "ab4f859b-f022-4c4a-ab92-f189f7557a56": {
+          "type": "heading",
+          "settings": {
+            "heading": "Description"
+          }
+        },
+        "1f0b3efd-c98f-482c-b84c-6da7bb0be101": {
+          "type": "main_stock_description",
+          "settings": {
+          }
+        },
+        "a904007d-02dd-477b-8521-e038f80d2f51": {
+          "type": "main_kit_stock",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "9e9f3e19-3e39-4d27-a71b-c1852d90bbf7": {
+          "type": "metafields",
+          "settings": {
+          }
+        },
+        "0e00f6ae-ac29-4724-88a3-07e2c80016b9": {
+          "type": "main_database",
+          "settings": {
+          }
+        },
+        "a756aab8-6d90-4ed6-99e3-b3e91ae2e55c": {
+          "type": "main_kit_database",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "ab4f859b-f022-4c4a-ab92-f189f7557a56",
+        "1f0b3efd-c98f-482c-b84c-6da7bb0be101",
+        "a904007d-02dd-477b-8521-e038f80d2f51",
+        "9e9f3e19-3e39-4d27-a71b-c1852d90bbf7",
+        "0e00f6ae-ac29-4724-88a3-07e2c80016b9",
+        "a756aab8-6d90-4ed6-99e3-b3e91ae2e55c"
+      ],
       "settings": {
-        "heading": "Description",
-        "show_main_stock_title": false,
-        "show_main_stock_description": true,
-        "show_main_database": true,
-        "show_main_kit_stock": true,
-        "show_main_kit_database": true
       }
     },
     "16321391205a6cb4a0": {

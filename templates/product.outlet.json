@@ -15,6 +15,20 @@
           "settings": {
           }
         },
+        "8c7407d5-980f-45d9-8d49-7fd62e0e8186": {
+          "type": "shopify:\/\/apps\/advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
+          "settings": {
+            "theme_color": "#f15975",
+            "button_style": "style_3",
+            "button_border": 0,
+            "button_border_radius": 0,
+            "button_vertical_space": 9,
+            "button_horizontal_space": 16,
+            "button_text_color": "#ffffff",
+            "button_background": "#5c6ac4",
+            "border_color": "#5c6ac4"
+          }
+        },
         "671ba54b-0342-4dd7-bdfe-26cccec6c528": {
           "type": "custom_liquid",
           "disabled": true,
@@ -66,7 +80,6 @@
         },
         "a4908876-2ec2-4049-8519-f88aac2c716e": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "heading": "30 Day Returns",
             "content": "<p>Change your mind? Not satisfied? Let us know within 30 days of delivery for a return and refund.<\/p><p><a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"\/policies\/refund-policy\">Read More<\/a><\/p>",
@@ -85,6 +98,7 @@
         },
         "a41a8e68-deb3-4414-bc77-846ae026a7ec": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Actual Item Pictured",
             "content": "<p>We take the time to photograph every used item. When you buy from us you are getting the item you see in the photos.<\/p>",
@@ -94,6 +108,7 @@
         },
         "6810ef93-62dd-4178-b166-ae99302c3c46": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Sell Your Gear to Us!",
             "content": "<p>We buy & trade cameras, lenses, and accessories on top of selling! If you're looking to upgrade or change your gear, why not sell directly to us?<br\/><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\"><strong>Click here to fill out our form!<\/strong><\/a><\/p>",
@@ -105,6 +120,7 @@
       "block_order": [
         "41dcf8ff-cb37-4d9c-b87f-e3b10e1854b9",
         "title",
+        "8c7407d5-980f-45d9-8d49-7fd62e0e8186",
         "671ba54b-0342-4dd7-bdfe-26cccec6c528",
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
@@ -126,17 +142,26 @@
         "show_sku_and_barcode": true
       }
     },
-    "163178438845c86d64": {
-      "type": "custom-liquid",
+    "165830457736b76e06": {
+      "type": "main-product-description",
+      "blocks": {
+        "74c696d3-a0c3-4fe2-97a5-7be6cf8ecfb1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Description"
+          }
+        },
+        "dc1a42c5-5aa3-482b-91d4-c22b86edc94f": {
+          "type": "main_stock_description",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "74c696d3-a0c3-4fe2-97a5-7be6cf8ecfb1",
+        "dc1a42c5-5aa3-482b-91d4-c22b86edc94f"
+      ],
       "settings": {
-        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<H2>Description<\/h2><H3>{{ product.title }}<\/h3>{{ product.description }}<\/div>"
-      }
-    },
-    "1632735936daa328ef": {
-      "type": "apps",
-      "disabled": true,
-      "settings": {
-        "include_margins": true
       }
     },
     "16321391205a6cb4a0": {
@@ -244,8 +269,7 @@
   },
   "order": [
     "main",
-    "163178438845c86d64",
-    "1632735936daa328ef",
+    "165830457736b76e06",
     "16321391205a6cb4a0",
     "product-recommendations",
     "16321339467e367887"

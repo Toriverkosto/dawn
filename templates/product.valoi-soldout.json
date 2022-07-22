@@ -71,20 +71,6 @@
             "link_to_host": false
           }
         },
-        "621c4599-3a2c-4d60-a6f4-630ef05bfba3": {
-          "type": "shopify:\/\/apps\/advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
-          "settings": {
-            "theme_color": "#f15975",
-            "button_style": "style_3",
-            "button_border": 0,
-            "button_border_radius": 0,
-            "button_vertical_space": 9,
-            "button_horizontal_space": 16,
-            "button_text_color": "#ffffff",
-            "button_background": "#5c6ac4",
-            "border_color": "#5c6ac4"
-          }
-        },
         "6e329fbd-c3b0-4cfe-a6f4-9911df60910e": {
           "type": "custom_liquid",
           "disabled": true,
@@ -112,6 +98,12 @@
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": false
+          }
+        },
+        "fe2afb8e-705f-4209-9b73-f50776792f84": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<p><em><span style=\"color: #ff0000;\">This item is out of stock at the moment. You can still check out with it, but note that your order will be put on hold until it is available.<\/span><\/em><\/p>"
           }
         },
         "80fbe6e3-0e56-4ee6-be9c-6a5e5c5f985c": {
@@ -176,12 +168,12 @@
         "title",
         "cf29d553-05b4-4684-9080-1bcc4b961df2",
         "7204a9ac-d9c4-4659-be9a-3662cfbc43c5",
-        "621c4599-3a2c-4d60-a6f4-630ef05bfba3",
         "6e329fbd-c3b0-4cfe-a6f4-9911df60910e",
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
         "8a1f013f-3fbd-4ebb-b70b-fd9e114e338b",
         "buy_buttons",
+        "fe2afb8e-705f-4209-9b73-f50776792f84",
         "80fbe6e3-0e56-4ee6-be9c-6a5e5c5f985c",
         "f8b9a89d-8fdd-4b79-b6e1-80fbde58346d",
         "a5a11cfe-80a9-4294-953b-395acd66d02f",
@@ -197,6 +189,13 @@
         "enable_video_looping": false,
         "show_breadcrumbs": true,
         "show_sku_and_barcode": true
+      }
+    },
+    "163178438845c86d64": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<H2>Description<\/h2><H3>{{ product.title }}<\/h3>{{ product.description }}<\/div>"
       }
     },
     "16461179422d882da6": {
@@ -285,6 +284,7 @@
   "order": [
     "1632824788edf71f2f",
     "main",
+    "163178438845c86d64",
     "16461179422d882da6",
     "16321391205a6cb4a0",
     "product-recommendations"

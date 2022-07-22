@@ -43,15 +43,15 @@
             "custom_liquid": "<p style=\"color: #ababab\">{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable' | t }}\n{% else %}\n    {{ 'products.product.not_taxable' | t }}\n{% endif %}<\/p>"
           }
         },
-        "3c9d3c18-0a30-49f4-ad09-63143e81c26b": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<style>\n.restricted {\n  background-color: #FEF7EA;\n  color: #3E4447;\n  padding-left: 15px;\n  padding-right: 15px;\n  border: 2px solid #F6DFBB;\n  margin: 0px;\n  border-radius: 5px;\n}\n<\/style>\n<\/head>\n<body>\n\n<div class=\"restricted\">\n<h3><\/h3>\n<p>Color film is limited to 10 pcs \/ customer.<\/p>\n<\/div>"
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
+          }
+        },
+        "3c9d3c18-0a30-49f4-ad09-63143e81c26b": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>\n.restricted {\n  background-color: #FEF7EA;\n  color: #3E4447;\n  padding-left: 15px;\n  padding-right: 15px;\n  border: 2px solid #F6DFBB;\n  margin: 0px;\n  border-radius: 5px;\n}\n<\/style>\n<\/head>\n<body>\n\n<div class=\"restricted\">\n<h3><\/h3>\n<p>Color film - Limit 10 per customer.<\/p>\n<\/div>"
           }
         },
         "buy_buttons": {
@@ -137,8 +137,8 @@
         "5221b8a7-4db2-4a4d-bf04-5d9cb7e5a0f4",
         "price",
         "f0c9e60b-84e2-4c7b-a294-cab454328d82",
-        "3c9d3c18-0a30-49f4-ad09-63143e81c26b",
         "quantity_selector",
+        "3c9d3c18-0a30-49f4-ad09-63143e81c26b",
         "buy_buttons",
         "ec88d254-bbe8-4b70-a8ba-4e63f56ef136",
         "ff1bb9c6-eb65-4ae0-a2ab-b42152660aae",

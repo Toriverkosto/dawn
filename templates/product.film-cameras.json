@@ -73,6 +73,7 @@
         },
         "544372e8-f86d-4543-aa94-172d88ad169e": {
           "type": "shopify:\/\/apps\/advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
+          "disabled": true,
           "settings": {
             "theme_color": "#5c6ac4",
             "button_style": "style_3",
@@ -377,6 +378,28 @@
         "color_scheme": "inverse",
         "layout": "text_first"
       }
+    },
+    "1658471885709c1e6b": {
+      "type": "apps",
+      "blocks": {
+        "0058a87c-f04a-4d23-a5e5-fb77aa465b43": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "disabled": true,
+          "settings": {
+            "stars_fill_color": "#ffc315",
+            "star_size": 16,
+            "text_align": "center",
+            "product": "{{ product.metafields.kameratori.host.value }}",
+            "stars_text_empty": "No reviews"
+          }
+        }
+      },
+      "block_order": [
+        "0058a87c-f04a-4d23-a5e5-fb77aa465b43"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -385,6 +408,7 @@
     "16579008498f69713d",
     "16321391205a6cb4a0",
     "product-recommendations",
-    "16321339467e367887"
+    "16321339467e367887",
+    "1658471885709c1e6b"
   ]
 }

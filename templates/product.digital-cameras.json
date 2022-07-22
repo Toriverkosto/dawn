@@ -216,12 +216,6 @@
         "370b4caa-3b10-4778-8e71-86131bbca710"
       ],
       "settings": {
-        "heading": "",
-        "show_main_stock_title": false,
-        "show_main_stock_description": false,
-        "show_main_database": false,
-        "show_main_kit_stock": false,
-        "show_main_kit_database": false
       }
     },
     "product-recommendations": {
@@ -276,6 +270,12 @@
         "color_scheme": "inverse",
         "layout": "text_first"
       }
+    },
+    "165846975663e3fa10": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{{product.price | money}}"
+      }
     }
   },
   "order": [
@@ -283,6 +283,7 @@
     "165830265535c3ca80",
     "product-recommendations",
     "1636976863088ccff1",
-    "16321339467e367887"
+    "16321339467e367887",
+    "165846975663e3fa10"
   ]
 }

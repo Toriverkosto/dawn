@@ -233,6 +233,12 @@
         "include_margins": true
       }
     },
+    "1658753344fb82cc90": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<br>\n<div class=\"reputon-google-reviews-widget\" id=\"10abb9a0-8e45-11ec-b71b-13d735077cf2\" ><\/div>"
+      }
+    },
     "16324019941e428b8f": {
       "type": "multicolumn",
       "blocks": {
@@ -321,6 +327,7 @@
     "main",
     "1657620235cdd65344",
     "163292242191680787",
+    "1658753344fb82cc90",
     "16324019941e428b8f",
     "product-recommendations",
     "163239432974b497b2"

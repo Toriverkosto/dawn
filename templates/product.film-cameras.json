@@ -171,33 +171,6 @@
             "page": "sell-or-trade-your-used-camera-gear",
             "show_button": false
           }
-        },
-        "acee846d-90ef-4f58-9075-b2513c31753c": {
-          "type": "popup",
-          "disabled": true,
-          "settings": {
-            "text": "Conditions",
-            "page": "",
-            "show_button": false
-          }
-        },
-        "6cc72963-d1c6-405d-a2b7-35264953cc18": {
-          "type": "popup",
-          "disabled": true,
-          "settings": {
-            "text": "Shipping",
-            "page": "packing-shipping",
-            "show_button": false
-          }
-        },
-        "669b8d80-ccb3-4728-867d-ef53d814398d": {
-          "type": "popup",
-          "disabled": true,
-          "settings": {
-            "text": "Returns",
-            "page": "about-kamerastore",
-            "show_button": false
-          }
         }
       },
       "block_order": [
@@ -220,10 +193,7 @@
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "a41a8e68-deb3-4414-bc77-846ae026a7ec",
         "f8962c4a-da22-4a3d-8f73-05ff4d13ed57",
-        "92fd3d60-c515-429c-a9e4-6bb9e3712c80",
-        "acee846d-90ef-4f58-9075-b2513c31753c",
-        "6cc72963-d1c6-405d-a2b7-35264953cc18",
-        "669b8d80-ccb3-4728-867d-ef53d814398d"
+        "92fd3d60-c515-429c-a9e4-6bb9e3712c80"
       ],
       "settings": {
         "product_role": "stock",

@@ -261,7 +261,7 @@
     "1658753086970be4d5": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"reputon-google-reviews-widget\" id=\"10abb9a0-8e45-11ec-b71b-13d735077cf2\" ><\/div>"
+        "custom_liquid": "<br>\n<div class=\"reputon-google-reviews-widget\" id=\"10abb9a0-8e45-11ec-b71b-13d735077cf2\" ><\/div>"
       }
     },
     "16321391205a6cb4a0": {

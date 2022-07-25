@@ -171,6 +171,13 @@
             "page": "sell-or-trade-your-used-camera-gear",
             "show_button": false
           }
+        },
+        "a61057d7-0270-434a-9a2c-d9dd3332fad7": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div class=\"reputon-google-reviews-widget\" id=\"10abb9a0-8e45-11ec-b71b-13d735077cf2\" style=\"display: flex; justify-content: center;\"><\/div>"
+          }
         }
       },
       "block_order": [
@@ -193,7 +200,8 @@
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "a41a8e68-deb3-4414-bc77-846ae026a7ec",
         "f8962c4a-da22-4a3d-8f73-05ff4d13ed57",
-        "92fd3d60-c515-429c-a9e4-6bb9e3712c80"
+        "92fd3d60-c515-429c-a9e4-6bb9e3712c80",
+        "a61057d7-0270-434a-9a2c-d9dd3332fad7"
       ],
       "settings": {
         "product_role": "stock",

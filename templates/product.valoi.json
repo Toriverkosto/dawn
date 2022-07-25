@@ -199,6 +199,12 @@
         "show_sku_and_barcode": true
       }
     },
+    "16587538834d2716f8": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<br>\n<div class=\"reputon-google-reviews-widget\" id=\"10abb9a0-8e45-11ec-b71b-13d735077cf2\" ><\/div>"
+      }
+    },
     "16461179422d882da6": {
       "type": "apps",
       "blocks": {
@@ -285,6 +291,7 @@
   "order": [
     "1632824788edf71f2f",
     "main",
+    "16587538834d2716f8",
     "16461179422d882da6",
     "16321391205a6cb4a0",
     "product-recommendations"

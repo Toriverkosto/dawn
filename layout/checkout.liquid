@@ -125,7 +125,7 @@
       input_checkbox.className = 'input-checkbox';
       p_checkbox.append(input_checkbox);
 
-      const checkbox_label = document.createElement('input');
+      const checkbox_label = document.createElement('label');
       checkbox_label.setAttribute('for', 'terms-and-conditions-agree')
       checkbox_label.textContent = '{{ 'sections.cart.terms_and_conditions_checkbox_label_html' | t: link: shop.terms_of_service.url }}';
       p_checkbox.append(checkbox_label);

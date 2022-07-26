@@ -205,15 +205,6 @@
       </header>
       <main class="main__content" role="main">
         {{ content_for_layout }}
-        <p class="terms-and-conditions-checkbox">
-          <input type="checkbox" id="terms-and-conditions-agree"/>
-          <label for="terms-and-conditions-agree">
-            {{ 'sections.cart.terms_and_conditions_checkbox_label_html' | t: link: shop.terms_of_service.url }}
-          </label>
-        </p>
-        <p class="terms-and-conditions-alert hidden">
-          {{ 'sections.cart.terms_and_conditions_alert' | t }}
-        </p>
       </main>
       <footer class="main__footer" role="contentinfo">
         {{ content_for_footer }}

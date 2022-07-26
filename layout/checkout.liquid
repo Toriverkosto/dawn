@@ -115,6 +115,9 @@
         });
 
         const checkout_handler = function (event) {
+          console.log('IS THIS CALLED??');
+          event.preventDefault();
+          return false;
           if (!tc_agree_element.checked) {
             event.preventDefault();
             tc_alert_element.classList.remove('hidden');

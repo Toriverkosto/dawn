@@ -39,8 +39,6 @@
       postcode:  '{{ checkout.shipping_address.zip }}' || undefined,
     };
 
-    console.log('User Data', JSON.stringify(window.userData, null, 4));
-
     window.dataLayer.push({user_data: window.userData});
 
     window.dataLayer.push({
@@ -61,24 +59,43 @@
       }))
     });
 
-    console.log(`Event data`, {
-      event: 'purchase',
-      currency: '{{ shop.currency }}',
-      transaction_id: '{{ order.order_number }}',
-      value: {{ order.subtotal_price | money_without_currency | replace: ',', '.' | default '0'}},
-      discount: Shopify?.checkout?.discount?.amount,
-      coupon: Shopify?.checkout?.discount?.code,
-      shipping: {{ order.shipping_price | money_without_currency | replace: ',', '.' | default '0'}},
-      tax: {{ order.tax_price | money_without_currency | replace: ',', '.' | default '0' }},
-      items: (Shopify?.checkout?.line_items || []).map(item => ({
-        item_id: item?.sku,
-        item_name: item?.title,
-        item_brand: item?.vendor,
-        price: parseFloat(item?.price) || null,
-        quantity: item?.quantity,
-      }))
-    });
+  </script>
+  <script>
+    function addTermsAndConditionsListeners () {
+      let tc_agree_element = document.querySelector('#terms-and-conditions-agree');
+      if (tc_agree_element !== null) {
+        let tc_alert_element = document.querySelector('p.terms-and-conditions-alert');
 
+        tc_agree_element.addEventListener('click', function () {
+          if (tc_agree_element.checked) {
+            tc_alert_element.classList.add('hidden');
+          } else {
+            tc_alert_element.classList.remove('hidden');
+          }
+        });
+
+        const checkout_handler = function (event) {
+          if (!tc_agree_element.checked) {
+            event.preventDefault();
+            tc_alert_element.classList.remove('hidden');
+            return false;
+          } else {
+            return true;
+          }
+        };
+
+        document.querySelector('#checkout').addEventListener('click', checkout_handler);
+
+        return checkout_handler;
+      } else {
+        return null;
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const checkout_handler = addTermsAndConditionsListeners();
+
+    });
   </script>
 </head>
 
@@ -108,6 +125,15 @@
       </header>
       <main class="main__content" role="main">
         {{ content_for_layout }}
+        <p class="terms-and-conditions-checkbox">
+          <input type="checkbox" id="terms-and-conditions-agree"/>
+          <label for="terms-and-conditions-agree">
+            {{ 'sections.cart.terms_and_conditions_checkbox_label_html' | t: link: shop.terms_of_service.url }}
+          </label>
+        </p>
+        <p class="terms-and-conditions-alert hidden">
+          {{ 'sections.cart.terms_and_conditions_alert' | t }}
+        </p>
       </main>
       <footer class="main__footer" role="contentinfo">
         {{ content_for_footer }}

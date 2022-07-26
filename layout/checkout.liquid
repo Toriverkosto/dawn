@@ -115,6 +115,7 @@
   <script>
 
     function renderTermsAndConditions () {
+      console.log("Rendering thing");
       const p_checkbox = document.createElement('p');
       p_checkbox.className = 'terms-and-conditions-checkbox';
 
@@ -133,8 +134,9 @@
       p_alert.classList.add('terms-and-conditions-alert');
       p_alert.classList.add('hidden');
       p_alert.textContent = '{{ 'sections.cart.terms_and_conditions_alert' | t }}';
-
+    
       const step_footer_element = document.querySelector('div.step__footer');
+      console.log("Adding to", step_footer_element);
       document.insertBefore(p_checkbox, step_footer_element);
       document.insertBefore(p_alert, step_footer_element);
     }

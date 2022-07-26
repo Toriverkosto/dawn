@@ -120,6 +120,8 @@
       checkbox_label.innerHTML = '{{ 'sections.cart.terms_and_conditions_checkbox_label_html' | t: link: shop.terms_of_service.url }}';
       p_checkbox.append(checkbox_label);
 
+      console.log('Wad tis', '{{ shop.terms_of_service.url }}');
+
       const p_alert = document.createElement('p');
       p_alert.classList.add('terms-and-conditions-alert');
       p_alert.classList.add('hidden');

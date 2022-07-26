@@ -66,7 +66,7 @@
 
     main.main__content p.terms-and-conditions-alert {
       color: red;
-      letter-spacing: .04rem;
+      margin-top: 0.5em;
     }
 
     main.main__content p.terms-and-conditions-alert.hidden {
@@ -105,7 +105,6 @@
   <script>
 
     function renderTermsAndConditions () {
-      console.log("Rendering thing");
       const p_checkbox = document.createElement('p');
       p_checkbox.className = 'terms-and-conditions-checkbox';
 
@@ -120,16 +119,12 @@
       checkbox_label.innerHTML = '{{ 'sections.cart.terms_and_conditions_checkbox_label_html' | t: link: shop.terms_of_service.url }}';
       p_checkbox.append(checkbox_label);
 
-      console.log('Wad tis', '{{ shop.terms_of_service.url }}');
-
       const p_alert = document.createElement('p');
       p_alert.classList.add('terms-and-conditions-alert');
       p_alert.classList.add('hidden');
       p_alert.textContent = '{{ 'sections.cart.terms_and_conditions_alert' | t }}';
     
       const step_footer_element = document.querySelector('div.step__footer');
-      console.log("Adding", p_checkbox, p_alert);
-      console.log("Adding to", step_footer_element.parentElement, step_footer_element);
       step_footer_element.parentElement.insertBefore(p_checkbox, step_footer_element);
       step_footer_element.parentElement.insertBefore(p_alert, step_footer_element);
     }

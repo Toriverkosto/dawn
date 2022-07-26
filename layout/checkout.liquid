@@ -115,9 +115,6 @@
         });
 
         const checkout_handler = function (event) {
-          console.log('IS THIS CALLED??');
-          event.preventDefault();
-          return false;
           if (!tc_agree_element.checked) {
             event.preventDefault();
             tc_alert_element.classList.remove('hidden');
@@ -169,7 +166,7 @@
       <main class="main__content" role="main">
         {{ content_for_layout }}
         <p class="terms-and-conditions-checkbox">
-          <input type="checkbox" id="terms-and-conditions-agree"/>
+          <input type="checkbox" id="terms-and-conditions-agree" class="input-checkbox" />
           <label for="terms-and-conditions-agree">
             {{ 'sections.cart.terms_and_conditions_checkbox_label_html' | t: link: shop.terms_of_service.url }}
           </label>

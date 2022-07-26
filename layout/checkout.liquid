@@ -74,23 +74,71 @@
     }
 
     main.main__content p.terms-and-conditions-checkbox {
+      font-size: 1.3rem;
+
       display: flex;
       flex-direction: row;
-      justify-content: flex-start;
+      justify-content: flex-end;
       align-items: center;
 
       margin-top: 0.5rem;
     }
 
     main.main__content p.terms-and-conditions-checkbox input {
-      margin-right: 0.75em;
+      margin-bottom: 4px;
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-right: 0.25rem;
     }
-    
+
+    main.main__content p.terms-and-conditions-checkbox label {
+      font-size: 1.3rem;
+      letter-spacing: .04rem;
+    }
+
     main.main__content p.terms-and-conditions-checkbox a {
       color: #528ec1;
     }
   </style>
+
+  {% comment %}<p class="terms-and-conditions-checkbox">{% endcomment %}
+    {% comment %}<input type="checkbox" id="terms-and-conditions-agree" class="input-checkbox" />{% endcomment %}
+    {% comment %}<label for="terms-and-conditions-agree">{% endcomment %}
+      {% comment %}{{ 'sections.cart.terms_and_conditions_checkbox_label_html' | t: link: shop.terms_of_service.url }}{% endcomment %}
+    {% comment %}</label>{% endcomment %}
+  {% comment %}</p>{% endcomment %}
+{% comment %}{% endcomment %}
+  {% comment %}<p class="terms-and-conditions-alert hidden">{% endcomment %}
+    {% comment %}{{ 'sections.cart.terms_and_conditions_alert' | t }}{% endcomment %}
+  {% comment %}</p>{% endcomment %}
+
   <script>
+
+    function renderTermsAndConditions () {
+      const p_checkbox = document.createElement('p');
+      p_checkbox.className = 'terms-and-conditions-checkbox';
+
+      const input_checkbox = document.createElement('input');
+      input_checkbox.type = 'checkbox';
+      input_checkbox.id = 'terms-and-conditions-agree';
+      input_checkbox.className = 'input-checkbox';
+      p_checkbox.append(input_checkbox);
+
+      const checkbox_label = document.createElement('input');
+      checkbox_label.setAttribute('for', 'terms-and-conditions-agree')
+      checkbox_label.textContent = '{{ 'sections.cart.terms_and_conditions_checkbox_label_html' | t: link: shop.terms_of_service.url }}';
+      p_checkbox.append(checkbox_label);
+
+      const p_alert = document.createElement('p');
+      p_alert.classList.add('terms-and-conditions-alert');
+      p_alert.classList.add('hidden');
+      p_alert.textContent = '{{ 'sections.cart.terms_and_conditions_alert' | t }}';
+
+      const step_footer_element = document.querySelector('div.step__footer');
+      document.insertBefore(p_checkbox, step_footer_element);
+      document.insertBefore(p_alert, step_footer_element);
+    }
+
     function addTermsAndConditionsListeners () {
       let tc_agree_element = document.querySelector('#terms-and-conditions-agree');
       if (tc_agree_element !== null) {
@@ -156,7 +204,7 @@
       <main class="main__content" role="main">
         {{ content_for_layout }}
         <p class="terms-and-conditions-checkbox">
-          <input type="checkbox" id="terms-and-conditions-agree" class="input-checkbox" />
+          <input type="checkbox" id="terms-and-conditions-agree"/>
           <label for="terms-and-conditions-agree">
             {{ 'sections.cart.terms_and_conditions_checkbox_label_html' | t: link: shop.terms_of_service.url }}
           </label>

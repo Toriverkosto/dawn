@@ -87,18 +87,11 @@
     main.main__content p.terms-and-conditions-checkbox a {
       color: #528ec1;
     }
-  </style>
 
-  {% comment %}<p class="terms-and-conditions-checkbox">{% endcomment %}
-    {% comment %}<input type="checkbox" id="terms-and-conditions-agree" class="input-checkbox" />{% endcomment %}
-    {% comment %}<label for="terms-and-conditions-agree">{% endcomment %}
-      {% comment %}{{ 'sections.cart.terms_and_conditions_checkbox_label_html' | t: link: shop.terms_of_service.url }}{% endcomment %}
-    {% comment %}</label>{% endcomment %}
-  {% comment %}</p>{% endcomment %}
-{% comment %}{% endcomment %}
-  {% comment %}<p class="terms-and-conditions-alert hidden">{% endcomment %}
-    {% comment %}{{ 'sections.cart.terms_and_conditions_alert' | t }}{% endcomment %}
-  {% comment %}</p>{% endcomment %}
+    #continue_button.disabled {
+      background-color: #a3bccc;
+    }
+  </style>
 
   <script>
 
@@ -121,7 +114,7 @@
       p_alert.classList.add('terms-and-conditions-alert');
       p_alert.classList.add('hidden');
       p_alert.textContent = '{{ 'sections.cart.terms_and_conditions_alert' | t }}';
-    
+
       const step_footer_element = document.querySelector('div.step__footer');
       step_footer_element.parentElement.insertBefore(p_checkbox, step_footer_element);
       step_footer_element.parentElement.insertBefore(p_alert, step_footer_element);
@@ -134,8 +127,10 @@
 
         tc_agree_element.addEventListener('click', function () {
           if (tc_agree_element.checked) {
+            document.querySelector('#continue_button').classList.remove('disabled');
             tc_alert_element.classList.add('hidden');
           } else {
+            document.querySelector('#continue_button').classList.add('disabled');
             tc_alert_element.classList.remove('hidden');
           }
         });
@@ -159,11 +154,9 @@
     }
 
     document.addEventListener('DOMContentLoaded', function() {
-      // setTimeout(() => {
-      //  renderTermsAndConditions();
-      //}, 2000);
+      document.querySelector('#continue_button').classList.add('disabled');
       renderTermsAndConditions();
-      const checkout_handler = addTermsAndConditionsListeners();
+      addTermsAndConditionsListeners();
     });
   </script>
 </head>

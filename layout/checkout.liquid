@@ -137,7 +137,7 @@
     
       const step_footer_element = document.querySelector('div.step__footer');
       console.log("Adding", p_checkbox, p_alert);
-      console.log("Adding to", step_footer_element);
+      console.log("Adding to", step_footer_element.parentElement, step_footer_element);
       step_footer_element.parentElement.insertBefore(p_checkbox, step_footer_element);
       step_footer_element.parentElement.insertBefore(p_alert, step_footer_element);
     }

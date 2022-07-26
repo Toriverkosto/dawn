@@ -60,6 +60,46 @@
     });
 
   </script>
+
+  <style>
+    /* Terms and conditions block styles */
+
+    main.main__content p.terms-and-conditions-alert {
+      color: red;
+      letter-spacing: .04rem;
+    }
+
+    main.main__content p.terms-and-conditions-alert.hidden {
+      display: none;
+    }
+
+    main.main__content p.terms-and-conditions-checkbox {
+      font-size: 1.3rem;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+
+      margin-top: 0.5rem;
+    }
+
+    main.main__content p.terms-and-conditions-checkbox input {
+      margin-bottom: 4px;
+      width: 1.6rem;
+      height: 1.6rem;
+      margin-right: 0.25rem;
+    }
+
+    main.main__content p.terms-and-conditions-checkbox label {
+      font-size: 1.3rem;
+      letter-spacing: .04rem;
+    }
+
+    main.main__content p.terms-and-conditions-checkbox a {
+      color: #528ec1;
+    }
+  </style>
   <script>
     function addTermsAndConditionsListeners () {
       let tc_agree_element = document.querySelector('#terms-and-conditions-agree');
@@ -84,7 +124,7 @@
           }
         };
 
-        document.querySelector('#checkout').addEventListener('click', checkout_handler);
+        document.querySelector('#continue_button').addEventListener('click', checkout_handler);
 
         return checkout_handler;
       } else {

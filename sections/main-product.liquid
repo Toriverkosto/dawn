@@ -28,26 +28,25 @@
 
   {% if section.settings.show_breadcrumbs %}
     <div class="product__breadcrumbs-container">
-     {% for t in product.tags %}
-                {% assign prefix = t | slice: 0, 7 %}
-                {% if prefix == 'System-' and t != 'System-Not Defined' %}
-                  {% assign product_system = t | slice: 7, 57 %}
-                {% endif %}
-                {% assign parts = t | split: '-'%}
-                {% assign prefix = parts | first %}
-                {% assign value = parts | last %}
-                {% if prefix == 'Category'%}
-                  {% assign category = value %}
-                {% elsif prefix == 'SubCategory' %}
-                  {% assign sub_category = value %}
-                {% endif %}
-              {% endfor %}
+      {% for t in product.tags %}
+        {% assign prefix = t | slice: 0, 7 %}
+        {% if prefix == 'System-' and t != 'System-Not Defined' %}
+          {% assign product_system = t | slice: 7, 57 %}
+        {% endif %}
+        {% assign parts = t | split: '-'%}
+        {% assign prefix = parts | first %}
+        {% assign value = parts | last %}
+        {% if prefix == 'Category'%}
+          {% assign category = value %}
+        {% elsif prefix == 'SubCategory' %}
+          {% assign sub_category = value %}
+        {% endif %}
+      {% endfor %}
       {% comment %}TODO: Make configurable, omit parts? {% endcomment %}
       {% if category %}<a href="/collections/{{ category | downcase | replace: "/", "" | replace: "  ", " " | replace: " ", "-" }}" class="link">{{ category }}</a> ›{% endif %}
       {% if sub_category %}<a href="/collections/{{ sub_category | downcase| replace: "/", "" | replace: "  ", " " | replace: " ", "-" }}" class="link">{{ sub_category }}</a> ›{% endif %}
       <a href="/collections/{{ product.type | downcase | replace: "/", "" | replace: "  ", " " | replace: " ", "-" }}" class="link">{{ product.type }}</a>
       {% if product_system != nil %}› <a href="/collections/{{ product_system | downcase | replace: "/", "" | replace: "  ", " " | replace: " ", "-" }}" class="link">{{ product_system }}</a>{% endif %}
-
     </div>
   {% endif %}
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">

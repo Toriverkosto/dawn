@@ -52,8 +52,8 @@
             "button_vertical_space": 0,
             "button_horizontal_space": 16,
             "button_text_color": "#ffffff",
-            "button_background": "#5c6ac4",
-            "border_color": "#5c6ac4"
+            "button_background": "#2b75ae",
+            "border_color": "#2b75ae"
           }
         },
         "price": {
@@ -172,31 +172,11 @@
             "show_button": false
           }
         },
-        "acee846d-90ef-4f58-9075-b2513c31753c": {
-          "type": "popup",
+        "a61057d7-0270-434a-9a2c-d9dd3332fad7": {
+          "type": "custom_liquid",
           "disabled": true,
           "settings": {
-            "text": "Conditions",
-            "page": "",
-            "show_button": false
-          }
-        },
-        "6cc72963-d1c6-405d-a2b7-35264953cc18": {
-          "type": "popup",
-          "disabled": true,
-          "settings": {
-            "text": "Shipping",
-            "page": "packing-shipping",
-            "show_button": false
-          }
-        },
-        "669b8d80-ccb3-4728-867d-ef53d814398d": {
-          "type": "popup",
-          "disabled": true,
-          "settings": {
-            "text": "Returns",
-            "page": "about-kamerastore",
-            "show_button": false
+            "custom_liquid": "<div class=\"reputon-google-reviews-widget\" id=\"10abb9a0-8e45-11ec-b71b-13d735077cf2\" style=\"display: flex; justify-content: center;\"><\/div>"
           }
         }
       },
@@ -221,9 +201,7 @@
         "a41a8e68-deb3-4414-bc77-846ae026a7ec",
         "f8962c4a-da22-4a3d-8f73-05ff4d13ed57",
         "92fd3d60-c515-429c-a9e4-6bb9e3712c80",
-        "acee846d-90ef-4f58-9075-b2513c31753c",
-        "6cc72963-d1c6-405d-a2b7-35264953cc18",
-        "669b8d80-ccb3-4728-867d-ef53d814398d"
+        "a61057d7-0270-434a-9a2c-d9dd3332fad7"
       ],
       "settings": {
         "product_role": "stock",
@@ -278,6 +256,12 @@
         "92be0530-c477-4b47-b90d-b7a107f21188"
       ],
       "settings": {
+      }
+    },
+    "1658753086970be4d5": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<br>\n<div class=\"reputon-google-reviews-widget\" id=\"10abb9a0-8e45-11ec-b71b-13d735077cf2\" ><\/div>"
       }
     },
     "16321391205a6cb4a0": {
@@ -385,6 +369,7 @@
     "16334152711e2727b9",
     "main",
     "16579008498f69713d",
+    "1658753086970be4d5",
     "16321391205a6cb4a0",
     "product-recommendations",
     "16321339467e367887"

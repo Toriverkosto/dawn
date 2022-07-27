@@ -214,6 +214,12 @@
       "settings": {
       }
     },
+    "1658753665c574aafb": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<br>\n<div class=\"reputon-google-reviews-widget\" id=\"10abb9a0-8e45-11ec-b71b-13d735077cf2\" ><\/div>"
+      }
+    },
     "16324019941e428b8f": {
       "type": "multicolumn",
       "blocks": {
@@ -316,6 +322,7 @@
   "order": [
     "main",
     "1657620671c07e2171",
+    "1658753665c574aafb",
     "16324019941e428b8f",
     "1633072662af6d667c",
     "product-recommendations",

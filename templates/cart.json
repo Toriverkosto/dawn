@@ -17,16 +17,17 @@
       "blocks": {
         "subtotal": {
           "type": "subtotal",
-          "settings": {}
+          "settings": {
+          }
         },
         "buttons": {
           "type": "buttons",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
         "subtotal",
-        "cd2577bb-382a-4079-b244-68b92f1a82a2",
         "buttons"
       ],
       "settings": {

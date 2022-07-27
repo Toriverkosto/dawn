@@ -227,7 +227,7 @@
         "title": "Vous possédez un compte ?",
         "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Connectez-vous<\/a> pour payer plus vite."
       },
-      "terms_and_conditions_checkbox_label_html": "J'ai lu et j'accepte les <a class=\"link underlined-link\" href=\"{{ link }}\">termes et conditions<\/a>.",
+      "terms_and_conditions_checkbox_label_html": "J'ai lu et j'accepte les <a class=\"link underlined-link\" href=\"{{ link }}\">termes et conditions<\/a>. (Nécessaire)",
       "terms_and_conditions_alert": "Vous devez être d'accord avec les termes et conditions de vente pour continuer."
     },
     "footer": {

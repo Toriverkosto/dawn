@@ -19,10 +19,6 @@
           "type": "subtotal",
           "settings": {}
         },
-        "cd2577bb-382a-4079-b244-68b92f1a82a2": {
-          "type": "terms_and_conditions",
-          "settings": {}
-        },
         "buttons": {
           "type": "buttons",
           "settings": {}

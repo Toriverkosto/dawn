@@ -10,13 +10,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "a94549f5-c31f-4923-aa60-cf99ab30772a": {
-          "type": "system_and_type",
-          "settings": {
-            "show_system": true,
-            "show_type": false
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -152,7 +145,6 @@
         }
       },
       "block_order": [
-        "a94549f5-c31f-4923-aa60-cf99ab30772a",
         "title",
         "977b845e-4c7a-4d63-b5f1-d9c5828569d7",
         "3e022f72-085a-4854-bf94-64f0bb65bbb1",

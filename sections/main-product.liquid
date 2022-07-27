@@ -28,13 +28,11 @@
 
   {% if section.settings.show_breadcrumbs %}
     <div class="product__breadcrumbs-container">
-      {% for t in product.tags %}
-                  {% assign prefix = t | slice: 0, 7 %}
-                  {% if prefix == 'System-' and t != 'System-Not Defined' %}
-                    {% assign product_system = t | slice: 7, 57 %}
-                  {% endif %}
-                {% endfor %}
      {% for t in product.tags %}
+                {% assign prefix = t | slice: 0, 7 %}
+                {% if prefix == 'System-' and t != 'System-Not Defined' %}
+                  {% assign product_system = t | slice: 7, 57 %}
+                {% endif %}
                 {% assign parts = t | split: '-'%}
                 {% assign prefix = parts | first %}
                 {% assign value = parts | last %}

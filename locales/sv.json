@@ -227,7 +227,7 @@
         "title": "Har du ett konto?",
         "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Logga in<\/a> för att gå till kassan snabbare."
       },
-      "terms_and_conditions_checkbox_label_html": "Jag har tagit del av och samtycker med <a class=\"link underlined-link\" href=\"{{ link }}\">våra användningsvillkor<\/a>.",
+      "terms_and_conditions_checkbox_label_html": "Jag har tagit del av och samtycker med <a class=\"link underlined-link\" href=\"{{ link }}\">våra användningsvillkor<\/a>.<span class=\"alert\">(Obligatorisk)<\/span>.",
       "terms_and_conditions_alert": "Du måste samtycka med våra användningsvillkor för att forstätta."
     },
     "footer": {

@@ -186,22 +186,10 @@
     "1655879063dce72fc4": {
       "type": "collection-list",
       "blocks": {
-        "1655879063c364a6c4-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "olympus-film-cameras"
-          }
-        },
         "1655879063c364a6c4-1": {
           "type": "featured_collection",
           "settings": {
             "collection": "canon-film-cameras"
-          }
-        },
-        "1655879063c364a6c4-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "nikon-film-cameras"
           }
         },
         "7fd4809c-e10b-45d9-85ad-4b3bf76b9683": {
@@ -216,6 +204,18 @@
             "collection": "mamiya-film-cameras"
           }
         },
+        "1655879063c364a6c4-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nikon-film-cameras"
+          }
+        },
+        "1655879063c364a6c4-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "olympus-film-cameras"
+          }
+        },
         "3f776fbc-d442-45a0-863a-939eed5db76d": {
           "type": "featured_collection",
           "settings": {
@@ -224,18 +224,18 @@
         }
       },
       "block_order": [
-        "1655879063c364a6c4-0",
         "1655879063c364a6c4-1",
-        "1655879063c364a6c4-2",
         "7fd4809c-e10b-45d9-85ad-4b3bf76b9683",
         "7a307aab-b6e0-4bfa-bb6e-d58e088bca80",
+        "1655879063c364a6c4-2",
+        "1655879063c364a6c4-0",
         "3f776fbc-d442-45a0-863a-939eed5db76d"
       ],
       "settings": {
         "title": "",
         "image_ratio": "square",
         "color_scheme": "background-1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "image_padding": false,
         "show_view_all": false
       }

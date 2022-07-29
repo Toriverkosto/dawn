@@ -52,6 +52,7 @@
     },
     "165416468256763b39": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "16541646820345eb76-0": {
           "type": "featured_collection",
@@ -185,6 +186,7 @@
     },
     "1655879063dce72fc4": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "1655879063c364a6c4-1": {
           "type": "featured_collection",
@@ -290,55 +292,6 @@
         "show_image_outline": false,
         "show_vendor": true,
         "show_rating": false
-      }
-    },
-    "1645107907864cbb1c": {
-      "type": "featured-product",
-      "disabled": true,
-      "blocks": {
-        "1645107907da262855-0": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "1645107907da262855-1": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "1645107907da262855-2": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
-        "1645107907da262855-3": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "1645107907da262855-6": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        }
-      },
-      "block_order": [
-        "1645107907da262855-0",
-        "1645107907da262855-1",
-        "1645107907da262855-2",
-        "1645107907da262855-3",
-        "1645107907da262855-6"
-      ],
-      "settings": {
-        "product": "leica-mp-leica-m-1",
-        "secondary_background": false,
-        "hide_variants": false,
-        "enable_video_looping": false
       }
     },
     "16328192199ca25f9a": {
@@ -617,7 +570,6 @@
     "1655879063dce72fc4",
     "1632470234f73d3bc0",
     "featured_products",
-    "1645107907864cbb1c",
     "16328192199ca25f9a",
     "1637242258da800a0c",
     "1632819284873cdad3",

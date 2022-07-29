@@ -37,7 +37,7 @@
     "featured-products": {
       "type": "featured-collection",
       "settings": {
-        "title": "Want to add a compact camera to your order?",
+        "title": "Would you like to add a compact camera to your order?",
         "collection": "affordable-compact-cameras",
         "products_to_show": 12,
         "show_view_all": true,

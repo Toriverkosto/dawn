@@ -38,13 +38,13 @@
       "type": "featured-collection",
       "settings": {
         "title": "Add a fun or useful extra to your order",
-        "collection": "camera-rescue",
+        "collection": "compact-cameras",
         "products_to_show": 12,
         "show_view_all": true,
         "swipe_on_mobile": true,
         "image_ratio": "square",
         "show_secondary_image": true,
-        "add_image_padding": false,
+        "add_image_padding": true,
         "show_image_outline": true,
         "show_vendor": true,
         "show_rating": false

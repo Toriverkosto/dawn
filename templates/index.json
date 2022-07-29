@@ -50,6 +50,79 @@
         "custom_liquid": "<div class=\"reputon-google-reviews-widget\" id=\"bf91f8b0-88a8-11eb-9209-f960a060549e\" ><\/div>"
       }
     },
+    "165416468256763b39": {
+      "type": "collection-list",
+      "blocks": {
+        "16541646820345eb76-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "film-cameras"
+          }
+        },
+        "85941df5-a143-4e6a-b5af-97eb8aaa757b": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "digital-cameras"
+          }
+        },
+        "16541646820345eb76-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "lenses"
+          }
+        },
+        "16541646820345eb76-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "accessories"
+          }
+        },
+        "f5444e3e-de5a-4313-8503-d0094cdf263a": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "film"
+          }
+        },
+        "7b853353-ae5a-4b5a-a0e9-6f117bbdc39a": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "lab"
+          }
+        }
+      },
+      "block_order": [
+        "16541646820345eb76-0",
+        "85941df5-a143-4e6a-b5af-97eb8aaa757b",
+        "16541646820345eb76-1",
+        "16541646820345eb76-2",
+        "f5444e3e-de5a-4313-8503-d0094cdf263a",
+        "7b853353-ae5a-4b5a-a0e9-6f117bbdc39a"
+      ],
+      "settings": {
+        "title": "",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": true,
+        "image_padding": true,
+        "show_view_all": false
+      }
+    },
+    "1632819820cfe9c4e7": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Popular Films In Stock Now!",
+        "collection": "popular-film-in-stock",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": true,
+        "show_image_outline": false,
+        "show_vendor": true,
+        "show_rating": true
+      }
+    },
     "multi_column": {
       "type": "multicolumn",
       "blocks": {
@@ -200,79 +273,6 @@
       "settings": {
         "color_scheme": "background-1",
         "full_width": false
-      }
-    },
-    "1632819820cfe9c4e7": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Popular Films In Stock Now!",
-        "collection": "popular-film-in-stock",
-        "products_to_show": 8,
-        "show_view_all": true,
-        "swipe_on_mobile": true,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "add_image_padding": true,
-        "show_image_outline": false,
-        "show_vendor": true,
-        "show_rating": true
-      }
-    },
-    "165416468256763b39": {
-      "type": "collection-list",
-      "blocks": {
-        "16541646820345eb76-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "film-cameras"
-          }
-        },
-        "85941df5-a143-4e6a-b5af-97eb8aaa757b": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "digital-cameras"
-          }
-        },
-        "16541646820345eb76-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "lenses"
-          }
-        },
-        "16541646820345eb76-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "accessories"
-          }
-        },
-        "f5444e3e-de5a-4313-8503-d0094cdf263a": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "film"
-          }
-        },
-        "7b853353-ae5a-4b5a-a0e9-6f117bbdc39a": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "lab"
-          }
-        }
-      },
-      "block_order": [
-        "16541646820345eb76-0",
-        "85941df5-a143-4e6a-b5af-97eb8aaa757b",
-        "16541646820345eb76-1",
-        "16541646820345eb76-2",
-        "f5444e3e-de5a-4313-8503-d0094cdf263a",
-        "7b853353-ae5a-4b5a-a0e9-6f117bbdc39a"
-      ],
-      "settings": {
-        "title": "",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": true,
-        "image_padding": true,
-        "show_view_all": false
       }
     },
     "featured_products": {
@@ -514,12 +514,12 @@
   "order": [
     "image_banner",
     "16336738395370bc94",
+    "165416468256763b39",
+    "1632819820cfe9c4e7",
     "multi_column",
     "1655878837fa505e49",
     "1655879063dce72fc4",
     "1632470234f73d3bc0",
-    "1632819820cfe9c4e7",
-    "165416468256763b39",
     "featured_products",
     "1645107907864cbb1c",
     "16328192199ca25f9a",

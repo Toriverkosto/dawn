@@ -519,8 +519,56 @@
         "show_view_all": true,
         "swipe_on_mobile": true,
         "image_ratio": "adapt",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "add_image_padding": true,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "16590913415aba16e5": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Digital Cameras",
+        "collection": "digital-cameras",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "1659091405f0073c84": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Lenses",
+        "collection": "lenses",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "1659091458c6563459": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Accessories",
+        "collection": "accessories",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
         "show_image_outline": true,
         "show_vendor": false,
         "show_rating": false
@@ -545,6 +593,9 @@
     "16328202527d1c0448",
     "16328203716b324724",
     "1631783246bd86182c",
-    "16590912674b072be6"
+    "16590912674b072be6",
+    "16590913415aba16e5",
+    "1659091405f0073c84",
+    "1659091458c6563459"
   ]
 }

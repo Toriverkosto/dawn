@@ -172,7 +172,7 @@
           "logo_width": 140,
           "logo_position": "top-center",
           "menu": "main-menu",
-          "show_line_separator": true,
+          "show_line_separator": false,
           "enable_sticky_header": false
         }
       },

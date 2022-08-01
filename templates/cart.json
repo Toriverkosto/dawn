@@ -1,5 +1,42 @@
 {
   "sections": {
+    "1659351923288c7df7": {
+      "type": "rich-text",
+      "blocks": {
+        "1659351922460ec3ad-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "1659351922460ec3ad-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p> 30 Day Returns & Refunds | Secure Checkout | DHL Express Shipping<\/p>"
+          }
+        },
+        "1659351922460ec3ad-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1659351922460ec3ad-0",
+        "1659351922460ec3ad-1",
+        "1659351922460ec3ad-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "cart-items": {
       "type": "main-cart-items",
       "settings": {
@@ -59,20 +96,13 @@
         "show_vendor": true,
         "show_rating": false
       }
-    },
-    "1636639818373028dc": {
-      "type": "apps",
-      "disabled": true,
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
+    "1659351923288c7df7",
     "cart-items",
     "cart-footer",
     "1659350123df7b890d",
-    "featured-products",
-    "1636639818373028dc"
+    "featured-products"
   ]
 }

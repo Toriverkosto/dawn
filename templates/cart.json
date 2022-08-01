@@ -1,7 +1,17 @@
 {
   "sections": {
-    "16383634315b405a7a": {
+    "1659350123df7b890d": {
       "type": "apps",
+      "blocks": {
+        "87763d82-1725-4f8b-bb0c-1aca0a46bf75": {
+          "type": "shopify:\/\/apps\/ultimate-trust-badges\/blocks\/widget\/163a9b59-0ec2-4cb7-bf5c-31408b4a9420",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "87763d82-1725-4f8b-bb0c-1aca0a46bf75"
+      ],
       "settings": {
         "include_margins": true
       }
@@ -34,22 +44,6 @@
         "show_cart_note": true
       }
     },
-    "1659350123df7b890d": {
-      "type": "apps",
-      "blocks": {
-        "87763d82-1725-4f8b-bb0c-1aca0a46bf75": {
-          "type": "shopify:\/\/apps\/ultimate-trust-badges\/blocks\/widget\/163a9b59-0ec2-4cb7-bf5c-31408b4a9420",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "87763d82-1725-4f8b-bb0c-1aca0a46bf75"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "featured-products": {
       "type": "featured-collection",
       "settings": {
@@ -75,10 +69,9 @@
     }
   },
   "order": [
-    "16383634315b405a7a",
+    "1659350123df7b890d",
     "cart-items",
     "cart-footer",
-    "1659350123df7b890d",
     "featured-products",
     "1636639818373028dc"
   ]

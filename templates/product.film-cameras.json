@@ -1,5 +1,12 @@
 {
   "sections": {
+    "1659349699e5cc8c28": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<h1>{{product.title}}<\/h1>"
+      }
+    },
     "16334152711e2727b9": {
       "type": "custom-liquid",
       "disabled": true,
@@ -358,6 +365,7 @@
     }
   },
   "order": [
+    "1659349699e5cc8c28",
     "16334152711e2727b9",
     "main",
     "16579008498f69713d",

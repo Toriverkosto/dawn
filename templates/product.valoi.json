@@ -169,6 +169,12 @@
             "page": "about-valoi",
             "show_button": false
           }
+        },
+        "3fd89d45-91cf-4c28-8380-d3502818c3c6": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<br><center>Sold By: <b>Kamerastore<\/b> <div class=\"reputon-google-reviews-widget\" id=\"279cdae0-118f-11ed-b220-85918cb29862\" style=\"display: flex; justify-content: center;\"><\/div>\n<a href=\"\/pages\/company-info\"><div class=\"link\">Registered Business<\/div><\/a><br>"
+          }
         }
       },
       "block_order": [
@@ -188,7 +194,8 @@
         "a4908876-2ec2-4049-8519-f88aac2c716e",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "94f403ff-3385-43d7-865b-0b0000459f54",
-        "9b20a83b-fe5d-4d60-80fb-5e93ee1a61c2"
+        "9b20a83b-fe5d-4d60-80fb-5e93ee1a61c2",
+        "3fd89d45-91cf-4c28-8380-d3502818c3c6"
       ],
       "settings": {
         "product_role": "stock",

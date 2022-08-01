@@ -30,6 +30,18 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
+          "879db7ce-83eb-471d-82bb-6e22091434e5": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "600+ New Old Stock Cameras Available Now!",
+              "color_scheme": "accent-1",
+              "link": "shopify:\/\/collections\/new-old-stock-compact-cameras",
+              "use_custom_color": true,
+              "color_text": "#ffffff",
+              "color_background": "linear-gradient(180deg, rgba(41, 73, 188, 1), rgba(41, 73, 188, 1) 100%)"
+            }
+          },
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec": {
             "type": "announcement",
             "settings": {
@@ -150,6 +162,7 @@
           }
         },
         "block_order": [
+          "879db7ce-83eb-471d-82bb-6e22091434e5",
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec",
           "4c1a92eb-53d3-4f1d-ad29-76811ffcecfe",
           "dc640612-8f8d-4ed8-8bfd-0f7a6df40773",

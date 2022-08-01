@@ -159,6 +159,13 @@
             "page": "",
             "icon": "price_tag"
           }
+        },
+        "19cde100-6dcd-4205-b3f1-bdf7a6f9808a": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<br><center>Sold By: Kamerastore <div class=\"reputon-google-reviews-widget\" id=\"279cdae0-118f-11ed-b220-85918cb29862\" style=\"display: flex; justify-content: center;\"><\/div>\nRegistered as business seller"
+          }
         }
       },
       "block_order": [
@@ -179,7 +186,8 @@
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "2c639f92-55f6-40f5-8cff-21157d005727",
         "a41a8e68-deb3-4414-bc77-846ae026a7ec",
-        "57f7f440-8529-43fc-b001-797465faabcf"
+        "57f7f440-8529-43fc-b001-797465faabcf",
+        "19cde100-6dcd-4205-b3f1-bdf7a6f9808a"
       ],
       "settings": {
         "product_role": "stock",

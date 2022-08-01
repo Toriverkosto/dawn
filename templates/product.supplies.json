@@ -143,6 +143,12 @@
             "page": "",
             "icon": "check_mark"
           }
+        },
+        "261a9a2b-f287-4c43-8fce-477e4fc8be46": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<br><center>Sold By: <b>Kamerastore<\/b> <div class=\"reputon-google-reviews-widget\" id=\"279cdae0-118f-11ed-b220-85918cb29862\" style=\"display: flex; justify-content: center;\"><\/div>\n<a href=\"\/pages\/company-info\"><div class=\"link\">Registered Business<\/div><\/a>"
+          }
         }
       },
       "block_order": [
@@ -163,7 +169,8 @@
         "c93981a2-30f3-4294-803c-c2c27ba4890e",
         "e44a2970-017f-4a65-9008-2a056066686c",
         "d77e20c7-084d-471a-954d-4bc9d03753ea",
-        "f36d21a3-4810-4879-abc1-cf7c1fd35286"
+        "f36d21a3-4810-4879-abc1-cf7c1fd35286",
+        "261a9a2b-f287-4c43-8fce-477e4fc8be46"
       ],
       "settings": {
         "product_role": "stock",

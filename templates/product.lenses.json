@@ -245,6 +245,23 @@
       "settings": {
       }
     },
+    "16594448804e5cd8e5": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Dynamic items related to this item!",
+        "collection": "",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": false
+      }
+    },
     "1658753585c84fd67b": {
       "type": "custom-liquid",
       "settings": {
@@ -356,6 +373,7 @@
     "1645191454f79a9ff8",
     "main",
     "165762036647fa041d",
+    "16594448804e5cd8e5",
     "1658753585c84fd67b",
     "16321391205a6cb4a0",
     "product-recommendations",

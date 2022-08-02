@@ -135,7 +135,7 @@
           "disabled": true,
           "settings": {
             "heading": "Secure Payments",
-            "content": "<p>We accept <strong>Mastercard<\/strong>, <strong>Visa<\/strong>, <strong>PayPal<\/strong>, & <strong>Finnish E-Banking <\/strong>at checkout.<\/p>",
+            "content": "<p>We accept <strong>Mastercard<\/strong>, <strong>Visa<\/strong>, <strong>PayPal<\/strong>, & <strong>Finnish E-Banking <\/strong>at checkout. Kamerastore.com is certified Level 1 PCI DSS compliant.<\/p>",
             "page": "",
             "icon": "lock"
           }

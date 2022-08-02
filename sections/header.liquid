@@ -375,7 +375,7 @@
         {% for locale in shop.published_locales %}
           {% unless locale.iso_code == request.locale.iso_code %}
             <li class="language">
-              <a href="{{ language_domain_map[locale.iso_code] }}">
+              <a href="{{ language_domain_map[locale.iso_code] }}{{ request.path }}">
                 <img class="flag" alt="{{ locale.endonym_name }} flag" src="{{ 'flag_' | append: locale.iso_code | append: '.png' | asset_img_url }}" width="30px" />
                 <span class="full-name">{{ locale.endonym_name }}</span>
                 <span class="language-code">{{ locale.iso_code }}</span>

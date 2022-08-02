@@ -41,6 +41,18 @@
               "color_background": "linear-gradient(180deg, rgba(41, 73, 188, 1), rgba(41, 73, 188, 1) 100%)"
             }
           },
+          "4c1a92eb-53d3-4f1d-ad29-76811ffcecfe": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "Shipping to: 🇫🇮 Finland 5\/10€ |  🇪🇺 EU 10€ | 🇺🇸 USA ~$23 | Most other countries 20€",
+              "color_scheme": "background-1",
+              "link": "\/policies\/shipping-policy",
+              "use_custom_color": false,
+              "color_text": "#121212",
+              "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"
+            }
+          },
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec": {
             "type": "announcement",
             "disabled": true,
@@ -48,17 +60,6 @@
               "text": "We buy & trade cameras!",
               "color_scheme": "accent-1",
               "link": "shopify:\/\/pages\/sell-or-trade-your-used-camera-gear",
-              "use_custom_color": false,
-              "color_text": "#121212",
-              "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"
-            }
-          },
-          "4c1a92eb-53d3-4f1d-ad29-76811ffcecfe": {
-            "type": "announcement",
-            "settings": {
-              "text": "Shipping to: 🇫🇮 Finland 5\/10€ |  🇪🇺 EU 10€ | 🇺🇸 USA ~$23 | Most other countries 20€",
-              "color_scheme": "background-1",
-              "link": "\/policies\/shipping-policy",
               "use_custom_color": false,
               "color_text": "#121212",
               "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"
@@ -163,8 +164,8 @@
         },
         "block_order": [
           "879db7ce-83eb-471d-82bb-6e22091434e5",
-          "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec",
           "4c1a92eb-53d3-4f1d-ad29-76811ffcecfe",
+          "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec",
           "dc640612-8f8d-4ed8-8bfd-0f7a6df40773",
           "c3026742-d5b5-4132-8d20-364bad6e0021",
           "a0ea9c0c-7939-4476-8c79-3abbcd43ff94",

@@ -360,10 +360,10 @@
     {%- endif -%}
 
     <details class="language-switcher">
-      {% assign language_domain_map = shop.metafields.global.language_domain_map.value %}
+      {% assign language_domain_data = shop.metafields.global.language_domain_data.value %}
       <summary>
-        <img class="flag" alt="{{ locale.endonym_name }} flag" src="{{ 'flag_' | append: request.locale.iso_code | append: '.png' | asset_img_url }}" width="30px" />
-        <span class="full-name">{{ request.locale.endonym_name }}</span>
+        <img class="flag" alt="{{ language_domain_data[locale.iso_code].endonym_name }} flag" src="{{ 'flag_' | append: request.locale.iso_code | append: '.png' | asset_img_url }}" width="30px" />
+        <span class="full-name">{{ language_domain_data[request.locale.iso_code].endonym_name }}</span>
         <span class="language-code">{{ request.locale.iso_code }}</span>
         <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M2 2.5H13.6667" stroke="#4C4C4C" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"/>
@@ -372,13 +372,15 @@
         </svg>
       </summary>
       <ul class="languages">
-        {% for locale in shop.published_locales %}
-          {% unless locale.iso_code == request.locale.iso_code %}
+        {% for data in language_domain_data %}
+          {% assign code = data[0] %}
+          {% assign language = data[1] %}
+          {% unless code == request.locale.iso_code %}
             <li class="language">
-              <a href="{{ language_domain_map[locale.iso_code] }}{{ request.path }}">
-                <img class="flag" alt="{{ locale.endonym_name }} flag" src="{{ 'flag_' | append: locale.iso_code | append: '.png' | asset_img_url }}" width="30px" />
-                <span class="full-name">{{ locale.endonym_name }}</span>
-                <span class="language-code">{{ locale.iso_code }}</span>
+              <a href="{{ language.domain }}{{ request.path }}">
+                <img class="flag" alt="{{ language.endonym_name }} flag" src="{{ 'flag_' | append: code | append: '.png' | asset_img_url }}" width="30px" />
+                <span class="full-name">{{ language.endonym_name }}</span>
+                <span class="language-code">{{ language.code }}</span>
               </a>
             </li>
           {% endunless %}

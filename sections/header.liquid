@@ -64,21 +64,35 @@
     }
   }
 
+  /* Language switcher styles  */
+
   header.header details.language-switcher {
     grid-area: left-icon;
     margin-left: 3rem;
-    width: 18rem;
+    width: 15rem;
+    font-size: 1.4rem;
   }
 
   header.header details.language-switcher > summary {
-    color: #121212;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    /*color: #121212;*/
+    color: rgba(var(--color-foreground), 0.75);
     background-color: white;
     padding: 0.8rem 1.6rem;
     border: 1px solid #EBECEC;
   }
 
-  header.header details.language-switcher > summary > img{
+  header.header details.language-switcher > summary > img.flag {
+    margin-right: 0.8rem;
+  }
+
+  header.header details.language-switcher > summary > svg {
     margin-left: 0.8rem;
+    width: 1.6rem;
+    height: 1.6rem;
   }
 
   header.header details.language-switcher > ul.languages {
@@ -86,19 +100,33 @@
     z-index: 1000;
     margin: 0;
     background-color: white;
-    padding: 0;
-    width: 18rem;
+    width: 15rem;
     border: 1px solid #EBECEC;
+    padding: 0.8rem 0;
   }
 
   header.header details.language-switcher ul.languages > li.language {
     list-style: none;
-    margin: 1.6rem;
   }
 
   header.header details.language-switcher ul.languages > li.language > a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-underline-offset: 0.3rem;
+
     text-decoration: none;
     color: #4C4C4C;
+    padding: 0.8rem 1.6rem;
+  }
+
+  header.header details.language-switcher ul.languages > li.language > a:hover {
+    color: rgb(var(--color-foreground));
+    text-decoration: underline;
+  }
+
+  header.header details.language-switcher ul.languages > li.language > a > img {
+    margin-right: 0.8rem;
   }
 
   header.header details.language-switcher span.full-name {
@@ -106,10 +134,10 @@
   }
 
   header.header details.language-switcher span.language-code {
-
+    text-transform: uppercase;
   }
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 990px) {
     header.header details.language-switcher span.full-name {
       display: inline;
     }
@@ -118,11 +146,45 @@
       display: none;
     }
   }
+
+  @media screen and (max-width: 990px) {
+    header.header details.language-switcher > summary {
+      background-color: transparent;
+      border: none;
+    }
+
+    header.header details.language-switcher {
+      width: 9rem;
+    }
+
+    header.header details.language-switcher > summary > svg {
+      display: none;
+    }
+
+    header.header details.language-switcher > ul.languages {
+      width: 9rem;
+    }
+
+    header.header details.language-switcher ul.languages > li.language > a {
+      padding: 1.6rem;
+    }
+  }
 </style>
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const languageSwitcher = document.querySelector('details.language-switcher');
+    window.addEventListener('click', (event) => {
+      if (event.target.closest('details.language-switcher') === null) {
+        languageSwitcher.removeAttribute('open');
+      }
+    });
+  });
+</script>
 
 <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
   <symbol id="icon-search" viewbox="0 0 18 19" fill="none">
@@ -300,19 +362,26 @@
     <details class="language-switcher">
       {% assign language_domain_map = shop.metafields.global.language_domain_map.value %}
       <summary>
-        <img alt="{{ locale.name }} flag" src="{{ 'flag_' | append: request.locale.iso_code | append: '.png' | asset_img_url }}" width="30px" />
+        <img class="flag" alt="{{ locale.endonym_name }} flag" src="{{ 'flag_' | append: request.locale.iso_code | append: '.png' | asset_img_url }}" width="30px" />
         <span class="full-name">{{ request.locale.endonym_name }}</span>
         <span class="language-code">{{ request.locale.iso_code }}</span>
-        <img alt="menu" src="{{ 'icon_language_menu.svg' | asset_url }}" width="16px" /></summary>
+        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 2.5H13.6667" stroke="#4C4C4C" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"/>
+          <path d="M2 6.5H10.3333" stroke="#4C4C4C" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"/>
+          <path d="M2 10.5H7" stroke="#4C4C4C" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </summary>
       <ul class="languages">
         {% for locale in shop.published_locales %}
-          <li class="language">
-            <a href="{{ language_domain_map[locale.iso_code] }}">
-              <img alt="{{ locale.name }} flag" src="{{ 'flag_' | append: locale.iso_code | append: '.png' | asset_img_url }}" width="30px" />
-              <span class="full-name">{{ locale.endonym_name }}</span>
-              <span class="language-code">{{ locale.iso_code }}</span>
-            </a>
-          </li>
+          {% unless locale.iso_code == request.locale.iso_code %}
+            <li class="language">
+              <a href="{{ language_domain_map[locale.iso_code] }}">
+                <img class="flag" alt="{{ locale.endonym_name }} flag" src="{{ 'flag_' | append: locale.iso_code | append: '.png' | asset_img_url }}" width="30px" />
+                <span class="full-name">{{ locale.endonym_name }}</span>
+                <span class="language-code">{{ locale.iso_code }}</span>
+              </a>
+            </li>
+          {% endunless %}
         {% endfor %}
       </ul>
     </details>

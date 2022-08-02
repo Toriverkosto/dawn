@@ -99,15 +99,6 @@
             "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"film-cameras\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n          <span class=\"inventoryLocationLoading\"> <\/span>\n          <\/div>\n{% endunless %}"
           }
         },
-        "cd07da4b-ae00-46ee-bf67-5c7799d93921": {
-          "type": "popup",
-          "disabled": true,
-          "settings": {
-            "text": "Camera Condition Ratings",
-            "page": "camera-condition-ratings",
-            "show_button": false
-          }
-        },
         "6ff4987b-8f35-4a2e-89e3-3f40f342da38": {
           "type": "condition",
           "settings": {
@@ -191,7 +182,6 @@
         "4f0717e0-34d7-44d7-9543-6fdf50a55941",
         "buy_buttons",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
-        "cd07da4b-ae00-46ee-bf67-5c7799d93921",
         "6ff4987b-8f35-4a2e-89e3-3f40f342da38",
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
         "a4908876-2ec2-4049-8519-f88aac2c716e",

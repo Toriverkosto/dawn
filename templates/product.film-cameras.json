@@ -250,7 +250,7 @@
             "padding-bottom": "",
             "class-names": "",
             "custom-css": "",
-            "add-loader": false,
+            "add-loader": true,
             "min-height": "300px",
             "custom-loader": ""
           }

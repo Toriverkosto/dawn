@@ -46,20 +46,6 @@
             "custom_liquid": "<p style=\"color: #ababab\">{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable' | t }}\n{% else %}\n    {{ 'products.product.not_taxable' | t }}\n{% endif %}<\/p>"
           }
         },
-        "ee860a1d-5c4b-430d-8078-9342a51cce2f": {
-          "type": "shopify:\/\/apps\/advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
-          "settings": {
-            "theme_color": "#5c6ac4",
-            "button_style": "style_3",
-            "button_border": 0,
-            "button_border_radius": 0,
-            "button_vertical_space": 9,
-            "button_horizontal_space": 16,
-            "button_text_color": "#ffffff",
-            "button_background": "#5c6ac4",
-            "border_color": "#5c6ac4"
-          }
-        },
         "b5ed9bc2-73ac-4438-a0f0-79dae862f36c": {
           "type": "variant_picker",
           "settings": {
@@ -129,7 +115,6 @@
         "74fe16dc-fae7-4902-b96b-a73338f83400",
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
-        "ee860a1d-5c4b-430d-8078-9342a51cce2f",
         "b5ed9bc2-73ac-4438-a0f0-79dae862f36c",
         "buy_buttons",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
@@ -253,6 +238,30 @@
         "color_scheme": "inverse",
         "layout": "text_first"
       }
+    },
+    "165951654090cd0868": {
+      "type": "apps",
+      "blocks": {
+        "0ef9e412-784f-4e7f-9763-c93ab4209378": {
+          "type": "shopify:\/\/apps\/personalized-recommendations\/blocks\/app-block\/6e79d991-1504-45bb-88e3-1fb55a4f26cd",
+          "settings": {
+            "widget-id": "",
+            "padding-top": "",
+            "padding-bottom": "",
+            "class-names": "",
+            "custom-css": "",
+            "add-loader": false,
+            "min-height": "300px",
+            "custom-loader": ""
+          }
+        }
+      },
+      "block_order": [
+        "0ef9e412-784f-4e7f-9763-c93ab4209378"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -262,6 +271,7 @@
     "1657529286c3580908",
     "16321391205a6cb4a0",
     "product-recommendations",
-    "16321339467e367887"
+    "16321339467e367887",
+    "165951654090cd0868"
   ]
 }

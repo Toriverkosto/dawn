@@ -171,6 +171,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "image_ratio": "adapt",
@@ -211,8 +212,8 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/minolta-8320-0002.jpg",
-        "height": "adapt",
-        "color_scheme": "background-1",
+        "height": "small",
+        "color_scheme": "inverse",
         "layout": "image_first"
       }
     }

@@ -174,12 +174,6 @@
         "7f89b259-cd58-4065-81a1-bae5ad345f2c"
       ],
       "settings": {
-        "heading": "",
-        "show_main_stock_title": false,
-        "show_main_stock_description": false,
-        "show_main_database": false,
-        "show_main_kit_stock": false,
-        "show_main_kit_database": false
       }
     },
     "16450990378461246d": {
@@ -289,11 +283,12 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false
+        "swipe_on_mobile": true
       }
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "image_ratio": "adapt",

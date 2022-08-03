@@ -93,12 +93,6 @@
             "show_dynamic_checkout": true
           }
         },
-        "d5caab0f-8084-4d2c-9f50-f4478f12dbeb": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"film-cameras\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n          <span class=\"inventoryLocationLoading\"> <\/span>\n          <\/div>\n{% endunless %}"
-          }
-        },
         "6ff4987b-8f35-4a2e-89e3-3f40f342da38": {
           "type": "condition",
           "settings": {
@@ -163,6 +157,12 @@
             "show_button": false
           }
         },
+        "d5caab0f-8084-4d2c-9f50-f4478f12dbeb": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"film-cameras\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n          <span class=\"inventoryLocationLoading\"> <\/span>\n          <\/div>\n{% endunless %}"
+          }
+        },
         "a61057d7-0270-434a-9a2c-d9dd3332fad7": {
           "type": "custom_liquid",
           "settings": {
@@ -181,7 +181,6 @@
         "99452d1b-4d7e-4077-a88b-abeded9e84f2",
         "4f0717e0-34d7-44d7-9543-6fdf50a55941",
         "buy_buttons",
-        "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
         "6ff4987b-8f35-4a2e-89e3-3f40f342da38",
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
@@ -189,6 +188,7 @@
         "a41a8e68-deb3-4414-bc77-846ae026a7ec",
         "f8962c4a-da22-4a3d-8f73-05ff4d13ed57",
         "92fd3d60-c515-429c-a9e4-6bb9e3712c80",
+        "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
         "a61057d7-0270-434a-9a2c-d9dd3332fad7"
       ],
       "settings": {

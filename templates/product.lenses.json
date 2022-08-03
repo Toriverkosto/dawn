@@ -135,7 +135,7 @@
           "disabled": true,
           "settings": {
             "heading": "Payment & Security",
-            "content": "<p><strong>Mastercard<\/strong>, <strong>Visa<\/strong>, <strong>PayPal<\/strong>, & <strong>Finnish E-Banking  <\/strong>accepted<strong> <\/strong>at checkout. <\/p><p>We are certified Level 1 PCI DSS Compliant. We do not store your credit card details or have access to them.<\/p>",
+            "content": "<p><strong>Mastercard<\/strong>, <strong>Visa<\/strong>, <strong>PayPal<\/strong>, & <strong>Finnish E-Banking  <\/strong>accepted<strong> <\/strong>at checkout. <\/p><p>We are certified Level 1 PCI DSS Compliant and do not store your credit card details.<\/p>",
             "page": "",
             "icon": "lock"
           }

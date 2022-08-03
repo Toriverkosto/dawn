@@ -2,11 +2,11 @@
   "current": {
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#0099da",
-    "gradient_accent_1": "linear-gradient(141deg, rgba(74, 182, 255, 1) 6%, rgba(74, 182, 255, 1) 100%)",
+    "gradient_accent_1": "linear-gradient(141deg, rgba(0, 146, 209, 1) 6%, rgba(74, 182, 255, 1) 100%)",
     "colors_accent_2": "#064ea3",
     "gradient_accent_2": "linear-gradient(141deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 98%)",
-    "colors_text": "#121212",
-    "colors_outline_button_labels": "#1878b9",
+    "colors_text": "#0a1f3e",
+    "colors_outline_button_labels": "#0092d1",
     "colors_background_1": "#ffffff",
     "colors_background_2": "#f7f7f7",
     "type_header_font": "asap_n4",
@@ -37,8 +37,8 @@
               "color_scheme": "accent-1",
               "link": "shopify:\/\/collections\/new-old-stock-compact-cameras",
               "use_custom_color": true,
-              "color_text": "#ffffff",
-              "color_background": "linear-gradient(180deg, rgba(41, 73, 188, 1), rgba(41, 73, 188, 1) 100%)"
+              "color_text": "#d0f7ff",
+              "color_background": "linear-gradient(180deg, rgba(6, 78, 163, 1), rgba(6, 78, 163, 1) 100%)"
             }
           },
           "4c1a92eb-53d3-4f1d-ad29-76811ffcecfe": {
@@ -160,7 +160,7 @@
           "logo_width": 140,
           "logo_position": "top-center",
           "menu": "main-menu",
-          "show_line_separator": false,
+          "show_line_separator": true,
           "enable_sticky_header": false
         }
       },

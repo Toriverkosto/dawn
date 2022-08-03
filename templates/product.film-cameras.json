@@ -305,19 +305,6 @@
         "swipe_on_mobile": true
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "disabled": true,
-      "settings": {
-        "heading": "You may also like",
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": true,
-        "show_rating": false
-      }
-    },
     "16321339467e367887": {
       "type": "image-with-text",
       "blocks": {
@@ -361,7 +348,6 @@
     "16579008498f69713d",
     "1658753086970be4d5",
     "16321391205a6cb4a0",
-    "product-recommendations",
     "16321339467e367887"
   ]
 }

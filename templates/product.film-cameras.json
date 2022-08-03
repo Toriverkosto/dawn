@@ -336,7 +336,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/minolta-8320-0002.jpg",
         "height": "small",
-        "color_scheme": "inverse",
+        "color_scheme": "background-1",
         "layout": "text_first"
       }
     }

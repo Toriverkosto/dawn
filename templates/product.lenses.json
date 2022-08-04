@@ -334,41 +334,6 @@
         "show_rating": false
       }
     },
-    "16321339467e367887": {
-      "type": "image-with-text",
-      "blocks": {
-        "16321339467e367887-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "We Buy Cameras"
-          }
-        },
-        "16321339467e367887-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Do you have unused camera gear laying around? We buy cameras, lenses, and accessories of all ages. Sell for cash or trade-in for something new.<\/p>"
-          }
-        },
-        "16321339467e367887-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "QUOTE REQUEST FORM",
-            "button_link": "shopify:\/\/pages\/sell-or-trade-your-used-camera-gear"
-          }
-        }
-      },
-      "block_order": [
-        "16321339467e367887-0",
-        "16321339467e367887-1",
-        "16321339467e367887-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/minolta-8320-0002.jpg",
-        "height": "small",
-        "color_scheme": "background-1",
-        "layout": "text_first"
-      }
-    },
     "1659603623b38ef57e": {
       "type": "collection-list",
       "blocks": {
@@ -404,6 +369,41 @@
         "image_padding": false,
         "show_view_all": false
       }
+    },
+    "16321339467e367887": {
+      "type": "image-with-text",
+      "blocks": {
+        "16321339467e367887-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We Buy Cameras"
+          }
+        },
+        "16321339467e367887-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Do you have unused camera gear laying around? We buy cameras, lenses, and accessories of all ages. Sell for cash or trade-in for something new.<\/p>"
+          }
+        },
+        "16321339467e367887-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "QUOTE REQUEST FORM",
+            "button_link": "shopify:\/\/pages\/sell-or-trade-your-used-camera-gear"
+          }
+        }
+      },
+      "block_order": [
+        "16321339467e367887-0",
+        "16321339467e367887-1",
+        "16321339467e367887-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/minolta-8320-0002.jpg",
+        "height": "small",
+        "color_scheme": "background-1",
+        "layout": "text_first"
+      }
     }
   },
   "order": [
@@ -414,7 +414,7 @@
     "1658753585c84fd67b",
     "16321391205a6cb4a0",
     "product-recommendations",
-    "16321339467e367887",
-    "1659603623b38ef57e"
+    "1659603623b38ef57e",
+    "16321339467e367887"
   ]
 }

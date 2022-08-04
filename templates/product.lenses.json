@@ -368,6 +368,42 @@
         "color_scheme": "background-1",
         "layout": "text_first"
       }
+    },
+    "1659603623b38ef57e": {
+      "type": "collection-list",
+      "blocks": {
+        "1659603623c315bd6d-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "filters"
+          }
+        },
+        "1659603623c315bd6d-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hoods"
+          }
+        },
+        "1659603623c315bd6d-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "k-f-concept-adapters"
+          }
+        }
+      },
+      "block_order": [
+        "1659603623c315bd6d-0",
+        "1659603623c315bd6d-1",
+        "1659603623c315bd6d-2"
+      ],
+      "settings": {
+        "title": "Related Items",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
+      }
     }
   },
   "order": [
@@ -378,6 +414,7 @@
     "1658753585c84fd67b",
     "16321391205a6cb4a0",
     "product-recommendations",
-    "16321339467e367887"
+    "16321339467e367887",
+    "1659603623b38ef57e"
   ]
 }

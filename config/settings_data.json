@@ -44,7 +44,6 @@
           },
           "4c1a92eb-53d3-4f1d-ad29-76811ffcecfe": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "Shipping to: 🇫🇮 Finland 5\/10€ |  🇪🇺 EU 10€ | 🇺🇸 USA ~$23 | Most other countries 20€",
               "color_scheme": "background-1",

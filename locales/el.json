@@ -130,7 +130,7 @@
         "check_other_stores": "Έλεγχος διαθεσιμότητας σε άλλα καταστήματα",
         "pick_up_available": "Υπάρχει δυνατότητα παραλαβής",
         "pick_up_available_at_html": "Υπάρχει δυνατότητα παραλαβής από <span class=\"color-foreground\">{{ location_name }}<\/span>",
-        "pick_up_unavailable_at_html": "Δεν υπάρχει δυνατότητα παραλαβής από <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "pick_up_unavailable_at_html": "Αυτή τη στιγμή δεν υπάρχει δυνατότητα παραλαβής από <span class=\"color-foreground\">{{ location_name }}<\/span>",
         "unavailable": "Δεν ήταν δυνατή η φόρτωση της διαθεσιμότητας παραλαβής",
         "refresh": "Ανανέωση"
       },

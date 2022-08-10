@@ -505,6 +505,9 @@
       "remember_me": {
         "terms_of_service": "Όροι Παροχής Υπηρεσιών"
       }
+    },
+    "errors": {
+      "discount_limit_reached": "Εξαντλήθηκε το όριο χρήσης για αυτήν την έκπτωση"
     }
   }
 }

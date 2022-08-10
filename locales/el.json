@@ -211,7 +211,8 @@
       "login": {
         "title": "Έχετε λογαριασμό;",
         "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Συνδεθείτε<\/a> για ταχύτερη ολοκλήρωση των αγορών σας."
-      }
+      },
+      "terms_and_conditions_checkbox_label_html": "Έχω διαβάσει και συμφωνώ με τους <a class=\"link underlined-link\" href=\"{{ link }}\">όρους και προϋποθέσεις<\/a> <span class=\"alert\">(*Required)<\/span>."
     },
     "footer": {
       "payment": "Μέθοδοι πληρωμής",

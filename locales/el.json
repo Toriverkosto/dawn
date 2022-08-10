@@ -495,6 +495,12 @@
       },
       "shipping_errors": {
         "shipping_method": "Το καλάθι σας ενημερώθηκε και τα προηγούμενα έξοδα αποστολής δεν είναι έγκυρα. Επιλέξτε νέα έξοδα αποστολής."
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Θέλω να λαμβάνω email με νέα και προσφορές",
+        "post_accept_marketing_checkbox_label": "Έχετε εγγραφεί για τη λήψη νέων και προσφορών μέσω email",
+        "pending_accept_marketing_checkbox_label": "Ελέγξτε το email σας για να επιβεβαιώσετε την εγγραφή σας στα νέα και τις προσφορές",
+        "accept_sms_checkbox_label": "Θέλω να λαμβάνω μηνύματα με νέα και προσφορές"
       }
     }
   }

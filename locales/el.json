@@ -533,5 +533,12 @@
         "four_hours": "Θα λάβετε email όταν η παραγγελία σας είναι έτοιμη για παραλαβή."
       }
     }
+  },
+  "customer_accounts": {
+    "orders": {
+      "order_status": {
+        "canceled_label": "Aκυρώθηκε"
+      }
+    }
   }
 }

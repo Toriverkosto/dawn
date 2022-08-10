@@ -465,6 +465,15 @@
   "shopify": {
     "sentence": {
       "last_word_connector": ", και "
+    },
+    "checkout": {
+      "contact": {
+        "address2_label": "Διαμέρισμα, όροφος, κ.λπ.",
+        "optional_address2_label": "Διαμέρισμα, όροφος, κ.λπ. (προαιρετικά)"
+      },
+      "delivery_options": {
+        "pick_up_in_four_hours": "Θα λάβετε ένα email όταν η παραγγελία σας είναι έτοιμη για παραλαβή."
+      }
     }
   }
 }

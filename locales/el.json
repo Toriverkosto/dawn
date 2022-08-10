@@ -515,6 +515,9 @@
           "partially_paid": "Πληρώθηκε μερικώς",
           "partially_refunded": "Επιστράφηκαν χρήματα μερικώς"
         }
+      },
+      "cart": {
+        "generic_error": "Σφάλμα Καλαθιού"
       }
     }
   }

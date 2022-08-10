@@ -501,6 +501,9 @@
         "post_accept_marketing_checkbox_label": "Έχετε εγγραφεί για τη λήψη νέων και προσφορών μέσω email",
         "pending_accept_marketing_checkbox_label": "Ελέγξτε το email σας για να επιβεβαιώσετε την εγγραφή σας στα νέα και τις προσφορές",
         "accept_sms_checkbox_label": "Θέλω να λαμβάνω μηνύματα με νέα και προσφορές"
+      },
+      "remember_me": {
+        "terms_of_service": "Όροι Παροχής Υπηρεσιών"
       }
     }
   }

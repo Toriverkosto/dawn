@@ -519,6 +519,11 @@
       "cart": {
         "generic_error": "Σφάλμα Καλαθιού"
       }
+    },
+    "store_availability": {
+      "pick_up_time": {
+        "four_hours": "Θα λάβετε email όταν η παραγγελία σας είναι έτοιμη για παραλαβή."
+      }
     }
   }
 }

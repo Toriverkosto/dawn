@@ -476,6 +476,11 @@
       },
       "stock": {
         "items_unavailable_notice": "Ορισμένα αντικείμενα δεν είναι πλέον διαθέσιμα Η έχει γίνει κράτηση για άλλον πελάτη. "
+      },
+      "order_summary": {
+        "discount_and_gift_card_savings_notice": "Μετά από %{discount_amount} σε εκπτώσεις και %{gift_card_amount} σε δωροκάρτες",
+        "discount_savings_notice": "Μετά από %{discount_amount} σε εκπτώσεις",
+        "gift_card_savings_notice": "Μετά από %{gift_card_amount} σε δωροκάρτες"
       }
     }
   }

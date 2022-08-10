@@ -508,6 +508,14 @@
     },
     "errors": {
       "discount_limit_reached": "Εξαντλήθηκε το όριο χρήσης για αυτήν την έκπτωση"
+    },
+    "notices": {
+      "order": {
+        "financial_status": {
+          "partially_paid": "Πληρώθηκε μερικώς",
+          "partially_refunded": "Επιστράφηκαν χρήματα μερικώς"
+        }
+      }
     }
   }
 }

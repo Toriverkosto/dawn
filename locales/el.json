@@ -144,6 +144,12 @@
     },
     "modal": {
       "label": "Συλλογή μέσων"
+    },
+    "database": {
+      "none_available": "Αυτή τη στιγμή δεν υπάρχουν διαθέσιμα αντικείμενα."
+    },
+    "tax": {
+      "taxable_property_value": "ΕΕ Μόνο."
     }
   },
   "templates": {

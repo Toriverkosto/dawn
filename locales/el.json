@@ -141,7 +141,12 @@
         "play_video": "Αναπαραγωγή βίντεο"
       },
       "view_full_details": "Προβολή όλων των λεπτομερειών",
-      "product_condition_heading": "Κατάσταση Προϊόντος:"
+      "product_condition_heading": "Κατάσταση Προϊόντος:",
+      "taxable": "Περιλαμβάνεται ΦΠΑ. (ΕΕ μόνο).",
+      "not_taxable": "Η τιμή είναι τελική. Τα μεταχειρισμένα αντικείμενα δεν έχουν επιστρεφόμενο ΦΠΑ.",
+      "optical_condition_heading": "Οπτικά μέρη: {{ condition }} \/ 5",
+      "mechanical_condition_heading": "Μηχανικά μέρη: {{ condition }} \/ 5",
+      "cosmetic_condition_heading": "Εμφάνιση: {{ condition }} \/ 5"
     },
     "modal": {
       "label": "Συλλογή μέσων"
@@ -150,7 +155,10 @@
       "none_available": "Αυτή τη στιγμή δεν υπάρχουν διαθέσιμα αντικείμενα."
     },
     "tax": {
-      "taxable_property_value": "ΕΕ Μόνο."
+      "taxable_property_value": "ΕΕ Μόνο.",
+      "taxable_property_name": "Περιλαμβάνεται ΦΠΑ.",
+      "not_taxable_property_name": "ΦΠΑ",
+      "not_taxable_property_value": "Η τιμή είναι τελική. Τα μεταχειρισμένα αντικείμενα δεν έχουν επιστρεφόμενο ΦΠΑ."
     }
   },
   "templates": {

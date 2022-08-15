@@ -18,20 +18,6 @@
             "stars_text_empty": "No reviews yet"
           }
         },
-        "5221b8a7-4db2-4a4d-bf04-5d9cb7e5a0f4": {
-          "type": "shopify:\/\/apps\/advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
-          "settings": {
-            "theme_color": "#f15975",
-            "button_style": "style_3",
-            "button_border": 0,
-            "button_border_radius": 0,
-            "button_vertical_space": 9,
-            "button_horizontal_space": 16,
-            "button_text_color": "#ffffff",
-            "button_background": "#5c6ac4",
-            "border_color": "#5c6ac4"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
@@ -130,6 +116,20 @@
             "icon": "price_tag"
           }
         },
+        "5221b8a7-4db2-4a4d-bf04-5d9cb7e5a0f4": {
+          "type": "shopify:\/\/apps\/advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
+          "settings": {
+            "theme_color": "#f15975",
+            "button_style": "style_3",
+            "button_border": 0,
+            "button_border_radius": 0,
+            "button_vertical_space": 9,
+            "button_horizontal_space": 16,
+            "button_text_color": "#ffffff",
+            "button_background": "#5c6ac4",
+            "border_color": "#5c6ac4"
+          }
+        },
         "137f138a-0dc5-4207-a49d-da4ca1220540": {
           "type": "custom_liquid",
           "settings": {
@@ -140,7 +140,6 @@
       "block_order": [
         "title",
         "6283d951-f445-4642-b13e-e23ec49fb51f",
-        "5221b8a7-4db2-4a4d-bf04-5d9cb7e5a0f4",
         "price",
         "f0c9e60b-84e2-4c7b-a294-cab454328d82",
         "quantity_selector",
@@ -155,6 +154,7 @@
         "c93981a2-30f3-4294-803c-c2c27ba4890e",
         "e44a2970-017f-4a65-9008-2a056066686c",
         "5442ba5b-00e3-43cb-a982-68811ae1827d",
+        "5221b8a7-4db2-4a4d-bf04-5d9cb7e5a0f4",
         "137f138a-0dc5-4207-a49d-da4ca1220540"
       ],
       "settings": {

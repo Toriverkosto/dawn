@@ -42,20 +42,6 @@
             "link_to_host": true
           }
         },
-        "544372e8-f86d-4543-aa94-172d88ad169e": {
-          "type": "shopify:\/\/apps\/advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
-          "settings": {
-            "theme_color": "#f15975",
-            "button_style": "style_3",
-            "button_border": 0,
-            "button_border_radius": 0,
-            "button_vertical_space": 0,
-            "button_horizontal_space": 16,
-            "button_text_color": "#ffffff",
-            "button_background": "#2b75ae",
-            "border_color": "#2b75ae"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
@@ -91,6 +77,20 @@
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true
+          }
+        },
+        "544372e8-f86d-4543-aa94-172d88ad169e": {
+          "type": "shopify:\/\/apps\/advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
+          "settings": {
+            "theme_color": "#f15975",
+            "button_style": "style_3",
+            "button_border": 0,
+            "button_border_radius": 0,
+            "button_vertical_space": 0,
+            "button_horizontal_space": 16,
+            "button_text_color": "#ffffff",
+            "button_background": "#2b75ae",
+            "border_color": "#2b75ae"
           }
         },
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb": {
@@ -174,13 +174,13 @@
         "title",
         "0df71d04-5b16-4ca9-a92f-43724c825900",
         "3489098b-b626-48b9-9b69-4aca9ec53063",
-        "544372e8-f86d-4543-aa94-172d88ad169e",
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
         "a01329cd-da87-4153-b7a4-04796b35d6d6",
         "99452d1b-4d7e-4077-a88b-abeded9e84f2",
         "4f0717e0-34d7-44d7-9543-6fdf50a55941",
         "buy_buttons",
+        "544372e8-f86d-4543-aa94-172d88ad169e",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
         "6ff4987b-8f35-4a2e-89e3-3f40f342da38",
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",

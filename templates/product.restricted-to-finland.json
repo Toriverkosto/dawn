@@ -8,20 +8,6 @@
           "settings": {
           }
         },
-        "c1378c8b-8c8b-4c98-b464-f87debde3c6e": {
-          "type": "shopify:\/\/apps\/advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
-          "settings": {
-            "theme_color": "#f15975",
-            "button_style": "style_3",
-            "button_border": 0,
-            "button_border_radius": 0,
-            "button_vertical_space": 9,
-            "button_horizontal_space": 16,
-            "button_text_color": "#ffffff",
-            "button_background": "#5c6ac4",
-            "border_color": "#5c6ac4"
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
@@ -94,6 +80,20 @@
             "icon": "box"
           }
         },
+        "c1378c8b-8c8b-4c98-b464-f87debde3c6e": {
+          "type": "shopify:\/\/apps\/advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
+          "settings": {
+            "theme_color": "#f15975",
+            "button_style": "style_3",
+            "button_border": 0,
+            "button_border_radius": 0,
+            "button_vertical_space": 9,
+            "button_horizontal_space": 16,
+            "button_text_color": "#ffffff",
+            "button_background": "#5c6ac4",
+            "border_color": "#5c6ac4"
+          }
+        },
         "5ebcf22c-ee85-4f57-b7c3-88fabdf150c5": {
           "type": "custom_liquid",
           "settings": {
@@ -103,7 +103,6 @@
       },
       "block_order": [
         "title",
-        "c1378c8b-8c8b-4c98-b464-f87debde3c6e",
         "price",
         "f0c9e60b-84e2-4c7b-a294-cab454328d82",
         "8a5e19bd-ec83-4ef2-ad47-9bd4b01b7f5e",
@@ -115,6 +114,7 @@
         "d031b056-55bf-4778-a201-0c5d8ab0e178",
         "c93981a2-30f3-4294-803c-c2c27ba4890e",
         "e44a2970-017f-4a65-9008-2a056066686c",
+        "c1378c8b-8c8b-4c98-b464-f87debde3c6e",
         "5ebcf22c-ee85-4f57-b7c3-88fabdf150c5"
       ],
       "settings": {

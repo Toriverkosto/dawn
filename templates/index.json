@@ -1,5 +1,21 @@
 {
   "sections": {
+    "1660560902df48f128": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Added this Week",
+        "collection": "new-last-7-days",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": false
+      }
+    },
     "16590912674b072be6": {
       "type": "featured-collection",
       "settings": {
@@ -530,6 +546,7 @@
     }
   },
   "order": [
+    "1660560902df48f128",
     "16590912674b072be6",
     "16590913415aba16e5",
     "1659091405f0073c84",

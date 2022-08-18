@@ -83,6 +83,35 @@
         "id": "gradient_background_2",
         "type": "color_background",
         "label": "t:settings_schema.colors.settings.gradient_background_2.label"
+      },
+
+      {
+        "type": "header",
+        "content": "t:settings_schema.colors.settings.header__3.content"
+      },
+      {
+        "type": "color",
+        "id": "colors_accent_1_text",
+        "default": "#FFFFFF",
+        "label": "t:settings_schema.colors.settings.colors_accent_1_text.label"
+      },
+      {
+        "type": "color",
+        "id": "colors_accent_1_text_alt",
+        "default": "#FFFFFF",
+        "label": "t:settings_schema.colors.settings.colors_accent_1_text_alt.label"
+      },
+      {
+        "type": "color",
+        "id": "colors_accent_2_text",
+        "default": "#FFFFFF",
+        "label": "t:settings_schema.colors.settings.colors_accent_2_text.label"
+      },
+      {
+        "type": "color",
+        "id": "colors_accent_2_text_alt",
+        "default": "#FFFFFF",
+        "label": "t:settings_schema.colors.settings.colors_accent_2_text_alt.label"
       }
     ]
   },

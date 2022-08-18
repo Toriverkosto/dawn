@@ -45,6 +45,22 @@
         },
         "gradient_background_2": {
           "label": "Background 2 gradient"
+        },
+
+        "header__3": {
+          "content": "Header only colors (temporarily)"
+        },
+        "colors_accent_1_text": {
+          "label": "Accent 1 Text Color"
+        },
+        "colors_accent_1_text_alt": {
+          "label": "Accent 1 Text Color Alternative"
+        },
+        "colors_accent_2_text": {
+          "label": "Accent 2 Text Color"
+        },
+        "colors_accent_2_text_alt": {
+          "label": "Accent 2 Text Color Alternative"
         }
       }
     },

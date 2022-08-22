@@ -1842,6 +1842,35 @@ input[type='checkbox'] {
   padding-bottom: 1rem;
 }
 
+@media screen and (max-width: 420px) {
+  /* Super small screen*/
+  .header__icon.header__icon--cart {
+    margin: 0 !important;
+  }
+
+  .header {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .header__icons {
+    padding-right: 0.5rem !important;
+    width: auto !important;
+  }
+
+  header-drawer {
+    width: 5.6rem !important;
+  }
+
+  .header__heading-link {
+    padding: 0 !important;
+  }
+
+  .header__heading-link .header__heading-logo {
+    width: 14rem !important;
+  }
+}
+
 @media screen and (min-width: 810px) {
   .header {
     grid-template-columns: min-content max-content auto min-content min-content; /* TODO */
@@ -1946,7 +1975,6 @@ input[type='checkbox'] {
 .header__icons {
   display: flex;
   grid-area: icons;
-  width: 12.8rem;
   flex-direction: row;
   justify-content: end;
   padding-right: 1rem;
@@ -2024,6 +2052,7 @@ input[type='checkbox'] {
   font-weight: normal;
   font-size: 1.5rem;
   line-height: 2.0rem;
+  white-space: nowrap;
 }
 
 .header__icon--account > div.full-text > span.label {
@@ -2031,6 +2060,7 @@ input[type='checkbox'] {
   color: rgb(var(--color-foreground));
   line-height: 1.8rem;
   font-weight: lighter;
+  white-space: nowrap;
 }
 
 /* Search */

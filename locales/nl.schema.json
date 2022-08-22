@@ -665,18 +665,6 @@
           "unit": "px",
           "label": "Aangepaste logo-breedte"
         },
-        "logo_position": {
-          "label": "Positie van logo op groot scherm",
-          "options__1": {
-            "label": "Midden links"
-          },
-          "options__2": {
-            "label": "Linksboven"
-          },
-          "options__3": {
-            "label": "Centraal boven"
-          }
-        },
         "menu": {
           "label": "Menu"
         },

@@ -671,18 +671,6 @@
           "unit": "px",
           "label": "自定义 logo 宽度"
         },
-        "logo_position": {
-          "label": "logo 在较大屏幕上的位置",
-          "options__1": {
-            "label": "中间居左"
-          },
-          "options__2": {
-            "label": "左上方"
-          },
-          "options__3": {
-            "label": "顶部居中"
-          }
-        },
         "menu": {
           "label": "菜单"
         },

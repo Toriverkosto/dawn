@@ -17,7 +17,7 @@
   transform: translateY(-100%);
   visibility: hidden;
   width: 100%;
-  z-index: -1;
+  z-index: 100;
 }
 
 @media screen and (min-width: 750px) {

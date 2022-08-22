@@ -665,18 +665,6 @@
           "unit": "px",
           "label": "Tilpasset logobredde"
         },
-        "logo_position": {
-          "label": "Placering af logo på store skærme",
-          "options__1": {
-            "label": "Midt på til venstre"
-          },
-          "options__2": {
-            "label": "Øverst til venstre"
-          },
-          "options__3": {
-            "label": "Øverst i midten"
-          }
-        },
         "menu": {
           "label": "Menu"
         },

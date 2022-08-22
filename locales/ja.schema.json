@@ -671,18 +671,6 @@
           "unit": "ピクセル",
           "label": "ロゴの幅をカスタマイズする"
         },
-        "logo_position": {
-          "label": "大画面でのロゴの位置",
-          "options__1": {
-            "label": "中央部左側"
-          },
-          "options__2": {
-            "label": "左上"
-          },
-          "options__3": {
-            "label": "上部中央"
-          }
-        },
         "menu": {
           "label": "メニュー"
         },

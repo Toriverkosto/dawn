@@ -671,18 +671,6 @@
           "unit": "px",
           "label": "Largura de logótipo personalizada"
         },
-        "logo_position": {
-          "label": "Posição do logótipo em ecrãs grandes",
-          "options__1": {
-            "label": "Intermédio à esquerda"
-          },
-          "options__2": {
-            "label": "Canto superior esquerdo"
-          },
-          "options__3": {
-            "label": "Superior centro"
-          }
-        },
         "menu": {
           "label": "Menu"
         },

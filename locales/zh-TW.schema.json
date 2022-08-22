@@ -671,18 +671,6 @@
           "unit": "像素",
           "label": "自訂標誌寬度"
         },
-        "logo_position": {
-          "label": "標誌在大型螢幕上的位置",
-          "options__1": {
-            "label": "中央左方"
-          },
-          "options__2": {
-            "label": "左上角"
-          },
-          "options__3": {
-            "label": "中央上方"
-          }
-        },
         "menu": {
           "label": "選單"
         },

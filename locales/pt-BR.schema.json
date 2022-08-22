@@ -665,18 +665,6 @@
           "unit": "px",
           "label": "Largura personalizada do logo"
         },
-        "logo_position": {
-          "label": "Posição do logo em telas grandes",
-          "options__1": {
-            "label": "Centralizado à esquerda"
-          },
-          "options__2": {
-            "label": "Canto superior esquerdo"
-          },
-          "options__3": {
-            "label": "Centralizado na parte superior"
-          }
-        },
         "menu": {
           "label": "Menu"
         },

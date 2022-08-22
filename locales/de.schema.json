@@ -665,18 +665,6 @@
           "unit": "Pixel",
           "label": "Breite des benutzerdefinierten Logos"
         },
-        "logo_position": {
-          "label": "Logopositionierung auf großen Bildschirmen",
-          "options__1": {
-            "label": "Mitte links"
-          },
-          "options__2": {
-            "label": "Oben links"
-          },
-          "options__3": {
-            "label": "Oben zentriert"
-          }
-        },
         "menu": {
           "label": "Menü"
         },

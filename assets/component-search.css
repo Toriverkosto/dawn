@@ -1,13 +1,31 @@
 .search__input.field__input {
   padding-right: 5rem;
+  border-radius: 0.4rem;
+  background-color: rgb(var(--color-background-2));
+  box-shadow: none;
+  color: rgb(var(--color-text-alternative));
 }
 
 .search__button .icon {
-  height: 1.8rem;
-  width: 1.8rem;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+.search__button {
+  height: 100%;
+  width: 5rem;
+  background-color: rgb(var(--color-base-accent-1));
+  border-radius: 0 0.4rem 0.4rem 0;
+  transition: background-color 0.25s;
+}
+.search__button:hover {
+  background-color: rgba(var(--color-base-accent-1), 0.9);
 }
 
 /* Remove extra spacing for search inputs in Safari */
 input::-webkit-search-decoration {
   -webkit-appearance: none;
+}
+
+.search-modal__form label.field__label {
+  color: #8A8A8A;
 }

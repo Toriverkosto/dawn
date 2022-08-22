@@ -665,18 +665,6 @@
           "unit": "px",
           "label": "Chiều rộng logo tùy chỉnh"
         },
-        "logo_position": {
-          "label": "Vị trí logo trên màn hình lớn",
-          "options__1": {
-            "label": "Ở giữa bên trái"
-          },
-          "options__2": {
-            "label": "Trên cùng bên trái"
-          },
-          "options__3": {
-            "label": "Trên cùng ở giữa"
-          }
-        },
         "menu": {
           "label": "Menu"
         },

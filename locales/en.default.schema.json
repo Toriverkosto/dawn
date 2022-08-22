@@ -873,18 +873,6 @@
           "unit": "px",
           "label": "Custom logo width"
         },
-        "logo_position": {
-          "label": "Logo position on large screens",
-          "options__1": {
-            "label": "Middle left"
-          },
-          "options__2": {
-            "label": "Top left"
-          },
-          "options__3": {
-            "label": "Top center"
-          }
-        },
         "menu": {
           "label": "Menu"
         },

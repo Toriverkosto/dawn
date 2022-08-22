@@ -17,6 +17,7 @@
     justify-self: start;
     margin-left: -1.2rem;
     grid-area: left-icon;
+    width: 6.4rem;
   }
 
   @media screen and (min-width: 990px) {
@@ -67,27 +68,33 @@
   /* Language switcher styles  */
 
   header.header details.language-switcher {
-    grid-area: left-icon;
-    margin-left: 3rem;
-    width: 15rem;
-    font-size: 1.4rem;
+    grid-area: language-switcher;
+    width: 6.4rem;
+    font-size: 1.5rem;
+
   }
 
   header.header details.language-switcher > summary {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
 
-    /*color: #121212;*/
-    color: rgba(var(--color-foreground), 0.75);
-    background-color: white;
+    background-color: rgb(var(--color-background));
+    color: rgb(var(--color-foreground));
     padding: 0.8rem 1.6rem;
-    border: 1px solid #EBECEC;
   }
 
-  header.header details.language-switcher > summary > img.flag {
-    margin-right: 0.8rem;
+  header.header details.language-switcher > summary > span.label {
+    font-size: 1.3rem;
+    color: rgb(var(--color-foreground));
+    font-weight: lighter;
+    line-height: 1.8rem;
+    display: none;
   }
+
+  /*header.header details.language-switcher > summary > img.flag {*/
+  /*  margin-right: 0.8rem;*/
+  /*}*/
 
   header.header details.language-switcher > summary > svg {
     margin-left: 0.8rem;
@@ -99,9 +106,8 @@
     position: absolute;
     z-index: 1000;
     margin: 0;
-    background-color: white;
-    width: 15rem;
-    border: 1px solid #EBECEC;
+    background-color: rgb(var(--color-background));
+    /*width: 15rem;*/
     padding: 0.8rem 0;
   }
 
@@ -116,12 +122,12 @@
     text-underline-offset: 0.3rem;
 
     text-decoration: none;
-    color: #4C4C4C;
+    color: rgb(var(--color-foreground));
     padding: 0.8rem 1.6rem;
   }
 
   header.header details.language-switcher ul.languages > li.language > a:hover {
-    color: rgb(var(--color-foreground));
+    color: rgba(var(--color-foreground), 0.9);
     text-decoration: underline;
   }
 
@@ -130,14 +136,21 @@
   }
 
   header.header details.language-switcher span.full-name {
+    line-height: 1.8rem;
     display: none;
   }
 
   header.header details.language-switcher span.language-code {
     text-transform: uppercase;
+    font-size: 1.8rem;
   }
 
   @media screen and (min-width: 990px) {
+    header.header details.language-switcher > summary {
+      color: rgba(var(--color-text-primary));
+      font-weight: normal;
+    }
+
     header.header details.language-switcher span.full-name {
       display: inline;
     }
@@ -145,25 +158,39 @@
     header.header details.language-switcher span.language-code {
       display: none;
     }
+
+    header.header details.language-switcher > summary > span.label {
+      display: inline;
+    }
+
+    header.header details.language-switcher {
+      width: auto;
+    }
+  }
+
+  @media screen and (min-width: 810px) {
+    header.header details.language-switcher {
+      margin-right: 2rem;
+      margin-left: 2rem;
+    }
   }
 
   @media screen and (max-width: 990px) {
     header.header details.language-switcher > summary {
       background-color: transparent;
-      border: none;
     }
 
-    header.header details.language-switcher {
-      width: 9rem;
-    }
+    /*header.header details.language-switcher {*/
+    /*  width: 9rem;*/
+    /*}*/
 
     header.header details.language-switcher > summary > svg {
       display: none;
     }
 
-    header.header details.language-switcher > ul.languages {
-      width: 9rem;
-    }
+    /*header.header details.language-switcher > ul.languages {*/
+    /*  width: 9rem;*/
+    /*}*/
 
     header.header details.language-switcher ul.languages > li.language > a {
       padding: 1.6rem;
@@ -196,7 +223,8 @@
   </symbol>
 </svg>
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
-  <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
+  <header class="header page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
+    <!-- FIXME: Mobile burger menu -->
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet">
         <details class="menu-drawer-container">
@@ -359,17 +387,95 @@
       </header-drawer>
     {%- endif -%}
 
-    <details class="language-switcher">
+    <!-- FIXME: Header logo : h1 only added on index page :S -->
+    {%- if request.page_type == 'index' -%}
+    <h1 class="header__heading">
+    {%- endif -%}
+      <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+        {%- if section.settings.logo != blank -%}
+          {%- assign image_size = section.settings.logo_width | append: 'x' -%}
+          <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
+               src="{{ section.settings.logo | img_url: image_size }}"
+               loading="lazy"
+               class="header__heading-logo"
+               width="{{ section.settings.logo.width }}"
+               height="{{ section.settings.logo.height }}"
+               alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+          >
+        {%- else -%}
+          <span class="h2">{{ shop.name }}</span>
+        {%- endif -%}
+      </a>
+    {%- if request.page_type == 'index' -%}
+    </h1>
+    {%- endif -%}
+
+    <!-- FIXME: Search -->
+    <div class="search-modal__content header__search" tabindex="-1">
+    {%- if settings.predictive_search_enabled -%}
+      <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
+        {%- endif -%}
+        <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+          <div class="field">
+            <input class="search__input field__input"
+                   id="Search-In-Modal-1"
+                   type="search"
+                   name="q"
+                   value=""
+                   placeholder="{{ 'general.search.search' | t }}"
+              {%- if settings.predictive_search_enabled -%}
+                role="combobox"
+                aria-expanded="false"
+                aria-owns="predictive-search-results-list"
+                aria-controls="predictive-search-results-list"
+                aria-haspopup="listbox"
+                aria-autocomplete="list"
+                autocorrect="off"
+                autocomplete="off"
+                autocapitalize="off"
+                spellcheck="false"
+              {%- endif -%}
+            >
+            <label class="field__label" for="Search-In-Modal-1">{{ 'general.search.search' | t }}</label>
+            <input type="hidden" name="options[prefix]" value="last">
+            <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+              <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="11" cy="11" r="7" stroke="white" stroke-width="2"/>
+                <path d="M20 20L17 17" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+
+            </button>
+          </div>
+
+          {%- if settings.predictive_search_enabled -%}
+            <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
+              <div class="predictive-search__loading-state">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                  <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                </svg>
+              </div>
+            </div>
+
+            <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
+          {%- endif -%}
+        </form>
+        {%- if settings.predictive_search_enabled -%}
+      </predictive-search>
+      {%- endif -%}
+      {% comment %}<button type="button" class="modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">{% endcomment %}
+      {% comment %}<svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">{% endcomment %}
+      {% comment %}<use href="#icon-close">{% endcomment %}
+      {% comment %}</svg>{% endcomment %}
+      {% comment %}</button>{% endcomment %}
+    </div>
+
+    <!-- FIXME: Language Switcher -->
+    <details class="language-switcher">  <!-- FIXME: Language Switcher -->
       {% assign language_domain_data = shop.metafields.global.language_domain_data.value %}
       <summary>
-        <img class="flag" alt="{{ language_domain_data[locale.iso_code].endonym_name }} flag" src="{{ 'flag_' | append: request.locale.iso_code | append: '.png' | asset_img_url }}" width="30px" />
+        <span class="label">{{ 'localization.language_label' | t }}</span>
         <span class="full-name">{{ language_domain_data[request.locale.iso_code].endonym_name }}</span>
         <span class="language-code">{{ request.locale.iso_code }}</span>
-        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2 2.5H13.6667" stroke="#4C4C4C" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"/>
-          <path d="M2 6.5H10.3333" stroke="#4C4C4C" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"/>
-          <path d="M2 10.5H7" stroke="#4C4C4C" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"/>
-        </svg>
       </summary>
       <ul class="languages">
         {% for data in language_domain_data %}
@@ -378,7 +484,6 @@
           {% unless code == request.locale.iso_code %}
             <li class="language">
               <a href="{{ language.domain }}{{ request.path }}">
-                <img class="flag" alt="{{ language.endonym_name }} flag" src="{{ 'flag_' | append: code | append: '.png' | asset_img_url }}" width="30px" />
                 <span class="full-name">{{ language.endonym_name }}</span>
                 <span class="language-code">{{ language.code }}</span>
               </a>
@@ -388,155 +493,7 @@
       </ul>
     </details>
 
-    {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
-      {% comment %}<details-modal class="header__search">{% endcomment %}
-        {% comment %}<details>{% endcomment %}
-          {% comment %}<summary class="header__icon header__icon--search header__icon--summary link link--text focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">{% endcomment %}
-            {% comment %}<span>{% endcomment %}
-              {% comment %}<svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" role="presentation">{% endcomment %}
-                {% comment %}<use href="#icon-search">{% endcomment %}
-              {% comment %}</svg>{% endcomment %}
-              {% comment %}<svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation">{% endcomment %}
-                {% comment %}<use href="#icon-close">{% endcomment %}
-              {% comment %}</svg>{% endcomment %}
-            {% comment %}</span>{% endcomment %}
-          {% comment %}</summary>{% endcomment %}
-          {% comment %}<div class="search-modal modal__content" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search' | t }}">{% endcomment %}
-            {% comment %}<div class="modal-overlay"></div>{% endcomment %}
-            <div class="search-modal__content header__search" tabindex="-1">
-              {%- if settings.predictive_search_enabled -%}
-                <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
-              {%- endif -%}
-                <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
-                  <div class="field">
-                    <input class="search__input field__input"
-                      id="Search-In-Modal-1"
-                      type="search"
-                      name="q"
-                      value=""
-                      placeholder="{{ 'general.search.search' | t }}"
-                      {%- if settings.predictive_search_enabled -%}
-                        role="combobox"
-                        aria-expanded="false"
-                        aria-owns="predictive-search-results-list"
-                        aria-controls="predictive-search-results-list"
-                        aria-haspopup="listbox"
-                        aria-autocomplete="list"
-                        autocorrect="off"
-                        autocomplete="off"
-                        autocapitalize="off"
-                        spellcheck="false"
-                      {%- endif -%}
-                    >
-                    <label class="field__label" for="Search-In-Modal-1">{{ 'general.search.search' | t }}</label>
-                    <input type="hidden" name="options[prefix]" value="last">
-                    <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
-                      <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
-                        <use href="#icon-search">
-                      </svg>
-                    </button>
-                  </div>
-
-                  {%- if settings.predictive_search_enabled -%}
-                    <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
-                      <div class="predictive-search__loading-state">
-                        <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                        </svg>
-                      </div>
-                    </div>
-
-                    <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
-                  {%- endif -%}
-                </form>
-              {%- if settings.predictive_search_enabled -%}
-                </predictive-search>
-              {%- endif -%}
-              {% comment %}<button type="button" class="modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">{% endcomment %}
-                {% comment %}<svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">{% endcomment %}
-                  {% comment %}<use href="#icon-close">{% endcomment %}
-                {% comment %}</svg>{% endcomment %}
-              {% comment %}</button>{% endcomment %}
-            </div>
-          {% comment %}</div>{% endcomment %}
-        {% comment %}</details>{% endcomment %}
-      {% comment %}</details-modal>{% endcomment %}
-    {%- endif -%}
-
-    {%- if request.page_type == 'index' -%}
-      <h1 class="header__heading">
-    {%- endif -%}
-        <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-          {%- if section.settings.logo != blank -%}
-            {%- assign image_size = section.settings.logo_width | append: 'x' -%}
-            <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
-              src="{{ section.settings.logo | img_url: image_size }}"
-              loading="lazy"
-              class="header__heading-logo"
-              width="{{ section.settings.logo.width }}"
-              height="{{ section.settings.logo.height }}"
-              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
-            >
-          {%- else -%}
-            <span class="h2">{{ shop.name }}</span>
-          {%- endif -%}
-        </a>
-    {%- if request.page_type == 'index' -%}
-      </h1>
-    {%- endif -%}
-
-    {%- if section.settings.menu != blank -%}
-      <nav class="header__inline-menu">
-        <ul class="list-menu list-menu--inline" role="list">
-          {%- for link in section.settings.menu.links -%}
-            <li>
-              {%- if link.links != blank -%}
-                <details-disclosure>
-                  <details>
-                    <summary class="header__menu-item list-menu__item link focus-inset">
-                      <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
-                      {% render 'icon-caret' %}
-                    </summary>
-                    <ul class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
-                      {%- for childlink in link.links -%}
-                        <li>
-                          {%- if childlink.links == blank -%}
-                            <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
-                              {{ childlink.title | escape }}
-                            </a>
-                          {%- else -%}
-                            <details>
-                              <summary class="header__menu-item link link--text list-menu__item focus-inset caption-large">
-                                {{ childlink.title | escape }}
-                                {% render 'icon-caret' %}
-                              </summary>
-                              <ul class="header__submenu list-menu motion-reduce">
-                                {%- for grandchildlink in childlink.links -%}
-                                  <li>
-                                    <a href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
-                                      {{ grandchildlink.title | escape }}
-                                    </a>
-                                  </li>
-                                {%- endfor -%}
-                              </ul>
-                            </details>
-                          {%- endif -%}
-                        </li>
-                      {%- endfor -%}
-                    </ul>
-                  </details>
-                </details-disclosure>
-              {%- else -%}
-                <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
-                  <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
-                </a>
-              {%- endif -%}
-            </li>
-          {%- endfor -%}
-        </ul>
-      </nav>
-    {%- endif -%}
-
+    <!-- FIXME: Icons: Account, search and cart -->
     <div class="header__icons">
       <details-modal class="header__search">
         <details>
@@ -553,17 +510,17 @@
           <div class="search-modal modal__content" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search' | t }}">
             <div class="modal-overlay"></div>
             <div class="search-modal__content" tabindex="-1">
-              {%- if settings.predictive_search_enabled -%}
-                <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
-              {%- endif -%}
+            {%- if settings.predictive_search_enabled -%}
+              <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
+                {%- endif -%}
                 <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
                   <div class="field">
                     <input class="search__input field__input"
-                      id="Search-In-Modal"
-                      type="search"
-                      name="q"
-                      value=""
-                      placeholder="{{ 'general.search.search' | t }}"
+                           id="Search-In-Modal"
+                           type="search"
+                           name="q"
+                           value=""
+                           placeholder="{{ 'general.search.search' | t }}"
                       {%- if settings.predictive_search_enabled -%}
                         role="combobox"
                         aria-expanded="false"
@@ -598,8 +555,8 @@
                     <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
                   {%- endif -%}
                 </form>
-              {%- if settings.predictive_search_enabled -%}
-                </predictive-search>
+                {%- if settings.predictive_search_enabled -%}
+              </predictive-search>
               {%- endif -%}
               <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
                 <svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">
@@ -613,6 +570,14 @@
 
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link link--text focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
+          <div class="full-text">
+            <span class="label">{{ 'customer.account.title' | t }}</span>
+            {% unless customer %}
+              <span class="action">{{ 'customer.log_in' | t }}</span>
+            {% else %}
+              <span class="action">{{ customer.first_name }}</span>
+            {% endunless %}
+          </div>
           {% render 'icon-account' %}
           <span class="visually-hidden">
             {%- liquid
@@ -646,6 +611,60 @@
       </a>
     </div>
   </header>
+
+  <!-- FIXME: Wide desktop menu -->
+  {%- if section.settings.menu != blank -%}
+    <nav class="header__inline-menu">
+      <ul class="list-menu list-menu--inline" role="list">
+        {%- for link in section.settings.menu.links -%}
+          <li>
+            {%- if link.links != blank -%}
+              <details-disclosure>
+                <details>
+                  <summary class="header__menu-item list-menu__item link focus-inset">
+                    <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                    {% render 'icon-caret' %}
+                  </summary>
+                  <ul class="header__submenu list-menu list-menu--disclosure caption-large motion-reduce" role="list" tabindex="-1">
+                    {%- for childlink in link.links -%}
+                      <li>
+                        {%- if childlink.links == blank -%}
+                          <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                            {{ childlink.title | escape }}
+                          </a>
+                        {%- else -%}
+                          <details>
+                            <summary class="header__menu-item link link--text list-menu__item focus-inset caption-large">
+                              {{ childlink.title | escape }}
+                              {% render 'icon-caret' %}
+                            </summary>
+                            <ul class="header__submenu list-menu motion-reduce">
+                              {%- for grandchildlink in childlink.links -%}
+                                <li>
+                                  <a href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                                    {{ grandchildlink.title | escape }}
+                                  </a>
+                                </li>
+                              {%- endfor -%}
+                            </ul>
+                          </details>
+                        {%- endif -%}
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </details>
+              </details-disclosure>
+            {%- else -%}
+              <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+                <span {%- if link.current %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+              </a>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+  {%- endif -%}
+
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
 
 {%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
@@ -825,26 +844,6 @@
       "default": 100,
       "unit": "t:sections.header.settings.logo_width.unit",
       "label": "t:sections.header.settings.logo_width.label"
-    },
-    {
-      "type": "select",
-      "id": "logo_position",
-      "options": [
-        {
-          "value": "middle-left",
-          "label": "t:sections.header.settings.logo_position.options__1.label"
-        },
-        {
-          "value": "top-left",
-          "label": "t:sections.header.settings.logo_position.options__2.label"
-        },
-        {
-          "value": "top-center",
-          "label": "t:sections.header.settings.logo_position.options__3.label"
-        }
-      ],
-      "default": "middle-left",
-      "label": "t:sections.header.settings.logo_position.label"
     },
     {
       "type": "link_list",

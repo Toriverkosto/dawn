@@ -665,18 +665,6 @@
           "unit": "px",
           "label": "Niestandardowa szerokość logo"
         },
-        "logo_position": {
-          "label": "Pozycja logo na dużych ekranach",
-          "options__1": {
-            "label": "Do środka, do lewej"
-          },
-          "options__2": {
-            "label": "Do góry, do lewej"
-          },
-          "options__3": {
-            "label": "Do góry, wyśrodkowany"
-          }
-        },
         "menu": {
           "label": "Menu"
         },

@@ -665,18 +665,6 @@
           "unit": "px",
           "label": "Largeur personnalisée du logo"
         },
-        "logo_position": {
-          "label": "Position du logo sur les grands écrans",
-          "options__1": {
-            "label": "Centré à gauche"
-          },
-          "options__2": {
-            "label": "En haut à gauche"
-          },
-          "options__3": {
-            "label": "En haut au centre"
-          }
-        },
         "menu": {
           "label": "Menu"
         },

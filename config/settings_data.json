@@ -4,11 +4,12 @@
     "colors_accent_1": "#4090cc",
     "gradient_accent_1": "linear-gradient(141deg, rgba(10, 31, 62, 1) 6%, rgba(10, 31, 62, 1) 100%)",
     "colors_accent_2": "#214e9d",
-    "gradient_accent_2": "linear-gradient(141deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 98%)",
+    "gradient_accent_2": "linear-gradient(141deg, #214e9d, #214e9d 100%)",
     "colors_text": "#0a1f3e",
     "colors_outline_button_labels": "#0092d1",
     "colors_background_1": "#ffffff",
     "colors_background_2": "#f7f7f7",
+    "colors_accent_2_text_alt": "#4B566C",
     "type_header_font": "asap_n4",
     "type_body_font": "ibm_plex_sans_n4",
     "sale_badge_color_scheme": "accent-2",
@@ -155,12 +156,12 @@
       "header": {
         "type": "header",
         "settings": {
-          "color_scheme": "background-2",
+          "color_scheme": "accent-2",
           "logo": "shopify:\/\/shop_images\/Kamerastore_Logo.png",
           "logo_width": 140,
           "logo_position": "top-center",
           "menu": "main-menu",
-          "show_line_separator": true,
+          "show_line_separator": false,
           "enable_sticky_header": false
         }
       },

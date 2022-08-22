@@ -665,18 +665,6 @@
           "unit": "px",
           "label": "Mukautetun logon leveys"
         },
-        "logo_position": {
-          "label": "Logon sijainti suurella näytöllä",
-          "options__1": {
-            "label": "Keskellä vasemmalla"
-          },
-          "options__2": {
-            "label": "Ylhäällä vasemmalla"
-          },
-          "options__3": {
-            "label": "Keskellä ylhäällä"
-          }
-        },
         "menu": {
           "label": "Valikko"
         },

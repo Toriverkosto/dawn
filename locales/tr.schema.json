@@ -665,18 +665,6 @@
           "unit": "piksel",
           "label": "Özel logo genişliği"
         },
-        "logo_position": {
-          "label": "Geniş ekranlardaki logo konumu",
-          "options__1": {
-            "label": "Orta sol"
-          },
-          "options__2": {
-            "label": "Üst sol"
-          },
-          "options__3": {
-            "label": "Üst orta"
-          }
-        },
         "menu": {
           "label": "Menü"
         },

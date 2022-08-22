@@ -671,18 +671,6 @@
           "unit": "px",
           "label": "Anpassad logotypsbredd"
         },
-        "logo_position": {
-          "label": "Logotyp-position på stora skärmar",
-          "options__1": {
-            "label": "Mitten till vänster"
-          },
-          "options__2": {
-            "label": "Överst till vänster"
-          },
-          "options__3": {
-            "label": "Längst upp i mitten"
-          }
-        },
         "menu": {
           "label": "Meny"
         },

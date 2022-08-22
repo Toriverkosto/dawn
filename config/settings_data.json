@@ -32,6 +32,17 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
+          "879db7ce-83eb-471d-82bb-6e22091434e5": {
+            "type": "announcement",
+            "settings": {
+              "text": "600+ New Old Stock Cameras Available Now! 2nd Drop is LIVE!",
+              "color_scheme": "inverse",
+              "link": "shopify:\/\/collections\/new-old-stock-compact-cameras",
+              "use_custom_color": true,
+              "color_text": "#6a4808",
+              "color_background": "linear-gradient(180deg, rgba(255, 177, 0, 1), rgba(255, 177, 0, 1) 95%)"
+            }
+          },
           "4c1a92eb-53d3-4f1d-ad29-76811ffcecfe": {
             "type": "announcement",
             "settings": {
@@ -41,17 +52,6 @@
               "use_custom_color": false,
               "color_text": "#121212",
               "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"
-            }
-          },
-          "879db7ce-83eb-471d-82bb-6e22091434e5": {
-            "type": "announcement",
-            "settings": {
-              "text": "600+ New Old Stock Cameras Available Now! 2nd Drop is LIVE!",
-              "color_scheme": "inverse",
-              "link": "shopify:\/\/collections\/new-old-stock-compact-cameras",
-              "use_custom_color": true,
-              "color_text": "#f7f7f7",
-              "color_background": "linear-gradient(180deg, rgba(133, 189, 230, 1), rgba(133, 189, 230, 1) 97%)"
             }
           },
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec": {
@@ -140,8 +140,8 @@
           }
         },
         "block_order": [
-          "4c1a92eb-53d3-4f1d-ad29-76811ffcecfe",
           "879db7ce-83eb-471d-82bb-6e22091434e5",
+          "4c1a92eb-53d3-4f1d-ad29-76811ffcecfe",
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec",
           "dc640612-8f8d-4ed8-8bfd-0f7a6df40773",
           "c3026742-d5b5-4132-8d20-364bad6e0021",

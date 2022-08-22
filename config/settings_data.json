@@ -47,11 +47,11 @@
             "type": "announcement",
             "settings": {
               "text": "600+ New Old Stock Cameras Available Now! 2nd Drop is LIVE!",
-              "color_scheme": "accent-1",
+              "color_scheme": "inverse",
               "link": "shopify:\/\/collections\/new-old-stock-compact-cameras",
               "use_custom_color": true,
-              "color_text": "#d0f7ff",
-              "color_background": "linear-gradient(180deg, rgba(33, 78, 157, 1), rgba(33, 78, 157, 1) 100%)"
+              "color_text": "#f7f7f7",
+              "color_background": "linear-gradient(180deg, rgba(133, 189, 230, 1), rgba(133, 189, 230, 1) 97%)"
             }
           },
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec": {

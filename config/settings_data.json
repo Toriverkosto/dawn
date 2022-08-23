@@ -36,17 +36,18 @@
             "type": "announcement",
             "settings": {
               "text": "600+ New Old Stock Cameras Available Now! 2nd Drop is LIVE!",
-              "color_scheme": "inverse",
+              "color_scheme": "background-2",
               "link": "shopify:\/\/collections\/new-old-stock-compact-cameras",
-              "use_custom_color": true,
+              "use_custom_color": false,
               "color_text": "#6a4808",
               "color_background": "linear-gradient(180deg, rgba(255, 177, 0, 1), rgba(255, 177, 0, 1) 95%)"
             }
           },
           "4c1a92eb-53d3-4f1d-ad29-76811ffcecfe": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
-              "text": "Shipping to: 🇫🇮 Finland 5\/10€ |  🇪🇺 EU 10€ | 🇺🇸 USA ~$23 | Most other countries 20€",
+              "text": "Shipping: 🇫🇮 Finland 5\/10€ |  🇪🇺 EU 10€ | 🇺🇸 USA ~$23 | Most others 20€",
               "color_scheme": "background-1",
               "link": "\/policies\/shipping-policy",
               "use_custom_color": false,

@@ -38,7 +38,7 @@
               "text": "600+ New Old Stock Cameras Available Now! 2nd Drop is LIVE!",
               "color_scheme": "background-2",
               "link": "shopify:\/\/collections\/new-old-stock-compact-cameras",
-              "use_custom_color": false,
+              "use_custom_color": true,
               "color_text": "#6a4808",
               "color_background": "linear-gradient(180deg, rgba(255, 177, 0, 1), rgba(255, 177, 0, 1) 95%)"
             }

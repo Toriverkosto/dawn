@@ -103,7 +103,7 @@
         "fe2afb8e-705f-4209-9b73-f50776792f84": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<p><em><span style=\"color: #ff0000;\">This item is out of stock at the moment. You can still check out with it, but note that your order will be put on hold until it is available.<\/span><\/em><\/p>"
+            "custom_liquid": "<p><em><span style=\"color: #ff0000;\">The 35mm Holder is currenly out of stock. We expect it to be back in stock within 1-2 weeks. You can still check out with it and we will ship it out when it's ready. <\/span><\/em><\/p>"
           }
         },
         "80fbe6e3-0e56-4ee6-be9c-6a5e5c5f985c": {

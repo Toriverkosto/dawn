@@ -156,7 +156,7 @@
       "taxable_property_name": "Your countries VAT incl.",
       "taxable_property_value": "EU Only.",
       "not_taxable_property_name": "VAT",
-      "not_taxable_property_value": "Price as shown. Used item, no deductible  <a href=\"\/pages\/vat\" class=\"link underlined-link\">VAT<\/a>..."
+      "not_taxable_property_value": "Price as shown. Used item, no deductible VAT"
     }
   },
   "templates": {

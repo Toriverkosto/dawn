@@ -141,8 +141,8 @@
         "play_video": "Lire la vidéo"
       },
       "view_full_details": "Afficher tous les détails",
-      "taxable": "TVA de votre pays inclue (UE uniquement).",
-      "not_taxable": "Prix tel qu'indiqué. Article d'occasion, pas de TVA déductible.",
+      "taxable_html": "TVA de votre pays inclue (UE uniquement).",
+      "not_taxable_html": "Prix tel qu'indiqué. Article d'occasion, pas de <a class=\"link\" href=\"/pages/vat\">TVA</a> déductible.",
       "product_condition_heading": "État du produit :",
       "optical_condition_heading": "Optique : {{ condition }} \/ 5",
       "mechanical_condition_heading": "Mécanique : {{ condition }} \/ 5",

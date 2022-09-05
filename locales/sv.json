@@ -141,8 +141,8 @@
         "play_video": "Spela video"
       },
       "view_full_details": "Visa alla uppgifter",
-      "taxable": "Inklusive moms",
-      "not_taxable": "Pris som visat. Begagnad artikel, ej avdragsgill.",
+      "taxable_html": "Inklusive moms",
+      "not_taxable_html": "Pris som visat. Begagnad artikel, ej avdragsgill.",
       "product_condition_heading": "Produkt skick:",
       "optical_condition_heading": "Optik: {{ condition }} \/ 5",
       "mechanical_condition_heading": "Mekanik: {{ condition }} \/ 5",

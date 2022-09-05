@@ -142,8 +142,8 @@
       },
       "view_full_details": "Προβολή όλων των λεπτομερειών",
       "product_condition_heading": "Κατάσταση Προϊόντος:",
-      "taxable": "Περιλαμβάνεται ΦΠΑ. (ΕΕ μόνο).",
-      "not_taxable": "Η τιμή είναι τελική. Τα μεταχειρισμένα αντικείμενα δεν έχουν επιστρεφόμενο ΦΠΑ.",
+      "taxable_html": "Περιλαμβάνεται ΦΠΑ. (ΕΕ μόνο).",
+      "not_taxable_html": "Η τιμή είναι τελική. Τα μεταχειρισμένα αντικείμενα δεν έχουν επιστρεφόμενο <a class=\"link\" href=\"/pages/vat\">ΦΠΑ</a>.",
       "optical_condition_heading": "Οπτικά μέρη: {{ condition }} \/ 5",
       "mechanical_condition_heading": "Μηχανικά μέρη: {{ condition }} \/ 5",
       "cosmetic_condition_heading": "Εμφάνιση: {{ condition }} \/ 5"

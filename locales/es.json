@@ -143,10 +143,10 @@
       "view_full_details": "Ver todos los detalles",
       "mechanical_condition_heading": "Estado Estetico: {{ condition }} \/ 5",
       "cosmetic_condition_heading": "Estado Estetico: {{ condition }} \/ 5",
-      "taxable": "El IVA de tu país incluido (UE solo). ",
+      "taxable_html": "El IVA de tu país incluido (UE solo). ",
       "product_condition_heading": "Condiciones Producto:",
       "optical_condition_heading": "Estado Optico: {{ condition }} \/ 5",
-      "not_taxable": "Precio final. Artículos usados no tiene IVA deducible. "
+      "not_taxable_html": "Precio final. Artículos usados no tiene <a class=\"link\" href=\"/pages/vat\">IVA</a> deducible. "
     },
     "modal": {
       "label": "Galería multimedia"

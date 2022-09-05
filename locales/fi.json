@@ -144,7 +144,7 @@
       "optical_condition_heading": "Optinen kunto: {{ condition }} \/ 5",
       "mechanical_condition_heading": "Mekaaninen kunto: {{ condition }} \/ 5",
       "cosmetic_condition_heading": "Kosmeettinen kunto: {{ condition }} \/ 5",
-      "not_taxable": "ALV 0 %, käytetty tuote. Hintaan ei lisätä veroja tai muita kuluja.",
+      "not_taxable": "<p><a href=\"\/pages\/vat” target=\"_blank\" title=\"ALV 0 %\">ALV 0 %<\/a><\/p><p>, käytetty tuote. Hintaan ei lisätä veroja tai muita kuluja.<\/p>",
       "taxable": "Sis. alv (tilausmaan mukaan)."
     },
     "modal": {
@@ -152,7 +152,7 @@
     },
     "tax": {
       "not_taxable_property_name": " ",
-      "not_taxable_property_value": "ALV 0 %, käytetty tuote. Hintaan ei lisätä veroja tai muita kuluja.",
+      "not_taxable_property_value": "<p><a href=\"\/pages\/vat” target=\"_blank\" title=\"ALV 0 %\">ALV 0 %<\/a><\/p><p>, käytetty tuote. Hintaan ei lisätä veroja tai muita kuluja.<\/p>",
       "taxable_property_name": " ",
       "taxable_property_value": "Sis. alv (EU)"
     }

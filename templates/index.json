@@ -204,6 +204,41 @@
         "show_view_all": false
       }
     },
+    "16627241848ff0f7e4": {
+      "type": "image-with-text",
+      "blocks": {
+        "1662724184aca853e2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "New Old Stock Compact Cameras"
+          }
+        },
+        "1662724184aca853e2-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Have you ever wondered what it was like to open a film camera for the first time? To be the first owner of a now-vintage photographic device? <\/p>"
+          }
+        },
+        "1662724184aca853e2-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Browse Cameras",
+            "button_link": "\/collections\/new-old-stock-compact-cameras"
+          }
+        }
+      },
+      "block_order": [
+        "1662724184aca853e2-0",
+        "1662724184aca853e2-1",
+        "1662724184aca853e2-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/NOSPSCB-1366_1500x_jpg.webp",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
     "multi_column": {
       "type": "multicolumn",
       "blocks": {
@@ -519,6 +554,7 @@
     "image_banner",
     "16336738395370bc94",
     "165416468256763b39",
+    "16627241848ff0f7e4",
     "multi_column",
     "1632470234f73d3bc0",
     "1655878837fa505e49",

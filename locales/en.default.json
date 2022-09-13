@@ -419,7 +419,7 @@
         "card_security_notice": "All transactions are secure and encrypted. "
       },
       "shipping": {
-        "shipping_method_notice": "Available Shipping Methods"
+        "shipping_method_notice": "Select your preferred shipping method."
       }
     },
     "store_availability": {

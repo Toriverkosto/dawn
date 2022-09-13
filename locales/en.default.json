@@ -417,6 +417,9 @@
       "payment": {
         "title": "Payment Options",
         "card_security_notice": "All transactions are secure and encrypted. "
+      },
+      "shipping": {
+        "shipping_method_notice": "Available Shipping Methods"
       }
     },
     "store_availability": {

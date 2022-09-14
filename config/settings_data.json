@@ -27,7 +27,7 @@
     "checkout_logo_position": "center",
     "checkout_logo_size": "small",
     "checkout_body_background_color": "#ffffff",
-    "checkout_error_color": "#d7092f",
+    "checkout_error_color": "#ff4b6a",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",

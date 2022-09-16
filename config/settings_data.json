@@ -55,6 +55,17 @@
               "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"
             }
           },
+          "cf3cf853-aa91-4717-9d99-a15f84281b60": {
+            "type": "announcement",
+            "settings": {
+              "text": "Weekend Notice: Country, Currency, & Language settings are at the bottom of this page.",
+              "color_scheme": "accent-1",
+              "link": "",
+              "use_custom_color": false,
+              "color_text": "#121212",
+              "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"
+            }
+          },
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec": {
             "type": "announcement",
             "disabled": true,
@@ -143,6 +154,7 @@
         "block_order": [
           "879db7ce-83eb-471d-82bb-6e22091434e5",
           "4c1a92eb-53d3-4f1d-ad29-76811ffcecfe",
+          "cf3cf853-aa91-4717-9d99-a15f84281b60",
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec",
           "dc640612-8f8d-4ed8-8bfd-0f7a6df40773",
           "c3026742-d5b5-4132-8d20-364bad6e0021",

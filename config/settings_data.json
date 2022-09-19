@@ -57,6 +57,7 @@
           },
           "cf3cf853-aa91-4717-9d99-a15f84281b60": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Weekend Notice: Country, Currency, & Language settings are at the bottom of this page.",
               "color_scheme": "accent-1",

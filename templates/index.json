@@ -1,5 +1,49 @@
 {
   "sections": {
+    "multi_column": {
+      "type": "multicolumn",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC0546.jpg",
+            "title": "Buy",
+            "text": "<p>We sell quality used film cameras, lenses, accessories, film, adapters, and digital gear. Around 8000 items in stock with dozens added daily.<\/p><p><a href=\"\/collections\/all-items\" title=\"All Items\">Newly Listed<\/a><\/p>"
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kamerastore_all_cameras_ad_small_f7386a3a-4fcf-48be-914b-777d8976bf5b.jpg",
+            "title": "Trade",
+            "text": "<p>In the mood for something new? Pay less or pay nothing by trading in your unwanted gear towards the purchase of something new. <\/p><p><a href=\"mailto:info@kamerastore.com\" title=\"mailto:info@kamerastore.com\">Email Us<\/a> \/ <a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\">Get a Quote<\/a><\/p>"
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BudgetSLR-9834_4a5fbbdb-8f44-44a0-93f5-503301a89ee8.jpg",
+            "title": "Sell",
+            "text": "<p>We are interested in buying almost all types of camera gear. Get a free quote with no selling commitment. <\/p><p><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\">Get a Quote<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column3",
+        "column2"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": true
+      }
+    },
     "1660560902df48f128": {
       "type": "featured-collection",
       "settings": {
@@ -237,50 +281,6 @@
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first"
-      }
-    },
-    "multi_column": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/DSC0546.jpg",
-            "title": "Buy",
-            "text": "<p>We sell quality used film cameras, lenses, accessories, film, adapters, and digital gear. Around 8000 items in stock with dozens added daily.<\/p><p><a href=\"\/collections\/all-items\" title=\"All Items\">Newly Listed<\/a><\/p>"
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/BudgetSLR-9834_4a5fbbdb-8f44-44a0-93f5-503301a89ee8.jpg",
-            "title": "Sell",
-            "text": "<p>We are interested in buying almost all types of camera gear. Get a free quote with no selling commitment. <\/p><p><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\">Get a Quote<\/a><\/p>"
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Kamerastore_all_cameras_ad_small_f7386a3a-4fcf-48be-914b-777d8976bf5b.jpg",
-            "title": "Trade",
-            "text": "<p>In the mood for something new? Pay less or pay nothing by trading in your unwanted gear towards the purchase of something new. <\/p><p><a href=\"mailto:info@kamerastore.com\" title=\"mailto:info@kamerastore.com\">Email Us<\/a> \/ <a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\">Get a Quote<\/a><\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": true
       }
     },
     "1632470234f73d3bc0": {
@@ -587,6 +587,7 @@
     }
   },
   "order": [
+    "multi_column",
     "1660560902df48f128",
     "16590912674b072be6",
     "16590913415aba16e5",
@@ -597,7 +598,6 @@
     "16336738395370bc94",
     "165416468256763b39",
     "16627241848ff0f7e4",
-    "multi_column",
     "1632470234f73d3bc0",
     "1655878837fa505e49",
     "1655879063dce72fc4",

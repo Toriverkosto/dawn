@@ -34,6 +34,7 @@
         "blocks": {
           "e252ad55-f0a2-45f8-abc4-26c0aff6d51c": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Our Helsinki Kiosk is CLOSED today (3.10) & our Tampere office is CLOSED today (3.10) from 12-17.",
               "color_scheme": "accent-1",
@@ -45,7 +46,6 @@
           },
           "4c1a92eb-53d3-4f1d-ad29-76811ffcecfe": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "Shipping: 🇫🇮 Finland 5\/10€ |  🇪🇺 EU 10€ | 🇺🇸 USA ~$20 | Most others 20€",
               "color_scheme": "background-1",

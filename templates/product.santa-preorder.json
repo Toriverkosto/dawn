@@ -37,7 +37,7 @@
         "3c9d3c18-0a30-49f4-ad09-63143e81c26b": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<style>\n.restricted {\n  background-color: #FEF7EA;\n  color: #3E4447;\n  padding-left: 15px;\n  padding-right: 15px;\n  border: 2px solid #F6DFBB;\n  margin: 10px;\n  border-radius: 5px;\n}\n<\/style>\n<\/head>\n<body>\n\n<div class=\"restricted\">\n<h3><\/h3>\n<p>This color film is limited to 10 pcs \/ customer.<\/p>\n<\/div>"
+            "custom_liquid": "<style>\n.restricted {\n  background-color: #FEF7EA;\n  color: #3E4447;\n  padding-left: 15px;\n  padding-right: 15px;\n  border: 2px solid #F6DFBB;\n  margin: 10px;\n  border-radius: 5px;\n}\n<\/style>\n<\/head>\n<body>\n\n<div class=\"restricted\">\n<h3><\/h3>\n<p>This color film is limited to 10 rolls \/ customer.<\/p>\n<\/div>"
           }
         },
         "buy_buttons": {

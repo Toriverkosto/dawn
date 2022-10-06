@@ -159,11 +159,13 @@
       }
     }
 
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelector('#continue_button').classList.add('disabled');
-      renderTermsAndConditions();
-      addTermsAndConditionsListeners();
-    });
+    if (Shopify.Checkout.step == "contact_information") {
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('#continue_button').classList.add('disabled');
+        renderTermsAndConditions();
+        addTermsAndConditionsListeners();
+      });
+    }
   </script>
 </head>
 

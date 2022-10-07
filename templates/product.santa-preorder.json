@@ -53,6 +53,12 @@
             "show_dynamic_checkout": true
           }
         },
+        "62bd11a6-c9ce-40c8-97b5-4e3378f80edc": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<\/h3>{{ product.description }}<\/div>"
+          }
+        },
         "ec88d254-bbe8-4b70-a8ba-4e63f56ef136": {
           "type": "shopify:\/\/apps\/back-in-stock-restock-alerts\/blocks\/product-restore-email\/b190bced-3b7b-47da-a05f-6ea4821c3a77",
           "disabled": true,
@@ -142,6 +148,12 @@
           "settings": {
             "custom_liquid": "<br><center>Sold By: <b>Kamerastore<\/b> <div class=\"reputon-google-reviews-widget\" id=\"279cdae0-118f-11ed-b220-85918cb29862\" style=\"display: flex; justify-content: center;\"><\/div>\n<a href=\"\/pages\/company-info\"><div class=\"link\">Registered Business<\/div><\/a><br>"
           }
+        },
+        "c2196c76-c49f-4263-8785-33257bccff4d": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -153,6 +165,7 @@
         "quantity_selector",
         "3c9d3c18-0a30-49f4-ad09-63143e81c26b",
         "buy_buttons",
+        "62bd11a6-c9ce-40c8-97b5-4e3378f80edc",
         "ec88d254-bbe8-4b70-a8ba-4e63f56ef136",
         "ff1bb9c6-eb65-4ae0-a2ab-b42152660aae",
         "d031b056-55bf-4778-a201-0c5d8ab0e178",
@@ -162,7 +175,8 @@
         "c93981a2-30f3-4294-803c-c2c27ba4890e",
         "5442ba5b-00e3-43cb-a982-68811ae1827d",
         "5221b8a7-4db2-4a4d-bf04-5d9cb7e5a0f4",
-        "137f138a-0dc5-4207-a49d-da4ca1220540"
+        "137f138a-0dc5-4207-a49d-da4ca1220540",
+        "c2196c76-c49f-4263-8785-33257bccff4d"
       ],
       "settings": {
         "product_role": "stock",
@@ -178,12 +192,14 @@
       "blocks": {
         "468d984b-6e01-427e-8057-fdf6d4ba7e61": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Description"
           }
         },
         "75a841b9-91e0-452c-92b5-b7169e20364d": {
           "type": "main_stock_description",
+          "disabled": true,
           "settings": {
           }
         }

@@ -192,12 +192,14 @@
       "blocks": {
         "468d984b-6e01-427e-8057-fdf6d4ba7e61": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Description"
           }
         },
         "75a841b9-91e0-452c-92b5-b7169e20364d": {
           "type": "main_stock_description",
+          "disabled": true,
           "settings": {
           }
         }

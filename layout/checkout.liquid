@@ -130,14 +130,15 @@
       let tc_agree_element = document.querySelector('#terms-and-conditions-agree');
       if (tc_agree_element !== null) {
         let tc_alert_element = document.querySelector('p.terms-and-conditions-alert');
-
         tc_agree_element.addEventListener('click', function () {
           if (tc_agree_element.checked) {
             document.querySelector('#continue_button').classList.remove('disabled');
             tc_alert_element.classList.add('hidden');
+            sessionStorage.setItem('checked',true)
           } else {
             document.querySelector('#continue_button').classList.add('disabled');
             tc_alert_element.classList.remove('hidden');
+            sessionStorage.removeItem('checked')
           }
         });
 

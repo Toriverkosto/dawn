@@ -160,11 +160,19 @@
       }
     }
 
+    function checkTermsCheckbox () {
+      if (sessionStorage.getItem('checked')=== 'true') {
+        document.querySelector('#terms-and-conditions-agree').checked = true;
+        document.querySelector('#continue_button').classList.remove('disabled')
+      }
+    }
+
     if (Shopify.Checkout.step == "contact_information") {
       document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('#continue_button').classList.add('disabled');
         renderTermsAndConditions();
         addTermsAndConditionsListeners();
+        checkTermsCheckbox();
       });
     }
   </script>

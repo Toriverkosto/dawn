@@ -100,7 +100,7 @@
   </style>
 
   <script>
-    
+
     function renderTermsAndConditions (checked) {
       const p_checkbox = document.createElement('p');
       p_checkbox.className = 'terms-and-conditions-checkbox';
@@ -170,7 +170,6 @@
         document.querySelector('#continue_button').classList.add('disabled');
         renderTermsAndConditions(sessionStorage.getItem('checked'));
         addTermsAndConditionsListeners();
-        checkTermsCheckbox();
       });
     }
   </script>

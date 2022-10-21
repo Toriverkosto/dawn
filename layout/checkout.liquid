@@ -45,11 +45,11 @@
       event: 'purchase',
       currency: '{{ shop.currency }}',
       transaction_id: '{{ order.order_number }}',
-      value: {{ order.subtotal_price | money_without_currency | replace: ',', '.' | default '0'}},
+      value: {{ order.subtotal_price | money_without_currency | replace: ',', '.' | default: '0'}},
       discount: Shopify?.checkout?.discount?.amount,
       coupon: Shopify?.checkout?.discount?.code,
-      shipping: {{ order.shipping_price | money_without_currency | replace: ',', '.' | default '0'}},
-      tax: {{ order.tax_price | money_without_currency | replace: ',', '.' | default '0' }},
+      shipping: {{ order.shipping_price | money_without_currency | replace: ',', '.' | default: '0'}},
+      tax: {{ order.tax_price | money_without_currency | replace: ',', '.' | default: '0' }},
       items: (Shopify?.checkout?.line_items || []).map(item => ({
         item_id: item?.sku,
         item_name: item?.title,
@@ -129,7 +129,7 @@
       step_footer_element.parentElement.insertBefore(p_checkbox, step_footer_element);
       step_footer_element.parentElement.insertBefore(p_alert, step_footer_element);
     }
-    
+
     function addTermsAndConditionsListeners () {
       let tc_agree_element = document.querySelector('#terms-and-conditions-agree');
       if (tc_agree_element !== null) {

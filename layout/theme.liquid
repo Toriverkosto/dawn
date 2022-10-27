@@ -168,6 +168,7 @@
     {% if template == "product" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });</script>{% endif %}{% endif %}
 
   {% comment %}end of code from JORDAN {% endcomment %}
+   
     {% if shop.metafields.global.google_tag_manager_id != nil %}
       <!-- Google Tag Manager -->
       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -185,6 +186,7 @@
         window.hulkappsWishlist.baseURL = '/apps/advanced-wishlist/api';
         window.hulkappsWishlist.hasAppBlockSupport = '1';
         </script>
+   
     {% if shop.metafields.global.google_tag_manager_id != nil %}
       <!-- Google Tag Manager (noscript) -->
       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WB6W9KG"

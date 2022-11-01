@@ -1,0 +1,11 @@
+{% comment %}
+@name: Genie - Store Pickup
+@version: 0.0.1
+{% endcomment %}
+{{ 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css' | stylesheet_tag }}
+{{ 'genie-storepickup.css' | asset_url | stylesheet_tag }}
+{{ 'genie-storepickup-custom.css' | asset_url | stylesheet_tag }}
+{{ 'https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js' | script_tag }}
+{{ 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js' | script_tag }}
+{{ 'genie-storepickup-vender.js' | asset_url | script_tag }}
+{{ 'genie-storepickup.js' | asset_url | script_tag }}

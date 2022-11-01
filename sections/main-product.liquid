@@ -49,16 +49,26 @@
       {% if product_system != nil %}› <a href="/collections/{{ product_system | downcase | replace: "/", "" | replace: "  ", " " | replace: " ", "-" }}" class="link">{{ product_system }}</a>{% endif %}
     </div>
   {% endif %}
-  <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+  <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% elsif product.metafields.kameratori.host.value.media != blank %}gridd--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper">
       <slider-component class="slider-mobile-gutter">
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
         </a>
         <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list">
-          {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
+          {%- if product.images.size > 0 -%}
+            {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
+          {%- elsif product.metafields.kameratori.host != blank -%}
+            {%- assign host_product = product.metafields.kameratori.host.value -%}
+            {%- assign variant_images = host_product.images | where: 'attached_to_variant?', true | map: 'src' -%}
+          {%- endif -%}
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
             {%- assign media = product.selected_or_first_available_variant.featured_media -%}
+            <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
+              {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
+            </li>
+          {%- elsif host_product.featured_media != null-%}
+            {%- assign media = host_product.featured_media -%}
             <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
               {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
             </li>
@@ -66,7 +76,7 @@
           {%- for media in product.media -%}
             {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
               <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
-                {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
+                {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %} 
               </li>
             {%- endunless -%}
           {%- endfor -%}
@@ -148,7 +158,7 @@
                   {{ block.settings.page.content }}
                 </div>
               </details>
-            </div>
+            </div>  
           {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">
@@ -478,11 +488,13 @@
   <product-modal id="ProductModal-{{ section.id }}" class="product-media-modal media-modal">
     <div class="product-media-modal__dialog" role="dialog" aria-label="{{ 'products.modal.label' | t }}" aria-modal="true" tabindex="-1">
       <button id="ModalClose-{{ section.id }}" type="button" class="product-media-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
-
       <div class="product-media-modal__content" role="document" aria-label="{{ 'products.modal.label' | t }}" tabindex="0">
         {%- liquid
           if product.selected_or_first_available_variant.featured_media != null
             assign media = product.selected_or_first_available_variant.featured_media
+            render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: section.settings.hide_variants
+          elsif host_product.featured_media != null
+            assign media = host_product.featured_media
             render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: section.settings.hide_variants
           endif
         -%}

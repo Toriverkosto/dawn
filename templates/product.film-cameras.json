@@ -134,16 +134,6 @@
             "border_color": "#2b75ae"
           }
         },
-        "a41a8e68-deb3-4414-bc77-846ae026a7ec": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Actual Item Pictured",
-            "content": "<p>We take the time to photograph every used item. When you buy from us you are getting the item you see in the photos.<\/p>",
-            "page": "",
-            "icon": "eye"
-          }
-        },
         "f8962c4a-da22-4a3d-8f73-05ff4d13ed57": {
           "type": "collapsible_tab",
           "disabled": true,

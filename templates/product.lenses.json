@@ -140,16 +140,6 @@
             "icon": "lock"
           }
         },
-        "a41a8e68-deb3-4414-bc77-846ae026a7ec": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Actual Item Pictured",
-            "content": "<p>We take the time to photograph every used item. When you buy from us you are getting the item you see in the photos.<\/p>",
-            "page": "",
-            "icon": "eye"
-          }
-        },
         "57f7f440-8529-43fc-b001-797465faabcf": {
           "type": "collapsible_tab",
           "disabled": true,

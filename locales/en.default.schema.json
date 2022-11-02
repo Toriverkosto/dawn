@@ -1635,6 +1635,9 @@
         },
         "show_sku_and_barcode": {
           "label": "Show SKU and Barcode"
+        },
+        "show_image_label": {
+          "label": "Show if image is from the actual item or from the database item"
         }
       }
     },

@@ -156,7 +156,8 @@
         "c93981a2-30f3-4294-803c-c2c27ba4890e",
         "977b845e-4c7a-4d63-b5f1-d9c5828569d7",
         "d77e20c7-084d-471a-954d-4bc9d03753ea",
-        "1bfd5f7c-0445-41de-94b1-ad7915d48444"
+        "1bfd5f7c-0445-41de-94b1-ad7915d48444",
+        "custom-block"
       ],
       "settings": {
         "product_role": "stock",
@@ -164,7 +165,8 @@
         "hide_variants": false,
         "enable_video_looping": false,
         "show_breadcrumbs": true,
-        "show_sku_and_barcode": true
+        "show_sku_and_barcode": true,
+        "show_image_label": true
       }
     },
     "1657620235cdd65344": {

@@ -71,12 +71,25 @@
             {%- assign media = host_product.featured_media -%}
             <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
               {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
+              {%- if section.settings.show_image_label -%}
+              <div class="image_label">
+                <div id="image_type">Stock Photo</div>
+              </div>
+              {%- endif -%}
             </li>
           {%- endif -%}
           {%- for media in product.media -%}
             {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
               <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
                 {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %} 
+                {%- if section.settings.show_image_label and forloop.index == 1 -%}
+                <div class="image_label">{%- if product.metafields.kameratori.listing_facts.last.value.image_source != "database|actual" or product.metafields.kameratori.listing_facts.value.last.image_source == null or product.metafields.kameratori.listing_facts == blank -%}
+                  <div id="image_type">Actual Item Pictured</div>
+                {%- else -%}
+                  <div id="image_type">Stock Photo</div>
+                {%- endif -%}
+                </div>
+                {%- endif -%}
               </li>
             {%- endunless -%}
           {%- endfor -%}
@@ -1158,6 +1171,12 @@
       "id": "show_sku_and_barcode",
       "default": false,
       "label": "t:sections.main-product.settings.show_sku_and_barcode.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_image_label",
+      "default": true,
+      "label": "t:sections.main-product.settings.show_image_label.label"
     }
   ]
 }

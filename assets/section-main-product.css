@@ -694,6 +694,7 @@ a.product__text {
     right: 5rem;
     top: 2.2rem;
   }
+}
 
 @media screen and (min-width: 990px) {
   .product-media-modal__content {

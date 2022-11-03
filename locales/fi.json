@@ -106,6 +106,8 @@
       "description": "Tuotteen kuvaus",
       "on_sale": "ALE",
       "product_variants": "Tuoteversiot",
+      "actual_item_image": "Myytävä tuote kuvattuna",
+      "stock_item_image": "Esimerkkikuva",
       "quantity": {
         "label": "Määrä",
         "input_label": "Tuotteen {{ product }} määrä",

@@ -73,7 +73,9 @@
               {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
               {%- if section.settings.show_image_label -%}
               <div class="image_label">
-                <div id="image_type">Stock Photo</div>
+                <div class="image_type">
+                  {{ "products.product.stock_item_image" | t }}
+                </div>
               </div>
               {%- endif -%}
             </li>
@@ -83,11 +85,18 @@
               <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
                 {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %} 
                 {%- if section.settings.show_image_label and forloop.index == 1 -%}
-                <div class="image_label">{%- if product.metafields.kameratori.listing_facts.last.value.image_source != "database|actual" or product.metafields.kameratori.listing_facts.value.last.image_source == null or product.metafields.kameratori.listing_facts == blank -%}
-                  <div id="image_type">Actual Item Pictured</div>
-                {%- else -%}
-                  <div id="image_type">Stock Photo</div>
-                {%- endif -%}
+                <div class="image_label">
+                  {%- if product.metafields.kameratori.listing_facts.value.last.image_source != "database" 
+                  or product.metafields.kameratori.listing_facts.value.last.image_source == null 
+                  or product.metafields.kameratori.listing_facts == blank -%}
+                  <div class="image_type">
+                    {{ "products.product.actual_item_image" | t }}
+                  </div>
+                  {%- else -%}
+                  <div class="image_type">
+                    {{ "products.product.stock_item_image" | t }}
+                  </div>
+                  {%- endif -%}
                 </div>
                 {%- endif -%}
               </li>

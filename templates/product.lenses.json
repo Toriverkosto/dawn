@@ -102,7 +102,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Shipping Details",
-            "content": "<p><span style=\"text-decoration:underline\"><strong>Handling Time<br\/><\/strong><\/span>0-1 business days (if express priority)<br\/>1-3 business days (all other orders)<\/p><p><span style=\"text-decoration:underline\"><strong>Transit Time<\/strong><\/span> (all orders)<span style=\"text-decoration:underline\"><strong><br\/><\/strong><\/span>🇫🇮 <strong>Finland<\/strong> from 5€ | 1-3 days<strong><br\/><\/strong>🇪🇺 <strong>EU<\/strong> from 10€ | 1-3 days<br\/>🇺🇸 <strong>USA<\/strong> from 20€  | 3-5 days<br\/>Most others from 20€ | 3-7 days<\/p><p><a href=\"\/policies\/shipping-policy\" title=\"Shipping Policy\">Shipping Policy<\/a><\/p>",
+            "content": "<p><span style=\"text-decoration:underline\"><strong>Handling Time<br\/><\/strong><\/span>0-1 business days (if express priority)<br\/>1-3 business days (all other orders)<\/p><p><span style=\"text-decoration:underline\"><strong>Transit Time<\/strong><\/span> (all orders)<span style=\"text-decoration:underline\"><strong><br\/><\/strong><\/span>🇫🇮 <strong>Finland<\/strong> from 6.90€ | 1-3 days<strong><br\/><\/strong>🇪🇺 <strong>EU<\/strong> from 12.90€ | 1-3 days<br\/>🇺🇸 <strong>USA<\/strong> from 24.90€ | 3-5 days<br\/>Most others from 24.90€ | 3-7 days<\/p><p><a href=\"\/policies\/shipping-policy\" title=\"Shipping Policy\">Shipping Policy<\/a><\/p>",
             "page": "",
             "icon": "box"
           }
@@ -122,12 +122,17 @@
             "theme_color": "#f15975",
             "button_style": "style_3",
             "button_border": 0,
+            "button_font_size": 16,
+            "button_font_weight": 500,
             "button_border_radius": 0,
             "button_vertical_space": 9,
             "button_horizontal_space": 16,
             "button_text_color": "#ffffff",
             "button_background": "#5c6ac4",
-            "border_color": "#5c6ac4"
+            "border_color": "#5c6ac4",
+            "hover_button_text_color": "#ffffff",
+            "hover_button_background_color": "#5c6ac4",
+            "hover_button_border_color": "#5c6ac4"
           }
         },
         "2c639f92-55f6-40f5-8cff-21157d005727": {
@@ -174,7 +179,6 @@
         "a4908876-2ec2-4049-8519-f88aac2c716e",
         "68432eec-9888-4c80-8923-910130f65bc2",
         "2c639f92-55f6-40f5-8cff-21157d005727",
-        "a41a8e68-deb3-4414-bc77-846ae026a7ec",
         "57f7f440-8529-43fc-b001-797465faabcf",
         "19cde100-6dcd-4205-b3f1-bdf7a6f9808a"
       ],

@@ -27,7 +27,7 @@
   width: 17.4rem;
   height: 2.6rem;
   background:  rgba(var(--color-foreground), 0.04);
-  border: 0.1rem solid rgba(var(--color-foreground), 0.5);
+  border: 0.1rem solid rgba(var(--color-foreground), 0.2);
   border-radius: 0.6rem;
   flex: none;
   order: 0;

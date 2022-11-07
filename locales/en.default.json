@@ -104,6 +104,8 @@
       "description": "Description",
       "on_sale": "Sale",
       "product_variants": "Product variants",
+      "actual_item_image": "Actual item pictured",
+      "stock_item_image": "Stock photo",
       "taxable_html": "Your countries <a class=\"link\" href=\"\/pages\/vat\">VAT<\/a>. incl. (EU only).",
       "not_taxable_html": "Price as shown. Used item, no deductible <a class=\"link\" href=\"\/pages\/vat\">VAT<\/a>.",
       "media": {

@@ -117,6 +117,11 @@
             "icon": "return"
           }
         },
+        "d9856116-168a-4be8-9784-ea10ea8b6aa1": {
+          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
+          "settings": {
+          }
+        },
         "977b845e-4c7a-4d63-b5f1-d9c5828569d7": {
           "type": "shopify:\/\/apps\/advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
           "settings": {
@@ -158,6 +163,7 @@
         "521f634c-528e-4400-a277-1e91dfb3c5d4",
         "e44a2970-017f-4a65-9008-2a056066686c",
         "c93981a2-30f3-4294-803c-c2c27ba4890e",
+        "d9856116-168a-4be8-9784-ea10ea8b6aa1",
         "977b845e-4c7a-4d63-b5f1-d9c5828569d7",
         "1bfd5f7c-0445-41de-94b1-ad7915d48444"
       ],

@@ -120,6 +120,11 @@
             "icon": "check_mark"
           }
         },
+        "ed5570a2-6ee7-46a2-9e73-d03ca742b44b": {
+          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
+          "settings": {
+          }
+        },
         "af332e60-b155-4814-bb18-30757c0c706d": {
           "type": "shopify:\/\/apps\/advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
           "settings": {
@@ -163,6 +168,7 @@
         "e44a2970-017f-4a65-9008-2a056066686c",
         "c93981a2-30f3-4294-803c-c2c27ba4890e",
         "f36d21a3-4810-4879-abc1-cf7c1fd35286",
+        "ed5570a2-6ee7-46a2-9e73-d03ca742b44b",
         "af332e60-b155-4814-bb18-30757c0c706d",
         "261a9a2b-f287-4c43-8fce-477e4fc8be46"
       ],
@@ -172,7 +178,8 @@
         "hide_variants": false,
         "enable_video_looping": false,
         "show_breadcrumbs": true,
-        "show_sku_and_barcode": true
+        "show_sku_and_barcode": true,
+        "show_image_label": true
       }
     },
     "1657620671c07e2171": {

@@ -85,11 +85,6 @@
             "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"film-cameras\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n          <span class=\"inventoryLocationLoading\"> <\/span>\n          <\/div>\n{% endunless %}"
           }
         },
-        "68e2c93e-ddb1-41e2-9782-e6a70e5e488b": {
-          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
-          "settings": {
-          }
-        },
         "6ff4987b-8f35-4a2e-89e3-3f40f342da38": {
           "type": "condition",
           "settings": {
@@ -123,6 +118,11 @@
             "content": "<p>Change your mind? Not satisfied? Let us know within 30 days of delivery for a return and refund.<\/p><p><a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"\/policies\/refund-policy\">Read More<\/a><\/p>",
             "page": "",
             "icon": "return"
+          }
+        },
+        "68e2c93e-ddb1-41e2-9782-e6a70e5e488b": {
+          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
+          "settings": {
           }
         },
         "544372e8-f86d-4543-aa94-172d88ad169e": {
@@ -181,11 +181,11 @@
         "4f0717e0-34d7-44d7-9543-6fdf50a55941",
         "buy_buttons",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
-        "68e2c93e-ddb1-41e2-9782-e6a70e5e488b",
         "6ff4987b-8f35-4a2e-89e3-3f40f342da38",
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
+        "68e2c93e-ddb1-41e2-9782-e6a70e5e488b",
         "544372e8-f86d-4543-aa94-172d88ad169e",
         "f8962c4a-da22-4a3d-8f73-05ff4d13ed57",
         "92fd3d60-c515-429c-a9e4-6bb9e3712c80",

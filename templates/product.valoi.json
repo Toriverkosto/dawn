@@ -209,7 +209,7 @@
         "enable_video_looping": false,
         "show_breadcrumbs": true,
         "show_sku_and_barcode": true,
-        "show_image_label": true
+        "show_image_label": false
       }
     },
     "16587538834d2716f8": {

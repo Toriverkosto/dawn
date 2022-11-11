@@ -105,6 +105,22 @@
         "enable_video_looping": false
       }
     },
+    "16681567159a25ad0d": {
+      "type": "apps",
+      "blocks": {
+        "56632df0-1540-4fc5-88ce-e54fba428f43": {
+          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "56632df0-1540-4fc5-88ce-e54fba428f43"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "1660560902df48f128": {
       "type": "featured-collection",
       "settings": {
@@ -603,53 +619,12 @@
         "show_vendor": true,
         "show_rating": false
       }
-    },
-    "1662724791b684973d": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "1662724791ca81eb27-0": {
-          "type": "column",
-          "settings": {
-            "title": "Sell Your Camera \/ Lens Today",
-            "text": "<p>We are interested in buying your camera gear. Get a free quote with no selling commitment. Get paid with a bank transfer or a Kamerastore gift card.<\/p><p><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\">Get a Quote<\/a><\/p>"
-          }
-        },
-        "1662724791ca81eb27-1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
-        "1662724791ca81eb27-2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1662724791ca81eb27-0",
-        "1662724791ca81eb27-1",
-        "1662724791ca81eb27-2"
-      ],
-      "settings": {
-        "title": "Multicolumn",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "swipe_on_mobile": false
-      }
     }
   },
   "order": [
     "multi_column",
     "24a31f5f-7707-4e44-a69c-f75161723008",
+    "16681567159a25ad0d",
     "1660560902df48f128",
     "16590912674b072be6",
     "16590913415aba16e5",
@@ -669,7 +644,6 @@
     "1632819284873cdad3",
     "16328199566df3daf4",
     "16328202527d1c0448",
-    "16328203716b324724",
-    "1662724791b684973d"
+    "16328203716b324724"
   ]
 }

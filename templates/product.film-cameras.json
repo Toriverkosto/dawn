@@ -79,6 +79,11 @@
             "show_dynamic_checkout": true
           }
         },
+        "68e2c93e-ddb1-41e2-9782-e6a70e5e488b": {
+          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
+          "settings": {
+          }
+        },
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb": {
           "type": "custom_liquid",
           "settings": {
@@ -175,6 +180,7 @@
         "99452d1b-4d7e-4077-a88b-abeded9e84f2",
         "4f0717e0-34d7-44d7-9543-6fdf50a55941",
         "buy_buttons",
+        "68e2c93e-ddb1-41e2-9782-e6a70e5e488b",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
         "6ff4987b-8f35-4a2e-89e3-3f40f342da38",
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
@@ -191,7 +197,8 @@
         "hide_variants": false,
         "enable_video_looping": false,
         "show_breadcrumbs": true,
-        "show_sku_and_barcode": true
+        "show_sku_and_barcode": true,
+        "show_image_label": true
       }
     },
     "16579008498f69713d": {

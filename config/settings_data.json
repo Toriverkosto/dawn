@@ -85,7 +85,7 @@
             "settings": {
               "text": "GREEN WEEK is here! 6000+ items on sale, up to 50% off!",
               "color_scheme": "accent-1",
-              "link": "https:\/\/kamerastore.com\/collections\/green-week-main-collection",
+              "link": "\/collections\/green-week-main-collection",
               "use_custom_color": true,
               "color_text": "#ffffff",
               "color_background": "linear-gradient(180deg, rgba(0, 128, 96, 1) 100%, rgba(74, 182, 255, 1) 100%)"

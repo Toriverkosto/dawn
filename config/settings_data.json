@@ -81,7 +81,6 @@
           },
           "b6ada2b3-3aec-45d2-9fd9-3dfb0f47269a": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "GREEN WEEK is here! 6000+ items on sale, up to 50% off!",
               "color_scheme": "accent-1",

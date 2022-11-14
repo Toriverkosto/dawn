@@ -2,6 +2,7 @@
   "sections": {
     "f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f": {
       "type": "featured-product",
+      "disabled": true,
       "blocks": {
         "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-0": {
           "type": "text",
@@ -71,7 +72,6 @@
     },
     "163715637672ee2874": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "16371563761f101b4d-0": {
           "type": "heading",
@@ -107,7 +107,6 @@
     },
     "16553912346ad77219": {
       "type": "collage",
-      "disabled": true,
       "blocks": {
         "16553912345d4aa027-1": {
           "type": "product",

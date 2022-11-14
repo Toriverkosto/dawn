@@ -44,6 +44,22 @@
         "swipe_on_mobile": true
       }
     },
+    "ddec4f30-078a-4448-a1c9-25e86fe7a449": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Green Week 2022",
+        "collection": "green-week-main-collection",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": false,
+        "show_vendor": true,
+        "show_rating": false
+      }
+    },
     "16681567159a25ad0d": {
       "type": "apps",
       "blocks": {
@@ -562,6 +578,7 @@
   },
   "order": [
     "multi_column",
+    "ddec4f30-078a-4448-a1c9-25e86fe7a449",
     "16681567159a25ad0d",
     "1660560902df48f128",
     "16590912674b072be6",

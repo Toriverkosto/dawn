@@ -1764,9 +1764,9 @@ input[type='checkbox'] {
 }
 
 /* section-announcement-bar */
-#shopify-section-announcement-bar {
-  z-index: 4;
-}
+/*#shopify-section-announcement-bar {*/
+/*  z-index: 4;*/
+/*}*/
 
 .announcement-bar {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);

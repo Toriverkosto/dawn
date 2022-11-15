@@ -109,7 +109,7 @@
           "logo": "shopify:\/\/shop_images\/image.png",
           "logo_width": 140,
           "menu": "main-menu",
-          "show_line_separator": true,
+          "show_line_separator": false,
           "enable_sticky_header": true
         }
       },

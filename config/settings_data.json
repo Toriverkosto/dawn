@@ -70,7 +70,6 @@
           },
           "39d85c5b-b96e-42e4-b90d-5d4e816742eb": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "Europe's Film Camera Specialists since 2010",
               "color_scheme": "accent-1",
@@ -82,6 +81,7 @@
           },
           "b6ada2b3-3aec-45d2-9fd9-3dfb0f47269a": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Green Week discounts 5000+ items on sale, up to 50% off. ENDS TODAY",
               "color_scheme": "accent-1",

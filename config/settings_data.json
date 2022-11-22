@@ -73,22 +73,10 @@
             "settings": {
               "text": "Europe's Film Camera Specialists since 2010",
               "color_scheme": "accent-1",
-              "link": "",
+              "link": "shopify:\/\/pages\/about-kamerastore",
               "use_custom_color": false,
               "color_text": "#121212",
               "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"
-            }
-          },
-          "b6ada2b3-3aec-45d2-9fd9-3dfb0f47269a": {
-            "type": "announcement",
-            "disabled": true,
-            "settings": {
-              "text": "Green Week discounts 5000+ items on sale, up to 50% off. ENDS TODAY",
-              "color_scheme": "accent-1",
-              "link": "\/collections\/green-week-main-collection",
-              "use_custom_color": true,
-              "color_text": "#ffffff",
-              "color_background": "linear-gradient(180deg, rgba(0, 128, 96, 1) 100%, rgba(74, 182, 255, 1) 100%)"
             }
           }
         },
@@ -96,8 +84,7 @@
           "e252ad55-f0a2-45f8-abc4-26c0aff6d51c",
           "879db7ce-83eb-471d-82bb-6e22091434e5",
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec",
-          "39d85c5b-b96e-42e4-b90d-5d4e816742eb",
-          "b6ada2b3-3aec-45d2-9fd9-3dfb0f47269a"
+          "39d85c5b-b96e-42e4-b90d-5d4e816742eb"
         ],
         "settings": {
         }

@@ -34,6 +34,10 @@ cd dawn
 ```sh
 shopify theme serve
 ```
+Shopify CLI 3.0
+```sh
+shopify theme dev --store=kameratori-en.myshopify.com
+```
 
 >:information_source: You'll need access to a Shopify store in order to get started with theme development. If you don't already have one, you can set up a [development store](https://shopify.dev/themes/tools/development-stores).
 

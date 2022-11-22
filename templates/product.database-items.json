@@ -146,7 +146,8 @@
         "hide_variants": false,
         "enable_video_looping": false,
         "show_breadcrumbs": false,
-        "show_sku_and_barcode": false
+        "show_sku_and_barcode": false,
+        "show_image_label": false
       }
     },
     "1657620583d53dcde3": {

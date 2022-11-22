@@ -46,6 +46,7 @@
     },
     "ddec4f30-078a-4448-a1c9-25e86fe7a449": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Green Week 2022",
         "collection": "green-week-main-collection",

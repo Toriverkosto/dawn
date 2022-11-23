@@ -468,6 +468,9 @@
           "settings": {
             "collection": {
               "label": "Collection"
+            },
+          "popular": {
+            "label":"Show popular tag"
             }
           }
         }

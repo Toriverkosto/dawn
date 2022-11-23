@@ -26,8 +26,8 @@
             {%- else -%}
             {%- assign tagi = block.settings.collection.title -%}
             {%- endif -%}
-                          <!-- paginointia ei ehkä tarvi {% paginate collections['new-last-7-days'].products by 1000 %}--> 
           {%- assign amount = 0 -%}
+           <!--{% paginate collections['new-last-7-days'].products by 1000 %}-->
           {%- for product in collections['new-last-7-days'].products -%}
           {%- assign testi = product -%}
           {%- assign tagi1 = "System-" | append: tagi -%}
@@ -36,8 +36,8 @@
           {%- assign amount = amount | plus:1 -%}
           {%- endif -%}
           {%- endfor -%}
+          <!--{%- endpaginate -%}-->
           {{amount}}
-  <!-- Remember to change the name  {% endpaginate %}--> 
         </div>
       </div>
       <div class="title_and_qty_container">
@@ -45,7 +45,7 @@
           {{ block.settings.collection.title}}
         </div>
         <div class="collection_qty{% if block.settings.collection.title == "Cameras" or block.settings.collection.title == "Accessories" or block.settings.collection.title == "Lenses" %} cat {% endif %}">
-          {{ block.settings.collection.all_products_count}}
+        {{ block.settings.collection.all_products_count}} {{ "sections.featured_collection.items" | t  }}
         </div>
       </div>
       {%- if block.settings.popular -%}
@@ -69,7 +69,7 @@
   {%- endcase -%}
   {%- endfor -%}
 </div>
-<!-- Remember to change the names -->
+
 {% schema %}
 {
   "name": "t:sections.collection-list.name",

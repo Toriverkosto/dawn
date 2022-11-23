@@ -1,0 +1,132 @@
+<div class="base_container">
+  {%- for block in section.blocks -%}
+  {% case block.type %}
+  {%- when 'heading' -%}
+  <h2 class="image-with-text__heading h1" {{ block.shopify_attributes }}>
+    {{ block.settings.heading | escape }}
+  </h2>
+  {%- when 'text' -%}
+  <div class="image-with-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+  <div class="weekly_news_container_empty">
+    <div class="new_qty_empty">
+      <div class="new_qty_text">
+        {{ "sections.featured_collection.new" | t  }}
+      </div>
+    </div>
+  </div>
+  {%- when 'featured_collection' -%}
+  <a href="/collections/{{ block.settings.collection.handle }}">
+    <div class="weekly_news_container{% if block.settings.collection.title == "Cameras" or block.settings.collection.title == "Accessories" or block.settings.collection.title == "Lenses" %} cat {% endif %}">
+      <div class="new_qty">
+        <div class="new_qty_text">
+            {%- if block.settings.collection.title == "Micro Four Thirds (M4/3)" -%}
+            {%- assign tagi = "Micro Four Thirds" -%}
+            {%- elsif block.settings.collection.title == "Contax/Yashica" -%}
+            {%- assign tagi = "Contax Yashica" -%}
+            {%- else -%}
+            {%- assign tagi = block.settings.collection.title -%}
+            {%- endif -%}
+                          <!-- paginointia ei ehkä tarvi {% paginate collections['new-last-7-days'].products by 1000 %}--> 
+          {%- assign amount = 0 -%}
+          {%- for product in collections['new-last-7-days'].products -%}
+          {%- assign testi = product -%}
+          {%- assign tagi1 = "System-" | append: tagi -%}
+          {%- assign tagi2 = "Category-" | append: tagi -%}
+          {%- if testi.tags contains tagi1 or testi.tags contains tagi2 -%}
+          {%- assign amount = amount | plus:1 -%}
+          {%- endif -%}
+          {%- endfor -%}
+          {{amount}}
+  <!-- Remember to change the name  {% endpaginate %}--> 
+        </div>
+      </div>
+      <div class="title_and_qty_container">
+        <div class="collection_title{% if block.settings.collection.title == "Cameras" or block.settings.collection.title == "Accessories" or block.settings.collection.title == "Lenses" %} cat {% endif %}">
+          {{ block.settings.collection.title}}
+        </div>
+        <div class="collection_qty{% if block.settings.collection.title == "Cameras" or block.settings.collection.title == "Accessories" or block.settings.collection.title == "Lenses" %} cat {% endif %}">
+          {{ block.settings.collection.all_products_count}}
+        </div>
+      </div>
+      {%- if block.settings.popular -%}
+      <div class="popular_container">
+        <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.5 4.6871C2.5 3.86804 1.44722 3.65094 1.16791 4.41732C0.492283 6.27114 0 7.92952 0 8.82613C0 11.6836 2.23858 14 5 14C7.76142 14 10 11.6836 10 8.82613C10 7.86284 9.43178 6.02028 8.67844 4.00073C7.70257 1.38462 7.21464 0.0765611 6.61233 0.00610608C6.4196 -0.0164383 6.20934 0.0240942 6.03739 0.116941C5.5 0.407104 5.5 1.83377 5.5 4.6871C5.5 5.54434 4.82843 6.23927 4 6.23927C3.17157 6.23927 2.5 5.54434 2.5 4.6871Z" fill="white"/>
+        </svg>
+        <div class="popular_text">
+          {{ "sections.featured_collection.popular" | t  }}
+        </div>
+      </div>
+      {%- endif -%}
+                       <!-- For prices, dit not work correctly, maybe fixing later let's see
+                  {% paginate block.settings.collection.products by 10000 %}
+                  {%- assign max_price = block.settings.collection.products | sort:'price' -%}
+                  <div class="price_container{% if block.settings.collection.title == "Cameras" or block.settings.collection.title == "Accessories" or block.settings.collection.title == "Lenses" %} pasi {% endif %}">
+                  {{ max_price[0].price_max | money }} - {{ max_price[-1].price_max | money_without_trailing_zeros }}
+                  </div>
+                  {% endpaginate %}-->
+    </div>
+  {%- endcase -%}
+  {%- endfor -%}
+</div>
+<!-- Remember to change the names -->
+{% schema %}
+{
+  "name": "t:sections.collection-list.name",
+  "presets": [
+  {
+  "name": "Weekly News",
+  "category": "ADVANCED LAYOUT"
+  }],
+    "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.image-with-text.blocks.heading.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Weekly Update",
+          "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "t:sections.image-with-text.blocks.text.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Here is a summary of all the items we’ve listed in the last 7 days. Click your favorite to view the collection. There is always items which were sold very quickly and cannot be seen here. </p>",
+          "label": "t:sections.image-with-text.blocks.text.settings.text.label"
+        }
+      ]
+    }, 
+    {
+      "type": "featured_collection",
+      "name": "t:sections.collection-list.blocks.featured_collection.name",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "t:sections.collection-list.blocks.featured_collection.settings.collection.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "popular",
+          "label": "t:sections.collection-list.blocks.featured_collection.settings.popular.label",
+          "default": false
+        }
+      ]
+    }
+  ]
+     
+}
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+{% javascript %}
+{% endjavascript %}

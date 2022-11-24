@@ -82,7 +82,7 @@
         "16371563761f101b4d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Change the way you scan your film to save time and money by jumping into the future of film scanning.<\/p>"
+            "text": "<p>Start camera scanning with a great 30% discount on some of our most popular kits.<\/p>"
           }
         },
         "16371563761f101b4d-2": {
@@ -99,7 +99,7 @@
         "16371563761f101b4d-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/flatness.jpg",
+        "image": "shopify:\/\/shop_images\/BlackFriday-04300-WEB1080.jpg",
         "height": "adapt",
         "color_scheme": "background-2",
         "layout": "image_first"

@@ -1,0 +1,229 @@
+{
+  "sections": {
+    "f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f": {
+      "type": "featured-product",
+      "disabled": true,
+      "blocks": {
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-2": {
+          "type": "text",
+          "settings": {
+            "text": "Offer valid through this weekend only.",
+            "text_style": "subtitle"
+          }
+        },
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-4": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-7": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-0",
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-1",
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-2",
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-3",
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-4",
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-5",
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-6",
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-7"
+      ],
+      "settings": {
+        "product": "valoi-singles-day-kit",
+        "secondary_background": false,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "163715637672ee2874": {
+      "type": "image-with-text",
+      "blocks": {
+        "16371563761f101b4d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "VALOI 360"
+          }
+        },
+        "16371563761f101b4d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Change the way you scan your film to save time and money by jumping into the future of film scanning.<\/p>"
+          }
+        },
+        "16371563761f101b4d-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "What is camera scanning?",
+            "button_link": "shopify:\/\/pages\/what-is-camera-scanning"
+          }
+        }
+      },
+      "block_order": [
+        "16371563761f101b4d-0",
+        "16371563761f101b4d-1",
+        "16371563761f101b4d-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/flatness.jpg",
+        "height": "adapt",
+        "color_scheme": "background-2",
+        "layout": "image_first"
+      }
+    },
+    "16553912346ad77219": {
+      "type": "collage",
+      "blocks": {
+        "16553912345d4aa027-1": {
+          "type": "product",
+          "settings": {
+            "product": "starter-kit",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        },
+        "55debb65-e2ad-4448-8f1f-6362b4086b1b": {
+          "type": "product",
+          "settings": {
+            "product": "pro-kit",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        },
+        "2fa27346-a405-4929-9764-3c5ce2ee4662": {
+          "type": "product",
+          "settings": {
+            "product": "complete-kit",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        }
+      },
+      "block_order": [
+        "16553912345d4aa027-1",
+        "55debb65-e2ad-4448-8f1f-6362b4086b1b",
+        "2fa27346-a405-4929-9764-3c5ce2ee4662"
+      ],
+      "settings": {
+        "heading": "VALOI Kit Options",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
+    },
+    "163274530333c96e90": {
+      "type": "image-banner",
+      "disabled": true,
+      "blocks": {
+        "163274530333c96e90-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Valoi 360",
+            "heading_size": "medium"
+          }
+        },
+        "163274530333c96e90-1": {
+          "type": "text",
+          "settings": {
+            "text": "Change the way you scan your film to save time and money by jumping into the future of film scanning."
+          }
+        },
+        "163274530333c96e90-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "About the VALOI System",
+            "button_link_1": "shopify:\/\/pages\/about-valoi",
+            "button_style_secondary_1": false,
+            "button_label_2": "What is camera scanning?",
+            "button_link_2": "shopify:\/\/pages\/what-is-camera-scanning",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "163274530333c96e90-0",
+        "163274530333c96e90-1",
+        "163274530333c96e90-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/DSC6451_export.jpg",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": true
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "show_collection_prices": true,
+        "enable_filtering": false,
+        "enable_sorting": true,
+        "collapse_on_larger_devices": false,
+        "display_database_products": true
+      }
+    }
+  },
+  "order": [
+    "f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f",
+    "163715637672ee2874",
+    "16553912346ad77219",
+    "163274530333c96e90",
+    "banner",
+    "product-grid"
+  ]
+}

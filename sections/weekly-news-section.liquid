@@ -1,3 +1,5 @@
+{{ 'section-weekly-news.css' | asset_url | stylesheet_tag }}
+
 <section class="weekly-news">
 <div class="base_container">
   {%- for block in section.blocks -%}
@@ -106,7 +108,7 @@
           "label": "t:sections.image-with-text.blocks.text.settings.text.label"
         }
       ]
-    }, 
+    },
     {
       "type": "featured_collection",
       "name": "t:sections.collection-list.blocks.featured_collection.name",
@@ -125,7 +127,7 @@
       ]
     }
   ]
-     
+
 }
 {% endschema %}
 {% stylesheet %}

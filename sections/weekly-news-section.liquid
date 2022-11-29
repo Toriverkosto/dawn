@@ -31,14 +31,14 @@
 
                   {%- assign amount = 0 -%}
                   <!--{% paginate collections['new-last-7-days'].products by 1000 %}-->
-                  {%- for product in collections['new-last-7-days'].products -%}
-                    {%- assign testi = product -%}
-                    {%- assign tagi1 = "System-" | append: tagi -%}
-                    {%- assign tagi2 = "Category-" | append: tagi -%}
-                    {%- if testi.tags contains tagi1 or testi.tags contains tagi2 -%}
-                      {%- assign amount = amount | plus: 1 -%}
-                    {%- endif -%}
-                  {%- endfor -%}
+                    {%- for product in collections['new-last-7-days'].products -%}
+                      {%- assign testi = product -%}
+                      {%- assign tagi1 = "System-" | append: tagi -%}
+                      {%- assign tagi2 = "Category-" | append: tagi -%}
+                      {%- if testi.tags contains tagi1 or testi.tags contains tagi2 -%}
+                        {%- assign amount = amount | plus: 1 -%}
+                      {%- endif -%}
+                    {%- endfor -%}
                   <!--{%- endpaginate -%}-->
                   {{ amount }}
                 </div>

@@ -1992,10 +1992,10 @@
         "featured_collection": {
           "settings": {
             "popular": {
-              "label":"Show popular tag"
+              "label": "Show popular tag"
             },
             "highlighted": {
-              "label":"Highlight collection"
+              "label": "Highlight collection"
             }
           }
         }

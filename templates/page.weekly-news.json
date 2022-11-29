@@ -11,9 +11,8 @@
       "blocks": {
         "94b5a6c9-e8c3-4484-9bc2-6caebeb6261c": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "heading": "Uu, heading"
+            "heading": "Weekly News"
           }
         },
         "08da2138-de71-4bca-a5aa-19fa2f7aecad": {
@@ -70,6 +69,7 @@
         "c0d3f548-88b0-41f5-8676-6684935835c2"
       ],
       "settings": {
+        "new_tag": "Time-7d"
       }
     }
   },

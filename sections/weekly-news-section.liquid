@@ -1,0 +1,136 @@
+{{ 'section-weekly-news.css' | asset_url | stylesheet_tag }}
+
+<section class="weekly-news">
+  {%- for block in section.blocks -%}
+    {% case block.type %}
+      {%- when 'heading' -%}
+        <h2 class="image-with-text__heading h1" {{ block.shopify_attributes }}>
+          {{ block.settings.heading | escape }}
+        </h2>
+      {%- when 'text' -%}
+        <p {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
+      {%- when 'collection_header' -%}
+        <div class="collection-row collection-header" {{ block.shopify_attributes }}>
+          <div class="weekly_news_container">
+            <span class="new-quantity">{{ "sections.weekly-news.new" | t }}</span>
+            <div class="title-and-quantity">
+              <div class="collection_title">
+                {{ "sections.weekly-news.products" | t }}
+              </div>
+              <div class="collection_qty">
+                {{ "sections.weekly-news.total_items" | t }}
+              </div>
+            </div>
+          </div>
+        </div>
+      {%- when 'featured_collection' -%}
+        {% comment %}Calculate amount first, use in content later{% endcomment %}
+        {%- assign amount = 0 -%}
+        {%- paginate collections[block.settings.collection.handle].products by 1000 -%}
+          {%- for product in collections[block.settings.collection.handle].products -%}
+            {% if product.tags contains section.settings.new_tag %}
+              {%- assign amount = amount | plus: 1 -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {% endpaginate %}
+        {% comment %}NB! These numbers are not trustworthy for collections with more than 1000 items{% endcomment %}
+
+        <div class="collection-row" {{ block.shopify_attributes }}>
+          <a href="/collections/{{ block.settings.collection.handle }}" {{ block.shopify_attributes }}>
+            <div class="weekly_news_container{%- if block.settings.highlighted %} highlighted{% endif -%}">
+              <span class="new-quantity">{{ amount }}</span>
+              <div class="title-and-quantity">
+                <div class="collection_title">
+                  {{ block.settings.collection.title }}
+                </div>
+                <div class="collection_qty">
+                  {{ block.settings.collection.all_products_count }} {{ "sections.weekly-news.items" | t }}
+                </div>
+              </div>
+              {%- if block.settings.popular -%}
+                <div class="popular">{% render 'icon-flame' %}{{ "sections.weekly-news.popular" | t }}</div>
+              {%- endif -%}
+            </div>
+          </a>
+        </div>
+    {%- endcase -%}
+  {%- endfor -%}
+</section>
+
+{% schema %}
+{
+  "name": "Weekly news",
+  "presets": [
+    {
+      "name": "Weekly News",
+      "category": "ADVANCED LAYOUT"
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "new_tag",
+      "default": "Time-7d",
+      "label": "t:sections.weekly-news.settings.new_tag.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.image-with-text.blocks.heading.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Weekly Update",
+          "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "t:sections.image-with-text.blocks.text.name",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Here is a summary of all the items we’ve listed in the last 7 days. Click your favorite to view the collection. There is always items which were sold very quickly and cannot be seen here. </p>",
+          "label": "t:sections.image-with-text.blocks.text.settings.text.label"
+        }
+      ]
+    },
+    {
+      "type": "collection_header",
+      "name": "t:sections.weekly-news.blocks.collection_header.name"
+    },
+    {
+      "type": "featured_collection",
+      "name": "t:sections.collection-list.blocks.featured_collection.name",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "t:sections.collection-list.blocks.featured_collection.settings.collection.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "popular",
+          "label": "t:sections.weekly-news.blocks.featured_collection.settings.popular.label",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "highlighted",
+          "label": "t:sections.weekly-news.blocks.featured_collection.settings.highlighted.label",
+          "default": false
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+{% javascript %}
+{% endjavascript %}

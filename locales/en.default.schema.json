@@ -1978,6 +1978,28 @@
       "presets": {
         "name": "Video"
       }
+    },
+    "weekly-news": {
+      "settings": {
+        "new_tag": {
+          "label": "Tag used to detect new items"
+        }
+      },
+      "blocks": {
+        "collection_header": {
+          "name": "Collection header"
+        },
+        "featured_collection": {
+          "settings": {
+            "popular": {
+              "label":"Show popular tag"
+            },
+            "highlighted": {
+              "label":"Highlight collection"
+            }
+          }
+        }
+      }
     }
   },
   "socialshopwave": {

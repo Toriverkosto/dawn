@@ -1,0 +1,112 @@
+
+section.weekly-news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 6rem;
+}
+
+section.weekly-news > h2 {
+  text-align: center;
+}
+
+section.weekly-news > * {
+  max-width: 80rem;
+  width: calc(100% - 4rem);  /* Basically 2rem padding on either side for any screen width*/
+}
+
+section.weekly-news > div.collection-row {
+  background-color: rgb(var(--color-background-2));
+}
+
+section.weekly-news > div.collection-row.collection-header {
+  background-color: rgb(var(--color-background));
+}
+
+section.weekly-news > div.collection-row:not(:last-of-type) {
+  margin-bottom: 1.2rem;
+}
+
+section.weekly-news > div.collection-row a {
+  text-decoration: none;
+}
+
+section.weekly-news > div.collection-row div.weekly_news_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.8rem 1.6rem 0.8rem 2.4rem;
+  transition: box-shadow 0.2s ease-in-out;
+  border-radius: 0.4rem;
+}
+
+section.weekly-news > div.collection-row div.weekly_news_container:hover {
+  box-shadow: 0 0 0 0.2rem rgb(var(--color-background-2));
+}
+
+section.weekly-news > div.collection-row.collection-header div.weekly_news_container:hover {
+  box-shadow: none;
+}
+
+section.weekly-news > div.collection-row div.weekly_news_container.highlighted {
+ background-color: rgba(var(--color-base-accent-2))
+}
+
+section.weekly-news > div.collection-row div.weekly_news_container.highlighted:hover {
+  box-shadow: 0 0 0 0.2rem rgba(var(--color-base-accent-2), var(--alpha-button-border));
+}
+
+section.weekly-news > div.collection-row div.weekly_news_container.highlighted .collection_title {
+  color: rgb(var(--color-background));
+}
+
+section.weekly-news > div.collection-row div.weekly_news_container.highlighted .collection_qty {
+  color: rgb(var(--color-base-solid-button-labels));
+}
+
+section.weekly-news > div.collection-row div.weekly_news_container.highlighted .price_container {
+  color: var(--color-base-solid-button-labels);
+}
+
+section.weekly-news > div.collection-row div.weekly_news_container > span.new-quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8rem;
+  text-align: center;
+  background-color: rgb(var(--color-base-accent-1));
+  border-radius: 0.4rem;
+  color: rgb(var(--color-background));
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  font-weight: bold;
+  padding: 0.6rem 0.8rem;
+}
+
+section.weekly-news > div.collection-row div.weekly_news_container > div.title-and-quantity {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding-left: 2.4rem;
+}
+
+section.weekly-news > div.collection-row div.weekly_news_container .collection_title {
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: rgb(var(--color-foreground));
+}
+
+section.weekly-news > div.collection-row div.weekly_news_container .collection_qty {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: rgb(var(--color-base-accent-2-text-alt));
+}
+
+section.weekly-news > div.collection-row div.weekly_news_container .popular {
+  align-items: center;
+  padding: 0.4rem 1.2rem;
+  background-color: rgba(var(--color-base-accent-2));
+  border-radius: 0.4rem;
+  color: rgb(var(--color-background));
+}

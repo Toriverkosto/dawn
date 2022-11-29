@@ -5,9 +5,76 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "7cff1ab6-6913-476b-925d-fe9dd2199095": {
+      "type": "weekly-news-section",
+      "blocks": {
+        "94b5a6c9-e8c3-4484-9bc2-6caebeb6261c": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Uu, heading"
+          }
+        },
+        "08da2138-de71-4bca-a5aa-19fa2f7aecad": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Here is a summary of all the items we’ve listed in the last 7 days. Click your favorite to view the collection. There is always items which were sold very quickly and cannot be seen here. <\/p>"
+          }
+        },
+        "f6187666-6700-4820-9d5c-bfcd5ce898eb": {
+          "type": "collection_header",
+          "settings": {
+          }
+        },
+        "1763df09-66fd-4b6b-9c8b-24365d8dbf71": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cameras",
+            "popular": false,
+            "highlighted": true
+          }
+        },
+        "f8cb0c01-4bb3-43f5-ae11-511166f2167d": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "canon-ef",
+            "popular": false,
+            "highlighted": false
+          }
+        },
+        "2b5e3550-fabb-4629-b110-d39eea100684": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "canon-ef-s",
+            "popular": false,
+            "highlighted": false
+          }
+        },
+        "c0d3f548-88b0-41f5-8676-6684935835c2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nikon-f",
+            "popular": true,
+            "highlighted": false
+          }
+        }
+      },
+      "block_order": [
+        "94b5a6c9-e8c3-4484-9bc2-6caebeb6261c",
+        "08da2138-de71-4bca-a5aa-19fa2f7aecad",
+        "f6187666-6700-4820-9d5c-bfcd5ce898eb",
+        "1763df09-66fd-4b6b-9c8b-24365d8dbf71",
+        "f8cb0c01-4bb3-43f5-ae11-511166f2167d",
+        "2b5e3550-fabb-4629-b110-d39eea100684",
+        "c0d3f548-88b0-41f5-8676-6684935835c2"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "7cff1ab6-6913-476b-925d-fe9dd2199095"
   ]
 }

@@ -242,6 +242,13 @@
       "view_all": "View all",
       "view_all_label": "View all products in the {{ collection_name }} collection"
     },
+    "weekly-news": {
+      "popular": "Popular",
+      "new": "New!",
+      "items": "items",
+      "products": "Products",
+      "total_items": "Total items"
+    },
     "collection_list": {
       "view_all": "View all"
     },

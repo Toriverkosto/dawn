@@ -201,6 +201,14 @@
             "popular": false,
             "highlighted": false
           }
+        },
+        "392ed1f0-6209-47c7-bb6e-2e858f45556b": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nikon-dx",
+            "popular": false,
+            "highlighted": false
+          }
         }
       },
       "block_order": [
@@ -228,7 +236,8 @@
         "75b4477b-16f4-402c-a2b3-4d9eda77adb9",
         "feaaf2be-cb3f-4f16-b9e8-94382b9f33f7",
         "164982f8-dcb8-42a4-b1fe-c6e50fc43167",
-        "e3957bab-f88c-46f3-927f-4425ea2720c3"
+        "e3957bab-f88c-46f3-927f-4425ea2720c3",
+        "392ed1f0-6209-47c7-bb6e-2e858f45556b"
       ],
       "settings": {
         "new_tag": "Time-7d"

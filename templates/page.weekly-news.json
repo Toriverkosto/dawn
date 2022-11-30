@@ -145,6 +145,14 @@
             "popular": false,
             "highlighted": false
           }
+        },
+        "faf21db5-4b3b-450b-9736-20d9ba8816e3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ltm-m39",
+            "popular": false,
+            "highlighted": false
+          }
         }
       },
       "block_order": [
@@ -165,7 +173,8 @@
         "1230ac5c-21ac-469e-839b-178b70ea1614",
         "8e6e8a37-b61f-40a5-bddd-3ce485da4d29",
         "190c9c1b-c493-4825-9c6c-aaec0f2ca071",
-        "74f185f5-7ce6-4b01-8a23-98dac3d71728"
+        "74f185f5-7ce6-4b01-8a23-98dac3d71728",
+        "faf21db5-4b3b-450b-9736-20d9ba8816e3"
       ],
       "settings": {
         "new_tag": "Time-7d"

@@ -90,14 +90,6 @@
             "highlighted": false
           }
         },
-        "c0d3f548-88b0-41f5-8676-6684935835c2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "nikon-f",
-            "popular": true,
-            "highlighted": false
-          }
-        },
         "09411816-fe70-40e0-9804-767b32d909fd": {
           "type": "featured_collection",
           "settings": {
@@ -210,10 +202,26 @@
             "highlighted": false
           }
         },
+        "c0d3f548-88b0-41f5-8676-6684935835c2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nikon-f",
+            "popular": true,
+            "highlighted": false
+          }
+        },
         "4e04add8-44bc-4347-b9b2-7230ee3faa67": {
           "type": "featured_collection",
           "settings": {
             "collection": "olympus-om",
+            "popular": false,
+            "highlighted": false
+          }
+        },
+        "bf5a11bb-9560-4177-a255-62c64ca1ce1a": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pentax-6x7",
             "popular": false,
             "highlighted": false
           }
@@ -231,7 +239,6 @@
         "0773d0f7-2ce3-4155-bbce-6c13d8b62112",
         "c6a8dbc9-f10a-461b-b89a-4b530e152794",
         "b6250a52-bd05-42f5-9e8a-a546e48eaf2f",
-        "c0d3f548-88b0-41f5-8676-6684935835c2",
         "09411816-fe70-40e0-9804-767b32d909fd",
         "ac2a4f86-8b5b-4651-8b5d-f45a8958a952",
         "1230ac5c-21ac-469e-839b-178b70ea1614",
@@ -246,7 +253,9 @@
         "164982f8-dcb8-42a4-b1fe-c6e50fc43167",
         "e3957bab-f88c-46f3-927f-4425ea2720c3",
         "392ed1f0-6209-47c7-bb6e-2e858f45556b",
-        "4e04add8-44bc-4347-b9b2-7230ee3faa67"
+        "c0d3f548-88b0-41f5-8676-6684935835c2",
+        "4e04add8-44bc-4347-b9b2-7230ee3faa67",
+        "bf5a11bb-9560-4177-a255-62c64ca1ce1a"
       ],
       "settings": {
         "new_tag": "Time-7d"

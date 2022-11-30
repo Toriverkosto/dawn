@@ -129,6 +129,22 @@
             "popular": false,
             "highlighted": false
           }
+        },
+        "190c9c1b-c493-4825-9c6c-aaec0f2ca071": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "leica-m",
+            "popular": false,
+            "highlighted": false
+          }
+        },
+        "74f185f5-7ce6-4b01-8a23-98dac3d71728": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "leica-r",
+            "popular": false,
+            "highlighted": false
+          }
         }
       },
       "block_order": [
@@ -147,7 +163,9 @@
         "09411816-fe70-40e0-9804-767b32d909fd",
         "ac2a4f86-8b5b-4651-8b5d-f45a8958a952",
         "1230ac5c-21ac-469e-839b-178b70ea1614",
-        "8e6e8a37-b61f-40a5-bddd-3ce485da4d29"
+        "8e6e8a37-b61f-40a5-bddd-3ce485da4d29",
+        "190c9c1b-c493-4825-9c6c-aaec0f2ca071",
+        "74f185f5-7ce6-4b01-8a23-98dac3d71728"
       ],
       "settings": {
         "new_tag": "Time-7d"

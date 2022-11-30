@@ -12,7 +12,7 @@ section.weekly-news > h2 {
 
 section.weekly-news > * {
   max-width: 80rem;
-  width: calc(100% - 4rem);  /* Basically 2rem padding on either side for any screen width*/
+  width: calc(100% - 2rem);  /* Basically 2rem padding on either side for any screen width*/
 }
 
 section.weekly-news > div.collection-row {
@@ -68,6 +68,10 @@ section.weekly-news > div.collection-row div.weekly_news_container.highlighted .
   color: var(--color-base-solid-button-labels);
 }
 
+section.weekly-news > div.collection-row div.weekly_news_container.highlighted > div.price-range {
+  color: rgb(var(--color-background));
+}
+
 section.weekly-news > div.collection-row div.weekly_news_container > span.new-quantity {
   display: flex;
   align-items: center;
@@ -90,6 +94,14 @@ section.weekly-news > div.collection-row div.weekly_news_container > div.title-a
   padding-left: 2.4rem;
 }
 
+section.weekly-news > div.collection-row div.weekly_news_container > div.price-range {
+  display: none;
+  color: rgb(var(--color-base-accent-2-text-alt));
+  margin-left: 2.4rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
 section.weekly-news > div.collection-row div.weekly_news_container .collection_title {
   font-weight: bold;
   font-size: 1.8rem;
@@ -98,15 +110,38 @@ section.weekly-news > div.collection-row div.weekly_news_container .collection_t
 }
 
 section.weekly-news > div.collection-row div.weekly_news_container .collection_qty {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 2rem;
   color: rgb(var(--color-base-accent-2-text-alt));
 }
 
 section.weekly-news > div.collection-row div.weekly_news_container .popular {
+  display: none;
   align-items: center;
   padding: 0.4rem 1.2rem;
   background-color: rgba(var(--color-base-accent-2));
   border-radius: 0.4rem;
   color: rgb(var(--color-background));
+}
+
+
+@media screen and (min-width: 600px) {
+  section.weekly-news > div.collection-row div.weekly_news_container > div.price-range {
+    display: block;
+  }
+}
+
+
+@media screen and (min-width: 420px) {
+  section.weekly-news > div.collection-row div.weekly_news_container .popular {
+    display: block;
+  }
+}
+
+
+@media screen and (min-width: 420px) {
+  section.weekly-news > * {
+    max-width: 80rem;
+    width: calc(100% - 4rem);  /* Basically 1rem padding on either side for any screen width*/
+  }
 }

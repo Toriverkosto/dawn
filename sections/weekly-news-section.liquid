@@ -7,8 +7,10 @@
         <h2 class="image-with-text__heading h1" {{ block.shopify_attributes }}>
           {{ block.settings.heading | escape }}
         </h2>
+
       {%- when 'text' -%}
         <p {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
+
       {%- when 'collection_header' -%}
         <div class="collection-row collection-header" {{ block.shopify_attributes }}>
           <div class="weekly_news_container">
@@ -21,24 +23,17 @@
                 {{ "sections.weekly-news.total_items" | t }}
               </div>
             </div>
+            <div class="price-range">Price Range</div>
           </div>
         </div>
+
       {%- when 'featured_collection' -%}
-        {% comment %}Calculate amount first, use in content later{% endcomment %}
-        {%- assign amount = 0 -%}
-        {%- paginate collections[block.settings.collection.handle].products by 1000 -%}
-          {%- for product in collections[block.settings.collection.handle].products -%}
-            {% if product.tags contains section.settings.new_tag %}
-              {%- assign amount = amount | plus: 1 -%}
-            {%- endif -%}
-          {%- endfor -%}
-        {% endpaginate %}
-        {% comment %}NB! These numbers are not trustworthy for collections with more than 1000 items{% endcomment %}
+        {% assign statistics_meta = block.settings.collection.metafields.kameratori.statistics.value %}
 
         <div class="collection-row" {{ block.shopify_attributes }}>
           <a href="/collections/{{ block.settings.collection.handle }}" {{ block.shopify_attributes }}>
             <div class="weekly_news_container{%- if block.settings.highlighted %} highlighted{% endif -%}">
-              <span class="new-quantity">{{ amount }}</span>
+              <span class="new-quantity">{%- if statistics_meta.new_products == 0 -%}-{%- else -%}{{ statistics_meta.new_products }}{%- endif -%}</span>
               <div class="title-and-quantity">
                 <div class="collection_title">
                   {{ block.settings.collection.title }}
@@ -50,9 +45,11 @@
               {%- if block.settings.popular -%}
                 <div class="popular">{% render 'icon-flame' %}{{ "sections.weekly-news.popular" | t }}</div>
               {%- endif -%}
+              <div class="price-range">{{ statistics_meta.price_min_cents | money_without_trailing_zeros }} - {{ statistics_meta.price_max_cents | money_without_trailing_zeros }}</div>
             </div>
           </a>
         </div>
+
     {%- endcase -%}
   {%- endfor -%}
 </section>

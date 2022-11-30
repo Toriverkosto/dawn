@@ -177,6 +177,22 @@
             "popular": false,
             "highlighted": false
           }
+        },
+        "feaaf2be-cb3f-4f16-b9e8-94382b9f33f7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mamiya-rz67",
+            "popular": false,
+            "highlighted": false
+          }
+        },
+        "164982f8-dcb8-42a4-b1fe-c6e50fc43167": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "micro-four-thirds",
+            "popular": false,
+            "highlighted": false
+          }
         }
       },
       "block_order": [
@@ -201,7 +217,9 @@
         "faf21db5-4b3b-450b-9736-20d9ba8816e3",
         "58821a5a-4b27-4fdb-8fee-6bba7effe251",
         "d8c1f5e7-0e15-460c-862c-ae9377d3a355",
-        "75b4477b-16f4-402c-a2b3-4d9eda77adb9"
+        "75b4477b-16f4-402c-a2b3-4d9eda77adb9",
+        "feaaf2be-cb3f-4f16-b9e8-94382b9f33f7",
+        "164982f8-dcb8-42a4-b1fe-c6e50fc43167"
       ],
       "settings": {
         "new_tag": "Time-7d"

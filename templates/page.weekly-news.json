@@ -74,19 +74,27 @@
             "highlighted": false
           }
         },
-        "c0d3f548-88b0-41f5-8676-6684935835c2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "nikon-f",
-            "popular": true,
-            "highlighted": false
-          }
-        },
         "c6a8dbc9-f10a-461b-b89a-4b530e152794": {
           "type": "featured_collection",
           "settings": {
             "collection": "canon-rf",
             "popular": false,
+            "highlighted": false
+          }
+        },
+        "b6250a52-bd05-42f5-9e8a-a546e48eaf2f": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "contax-yashica",
+            "popular": false,
+            "highlighted": false
+          }
+        },
+        "c0d3f548-88b0-41f5-8676-6684935835c2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nikon-f",
+            "popular": true,
             "highlighted": false
           }
         }
@@ -101,8 +109,9 @@
         "f8cb0c01-4bb3-43f5-ae11-511166f2167d",
         "2b5e3550-fabb-4629-b110-d39eea100684",
         "0773d0f7-2ce3-4155-bbce-6c13d8b62112",
-        "c0d3f548-88b0-41f5-8676-6684935835c2",
-        "c6a8dbc9-f10a-461b-b89a-4b530e152794"
+        "c6a8dbc9-f10a-461b-b89a-4b530e152794",
+        "b6250a52-bd05-42f5-9e8a-a546e48eaf2f",
+        "c0d3f548-88b0-41f5-8676-6684935835c2"
       ],
       "settings": {
         "new_tag": "Time-7d"

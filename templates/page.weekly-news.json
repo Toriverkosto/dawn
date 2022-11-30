@@ -209,6 +209,14 @@
             "popular": false,
             "highlighted": false
           }
+        },
+        "4e04add8-44bc-4347-b9b2-7230ee3faa67": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "olympus-om",
+            "popular": false,
+            "highlighted": false
+          }
         }
       },
       "block_order": [
@@ -237,7 +245,8 @@
         "feaaf2be-cb3f-4f16-b9e8-94382b9f33f7",
         "164982f8-dcb8-42a4-b1fe-c6e50fc43167",
         "e3957bab-f88c-46f3-927f-4425ea2720c3",
-        "392ed1f0-6209-47c7-bb6e-2e858f45556b"
+        "392ed1f0-6209-47c7-bb6e-2e858f45556b",
+        "4e04add8-44bc-4347-b9b2-7230ee3faa67"
       ],
       "settings": {
         "new_tag": "Time-7d"

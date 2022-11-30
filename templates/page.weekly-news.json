@@ -97,6 +97,30 @@
             "popular": true,
             "highlighted": false
           }
+        },
+        "09411816-fe70-40e0-9804-767b32d909fd": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fuji-x",
+            "popular": false,
+            "highlighted": false
+          }
+        },
+        "ac2a4f86-8b5b-4651-8b5d-f45a8958a952": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hasselblad-v",
+            "popular": true,
+            "highlighted": false
+          }
+        },
+        "1230ac5c-21ac-469e-839b-178b70ea1614": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "konica-ar",
+            "popular": false,
+            "highlighted": false
+          }
         }
       },
       "block_order": [
@@ -111,7 +135,10 @@
         "0773d0f7-2ce3-4155-bbce-6c13d8b62112",
         "c6a8dbc9-f10a-461b-b89a-4b530e152794",
         "b6250a52-bd05-42f5-9e8a-a546e48eaf2f",
-        "c0d3f548-88b0-41f5-8676-6684935835c2"
+        "c0d3f548-88b0-41f5-8676-6684935835c2",
+        "09411816-fe70-40e0-9804-767b32d909fd",
+        "ac2a4f86-8b5b-4651-8b5d-f45a8958a952",
+        "1230ac5c-21ac-469e-839b-178b70ea1614"
       ],
       "settings": {
         "new_tag": "Time-7d"

@@ -193,6 +193,14 @@
             "popular": false,
             "highlighted": false
           }
+        },
+        "e3957bab-f88c-46f3-927f-4425ea2720c3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "minolta-md",
+            "popular": false,
+            "highlighted": false
+          }
         }
       },
       "block_order": [
@@ -219,7 +227,8 @@
         "d8c1f5e7-0e15-460c-862c-ae9377d3a355",
         "75b4477b-16f4-402c-a2b3-4d9eda77adb9",
         "feaaf2be-cb3f-4f16-b9e8-94382b9f33f7",
-        "164982f8-dcb8-42a4-b1fe-c6e50fc43167"
+        "164982f8-dcb8-42a4-b1fe-c6e50fc43167",
+        "e3957bab-f88c-46f3-927f-4425ea2720c3"
       ],
       "settings": {
         "new_tag": "Time-7d"

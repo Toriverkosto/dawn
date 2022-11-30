@@ -34,6 +34,22 @@
             "highlighted": true
           }
         },
+        "8a4abaf1-ea9b-4e24-85de-33fa093ba38d": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "lenses",
+            "popular": false,
+            "highlighted": true
+          }
+        },
+        "3a13f8e6-d5e9-44ec-821a-d362780d29de": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "accessories",
+            "popular": false,
+            "highlighted": true
+          }
+        },
         "f8cb0c01-4bb3-43f5-ae11-511166f2167d": {
           "type": "featured_collection",
           "settings": {
@@ -50,11 +66,27 @@
             "highlighted": false
           }
         },
+        "0773d0f7-2ce3-4155-bbce-6c13d8b62112": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "canon-fd",
+            "popular": false,
+            "highlighted": false
+          }
+        },
         "c0d3f548-88b0-41f5-8676-6684935835c2": {
           "type": "featured_collection",
           "settings": {
             "collection": "nikon-f",
             "popular": true,
+            "highlighted": false
+          }
+        },
+        "c6a8dbc9-f10a-461b-b89a-4b530e152794": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "canon-rf",
+            "popular": false,
             "highlighted": false
           }
         }
@@ -64,9 +96,13 @@
         "08da2138-de71-4bca-a5aa-19fa2f7aecad",
         "f6187666-6700-4820-9d5c-bfcd5ce898eb",
         "1763df09-66fd-4b6b-9c8b-24365d8dbf71",
+        "8a4abaf1-ea9b-4e24-85de-33fa093ba38d",
+        "3a13f8e6-d5e9-44ec-821a-d362780d29de",
         "f8cb0c01-4bb3-43f5-ae11-511166f2167d",
         "2b5e3550-fabb-4629-b110-d39eea100684",
-        "c0d3f548-88b0-41f5-8676-6684935835c2"
+        "0773d0f7-2ce3-4155-bbce-6c13d8b62112",
+        "c0d3f548-88b0-41f5-8676-6684935835c2",
+        "c6a8dbc9-f10a-461b-b89a-4b530e152794"
       ],
       "settings": {
         "new_tag": "Time-7d"

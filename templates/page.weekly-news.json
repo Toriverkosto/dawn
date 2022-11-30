@@ -38,7 +38,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "lenses",
-            "popular": false,
+            "popular": true,
             "highlighted": true
           }
         },

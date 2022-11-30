@@ -225,6 +225,14 @@
             "popular": false,
             "highlighted": false
           }
+        },
+        "59b059a2-63e6-4475-ba9b-2a97403d3db1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pentax-k",
+            "popular": false,
+            "highlighted": false
+          }
         }
       },
       "block_order": [
@@ -255,7 +263,8 @@
         "392ed1f0-6209-47c7-bb6e-2e858f45556b",
         "c0d3f548-88b0-41f5-8676-6684935835c2",
         "4e04add8-44bc-4347-b9b2-7230ee3faa67",
-        "bf5a11bb-9560-4177-a255-62c64ca1ce1a"
+        "bf5a11bb-9560-4177-a255-62c64ca1ce1a",
+        "59b059a2-63e6-4475-ba9b-2a97403d3db1"
       ],
       "settings": {
         "new_tag": "Time-7d"

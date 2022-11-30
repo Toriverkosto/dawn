@@ -249,6 +249,14 @@
             "popular": false,
             "highlighted": false
           }
+        },
+        "b89accf0-ebda-40c1-b3e9-e156c39e2974": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sony-fe",
+            "popular": false,
+            "highlighted": false
+          }
         }
       },
       "block_order": [
@@ -282,7 +290,8 @@
         "bf5a11bb-9560-4177-a255-62c64ca1ce1a",
         "59b059a2-63e6-4475-ba9b-2a97403d3db1",
         "702d059d-e2fe-4d84-9442-3db5e70023cd",
-        "e361cd6d-1bb1-42ea-a59d-0a8664db053a"
+        "e361cd6d-1bb1-42ea-a59d-0a8664db053a",
+        "b89accf0-ebda-40c1-b3e9-e156c39e2974"
       ],
       "settings": {
         "new_tag": "Time-7d"

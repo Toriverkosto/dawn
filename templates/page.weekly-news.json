@@ -2,7 +2,6 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
       }
     },
@@ -11,12 +10,14 @@
       "blocks": {
         "94b5a6c9-e8c3-4484-9bc2-6caebeb6261c": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Weekly News"
           }
         },
         "08da2138-de71-4bca-a5aa-19fa2f7aecad": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Here is a summary of all the items we’ve listed in the last 7 days. Click your favorite to view the collection. There is always items which were sold very quickly and cannot be seen here. <\/p>"
           }

@@ -275,6 +275,13 @@
     },
     "video": {
       "load_video": "Lataa video: {{ description }}"
+    },
+    "weekly-news": {
+      "popular": "Suosittu",
+      "new": "Uutta!",
+      "items": "tuotetta",
+      "products": "Tuoteryhmä",
+      "total_items": "Tuotteita yhteensä"
     }
   },
   "localization": {

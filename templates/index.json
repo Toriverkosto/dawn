@@ -77,6 +77,13 @@
         "include_margins": true
       }
     },
+    "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "{{collections['new-last-7-days'].all_products_count}} Items Added this Week"
+      }
+    },
     "1660560902df48f128": {
       "type": "featured-collection",
       "settings": {
@@ -581,6 +588,7 @@
     "multi_column",
     "ddec4f30-078a-4448-a1c9-25e86fe7a449",
     "16681567159a25ad0d",
+    "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe",
     "1660560902df48f128",
     "16590912674b072be6",
     "16590913415aba16e5",

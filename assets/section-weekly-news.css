@@ -87,6 +87,10 @@ section.weekly-news > div.collection-row div.weekly_news_container > span.new-qu
   padding: 0.6rem 0.8rem;
 }
 
+section.weekly-news > div.collection-row div.weekly_news_container > span.new-quantity.empty {
+  background-color: rgba(var(--color-base-accent-1), 0.35);
+}
+
 section.weekly-news > div.collection-row div.weekly_news_container > div.title-and-quantity {
   display: flex;
   flex-direction: column;

@@ -33,7 +33,7 @@
         <div class="collection-row" {{ block.shopify_attributes }}>
           <a href="/collections/{{ block.settings.collection.handle }}" {{ block.shopify_attributes }}>
             <div class="weekly_news_container{%- if block.settings.highlighted %} highlighted{% endif -%}">
-              <span class="new-quantity">{%- if statistics_meta.new_products == 0 -%}-{%- else -%}{{ statistics_meta.new_products }}{%- endif -%}</span>
+              <span class="new-quantity{%- if statistics_meta.new_products == 0 %} empty{%- endif -%}">{{ statistics_meta.new_products }}</span>
               <div class="title-and-quantity">
                 <div class="collection_title">
                   {{ block.settings.collection.title }}

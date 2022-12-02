@@ -61,22 +61,6 @@
         "show_rating": false
       }
     },
-    "16681567159a25ad0d": {
-      "type": "apps",
-      "blocks": {
-        "56632df0-1540-4fc5-88ce-e54fba428f43": {
-          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "56632df0-1540-4fc5-88ce-e54fba428f43"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe": {
       "type": "custom-liquid",
       "settings": {
@@ -97,6 +81,22 @@
         "show_image_outline": true,
         "show_vendor": true,
         "show_rating": false
+      }
+    },
+    "16681567159a25ad0d": {
+      "type": "apps",
+      "blocks": {
+        "56632df0-1540-4fc5-88ce-e54fba428f43": {
+          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "56632df0-1540-4fc5-88ce-e54fba428f43"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "16590912674b072be6": {
@@ -586,9 +586,9 @@
   "order": [
     "multi_column",
     "ddec4f30-078a-4448-a1c9-25e86fe7a449",
-    "16681567159a25ad0d",
     "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe",
     "1660560902df48f128",
+    "16681567159a25ad0d",
     "16590912674b072be6",
     "16590913415aba16e5",
     "1659091405f0073c84",

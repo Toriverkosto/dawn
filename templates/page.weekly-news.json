@@ -297,10 +297,48 @@
       "settings": {
         "new_tag": "Time-7d"
       }
+    },
+    "e165ce59-ebbb-457b-bb8b-29fd222a56d3": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15437049856198__e165ce59-ebbb-457b-bb8b-29fd222a56d3-16699727315cdeb737-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "template--15437049856198__e165ce59-ebbb-457b-bb8b-29fd222a56d3-16699727315cdeb737-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>*This list is updated each morning. The numbers only reflect available items. It is possible items were added, sold quickly, and never appeared on this list. Not all systems are shown on this page. If your system of choice is not here, please view <a href=\"\/collections\/all-items\" title=\"All Items\">all items<\/a> and use the filters.<\/p>"
+          }
+        },
+        "template--15437049856198__e165ce59-ebbb-457b-bb8b-29fd222a56d3-16699727315cdeb737-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15437049856198__e165ce59-ebbb-457b-bb8b-29fd222a56d3-16699727315cdeb737-0",
+        "template--15437049856198__e165ce59-ebbb-457b-bb8b-29fd222a56d3-16699727315cdeb737-1",
+        "template--15437049856198__e165ce59-ebbb-457b-bb8b-29fd222a56d3-16699727315cdeb737-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
     }
   },
   "order": [
     "main",
-    "7cff1ab6-6913-476b-925d-fe9dd2199095"
+    "7cff1ab6-6913-476b-925d-fe9dd2199095",
+    "e165ce59-ebbb-457b-bb8b-29fd222a56d3"
   ]
 }

@@ -79,15 +79,14 @@
     },
     "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
-        "custom_liquid": "{{collections['new-last-7-days'].all_products_count}} Items Added this Week"
+        "custom_liquid": "<div class=\"page-width page-width--wide\"> <H2>{{collections['new-last-7-days'].all_products_count}} Items Added this Week <\/H2><\/div>"
       }
     },
     "1660560902df48f128": {
       "type": "featured-collection",
       "settings": {
-        "title": "Added this Week",
+        "title": "",
         "collection": "new-last-7-days",
         "products_to_show": 8,
         "show_view_all": true,

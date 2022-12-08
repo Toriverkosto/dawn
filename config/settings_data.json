@@ -82,7 +82,6 @@
           },
           "bd940627-4059-4258-9740-ca755a84d133": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "We are celebrating! 12 Year Anniversary Sale, 12% off site-wide!",
               "color_scheme": "accent-1",

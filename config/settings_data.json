@@ -85,7 +85,7 @@
             "settings": {
               "text": "We are celebrating! 12 Year Anniversary Sale, 12% off site-wide!",
               "color_scheme": "accent-1",
-              "link": "\/blogs\/posts\/12-years-of-kamerastore",
+              "link": "shopify:\/\/blogs\/posts\/12-years-of-kamerastore",
               "use_custom_color": false,
               "color_text": "#121212",
               "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"

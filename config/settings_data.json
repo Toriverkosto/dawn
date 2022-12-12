@@ -70,7 +70,6 @@
           },
           "39d85c5b-b96e-42e4-b90d-5d4e816742eb": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "Europe's Film Camera Specialists since 2010",
               "color_scheme": "accent-1",
@@ -82,6 +81,7 @@
           },
           "bd940627-4059-4258-9740-ca755a84d133": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "We are celebrating! 12 Year Anniversary Sale, 12% off site-wide!",
               "color_scheme": "accent-1",

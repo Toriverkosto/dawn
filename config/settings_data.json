@@ -88,7 +88,7 @@
               "link": "shopify:\/\/blogs\/posts\/kamerastore-holiday-gift-guide",
               "use_custom_color": true,
               "color_text": "#ffffff",
-              "color_background": "linear-gradient(180deg, rgba(209, 45, 62, 1), rgba(209, 45, 62, 1) 100%)"
+              "color_background": "linear-gradient(180deg, rgba(228, 95, 95, 1) 5%, rgba(228, 95, 95, 1) 100%)"
             }
           }
         },

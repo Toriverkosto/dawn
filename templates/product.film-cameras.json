@@ -1,19 +1,5 @@
 {
   "sections": {
-    "1659349699e5cc8c28": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<h1>{{product.title}}<\/h1>"
-      }
-    },
-    "16334152711e2727b9": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<div class=\"page-width page-width--wide\">\n<p style=\"color: #b3b3b3\">{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span> ID: {{ current_variant.sku }}<\/span> {% if current_variant.barcode %}{%- assign current_variant = product.selected_or_first_available_variant -%}\n<span>\/ Code: {{ current_variant.barcode }}  <\/span><\/p>{% endif %}<\/div>"
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -369,8 +355,6 @@
     }
   },
   "order": [
-    "1659349699e5cc8c28",
-    "16334152711e2727b9",
     "main",
     "16579008498f69713d",
     "1658753086970be4d5",

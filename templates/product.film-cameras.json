@@ -154,15 +154,6 @@
             "icon": "price_tag"
           }
         },
-        "92fd3d60-c515-429c-a9e4-6bb9e3712c80": {
-          "type": "popup",
-          "disabled": true,
-          "settings": {
-            "text": "Have this {{ product.vendor }}? Sell it to us!",
-            "page": "sell-or-trade-your-used-camera-gear",
-            "show_button": false
-          }
-        },
         "a61057d7-0270-434a-9a2c-d9dd3332fad7": {
           "type": "custom_liquid",
           "settings": {
@@ -188,7 +179,6 @@
         "68e2c93e-ddb1-41e2-9782-e6a70e5e488b",
         "544372e8-f86d-4543-aa94-172d88ad169e",
         "f8962c4a-da22-4a3d-8f73-05ff4d13ed57",
-        "92fd3d60-c515-429c-a9e4-6bb9e3712c80",
         "a61057d7-0270-434a-9a2c-d9dd3332fad7"
       ],
       "settings": {

@@ -70,7 +70,6 @@
           },
           "39d85c5b-b96e-42e4-b90d-5d4e816742eb": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "Europe's Film Camera Specialists since 2010",
               "color_scheme": "accent-1",
@@ -82,6 +81,7 @@
           },
           "b741c7b3-a398-4132-a466-8d25ee033c99": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Kamerastore Holiday Gift Guide",
               "color_scheme": "accent-1",

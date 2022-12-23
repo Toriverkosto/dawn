@@ -273,7 +273,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
-      "disabled": true,
+      "disabled": false,
       "settings": {
         "heading": "You may also like",
         "image_ratio": "adapt",

@@ -327,7 +327,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
-      "disabled": false,
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "image_ratio": "adapt",

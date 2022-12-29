@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="wishlist-modal__footer">
-                    <a href="/account/login" class="wishlist-btn hulkBtnStyle" data-loginBtn style="display: none;">Login</a>
+                    <a href="/account/login" class="hulkBtnStyle" data-loginBtn style="display: none;">Login</a>
                     <a href="/{{ shop.metafields.hulkapps_wishlist.hulkapps_wishlist_general.app_proxy_prefix }}/{{ shop.metafields.hulkapps_wishlist.hulkapps_wishlist_general.app_proxy_path }}" class="wishlist-btn hulkBtnStyle" data-viewMore style="display: none;">Explore more products</a>
                     <a href="/collections" class="wishlist-btn hulkBtnStyle" data-addProductBtn style="display: none;">Add products</a>
                     <button class="wishlist-btn hulkBtnStyle close-btn" data-closeMyWishlistPopup style="display: none; margin-left: 15px;">Close</button>
@@ -264,6 +264,45 @@
                         <button class="wishlist-btn hulkBtnStyle" data-hulkappsMoveItemsOk >Yes</button>
                         <button class="wishlist-btn hulkBtnStyle" data-hulkappsMoveItemsCancel >Cancel</button>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------- custom shared wishlist -------------------------------------------->
+    <div class="wishlist-popup wishlist-custom-email-popup" data-HulkappsCustomEmail>
+        <div class="wishlist-modal modal-small">
+            <div class="wishlist-modal__content">
+                <button class="close-popup" data-closewishlistpopup><span class="icon-wishlist-cross" data-closeWishlistPopup></span></button>
+                <div class="wishlist-modal__body">
+                    <div class="Subscribe-content">
+                        <h5 data-emailPopupTitle style="font-size: 20px;">Share my wishlist</h5>
+                    </div>
+                    <form action="/share-wishlist" method="post" class="floating-form" role="share-wishlist" data-HulkEmailForm>
+                        <div class="floating-label">
+                            <input type="text" class="floating-input" placeholder=" " name="name" value="" aria-label="Search our store">
+                            <span class="highlight"></span>
+                            <label id="from_name_label">From name*</label>
+                        </div>
+                        <div class="floating-label">
+                            <input type="email" class="floating-input" placeholder=" " name="email" value="" aria-label="Search our store">
+                            <span class="highlight"></span>
+                            <label id="email_label">To email*</label>
+                        </div>
+                        <div class="floating-label">
+                            <input type="text" class="floating-input" placeholder=" " name="subject" value="" aria-label="Search our store">
+                            <span class="highlight"></span>
+                            <label id="subject_label">Subject*</label>
+                        </div>
+                        <div class="floating-label">
+                            <textarea id="body" class="floating-input" placeholder=" " name="body" rows="4" style="width: 100%"></textarea>
+                            <span class="highlight"></span>
+                            <label for="body" id="email_body_label">Email body*</label>
+                        </div>
+                        <div class="floating-label">
+                            <button type="submit" class="wishlist-btn hulkBtnStyle" data-HulkSendEmailButton>Send</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

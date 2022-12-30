@@ -82,62 +82,92 @@
         <div class="wishlist-modal modal-small">
             <div class="wishlist-modal__content">
                 <button class="close-popup" data-closewishlistpopup><span class="icon-wishlist-cross" data-closeWishlistPopup></span></button>
-                <div class="wishlist-modal__header text-upper">
-                    {% if(shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.modal_title) %}
-                        <h2 class="">{{ shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.modal_title }}</h2>
-                    {% else %}
-                        <h2>Share my wishlist</h2>
-                    {% endif %}
-                </div>
                 <div class="wishlist-modal__body">
+                    <div class="wishlist-custom-email-popup">
+                        <h5 data-emailPopupTitle style="font-size: 20px;">Share List Via Email</h5>
+                        <form action="/share-wishlist" method="post" class="floating-form" role="share-wishlist" data-HulkEmailForm>
+                            <div class="floating-label">
+                                <input type="text" class="floating-input" placeholder=" " name="name" value="" aria-label="Search our store">
+                                <span class="highlight"></span>
+                                <label id="from_name_label">Sender Name*</label>
+                            </div>
+                            <div class="floating-label">
+                                <input type="email" class="floating-input" placeholder=" " name="email" value="" aria-label="Search our store">
+                                <span class="highlight"></span>
+                                <label id="email_label">Recipients Email*</label>
+                            </div>
+                            <div class="floating-label">
+                                <input type="text" class="floating-input" placeholder=" " name="subject" value="" aria-label="Search our store">
+                                <span class="highlight"></span>
+                                <label id="subject_label">Subject*</label>
+                            </div>
+                            <div class="floating-label">
+                                <textarea id="body" class="floating-input" placeholder=" " name="body" rows="4" style="width: 100%"></textarea>
+                                <span class="highlight"></span>
+                                <label for="body" id="email_body_label">Message*</label>
+                            </div>
+                            <div class="floating-label" style="margin-bottom: 20px;">
+                                <button type="submit" class="wishlist-btn hulkBtnStyle" data-HulkSendEmailButton>SHARE WISHLIST</button>
+                            </div>
+                        </form>
+
+                    </div>
+                    <hr>
+                    <div class="wishlist-modal__header" style="margin-bottom: 1rem;">
+                        {% if(shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.modal_title) %}
+                            <h5 data-emailPopupTitle style="font-size: 18px;">{{ shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.modal_title }}</h5>
+                        {% else %}
+                            <h5 data-emailPopupTitle style="font-size: 18px;">Or Share Via</h5>
+                        {% endif %}
+                    </div>
                     {% if(shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.set_icon == 'set_1') %}
                         <ul class="social-list-icon">
                             {% if(shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.facebook) %}
-                                <li><a href="#" data-shareFacebook target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_facebook_1.svg" alt="Facebook Share" style="width: 100%;" /></a></li>
+                                <li><a href="#" data-shareFacebook target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_facebook_1.svg" alt="Facebook Share" /></a></li>
                             {% endif %}
                             {% if(shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.pinterest) %}
-                                <li><a href="#" data-sharePintrest target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_pinterest_1.svg" alt="Pinterest Share" style="width: 100%;" /></a></li>
+                                <li><a href="#" data-sharePintrest target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_pinterest_1.svg" alt="Pinterest Share" /></a></li>
                             {% endif %}
                             {% if(shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.twitter) %}
-                                <li><a href="#" data-shareTwitter target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_twitter_1.svg" alt="Twitter Share" style="width: 100%;" /></a></li>
+                                <li><a href="#" data-shareTwitter target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_twitter_1.svg" alt="Twitter Share" /></a></li>
                             {% endif %}
                             {% if(shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.email) %}
-                                <li><a href="#" data-shareTumblr target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_email_1.svg" alt="Email Share" style="width: 100%;" /></a></li>
+                                <li><a href="#" data-copyshareURLButton target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_email_1.svg" alt="Copy text" title="Copy wishlist link"/></a></li>
                             {% endif %}
                         </ul>
                     {% elsif(shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.set_icon == 'set_2') %}
                         <ul class="social-list-icon">
                             {% if(shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.facebook) %}
-                                <li><a href="#" data-shareFacebook target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_facebook_2.svg" alt="Facebook Share" style="width: 100%;" /></a></li>
+                                <li><a href="#" data-shareFacebook target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_facebook_2.svg" alt="Facebook Share" /></a></li>
                             {% endif %}
                             {% if(shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.pinterest) %}
-                                <li><a href="#" data-sharePintrest target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_pinterest_2.svg" alt="Pinterest Share" style="width: 100%;" /></a></li>
+                                <li><a href="#" data-sharePintrest target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_pinterest_2.svg" alt="Pinterest Share" /></a></li>
                             {% endif %}
                             {% if(shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.twitter) %}
-                                <li><a href="#" data-shareTwitter target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_twitter_2.svg" alt="Twitter Share" style="width: 100%;" /></a></li>
+                                <li><a href="#" data-shareTwitter target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_twitter_2.svg" alt="Twitter Share" /></a></li>
                             {% endif %}
                             {% if(shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.email) %}
-                                <li><a href="#" data-shareTumblr target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_email_2.svg" alt="Email Share" style="width: 100%;" /></a></li>
+                                <li><a href="#" data-copyshareURLButton target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_email_2.svg" alt="Email Share" title="Copy wishlist link"/></a></li>
                             {% endif %}
                         </ul>
                     {% else %}
                         <ul class="social-list-icon">
-                            <li><a href="#" data-shareFacebook target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_facebook_1.svg" alt="Facebook Share" style="width: 100%;" /></a></li>
-                            <li><a href="#" data-sharePintrest target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_pinterest_1.svg" alt="Pinterest Share" style="width: 100%;" /></a></li>
-                            <li><a href="#" data-shareTwitter target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_pinterest_1.svg" alt="Twitter Share" style="width: 100%;" /></a></li>
-                            <li><a href="#" data-shareTumblr target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_email_1.svg" alt="Email Share" style="width: 100%;" /></a></li>
+                            <li><a href="#" data-shareFacebook target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_facebook_1.svg" alt="Facebook Share" /></a></li>
+                            <li><a href="#" data-sharePintrest target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_pinterest_1.svg" alt="Pinterest Share" /></a></li>
+                            <li><a href="#" data-shareTwitter target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_pinterest_1.svg" alt="Twitter Share" /></a></li>
+                            <li><a href="#" data-copyshareURLButton target="_blank"><img src="https://hulkapps-wishlist.nyc3.digitaloceanspaces.com/assets/images/ic_email_1.svg" alt="Email Share" title="Copy wishlist link"/></a></li>
                         </ul>
                     {% endif %}
 
                     {% if(shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.copy_link_title) %}
-                        <p>{{ shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.copy_link_title }}</p>
+                        <p style="display: none">{{ shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.copy_link_title }}</p>
                     {% else %}
-                        <p>Copy wishlist link to share</p>
+                        <p style="display: none">Copy wishlist link to share</p>
                     {% endif %}
                     <form class="input-group search-bar" style="padding: 0;">
                         <input type="text" id="shareURL" value="" class="input-group-field" data-shareURL readonly />
                         <span class="input-group-btn">
-                          <button type="button" class="wishlist-btn hulkBtnStyle" data-copyshareURLButtom>
+                          <button type="button" class="wishlist-btn hulkBtnStyle" data-copyshareURLButton>
                           {% if(shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.copy_button_text) %}
                               <p>{{ shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.copy_button_text }}</p>
                           {% else %}
@@ -264,45 +294,6 @@
                         <button class="wishlist-btn hulkBtnStyle" data-hulkappsMoveItemsOk >Yes</button>
                         <button class="wishlist-btn hulkBtnStyle" data-hulkappsMoveItemsCancel >Cancel</button>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-------------------------- custom shared wishlist -------------------------------------------->
-    <div class="wishlist-popup wishlist-custom-email-popup" data-HulkappsCustomEmail>
-        <div class="wishlist-modal modal-small">
-            <div class="wishlist-modal__content">
-                <button class="close-popup" data-closewishlistpopup><span class="icon-wishlist-cross" data-closeWishlistPopup></span></button>
-                <div class="wishlist-modal__body">
-                    <div class="Subscribe-content">
-                        <h5 data-emailPopupTitle style="font-size: 20px;">Share my wishlist</h5>
-                    </div>
-                    <form action="/share-wishlist" method="post" class="floating-form" role="share-wishlist" data-HulkEmailForm>
-                        <div class="floating-label">
-                            <input type="text" class="floating-input" placeholder=" " name="name" value="" aria-label="Search our store">
-                            <span class="highlight"></span>
-                            <label id="from_name_label">From name*</label>
-                        </div>
-                        <div class="floating-label">
-                            <input type="email" class="floating-input" placeholder=" " name="email" value="" aria-label="Search our store">
-                            <span class="highlight"></span>
-                            <label id="email_label">To email*</label>
-                        </div>
-                        <div class="floating-label">
-                            <input type="text" class="floating-input" placeholder=" " name="subject" value="" aria-label="Search our store">
-                            <span class="highlight"></span>
-                            <label id="subject_label">Subject*</label>
-                        </div>
-                        <div class="floating-label">
-                            <textarea id="body" class="floating-input" placeholder=" " name="body" rows="4" style="width: 100%"></textarea>
-                            <span class="highlight"></span>
-                            <label for="body" id="email_body_label">Email body*</label>
-                        </div>
-                        <div class="floating-label">
-                            <button type="submit" class="wishlist-btn hulkBtnStyle" data-HulkSendEmailButton>Send</button>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>

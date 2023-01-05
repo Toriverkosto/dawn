@@ -340,6 +340,15 @@
       "settings": {
         "custom_liquid": "{{product.metafields.kameratori.stock_items.value | metafield_list}}\n\n{% assign current_product = product %}\n\n          {% for product in current_product.metafields.kameratori.stock_items.value %}\n            {% if product.available %}\n{{ product.price | money }}\n {% endif %}\n          {% endfor %}"
       }
+    },
+    "503ecd86-9040-41eb-8862-c1d33a2a7c11": {
+      "type": "video",
+      "settings": {
+        "heading": "Video",
+        "video_url": "https:\/\/youtu.be\/H524kb5DzNc",
+        "description": "",
+        "full_width": false
+      }
     }
   },
   "order": [
@@ -355,6 +364,7 @@
     "16324019941e428b8f",
     "product-recommendations",
     "163239432974b497b2",
-    "1656572953ff843f1c"
+    "1656572953ff843f1c",
+    "503ecd86-9040-41eb-8862-c1d33a2a7c11"
   ]
 }

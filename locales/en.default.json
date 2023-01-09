@@ -428,7 +428,8 @@
         "card_security_notice": "All transactions are secure and encrypted. "
       },
       "shipping": {
-        "shipping_method_notice": "Select your preferred shipping method."
+        "shipping_method_notice": "Select your preferred shipping method.",
+        "local_delivery": "Deliver to Kamerastore Helsinki"
       }
     },
     "store_availability": {

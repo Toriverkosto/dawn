@@ -453,7 +453,6 @@
       "shipping": {
         "waiting_on_rate_notice": "Pieni hetki, haetaan toimitustapoja...",
         "title": "Toimitustapa",
-        "optional_shipping_line_delivery_instructions_label": "Lisätietoa",
         "local_delivery": "Toimitus Helsingin toimipisteeseen",
         "shipping_line_delivery_instructions": "Lisätietoa tilaukseen liittyen"
       },

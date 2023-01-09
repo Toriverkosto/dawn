@@ -453,7 +453,8 @@
       "shipping": {
         "waiting_on_rate_notice": "Pieni hetki, haetaan toimitustapoja...",
         "title": "Toimitustapa",
-        "optional_shipping_line_delivery_instructions_label": "Lisätietoa"
+        "optional_shipping_line_delivery_instructions_label": "Lisätietoa",
+        "local_delivery": "Toimitus Helsingin toimipisteeseen"
       },
       "failed_payment": {
         "payment_not_processed_text": "Sinua ei ole vielä veloitettu. Palaa ostoskoriin ja viimeistele ostoksesi."

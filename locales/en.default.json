@@ -430,7 +430,7 @@
       "shipping": {
         "shipping_method_notice": "Select your preferred shipping method.",
         "local_delivery": "Local Delivery: Helsinki",
-        "optional_shipping_line_delivery_instructions_label": "Additional information (optional)",
+        "optional_shipping_line_delivery_instructions_label": "(optional)",
         "shipping_line_delivery_instructions": "Additional Information"
       }
     },

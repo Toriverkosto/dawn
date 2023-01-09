@@ -429,7 +429,7 @@
       },
       "shipping": {
         "shipping_method_notice": "Select your preferred shipping method.",
-        "local_delivery": "Deliver to Kamerastore Helsinki",
+        "local_delivery": "Local Delivery: Deliver to Kamerastore Helsinki",
         "optional_shipping_line_delivery_instructions_label": "Additional information (optional)"
       }
     },

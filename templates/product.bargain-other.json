@@ -50,7 +50,7 @@
           "type": "custom_liquid",
           "disabled": true,
           "settings": {
-            "custom_liquid": "<div class=\"card-information\">\n    <div class=\"card-information__wrapper\">\n      <div class=\"caption-with-letter-spacing light\">{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable_html' | t }}\n{% else %}\n    {{ 'products.product.not_taxable_html' | t }}\n{% endif %}<\/div>\n     <h2> {{product.price | money}}<\/h2>\n    <\/div>\n  <\/div>"
+            "custom_liquid": "<style>\n.restricted {\n  background-color: #FEF7EA;\n  color: #3E4447;\n  padding-left: 15px;\n  padding-right: 15px;\n  border: 2px solid #F6DFBB;\n  margin: 0px;\n  border-radius: 5px;\n}\n<\/style>\n<\/head>\n<body>\n\n<div class=\"restricted\">\n<h3><\/h3>\n<p><b>This item only ships to Finland!<\/b><br>\nCertain products cannot be shipped outside of Finland, this is due to the items content or size.<\/p>\n<\/div>"
           }
         },
         "99452d1b-4d7e-4077-a88b-abeded9e84f2": {
@@ -80,6 +80,7 @@
         },
         "6ff4987b-8f35-4a2e-89e3-3f40f342da38": {
           "type": "condition",
+          "disabled": true,
           "settings": {
             "show_mechanical": true,
             "show_optical": true,

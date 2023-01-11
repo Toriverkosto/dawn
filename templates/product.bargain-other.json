@@ -13,7 +13,7 @@
         "template--15460449616070__9be75506-801e-4c17-a88a-5212bce3d9a4-16734432567f1fca7e-1": {
           "type": "text",
           "settings": {
-            "text": "<p>This is a Bargain Item. It is untestable, or have been tested and found to have significant flaws that affect or prevent normal use. Product description provides more detail if needed.<\/p>"
+            "text": "<p>This {{ product.title }} has been tested and found to have significant flaws that affect or prevent normal use (or is untestable). Product description provides more detail if needed.<\/p>"
           }
         }
       },

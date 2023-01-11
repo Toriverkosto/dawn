@@ -1,5 +1,31 @@
 {
   "sections": {
+    "9be75506-801e-4c17-a88a-5212bce3d9a4": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15460449616070__9be75506-801e-4c17-a88a-5212bce3d9a4-16734432567f1fca7e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bargain Item",
+            "heading_size": "h1"
+          }
+        },
+        "template--15460449616070__9be75506-801e-4c17-a88a-5212bce3d9a4-16734432567f1fca7e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This is a Bargain Item. It is untestable, or have been tested and found to have significant flaws that affect or prevent normal use. Product description provides more detail if needed.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15460449616070__9be75506-801e-4c17-a88a-5212bce3d9a4-16734432567f1fca7e-0",
+        "template--15460449616070__9be75506-801e-4c17-a88a-5212bce3d9a4-16734432567f1fca7e-1"
+      ],
+      "settings": {
+        "color_scheme": "inverse",
+        "full_width": true
+      }
+    },
     "806cd9dd-ad63-4db3-9725-ce4409196d6a": {
       "type": "custom-liquid",
       "disabled": true,
@@ -10,6 +36,12 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "3b3f293b-17bf-4e36-9234-3466bcd1420e": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<style>\n.pill {\n  display: inline-block;\n  border-radius: 20px;\n  background-color: #F88545;\n  padding: 0px 10px;\n}\n\n.pill-icon {\n  margin-right: 10px;\n  font-size: 20px;\n  color: #FFE4D5;\n}\n\n.pill-text {\n  font-size: 15px;\n  color: white;\n  font-weight: bold;\n  text-align: center;\n}\n\n<\/style>\n<div class=\"pill\"><span class=\"pill-icon\">✘<\/span>\n  <span class=\"pill-text\">Bargain Item<\/span>\n<\/div>"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -57,13 +89,14 @@
           "type": "custom_liquid",
           "disabled": true,
           "settings": {
-            "custom_liquid": "<div class=\"card-information\">\n    <div class=\"card-information__wrapper\">\n      <span class=\"visually-hidden\">{{ 'accessibility.vendor' | t }}<\/span>\n      <div class=\"caption-with-letter-spacing light\">{{ 'products.product.vendor' | t }}<\/div>\n      {{ product.price | money}}\n    <\/div>\n  <\/div>"
+            "custom_liquid": "<style>\n.pill {\n  display: inline-block;\n  border-radius: 20px;\n  background-color: #F88545;\n  padding: 0px 10px;\n}\n\n.pill-icon {\n  margin-right: 10px;\n  font-size: 20px;\n}\n\n.pill-text {\n  font-size: 15px;\n  color: white;\n  font-weight: bold;\n  text-align: center;\n}\n\n<\/style>\n<div class=\"pill\">\n  <span class=\"pill-icon\"><\/span>\n  <span class=\"pill-text\">Bargain Item<\/span>\n<\/div>"
           }
         },
-        "4f0717e0-34d7-44d7-9543-6fdf50a55941": {
-          "type": "variant_picker",
+        "1d3021a1-80ff-411f-92fe-0dc637a46535": {
+          "type": "text",
           "settings": {
-            "picker_type": "button"
+            "text": "This is a Bargain Item. It is untestable, or have been tested and found to have significant flaws that affect or prevent normal use. Product description provides more detail if needed.",
+            "text_style": "body"
           }
         },
         "buy_buttons": {
@@ -90,10 +123,10 @@
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Condition Ratings",
-            "content": "<p>Our technicians use the appropriate tools to check every item's function and we use these results to assign ratings of 1 to 5. Cosmetic condition can be determined by each customer by viewing the photos.<\/p><p><a href=\"\/pages\/camera-condition-ratings\" target=\"_blank\" title=\"Camera Condition Ratings\">How we Rate Cameras<\/a><\/p>",
+            "heading": "Quality Rating: \"Bargain\"",
+            "content": "<p>Products with this rating have one or more of the following issues:<\/p><ul><li>Not certified by our experts.<\/li><li>Untestable or: tested, inspected, found to have significant flaws that affect or prevent normal use. <\/li><li>Not reconditioned. <\/li><li>Product description provides more detail if needed.<\/li><\/ul><p>In the current condition it will be difficult or impossible to use this product for its original intention. <\/p>",
             "page": "",
-            "icon": "star"
+            "icon": "check_mark"
           }
         },
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b": {
@@ -156,6 +189,7 @@
         }
       },
       "block_order": [
+        "3b3f293b-17bf-4e36-9234-3466bcd1420e",
         "title",
         "0df71d04-5b16-4ca9-a92f-43724c825900",
         "3489098b-b626-48b9-9b69-4aca9ec53063",
@@ -163,7 +197,7 @@
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
         "a01329cd-da87-4153-b7a4-04796b35d6d6",
         "99452d1b-4d7e-4077-a88b-abeded9e84f2",
-        "4f0717e0-34d7-44d7-9543-6fdf50a55941",
+        "1d3021a1-80ff-411f-92fe-0dc637a46535",
         "buy_buttons",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
         "6ff4987b-8f35-4a2e-89e3-3f40f342da38",
@@ -375,6 +409,7 @@
     }
   },
   "order": [
+    "9be75506-801e-4c17-a88a-5212bce3d9a4",
     "806cd9dd-ad63-4db3-9725-ce4409196d6a",
     "main",
     "16579008498f69713d",

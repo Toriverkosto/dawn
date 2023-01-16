@@ -55,23 +55,11 @@
               "color_text": "#121212",
               "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"
             }
-          },
-          "94c9c094-b7b9-45b0-8308-b4ba9121ed3a": {
-            "type": "announcement",
-            "settings": {
-              "text": "Online Store & Shipping OPEN | Helsinki Kiosk Closed until Jan. 16.",
-              "color_scheme": "accent-1",
-              "link": "",
-              "use_custom_color": false,
-              "color_text": "#121212",
-              "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"
-            }
           }
         },
         "block_order": [
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec",
-          "39d85c5b-b96e-42e4-b90d-5d4e816742eb",
-          "94c9c094-b7b9-45b0-8308-b4ba9121ed3a"
+          "39d85c5b-b96e-42e4-b90d-5d4e816742eb"
         ],
         "settings": {
         }

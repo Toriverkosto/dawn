@@ -127,7 +127,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "leica-m",
-            "popular": true,
+            "popular": false,
             "highlighted": false
           }
         },

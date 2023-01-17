@@ -18,7 +18,7 @@
           "settings": {
             "collection": "cameras",
             "popular": false,
-            "highlighted": false
+            "highlighted": true
           }
         },
         "603bea2c-0a37-420d-825e-b2daee1c8ae7": {
@@ -26,7 +26,7 @@
           "settings": {
             "collection": "lenses",
             "popular": false,
-            "highlighted": false
+            "highlighted": true
           }
         },
         "7437e766-2c5f-4f75-a9af-1eb27a814f9b": {
@@ -34,7 +34,7 @@
           "settings": {
             "collection": "accessories",
             "popular": false,
-            "highlighted": false
+            "highlighted": true
           }
         }
       },

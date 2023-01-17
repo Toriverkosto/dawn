@@ -51,12 +51,6 @@
         "show_vendor": false
       }
     },
-    "c4872107-24cc-4d92-9d08-72322073caef": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"reputon-google-reviews-widget\" id=\"bf91f8b0-88a8-11eb-9209-f960a060549e\" ><\/div>"
-      }
-    },
     "cart-footer": {
       "type": "main-cart-footer",
       "blocks": {
@@ -77,6 +71,12 @@
       ],
       "settings": {
         "show_cart_note": true
+      }
+    },
+    "c4872107-24cc-4d92-9d08-72322073caef": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"reputon-google-reviews-widget\" id=\"bf91f8b0-88a8-11eb-9209-f960a060549e\" ><\/div>"
       }
     },
     "1659350123df7b890d": {
@@ -116,8 +116,8 @@
     "1659351923288c7df7",
     "1659352077eddea578",
     "cart-items",
-    "c4872107-24cc-4d92-9d08-72322073caef",
     "cart-footer",
+    "c4872107-24cc-4d92-9d08-72322073caef",
     "1659350123df7b890d",
     "featured-products"
   ]

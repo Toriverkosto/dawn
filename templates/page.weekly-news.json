@@ -135,7 +135,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "leica-r",
-            "popular": false,
+            "popular": true,
             "highlighted": false
           }
         },
@@ -151,7 +151,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "m42",
-            "popular": false,
+            "popular": true,
             "highlighted": false
           }
         },
@@ -215,7 +215,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "olympus-om",
-            "popular": true,
+            "popular": false,
             "highlighted": false
           }
         },
@@ -231,7 +231,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "pentax-k",
-            "popular": false,
+            "popular": true,
             "highlighted": false
           }
         },

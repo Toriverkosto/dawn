@@ -51,6 +51,12 @@
         "show_vendor": false
       }
     },
+    "c4872107-24cc-4d92-9d08-72322073caef": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"reputon-google-reviews-widget\" id=\"bf91f8b0-88a8-11eb-9209-f960a060549e\" ><\/div>"
+      }
+    },
     "cart-footer": {
       "type": "main-cart-footer",
       "blocks": {
@@ -77,7 +83,7 @@
       "type": "apps",
       "blocks": {
         "87763d82-1725-4f8b-bb0c-1aca0a46bf75": {
-          "type": "shopify:\/\/apps\/ultimate-trust-badges\/blocks\/widget\/163a9b59-0ec2-4cb7-bf5c-31408b4a9420",
+          "type": "shopify:\/\/apps\/trust-badges-bear\/blocks\/widget\/163a9b59-0ec2-4cb7-bf5c-31408b4a9420",
           "settings": {
           }
         }
@@ -110,6 +116,7 @@
     "1659351923288c7df7",
     "1659352077eddea578",
     "cart-items",
+    "c4872107-24cc-4d92-9d08-72322073caef",
     "cart-footer",
     "1659350123df7b890d",
     "featured-products"

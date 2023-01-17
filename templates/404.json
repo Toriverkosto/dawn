@@ -7,6 +7,28 @@
     },
     "f5a4d8cd-79e6-4c9f-b391-444206545ecb": {
       "type": "weekly-news-section",
+      "blocks": {
+        "4d051a8d-567d-45c7-9898-31af3f757c73": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cameras",
+            "popular": false,
+            "highlighted": false
+          }
+        },
+        "603bea2c-0a37-420d-825e-b2daee1c8ae7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "lenses",
+            "popular": false,
+            "highlighted": false
+          }
+        }
+      },
+      "block_order": [
+        "4d051a8d-567d-45c7-9898-31af3f757c73",
+        "603bea2c-0a37-420d-825e-b2daee1c8ae7"
+      ],
       "settings": {
         "new_tag": "Time-7d"
       }

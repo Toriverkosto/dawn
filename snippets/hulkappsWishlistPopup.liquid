@@ -115,9 +115,9 @@
                     <hr>
                     <div class="wishlist-modal__header" style="margin-bottom: 1rem;">
                         {% if(shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.modal_title) %}
-                            <h5 data-emailPopupTitle style="font-size: 18px;">{{ shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.modal_title }}</h5>
+                            <h5 style="font-size: 18px;">{{ shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.modal_title }}</h5>
                         {% else %}
-                            <h5 data-emailPopupTitle style="font-size: 18px;">Or Share Via</h5>
+                            <h5 style="font-size: 18px;">Or Share Via</h5>
                         {% endif %}
                     </div>
                     {% if(shop.metafields.hulkapps_wishlist.hulkapps_wishlist_buttonstyle.set_icon == 'set_1') %}
@@ -293,6 +293,24 @@
                     <div class="btn-wrap">
                         <button class="wishlist-btn hulkBtnStyle" data-hulkappsMoveItemsOk >Yes</button>
                         <button class="wishlist-btn hulkBtnStyle" data-hulkappsMoveItemsCancel >Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wishlist-popup wishlist-help-popup" data-hulkappsHelpTextPrompt>
+        <div class="wishlist-modal modal-small">
+            <div class="wishlist-modal__content">
+                <div class="wishlist-modal__body">
+                    <button class="close-popup" data-closeWishlistPopup><span class="icon-wishlist-cross"></span></button>
+                    <div data-helpTextContent>
+                        <h3 style="text-align: center">Wishlist management page</h3>
+                        <ul>
+                            <li>This page allows you to manage and add wishlist items directly to the cart.</li>
+                            <li>Share your public wishlist on social media, through links, and via custom email.</li>
+                            <li>You can subscribe to get update about your wishlist items</li>
+                        </ul>
                     </div>
                 </div>
             </div>

@@ -239,7 +239,7 @@
                 {% assign optical = sale.condition.optical | append: "" %}
                 <td class="text" data-title="Optics">{{ condition_map[optical] }}</td>
                 <td class="text" data-title="Cosmetics">{{ sale.condition.cosmetic }}/5</td>
-                <td class="number" data-title="Price">{{ sale.price | times: 100 | money }}</td>
+                <td class="number" data-title="Price">€&nbsp;{{ sale.price | times: 100 | money_without_currency }}</td>
                 <td class="image" data-title="Image">
                   <a href="{{ sale.image.src }}" target="_blank">
                     <img

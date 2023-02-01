@@ -107,6 +107,7 @@
     },
     "16553912346ad77219": {
       "type": "collage",
+      "disabled": true,
       "blocks": {
         "16553912345d4aa027-1": {
           "type": "product",
@@ -143,6 +144,48 @@
       ],
       "settings": {
         "heading": "VALOI Kit Options",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
+    },
+    "50d58055-b254-4570-86a4-253f11955c8e": {
+      "type": "collage",
+      "blocks": {
+        "template--15243804573894__50d58055-b254-4570-86a4-253f11955c8e-16752453626a84e28c-0": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video",
+            "image_padding": false
+          }
+        },
+        "template--15243804573894__50d58055-b254-4570-86a4-253f11955c8e-16752453626a84e28c-1": {
+          "type": "product",
+          "settings": {
+            "product": "advancer-scanning-kit",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        },
+        "template--15243804573894__50d58055-b254-4570-86a4-253f11955c8e-16752453626a84e28c-2": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804573894__50d58055-b254-4570-86a4-253f11955c8e-16752453626a84e28c-0",
+        "template--15243804573894__50d58055-b254-4570-86a4-253f11955c8e-16752453626a84e28c-1",
+        "template--15243804573894__50d58055-b254-4570-86a4-253f11955c8e-16752453626a84e28c-2"
+      ],
+      "settings": {
+        "heading": "Special Price for a Limited Time",
         "desktop_layout": "left",
         "mobile_layout": "collage"
       }
@@ -222,6 +265,7 @@
     "f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f",
     "163715637672ee2874",
     "16553912346ad77219",
+    "50d58055-b254-4570-86a4-253f11955c8e",
     "163274530333c96e90",
     "banner",
     "product-grid"

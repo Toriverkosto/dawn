@@ -32,12 +32,20 @@
      {%- assign sub_category_collection = product.metafields.kameratori.sub_category_collection.value -%}
      {%- assign product_type_collection = product.metafields.kameratori.product_type_collection.value -%}
      {%- assign system_collection = product.metafields.kameratori.system_collection.value -%}
-     {% if category_collection %}<a href="{{ category_collection.url }}" class="link">{{ category_collection.title }}</a> ›{% endif %}
-     {% if sub_category_collection and sub_category_collection.id != product_type_collection.id and sub_category_collection.id != category_collection.id %}
-       <a href="{{ sub_category_collection.url }}" class="link">{{ sub_category_collection.title }}</a> ›
+
+     {% if category_collection %}
+       <a href="{{ category_collection.url }}" class="link">{{ category_collection.title }}</a>
+       {%- if sub_category_collection or product_type_collection or system_collection %} ›{%- endif -%}
      {% endif %}
-     {% if product_type_collection %}<a href="{{ product_type_collection.url }}" class="link">{{ product_type_collection.title }}</a>{% endif %}
-     {% if system_collection %}› <a href="{{ system_collection.url }}" class="link">{{ system_collection.title }}</a>{% endif %}
+     {% if sub_category_collection and sub_category_collection.id != product_type_collection.id and sub_category_collection.id != category_collection.id %}
+       <a href="{{ sub_category_collection.url }}" class="link">{{ sub_category_collection.title }}</a>
+       {%- if product_type_collection or system_collection %} ›{%- endif -%}
+     {% endif %}
+     {% if product_type_collection %}
+       <a href="{{ product_type_collection.url }}" class="link">{{ product_type_collection.title }}</a>
+       {%- if system_collection %} ›{%- endif -%}
+     {% endif %}
+     {% if system_collection %}<a href="{{ system_collection.url }}" class="link">{{ system_collection.title }}</a>{% endif %}
    </div>
   {% endif %}
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% elsif product.metafields.kameratori.host.value.media != blank %}gridd--2-col-tablet{% else %}product--no-media{% endif %}">

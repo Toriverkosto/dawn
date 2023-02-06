@@ -27,27 +27,18 @@
   {% endif %}
 
   {% if section.settings.show_breadcrumbs %}
-    <div class="product__breadcrumbs-container">
-      {% for t in product.tags %}
-        {% assign prefix = t | slice: 0, 7 %}
-        {% if prefix == 'System-' and t != 'System-Not Defined' %}
-          {% assign product_system = t | slice: 7, 57 %}
-        {% endif %}
-        {% assign parts = t | split: '-'%}
-        {% assign prefix = parts | first %}
-        {% assign value = parts | last %}
-        {% if prefix == 'Category'%}
-          {% assign category = value %}
-        {% elsif prefix == 'SubCategory' %}
-          {% assign sub_category = value %}
-        {% endif %}
-      {% endfor %}
-      {% comment %}TODO: Make configurable, omit parts? {% endcomment %}
-      {% if category %}<a href="/collections/{{ category | downcase | replace: "/", "" | replace: "  ", " " | replace: " ", "-" }}" class="link">{{ category }}</a> ›{% endif %}
-      {% if sub_category %}<a href="/collections/{{ sub_category | downcase| replace: "/", "" | replace: "  ", " " | replace: " ", "-" }}" class="link">{{ sub_category }}</a> ›{% endif %}
-      <a href="/collections/{{ product.type | downcase | replace: "/", "" | replace: "  ", " " | replace: " ", "-" }}" class="link">{{ product.type }}</a>
-      {% if product_system != nil %}› <a href="/collections/{{ product_system | downcase | replace: "/", "" | replace: "  ", " " | replace: " ", "-" }}" class="link">{{ product_system }}</a>{% endif %}
-    </div>
+   <div class="product__breadcrumbs-container">
+     {%- assign category_collection = product.metafields.kameratori.category_collection.value -%}
+     {%- assign sub_category_collection = product.metafields.kameratori.sub_category_collection.value -%}
+     {%- assign product_type_collection = product.metafields.kameratori.product_type_collection.value -%}
+     {%- assign system_collection = product.metafields.kameratori.system_collection.value -%}
+     {% if category_collection %}<a href="{{ category_collection.url }}" class="link">{{ category_collection.title }}</a> ›{% endif %}
+     {% if sub_category_collection and sub_category_collection.id != product_type_collection.id and sub_category_collection.id != category_collection.id %}
+       <a href="{{ sub_category_collection.url }}" class="link">{{ sub_category_collection.title }}</a> ›
+     {% endif %}
+     {% if product_type_collection %}<a href="{{ product_type_collection.url }}" class="link">{{ product_type_collection.title }}</a>{% endif %}
+     {% if system_collection %}› <a href="{{ system_collection.url }}" class="link">{{ system_collection.title }}</a>{% endif %}
+   </div>
   {% endif %}
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% elsif product.metafields.kameratori.host.value.media != blank %}gridd--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper">
@@ -83,11 +74,11 @@
           {%- for media in product.media -%}
             {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
               <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
-                {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %} 
+                {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
                 {%- if section.settings.show_image_label and forloop.index == 1 -%}
                 <div class="image_label">
-                  {%- if product.metafields.kameratori.listing_facts.value.last.image_source != "database" 
-                  or product.metafields.kameratori.listing_facts.value.last.image_source == null 
+                  {%- if product.metafields.kameratori.listing_facts.value.last.image_source != "database"
+                  or product.metafields.kameratori.listing_facts.value.last.image_source == null
                   or product.metafields.kameratori.listing_facts == blank -%}
                   <div class="image_type">
                     {{ "products.product.actual_item_image" | t }}
@@ -180,7 +171,7 @@
                   {{ block.settings.page.content }}
                 </div>
               </details>
-            </div>  
+            </div>
           {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">

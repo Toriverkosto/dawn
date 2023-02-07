@@ -156,7 +156,7 @@ const serializeForm = form => {
   for (const key of formData.keys()) {
     const regex = /(?:^(properties\[))(.*?)(?:\]$)/;
 
-    if (regex.test(key)) { 
+    if (regex.test(key)) {
       obj.properties = obj.properties || {};
       obj.properties[regex.exec(key)[2]] = formData.get(key);
     } else {
@@ -668,6 +668,14 @@ class VariantSelects extends HTMLElement {
 
         if (price) price.classList.remove('visibility-hidden');
         this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
+
+        // Update custom sku_and_barcode block on main-product
+        const sb_id = `sku_and_barcode-${this.dataset.section}`;
+        const sb_source = html.getElementById(sb_id);
+        const sb_destination = document.getElementById(sb_id);
+        if (sb_source && sb_destination) {
+          sb_destination.innerHTML = sb_source.innerHTML;
+        }
       });
   }
 

@@ -18,7 +18,7 @@
 {%- endif -%}
  <section class="page-width">
   {% if section.settings.show_sku_and_barcode %}
-    <p class="product__sku_and_barcode">
+    <p class="product__sku_and_barcode" id="sku_and_barcode-{{ section.id }}">
       <span> ID: {{ product.selected_or_first_available_variant.sku }}</span>
       {% if product.selected_or_first_available_variant.barcode %}
         <span>/ Code: {{ product.selected_or_first_available_variant.barcode }}</span>

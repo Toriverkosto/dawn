@@ -44,6 +44,11 @@
         "custom_liquid": "<div class=\"page-width page-width--wide\">{%- assign my_fields = product.metafields.my_fields -%}\n<div class=\"hero\">\n{%- assign image_src = my_fields.brand_logo.value.src -%}\n{{ image_src | img_url: '125x125' | img_tag }}<\/div><\/div>"
       }
     },
+    "164543512984681dd4": {
+      "type": "database-product-price-table",
+      "settings": {
+      }
+    },
     "16340245700ec1844e": {
       "type": "apps",
       "settings": {
@@ -173,11 +178,6 @@
         "7eeb302c-82c0-4b2b-870e-211d00fe4828",
         "7f89b259-cd58-4065-81a1-bae5ad345f2c"
       ],
-      "settings": {
-      }
-    },
-    "164543512984681dd4": {
-      "type": "database-product-price-table",
       "settings": {
       }
     },
@@ -345,10 +345,10 @@
   "order": [
     "1641816962ad3e2698",
     "1634194655a811a44b",
+    "164543512984681dd4",
     "16340245700ec1844e",
     "main",
     "1657620583d53dcde3",
-    "164543512984681dd4",
     "16450990378461246d",
     "1645526962d5bc21bf",
     "1645516896bd0ceef6",

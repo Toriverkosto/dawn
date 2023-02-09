@@ -181,6 +181,22 @@
       "settings": {
       }
     },
+    "ee8ebef5-bfd1-4290-97db-94b2936529a4": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Newest items from this system",
+        "collection": "{{ product.metafields.kameratori.system_collection.value }}",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": false
+      }
+    },
     "16450990378461246d": {
       "type": "apps",
       "blocks": {
@@ -349,6 +365,7 @@
     "16340245700ec1844e",
     "main",
     "1657620583d53dcde3",
+    "ee8ebef5-bfd1-4290-97db-94b2936529a4",
     "16450990378461246d",
     "1645526962d5bc21bf",
     "1645516896bd0ceef6",

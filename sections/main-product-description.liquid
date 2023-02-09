@@ -58,7 +58,7 @@
           {% endif %}
           <b>{{ host_product.title }}</b>
           <div>{{ host_product.description }}</div>
-          {% unless host_product.description contains "Battery" %}
+          {% unless host_product.description contains "Battery" or host_product.description contains "battery" %}
             {% if product.metafields.kameratori.batteries and product.metafields.kameratori.batteries.value.size > 0 %}
             <div>
               {{ "products.product.battery_info" | t }}{{product.title | remove_first: "-" }}:

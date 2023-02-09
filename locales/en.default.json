@@ -106,6 +106,7 @@
       "product_variants": "Product variants",
       "actual_item_image": "Actual item pictured",
       "stock_item_image": "Stock photo",
+      "battery_info": " Compatible battery type(s) for the ",
       "taxable_html": "Your countries <a class=\"link\" href=\"\/pages\/vat\">VAT<\/a>. incl. (EU only).",
       "not_taxable_html": "Price as shown. Used item, no deductible <a class=\"link\" href=\"\/pages\/vat\">VAT<\/a>.",
       "media": {

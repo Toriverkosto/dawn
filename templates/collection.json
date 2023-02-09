@@ -104,7 +104,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/DigiSale_July2022-1337.jpg",
         "height": "adapt",
-        "color_scheme": "background-1",
+        "color_scheme": "inverse",
         "layout": "image_first"
       }
     }

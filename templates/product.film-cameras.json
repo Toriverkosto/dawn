@@ -389,7 +389,7 @@
         "collection": "{{ product.metafields.kameratori.system_collection.value }}",
         "products_to_show": 4,
         "show_view_all": true,
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "add_image_padding": false,
@@ -405,12 +405,12 @@
         "collection": "{{ product.metafields.kameratori.product_type_collection.value }}",
         "products_to_show": 4,
         "show_view_all": true,
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "image_ratio": "adapt",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "add_image_padding": false,
         "show_image_outline": true,
-        "show_vendor": false,
+        "show_vendor": true,
         "show_rating": false
       }
     }

@@ -72,6 +72,41 @@
         "color_scheme": "background-1",
         "layout": "image_first"
       }
+    },
+    "49c46c69-642a-42bd-9f85-c0f818d6c223": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15243804541126__49c46c69-642a-42bd-9f85-c0f818d6c223-1675932029a6a92e9b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Want to sell or upgrade?"
+          }
+        },
+        "template--15243804541126__49c46c69-642a-42bd-9f85-c0f818d6c223-1675932029a6a92e9b-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Do you have unused camera gear laying around? We buy cameras, lenses, and accessories of all ages - film & digital. Sell for flat payment or trade-in for something new.<\/p>"
+          }
+        },
+        "template--15243804541126__49c46c69-642a-42bd-9f85-c0f818d6c223-1675932029a6a92e9b-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get Started",
+            "button_link": "shopify:\/\/pages\/sell-or-trade-your-used-camera-gear"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804541126__49c46c69-642a-42bd-9f85-c0f818d6c223-1675932029a6a92e9b-0",
+        "template--15243804541126__49c46c69-642a-42bd-9f85-c0f818d6c223-1675932029a6a92e9b-1",
+        "template--15243804541126__49c46c69-642a-42bd-9f85-c0f818d6c223-1675932029a6a92e9b-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/DigiSale_July2022-1337.jpg",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
     }
   },
   "order": [
@@ -79,6 +114,7 @@
     "banner",
     "1652858265324f2f78",
     "product-grid",
-    "b9dfc798-0ede-4254-805a-b97ccff4d0b7"
+    "b9dfc798-0ede-4254-805a-b97ccff4d0b7",
+    "49c46c69-642a-42bd-9f85-c0f818d6c223"
   ]
 }

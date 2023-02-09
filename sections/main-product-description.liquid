@@ -58,6 +58,17 @@
           {% endif %}
           <b>{{ host_product.title }}</b>
           <div>{{ host_product.description }}</div>
+          {% unless host_product.description contains "Battery" %}
+          <div class="metafields-container">
+            {% if product.metafields.kameratori.batteries and product.metafields.kameratori.batteries.value.size > 0 %}
+            Battery:
+            {% for battery in product.metafields.kameratori.batteries.value %}
+              <b> {{battery}}</b> (Not included)
+              {% if forloop.last != true %}, {% else %}<br />{% endif %}
+            {% endfor %}
+          {% endif %}
+          {% endunless %}
+          </div>
           {% assign previous_content_section_shown = true %}
         {% endif %}
       {%- when 'main_kit_stock' -%}
@@ -99,14 +110,6 @@
                 {% if forloop.last != true %}, {% endif %}
               {% endfor %}
               <br />
-            {% endif %}
-
-            {% if product.metafields.kameratori.batteries and product.metafields.kameratori.batteries.value.size > 0 %}
-              Battery:
-              {% for battery in product.metafields.kameratori.batteries.value %}
-                <b> {{battery}}</b>
-                {% if forloop.last != true %}, {% else %}<br />{% endif %}
-              {% endfor %}
             {% endif %}
 
             {% if product.metafields.kameratori.shutter_count and product.metafields.kameratori.shutter_count != "" %}

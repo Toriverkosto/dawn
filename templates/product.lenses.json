@@ -402,7 +402,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/ok.webp",
         "height": "small",
-        "color_scheme": "background-1",
+        "color_scheme": "inverse",
         "layout": "text_first"
       }
     }

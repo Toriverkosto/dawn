@@ -22,7 +22,7 @@
 * Flair: https://apps.shopify.com/flair
 * Copyright Brainy Atom LLC, All Rights Reserved.
 *
-* Last updated: 2023-01-18T10:35:29Z
+* Last updated: 2023-02-14T19:33:55Z
 ************************************************************************
 {%- endcomment -%}
 {%- liquid
@@ -506,21 +506,13 @@ for flair_mf in flair_mfs
       assign flair_badge_count = flair_badge_count | plus: 1
       if flair_badge_css
         assign flair_badge_css_style = 'style="' | append: flair_badge_css | append: '"'
-        assign flair_badge_mobile_css_style = 'style="display: none;' | append: flair_badge_css | append: '"'
       else
         assign flair_badge_css_style = ""
-        assign flair_badge_mobile_css_style = 'style="display: none"'
       endif
       capture "flair_badge_output"
-        echo '<div class="flair-badge-wrapper flair-badge-wrapper-full ' | append: flair_badge_css_class | append: '" ' | append: flair_badge_css_style | append: ">"
+        echo '<div class="flair-badge-wrapper ' | append: flair_badge_css_class | append: '" ' | append: flair_badge_css_style | append: ">"
         echo flair_badge.content
         echo "</div>"
-
-        if flair_badge.mobile_content
-          echo '<div class="flair-badge-wrapper flair-badge-wrapper-mobile ' | append: flair_badge_css_class | append: '" ' | append: flair_badge_mobile_css_style | append: ">"
-          echo flair_badge.mobile_content
-          echo "</div>"
-        endif
       endcapture
 
       for item in flair_badge.dynamic_text_vars

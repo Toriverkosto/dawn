@@ -44,23 +44,6 @@
         "swipe_on_mobile": true
       }
     },
-    "ddec4f30-078a-4448-a1c9-25e86fe7a449": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Green Week 2022",
-        "collection": "green-week-main-collection",
-        "products_to_show": 12,
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": false,
-        "show_vendor": true,
-        "show_rating": false
-      }
-    },
     "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe": {
       "type": "custom-liquid",
       "settings": {
@@ -81,6 +64,12 @@
         "show_image_outline": true,
         "show_vendor": true,
         "show_rating": false
+      }
+    },
+    "16336738395370bc94": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"reputon-google-reviews-widget\" id=\"bf91f8b0-88a8-11eb-9209-f960a060549e\" ><\/div>"
       }
     },
     "16681567159a25ad0d": {
@@ -221,12 +210,6 @@
         "color_scheme": "background-1",
         "stack_images_on_mobile": false,
         "show_text_below": true
-      }
-    },
-    "16336738395370bc94": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"reputon-google-reviews-widget\" id=\"bf91f8b0-88a8-11eb-9209-f960a060549e\" ><\/div>"
       }
     },
     "165416468256763b39": {
@@ -387,98 +370,6 @@
         "show_rating": true
       }
     },
-    "1655879063dce72fc4": {
-      "type": "collection-list",
-      "disabled": true,
-      "blocks": {
-        "1655879063c364a6c4-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "canon-film-cameras"
-          }
-        },
-        "7fd4809c-e10b-45d9-85ad-4b3bf76b9683": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "leica-film-cameras"
-          }
-        },
-        "7a307aab-b6e0-4bfa-bb6e-d58e088bca80": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "mamiya-film-cameras"
-          }
-        },
-        "1655879063c364a6c4-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "nikon-film-cameras"
-          }
-        },
-        "1655879063c364a6c4-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "olympus-film-cameras"
-          }
-        },
-        "3f776fbc-d442-45a0-863a-939eed5db76d": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "premium-film-cameras"
-          }
-        }
-      },
-      "block_order": [
-        "1655879063c364a6c4-1",
-        "7fd4809c-e10b-45d9-85ad-4b3bf76b9683",
-        "7a307aab-b6e0-4bfa-bb6e-d58e088bca80",
-        "1655879063c364a6c4-2",
-        "1655879063c364a6c4-0",
-        "3f776fbc-d442-45a0-863a-939eed5db76d"
-      ],
-      "settings": {
-        "title": "",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": true,
-        "image_padding": false,
-        "show_view_all": false
-      }
-    },
-    "featured_products": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Newly Listed",
-        "collection": "all-items",
-        "products_to_show": 8,
-        "show_view_all": true,
-        "swipe_on_mobile": true,
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": false,
-        "show_vendor": true,
-        "show_rating": false
-      }
-    },
-    "16328192199ca25f9a": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Film Cameras",
-        "collection": "film-cameras",
-        "products_to_show": 8,
-        "show_view_all": true,
-        "swipe_on_mobile": true,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": false,
-        "show_vendor": true,
-        "show_rating": false
-      }
-    },
     "1637242258da800a0c": {
       "type": "custom-liquid",
       "disabled": true,
@@ -543,64 +434,13 @@
         "image_padding": false,
         "show_view_all": false
       }
-    },
-    "16328199566df3daf4": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Rangefinder Lenses",
-        "collection": "rangefinder-lenses",
-        "products_to_show": 8,
-        "show_view_all": true,
-        "swipe_on_mobile": true,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": false,
-        "show_vendor": true,
-        "show_rating": false
-      }
-    },
-    "16328202527d1c0448": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Medium Format Lenses",
-        "collection": "medium-format-lenses",
-        "products_to_show": 8,
-        "show_view_all": true,
-        "swipe_on_mobile": true,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": true,
-        "show_rating": false
-      }
-    },
-    "16328203716b324724": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Large Format Lenses",
-        "collection": "large-format-lenses",
-        "products_to_show": 8,
-        "show_view_all": true,
-        "swipe_on_mobile": true,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": false,
-        "show_vendor": true,
-        "show_rating": false
-      }
     }
   },
   "order": [
     "multi_column",
-    "ddec4f30-078a-4448-a1c9-25e86fe7a449",
     "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe",
     "1660560902df48f128",
+    "16336738395370bc94",
     "16681567159a25ad0d",
     "16590912674b072be6",
     "16590913415aba16e5",
@@ -608,19 +448,12 @@
     "1659091458c6563459",
     "1659091584eaa04e2b",
     "image_banner",
-    "16336738395370bc94",
     "165416468256763b39",
     "644add83-8314-41d9-a511-351933776664",
     "16627241848ff0f7e4",
     "1632470234f73d3bc0",
     "1655878837fa505e49",
-    "1655879063dce72fc4",
-    "featured_products",
-    "16328192199ca25f9a",
     "1637242258da800a0c",
-    "1632819284873cdad3",
-    "16328199566df3daf4",
-    "16328202527d1c0448",
-    "16328203716b324724"
+    "1632819284873cdad3"
   ]
 }

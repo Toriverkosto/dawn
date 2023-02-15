@@ -102,7 +102,6 @@ var boostPFSFilterConfig = {
 		itemHtml = itemHtml.replace(/{{itemHandle}}/g, data.handle);
 		itemHtml = itemHtml.replace(/{{itemVendorLabel}}/g, productSystem || data.vendor);
 		itemHtml = itemHtml.replace(/{{itemUrl}}/g, Utils.buildProductItemUrl(data));
-        itemHtml = itemHtml.replace(/{{itemFlairHtml}}/g, '<div data-flair-product-badge data-product-id="' + data.id.toString() + '"></div>');
 		return itemHtml;
 	};
 
@@ -399,9 +398,7 @@ var boostPFSFilterConfig = {
   // Add additional feature for product list, used commonly in customizing product list
 	ProductList.prototype.afterRender = function(data) {
 		if (!data) data = this.data;
-        if (typeof FlairApp !== 'undefined' && FlairApp) { FlairApp.refreshProductBadges(); }
-	};
-	
+	}
 
 	// Build Additional Elements
 	Filter.prototype.afterRender = function(data, eventType) {

@@ -107,6 +107,24 @@
         "color_scheme": "inverse",
         "layout": "image_first"
       }
+    },
+    "1676452983e1698051": {
+      "type": "apps",
+      "blocks": {
+        "62222df4-6833-417c-b9ed-23299ee7635d": {
+          "type": "shopify:\/\/apps\/flair-product-badges-labels\/blocks\/banners\/51d5ae10-f90f-4540-9ec6-f09f14107bf4",
+          "settings": {
+            "heading": "Flair Badge Collection Page",
+            "layout": ""
+          }
+        }
+      },
+      "block_order": [
+        "62222df4-6833-417c-b9ed-23299ee7635d"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -115,6 +133,7 @@
     "1652858265324f2f78",
     "product-grid",
     "b9dfc798-0ede-4254-805a-b97ccff4d0b7",
-    "49c46c69-642a-42bd-9f85-c0f818d6c223"
+    "49c46c69-642a-42bd-9f85-c0f818d6c223",
+    "1676452983e1698051"
   ]
 }

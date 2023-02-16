@@ -38,6 +38,24 @@
         "full_width": true
       }
     },
+    "1676554272ab1d8308": {
+      "type": "apps",
+      "blocks": {
+        "7b142564-3e30-49c3-84b8-b85845501b51": {
+          "type": "shopify:\/\/apps\/flair-product-badges-labels\/blocks\/banners\/51d5ae10-f90f-4540-9ec6-f09f14107bf4",
+          "settings": {
+            "heading": "Flair banners",
+            "layout": ""
+          }
+        }
+      },
+      "block_order": [
+        "7b142564-3e30-49c3-84b8-b85845501b51"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -154,13 +172,14 @@
           }
         },
         "621c4599-3a2c-4d60-a6f4-630ef05bfba3": {
-          "type": "shopify:\/\/apps\/advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
+          "type": "shopify:\/\/apps\/hulk-advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
           "settings": {
+            "is_new_icon_settings": false,
             "theme_color": "#f15975",
             "button_style": "style_3",
             "button_border": 0,
             "button_font_size": 16,
-            "button_font_weight": 500,
+            "button_font_weight": "500",
             "button_border_radius": 0,
             "button_vertical_space": 9,
             "button_horizontal_space": 16,
@@ -169,7 +188,16 @@
             "border_color": "#5c6ac4",
             "hover_button_text_color": "#ffffff",
             "hover_button_background_color": "#5c6ac4",
-            "hover_button_border_color": "#5c6ac4"
+            "hover_button_border_color": "#5c6ac4",
+            "icon_type": "outline",
+            "icon_size": 16,
+            "icon_background_type": "icon_round_background",
+            "icon_background_color": "#5c6ac4",
+            "icon_fill_color": "#ffffff",
+            "icon_border_color": "#ffffff",
+            "icon_hover_color": "#5c6ac4",
+            "selected_icon_fill_color": "#5c6ac4",
+            "selected_icon_border_color": "#5c6ac4"
           }
         },
         "9b20a83b-fe5d-4d60-80fb-5e93ee1a61c2": {
@@ -310,6 +338,7 @@
   },
   "order": [
     "1632824788edf71f2f",
+    "1676554272ab1d8308",
     "main",
     "16587538834d2716f8",
     "16461179422d882da6",

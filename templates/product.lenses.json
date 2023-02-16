@@ -1,14 +1,16 @@
 {
   "sections": {
-    "1645191454f79a9ff8": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
+        "d9f4c8ca-d73d-4939-a79f-970dab3d5d58": {
+          "type": "shopify:\/\/apps\/flair-product-badges-labels\/blocks\/product-badges\/51d5ae10-f90f-4540-9ec6-f09f14107bf4",
+          "settings": {
+            "heading": "Flair product badges",
+            "layout": "",
+            "product": "{{product}}"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -169,6 +171,7 @@
         }
       },
       "block_order": [
+        "d9f4c8ca-d73d-4939-a79f-970dab3d5d58",
         "title",
         "241631da-98aa-4528-be61-73d8d8c6b988",
         "c312f42b-e37a-405e-b2aa-7ff730360f4e",
@@ -408,7 +411,6 @@
     }
   },
   "order": [
-    "1645191454f79a9ff8",
     "main",
     "165762036647fa041d",
     "16594448804e5cd8e5",

@@ -1,15 +1,16 @@
 {
   "sections": {
-    "806cd9dd-ad63-4db3-9725-ce4409196d6a": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "{{ product.metafields.custom.bundle_test }}\n<div class=\"related-products-wrapper\">\n  {%assign related_products = product.metafields.custom.bundle_test %}\n   {% if related_products %}\n    <h3>You might also like:<\/h3>\n     <div class = \"related-product-list\">\n      {% for related_product in related_products %}\n       <a href = \"{{shop.url | append: \"\/products\/\" | append: related_product.handle }}\">\n        <div class = \"related-product\">\n         <div class = \"related-product-image\">\n           <img src = \"{{related_product.featured_image | img_url: 'medium' }}\" \/>\n          <\/div>\n         <div class = \"related-product-name\">{{related_product.title}}<\/div>\n         <div class = \"related-product-price\">{{related_product.price | money}}<\/div>\n        <\/div>\n       <\/a>\n      {% endfor %}\n     <\/div>\n   {%endif%}\n<\/div>\n<div class = \"related-products-dummy\"><\/div>"
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
+        "2eff5c51-e056-4f95-89a0-66cea8f15caf": {
+          "type": "shopify:\/\/apps\/flair-product-badges-labels\/blocks\/product-badges\/51d5ae10-f90f-4540-9ec6-f09f14107bf4",
+          "settings": {
+            "heading": "Flair product badges",
+            "layout": "",
+            "product": "{{product}}"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -165,6 +166,7 @@
         }
       },
       "block_order": [
+        "2eff5c51-e056-4f95-89a0-66cea8f15caf",
         "title",
         "0df71d04-5b16-4ca9-a92f-43724c825900",
         "3489098b-b626-48b9-9b69-4aca9ec53063",
@@ -416,7 +418,6 @@
     }
   },
   "order": [
-    "806cd9dd-ad63-4db3-9725-ce4409196d6a",
     "main",
     "16579008498f69713d",
     "1658753086970be4d5",

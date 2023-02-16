@@ -17,6 +17,14 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "ab398340-acf2-4a8d-8ddd-e3afa2cc3c1a": {
+          "type": "shopify:\/\/apps\/flair-product-badges-labels\/blocks\/product-badges\/51d5ae10-f90f-4540-9ec6-f09f14107bf4",
+          "settings": {
+            "heading": "Flair product badges",
+            "layout": "",
+            "product": "{{product}}"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -159,6 +167,7 @@
         }
       },
       "block_order": [
+        "ab398340-acf2-4a8d-8ddd-e3afa2cc3c1a",
         "title",
         "3e022f72-085a-4854-bf94-64f0bb65bbb1",
         "a3ca7016-1f16-4d9e-844f-e638eb512a61",

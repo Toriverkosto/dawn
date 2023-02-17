@@ -4,9 +4,60 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "c86b66dc-073f-41b2-b3e5-3fd4445acdcd": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15480069161158__c86b66dc-073f-41b2-b3e5-3fd4445acdcd-16766241421d3311ce-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Subscribe to our emails"
+          }
+        },
+        "template--15480069161158__c86b66dc-073f-41b2-b3e5-3fd4445acdcd-16766241421d3311ce-1": {
+          "type": "paragraph",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "template--15480069161158__c86b66dc-073f-41b2-b3e5-3fd4445acdcd-16766241421d3311ce-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15480069161158__c86b66dc-073f-41b2-b3e5-3fd4445acdcd-16766241421d3311ce-0",
+        "template--15480069161158__c86b66dc-073f-41b2-b3e5-3fd4445acdcd-16766241421d3311ce-1",
+        "template--15480069161158__c86b66dc-073f-41b2-b3e5-3fd4445acdcd-16766241421d3311ce-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "910678a7-3c39-4c57-99ec-577499b69dc9": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "collection": "35mm-film-cameras",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "add_image_padding": true,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "c86b66dc-073f-41b2-b3e5-3fd4445acdcd",
+    "910678a7-3c39-4c57-99ec-577499b69dc9"
   ]
 }

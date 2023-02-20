@@ -5,6 +5,38 @@
       "settings": {
       }
     },
+    "50401469-c3a9-4c32-a2da-5481fefb15c5": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15243804803270__50401469-c3a9-4c32-a2da-5481fefb15c5-16768971559839f0e9-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Subscribe to our emails"
+          }
+        },
+        "template--15243804803270__50401469-c3a9-4c32-a2da-5481fefb15c5-16768971559839f0e9-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>This item is no longer available. Sign up to our newsletter to receive weekly product summaries like you see below. This is the best way to get newly added items before they're gone.<\/p>"
+          }
+        },
+        "template--15243804803270__50401469-c3a9-4c32-a2da-5481fefb15c5-16768971559839f0e9-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804803270__50401469-c3a9-4c32-a2da-5481fefb15c5-16768971559839f0e9-0",
+        "template--15243804803270__50401469-c3a9-4c32-a2da-5481fefb15c5-16768971559839f0e9-1",
+        "template--15243804803270__50401469-c3a9-4c32-a2da-5481fefb15c5-16768971559839f0e9-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "f5a4d8cd-79e6-4c9f-b391-444206545ecb": {
       "type": "weekly-news-section",
       "blocks": {
@@ -67,6 +99,7 @@
   },
   "order": [
     "main",
+    "50401469-c3a9-4c32-a2da-5481fefb15c5",
     "f5a4d8cd-79e6-4c9f-b391-444206545ecb",
     "1643098395207aed50"
   ]

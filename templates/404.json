@@ -45,39 +45,59 @@
           "settings": {
           }
         },
-        "4d051a8d-567d-45c7-9898-31af3f757c73": {
+        "4aabebe1-0b8d-4d89-b4e6-1beb7fcbef53": {
           "type": "featured_collection",
           "settings": {
-            "collection": "cameras",
-            "popular": false,
-            "highlighted": true
+            "collection": "canon-ef",
+            "popular": true,
+            "highlighted": false
           }
         },
-        "603bea2c-0a37-420d-825e-b2daee1c8ae7": {
+        "fe1bdf7d-290b-4f4d-8e9b-ce056984da2f": {
           "type": "featured_collection",
           "settings": {
-            "collection": "lenses",
+            "collection": "nikon-f",
             "popular": false,
-            "highlighted": true
+            "highlighted": false
           }
         },
-        "7437e766-2c5f-4f75-a9af-1eb27a814f9b": {
+        "c52ea1d8-422a-43e1-85dc-a0cc37206e23": {
           "type": "featured_collection",
           "settings": {
-            "collection": "accessories",
+            "collection": "leica-m",
             "popular": false,
-            "highlighted": true
+            "highlighted": false
           }
         }
       },
       "block_order": [
         "a7157e45-bfd8-46b0-bf8f-3394f2f7a24c",
-        "4d051a8d-567d-45c7-9898-31af3f757c73",
-        "603bea2c-0a37-420d-825e-b2daee1c8ae7",
-        "7437e766-2c5f-4f75-a9af-1eb27a814f9b"
+        "4aabebe1-0b8d-4d89-b4e6-1beb7fcbef53",
+        "fe1bdf7d-290b-4f4d-8e9b-ce056984da2f",
+        "c52ea1d8-422a-43e1-85dc-a0cc37206e23"
       ],
       "settings": {
         "new_tag": "Time-7d"
+      }
+    },
+    "d2a7e3c9-0bcd-4241-9c95-880845de84bb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15243804803270__d2a7e3c9-0bcd-4241-9c95-880845de84bb-1676897410235113d2-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Full List",
+            "button_link": "shopify:\/\/pages\/daily-summary",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804803270__d2a7e3c9-0bcd-4241-9c95-880845de84bb-1676897410235113d2-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
       }
     },
     "1643098395207aed50": {
@@ -101,6 +121,7 @@
     "main",
     "50401469-c3a9-4c32-a2da-5481fefb15c5",
     "f5a4d8cd-79e6-4c9f-b391-444206545ecb",
+    "d2a7e3c9-0bcd-4241-9c95-880845de84bb",
     "1643098395207aed50"
   ]
 }

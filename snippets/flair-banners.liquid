@@ -21,7 +21,7 @@
 * Flair: https://apps.shopify.com/flair
 * Copyright Brainy Atom LLC, All Rights Reserved.
 *
-* Last updated: 2023-02-16T13:17:27Z
+* Last updated: 2023-02-20T08:00:30Z
 ************************************************************************
 {%- endcomment -%}
 {%- liquid
@@ -315,6 +315,9 @@ for flair_mf in flair_mfs
         assign flair_banner_css_style = 'style="' | append: flair_banner_css | append: '"'
       endif
       capture "flair_banner_output"
+        if flair_banner.css
+          echo "<style>" | append: flair_banner.css | append: "</style>"
+        endif
         echo '<div class="flair-banner-wrapper ' | append: flair_banner_css_class | append: '" ' | append: flair_banner_css_style | append: ">"
         echo flair_banner.content
         echo "</div>"

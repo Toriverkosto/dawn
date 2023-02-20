@@ -88,7 +88,7 @@
           "settings": {
             "button_label": "View Full List",
             "button_link": "shopify:\/\/pages\/daily-summary",
-            "button_style_secondary": true
+            "button_style_secondary": false
           }
         }
       },

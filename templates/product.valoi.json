@@ -112,15 +112,15 @@
           "settings": {
           }
         },
+        "55b00dda-c2c3-43b2-bf0a-d40495629e34": {
+          "type": "shopify:\/\/apps\/c-back-in-stock-restock-alerts\/blocks\/product-restore-email\/b190bced-3b7b-47da-a05f-6ea4821c3a77",
+          "settings": {
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true
-          }
-        },
-        "55b00dda-c2c3-43b2-bf0a-d40495629e34": {
-          "type": "shopify:\/\/apps\/c-back-in-stock-restock-alerts\/blocks\/product-restore-email\/b190bced-3b7b-47da-a05f-6ea4821c3a77",
-          "settings": {
           }
         },
         "80fbe6e3-0e56-4ee6-be9c-6a5e5c5f985c": {
@@ -229,8 +229,8 @@
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
         "8a1f013f-3fbd-4ebb-b70b-fd9e114e338b",
-        "buy_buttons",
         "55b00dda-c2c3-43b2-bf0a-d40495629e34",
+        "buy_buttons",
         "80fbe6e3-0e56-4ee6-be9c-6a5e5c5f985c",
         "94f403ff-3385-43d7-865b-0b0000459f54",
         "f8b9a89d-8fdd-4b79-b6e1-80fbde58346d",

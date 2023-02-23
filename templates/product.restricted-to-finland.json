@@ -46,7 +46,7 @@
           }
         },
         "ec88d254-bbe8-4b70-a8ba-4e63f56ef136": {
-          "type": "shopify:\/\/apps\/back-in-stock-restock-alerts\/blocks\/product-restore-email\/b190bced-3b7b-47da-a05f-6ea4821c3a77",
+          "type": "shopify:\/\/apps\/c-back-in-stock-restock-alerts\/blocks\/product-restore-email\/b190bced-3b7b-47da-a05f-6ea4821c3a77",
           "settings": {
           }
         },
@@ -86,13 +86,14 @@
           }
         },
         "c1378c8b-8c8b-4c98-b464-f87debde3c6e": {
-          "type": "shopify:\/\/apps\/advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
+          "type": "shopify:\/\/apps\/hulk-advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
           "settings": {
+            "is_new_icon_settings": false,
             "theme_color": "#f15975",
             "button_style": "style_3",
             "button_border": 0,
             "button_font_size": 16,
-            "button_font_weight": 500,
+            "button_font_weight": "500",
             "button_border_radius": 0,
             "button_vertical_space": 9,
             "button_horizontal_space": 16,
@@ -101,7 +102,16 @@
             "border_color": "#5c6ac4",
             "hover_button_text_color": "#ffffff",
             "hover_button_background_color": "#5c6ac4",
-            "hover_button_border_color": "#5c6ac4"
+            "hover_button_border_color": "#5c6ac4",
+            "icon_type": "outline",
+            "icon_size": 16,
+            "icon_background_type": "icon_round_background",
+            "icon_background_color": "#5c6ac4",
+            "icon_fill_color": "#ffffff",
+            "icon_border_color": "#ffffff",
+            "icon_hover_color": "#5c6ac4",
+            "selected_icon_fill_color": "#5c6ac4",
+            "selected_icon_border_color": "#5c6ac4"
           }
         },
         "5ebcf22c-ee85-4f57-b7c3-88fabdf150c5": {
@@ -174,7 +184,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/UfFOGKO5nDNXP4Y4Vh1-I4OTnVunoLVd231IQzWAq_QPNeODpi1NNN1deY53R2dhfRVI6E0iGD0P-NsVaWpePhJ9YUoD6tDAEXanFNU9JCpNP4mYdCQWUGldnvSQcL6QV-PyASh2NoeZSA94QjQoIg08OFjCQs0-d-e1-ft-1000x562.jpg",
             "title": "Why Kamerastore?",
-            "text": "<p>We are a real business with a real <a href=\"https:\/\/g.page\/Kamerastore?share\" target=\"_blank\" title=\"https:\/\/g.page\/Kamerastore?share\">shop<\/a>, and real <a href=\"\/pages\/our-team\" target=\"_blank\" title=\"\/pages\/our-team\">camera professionals<\/a> inside. We have helped over 30,000 customers since 2010 and have a <a href=\"https:\/\/g.page\/Kamerastore?share\" target=\"_blank\">4.8 star rating on Google<\/a>.<\/p>"
+            "text": "<p>We are a real business with a real <a href=\"https:\/\/g.page\/Kamerastore?share\" target=\"_blank\">shop<\/a> and real camera professionals inside. We have helped over 30,000 customers since 2010 and have a <a href=\"https:\/\/g.page\/Kamerastore?share\" target=\"_blank\" title=\"Kamerastore - Google Maps\">4.8 star rating on Google<\/a>.<\/p>"
           }
         },
         "16324019941e428b8f-1": {

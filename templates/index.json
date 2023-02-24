@@ -1,5 +1,40 @@
 {
   "sections": {
+    "b7f435c5-c4b1-48ef-ae36-13d31e15ecb0": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15243804115142__b7f435c5-c4b1-48ef-ae36-13d31e15ecb0-16772286977935d4a9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Quality Used Film Photography Gear"
+          }
+        },
+        "template--15243804115142__b7f435c5-c4b1-48ef-ae36-13d31e15ecb0-16772286977935d4a9-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"We make film photography accessible, enjoyable, and sustainable for today & tomorrow.\"<\/p>"
+          }
+        },
+        "template--15243804115142__b7f435c5-c4b1-48ef-ae36-13d31e15ecb0-16772286977935d4a9-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "All Products",
+            "button_link": "shopify:\/\/collections\/all-items"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804115142__b7f435c5-c4b1-48ef-ae36-13d31e15ecb0-16772286977935d4a9-0",
+        "template--15243804115142__b7f435c5-c4b1-48ef-ae36-13d31e15ecb0-16772286977935d4a9-1",
+        "template--15243804115142__b7f435c5-c4b1-48ef-ae36-13d31e15ecb0-16772286977935d4a9-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/AE1Alt-4.jpg",
+        "height": "small",
+        "color_scheme": "background-2",
+        "layout": "image_first"
+      }
+    },
     "f9ddfc6e-43fd-448b-b981-034c96684a0b": {
       "type": "rich-text",
       "disabled": true,
@@ -82,6 +117,29 @@
         "show_text_below": true
       }
     },
+    "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--wide\"> <center><H2>Over {{collections['new-last-7-days'].all_products_count}} items added in the last 7 days <\/H2><\/center><\/div>"
+      }
+    },
+    "1660560902df48f128": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Here's what’s new this week",
+        "collection": "new-last-7-days",
+        "products_to_show": 12,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": false
+      }
+    },
     "multi_column": {
       "type": "multicolumn",
       "blocks": {
@@ -126,48 +184,10 @@
         "swipe_on_mobile": true
       }
     },
-    "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"page-width page-width--wide\"> <center><H2>Over {{collections['new-last-7-days'].all_products_count}} items added in the last 7 days <\/H2><\/center><\/div>"
-      }
-    },
-    "1660560902df48f128": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Here's what’s new this week",
-        "collection": "new-last-7-days",
-        "products_to_show": 8,
-        "show_view_all": true,
-        "swipe_on_mobile": true,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": true,
-        "show_rating": false
-      }
-    },
     "16336738395370bc94": {
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "<div class=\"reputon-google-reviews-widget\" id=\"bf91f8b0-88a8-11eb-9209-f960a060549e\" ><\/div>"
-      }
-    },
-    "16681567159a25ad0d": {
-      "type": "apps",
-      "blocks": {
-        "56632df0-1540-4fc5-88ce-e54fba428f43": {
-          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "56632df0-1540-4fc5-88ce-e54fba428f43"
-      ],
-      "settings": {
-        "include_margins": true
       }
     },
     "16590912674b072be6": {
@@ -184,6 +204,22 @@
         "show_image_outline": true,
         "show_vendor": true,
         "show_rating": false
+      }
+    },
+    "16681567159a25ad0d": {
+      "type": "apps",
+      "blocks": {
+        "56632df0-1540-4fc5-88ce-e54fba428f43": {
+          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "56632df0-1540-4fc5-88ce-e54fba428f43"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "16590913415aba16e5": {
@@ -252,6 +288,7 @@
     },
     "image_banner": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -519,14 +556,15 @@
     }
   },
   "order": [
+    "b7f435c5-c4b1-48ef-ae36-13d31e15ecb0",
     "f9ddfc6e-43fd-448b-b981-034c96684a0b",
     "ab2bb2f3-2333-4123-98ed-40aacfc16ad6",
-    "multi_column",
     "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe",
     "1660560902df48f128",
+    "multi_column",
     "16336738395370bc94",
-    "16681567159a25ad0d",
     "16590912674b072be6",
+    "16681567159a25ad0d",
     "16590913415aba16e5",
     "1659091405f0073c84",
     "1659091458c6563459",

@@ -1,5 +1,50 @@
 {
   "sections": {
+    "ab2bb2f3-2333-4123-98ed-40aacfc16ad6": {
+      "type": "image-banner",
+      "disabled": true,
+      "blocks": {
+        "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Quality Used Film Photography Gear",
+            "heading_size": "medium"
+          }
+        },
+        "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-0",
+        "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-1",
+        "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/get_attachment_url.jpg",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": false,
+        "image_overlay_opacity": 50,
+        "color_scheme": "inverse",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "multi_column": {
       "type": "multicolumn",
       "blocks": {
@@ -437,6 +482,7 @@
     }
   },
   "order": [
+    "ab2bb2f3-2333-4123-98ed-40aacfc16ad6",
     "multi_column",
     "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe",
     "1660560902df48f128",

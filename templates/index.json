@@ -14,18 +14,18 @@
         "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-1": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
+            "text": "We make film photography accessible, enjoyable, and sustainable"
           }
         },
         "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Button label",
+            "button_label_1": "Shop",
             "button_link_1": "",
             "button_style_secondary_1": false,
-            "button_label_2": "Button label",
+            "button_label_2": "Learn More",
             "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": true
           }
         }
       },

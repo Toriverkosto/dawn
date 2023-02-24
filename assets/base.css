@@ -2254,7 +2254,7 @@ details[open] > .header__icon--menu .icon-hamburger {
 
 .header__active-menu-item {
   transition: text-decoration-thickness var(--duration-short) ease;
-  color: rgb(var(--color-foreground));
+  color: rgb(var(--color-background));
   text-decoration: underline;
   text-underline-offset: 0.3rem;
 }

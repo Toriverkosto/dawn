@@ -1,22 +1,22 @@
 {{ 'section-quality-control.css' | asset_url | stylesheet_tag }}
 <div class="qc__info">
   <div class="qc__wrapper">
-{% for block in section.blocks %}
-{% case block.type %}
-  {% when 'qc_not_passed_badge' and %}
+{%- for block in section.blocks -%}
+{%- case block.type -%}
+  {%- when 'qc_not_passed_badge' and -%}
     {%- if block.settings.not_passed -%}
     <div class="qc__badge">
       {%- render 'qc-badge-not-passed' -%}
     </div>
     {%- endif -%}
-  {% when 'qc_not_passed_description' %}
+  {%- when 'qc_not_passed_description' -%}
     <div class="qc__container--not-passed">
       <div class="qc__text">
         {{ block.settings.not_passed_text }}
       </div>
     </div>
-{% endcase %}
-{% endfor %}
+{%- endcase -%}
+{%- endfor -%}
   </div>
 </div>
 {% schema %}

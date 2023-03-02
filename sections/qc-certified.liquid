@@ -1,0 +1,67 @@
+{{ 'section-quality-control.css' | asset_url | stylesheet_tag }}
+<div class="qc__info">
+  <div class="qc__wrapper">
+{%- for block in section.blocks -%}
+{%- case block.type -%}
+  {%- when 'qc_certified_badge' and -%}
+    {%- if block.settings.certified -%}
+    <div class="qc__badge">
+      {%- render 'qc-badge-certified' -%}
+    </div>
+    {%- endif -%}
+  {%- when 'qc_certified_description' -%}
+    <div class="qc__container--passed">
+      <div class="qc__text">
+        {{ block.settings.certified_text }}
+      </div>
+    </div>
+{%- endcase -%}
+{%- endfor -%}
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "QC Certified Section",
+  "presets": [
+    {
+      "name": "QC Certified Section",
+      "category": "ADVANCED LAYOUT",
+    "blocks": [
+        {
+          "type": "qc_certified_badge"
+        },
+        {
+          "type": "qc_certified_description"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "qc_certified_badge",
+      "name": "QC-Certified Badge",
+      "settings": [{
+          "type": "checkbox",
+          "id": "certified",
+          "label": "t:sections.qc_certified.blocks.qc_certified_badge.settings.certified.label",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "qc_certified_description",
+      "name": "QC Certified Description",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "certified_text",
+          "default": "<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
+          "label": "t:sections.qc_certified.blocks.qc_certified_description.settings.certified_text.label"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

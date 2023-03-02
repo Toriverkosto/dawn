@@ -1,10 +1,10 @@
 {{ 'section-quality-control.css' | asset_url | stylesheet_tag }}
 <div class="qc__info">
+  <div class="qc__wrapper">
 {% for block in section.blocks %}
 {% case block.type %}
   {% when 'qc_certified_badge' and %}
     {%- if block.settings.certified -%}
-    <div class="qc__wrapper">
     <div class="qc__badge">
       {%- render 'qc-badge-certified' -%}
     </div>

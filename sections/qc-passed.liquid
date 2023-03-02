@@ -5,7 +5,6 @@
 {% case block.type %}
   {% when 'qc_passed_badge' and %}
     {%- if block.settings.passed -%}
-    
     <div class="qc__badge">
       {%- render 'qc-badge-passed' -%}
     </div>
@@ -18,7 +17,7 @@
     </div>
 {% endcase %}
 {% endfor %}
-</div>
+  </div>
 </div>
 {% schema %}
 {

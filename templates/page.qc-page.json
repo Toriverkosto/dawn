@@ -1,5 +1,11 @@
 {
   "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
     "11177082-5c2d-45ac-b7e3-0d4998e34dc3": {
       "type": "qc-passed",
       "blocks": {
@@ -21,6 +27,12 @@
         "template--15488421429446__11177082-5c2d-45ac-b7e3-0d4998e34dc3-1677834342f38f98e0-1"
       ],
       "settings": {
+      }
+    },
+    "2d8d2990-66f4-468f-a47d-42cde8643a03": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": ""
       }
     },
     "c0095f60-d698-4c79-b828-49c74ccb7511": {
@@ -45,17 +57,12 @@
       ],
       "settings": {
       }
-    },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-      }
     }
   },
   "order": [
+    "main",
     "11177082-5c2d-45ac-b7e3-0d4998e34dc3",
-    "c0095f60-d698-4c79-b828-49c74ccb7511",
-    "main"
+    "2d8d2990-66f4-468f-a47d-42cde8643a03",
+    "c0095f60-d698-4c79-b828-49c74ccb7511"
   ]
 }

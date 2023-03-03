@@ -54,13 +54,6 @@
             "custom_liquid": "<div class=\"card-information\">\n    <div class=\"card-information__wrapper\">\n      <div class=\"caption-with-letter-spacing light\">{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable_html' | t }}\n{% else %}\n    {{ 'products.product.not_taxable_html' | t }}\n{% endif %}<\/div>\n     <h2> {{product.price | money}}<\/h2>\n    <\/div>\n  <\/div>"
           }
         },
-        "99452d1b-4d7e-4077-a88b-abeded9e84f2": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "<div class=\"card-information\">\n    <div class=\"card-information__wrapper\">\n      <span class=\"visually-hidden\">{{ 'accessibility.vendor' | t }}<\/span>\n      <div class=\"caption-with-letter-spacing light\">{{ 'products.product.vendor' | t }}<\/div>\n      {{ product.price | money}}\n    <\/div>\n  <\/div>"
-          }
-        },
         "4f0717e0-34d7-44d7-9543-6fdf50a55941": {
           "type": "variant_picker",
           "settings": {
@@ -81,6 +74,7 @@
         },
         "6ff4987b-8f35-4a2e-89e3-3f40f342da38": {
           "type": "condition",
+          "disabled": true,
           "settings": {
             "show_mechanical": true,
             "show_optical": true,
@@ -173,7 +167,6 @@
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
         "a01329cd-da87-4153-b7a4-04796b35d6d6",
-        "99452d1b-4d7e-4077-a88b-abeded9e84f2",
         "4f0717e0-34d7-44d7-9543-6fdf50a55941",
         "buy_buttons",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",

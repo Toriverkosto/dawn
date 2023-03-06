@@ -55,7 +55,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "canon-ef",
-            "popular": true,
+            "popular": false,
             "highlighted": false
           }
         },
@@ -103,7 +103,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "hasselblad-v",
-            "popular": false,
+            "popular": true,
             "highlighted": false
           }
         },
@@ -119,7 +119,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "large-format",
-            "popular": false,
+            "popular": true,
             "highlighted": false
           }
         },
@@ -127,7 +127,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "leica-m",
-            "popular": false,
+            "popular": true,
             "highlighted": false
           }
         },
@@ -135,7 +135,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "leica-r",
-            "popular": true,
+            "popular": false,
             "highlighted": false
           }
         },
@@ -151,7 +151,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "m42",
-            "popular": true,
+            "popular": false,
             "highlighted": false
           }
         },

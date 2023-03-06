@@ -7,7 +7,7 @@
           "type": "shopify:\/\/apps\/flair-product-badges-labels\/blocks\/product-badges\/51d5ae10-f90f-4540-9ec6-f09f14107bf4",
           "settings": {
             "heading": "Flair product badges",
-            "layout": "",
+            "layout": "New Badge Only",
             "product": "{{product}}"
           }
         },

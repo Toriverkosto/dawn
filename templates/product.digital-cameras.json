@@ -53,13 +53,6 @@
             "custom_liquid": "<p style=\"color: #ababab\">{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable_html' | t }}\n{% else %}\n    {{ 'products.product.not_taxable_html' | t }}\n{% endif %}<\/p>"
           }
         },
-        "83754794-92b8-452f-98b4-999eea3e6967": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "<p>{%- assign current_variant = product.selected_or_first_available_variant -%}\n\n{% if product.metafields.kameratori.shutter_count and product.metafields.kameratori.shutter_count != \"\" %}\n  Shutter Count:  <b>{{product.metafields.kameratori.shutter_count}}<\/b><br>\n{% else %}\n{% endif %}\n\n\n{% if product.metafields.kameratori.sensor_cleaned == true %}\n  Sensor Cleaned: <b>Yes<\/b><br>\n{% else %}\n{% endif %}\n\n\n{% if product.metafields.kameratori.settings_reset == true %}\n  Settings Reset: <b>Yes<\/b><br>\n{% else %}\n{% endif %}\n\n\n{% if product.metafields.kameratori.firmware_updated == true %}\n  Firmware Updated: <b>Yes<\/b><br>\n{% else %}\n{% endif %}\n\n{% if product.metafields.kameratori.batteries and product.metafields.kameratori.batteries.value.size > 0 %}\n  Battery: \n  {% for battery in product.metafields.kameratori.batteries.value %}\n   <b> {{battery}}<\/b>\n    {% if forloop.last != true %}, {% endif %}\n  {% endfor %}\n{% endif %}\n<\/p>"
-          }
-        },
         "0cffe7b5-b771-473e-bee0-fb83094d383c": {
           "type": "popup",
           "disabled": true,
@@ -87,15 +80,6 @@
             "show_mechanical": true,
             "show_optical": true,
             "show_cosmetic": false
-          }
-        },
-        "cd07da4b-ae00-46ee-bf67-5c7799d93921": {
-          "type": "popup",
-          "disabled": true,
-          "settings": {
-            "text": "Camera Condition Ratings",
-            "page": "camera-condition-ratings",
-            "show_button": false
           }
         },
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6": {
@@ -184,12 +168,10 @@
         "4fc29c5e-0b98-42c8-a1a5-ed16d11bfc57",
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
-        "83754794-92b8-452f-98b4-999eea3e6967",
         "0cffe7b5-b771-473e-bee0-fb83094d383c",
         "buy_buttons",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
         "235b8cd5-c263-4cde-9104-81a9203d4384",
-        "cd07da4b-ae00-46ee-bf67-5c7799d93921",
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "a4908876-2ec2-4049-8519-f88aac2c716e",

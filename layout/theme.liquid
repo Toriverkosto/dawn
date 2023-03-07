@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
-  <head> 
+  <head>
+	{% include "pandectes-rules" %} 
     <script src='{{ 'sealapps_email_config.js' | asset_url }}' defer='defer' ></script> 
     <script src='{{ 'product_restore_email.js' | asset_url }}' defer='defer' ></script> 
     <script id='em_product_variants' type='application/json'>

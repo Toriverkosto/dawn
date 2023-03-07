@@ -2,9 +2,10 @@
   "store": {
     "plan": "plus",
     "theme": "Dawn STABLE",
-    "primaryLocale": "en"
+    "primaryLocale": "en",
+    "adminMode": false
   },
-  "tsPublished": 1655374654,
+  "tsPublished": 1678170131,
   "declaration": {
     "showPurpose": false,
     "showProvider": false,
@@ -28,7 +29,7 @@
       "headerText": {
         "da": "Vi respekterer dit privatliv",
         "en": "We respect your privacy",
-        "es": "respetamos tu privacidad",
+        "es": "Respetamos tu privacidad",
         "fi": "Kunnioitamme yksityisyyttäsi",
         "fr": "Nous respectons votre vie privée",
         "sv": "Vi respekterar din integritet"
@@ -57,6 +58,14 @@
         "fr": "Apprendre encore plus",
         "sv": "Läs mer"
       },
+      "imprintText": {
+        "da": "Aftryk",
+        "en": "Imprint",
+        "es": "Imprimir",
+        "fi": "Jälki",
+        "fr": "Imprimer",
+        "sv": "Avtryck"
+      },
       "preferencesButtonText": {
         "da": "Præferencer",
         "en": "Preferences",
@@ -74,12 +83,12 @@
         "sv": "Acceptera"
       },
       "denyButtonText": {
-        "da": "Nedgang",
+        "da": "Afslå",
         "en": "Decline",
         "es": "Disminución",
         "fi": "Hylkää",
         "fr": "Déclin",
-        "sv": "Nedgång"
+        "sv": "Neka"
       },
       "leaveSiteButtonText": {
         "da": "Forlad dette websted",
@@ -119,7 +128,7 @@
         "es": "Cerrar",
         "fi": "Sulje",
         "fr": "proche",
-        "sv": "Stänga"
+        "sv": "Stäng"
       },
       "preferencesPopupAcceptAllButtonText": {
         "da": "Accepter alle",
@@ -283,7 +292,7 @@
         "es": "Nombre",
         "fi": "Nimi",
         "fr": "Nom",
-        "sv": "namn"
+        "sv": "Namn"
       },
       "declPath": {
         "da": "Sti",
@@ -315,7 +324,7 @@
         "es": "Objetivo",
         "fi": "Tarkoitus",
         "fr": "But",
-        "sv": "Ändamål"
+        "sv": "Syfte"
       },
       "declProvider": {
         "da": "Udbyder",
@@ -331,7 +340,7 @@
         "es": "Retencion",
         "fi": "Säilyttäminen",
         "fr": "Rétention",
-        "sv": "Bibehållande"
+        "sv": "Varaktighet"
       },
       "declFirstParty": {
         "da": "First-party",
@@ -363,7 +372,7 @@
         "es": "Siempre permitido",
         "fi": "aina sallittu",
         "fr": "Toujours permis",
-        "sv": "alltid tillåtet"
+        "sv": "Alltid tillåtna"
       },
       "submitButton": {
         "da": "Indsend",
@@ -478,12 +487,12 @@
         "sv": "Din begäran verifierades inte. Försök igen och kontakta butiksägaren för att få hjälp om problemet kvarstår"
       },
       "consentSectionTitleText": {
-        "da": "Samtykke til cookiepolitik",
-        "en": "Cookie policy consent",
-        "es": "Consentimiento de la política de cookies",
-        "fi": "Evästekäytännön suostumus",
-        "fr": "Consentement à la politique de cookies",
-        "sv": "Samtycke för cookiepolicy"
+        "da": "Dit cookie-samtykke",
+        "en": "Your cookie consent",
+        "es": "Su consentimiento de cookies",
+        "fi": "Evästeen suostumuksesi",
+        "fr": "Votre consentement aux cookies",
+        "sv": "Ditt samtycke till cookies"
       },
       "consentSectionNoConsentText": {
         "da": "Du har ikke givet samtykke til cookiepolitikken på dette websted.",
@@ -501,13 +510,37 @@
         "fr": "Vous avez consenti à la politique de cookies de ce site Web sur",
         "sv": "Du har samtyckt till cookiespolicyn för denna webbplats den"
       },
+      "consentStatus": {
+        "da": "Samtykke præference",
+        "en": "Consent preference",
+        "es": "Preferencia de consentimiento",
+        "fi": "Suostumusasetus",
+        "fr": "Préférence de consentement",
+        "sv": "samtycke"
+      },
+      "consentDate": {
+        "da": "Dato for samtykke",
+        "en": "Consent date",
+        "es": "fecha de consentimiento",
+        "fi": "Suostumuspäivä",
+        "fr": "Date de consentement",
+        "sv": "Samtyckesdatum"
+      },
+      "consentId": {
+        "da": "Samtykke-id",
+        "en": "Consent ID",
+        "es": "ID de consentimiento",
+        "fi": "Suostumustunnus",
+        "fr": "ID de consentement",
+        "sv": "Samtyckes-ID"
+      },
       "consentSectionChangeConsentActionText": {
-        "da": "Tilbagekald samtykke",
-        "en": "Revoke consent",
-        "es": "Revocar el consentimiento",
-        "fi": "Peruuta suostumus",
-        "fr": "Révoquer le consentement",
-        "sv": "Återkalla samtycke"
+        "da": "Skift samtykkepræference",
+        "en": "Change consent preference",
+        "es": "Cambiar la preferencia de consentimiento",
+        "fi": "Muuta suostumusasetusta",
+        "fr": "Modifier la préférence de consentement",
+        "sv": "Ändra samtyckesinställning"
       },
       "accessSectionGDPRRequestsActionText": {
         "da": "Anmodninger fra den registrerede",
@@ -580,6 +613,7 @@
     "fadeInTimeout": 0,
     "defaultBlocked": 0,
     "showLink": true,
+    "showImprintLink": false,
     "enabled": true,
     "cookie": {
       "name": "_pandectes_gdpr",
@@ -622,7 +656,7 @@
       "href": "\/policies\/privacy-policy",
       "close": "&#10005;",
       "target": "",
-      "logo": "<img class=\"cc-banner-logo\" style=\"height: 40px;\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0521\/9496\/7750\/t\/26\/assets\/pandectes-logo.png?v=1652790456\" alt=\"Kamerastore.com\" \/>"
+      "logo": "<img class=\"cc-banner-logo\" height=\"40\" width=\"40\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0521\/9496\/7750\/t\/26\/assets\/pandectes-logo.png?v=1652790456\" alt=\"Kamerastore\" \/>"
     },
     "window": "<div role=\"dialog\" aria-live=\"polite\" aria-label=\"cookieconsent\" aria-describedby=\"cookieconsent:desc\" id=\"pandectes-banner\" class=\"cc-window-wrapper cc-top-wrapper\"><div class=\"pd-cookie-banner-window cc-window {{classes}}\"><!--googleoff: all-->{{children}}<!--googleon: all--><\/div><\/div>",
     "compliance": {
@@ -1055,7 +1089,12 @@
         "firstParty": true,
         "retention": "1 year(s)",
         "purpose": {
-          "en": ""
+          "da": "Shopify butikslokalisering",
+          "en": "",
+          "es": "Localización de tiendas Shopify",
+          "fi": "Shopify-myymälän lokalisointi",
+          "fr": "Localisation de boutique Shopify",
+          "sv": "Shopify butikslokalisering"
         }
       }
     ]
@@ -1065,7 +1104,6 @@
     "googleConsentMode": {
       "id": "",
       "isActive": false,
-      "dataLayerPropertyName": "dataLayer",
       "adStorageCategory": 4,
       "analyticsStorageCategory": 2,
       "personalizationStorageCategory": 8,
@@ -1089,6 +1127,40 @@
 
       ],
       "blackList": {
+        "1": [
+
+        ],
+        "2": [
+
+        ],
+        "4": [
+
+        ],
+        "8": [
+
+        ]
+      },
+      "iframesWhiteList": [
+
+      ],
+      "iframesBlackList": {
+        "1": [
+
+        ],
+        "2": [
+
+        ],
+        "4": [
+
+        ],
+        "8": [
+
+        ]
+      },
+      "beaconsWhiteList": [
+
+      ],
+      "beaconsBlackList": {
         "1": [
 
         ],

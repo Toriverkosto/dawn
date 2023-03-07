@@ -21,7 +21,7 @@
 * Flair: https://apps.shopify.com/flair
 * Copyright Brainy Atom LLC, All Rights Reserved.
 *
-* Last updated: 2023-02-20T08:00:30Z
+* Last updated: 2023-03-07T06:22:10Z
 ************************************************************************
 {%- endcomment -%}
 {%- liquid
@@ -65,7 +65,6 @@ if flair_layout_config == blank
 else
   assign flair_layout_banner_max = flair_layout_config.banner_max | default: 1
   assign flair_layout_css = flair_layout_config.layout_css
-  assign flair_banner_css = flair_layout_config.banner_css
   assign flair_banner_css_class = blank
 endif
 
@@ -317,10 +316,12 @@ for flair_mf in flair_mfs
       capture "flair_banner_output"
         if flair_banner.css
           echo "<style>" | append: flair_banner.css | append: "</style>"
+          echo flair_banner.content
+        else
+          echo '<div class="flair-banner-wrapper ' | append: flair_banner_css_class | append: '" ' | append: flair_banner_css_style | append: ">"
+          echo flair_banner.content
+          echo "</div>"
         endif
-        echo '<div class="flair-banner-wrapper ' | append: flair_banner_css_class | append: '" ' | append: flair_banner_css_style | append: ">"
-        echo flair_banner.content
-        echo "</div>"
       endcapture
 
       for item in flair_banner.dynamic_text_vars

@@ -21,7 +21,6 @@
       }, delay);
     };
   };
-
   // Mark 变量声明
   let isProPage = false
   let isCollPage = false
@@ -35,6 +34,7 @@
   let customStyle = ''
   let customFeature = null
   let themeId = Shopify.theme.id
+  let emailStyle = null
   const isMobile = (/(iPhone|iPad|iPod|iOS|Android|SymbianOS|Windows Phone|webOS|BlackBerry)/i).test(navigator.userAgent);
 
   if (typeof ShopifyAnalytics === 'undefined') {
@@ -282,11 +282,12 @@
       return 'All btn of variants are hidden.'
     }
 
+    const nodes = qa(`#product-restore-email-flag,
+    #product-restore-email-float,.product-restore-email`)
     if (
-      q('#product-restore-email-flag') ||
-      q('#product-restore-email-float') ||
-      q('.product-restore-email')) {
-      return 'Already enabled';
+      nodes.length !== 0) {
+      nodes.forEach(i => i.remove())
+      // return 'Already enabled';
     } else {
       const div = `
       <div id="product-restore-email-flag" style="display: none;"></div>
@@ -343,7 +344,7 @@
       */
       case 887: case 1567: case 1356: case 1363:
       case 1368: case 1431: case 1434: case 1500:
-      case 1499: {
+      case 1499: case 1399: {
         selector = '.card-information .price';
         // selector = '.grid__item .card';
         // const el = qa(selector);
@@ -781,7 +782,8 @@
 
   function getParentWithoutForm() {
     // 找所有的有可能是add-to-cart按钮的类名，用循环判断按钮位置
-    const btnElements = qa('.action-button, [class*=add-to-cart], [class*=add_to_cart], [id*=add_to_card], [id*=add-to-card], [data-add-to-cart], .sold-out, #out-of-stock-gl');
+    const btnElements = qa(`.action-button, [class*=add-to-cart], [class*=add_to_cart], [id*=add_to_card],
+     [id*=add-to-card], [data-add-to-cart], .sold-out, #out-of-stock-gl,.option-selectors`);
     if (btnElements.length) {
       for (let i = 0; i < btnElements.length; i++) {
         // 有的时候增加/减少产品数量的按钮可能也会被选进来，用宽度排除
@@ -886,7 +888,7 @@
     }
     const v1 = variantData[0];
     try {
-      productTitle = v1.name.split(' - ')[0].trim();
+      productTitle = v1.name.split('-')[0].trim();
     } catch (error) {
       if (!v1.public_title) {
         productTitle = v1.name;
@@ -901,6 +903,8 @@
   }
   function getAllStyle() {
     debug && console.log('Get All Style')
+    document.head.insertAdjacentHTML('beforeend', '<style class="email-style"></style>')
+    emailStyle = document.querySelector('.email-style')
     let btnPromise, styUrl = ''
     if (isProPage) {
       styUrl = buttonStyleUrl
@@ -1007,23 +1011,23 @@
     let generalStyles = `
       .email-me-button {
         font-size: ${btn_font_size}px !important;
-        font-weight: ${btn_font_weight} !important;
-        font-family: ${btn_font_family} !important;
-        border-color: ${btn_border_color} !important;
-        border-radius: ${btn_border_radius}px !important;
-        border-width: 2px;
-        border-style: solid;
+      font-weight: ${btn_font_weight} !important;
+      font-family: ${btn_font_family} !important;
+      border-color: ${btn_border_color} !important;
+      border-radius: ${btn_border_radius}px !important;
+      border-width: 2px;
+      border-style: solid;
       }
       .email-me-inlineButton {
         margin-top: ${btn_margin_top}px !important;
-        margin-bottom: ${btn_margin_bottom}px !important;
+      margin-bottom: ${btn_margin_bottom}px !important;
       }
       .email-me-button:hover {
-        color: ${btn_hover_font_color} !important;            
-        background-color: ${btn_hover_color} !important;        
+        color: ${btn_hover_font_color} !important;
+      background-color: ${btn_hover_color} !important;        
       }
       ${btn_customize_css}
-    `;
+      `;
     if (btn_hover_animation) {
       generalStyles += `
       .email-me-inlineButton::after,
@@ -1063,10 +1067,10 @@
       `;
     }
     const styles = `
-    <style>
-    ${generalStyles}
-    </style>
-    `;
+      <style>
+        ${generalStyles}
+      </style>
+      `;
     document.head.insertAdjacentHTML('beforeend', styles);
   }
 
@@ -1075,34 +1079,34 @@
     debug && console.log('renderBtnAndPopup')
     // 预先创建没有库存的variantOptions
     const { toggler, ipt, mailingList } = renderSpecificPopup();
-    const mountWindowElement = `       
+    const mountWindowElement = `
       <div class="successSub">
         <div class="successSub_header">
-            <img src="https://cdn.shopify.com/s/files/1/0576/6063/7389/t/1/assets/success.png?v=1629367773"/>
-            <div class="successSub_header_text">${popupData.success_frame_title}</div>
-            <div class="successSub_close-box">
-                <div class="successSub_frame-close"></div>
-            </div>
+          <img src="https://cdn.shopify.com/s/files/1/0576/6063/7389/t/1/assets/success.png?v=1629367773" />
+          <div class="successSub_header_text">${popupData.success_frame_title}</div>
+          <div class="successSub_close-box">
+            <div class="successSub_frame-close"></div>
+          </div>
         </div>
         <div class="successSub_text">
-            ${popupData.success_frame_content}
+          ${popupData.success_frame_content}
         </div>
       </div>
       <div id="email-me-frame">
         <div class="email-frame-content">
           <div class="close-box">
-                <div class="frame-close"></div>
+            <div class="frame-close"></div>
           </div>
           <div class="email-frame-header">
-              <div class="frame-email-logo">
-                  <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 5.324V15.5A1.5 1.5 0 001.5 17h17a1.5 1.5 0 001.5-1.5V5.324l-9.496 5.54a1 1 0 01-1.008 0L0 5.324z"
-                            fill="#5C5F62"/>
-                      <path d="M19.443 3.334A1.494 1.494 0 0018.5 3h-17c-.357 0-.686.125-.943.334L10 8.842l9.443-5.508z"
-                            fill="#5C5F62"/>
-                  </svg>
-              </div>
-              <div class="frame-title">${popupData.popup_header_text}</div>
+            <div class="frame-email-logo">
+              <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 5.324V15.5A1.5 1.5 0 001.5 17h17a1.5 1.5 0 001.5-1.5V5.324l-9.496 5.54a1 1 0 01-1.008 0L0 5.324z"
+                  fill="#5C5F62" />
+                <path d="M19.443 3.334A1.494 1.494 0 0018.5 3h-17c-.357 0-.686.125-.943.334L10 8.842l9.443-5.508z"
+                  fill="#5C5F62" />
+              </svg>
+            </div>
+            <div class="frame-title">${popupData.popup_header_text}</div>
           </div>
           <div class="split-line" style="border: 1px solid #d9d9d9;"></div>
           <div class="email-frame-body">
@@ -1110,7 +1114,7 @@
               <span>${productTitle}</span>
             </div>
             <div>
-            <select class="selected-unavailable-variant"></select>
+              <select class="selected-unavailable-variant"></select>
             </div>
             ${toggler || ''}
             <div>
@@ -1130,12 +1134,17 @@
             </div>
           </div>
           <div class="email-provider" style="display: ${buttonData.is_branding_removed ? 'none' : ''};">
-              Powered by <span><a class="email-app-link" target="_blank" href="https://apps.shopify.com/email-1?surface_detail=back+in+stock&surface_inter_position=1&surface_intra_position=10&surface_type=search">Sealapps</a></span>
+            Powered by <span><a class="email-app-link" target="_blank" href="https://apps.shopify.com/email-1?surface_detail=back+in+stock&surface_inter_position=1&surface_intra_position=10&surface_type=search">Sealapps</a></span>
           </div>
         </div>
       </div>`;
     document.body.insertAdjacentHTML('beforeend', mountWindowElement);
-
+    const n = document.querySelector('#sealapps-bis-widget')
+    if (n && soldOutBtn) {
+      if (getComputedStyle(soldOutBtn.parentNode).textAlign === 'center') {
+        emailStyle.textContent += '#sealapps-bis-widget{justify-content:center}'
+      }
+    }
     renderButton().then(res => {
       debug && console.log('renderButton success')
       if (res.code === 200) {
@@ -1167,12 +1176,12 @@
         } else if (isCollPage) {
           btnText = collection_btn_value
         }
-        const mountInlineBtn = ` 
-          <div class="product-restore-email" style="margin-top: ${btn_margin_top}px; margin-bottom: ${btn_margin_bottom}px; max-width: ${inlineBtnWidth || 'initial'}">
-            <div class="email-me-button email-me-inlineButton" style="text-align:center; margin-top:0; color: ${font_color} ; background-color: ${btn_color} ; height:${inlineBtnHeight} ; border-radius: ${btnRadius || '2px'} ; font-size: ${btnFontSize || '14px'} ; font-weight: ${btnFontWeight || 'inherit'};">
-              ${btnText}
-            </div>
-          </div>`;
+        const mountInlineBtn = `
+      <div class="product-restore-email" style="margin-top: ${btn_margin_top}px; margin-bottom: ${btn_margin_bottom}px; max-width: ${inlineBtnWidth || 'initial'}">
+        <div class="email-me-button email-me-inlineButton" style="text-align:center; margin-top:0; color: ${font_color} ; background-color: ${btn_color} ; height:${inlineBtnHeight} ; border-radius: ${btnRadius || '2px'} ; font-size: ${btnFontSize || '14px'} ; font-weight: ${btnFontWeight || 'inherit'};">
+          ${btnText}
+        </div>
+      </div>`;
         if (isProPage) {
           try {
             debug && console.log('insert', insertEl, insertType);
@@ -1202,12 +1211,12 @@
 
       if (float_status) {
         const { offset, float_font_color, float_btn_color, float_btn_value } = buttonData;
-        const mountFloatBtn = ` 
-          <div id="product-restore-email-float" style="top:${offset + 'px'}" class="${floatBtnPosition}">
-              <div class="email-me-button email-me-floatButton" style="text-align:center; display:none; color: ${float_font_color} ; background-color:  ${float_btn_color} ; border-radius: ${btnRadius} ; font-size: ${btnFontSize}; font-weight: ${btnFontWeight}; ">
-                  ${float_btn_value}
-              </div>
-          </div>`;
+        const mountFloatBtn = `
+      <div id="product-restore-email-float" style="top:${offset + 'px'}" class="${floatBtnPosition}">
+        <div class="email-me-button email-me-floatButton" style="text-align:center; display:none; color: ${float_font_color} ; background-color:  ${float_btn_color} ; border-radius: ${btnRadius} ; font-size: ${btnFontSize}; font-weight: ${btnFontWeight}; ">
+          ${float_btn_value}
+        </div>
+      </div>`;
         document.body.insertAdjacentHTML('afterbegin', mountFloatBtn);
         flag++;
       }
@@ -1223,11 +1232,11 @@
   function renderSpecificPopup(type) {
     inlineBtnElement
     /*
-    * 根据用户开启的弹窗类型进行部分渲染
+      * 根据用户开启的弹窗类型进行部分渲染
     * 1 - 只开了邮件，渲染邮件输入框
     * 2 - 只开了短信，渲染sms输入框
     * 3 - 都开了，渲染两种输入框以及toggler（开关）
-    */
+      */
     let ipt, toggler, mailingList;
     type = popupData.popup_option || type;
     if (type === 1) {
@@ -1257,14 +1266,14 @@
       </div>
       `;
       toggler = `
-        <div class="notify-type-toggler">
-          <div class="email-type">
-              ${popupData.popup_tab_email}
-          </div>
-          <div class="sms-type">
-              ${popupData.popup_tab_sms}
-          </div>
+      <div class="notify-type-toggler">
+        <div class="email-type">
+          ${popupData.popup_tab_email}
         </div>
+        <div class="sms-type">
+          ${popupData.popup_tab_sms}
+        </div>
+      </div>
       `;
     }
     renderSpecificStyle(type);
@@ -1290,19 +1299,19 @@
       case 2:
         addStyle(
           `<style>
-          #email-me-frame .email-frame-content {
-            max-height: 412px !important;
+        #email-me-frame .email-frame-content {
+          max-height: 412px !important;
           }
-          </style>`
+      </style>`
         );
         break;
       case 3:
         addStyle(
           `<style>
-          #email-me-frame .email-frame-content {
-            max-height: 459px !important;
+        #email-me-frame .email-frame-content {
+          max-height: 459px !important;
           }
-          </style>`
+      </style>`
         );
         break;
       default:
@@ -1515,10 +1524,10 @@
 
   function listenVariantChange() {
     /**
-     * 该方法主要用于判断使用什么方法监听变体的变化
-     * 1. 当url中包含variant=的时候，采用listen url的方法
-     * 2. 当url中不包含的时候，采用定时器的方法
-     */
+      * 该方法主要用于判断使用什么方法监听变体的变化
+      * 1. 当url中包含variant=的时候，采用listen url的方法
+      * 2. 当url中不包含的时候，采用定时器的方法
+      */
     if (isProPage) {
       const url = document.URL;
       listenUrlStatus();
@@ -1539,6 +1548,8 @@
         targetNode = q('.select-selected, select[name=id]');
       } else if (shopId == 1742274613) {
         targetNode = q('.option-1');
+      } else if (shopId == 42547151016 && themeId === 122478428328) {
+        targetNode = q('.swatch-variants-wrapper');
       } else {
         targetNode = q('input[name=id], select[name=id]');
       }
@@ -1602,9 +1613,9 @@
 
   function handleVariantChange(vid) {
     /**
-     * TODO 当切换变体后url中开始有variant=了
-     * 取消listen变体的定时器
-     */
+      * TODO 当切换变体后url中开始有variant=了
+      * 取消listen变体的定时器
+      */
     if (!vid) return;
     if (String(selectVariantId) !== String(vid)) {
       selectVariantId = vid;
@@ -1634,6 +1645,7 @@
         const { code, data } = res;
         if (code === 200) {
           if (data.status == 1 || data.status == 2 || data.status == 0 || data.snsStatus) {
+            console.log('createEmailButton');
             selBtnStatus = 1;
             initEmailToMeElement();
           } else {
@@ -1647,9 +1659,12 @@
   //Mark 初始化按钮
   function initEmailToMeElement() {
     // 移除了displayforall的判断，统一由后端判断该变体需不需要展示
+    console.log('showVariants', showVariants);
+    console.log('selectVariantId', selectVariantId);
     if (selBtnStatus === 1 && (((showVariants.includes(String(selectVariantId))) && isProPage) ||
       isCollPage)) {
       customFeature && customFeature()
+      console.log('initEmailToMeElement');
       if (inlineBtnElement) {
         inlineBtnElement.forEach(i => i.style.display = 'flex');
         inlineEmailDiv.forEach(i => i.style.display = 'flex');
@@ -1661,7 +1676,7 @@
     } else {
       if (inlineBtnElement) {
         // inlineBtnElement.style.display = "none";
-        inlineEmailDiv.forEach(i => i.style.display = 'none');
+        inlineEmailDiv.forEach(i => { i.style.display = 'none' });
       }
       if (floatBtnElement) {
         // floatBtnElement.style.display = 'none';
@@ -1752,11 +1767,11 @@
 
   function toggleInvalidTip(show, data) {
     /**
-     * 函数的本意是为了开关invalid提示，但是如果设置了show的话就是为了手动隐藏/关闭
+      * 函数的本意是为了开关invalid提示，但是如果设置了show的话就是为了手动隐藏/关闭
      * show - 展示/隐藏提示
      * data.type - 当前提示的类型
      * data.info - 当前提示的信息
-     */
+      */
     const style = getComputedStyle(invalidTip);
     const { type, info } = data ||
       { type: selectedType.type, info: popupData.popup_validation_text };
@@ -1913,37 +1928,37 @@
 
     function initPhoneInput() {
       /*
-        * 在这里引入了插件intl-tel-input
-        * 具体的使用方法可以在这两个地方看
-        * npm: https://www.npmjs.com/package/intl-tel-inpu
-        * github: https://github.com/jackocnr/intl-tel-input#getting-started-not-using-a-bundler
-        * 在这里有对应的全套cdn https://cdnjs.com/libraries/intl-tel-input
-        */
+      * 在这里引入了插件intl-tel-input
+      * 具体的使用方法可以在这两个地方看
+      * npm: https://www.npmjs.com/package/intl-tel-inpu
+      * github: https://github.com/jackocnr/intl-tel-input#getting-started-not-using-a-bundler
+      * 在这里有对应的全套cdn https://cdnjs.com/libraries/intl-tel-input
+      */
       return new Promise((resolve) => {
         const cssUrl = 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.16/css/intlTelInput.css';
         addScript(cssUrl).then(cssRes => {
           if (cssRes.code === 200) {
             // 国旗是png格式的精灵图，也是由cdn引入的，具体看下面resetFlag中的参数
             const resetFlag = `
-              <style>
-              .iti__flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.16/img/flags.png");}
-              @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      <style>
+        .iti__flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.16/img/flags.png");}
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
               .iti__flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.16/img/flags@2x.png");}
               }
-              .iti.iti--allow-dropdown {
-                  width: 100%;
-                  display: flex;
-                  height: var(--sa-button-height-normal);
-                  margin-top: 10px;
+        .iti.iti--allow-dropdown {
+          width: 100%;
+        display: flex;
+        height: var(--sa-button-height-normal);
+        margin-top: 10px;
               }
-              .iti__country {
-                color: #777777;
+        .iti__country {
+          color: #777777;
               }
-              .iti--container {
-                z-index: 999999999 !important;
+        .iti--container {
+          z-index: 999999999 !important;
               }
-              </style>
-            `;
+      </style>
+      `;
             document.head.insertAdjacentHTML('beforeend', resetFlag);
 
             // 确保插件的css引入了之后再进行js的引入
@@ -2032,8 +2047,8 @@
   /**
    * @function createRequestId 创建RequestId用于链路追踪
    * @param {integer} length 希望生成的字符串长度
-   * @returns {string} 指定长度的字符串
-   */
+      * @returns {string} 指定长度的字符串
+      */
   function createRequestId(length) {
     // length边界处理
     length = (length && length < 64) ? length : 63;
@@ -2048,13 +2063,13 @@
 
   function request(url, params, callback, method = 'POST') {
     /**
-     * 封装请求函数
+      * 封装请求函数
      * @param(url) - api请求地址，必选。
      * @param(params) - 请求参数，可选。
      * @param(callback) - 回调函数，可选。没有回调函数也会resolve获得到的数据
      * @param(method) - 请求方法，可选。
-     * @returns Promise
-     */
+      * @returns Promise
+      */
     return new Promise((resolve, reject) => {
       if (!url) {
         resolve({ code: 999, data: '没有传api地址' });
@@ -2162,542 +2177,542 @@
   // inject css 样式
   function importStyles() {
     const styles = `<style>
-    body {
-      --sa-border-normal: 1px solid #d9d9d9;
-      --sa-border-hover: 2px solid skyblue;
-      --sa-button-height-normal: 44px;
-      --sa-border-radius-input: 4px;
-      --sa-border-radius-button: 4px;
-      --sa-border-color: #d9d9d9;
-      --sa-disabled-bgc: #f2f2f2;
-      --sa-btn-hover-bgc: #f6f6f7;
-      --sa-input-padding: 8px;
+        body {
+          --sa-border-normal: 1px solid #d9d9d9;
+        --sa-border-hover: 2px solid skyblue;
+        --sa-button-height-normal: 44px;
+        --sa-border-radius-input: 4px;
+        --sa-border-radius-button: 4px;
+        --sa-border-color: #d9d9d9;
+        --sa-disabled-bgc: #f2f2f2;
+        --sa-btn-hover-bgc: #f6f6f7;
+        --sa-input-padding: 8px;
     }
-    ${customStyle}
-    #email-me-frame * {
+        ${customStyle}
+        #email-me-frame * {
+          box-sizing: border-box;
+    }
+        #email-me-frame *:empty {
+          display: inherit;
+    }
+        .email-me-button{
+          width: 100%;
+        height: var(--sa-button-height-normal);
+        /*background-color: rgb(51, 51, 51);*/
+        /*border-radius: 7px;*/
+        /*color: white;*/
+        border-width: 0px;
+        font-size: 15px;
+        cursor: pointer;
+        letter-spacing: 1px;
+        border-radius: var(--sa-border-radius-button);
+        align-items:center;
+        display: flex;
+        justify-content: center;
         box-sizing: border-box;
-    }
-    #email-me-frame *:empty {
-      display: inherit;
-    }
-  .email-me-button{
-    width: 100%;
-    height: var(--sa-button-height-normal);
-    /*background-color: rgb(51, 51, 51);*/
-    /*border-radius: 7px;*/
-    /*color: white;*/
-    border-width: 0px;
-    font-size: 15px;
-    cursor: pointer;
-    letter-spacing: 1px;
-    border-radius: var(--sa-border-radius-button);
-    align-items:center;
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    transition: all linear .15s;
-    position: relative;
+        transition: all linear .15s;
+        position: relative;
   }
-  .email-me-inlineButton {
-    display: none;
+        .email-me-inlineButton {
+          display: none;
   }
-  #email-me-frame {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.2);
-    z-index: 9999999;
-    display: none;
+        #email-me-frame {
+          position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.2);
+        z-index: 9999999;
+        display: none;
   }
 
-  #email-me-frame input {
-    background-color: #ffffff;
-    border: 1px solid var(--sa-border-color);
-    border-radius: var(--sa-border-radius-input);
-  }
-  
-  #email-me-frame .email-frame-content{
-    width: 65%;
-    /*height: 358px;*/
-    max-width: 398px;
-    min-width: 300px;
-    background: white;
-    border-radius: 7px;
-    padding-bottom:16px;
-    border: 1px solid var(--sa-border-color);
-    box-shadow: 0 0 18px #00000030;
-    animation: fadeIn .15s linear;
-    position: fixed;
-    top: 50%; left: 50%;
-    bottom: 0;
-    height: 100%;
-    max-height: 508px;
-    transform: translate(-50%, -50%);
-    overflow-y: scroll;
-  }
-  .email-frame-content::-webkit-scrollbar {
-    /*滚动条整体样式*/
-    width: 4px; /*高宽分别对应横竖滚动条的尺寸*/
-    height: 1px;
-  }
-  .email-frame-content::-webkit-scrollbar-thumb {
-    /*滚动条里面小方块*/
-    border-radius: 10px;
-    background: #a9a9a9;
-  }
-  .email-frame-content::-webkit-scrollbar-track {
-    /*滚动条里面轨道*/
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
-    background: #ededed;
-    border-radius: 10px;
-  }
-  
-  #email-me-frame .frame-close {
-      margin-top: 10px;
-      margin-bottom: 10px;
-      margin-right: 5px;
-      cursor: pointer;
-      display: inline-block;
-      width: 100%;
-      height: 2px;
-      background: #333;
-      transform: rotate(
-              45deg
-      );
-  }
-  #email-me-frame .frame-close::after{
-      content: "";
-      display: block;
-      height: 2px;
-      background: #333;
-      transform: rotate(
-              -90deg
-      );
-  }
-  
-  #email-me-frame .email-frame-header{
-      display: flex;
-      justify-content: center;
-      clear: both;
-      padding-top: 2px;
-      padding-left: 30px;
-      margin-bottom: 7px;
-      font-family: "Arial",sans-serif;
-  
-  }
-  
-  #email-me-frame .close-box{
-      width: 20px;
-      height: 19px;
-      float: right;
-      margin-right: 5px;
-      margin-top: 5px;
-      cursor: pointer;
-  }
-  
-  #email-me-frame .frame-email-logo svg{
-      background-size: 25px 25px;
-      width: 24px;
-      margin-top: 3px;
-  }
-  
-  #email-me-frame .frame-title{
-      padding-left: 13px;
-      flex: 1;
-      color:#1A1B18;
-      font-size: 16px;
-      font-weight: 600;
-      padding-top: 3px;
-  }
-  
-  #email-me-frame .split-line {
-      border: 1px solid var(--sa-border-color);
-  }
-  
-  #email-me-frame .email-frame-body{
-      padding-left: 30px;
-      padding-right: 30px;
-  }
-  
-  #email-me-frame .frame-body-content{
-      letter-spacing: 0.01rem;
-      line-height: 1.6rem;
-      font-weight: 500;
-      font-size: 15px;
-      margin-top:16px;
-      margin-bottom: 5px;
-      color:#1A1B18;
-  }
-  
-  #email-me-frame .buyer-email,
-  #email-me-frame .buyer-phone-input,
-  #email-me-frame .buyer-name{
-      border-radius: var(--sa-border-radius-input);
-      border: 1px solid var(--sa-border-color);
-      margin: 10px 0 0 0;
-      width: 100%;
-      font-size: 15px ;
-      outline: none !important;
-      height: var(--sa-button-height-normal) !important;
-      color: #000 !important;
-      background: #fff !important;
-      padding: var(--sa-input-padding) !important;
-  }
-  .buyer-phone-input {
-      border-left: none;
+        #email-me-frame input {
+          background-color: #ffffff;
+        border: 1px solid var(--sa-border-color);
+        border-radius: var(--sa-border-radius-input);
   }
 
-  #email-me-frame .notify-type-toggler {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      font-size: 15px ;
-      height: var(--sa-button-height-normal) !important;
-      color: #000 !important;
-      background: #fff !important;
-      margin-top: 10px;
+        #email-me-frame .email-frame-content{
+          width: 65%;
+        /*height: 358px;*/
+        max-width: 398px;
+        min-width: 300px;
+        background: white;
+        border-radius: 7px;
+        padding-bottom:16px;
+        border: 1px solid var(--sa-border-color);
+        box-shadow: 0 0 18px #00000030;
+        animation: fadeIn .15s linear;
+        position: fixed;
+        top: 50%; left: 50%;
+        bottom: 0;
+        height: 100%;
+        max-height: 508px;
+        transform: translate(-50%, -50%);
+        overflow-y: scroll;
+  }
+        .email-frame-content::-webkit-scrollbar {
+          /*滚动条整体样式*/
+          width: 4px; /*高宽分别对应横竖滚动条的尺寸*/
+        height: 1px;
+  }
+        .email-frame-content::-webkit-scrollbar-thumb {
+          /*滚动条里面小方块*/
+          border-radius: 10px;
+        background: #a9a9a9;
+  }
+        .email-frame-content::-webkit-scrollbar-track {
+          /*滚动条里面轨道*/
+          box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        background: #ededed;
+        border-radius: 10px;
+  }
+
+        #email-me-frame .frame-close {
+          margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 5px;
+        cursor: pointer;
+        display: inline-block;
+        width: 100%;
+        height: 2px;
+        background: #333;
+        transform: rotate(
+        45deg
+        );
+  }
+        #email-me-frame .frame-close::after{
+          content: "";
+        display: block;
+        height: 2px;
+        background: #333;
+        transform: rotate(
+        -90deg
+        );
+  }
+
+        #email-me-frame .email-frame-header{
+          display: flex;
+        justify-content: center;
+        clear: both;
+        padding-top: 2px;
+        padding-left: 30px;
+        margin-bottom: 7px;
+        font-family: "Arial",sans-serif;
+  
+  }
+
+        #email-me-frame .close-box{
+          width: 20px;
+        height: 19px;
+        float: right;
+        margin-right: 5px;
+        margin-top: 5px;
+        cursor: pointer;
+  }
+
+        #email-me-frame .frame-email-logo svg{
+          background-size: 25px 25px;
+        width: 24px;
+        margin-top: 3px;
+  }
+
+        #email-me-frame .frame-title{
+          padding-left: 13px;
+        flex: 1;
+        color:#1A1B18;
+        font-size: 16px;
+        font-weight: 600;
+        padding-top: 3px;
+  }
+
+        #email-me-frame .split-line {
+          border: 1px solid var(--sa-border-color);
+  }
+
+        #email-me-frame .email-frame-body{
+          padding-left: 30px;
+        padding-right: 30px;
+  }
+
+        #email-me-frame .frame-body-content{
+          letter-spacing: 0.01rem;
+        line-height: 1.6rem;
+        font-weight: 500;
+        font-size: 15px;
+        margin-top:16px;
+        margin-bottom: 5px;
+        color:#1A1B18;
+  }
+
+        #email-me-frame .buyer-email,
+        #email-me-frame .buyer-phone-input,
+        #email-me-frame .buyer-name{
+          border-radius: var(--sa-border-radius-input);
+        border: 1px solid var(--sa-border-color);
+        margin: 10px 0 0 0;
+        width: 100%;
+        font-size: 15px ;
+        outline: none !important;
+        height: var(--sa-button-height-normal) !important;
+        color: #000 !important;
+        background: #fff !important;
+        padding: var(--sa-input-padding) !important;
+  }
+        .buyer-phone-input {
+          border-left: none;
+  }
+
+        #email-me-frame .notify-type-toggler {
+          display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 15px ;
+        height: var(--sa-button-height-normal) !important;
+        color: #000 !important;
+        background: #fff !important;
+        margin-top: 10px;
   }
   .notify-type-toggler > div {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: 1px solid var(--sa-border-color);
-      height: 100%;
-      cursor: pointer;
-      transition: all linear .14s;
+          flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--sa-border-color);
+        height: 100%;
+        cursor: pointer;
+        transition: all linear .14s;
   }
   .notify-type-toggler > div:hover {
-      background: var(--sa-btn-hover-bgc)
+          background: var(--sa-btn-hover-bgc)
   }
   .notify-type-toggler > div:nth-child(1) {
-      border-radius: var(--sa-border-radius-button) 0 0 5px;
+          border-radius: var(--sa-border-radius-button) 0 0 5px;
   }
   .notify-type-toggler > div:nth-child(2) {
-      border-left: 0;
-      border-radius: 0 5px 5px 0;
+          border-left: 0;
+        border-radius: 0 5px 5px 0;
   }
-  .join-mailing-container {
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    line-height: 12px;
-    margin-top: 4px;
+        .join-mailing-container {
+          display: flex;
+        align-items: center;
+        font-size: 12px;
+        line-height: 12px;
+        margin-top: 4px;
   }
-  .join-mailing-listLabel {
-    margin: 0 0 0 8px;
-    color: #333333 !important;
+        .join-mailing-listLabel {
+          margin: 0 0 0 8px;
+        color: #333333 !important;
   }
-  #email-me-frame .buyer-phone-block {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: relative;
-      height: var(--sa-button-height-normal);
-      padding: var(--sa-input-padding);
+        #email-me-frame .buyer-phone-block {
+          display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        height: var(--sa-button-height-normal);
+        padding: var(--sa-input-padding);
   }
-  #email-me-frame .country-selector {
-      width: 54px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      border: 1px solid var(--sa-border-color);
-      cursor: pointer;
+        #email-me-frame .country-selector {
+          width: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        border: 1px solid var(--sa-border-color);
+        cursor: pointer;
   }
-  #email-me-frame .country-selector:hover {
-      background: var(--sa-disabled-bgc);
+        #email-me-frame .country-selector:hover {
+          background: var(--sa-disabled-bgc);
   }
-  #email-me-frame .country-selector-list {
-      max-width: 120px;
-      position: absolute;
-      border: 1px solid var(--sa-border-color);
-      border-radius: 8px;
-      background-color: #fff;
-      list-style: none;
-      padding: 0px;
-      max-height: 120px;
-      overflow-y: scroll;
-      margin-bottom: 50%;
+        #email-me-frame .country-selector-list {
+          max-width: 120px;
+        position: absolute;
+        border: 1px solid var(--sa-border-color);
+        border-radius: 8px;
+        background-color: #fff;
+        list-style: none;
+        padding: 0px;
+        max-height: 120px;
+        overflow-y: scroll;
+        margin-bottom: 50%;
   }
-  #email-me-frame .country-selector-list li {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      align-items: center;
-      padding: var(--sa-input-padding);
-      cursor: pointer;
-      transition: all linear .14s;
-      bottom: 0;
+        #email-me-frame .country-selector-list li {
+          display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--sa-input-padding);
+        cursor: pointer;
+        transition: all linear .14s;
+        bottom: 0;
   }
-  #email-me-frame .country-selector-list li:hover {
-      background-color: #eeeeee;
+        #email-me-frame .country-selector-list li:hover {
+          background-color: #eeeeee;
   }
-  .buyer-phone {
-      outline: none;
-      flex: 1;
-      transition: all linear .14s;
-      border: var(--sa-border-normal);
-      border-radius: var(--sa-border-radius-button);
+        .buyer-phone {
+          outline: none;
+        flex: 1;
+        transition: all linear .14s;
+        border: var(--sa-border-normal);
+        border-radius: var(--sa-border-radius-button);
   }
-  input::-webkit-input-placeholder{
-      color:gray;
-      font-size:15px;
-  }
-  
-  input::-moz-placeholder{   /* Mozilla Firefox 19+ */
-      color:gray;
-      font-size:15px;
-  }
-  input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
-      color:gray;
-      font-size:15px;
-  }
-  input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
-      color:gray;
-      font-size:15px;
-  }
-  
-  
-  #email-me-frame .frame-submit{
-      position: relative;
+        input::-webkit-input-placeholder{
+          color:gray;
+        font-size:15px;
   }
 
-  /* loading的代码 */
-  .frame-submit.loading {
-    pointer-events: none;
-    cursor: not-allowed;
+        input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+          color:gray;
+        font-size:15px;
   }
-  .frame-submit.loading::after {
-    content: '';
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border-bottom: 2px solid #ddd;
-    border-right: 2px solid #ddd;
-    animation: spin ease-in-out 0.8s infinite;
-    position: absolute;
-    top: 11px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+        input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+          color:gray;
+        font-size:15px;
   }
-  .frame-submit.loading .email-me-submitButton {
-    opacity: 0;
+        input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+          color:gray;
+        font-size:15px;
   }
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
+
+
+        #email-me-frame .frame-submit{
+          position: relative;
+  }
+
+        /* loading的代码 */
+        .frame-submit.loading {
+          pointer-events: none;
+        cursor: not-allowed;
+  }
+        .frame-submit.loading::after {
+          content: '';
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border-bottom: 2px solid #ddd;
+        border-right: 2px solid #ddd;
+        animation: spin ease-in-out 0.8s infinite;
+        position: absolute;
+        top: 11px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+  }
+        .frame-submit.loading .email-me-submitButton {
+          opacity: 0;
+  }
+        @keyframes spin {
+          0% {
+            transform: rotate(0deg);
+          }
     100% {
-      transform: rotate(360deg);
+          transform: rotate(360deg);
     }
   }
-  
-  #email-me-frame .selected-unavailable-variant{
-      border-radius: var(--sa-border-radius-button);
-      border: 1px solid var(--sa-border-color);
-      margin: 10px 0 0 0;
-      width: 100%;
-      height: var(--sa-button-height-normal);
-      font-size: 15px;
-      outline: none;
-      color: #000;
-      padding: var(--sa-input-padding) !important;
-      background: #fff;
+
+        #email-me-frame .selected-unavailable-variant{
+          border-radius: var(--sa-border-radius-button);
+        border: 1px solid var(--sa-border-color);
+        margin: 10px 0 0 0;
+        width: 100%;
+        height: var(--sa-button-height-normal);
+        font-size: 15px;
+        outline: none;
+        color: #000;
+        padding: var(--sa-input-padding) !important;
+        background: #fff;
   }
-  
-  #email-me-frame .invalid-email-tips{
-      color: rgb(219, 17, 42);
-      font-weight: 500;
-      letter-spacing: 0;
-      visibility: hidden;
-      line-height: 24px;
-      font-size: 12px;
+
+        #email-me-frame .invalid-email-tips{
+          color: rgb(219, 17, 42);
+        font-weight: 500;
+        letter-spacing: 0;
+        visibility: hidden;
+        line-height: 24px;
+        font-size: 12px;
   }
-  
-  #email-me-frame .email-frame-footer{
-      padding: 0 30px;
-      margin-top: 20px;
+
+        #email-me-frame .email-frame-footer{
+          padding: 0 30px;
+        margin-top: 20px;
   }
-  
-  #email-me-frame .email-frame-footer .email-footer-tips{
-      font-size: 14px;
-      font-family: "Arial",sans-serif;
-      line-height: 1.1em;
-      color: #ccc;
+
+        #email-me-frame .email-frame-footer .email-footer-tips{
+          font-size: 14px;
+        font-family: "Arial",sans-serif;
+        line-height: 1.1em;
+        color: #ccc;
   }
-  #email-me-frame .email-app-link{
-      color: #008ddd;
+        #email-me-frame .email-app-link{
+          color: #008ddd;
   }
-  #email-me-frame .email-app-link:hover{
-      color: #0089d6;
+        #email-me-frame .email-app-link:hover{
+          color: #0089d6;
   }
-  #email-me-frame .email-app-link:visited{
-      color: #008ddd;
+        #email-me-frame .email-app-link:visited{
+          color: #008ddd;
   }
-  #email-me-frame .email-app-link:active{
-      color: #008ddd;
+        #email-me-frame .email-app-link:active{
+          color: #008ddd;
   }
-  #email-me-frame .email-provider {
-      margin-top: 8px;
-      text-align: center !important;
-      font-family: "Arial",sans-serif;
-      color: black;
-      font-size: 12px;
+        #email-me-frame .email-provider {
+          margin-top: 8px;
+        text-align: center !important;
+        font-family: "Arial",sans-serif;
+        color: black;
+        font-size: 12px;
   }
-  .successSub_header img {
-    width: 32px;
-    margin: 0;
+        .successSub_header img {
+          width: 32px;
+        margin: 0;
 }
-  .successSub {
-    transition: width 0.5s ease-out, opacity 0.5s ease-in, visibility 0.5s ease-in;
-    max-width: 350px;
-    background: rgb(255, 255, 255);
-    padding: 20px;
-    border-radius: 7px;
-    border:1px solid #445958 ;
-    display: block;
-    z-index: -1;
-    position: fixed;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    visibility: hidden;
-    opacity: 0;
-    color: #464646;
+        .successSub {
+          transition: width 0.5s ease-out, opacity 0.5s ease-in, visibility 0.5s ease-in;
+        max-width: 350px;
+        background: rgb(255, 255, 255);
+        padding: 20px;
+        border-radius: 7px;
+        border:1px solid #445958 ;
+        display: block;
+        z-index: -1;
+        position: fixed;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        visibility: hidden;
+        opacity: 0;
+        color: #464646;
 }
-.successSub_active {
-    width: 100%;
-    visibility: visible;
-    opacity: 1;
-    z-index: 999999999;
+        .successSub_active {
+          width: 100%;
+        visibility: visible;
+        opacity: 1;
+        z-index: 999999999;
 }
-.product-restore-email img {
-    width: 44px;
-    margin: 0;
+        .product-restore-email img {
+          width: 44px;
+        margin: 0;
 }
-#email-me-frame img {
-    /* width: 100%; */
-    width: 50px;
-    margin-right: 8px;
+        #email-me-frame img {
+          /* width: 100%; */
+          width: 50px;
+        margin-right: 8px;
 }
-.successSub_header {
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
+        .successSub_header {
+          width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
 }
-.successSub_header_text {
-    font-weight: 700;
-    flex: 1;
-    padding-left: 8px;
+        .successSub_header_text {
+          font-weight: 700;
+        flex: 1;
+        padding-left: 8px;
 }
-.successSub_close-box {
-    width: 20px;
-    height: 20px;
-    padding: 4px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    transform: translate(8px, -16px);
+        .successSub_close-box {
+          width: 20px;
+        height: 20px;
+        padding: 4px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        transform: translate(8px, -16px);
 }
-.successSub_frame-close {
-    margin-bottom: 10px;
-    cursor: pointer;
-    display: inline-block !important;
-    width: 100%;
-    height: 1px;
-    background: #333;
-    transform: rotate( 
+        .successSub_frame-close {
+          margin-bottom: 10px;
+        cursor: pointer;
+        display: inline-block !important;
+        width: 100%;
+        height: 1px;
+        background: #333;
+        transform: rotate(
         45deg
-    );
+        );
 }
-.successSub_frame-close::after {
-    content: '';
-    display: block;
-    height: 1px;
-    background: #333;
-    transform: rotate( 
+        .successSub_frame-close::after {
+          content: '';
+        display: block;
+        height: 1px;
+        background: #333;
+        transform: rotate(
         -90deg
-    );
+        );
 }
-.successSub_text {
-    margin-top: 8px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.5;
+        .successSub_text {
+          margin-top: 8px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.5;
 }
-  .product-restore-email{
-      justify-content: flex-start;
-      width: 100%;
-      flex:1;
+        .product-restore-email{
+          justify-content: flex-start;
+        width: 100%;
+        flex:1;
   }
-  .product-restore-email input {
-    background: #ffffff;
+        .product-restore-email input {
+          background: #ffffff;
   }
-  #product-restore-email-float{
-      display: flex;
-      z-index:99999999999;
-      justify-content: center;
-      position:fixed;
+        #product-restore-email-float{
+          display: flex;
+        z-index:99999999999;
+        justify-content: center;
+        position:fixed;
 
   }
-  .float-btn-left{
-      transform: rotate(90deg) translateY(-100%);
-      transform-origin: 0% 0%;
-      left:0;
+        .float-btn-left{
+          transform: rotate(90deg) translateY(-100%);
+        transform-origin: 0% 0%;
+        left:0;
   }
-  .float-btn-right{
-      transform: rotate(-90deg) translateY(-100%);
-      transform-origin: 100% 0%;
-      right:0;
+        .float-btn-right{
+          transform: rotate(-90deg) translateY(-100%);
+        transform-origin: 100% 0%;
+        right:0;
   }
-  #product-restore-email-float .email-me-button{
-      padding: 0.8rem 1.2rem;
+        #product-restore-email-float .email-me-button{
+          padding: 0.8rem 1.2rem;
   }
-  #email-me-frame .email-provider span{
-      color: blue;
+        #email-me-frame .email-provider span{
+          color: blue;
   }
-  @keyframes fadeIn {
-      0% {
-          opacity: .6;
-      }
+        @keyframes fadeIn {
+          0% {
+            opacity: .6;
+          }
       100% {
           opacity: 1;
       }
   }
-  /* 滚动条设置没有生效 */
-  /* 滚动条整体部分，可以设置宽度啥的 */
-  #email-me-frame .country-selector-list ::-webkit-scrollbar {
-    width: 2px;
-    height: 2px;
+        /* 滚动条设置没有生效 */
+        /* 滚动条整体部分，可以设置宽度啥的 */
+        #email-me-frame .country-selector-list ::-webkit-scrollbar {
+          width: 2px;
+        height: 2px;
   }
-  /* 滚动条两端的按钮 */
-  #email-me-frame .country-selector-list ::-webkit-scrollbar-button {
-    display: none !important;
+        /* 滚动条两端的按钮 */
+        #email-me-frame .country-selector-list ::-webkit-scrollbar-button {
+          display: none !important;
   }
-  /* 外层轨道 */
-  #email-me-frame .country-selector-list ::-webkit-scrollbar-track  {
-    display: none !important;
+        /* 外层轨道 */
+        #email-me-frame .country-selector-list ::-webkit-scrollbar-track  {
+          display: none !important;
   }
-  /* 内层滚动槽 */
-  #email-me-frame .country-selector-list ::-webkit-scrollbar-track-piece{
-    display: none !important;
+        /* 内层滚动槽 */
+        #email-me-frame .country-selector-list ::-webkit-scrollbar-track-piece{
+          display: none !important;
   }
-  /* 滚动的滑块  */
-  #email-me-frame .country-selector-list ::-webkit-scrollbar-thumb {
-    background-color:#ff9900;
-    background-color:rgba(255,153,0, 0.6);
-    border-radius: 10px;
+        /* 滚动的滑块  */
+        #email-me-frame .country-selector-list ::-webkit-scrollbar-thumb {
+          background-color:#ff9900;
+        background-color:rgba(255,153,0, 0.6);
+        border-radius: 10px;
   }
-  .type-selected {
-    pointer-events: none;
-    background-color: var(--sa-disabled-bgc);
+        .type-selected {
+          pointer-events: none;
+        background-color: var(--sa-disabled-bgc);
   }
-  
-              </style>`;
+
+      </style>`;
     document.head.insertAdjacentHTML('beforeend', styles);
     document.head.insertAdjacentHTML('beforeend', `<style id="email-insert-style"></style>`);
   }

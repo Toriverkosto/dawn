@@ -5,6 +5,7 @@
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
+{{ 'section-quality-control.css' | asset_url | stylesheet_tag }}
 
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
@@ -180,6 +181,54 @@
                 </div>
               </details>
             </div>
+            {%- when 'quality_control_tab' -%}
+            {% if product.metafields.kameratori.quality_control.value != 'Error' and product.metafields.kameratori.quality_control.value != blank %}
+            {% assign quality_control_value = product.metafields.kameratori.quality_control.value %}
+                <div class={{quality_control_value|downcase|replace: " ", "-"}}>
+                <div class="quality-control">
+                <div class="accordion" {{ block.shopify_attributes }}>
+                    {%- if quality_control_value=="Passed" -%}
+                    <details>
+                    {%- elsif quality_control_value=="Not Passed" -%}
+                    <details open>
+                    {%- endif -%}  
+                    <summary>
+                        <div class="quality-control__title-container">
+                          <div class="quality-control__title">
+                            {% comment %} quality control value defines what we show next, first for Passed {% endcomment %}
+                            {% if quality_control_value =="Passed" %}
+                              {% render 'icon-passed-ellips' %}
+                              {{"sections.quality_control_tab.heading" | t }}
+                            </div>
+                            <div class="quality-control__title-container-badge">
+                              {%- render 'qc-badge-passed' -%}
+                              {% comment %} and here for the Not Passed{% endcomment %} 
+                            {% elsif quality_control_value =="Not Passed" %}
+                              {% render 'icon-not-passed-ellips' %}
+                              {{"sections.quality_control_tab.heading" | t }}
+                            </div>
+                            <div class="quality-control__title-container-badge">
+                            {% render 'qc-badge-not-passed' %}
+                          {% endif %}
+                            {% render 'icon-caret' %}
+                            </div>
+                        </div>
+                      </summary>
+                      <div class="quality-control__description">
+                        {% if quality_control_value == "Passed" %}
+                        {{ block.settings.content_passed}}
+                        {% elsif quality_control_value == "Not Passed" %}
+                        {{ block.settings.content_not_passed }}
+                        {% endif %}
+                      </div>
+                      <div class="quality-control__link">
+                        <a href="/pages/product-quality-control-item-condition-rating" target="_blank" rel="noopener noreferrer">{{"sections.quality_control_tab.link.text" | t }}</a> 
+                      </div>
+                    </details>
+                  </div>
+                  </div>
+                  </div>
+              {% endif %}
           {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">
@@ -896,6 +945,30 @@
           "id": "custom_liquid",
           "label": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.label",
           "info": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.info"
+        }
+      ]
+    },
+    {
+      "type": "quality_control_tab",
+      "name": "t:sections.main-product.blocks.quality_control_tab.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "quality_control",
+          "info": "t:sections.main-product.blocks.quality_control_tab.settings.heading.info",
+          "label": "t:sections.main-product.blocks.quality_control_tab.settings.heading.label"
+        },
+        {
+          "type": "richtext",
+          "id": "content_passed",
+          "label": "t:sections.main-product.blocks.quality_control_tab.settings.content_passed.label",
+          "default": "<p>Tested, inspected, cleaned and working with no significant flaws. These items can be considered “ready to use” for their intended purpose. Minor flaws are possible and are noted in the product description.</p>"
+        },
+        {
+          "type": "richtext",
+          "id": "content_not_passed",
+          "label": "t:sections.main-product.blocks.quality_control_tab.settings.content_not_passed.label",
+          "default": "<p>Untested or: tested, inspected, and found to have significant flaws that affect or prevent normal use. These items should be considered broken. Repair may or may not be possible.</p>"
         }
       ]
     },

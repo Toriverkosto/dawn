@@ -157,6 +157,19 @@
   --color-icon: rgb(var(--color-base-outline-button-labels));
 }
 
+/* quality control color-variables */
+
+.quality-control__container--passed, .passed > .quality-control {
+  --color-passed-bg: #EEF3FB;
+  --color-passed-border: #214E9D;
+}
+
+.quality-control__container--not-passed, .not-passed > .quality-control {
+  --color-not-passed-bg: #FEF2EB;
+  --color-not-passed-border: #F88545;
+}
+ 
+
 /* base */
 
 .no-js:not(html) {

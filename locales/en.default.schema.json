@@ -1456,6 +1456,22 @@
             }
           }
         },
+        "quality_control_tab": {
+          "name": "Quality Control Tab",
+          "settings": {
+            "heading": {
+              "info": "Include a heading that explains the content.",
+              "label": "Heading"
+            },
+            "content_passed": {
+              "label": "Tab content for passed",
+              "default": "Testi"
+            },
+            "content_not_passed": {
+              "label": "Tab content for not passed"
+            }
+          }
+        },
         "collapsible_tab": {
           "name": "Collapsible tab",
           "settings": {

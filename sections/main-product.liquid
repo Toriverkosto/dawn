@@ -182,7 +182,7 @@
               </details>
             </div>
             {%- when 'quality_control_tab' -%}
-            {% if product.metafields.kameratori.quality_control.value != 'Error' and product.metafields.kameratori.quality_control.value != blank %}
+            {% if product.metafields.kameratori.quality_control.value != 'Error-QC' and product.metafields.kameratori.quality_control.value != blank %}
             {% assign quality_control_value = product.metafields.kameratori.quality_control.value %}
                 <div class={{quality_control_value|downcase|replace: " ", "-"}}>
                 <div class="quality-control">

@@ -67,7 +67,7 @@
           }
         },
         "ec88d254-bbe8-4b70-a8ba-4e63f56ef136": {
-          "type": "shopify:\/\/apps\/c-back-in-stock-restock-alerts\/blocks\/product-restore-email\/b190bced-3b7b-47da-a05f-6ea4821c3a77",
+          "type": "shopify:\/\/apps\/channelwill-back-in-stock\/blocks\/product-restore-email\/b190bced-3b7b-47da-a05f-6ea4821c3a77",
           "settings": {
           }
         },
@@ -246,7 +246,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/UfFOGKO5nDNXP4Y4Vh1-I4OTnVunoLVd231IQzWAq_QPNeODpi1NNN1deY53R2dhfRVI6E0iGD0P-NsVaWpePhJ9YUoD6tDAEXanFNU9JCpNP4mYdCQWUGldnvSQcL6QV-PyASh2NoeZSA94QjQoIg08OFjCQs0-d-e1-ft-1000x562.jpg",
             "title": "Why Kamerastore?",
-            "text": "<p>We are a real business with a real <a href=\"https:\/\/g.page\/Kamerastore?share\" target=\"_blank\">shop<\/a> and real camera professionals inside. We have helped over 30,000 customers since 2010 and have a <a href=\"https:\/\/g.page\/Kamerastore?share\" target=\"_blank\" title=\"Kamerastore - Google Maps\">4.8 star rating on Google<\/a>.<\/p>"
+            "text": "<p>We are a real business with a real <a href=\"https:\/\/g.page\/Kamerastore?share\">shop<\/a> and real camera professionals inside. We have helped over 30,000 customers since 2010 and have a <a href=\"https:\/\/g.page\/Kamerastore?share\" title=\"Kamerastore - Google Maps\">4.8 star rating on Google<\/a>.<\/p>"
           }
         },
         "16324019941e428b8f-1": {

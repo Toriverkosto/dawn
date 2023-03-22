@@ -36,6 +36,7 @@
         },
         "3c9d3c18-0a30-49f4-ad09-63143e81c26b": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<style>\n.restricted {\n  background-color: #FEF7EA;\n  color: #3E4447;\n  padding-left: 15px;\n  padding-right: 15px;\n  border: 2px solid #F6DFBB;\n  margin: 10px;\n  border-radius: 5px;\n}\n<\/style>\n<\/head>\n<body>\n\n<div class=\"restricted\">\n<h3><\/h3>\n<p>Color film is limited to 10 pcs \/ customer.<\/p>\n<\/div>"
           }
@@ -109,6 +110,7 @@
         },
         "5442ba5b-00e3-43cb-a982-68811ae1827d": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Sell Your Gear to Us!",
             "content": "<p>We buy & trade cameras, lenses, and accessories on top of selling! If you're looking to upgrade or change your gear, why not sell directly to us?<br\/><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\"><strong>Click here to fill out our form!<\/strong><\/a><\/p>",

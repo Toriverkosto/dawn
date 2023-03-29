@@ -21,7 +21,7 @@
 * Flair: https://apps.shopify.com/flair
 * Copyright Brainy Atom LLC, All Rights Reserved.
 *
-* Last updated: 2023-03-07T06:22:10Z
+* Last updated: 2023-03-29T08:20:48Z
 ************************************************************************
 {%- endcomment -%}
 {%- liquid
@@ -72,16 +72,8 @@ assign flair_banner_count = 0
 assign flair_collection_ids = product.collections | map: "id"
 assign flair_product_tag_string = product.tags | join: "|" | prepend: "|" | append: "|" | downcase
 assign flair_customer_tag_string = customer.tags | join: "|" | prepend: "|" | append: "|" | downcase
-assign _flair_cache_now = "now" | date: "%s" | plus: 0
-assign _flair_cache_key = flair_config.cache_key | plus: 0
-assign _flair_cache_ok = true
-if request.locale.primary and _flair_cache_now > _flair_cache_key
-  assign _flair_cache_ok = false
-endif
-if _flair_cache_ok
-  assign flair_mfs = shop.metafields["flair-banners"]
-endif
 assign flair_num = 0
+assign flair_mfs = shop.metafields["flair-banners"]
 for flair_mf in flair_mfs
   assign flair_num = flair_num | plus: 1
   assign flair_mf_key = "banners" | append: flair_num

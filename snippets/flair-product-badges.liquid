@@ -22,7 +22,7 @@
 * Flair: https://apps.shopify.com/flair
 * Copyright Brainy Atom LLC, All Rights Reserved.
 *
-* Last updated: 2023-03-08T08:31:40Z
+* Last updated: 2023-03-29T08:20:46Z
 ************************************************************************
 {%- endcomment -%}
 {%- liquid
@@ -167,16 +167,8 @@ else
     endif
   endif
 endif
-assign _flair_cache_now = "now" | date: "%s" | plus: 0
-assign _flair_cache_key = flair_config.cache_key | plus: 0
-assign _flair_cache_ok = true
-if request.locale.primary and _flair_cache_now > _flair_cache_key
-  assign _flair_cache_ok = false
-endif
-if _flair_cache_ok
-  assign flair_mfs = shop.metafields["flair-badges"]
-endif
 assign flair_num = 0
+assign flair_mfs = shop.metafields["flair-badges"]
 for flair_mf in flair_mfs
   assign flair_num = flair_num | plus: 1
   assign flair_mf_key = "badges" | append: flair_num
@@ -510,8 +502,10 @@ for flair_mf in flair_mfs
       endif
       capture "flair_badge_output"
         if flair_badge.css
-          echo "<style>" | append: flair_badge.css | append: "</style>"
-          echo flair_badge.content
+          assign _css = flair_badge.css | replace: "${product_id}", product.id
+          assign _content = flair_badge.content | replace: "${product_id}", product.id
+          echo "<style>" | append: _css | append: "</style>"
+          echo _content
         else
           echo '<div class="flair-badge-wrapper ' | append: flair_badge_css_class | append: '" ' | append: flair_badge_css_style | append: ">"
           echo flair_badge.content

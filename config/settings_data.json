@@ -153,18 +153,6 @@
 
     ],
     "blocks": {
-      "163170712463a93bae": {
-        "type": "shopify:\/\/apps\/product-filter-search\/blocks\/boost-pfs\/7fc998ae-a150-4367-bab8-505d8a4503f7",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "1631707124234727b5": {
-        "type": "shopify:\/\/apps\/product-filter-search\/blocks\/boost-pfs-style\/7fc998ae-a150-4367-bab8-505d8a4503f7",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "15323590465973626552": {
         "type": "shopify:\/\/apps\/translate-currency-langshop\/blocks\/langshop\/84899e01-2b29-42af-99d6-46d16daa2111",
         "disabled": false,
@@ -203,6 +191,12 @@
       },
       "16735461377607925125": {
         "type": "shopify:\/\/apps\/roar-terms-and-conditions-box\/blocks\/app-embed\/17661ca5-aeea-41b9-8091-d8f7233e8b22",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "5830052920240459932": {
+        "type": "shopify:\/\/apps\/purple-dot-trusted-pre-order\/blocks\/app-embed-block\/66fbb572-e304-4000-9eec-ce923e515d92",
         "disabled": false,
         "settings": {
         }

@@ -902,4 +902,15 @@ a.product__text {
   margin: 0;
 }
 
+/* Altering button size on database-items page */
+
+.template-product\.database-items .product__info-wrapper button {
+  width: 100%;
+}
+
+.template-product\.database-items .product-popup-modal__opener {
+  display: flex;
+}
+
+
 

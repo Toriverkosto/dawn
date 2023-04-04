@@ -22,7 +22,7 @@
 * Flair: https://apps.shopify.com/flair
 * Copyright Brainy Atom LLC, All Rights Reserved.
 *
-* Last updated: 2023-03-29T08:20:46Z
+* Last updated: 2023-04-04T06:31:50Z
 ************************************************************************
 {%- endcomment -%}
 {%- liquid
@@ -329,9 +329,11 @@ for flair_mf in flair_mfs
           assign _flair_mf = shop.metafields[flair_rule.namespace][flair_rule.key]
         elsif flair_rule.owner_type == "product"
           assign _flair_mf = product.metafields[flair_rule.namespace][flair_rule.key]
+        elsif flair_rule.owner_type == "variant" and flair_variant
+          assign _flair_mf = flair_variant.metafields[flair_rule.namespace][flair_rule.key]
         endif
 
-        if flair_rule.operator == "exists" and _flair_mf
+        if flair_rule.operator == "exists" and _flair_mf and _flair_mf != blank
           assign flair_rule_result = true
         else
           assign _flair_mf_type_prefix = _flair_mf.type | slice: 0, 5
@@ -544,6 +546,8 @@ for flair_mf in flair_mfs
               assign _flair_mf = shop.metafields[_flair_mf_ns][_flair_mf_key]
             elsif _flair_mf_owner == "product"
               assign _flair_mf = product.metafields[_flair_mf_ns][_flair_mf_key]
+            elsif _flair_mf_owner == "variant" and flair_variant
+              assign _flair_mf = flair_variant.metafields[_flair_mf_ns][_flair_mf_key]
             endif
             assign _flair_val = _flair_mf | metafield_text
           elsif item contains "_discount_percent_"

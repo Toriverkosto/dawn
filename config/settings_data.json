@@ -44,11 +44,22 @@
               "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"
             }
           },
+          "f71cdba1-6e57-4d0a-8ccb-d33c99e84378": {
+            "type": "announcement",
+            "settings": {
+              "text": "Win a 300€ gift card in our easter egg hunt",
+              "color_scheme": "accent-1",
+              "link": "shopify:\/\/blogs\/posts\/easter-egg-hunt-2023",
+              "use_custom_color": true,
+              "color_text": "#733e2a",
+              "color_background": "linear-gradient(273deg, rgba(250, 226, 126, 1), rgba(245, 155, 25, 1) 100%)"
+            }
+          },
           "39d85c5b-b96e-42e4-b90d-5d4e816742eb": {
             "type": "announcement",
             "settings": {
               "text": "Film Camera Specialists since 2010",
-              "color_scheme": "accent-1",
+              "color_scheme": "accent-2",
               "link": "",
               "use_custom_color": false,
               "color_text": "#121212",
@@ -57,6 +68,7 @@
           },
           "073ddcaf-d783-4761-85a9-6ef2206cc387": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "10% to 45% off items on our new DEALS page",
               "color_scheme": "accent-2",
@@ -69,6 +81,7 @@
         },
         "block_order": [
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec",
+          "f71cdba1-6e57-4d0a-8ccb-d33c99e84378",
           "39d85c5b-b96e-42e4-b90d-5d4e816742eb",
           "073ddcaf-d783-4761-85a9-6ef2206cc387"
         ],

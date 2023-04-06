@@ -1,7 +1,43 @@
 {
   "sections": {
+    "0c386921-7148-4bc4-a2c1-e560216a2938": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15243804115142__0c386921-7148-4bc4-a2c1-e560216a2938-16807749202a4d8128-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "300€ Gift Card Raffle"
+          }
+        },
+        "template--15243804115142__0c386921-7148-4bc4-a2c1-e560216a2938-16807749202a4d8128-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Kamerastore.com Digital Easter Egg Hunt is here!<\/p><ol><li>Find eggs hidden in product photos.<\/li><li>Note the letter on each egg.<\/li><li>Unscramble the camera-related word.<\/li><li>Give correct answer to enter into raffle.<\/li><\/ol><p><a href=\"\/blogs\/posts\/easter-egg-hunt-2023\" title=\"\/blogs\/posts\/easter-egg-hunt-2023\"><strong>Read Full Instructions & Rules<\/strong><\/a><\/p>"
+          }
+        },
+        "template--15243804115142__0c386921-7148-4bc4-a2c1-e560216a2938-16807749202a4d8128-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "\/collections\/discounted-cameras-lenses-accessories"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804115142__0c386921-7148-4bc4-a2c1-e560216a2938-16807749202a4d8128-0",
+        "template--15243804115142__0c386921-7148-4bc4-a2c1-e560216a2938-16807749202a4d8128-1",
+        "template--15243804115142__0c386921-7148-4bc4-a2c1-e560216a2938-16807749202a4d8128-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image_735bfc6e-ab61-4b71-a4cf-c5fc7153dadb.png",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
     "b7f435c5-c4b1-48ef-ae36-13d31e15ecb0": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "template--15243804115142__b7f435c5-c4b1-48ef-ae36-13d31e15ecb0-16772286977935d4a9-0": {
           "type": "heading",
@@ -556,6 +592,7 @@
     }
   },
   "order": [
+    "0c386921-7148-4bc4-a2c1-e560216a2938",
     "b7f435c5-c4b1-48ef-ae36-13d31e15ecb0",
     "f9ddfc6e-43fd-448b-b981-034c96684a0b",
     "ab2bb2f3-2333-4123-98ed-40aacfc16ad6",

@@ -223,12 +223,12 @@
                                       {% comment %} content from the block-settings if want to use instead of metaobjects
                                       {{ block.settings.content_passed}}
                                       {% endcomment %}
-                                      <p>{{ shop.metaobjects.quality_control.passed.description_medium }}</p>
+                                      <p>{{ shop.metaobjects.quality_control.passed.description_medium | t}}</p>
                                       {%- elsif quality_control_value == "Not Passed" -%}
                                       {% comment %} content from the block-settings if want to use instead of metaobjects
                                       {{ block.settings.content_not_passed }}
                                       {% endcomment %}
-                                      <p>{{ shop.metaobjects.quality_control.not-passed.description_medium}}</p>
+                                      <p>{{ shop.metaobjects.quality_control.not-passed.description_medium | t}}</p>
                                       {%- endif -%}
                                     </div>
                                       <div class="quality-control__link">

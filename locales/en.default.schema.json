@@ -2018,7 +2018,7 @@
     },
     "qc_passed": {
       "settings": {
-        },
+      },
       "blocks": {
         "qc_passed_badge": {
           "settings": {
@@ -2035,11 +2035,10 @@
           }
         }
       }
-    }
-    ,
+    },
     "qc_not_passed": {
       "settings": {
-        },
+      },
       "blocks": {
         "qc_not_passed_badge": {
           "settings": {
@@ -2059,7 +2058,7 @@
     },
     "qc_certified": {
       "settings": {
-        },
+      },
       "blocks": {
         "qc_certified_badge": {
           "settings": {
@@ -2079,7 +2078,7 @@
     },
     "qc_reconditioned": {
       "settings": {
-        },
+      },
       "blocks": {
         "qc_reconditioned_badge": {
           "settings": {

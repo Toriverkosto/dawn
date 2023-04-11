@@ -185,61 +185,61 @@
             {% comment %} Remember to add != 'NEW/EXTENCT' when decided which tag will be used {% endcomment %}
             {% comment %} if product.metafields.kameratori.quality_control.value != 'Error-QC' and product.metafields.kameratori.quality_control.value != blank {% endcomment %}
             {%- for t in product.tags -%}
-                {% assign tag = t %}
-                  {% if tag contains 'QC-' and tag != 'QC-New' %}
+                {%- assign tag = t -%}
+                  {%- if tag contains 'QC-' and tag != 'QC-New' -%}
                     {%- assign quality_control_value = tag | remove_first: "QC-"-%}
                         <div class={{quality_control_value | downcase|replace: " ", "-"}}>
-                        <div class="quality-control">
-                        <div class="accordion" {{ block.shopify_attributes }}>
-                            {%- if quality_control_value=="Passed" -%}
-                            <details>
-                            {%- elsif quality_control_value=="Not Passed" -%}
-                            <details open>
-                            {%- endif -%}  
-                            <summary>
-                                <div class="quality-control__title-container">
-                                  <div class="quality-control__title">
-                                    {% comment %} quality control value defines what we show next, first for Passed {% endcomment %}
-                                    {% if quality_control_value =="Passed" %}
-                                      {% render 'icon-passed-ellips' %}
-                                      {{"sections.quality_control_tab.heading" | t }}
+                          <div class="quality-control">
+                            <div class="accordion" {{ block.shopify_attributes }}>
+                                {%- if quality_control_value=="Passed" -%}
+                                <details>
+                                {%- elsif quality_control_value=="Not Passed" -%}
+                                <details open>
+                                {%- endif -%}  
+                                  <summary>
+                                      <div class="quality-control__title-container">
+                                        <div class="quality-control__title">
+                                          {% comment %} quality control value defines what we show next, first for Passed {% endcomment %}
+                                          {%- if quality_control_value =="Passed" -%}
+                                            {% render 'icon-passed-ellips' %}
+                                            {{"sections.quality_control_tab.heading" | t }}
+                                          </div>
+                                          <div class="quality-control__title-container-badge">
+                                            {%- render 'qc-badge-passed' -%}
+                                            {% comment %} and here for the Not Passed{% endcomment %} 
+                                          {%- elsif quality_control_value =="Not Passed" -%}
+                                            {%- render 'icon-not-passed-ellips' -%}
+                                            {{"sections.quality_control_tab.heading" | t }}
+                                          </div>
+                                          <div class="quality-control__title-container-badge">
+                                          {%- render 'qc-badge-not-passed' -%}
+                                          {% endif %}
+                                          {%- render 'icon-caret' -%}
+                                          </div>
+                                      </div>
+                                    </summary>
+                                    <div class="quality-control__description">
+                                      {%- if quality_control_value == "Passed" -%}
+                                      {% comment %} content from the block-settings if want to use instead of metaobjects
+                                      {{ block.settings.content_passed}}
+                                      {% endcomment %}
+                                      <p>{{ shop.metaobjects.quality_control.passed.description_medium }}</p>
+                                      {%- elsif quality_control_value == "Not Passed" -%}
+                                      {% comment %} content from the block-settings if want to use instead of metaobjects
+                                      {{ block.settings.content_not_passed }}
+                                      {% endcomment %}
+                                      <p>{{ shop.metaobjects.quality_control.not-passed.description_medium}}</p>
+                                      {%- endif -%}
                                     </div>
-                                    <div class="quality-control__title-container-badge">
-                                      {%- render 'qc-badge-passed' -%}
-                                      {% comment %} and here for the Not Passed{% endcomment %} 
-                                    {% elsif quality_control_value =="Not Passed" %}
-                                      {% render 'icon-not-passed-ellips' %}
-                                      {{"sections.quality_control_tab.heading" | t }}
-                                    </div>
-                                    <div class="quality-control__title-container-badge">
-                                    {% render 'qc-badge-not-passed' %}
-                                  {% endif %}
-                                    {% render 'icon-caret' %}
-                                    </div>
-                                </div>
-                              </summary>
-                              <div class="quality-control__description">
-                                {% if quality_control_value == "Passed" %}
-                                {% comment %} content from the block-settings if want to use instead of metaobjects
-                                {{ block.settings.content_passed}}
-                                {% endcomment %}
-                                <p>{{ shop.metaobjects.quality_control.passed.description_medium }}</p>
-                                {% elsif quality_control_value == "Not Passed" %}
-                                {% comment %} content from the block-settings if want to use instead of metaobjects
-                                {{ block.settings.content_not_passed }}
-                                {% endcomment %}
-                                <p>{{ shop.metaobjects.quality_control.not-passed.description_medium}}</p>
-                                {% endif %}
+                                      <div class="quality-control__link">
+                                        <a href="/pages/product-quality-control-item-condition-rating" target="_blank" rel="noopener noreferrer">{{"sections.quality_control_tab.link.text" | t }}</a> 
+                                      </div>
+                                </details>
                               </div>
-                              <div class="quality-control__link">
-                                <a href="/pages/product-quality-control-item-condition-rating" target="_blank" rel="noopener noreferrer">{{"sections.quality_control_tab.link.text" | t }}</a> 
-                              </div>
-                            </details>
+                            </div>
                           </div>
-                          </div>
-                          </div>
-                {% endif %}
-              {% endfor %}
+                {%- endif -%}
+              {%- endfor -%}
           {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">

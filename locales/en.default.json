@@ -202,6 +202,12 @@
         "other": "{{ count }} items"
       }
     },
+    "quality_control_tab": {
+      "heading": "Quality Control Rating",
+      "link": {
+        "text": "Read more about our ratings"
+      }
+    },
     "cart": {
       "title": "Your cart",
       "caption": "Cart items",

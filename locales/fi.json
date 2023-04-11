@@ -199,6 +199,12 @@
         "other": "{{ count }} tuotetta"
       }
     },
+    "quality_control_tab": {
+      "heading": "Kuntoarvio",
+      "link": {
+        "text": "Lue lisää kuntoarvioinnista"
+      }
+    },
     "cart": {
       "title": "Ostoskorisi",
       "caption": "Ostoskorin tuotteet",

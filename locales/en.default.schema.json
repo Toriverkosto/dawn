@@ -1464,8 +1464,7 @@
               "label": "Heading"
             },
             "content_passed": {
-              "label": "Tab content for passed",
-              "default": "Testi"
+              "label": "Tab content for passed"
             },
             "content_not_passed": {
               "label": "Tab content for not passed"

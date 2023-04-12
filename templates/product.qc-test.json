@@ -54,6 +54,14 @@
             "custom_liquid": "<div class=\"card-information\">\n    <div class=\"card-information__wrapper\">\n      <div class=\"caption-with-letter-spacing light\">{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable_html' | t }}\n{% else %}\n    {{ 'products.product.not_taxable_html' | t }}\n{% endif %}<\/div>\n     <h2> {{product.price | money}}<\/h2>\n    <\/div>\n  <\/div>"
           }
         },
+        "84d6461b-10e1-44d1-9dee-a8e02efd85ed": {
+          "type": "quality_control_tab",
+          "settings": {
+            "quality_control": "",
+            "content_passed": "",
+            "content_not_passed": ""
+          }
+        },
         "4f0717e0-34d7-44d7-9543-6fdf50a55941": {
           "type": "variant_picker",
           "settings": {
@@ -167,6 +175,7 @@
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
         "a01329cd-da87-4153-b7a4-04796b35d6d6",
+        "84d6461b-10e1-44d1-9dee-a8e02efd85ed",
         "4f0717e0-34d7-44d7-9543-6fdf50a55941",
         "buy_buttons",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",

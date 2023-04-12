@@ -66,6 +66,14 @@
           "settings": {
           }
         },
+        "9d731f94-08c5-473b-a998-8b08b6d8c24f": {
+          "type": "quality_control_tab",
+          "settings": {
+            "quality_control": "",
+            "content_passed": "<p>Tested, inspected, cleaned and working with no significant flaws. These items can be considered “ready to use” for their intended purpose. Minor flaws are possible and are noted in the product description.<\/p>",
+            "content_not_passed": "<p>Untested or: tested, inspected, and found to have significant flaws that affect or prevent normal use. These items should be considered broken. Repair may or may not be possible.<\/p>"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -92,6 +100,7 @@
         },
         "8a5e19bd-ec83-4ef2-ad47-9bd4b01b7f5e": {
           "type": "condition",
+          "disabled": true,
           "settings": {
             "show_mechanical": true,
             "show_optical": true,
@@ -174,6 +183,7 @@
         "price",
         "f0c9e60b-84e2-4c7b-a294-cab454328d82",
         "quantity_selector",
+        "9d731f94-08c5-473b-a998-8b08b6d8c24f",
         "variant_picker",
         "8147fef3-f897-408d-b34f-f23460eed6c9",
         "buy_buttons",

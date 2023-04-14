@@ -9,9 +9,46 @@
         "color_scheme": "background-1",
         "image_padding": true
       }
+    },
+    "90857f1a-cadc-4273-9e6a-fa07b03f0eb2": {
+      "type": "collection-list",
+      "blocks": {
+        "template--15243804770502__90857f1a-cadc-4273-9e6a-fa07b03f0eb2-1681476740bde901f5-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cameras"
+          }
+        },
+        "template--15243804770502__90857f1a-cadc-4273-9e6a-fa07b03f0eb2-1681476740bde901f5-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "lenses"
+          }
+        },
+        "template--15243804770502__90857f1a-cadc-4273-9e6a-fa07b03f0eb2-1681476740bde901f5-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "accessories"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804770502__90857f1a-cadc-4273-9e6a-fa07b03f0eb2-1681476740bde901f5-0",
+        "template--15243804770502__90857f1a-cadc-4273-9e6a-fa07b03f0eb2-1681476740bde901f5-1",
+        "template--15243804770502__90857f1a-cadc-4273-9e6a-fa07b03f0eb2-1681476740bde901f5-2"
+      ],
+      "settings": {
+        "title": "cameras-menu",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "90857f1a-cadc-4273-9e6a-fa07b03f0eb2"
   ]
 }

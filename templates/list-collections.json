@@ -38,10 +38,10 @@
         "template--15243804770502__90857f1a-cadc-4273-9e6a-fa07b03f0eb2-1681476740bde901f5-2"
       ],
       "settings": {
-        "title": "cameras-menu",
-        "image_ratio": "square",
+        "title": "Selection",
+        "image_ratio": "portrait",
         "color_scheme": "background-1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "image_padding": false,
         "show_view_all": false
       }

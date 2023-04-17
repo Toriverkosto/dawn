@@ -47,6 +47,14 @@
             "custom_liquid": "<p style=\"color: #ababab\";>{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable_html' | t }}\n{% else %}\n    {{ 'products.product.not_taxable_html' | t }}\n{% endif %}<\/p>"
           }
         },
+        "f8411d63-16db-400a-a0cd-a5f0b3145782": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "🇫🇮 Finland from 6.90€ | 1-3 days 🇪🇺 EU from 12.90€ | 1-3 days🇺🇸 USA from 24.90€ | 3-5 daysMost others from 24.90€ | 3-7 days",
+            "text_style": "body"
+          }
+        },
         "54f26b05-dab7-4626-85fc-f3053650fa51": {
           "type": "shopify:\/\/apps\/arrivesby-delivery-times\/blocks\/delivery-time\/b4f15d36-71f0-4a8c-954f-e485b7529360",
           "disabled": true,
@@ -68,7 +76,7 @@
             "shipping_saturday": true,
             "shipping_sunday": true,
             "show_delivery_cutoff": false,
-            "cutoff_time": "12",
+            "cutoff_time": "14",
             "cutoff_message": "Order within"
           }
         },
@@ -139,6 +147,13 @@
             "icon": "return"
           }
         },
+        "ac7cacf6-525f-4b65-8e19-6ff4628b62b5": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "🇫🇮 Finland from 6.90€ | 1-3 days\n<br>\n🇪🇺 EU from 12.90€ | 1-3 day\n<br>\n🇺🇸 USA from 24.90€ | 3-5 days\n<br>\nOthers from 24.90€ | 3-7 days"
+          }
+        },
         "68e2c93e-ddb1-41e2-9782-e6a70e5e488b": {
           "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
           "settings": {
@@ -197,6 +212,7 @@
         "3489098b-b626-48b9-9b69-4aca9ec53063",
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
+        "f8411d63-16db-400a-a0cd-a5f0b3145782",
         "54f26b05-dab7-4626-85fc-f3053650fa51",
         "a01329cd-da87-4153-b7a4-04796b35d6d6",
         "99452d1b-4d7e-4077-a88b-abeded9e84f2",
@@ -207,6 +223,7 @@
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
+        "ac7cacf6-525f-4b65-8e19-6ff4628b62b5",
         "68e2c93e-ddb1-41e2-9782-e6a70e5e488b",
         "544372e8-f86d-4543-aa94-172d88ad169e",
         "f8962c4a-da22-4a3d-8f73-05ff4d13ed57",

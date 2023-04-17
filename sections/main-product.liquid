@@ -182,11 +182,11 @@
               </details>
             </div>
             {%- when 'quality_control_tab' -%}
-            {% comment %} Remember to add != 'NEW/EXTENCT' when decided which tag will be used {% endcomment %}
+            {% comment %} Remember to add != 'New/Exempt' when decided which tag will be used {% endcomment %}
             {% comment %} if product.metafields.kameratori.quality_control.value != 'Error-QC' and product.metafields.kameratori.quality_control.value != blank {% endcomment %}
             {%- for t in product.tags -%}
                 {%- assign tag = t -%}
-                  {%- if tag contains 'QC-' and tag != 'QC-New' -%}
+                  {%- if tag contains 'QC-' and tag != 'QC-Exempt' -%}
                     {%- assign quality_control_value = tag | remove_first: "QC-"-%}
                         <div class={{quality_control_value | downcase|replace: " ", "-"}}>
                           <div class="quality-control">

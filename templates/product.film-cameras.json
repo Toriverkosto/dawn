@@ -47,6 +47,31 @@
             "custom_liquid": "<p style=\"color: #ababab\";>{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable_html' | t }}\n{% else %}\n    {{ 'products.product.not_taxable_html' | t }}\n{% endif %}<\/p>"
           }
         },
+        "54f26b05-dab7-4626-85fc-f3053650fa51": {
+          "type": "shopify:\/\/apps\/arrivesby-delivery-times\/blocks\/delivery-time\/b4f15d36-71f0-4a8c-954f-e485b7529360",
+          "disabled": true,
+          "settings": {
+            "heading": "Arrives by Block",
+            "icon": "local_shipping",
+            "prefix": "Delivery",
+            "separator": "-",
+            "suffix": "days",
+            "show_as_date": false,
+            "date_format": "short",
+            "min_delivery_time": 2,
+            "max_delivery_time": 8,
+            "shipping_monday": false,
+            "shipping_tuesday": false,
+            "shipping_wednesday": false,
+            "shipping_thursday": false,
+            "shipping_friday": false,
+            "shipping_saturday": true,
+            "shipping_sunday": true,
+            "show_delivery_cutoff": true,
+            "cutoff_time": "12",
+            "cutoff_message": "Order within"
+          }
+        },
         "a01329cd-da87-4153-b7a4-04796b35d6d6": {
           "type": "custom_liquid",
           "disabled": true,
@@ -172,6 +197,7 @@
         "3489098b-b626-48b9-9b69-4aca9ec53063",
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
+        "54f26b05-dab7-4626-85fc-f3053650fa51",
         "a01329cd-da87-4153-b7a4-04796b35d6d6",
         "99452d1b-4d7e-4077-a88b-abeded9e84f2",
         "4f0717e0-34d7-44d7-9543-6fdf50a55941",

@@ -55,7 +55,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "canon-ef",
-            "popular": false,
+            "popular": true,
             "highlighted": false
           }
         },
@@ -63,7 +63,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "canon-ef-s",
-            "popular": false,
+            "popular": true,
             "highlighted": false
           }
         },
@@ -71,7 +71,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "canon-fd",
-            "popular": true,
+            "popular": false,
             "highlighted": false
           }
         },
@@ -103,7 +103,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "hasselblad-v",
-            "popular": true,
+            "popular": false,
             "highlighted": false
           }
         },
@@ -119,7 +119,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "large-format",
-            "popular": true,
+            "popular": false,
             "highlighted": false
           }
         },
@@ -215,7 +215,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "olympus-om",
-            "popular": false,
+            "popular": true,
             "highlighted": false
           }
         },
@@ -231,7 +231,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "pentax-k",
-            "popular": true,
+            "popular": false,
             "highlighted": false
           }
         },

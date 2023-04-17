@@ -55,7 +55,7 @@
             "icon": "local_shipping",
             "prefix": "Delivery",
             "separator": "-",
-            "suffix": "days (more info at checkout)",
+            "suffix": "days (details at checkout)",
             "show_as_date": false,
             "date_format": "short",
             "min_delivery_time": 2,

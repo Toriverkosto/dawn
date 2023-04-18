@@ -46,7 +46,7 @@
           }
         },
         "ec88d254-bbe8-4b70-a8ba-4e63f56ef136": {
-          "type": "shopify:\/\/apps\/channelwill-back-in-stock\/blocks\/product-restore-email\/b190bced-3b7b-47da-a05f-6ea4821c3a77",
+          "type": "shopify:\/\/apps\/cw-back-in-stock-restock-alert\/blocks\/product-restore-email\/b190bced-3b7b-47da-a05f-6ea4821c3a77",
           "settings": {
           }
         },
@@ -78,11 +78,6 @@
             "content": "<p>Change your mind? Let us know within 30 days of delivery for a return and refund.<\/p><p><a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"\/policies\/refund-policy\">Read More<\/a><\/p>",
             "page": "",
             "icon": "return"
-          }
-        },
-        "105abca7-eb64-4c6b-859b-f3cd9ea8e703": {
-          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
-          "settings": {
           }
         },
         "c1378c8b-8c8b-4c98-b464-f87debde3c6e": {
@@ -134,7 +129,6 @@
         "d031b056-55bf-4778-a201-0c5d8ab0e178",
         "e44a2970-017f-4a65-9008-2a056066686c",
         "c93981a2-30f3-4294-803c-c2c27ba4890e",
-        "105abca7-eb64-4c6b-859b-f3cd9ea8e703",
         "c1378c8b-8c8b-4c98-b464-f87debde3c6e",
         "5ebcf22c-ee85-4f57-b7c3-88fabdf150c5"
       ],
@@ -172,6 +166,16 @@
     },
     "163292242191680787": {
       "type": "apps",
+      "blocks": {
+        "d3cf1e1d-8e1b-4033-b74d-704dc2e090fd": {
+          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "d3cf1e1d-8e1b-4033-b74d-704dc2e090fd"
+      ],
       "settings": {
         "include_margins": true
       }

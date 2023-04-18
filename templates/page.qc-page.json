@@ -17,7 +17,7 @@
         "template--15488421429446__11177082-5c2d-45ac-b7e3-0d4998e34dc3-1677834342f38f98e0-1": {
           "type": "qc_passed_description",
           "settings": {
-            "passed_text": "<p>Items with this label are <strong>tested<\/strong>, <strong>inspected<\/strong>, <strong>cleaned<\/strong>, and found to be <strong>working with no significant flaws<\/strong>, or: require a visual inspection only due to their mechanical simplicity. <\/p><p>These items can be considered “<strong>ready to use<\/strong>”.  <strong>Repair<\/strong>, <strong>refurbishments<\/strong>, or <strong>upgrades<\/strong> may have been performed on these items by our in-house experts. Minor flaws are possible and are noted in the product description.<\/p>"
+            "passed_text": "<p>Items with this label are tested, inspected, cleaned, and found to be working with no significant flaws, or: require a visual inspection only due to their mechanical simplicity. <\/p><p>These items can be considered “ready to use”.  Repair, refurbishments, or upgrades may have been performed on these items by our in-house experts. Minor flaws are possible and are noted in the product description.<\/p>"
           }
         }
       },
@@ -46,7 +46,7 @@
         "template--15488421429446__c0095f60-d698-4c79-b828-49c74ccb7511-1677834275c81fe6d5-1": {
           "type": "qc_not_passed_description",
           "settings": {
-            "not_passed_text": "<p>Items with this label are untested or: tested, inspected, and found to have <strong>significant flaws<\/strong> that affect or prevent normal use. <strong>These items should be considered defective<\/strong>. <strong>Repair may or may not be possible<\/strong>. <\/p><p>These are best purchased as display pieces, spare parts, or for DIY\/educational purposes. They may possibly be used as-is, taking into account the defects. Item-specific information is present in product descriptions when necessary.<\/p>"
+            "not_passed_text": "<p>Items with this label are untested or: tested, inspected, and found to have significant flaws that affect or prevent normal use. These items should be considered defective. Repair may or may not be possible. <\/p><p>These are best purchased as display pieces, spare parts, or for DIY\/educational purposes. They may possibly be used as-is, taking into account the defects. Item-specific information is present in product descriptions when necessary.<\/p>"
           }
         }
       },

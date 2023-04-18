@@ -150,11 +150,6 @@
             "custom_liquid": "🇫🇮 Finland from 6.90€ | 1-3 days\n<br>\n🇪🇺 EU from 12.90€ | 1-3 day\n<br>\n🇺🇸 USA from 24.90€ | 3-5 days\n<br>\nOthers from 24.90€ | 3-7 days"
           }
         },
-        "68e2c93e-ddb1-41e2-9782-e6a70e5e488b": {
-          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
-          "settings": {
-          }
-        },
         "544372e8-f86d-4543-aa94-172d88ad169e": {
           "type": "shopify:\/\/apps\/hulk-advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
           "settings": {
@@ -219,7 +214,6 @@
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
         "ac7cacf6-525f-4b65-8e19-6ff4628b62b5",
-        "68e2c93e-ddb1-41e2-9782-e6a70e5e488b",
         "544372e8-f86d-4543-aa94-172d88ad169e",
         "f8962c4a-da22-4a3d-8f73-05ff4d13ed57",
         "a61057d7-0270-434a-9a2c-d9dd3332fad7"
@@ -284,6 +278,22 @@
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "<br>\n<div class=\"reputon-google-reviews-widget\" id=\"10abb9a0-8e45-11ec-b71b-13d735077cf2\" ><\/div>"
+      }
+    },
+    "16818057075a8347c3": {
+      "type": "apps",
+      "blocks": {
+        "86cd0631-3c51-496f-ab3d-858dd3b47015": {
+          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "86cd0631-3c51-496f-ab3d-858dd3b47015"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "16321391205a6cb4a0": {
@@ -459,6 +469,7 @@
     "main",
     "16579008498f69713d",
     "1658753086970be4d5",
+    "16818057075a8347c3",
     "16321391205a6cb4a0",
     "1659603408f2602b15",
     "product-recommendations",

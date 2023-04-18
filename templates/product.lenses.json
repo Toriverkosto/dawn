@@ -53,6 +53,14 @@
             "custom_liquid": "<p style=\"color: #ababab\">{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable_html' | t }}\n{% else %}\n    {{ 'products.product.not_taxable_html' | t }} \n{% endif %}<\/p>"
           }
         },
+        "84e5043e-218f-459d-8feb-1bc2c1888825": {
+          "type": "quality_control_tab",
+          "settings": {
+            "quality_control": "",
+            "content_passed": "<p>Tested, inspected, cleaned and working with no significant flaws. These items can be considered “ready to use” for their intended purpose. Minor flaws are possible and are noted in the product description.<\/p>",
+            "content_not_passed": "<p>Untested or: tested, inspected, and found to have significant flaws that affect or prevent normal use. These items should be considered broken. Repair may or may not be possible.<\/p>"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -67,6 +75,7 @@
         },
         "4fc793ac-a118-4f11-a2c8-eaa352ca1d8c": {
           "type": "condition",
+          "disabled": true,
           "settings": {
             "show_mechanical": true,
             "show_optical": true,
@@ -84,6 +93,7 @@
         },
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Condition Ratings",
             "content": "<p>Our technicians use the appropriate tools to check every item's function and we use these results to assign ratings of 1 to 5. Cosmetic condition can be determined by each customer by viewing the photos.<\/p><p><a href=\"\/pages\/lens-condition-ratings\" target=\"_blank\" title=\"\/pages\/lens-condition-ratings\">How we Rate Lenses<\/a><\/p>",
@@ -178,6 +188,7 @@
         "cad180e3-9d21-40fc-b7c7-b619604bd2a5",
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
+        "84e5043e-218f-459d-8feb-1bc2c1888825",
         "buy_buttons",
         "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e",
         "4fc793ac-a118-4f11-a2c8-eaa352ca1d8c",

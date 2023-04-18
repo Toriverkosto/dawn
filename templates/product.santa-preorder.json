@@ -60,7 +60,7 @@
           }
         },
         "ec88d254-bbe8-4b70-a8ba-4e63f56ef136": {
-          "type": "shopify:\/\/apps\/back-in-stock-restock-alerts\/blocks\/product-restore-email\/b190bced-3b7b-47da-a05f-6ea4821c3a77",
+          "type": "shopify:\/\/apps\/cw-back-in-stock-restock-alert\/blocks\/product-restore-email\/b190bced-3b7b-47da-a05f-6ea4821c3a77",
           "disabled": true,
           "settings": {
           }
@@ -77,25 +77,6 @@
           "disabled": true,
           "settings": {
             "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"supplies\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n          <\/div>\n{% endunless %}"
-          }
-        },
-        "8a5e19bd-ec83-4ef2-ad47-9bd4b01b7f5e": {
-          "type": "condition",
-          "disabled": true,
-          "settings": {
-            "show_mechanical": true,
-            "show_optical": true,
-            "show_cosmetic": false
-          }
-        },
-        "4c9ef1cc-f6f3-4512-940d-96c0a632b68d": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "True Condition",
-            "content": "<p>Our used item condition ratings are over 99,5% accurate! Our highly skilled technicians use period-appropriate machinery to evaluate an item's true condition.<\/p>",
-            "page": "",
-            "icon": "star"
           }
         },
         "e44a2970-017f-4a65-9008-2a056066686c": {
@@ -118,25 +99,16 @@
             "icon": "return"
           }
         },
-        "5442ba5b-00e3-43cb-a982-68811ae1827d": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Sell Your Gear to Us!",
-            "content": "<p>We buy & trade cameras, lenses, and accessories on top of selling! If you're looking to upgrade or change your gear, why not sell directly to us?<br\/><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\"><strong>Click here to fill out our form!<\/strong><\/a><\/p>",
-            "page": "",
-            "icon": "price_tag"
-          }
-        },
         "5221b8a7-4db2-4a4d-bf04-5d9cb7e5a0f4": {
-          "type": "shopify:\/\/apps\/advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
+          "type": "shopify:\/\/apps\/hulk-advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
           "disabled": true,
           "settings": {
+            "is_new_icon_settings": false,
             "theme_color": "#f15975",
             "button_style": "style_3",
             "button_border": 0,
             "button_font_size": 16,
-            "button_font_weight": 500,
+            "button_font_weight": "500",
             "button_border_radius": 0,
             "button_vertical_space": 9,
             "button_horizontal_space": 16,
@@ -145,7 +117,16 @@
             "border_color": "#5c6ac4",
             "hover_button_text_color": "#ffffff",
             "hover_button_background_color": "#5c6ac4",
-            "hover_button_border_color": "#5c6ac4"
+            "hover_button_border_color": "#5c6ac4",
+            "icon_type": "outline",
+            "icon_size": 16,
+            "icon_background_type": "icon_round_background",
+            "icon_background_color": "#5c6ac4",
+            "icon_fill_color": "#ffffff",
+            "icon_border_color": "#ffffff",
+            "icon_hover_color": "#5c6ac4",
+            "selected_icon_fill_color": "#5c6ac4",
+            "selected_icon_border_color": "#5c6ac4"
           }
         },
         "137f138a-0dc5-4207-a49d-da4ca1220540": {
@@ -174,11 +155,8 @@
         "ec88d254-bbe8-4b70-a8ba-4e63f56ef136",
         "ff1bb9c6-eb65-4ae0-a2ab-b42152660aae",
         "d031b056-55bf-4778-a201-0c5d8ab0e178",
-        "8a5e19bd-ec83-4ef2-ad47-9bd4b01b7f5e",
-        "4c9ef1cc-f6f3-4512-940d-96c0a632b68d",
         "e44a2970-017f-4a65-9008-2a056066686c",
         "c93981a2-30f3-4294-803c-c2c27ba4890e",
-        "5442ba5b-00e3-43cb-a982-68811ae1827d",
         "5221b8a7-4db2-4a4d-bf04-5d9cb7e5a0f4",
         "137f138a-0dc5-4207-a49d-da4ca1220540",
         "c2196c76-c49f-4263-8785-33257bccff4d"

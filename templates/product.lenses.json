@@ -119,11 +119,6 @@
             "icon": "return"
           }
         },
-        "74f4b7ee-467a-4540-a8c6-c17cbd2ed445": {
-          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
-          "settings": {
-          }
-        },
         "68432eec-9888-4c80-8923-910130f65bc2": {
           "type": "shopify:\/\/apps\/hulk-advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
           "settings": {
@@ -196,7 +191,6 @@
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
-        "74f4b7ee-467a-4540-a8c6-c17cbd2ed445",
         "68432eec-9888-4c80-8923-910130f65bc2",
         "2c639f92-55f6-40f5-8cff-21157d005727",
         "57f7f440-8529-43fc-b001-797465faabcf",
@@ -281,6 +275,22 @@
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "<br>\n<div class=\"reputon-google-reviews-widget\" id=\"10abb9a0-8e45-11ec-b71b-13d735077cf2\" ><\/div>"
+      }
+    },
+    "16818058105c21f955": {
+      "type": "apps",
+      "blocks": {
+        "3085a42d-b0ed-4a3c-9f69-e04cd26a7b2f": {
+          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "3085a42d-b0ed-4a3c-9f69-e04cd26a7b2f"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "16321391205a6cb4a0": {
@@ -426,6 +436,7 @@
     "165762036647fa041d",
     "16594448804e5cd8e5",
     "1658753585c84fd67b",
+    "16818058105c21f955",
     "16321391205a6cb4a0",
     "product-recommendations",
     "1659603623b38ef57e",

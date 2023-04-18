@@ -113,7 +113,7 @@
           }
         },
         "55b00dda-c2c3-43b2-bf0a-d40495629e34": {
-          "type": "shopify:\/\/apps\/c-back-in-stock-restock-alerts\/blocks\/product-restore-email\/b190bced-3b7b-47da-a05f-6ea4821c3a77",
+          "type": "shopify:\/\/apps\/cw-back-in-stock-restock-alert\/blocks\/product-restore-email\/b190bced-3b7b-47da-a05f-6ea4821c3a77",
           "settings": {
           }
         },
@@ -169,11 +169,6 @@
             "content": "<p>Change your mind? Not satisfied? Let us know within 30 days of delivery for a return and refund. <\/p><p><a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"\/policies\/refund-policy\">Read More<\/a><\/p>",
             "page": "",
             "icon": "return"
-          }
-        },
-        "91947e25-4b0f-49d2-9e4f-c8c8adf0775d": {
-          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
-          "settings": {
           }
         },
         "621c4599-3a2c-4d60-a6f4-630ef05bfba3": {
@@ -237,7 +232,6 @@
         "a5a11cfe-80a9-4294-953b-395acd66d02f",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
-        "91947e25-4b0f-49d2-9e4f-c8c8adf0775d",
         "621c4599-3a2c-4d60-a6f4-630ef05bfba3",
         "9b20a83b-fe5d-4d60-80fb-5e93ee1a61c2",
         "3fd89d45-91cf-4c28-8380-d3502818c3c6"
@@ -256,6 +250,22 @@
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "<br>\n<div class=\"reputon-google-reviews-widget\" id=\"10abb9a0-8e45-11ec-b71b-13d735077cf2\" ><\/div>"
+      }
+    },
+    "16818063324869b93d": {
+      "type": "apps",
+      "blocks": {
+        "ae4d63bf-8818-4db5-a865-861818c84fd6": {
+          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "ae4d63bf-8818-4db5-a865-861818c84fd6"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "16461179422d882da6": {
@@ -347,6 +357,7 @@
     "1676554272ab1d8308",
     "main",
     "16587538834d2716f8",
+    "16818063324869b93d",
     "16461179422d882da6",
     "16321391205a6cb4a0",
     "product-recommendations"

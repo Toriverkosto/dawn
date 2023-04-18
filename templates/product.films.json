@@ -47,7 +47,7 @@
           }
         },
         "ec88d254-bbe8-4b70-a8ba-4e63f56ef136": {
-          "type": "shopify:\/\/apps\/channelwill-back-in-stock\/blocks\/product-restore-email\/b190bced-3b7b-47da-a05f-6ea4821c3a77",
+          "type": "shopify:\/\/apps\/cw-back-in-stock-restock-alert\/blocks\/product-restore-email\/b190bced-3b7b-47da-a05f-6ea4821c3a77",
           "settings": {
           }
         },
@@ -109,16 +109,12 @@
         },
         "5442ba5b-00e3-43cb-a982-68811ae1827d": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Sell Your Gear to Us!",
             "content": "<p>We buy & trade cameras, lenses, and accessories on top of selling! If you're looking to upgrade or change your gear, why not sell directly to us?<br\/><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\"><strong>Click here to fill out our form!<\/strong><\/a><\/p>",
             "page": "",
             "icon": "price_tag"
-          }
-        },
-        "3b832f43-e017-40b0-9b63-0b7485a0613a": {
-          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
-          "settings": {
           }
         },
         "5221b8a7-4db2-4a4d-bf04-5d9cb7e5a0f4": {
@@ -174,7 +170,6 @@
         "e44a2970-017f-4a65-9008-2a056066686c",
         "c93981a2-30f3-4294-803c-c2c27ba4890e",
         "5442ba5b-00e3-43cb-a982-68811ae1827d",
-        "3b832f43-e017-40b0-9b63-0b7485a0613a",
         "5221b8a7-4db2-4a4d-bf04-5d9cb7e5a0f4",
         "137f138a-0dc5-4207-a49d-da4ca1220540"
       ],
@@ -214,6 +209,22 @@
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "<br>\n<div class=\"reputon-google-reviews-widget\" id=\"10abb9a0-8e45-11ec-b71b-13d735077cf2\" ><\/div>"
+      }
+    },
+    "1681805765d28fced9": {
+      "type": "apps",
+      "blocks": {
+        "1c0e939b-d95e-46ae-b831-68c64c6b2233": {
+          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1c0e939b-d95e-46ae-b831-68c64c6b2233"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "164510582956c346c8": {
@@ -336,6 +347,7 @@
     "main",
     "16576207645e5327b7",
     "1658753717e1cb940c",
+    "1681805765d28fced9",
     "164510582956c346c8",
     "16324019941e428b8f",
     "1633072662af6d667c",

@@ -100,15 +100,6 @@
             "icon": "return"
           }
         },
-        "f36d21a3-4810-4879-abc1-cf7c1fd35286": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Sell Your Gear to Us!",
-            "content": "<p>We buy & trade cameras, lenses, and accessories on top of selling! If you're looking to upgrade or change your gear, why not sell directly to us?<br\/><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\"><strong>Click here to fill out our form!<\/strong><\/a><\/p>",
-            "page": "",
-            "icon": "check_mark"
-          }
-        },
         "ed5570a2-6ee7-46a2-9e73-d03ca742b44b": {
           "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
           "settings": {
@@ -165,7 +156,6 @@
         "d031b056-55bf-4778-a201-0c5d8ab0e178",
         "e44a2970-017f-4a65-9008-2a056066686c",
         "c93981a2-30f3-4294-803c-c2c27ba4890e",
-        "f36d21a3-4810-4879-abc1-cf7c1fd35286",
         "ed5570a2-6ee7-46a2-9e73-d03ca742b44b",
         "af332e60-b155-4814-bb18-30757c0c706d",
         "261a9a2b-f287-4c43-8fce-477e4fc8be46"

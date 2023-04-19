@@ -8,7 +8,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/NOSPSCB-1366_1500x_jpg.webp",
-            "title": "I'm New to Film Photography",
+            "title": "Get Started with Film Photography",
             "text": "<p>Your journey into film photography begins with the right camera, a roll of film, and the push of a button. Jump in and see where it takes you.<\/p>"
           }
         },
@@ -16,13 +16,14 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Kamerastore_all_cameras_ad.jpg",
-            "title": "I'm New to Your Shop",
-            "text": "<p>We sell quality used film cameras, lenses, accessories, film, adapters, and digital gear. Over 14,000 items in stock with dozens added daily.<\/p><p><\/p>"
+            "title": "Who is Kamerastore?",
+            "text": "<p> sell quality used film cameras, lenses, accessories, film, adapters, and digital gear. Over 14,000 items in stock with dozens added daily.<\/p><p><\/p>"
           }
         },
         "template--15243804115142__49eda78e-5565-49ec-89cd-114f691cc2b2-1681902495be3a1813-2": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/CMTestCB-7231_7e29ec2f-492b-4bf4-aaf7-d4d401f9e786.jpg",
             "title": "I'm Back to See New Items",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
@@ -34,7 +35,7 @@
         "template--15243804115142__49eda78e-5565-49ec-89cd-114f691cc2b2-1681902495be3a1813-2"
       ],
       "settings": {
-        "title": "Welcome, Who Are You?",
+        "title": "",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",

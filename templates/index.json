@@ -1,48 +1,39 @@
 {
   "sections": {
-    "b402dd57-282e-40dc-a544-7084f1ecd8a7": {
-      "type": "image-banner",
+    "e3eec42a-3d9c-41ad-aaa2-fe480384b72b": {
+      "type": "image-with-text",
       "disabled": true,
       "blocks": {
-        "template--15243804115142__b402dd57-282e-40dc-a544-7084f1ecd8a7-1681894466a9e1798c-0": {
+        "template--15243804115142__e3eec42a-3d9c-41ad-aaa2-fe480384b72b-1681895757085548d9-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
+            "heading": "New to Film Photography?"
           }
         },
-        "template--15243804115142__b402dd57-282e-40dc-a544-7084f1ecd8a7-1681894466a9e1798c-1": {
+        "template--15243804115142__e3eec42a-3d9c-41ad-aaa2-fe480384b72b-1681895757085548d9-1": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
+            "text": "<p>Your journey into film photography begins with the right camera, a roll of film, and the push of a button. Jump in and see where it takes you.<\/p>"
           }
         },
-        "template--15243804115142__b402dd57-282e-40dc-a544-7084f1ecd8a7-1681894466a9e1798c-2": {
-          "type": "buttons",
+        "template--15243804115142__e3eec42a-3d9c-41ad-aaa2-fe480384b72b-1681895757085548d9-2": {
+          "type": "button",
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_label": "Start Now",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "template--15243804115142__b402dd57-282e-40dc-a544-7084f1ecd8a7-1681894466a9e1798c-0",
-        "template--15243804115142__b402dd57-282e-40dc-a544-7084f1ecd8a7-1681894466a9e1798c-1",
-        "template--15243804115142__b402dd57-282e-40dc-a544-7084f1ecd8a7-1681894466a9e1798c-2"
+        "template--15243804115142__e3eec42a-3d9c-41ad-aaa2-fe480384b72b-1681895757085548d9-0",
+        "template--15243804115142__e3eec42a-3d9c-41ad-aaa2-fe480384b72b-1681895757085548d9-1",
+        "template--15243804115142__e3eec42a-3d9c-41ad-aaa2-fe480384b72b-1681895757085548d9-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Mju-5223-1-2048x2048.jpg",
-        "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
-        "show_text_box": true,
-        "image_overlay_opacity": 0,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "image": "shopify:\/\/shop_images\/NOSPSCB-1366_copy.jpg",
+        "height": "adapt",
+        "color_scheme": "inverse",
+        "layout": "image_first"
       }
     },
     "b7f435c5-c4b1-48ef-ae36-13d31e15ecb0": {
@@ -601,7 +592,7 @@
     }
   },
   "order": [
-    "b402dd57-282e-40dc-a544-7084f1ecd8a7",
+    "e3eec42a-3d9c-41ad-aaa2-fe480384b72b",
     "b7f435c5-c4b1-48ef-ae36-13d31e15ecb0",
     "f9ddfc6e-43fd-448b-b981-034c96684a0b",
     "ab2bb2f3-2333-4123-98ed-40aacfc16ad6",

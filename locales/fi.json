@@ -436,7 +436,8 @@
       "contact": {
         "address2_label": "Huoneisto tms.",
         "optional_address2_label": "Huoneisto tms.",
-        "title": "Asiakastiedot"
+        "title": "Asiakastiedot",
+        "contact_method_title": "Yhteystietosi"
       },
       "field_errors": {
         "address_address2_blank": "Syötä osoitetiedot"

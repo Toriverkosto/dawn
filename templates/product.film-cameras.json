@@ -55,6 +55,26 @@
             "text_style": "body"
           }
         },
+        "b105008f-85ff-43bc-aa96-e0bce264719b": {
+          "type": "quality_control_tab",
+          "settings": {
+            "quality_control": "",
+            "content_passed": "<p>Tested, inspected, cleaned and working with no significant flaws. These items can be considered “ready to use” for their intended purpose. Minor flaws are possible and are noted in the product description.<\/p>",
+            "content_not_passed": "<p>Untested or: tested, inspected, and found to have significant flaws that affect or prevent normal use. These items should be considered broken. Repair may or may not be possible.<\/p>"
+          }
+        },
+        "4f0717e0-34d7-44d7-9543-6fdf50a55941": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
         "54f26b05-dab7-4626-85fc-f3053650fa51": {
           "type": "shopify:\/\/apps\/arrivesby-delivery-times\/blocks\/delivery-time\/b4f15d36-71f0-4a8c-954f-e485b7529360",
           "disabled": true,
@@ -78,26 +98,6 @@
             "show_delivery_cutoff": false,
             "cutoff_time": "14",
             "cutoff_message": "Order within"
-          }
-        },
-        "b105008f-85ff-43bc-aa96-e0bce264719b": {
-          "type": "quality_control_tab",
-          "settings": {
-            "quality_control": "",
-            "content_passed": "<p>Tested, inspected, cleaned and working with no significant flaws. These items can be considered “ready to use” for their intended purpose. Minor flaws are possible and are noted in the product description.<\/p>",
-            "content_not_passed": "<p>Untested or: tested, inspected, and found to have significant flaws that affect or prevent normal use. These items should be considered broken. Repair may or may not be possible.<\/p>"
-          }
-        },
-        "4f0717e0-34d7-44d7-9543-6fdf50a55941": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
           }
         },
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb": {
@@ -194,6 +194,13 @@
           "settings": {
             "custom_liquid": "<br><center>Sold By: <b>Kamerastore<\/b> <div class=\"reputon-google-reviews-widget\" id=\"279cdae0-118f-11ed-b220-85918cb29862\" style=\"display: flex; justify-content: center;\"><\/div>\n<a href=\"\/pages\/company-info\"><div class=\"link\">Registered Business<\/div><\/a>"
           }
+        },
+        "0909eb7e-754d-4742-97cf-e483e3248a49": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "{% assign collection_id = '288489504966' %}\n{% assign collection = collections[collection_id] %}\n\n{% if collection %}\n  <p>This collection contains {{ collection.products | size }} items.<\/p>\n{% endif %}"
+          }
         }
       },
       "block_order": [
@@ -204,10 +211,10 @@
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
         "f8411d63-16db-400a-a0cd-a5f0b3145782",
-        "54f26b05-dab7-4626-85fc-f3053650fa51",
         "b105008f-85ff-43bc-aa96-e0bce264719b",
         "4f0717e0-34d7-44d7-9543-6fdf50a55941",
         "buy_buttons",
+        "54f26b05-dab7-4626-85fc-f3053650fa51",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
         "6ff4987b-8f35-4a2e-89e3-3f40f342da38",
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
@@ -216,7 +223,8 @@
         "ac7cacf6-525f-4b65-8e19-6ff4628b62b5",
         "544372e8-f86d-4543-aa94-172d88ad169e",
         "f8962c4a-da22-4a3d-8f73-05ff4d13ed57",
-        "a61057d7-0270-434a-9a2c-d9dd3332fad7"
+        "a61057d7-0270-434a-9a2c-d9dd3332fad7",
+        "0909eb7e-754d-4742-97cf-e483e3248a49"
       ],
       "settings": {
         "product_role": "stock",

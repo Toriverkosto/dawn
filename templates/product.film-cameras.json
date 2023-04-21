@@ -189,17 +189,17 @@
             "icon": "price_tag"
           }
         },
-        "a61057d7-0270-434a-9a2c-d9dd3332fad7": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<br><center>Sold By: <b>Kamerastore<\/b> <div class=\"reputon-google-reviews-widget\" id=\"279cdae0-118f-11ed-b220-85918cb29862\" style=\"display: flex; justify-content: center;\"><\/div>\n<a href=\"\/pages\/company-info\"><div class=\"link\">Registered Business<\/div><\/a>"
-          }
-        },
         "0909eb7e-754d-4742-97cf-e483e3248a49": {
           "type": "custom_liquid",
           "disabled": true,
           "settings": {
-            "custom_liquid": "{% assign collection_id = '288489504966' %}\n{% assign collection = collections[collection_id] %}\n\n{% if collection %}\n  <p>This collection contains {{ collection.products | size }} items.<\/p>\n{% endif %}"
+            "custom_liquid": "{% assign collection_id = '284726493382' %}\n{% assign collection = collections[collection_id] %}\n\n{% if collection %}\n  <p>This <a href=\"{{ collection.url }}\">{{ collection.title }}<\/a> collection contains {{ collection.products | size }} items.<\/p>\n{% endif %}"
+          }
+        },
+        "a61057d7-0270-434a-9a2c-d9dd3332fad7": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<br><center>Sold By: <b>Kamerastore<\/b> <div class=\"reputon-google-reviews-widget\" id=\"279cdae0-118f-11ed-b220-85918cb29862\" style=\"display: flex; justify-content: center;\"><\/div>\n<a href=\"\/pages\/company-info\"><div class=\"link\">Registered Business<\/div><\/a>"
           }
         }
       },
@@ -223,8 +223,8 @@
         "ac7cacf6-525f-4b65-8e19-6ff4628b62b5",
         "544372e8-f86d-4543-aa94-172d88ad169e",
         "f8962c4a-da22-4a3d-8f73-05ff4d13ed57",
-        "a61057d7-0270-434a-9a2c-d9dd3332fad7",
-        "0909eb7e-754d-4742-97cf-e483e3248a49"
+        "0909eb7e-754d-4742-97cf-e483e3248a49",
+        "a61057d7-0270-434a-9a2c-d9dd3332fad7"
       ],
       "settings": {
         "product_role": "stock",

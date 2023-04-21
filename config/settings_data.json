@@ -65,12 +65,25 @@
               "color_text": "#121212",
               "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"
             }
+          },
+          "9a6f3578-ae3a-432d-bc24-cf9176022645": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "NEW: Find the right gear faster with our new \"Quality Control\" ratings",
+              "color_scheme": "accent-1",
+              "link": "",
+              "use_custom_color": true,
+              "color_text": "#FFFFFF",
+              "color_background": "linear-gradient(273deg, rgba(33, 78, 157, 1), rgba(255, 125, 47, 1) 100%)"
+            }
           }
         },
         "block_order": [
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec",
           "073ddcaf-d783-4761-85a9-6ef2206cc387",
-          "39d85c5b-b96e-42e4-b90d-5d4e816742eb"
+          "39d85c5b-b96e-42e4-b90d-5d4e816742eb",
+          "9a6f3578-ae3a-432d-bc24-cf9176022645"
         ],
         "settings": {
         }

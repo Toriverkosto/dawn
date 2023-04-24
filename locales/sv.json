@@ -277,6 +277,11 @@
     },
     "video": {
       "load_video": "Ladda video: {{ description }}"
+    },
+    "quality_control_tab": {
+      "link": {
+        "text": "Läs mer om våra betyg"
+      }
     }
   },
   "localization": {

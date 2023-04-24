@@ -282,6 +282,22 @@
       "settings": {
       }
     },
+    "ee23c372-910f-47bd-9d3f-634191bdd9ba": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "More from this system",
+        "collection": "{{ product.metafields.kameratori.system_collection.value }}",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": false
+      }
+    },
     "1658753086970be4d5": {
       "type": "custom-liquid",
       "settings": {
@@ -440,22 +456,6 @@
         "layout": "text_first"
       }
     },
-    "ee23c372-910f-47bd-9d3f-634191bdd9ba": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "More from this system",
-        "collection": "{{ product.metafields.kameratori.system_collection.value }}",
-        "products_to_show": 4,
-        "show_view_all": true,
-        "swipe_on_mobile": true,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": true,
-        "show_rating": false
-      }
-    },
     "d1d5ac47-53ca-4bd6-b130-0cb6013e5ca6": {
       "type": "featured-collection",
       "settings": {
@@ -476,13 +476,13 @@
   "order": [
     "main",
     "16579008498f69713d",
+    "ee23c372-910f-47bd-9d3f-634191bdd9ba",
     "1658753086970be4d5",
     "16818057075a8347c3",
     "16321391205a6cb4a0",
     "1659603408f2602b15",
     "product-recommendations",
     "16321339467e367887",
-    "ee23c372-910f-47bd-9d3f-634191bdd9ba",
     "d1d5ac47-53ca-4bd6-b130-0cb6013e5ca6"
   ]
 }

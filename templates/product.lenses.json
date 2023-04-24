@@ -254,17 +254,16 @@
       "settings": {
       }
     },
-    "16594448804e5cd8e5": {
+    "11db76e5-b32c-44db-a0fd-53ee40cafec8": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
-        "title": "Dynamic items related to this item!",
-        "collection": "",
+        "title": "More {{ section.settings.collection.metafields.my_fields.collection_system.value }}",
+        "collection": "{{ product.metafields.kameratori.system_collection.value }}",
         "products_to_show": 4,
         "show_view_all": true,
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "image_ratio": "adapt",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "add_image_padding": false,
         "show_image_outline": true,
         "show_vendor": true,
@@ -434,7 +433,7 @@
   "order": [
     "main",
     "165762036647fa041d",
-    "16594448804e5cd8e5",
+    "11db76e5-b32c-44db-a0fd-53ee40cafec8",
     "1658753585c84fd67b",
     "16818058105c21f955",
     "16321391205a6cb4a0",

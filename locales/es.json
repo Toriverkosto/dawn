@@ -146,7 +146,7 @@
       "taxable_html": "El IVA de tu país incluido (UE solo). ",
       "product_condition_heading": "Condiciones Producto:",
       "optical_condition_heading": "Estado Optico: {{ condition }} \/ 5",
-      "not_taxable_html": "Precio final. Artículos usados no tiene <a class=\"link\" href=\"/pages/vat\">IVA</a> deducible. "
+      "not_taxable_html": "Precio final. Artículos usados no tiene <a class=\"link\" href=\"\/pages\/vat\">IVA<\/a> deducible. "
     },
     "modal": {
       "label": "Galería multimedia"
@@ -277,6 +277,11 @@
     },
     "video": {
       "load_video": "Cargar video: {{ description }}"
+    },
+    "quality_control_tab": {
+      "link": {
+        "text": "Lea más sobre nuestras calificaciones"
+      }
     }
   },
   "localization": {

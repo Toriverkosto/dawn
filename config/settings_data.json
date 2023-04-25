@@ -213,6 +213,13 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "4318962865815008709": {
+        "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/boost-sd\/7fc998ae-a150-4367-bab8-505d8a4503f7",
+        "disabled": false,
+        "settings": {
+          "directionRTL": false
+        }
       }
     }
   },

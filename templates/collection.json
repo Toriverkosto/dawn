@@ -40,6 +40,7 @@
     },
     "1682427181b9d765a3": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "ac304426-d531-4f7a-923c-af6f396571ef": {
           "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/recommendation\/7fc998ae-a150-4367-bab8-505d8a4503f7",

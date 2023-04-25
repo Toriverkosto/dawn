@@ -56,12 +56,46 @@
       ],
       "settings": {
       }
+    },
+    "46d450e1-d8e7-4bac-9fd9-361e0550fc17": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "\"Passed\" Items",
+        "collection": "qc-passed",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "0161b376-01ff-4f33-aa16-12b6fd85891c": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "\"Not Passed\" Items",
+        "collection": "bargain-cameras-lenses-accessories",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
     }
   },
   "order": [
     "main",
     "11177082-5c2d-45ac-b7e3-0d4998e34dc3",
     "2d8d2990-66f4-468f-a47d-42cde8643a03",
-    "c0095f60-d698-4c79-b828-49c74ccb7511"
+    "c0095f60-d698-4c79-b828-49c74ccb7511",
+    "46d450e1-d8e7-4bac-9fd9-361e0550fc17",
+    "0161b376-01ff-4f33-aa16-12b6fd85891c"
   ]
 }

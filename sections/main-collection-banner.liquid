@@ -1,4 +1,5 @@
 {{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
+{{ 'component-read-more-description.css' | asset_url | stylesheet_tag }}
 
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %}">
   <div class="collection-hero__inner page-width">
@@ -7,12 +8,32 @@
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
         {{- collection.title | escape -}}
       </h1>
-
       {%- if section.settings.show_collection_description -%}
-        <div class="collection-hero__description rte">{{ collection.description }}</div>
+      {% assign words = collection.description | split: " " -%}
+      {% if words.size > 48  and collection.title != "All Items" -%}
+          <div class="collection-hero__description rte" style="display: none">{{ collection.description }}</div>
+          <div class="collection-hero__description rte truncated">{{ collection.description | truncatewords: 24 }}</div>
+          <script src="{{ 'showmore.js' | asset_url }}" defer="defer"></script>
+          <span class="Polaris-Icon" onclick="showMore()"">
+            <span class="Polaris-Text--root Polaris-Text--visuallyHidden">
+            </span>
+              <div class="more_button">
+              <p><strong> {{'expand_description.read_more_button_text' | t }}</strong></p>
+              {% render 'icon-caret-down-small' %}
+              </div>
+              <div class="less_button">
+              </span>
+            <p><strong> {{'expand_description.read_less_button_text' | t }}</strong></p>
+            {% render 'icon-caret-up-small' %}
+              </div>
+          </span>
+        {% else %}
+        <div class="collection-hero__description rte"">{{ collection.description }}</div>
+        {%- endif -%}
       {%- endif -%}
     </div>
-
+ 
+{% comment %} escape can be used to make string into url-params, it does not change strings it does not have to change {% endcomment %}
     {%- if section.settings.show_collection_image and collection.image -%}
       <div class="collection-hero__image-container media">
         <img
@@ -59,3 +80,5 @@
   ]
 }
 {% endschema %}
+
+

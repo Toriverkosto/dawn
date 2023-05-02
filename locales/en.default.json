@@ -450,6 +450,10 @@
       "reset_password_html": "It seems you already made an account here and do not need to create a new one, you can simply <a href=\"\/account\/login\">Login<\/a> or <a href=\"\/account\/login#recover\">reset your password<\/a>."
     }
   },
+  "expand_description": {
+    "read_more_button_text": "Read more",
+    "read_less_button_text": "Read less"
+  },
   "socialshopwave": {
     "log_in": "Log in",
     "log_in_to_account": "Log in to your account",

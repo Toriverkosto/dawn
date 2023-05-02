@@ -17,15 +17,15 @@
           <span class="Polaris-Icon" onclick="showMore()"">
             <span class="Polaris-Text--root Polaris-Text--visuallyHidden">
             </span>
-            <div class="more_button">
-            <p><strong> {{'expand_description.read_more_button_text' | t }}</strong></p>
-            <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="32px" height="auto" style="margin-top: 2px;"><path d="M10 14a.997.997 0 01-.707-.293l-5-5a.999.999 0 111.414-1.414L10 11.586l4.293-4.293a.999.999 0 111.414 1.414l-5 5A.997.997 0 0110 14z" fill="#5C5F62"/></svg>
+              <div class="more_button">
+              <p><strong> {{'expand_description.read_more_button_text' | t }}</strong></p>
+              {% render 'icon-caret-down-small' %}
               </div>
               <div class="less_button">
               </span>
-              <p><strong> {{'expand_description.read_less_button_text' | t }}</strong></p>
-              <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="32px" height="auto"><path d="M15 13a.997.997 0 01-.707-.293L10 8.414l-4.293 4.293a.999.999 0 11-1.414-1.414l5-5a.999.999 0 011.414 0l5 5A.999.999 0 0115 13z" fill="#5C5F62"/></svg>
-                </div>
+            <p><strong> {{'expand_description.read_less_button_text' | t }}</strong></p>
+            {% render 'icon-caret-up-small' %}
+              </div>
           </span>
         {% else %}
         <div class="collection-hero__description rte"">{{ collection.description }}</div>

@@ -13,16 +13,10 @@
 * flair_page_type - the page type
 * flair_variant   - the variant
 *
-* Deprecated options (these may be removed in the future):
-*
-* flair_badge_max  - the maximum number of badges to show; defaults to 1
-* flair_css_class  - optional additional css classes to add to .flair-badge-wrapper
-* flair_css        - optional additional css to add to the badge wrapper
-*
 * Flair: https://apps.shopify.com/flair
 * Copyright Brainy Atom LLC, All Rights Reserved.
 *
-* Last updated: 2023-04-18T08:55:53Z
+* Last updated: 2023-05-02T12:31:29Z
 ************************************************************************
 {%- endcomment -%}
 {%- liquid
@@ -56,20 +50,13 @@ if flair_layout_config == blank
 endif
 
 if flair_layout_config == blank
-  assign flair_layout_badge_max = flair_badge_max | default: 1
+  assign flair_layout_badge_max = 1
   assign flair_variant_setting = "none"
-  assign flair_layout_css = "line-height: 0"
-  if flair_css == blank and flair_css_class == blank
-    assign flair_layout_css = flair_layout_css | append: ";margin: 10px 0;"
-  else
-    assign flair_badge_css = flair_css
-  endif
-  assign flair_badge_css_class = flair_css_class
+  assign flair_layout_css = "line-height: 0;margin: 10px 0;"
 else
   assign flair_layout_badge_max = flair_layout_config.badge_max | default: 1
   assign flair_variant_setting = flair_layout_config.variant_setting
   assign flair_layout_css = flair_layout_config.layout_css
-  assign flair_badge_css_class = blank
 endif
 
 if flair_variant_setting == "none"
@@ -497,22 +484,13 @@ for flair_mf in flair_mfs
 
     if flair_show_badge
       assign flair_badge_count = flair_badge_count | plus: 1
-      if flair_badge_css
-        assign flair_badge_css_style = 'style="' | append: flair_badge_css | append: '"'
-      else
-        assign flair_badge_css_style = ""
-      endif
       capture "flair_badge_output"
         if flair_badge.css
           assign _css = flair_badge.css | replace: "${product_id}", product.id
-          assign _content = flair_badge.content | replace: "${product_id}", product.id
           echo "<style>" | append: _css | append: "</style>"
-          echo _content
-        else
-          echo '<div class="flair-badge-wrapper ' | append: flair_badge_css_class | append: '" ' | append: flair_badge_css_style | append: ">"
-          echo flair_badge.content
-          echo "</div>"
         endif
+        assign _content = flair_badge.content | replace: "${product_id}", product.id
+        echo _content
       endcapture
 
       for item in flair_badge.dynamic_text_vars
@@ -592,9 +570,6 @@ endif
   {%- if flair_output != "" -%}{{ flair_output }}{%- endif -%}
 </div>
 {%- liquid
-assign flair_badge_max = blank
-assign flair_css = blank
-assign flair_css_class = blank
 assign flair_layout = blank
 assign flair_variant = blank
 -%}

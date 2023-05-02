@@ -14,14 +14,10 @@
 *
 * Deprecated options (these may be removed in the future):
 *
-* flair_banner_max   - the maximum number of banners to show; defaults to 1
-* flair_css_class    - optional additional css classes to add to .flair-banner-wrapper
-* flair_css          - optional additional css to add to the banner wrapper
-*
 * Flair: https://apps.shopify.com/flair
 * Copyright Brainy Atom LLC, All Rights Reserved.
 *
-* Last updated: 2023-04-18T08:55:55Z
+* Last updated: 2023-05-02T12:31:31Z
 ************************************************************************
 {%- endcomment -%}
 {%- liquid
@@ -54,18 +50,11 @@ if flair_layout_config == blank
 endif
 
 if flair_layout_config == blank
-  assign flair_layout_banner_max = flair_banner_max | default: 1
+  assign flair_layout_banner_max = 1
   assign flair_layout_css = "line-height: 0"
-  if flair_css == blank and flair_css_class == blank
-    assign flair_banner_css = ""
-  else
-    assign flair_banner_css = flair_css
-  endif
-  assign flair_banner_css_class = flair_css_class
 else
   assign flair_layout_banner_max = flair_layout_config.banner_max | default: 1
   assign flair_layout_css = flair_layout_config.layout_css
-  assign flair_banner_css_class = blank
 endif
 
 assign flair_banner_count = 0
@@ -301,19 +290,11 @@ for flair_mf in flair_mfs
 
     if flair_show_banner
       assign flair_banner_count = flair_banner_count | plus: 1
-      assign flair_banner_css_style = ""
-      if flair_banner_css
-        assign flair_banner_css_style = 'style="' | append: flair_banner_css | append: '"'
-      endif
       capture "flair_banner_output"
         if flair_banner.css
           echo "<style>" | append: flair_banner.css | append: "</style>"
-          echo flair_banner.content
-        else
-          echo '<div class="flair-banner-wrapper ' | append: flair_banner_css_class | append: '" ' | append: flair_banner_css_style | append: ">"
-          echo flair_banner.content
-          echo "</div>"
         endif
+        echo flair_banner.content
       endcapture
 
       for item in flair_banner.dynamic_text_vars
@@ -355,9 +336,6 @@ endif
   {%- if flair_output != "" -%}{{ flair_output }}{%- endif -%}
 </div>
 {%- liquid
-assign flair_banner_max = blank
-assign flair_css = blank
-assign flair_css_class = blank
 assign flair_layout = blank
 -%}
 <!-- generated: {{ "now" | date: "%F %T %z" }} -->

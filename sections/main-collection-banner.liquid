@@ -10,7 +10,7 @@
       </h1>
       {%- if section.settings.show_collection_description -%}
       {% assign words = collection.description | split: " " -%}
-      {% if words.size > 48 -%}
+      {% if words.size > 48  and collection.title != "All Items" -%}
           <div class="collection-hero__description rte" style="display: none">{{ collection.description }}</div>
           <div class="collection-hero__description rte truncated">{{ collection.description | truncatewords: 24 }}</div>
           <script src="{{ 'showmore.js' | asset_url }}" defer="defer"></script>

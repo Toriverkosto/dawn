@@ -58,6 +58,42 @@
         "include_margins": true
       }
     },
+    "f055259a-59d3-45f1-8b14-75ddb8e85175": {
+      "type": "collection-list",
+      "blocks": {
+        "template--15243804541126__f055259a-59d3-45f1-8b14-75ddb8e85175-1683022091535de9c3-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "canon-ef"
+          }
+        },
+        "template--15243804541126__f055259a-59d3-45f1-8b14-75ddb8e85175-1683022091535de9c3-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nikon-f"
+          }
+        },
+        "template--15243804541126__f055259a-59d3-45f1-8b14-75ddb8e85175-1683022091535de9c3-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "leica-m"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804541126__f055259a-59d3-45f1-8b14-75ddb8e85175-1683022091535de9c3-1",
+        "template--15243804541126__f055259a-59d3-45f1-8b14-75ddb8e85175-1683022091535de9c3-0",
+        "template--15243804541126__f055259a-59d3-45f1-8b14-75ddb8e85175-1683022091535de9c3-2"
+      ],
+      "settings": {
+        "title": "Popular",
+        "image_ratio": "portrait",
+        "color_scheme": "inverse",
+        "swipe_on_mobile": true,
+        "image_padding": false,
+        "show_view_all": false
+      }
+    },
     "49c46c69-642a-42bd-9f85-c0f818d6c223": {
       "type": "image-with-text",
       "blocks": {
@@ -118,6 +154,7 @@
     "1652858265324f2f78",
     "product-grid",
     "1682427181b9d765a3",
+    "f055259a-59d3-45f1-8b14-75ddb8e85175",
     "49c46c69-642a-42bd-9f85-c0f818d6c223",
     "1676452983e1698051"
   ]

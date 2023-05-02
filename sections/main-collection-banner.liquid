@@ -1,4 +1,5 @@
 {{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
+{{ 'component-svg.css' | asset_url | stylesheet_tag }}
 
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %}">
   <div class="collection-hero__inner page-width">
@@ -7,12 +8,32 @@
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
         {{- collection.title | escape -}}
       </h1>
-
       {%- if section.settings.show_collection_description -%}
-        <div class="collection-hero__description rte">{{ collection.description }}</div>
+      {% assign words = collection.description | split: " " -%}
+      {% if words.size > 48 -%}
+          <div class="collection-hero__description rte" style="display: none">{{ collection.description }}</div>
+          <div class="collection-hero__description rte truncated">{{ collection.description | truncatewords: 24 }}</div>
+          <script src="{{ 'showmore.js' | asset_url }}" defer="defer"></script>
+          <span class="Polaris-Icon" onclick="showMore()"">
+            <span class="Polaris-Text--root Polaris-Text--visuallyHidden">
+            </span>
+            <div class="more_button">
+            <p><strong> {{'expand_description.read_more_button_text' | t }}</strong></p>
+            <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="32px" height="auto" style="margin-top: 2px;"><path d="M10 14a.997.997 0 01-.707-.293l-5-5a.999.999 0 111.414-1.414L10 11.586l4.293-4.293a.999.999 0 111.414 1.414l-5 5A.997.997 0 0110 14z" fill="#5C5F62"/></svg>
+              </div>
+              <div class="less_button">
+              </span>
+              <p><strong> {{'expand_description.read_less_button_text' | t }}</strong></p>
+              <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="32px" height="auto"><path d="M15 13a.997.997 0 01-.707-.293L10 8.414l-4.293 4.293a.999.999 0 11-1.414-1.414l5-5a.999.999 0 011.414 0l5 5A.999.999 0 0115 13z" fill="#5C5F62"/></svg>
+                </div>
+          </span>
+        {% else %}
+        <div class="collection-hero__description rte"">{{ collection.description }}</div>
+        {%- endif -%}
       {%- endif -%}
     </div>
-
+ 
+{% comment %} escape can be used to make string into url-params, it does not change strings it does not have to change {% endcomment %}
     {%- if section.settings.show_collection_image and collection.image -%}
       <div class="collection-hero__image-container media">
         <img
@@ -59,3 +80,5 @@
   ]
 }
 {% endschema %}
+
+

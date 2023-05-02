@@ -1,0 +1,45 @@
+/*styling for "custom" show more text and button */ 
+  .more_button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+  }
+
+  .less_button {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+  }
+
+  .more_button > p {
+    color: var(--color-base-accent-1);
+  }
+
+  .less_button > p {
+    color: var(--color-base-accent-1);
+  }
+
+  .more_button:hover p, .more_button:hover path, .less_button:hover p, .less_button:hover path {
+    color:rgb(var(--color-link));
+    animation-name: Polaris-Icon;
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+  }
+
+.Polaris-Icon path {
+  fill: var(--color-base-accent-1);
+}
+
+/*animation for filling the svg chevrons*/
+
+@keyframes Polaris-Icon {
+  100% {
+    fill: rgb(var(--color-link));
+  }
+}
+

@@ -504,6 +504,10 @@
       "powered_by_shopify": "."
     }
   },
+  "expand_description": {
+    "read_more_button_text": "Lue lisää",
+    "read_less_button_text": "Lue vähemmän"
+  },
   "socialshopwave": {
     "log_in": "Log in",
     "log_in_to_account": "Log in to your account",

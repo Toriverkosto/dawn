@@ -75,10 +75,10 @@
             "show_dynamic_checkout": true
           }
         },
-        "707ce7ee-def2-4ac5-9302-9a95bb8baea1": {
+        "d5caab0f-8084-4d2c-9f50-f4478f12dbeb": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "ok{% assign variant = product.selected_or_first_available_variant %}\n{% assign inventory_item = variant.inventory_item %}\n{% if inventory_item.available %}\n  {% assign inventory_level = inventory_item.inventory_level %}\n  {% if inventory_level > 0 %}\n    {{ inventory_item.location.name }}: {{ inventory_level }} in stock.\n  {% endif %}\n{% endif %}"
+            "custom_liquid": "{% if product.selected_or_first_available_variant.inventory_management == 'shopify' and product.selected_or_first_available_variant.inventory_quantity > 0 %}\n  {% if product.selected_or_first_available_variant.inventory_quantity <= block.settings.inventory_threshold %}\n    <svg width=\"15\" height=\"15\" aria-hidden=\"true\">\n      <circle cx=\"7.5\" cy=\"7.5\" r=\"7.5\" fill=\"rgb(238,148,65, 0.3)\"\/>\n      <circle cx=\"7.5\" cy=\"7.5\" r=\"5\" stroke=\"rgb(255, 255, 255)\" stroke-width=\"1\" fill=\"rgb(238,148,65)\"\/>\n    <\/svg>\n    {% if product.selected_or_first_available_variant.inventory_quantity > 0 %}\n      {{- 'products.product.inventory_low_stock_show_count' | t: quantity: product.selected_or_first_available_variant.inventory_quantity, location: product.selected_or_first_available_variant.inventory_location.name -}}\n    {% endif %}\n  {% else %}\n    <svg width=\"15\" height=\"15\" aria-hidden=\"true\">\n      <circle cx=\"7.5\" cy=\"7.5\" r=\"7.5\" fill=\"rgb(62,214,96, 0.3)\"\/>\n      <circle cx=\"7.5\" cy=\"7.5\" r=\"5\" stroke=\"rgb(255, 255, 255)\" stroke-width=\"1\" fill=\"rgb(62,214,96)\"\/>\n    <\/svg>\n    {% if product.selected_or_first_available_variant.inventory_quantity > 0 %}\n      {{- 'products.product.inventory_in_stock_show_count' | t: quantity: product.selected_or_first_available_variant.inventory_quantity, location: product.selected_or_first_available_variant.inventory_location.name -}}\n    {% endif %}\n  {% endif %}\n{% endif %}"
           }
         },
         "d7340e2b-ff60-48a1-9b08-2da1c2bd865b": {
@@ -109,12 +109,6 @@
             "show_delivery_cutoff": false,
             "cutoff_time": "14",
             "cutoff_message": "Order within"
-          }
-        },
-        "d5caab0f-8084-4d2c-9f50-f4478f12dbeb": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"film-cameras\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n          <span class=\"inventoryLocationLoading\"> <\/span>\n          <\/div>\n{% endunless %}"
           }
         },
         "6ff4987b-8f35-4a2e-89e3-3f40f342da38": {
@@ -225,10 +219,9 @@
         "b105008f-85ff-43bc-aa96-e0bce264719b",
         "4f0717e0-34d7-44d7-9543-6fdf50a55941",
         "buy_buttons",
-        "707ce7ee-def2-4ac5-9302-9a95bb8baea1",
+        "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
         "d7340e2b-ff60-48a1-9b08-2da1c2bd865b",
         "54f26b05-dab7-4626-85fc-f3053650fa51",
-        "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
         "6ff4987b-8f35-4a2e-89e3-3f40f342da38",
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",

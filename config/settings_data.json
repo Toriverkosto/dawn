@@ -46,6 +46,7 @@
           },
           "9a6f3578-ae3a-432d-bc24-cf9176022645": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "NEW: Find the right gear faster with our new \"Quality Control\" ratings",
               "color_scheme": "accent-1",
@@ -59,7 +60,7 @@
             "type": "announcement",
             "settings": {
               "text": "10% to 45% OFF thousands of items",
-              "color_scheme": "accent-2",
+              "color_scheme": "accent-1",
               "link": "shopify:\/\/collections\/discounted-cameras-lenses-accessories",
               "use_custom_color": false,
               "color_text": "#0d9488",

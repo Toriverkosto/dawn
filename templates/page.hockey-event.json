@@ -69,7 +69,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Rhine_BC-97.jpg",
-        "height": "small",
+        "height": "adapt",
         "color_scheme": "background-2",
         "layout": "image_first"
       }

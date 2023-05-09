@@ -1,52 +1,5 @@
 {
   "sections": {
-    "5985644f-fd3a-4985-8929-7092e95eb893": {
-      "type": "image-banner",
-      "disabled": true,
-      "blocks": {
-        "template--18929113956685__5985644f-fd3a-4985-8929-7092e95eb893-16836192772abc5558-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
-          }
-        },
-        "template--18929113956685__5985644f-fd3a-4985-8929-7092e95eb893-16836192772abc5558-1": {
-          "type": "text",
-          "settings": {
-            "text": "(Images: Laura Vanzo \/ Visit Tampere)"
-          }
-        },
-        "template--18929113956685__5985644f-fd3a-4985-8929-7092e95eb893-16836192772abc5558-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--18929113956685__5985644f-fd3a-4985-8929-7092e95eb893-16836192772abc5558-0",
-        "template--18929113956685__5985644f-fd3a-4985-8929-7092e95eb893-16836192772abc5558-1",
-        "template--18929113956685__5985644f-fd3a-4985-8929-7092e95eb893-16836192772abc5558-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Hockey_-_Laura_Vanzo-18.jpg",
-        "image_2": "shopify:\/\/shop_images\/Visit_Tampere_Autumn_2021_City_Center_drone_views_Laura_Vanzo-33.jpg",
-        "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
-        "show_text_box": true,
-        "image_overlay_opacity": 40,
-        "color_scheme": "inverse",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "8b53c15b-688b-440d-88ec-0dccb3127c51": {
       "type": "rich-text",
       "disabled": true,
@@ -97,7 +50,7 @@
         "template--18929113956685__356c09dc-8126-437b-a980-d7d99f909f18-16836211640cc401ae-1": {
           "type": "text",
           "settings": {
-            "text": "<p>The 2023 IIHF Ice Hockey World Championship is being held in Tampere, Finland - Home of Kamerastore. To celebrate, we are having a sale throughout the event. Read more below about the sale and about our city.<\/p><p>(Images: Laura Vanzo \/ Visit Tampere)<\/p>"
+            "text": "<p>The 2023 IIHF Ice Hockey World Championship is being held in Tampere, Finland - Home of Kamerastore. To celebrate, we are having a sale throughout the event. Read more below about the sale and about our city.<\/p>"
           }
         },
         "template--18929113956685__356c09dc-8126-437b-a980-d7d99f909f18-16836211640cc401ae-2": {
@@ -115,8 +68,8 @@
         "template--18929113956685__356c09dc-8126-437b-a980-d7d99f909f18-16836211640cc401ae-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Hockey_-_Laura_Vanzo-18.jpg",
-        "height": "adapt",
+        "image": "shopify:\/\/shop_images\/Rhine_BC-97.jpg",
+        "height": "small",
         "color_scheme": "background-2",
         "layout": "image_first"
       }
@@ -145,7 +98,6 @@
     }
   },
   "order": [
-    "5985644f-fd3a-4985-8929-7092e95eb893",
     "8b53c15b-688b-440d-88ec-0dccb3127c51",
     "356c09dc-8126-437b-a980-d7d99f909f18",
     "1683619188107c6ab5",

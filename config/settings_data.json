@@ -58,6 +58,7 @@
           },
           "073ddcaf-d783-4761-85a9-6ef2206cc387": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "10% to 45% OFF thousands of items",
               "color_scheme": "accent-1",

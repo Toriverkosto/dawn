@@ -38,6 +38,55 @@
         "full_width": true
       }
     },
+    "1683619188107c6ab5": {
+      "type": "apps",
+      "blocks": {
+        "8fb0c6e7-9e55-4222-a7aa-e27c16817e5e": {
+          "type": "shopify:\/\/apps\/essential-countdown-timer-bar\/blocks\/app-block\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
+          "settings": {
+            "id": "clhfy0ngy109631owm8crbql1v"
+          }
+        }
+      },
+      "block_order": [
+        "8fb0c6e7-9e55-4222-a7aa-e27c16817e5e"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "ea082880-1475-4759-b9a6-1fe853d92072": {
+      "type": "newsletter",
+      "blocks": {
+        "template--18929113956685__ea082880-1475-4759-b9a6-1fe853d92072-168370425239396a5f-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Subscribe to our emails"
+          }
+        },
+        "template--18929113956685__ea082880-1475-4759-b9a6-1fe853d92072-168370425239396a5f-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        },
+        "template--18929113956685__ea082880-1475-4759-b9a6-1fe853d92072-168370425239396a5f-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>If you are not a subscriber you can sign up here. You will receive occasional emails about discounts and newly-listed products.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18929113956685__ea082880-1475-4759-b9a6-1fe853d92072-168370425239396a5f-0",
+        "template--18929113956685__ea082880-1475-4759-b9a6-1fe853d92072-168370425239396a5f-2",
+        "template--18929113956685__ea082880-1475-4759-b9a6-1fe853d92072-168370425239396a5f-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "356c09dc-8126-437b-a980-d7d99f909f18": {
       "type": "image-with-text",
       "blocks": {
@@ -74,55 +123,6 @@
         "layout": "image_first"
       }
     },
-    "1683619188107c6ab5": {
-      "type": "apps",
-      "blocks": {
-        "8fb0c6e7-9e55-4222-a7aa-e27c16817e5e": {
-          "type": "shopify:\/\/apps\/essential-countdown-timer-bar\/blocks\/app-block\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
-          "settings": {
-            "id": "clhfy0ngy109631owm8crbql1v"
-          }
-        }
-      },
-      "block_order": [
-        "8fb0c6e7-9e55-4222-a7aa-e27c16817e5e"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "ea082880-1475-4759-b9a6-1fe853d92072": {
-      "type": "newsletter",
-      "blocks": {
-        "template--18929113956685__ea082880-1475-4759-b9a6-1fe853d92072-168370425239396a5f-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Subscribe to our emails"
-          }
-        },
-        "template--18929113956685__ea082880-1475-4759-b9a6-1fe853d92072-168370425239396a5f-1": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>If you are not a subscriber you can sign up here. You will receive occasional emails about discounts and newly-listed products.<\/p>"
-          }
-        },
-        "template--18929113956685__ea082880-1475-4759-b9a6-1fe853d92072-168370425239396a5f-2": {
-          "type": "email_form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "template--18929113956685__ea082880-1475-4759-b9a6-1fe853d92072-168370425239396a5f-0",
-        "template--18929113956685__ea082880-1475-4759-b9a6-1fe853d92072-168370425239396a5f-1",
-        "template--18929113956685__ea082880-1475-4759-b9a6-1fe853d92072-168370425239396a5f-2"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
-    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -131,9 +131,9 @@
   },
   "order": [
     "8b53c15b-688b-440d-88ec-0dccb3127c51",
-    "356c09dc-8126-437b-a980-d7d99f909f18",
     "1683619188107c6ab5",
     "ea082880-1475-4759-b9a6-1fe853d92072",
+    "356c09dc-8126-437b-a980-d7d99f909f18",
     "main"
   ]
 }

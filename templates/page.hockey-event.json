@@ -73,7 +73,7 @@
         "template--18929113956685__ea082880-1475-4759-b9a6-1fe853d92072-168370425239396a5f-1": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>If you are not a subscriber you can sign up here. You will receive occasional emails about discounts and newly-listed products.<\/p>"
+            "text": "<p>Become a Kamerastore subscriber with your email above. You will receive occasional emails about discounts and newly-listed products.<\/p>"
           }
         }
       },
@@ -99,7 +99,7 @@
         "template--18929113956685__356c09dc-8126-437b-a980-d7d99f909f18-16836211640cc401ae-1": {
           "type": "text",
           "settings": {
-            "text": "<p>The 2023 IIHF Ice Hockey World Championship is being held in Tampere, Finland - Home of Kamerastore. To celebrate, we are having a sale throughout the event. Read more below about the sale and about our city.<\/p>"
+            "text": "<p>The 2023 IIHF Ice Hockey World Championship is being held in Tampere, Finland - Home of Kamerastore. To celebrate, we are having a sale throughout the event. <\/p><p>Read more below about the sale and about our city.<\/p>"
           }
         },
         "template--18929113956685__356c09dc-8126-437b-a980-d7d99f909f18-16836211640cc401ae-2": {
@@ -119,7 +119,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Rhine_BC-97.jpg",
         "height": "adapt",
-        "color_scheme": "background-2",
+        "color_scheme": "accent-2",
         "layout": "image_first"
       }
     },

@@ -96,6 +96,7 @@
       "blocks": {
         "template--18929113956685__ea082880-1475-4759-b9a6-1fe853d92072-168370425239396a5f-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Subscribe to our emails"
           }

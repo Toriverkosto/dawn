@@ -44,7 +44,7 @@
         "8fb0c6e7-9e55-4222-a7aa-e27c16817e5e": {
           "type": "shopify:\/\/apps\/essential-countdown-timer-bar\/blocks\/app-block\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
           "settings": {
-            "id": "clhfy0ngy109631owm8crbql1v"
+            "id": ""
           }
         }
       },
@@ -73,7 +73,7 @@
         "template--18929113956685__ea082880-1475-4759-b9a6-1fe853d92072-168370425239396a5f-1": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Become a Kamerastore subscriber with your email above. You will receive occasional emails about discounts and newly-listed products.<\/p>"
+            "text": "<p>Become a Kamerastore subscriber above to enable discount code. You will receive occasional emails about discounts and newly-listed products.<\/p>"
           }
         }
       },

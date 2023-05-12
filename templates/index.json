@@ -265,13 +265,6 @@
         "show_rating": false
       }
     },
-    "16336738395370bc94": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<div class=\"reputon-google-reviews-widget\" id=\"bf91f8b0-88a8-11eb-9209-f960a060549e\" ><\/div>"
-      }
-    },
     "16590912674b072be6": {
       "type": "featured-collection",
       "settings": {
@@ -666,7 +659,6 @@
     "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe",
     "multi_column",
     "1660560902df48f128",
-    "16336738395370bc94",
     "16590912674b072be6",
     "16681567159a25ad0d",
     "16590913415aba16e5",

@@ -104,10 +104,9 @@
         },
         "template--18929113956685__356c09dc-8126-437b-a980-d7d99f909f18-16836211640cc401ae-2": {
           "type": "button",
-          "disabled": true,
           "settings": {
-            "button_label": "Button label",
-            "button_link": ""
+            "button_label": "Browse All Items",
+            "button_link": "shopify:\/\/collections\/all-items"
           }
         }
       },

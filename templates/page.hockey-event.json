@@ -126,6 +126,41 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "834aed10-cd67-4f6b-ba0e-c93568c9a4c5": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18929113956685__834aed10-cd67-4f6b-ba0e-c93568c9a4c5-1683886438b9ff3777-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We Buy Camera Gear"
+          }
+        },
+        "template--18929113956685__834aed10-cd67-4f6b-ba0e-c93568c9a4c5-1683886438b9ff3777-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Do you have unused camera gear laying around? We buy cameras, lenses, and accessories of all ages. Sell for cash or trade-in for something new.<\/p>"
+          }
+        },
+        "template--18929113956685__834aed10-cd67-4f6b-ba0e-c93568c9a4c5-1683886438b9ff3777-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Start Quote Request",
+            "button_link": "shopify:\/\/pages\/sell-or-trade-your-used-camera-gear"
+          }
+        }
+      },
+      "block_order": [
+        "template--18929113956685__834aed10-cd67-4f6b-ba0e-c93568c9a4c5-1683886438b9ff3777-0",
+        "template--18929113956685__834aed10-cd67-4f6b-ba0e-c93568c9a4c5-1683886438b9ff3777-1",
+        "template--18929113956685__834aed10-cd67-4f6b-ba0e-c93568c9a4c5-1683886438b9ff3777-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ok.webp",
+        "height": "adapt",
+        "color_scheme": "inverse",
+        "layout": "image_first"
+      }
     }
   },
   "order": [
@@ -133,6 +168,7 @@
     "ea082880-1475-4759-b9a6-1fe853d92072",
     "8b53c15b-688b-440d-88ec-0dccb3127c51",
     "356c09dc-8126-437b-a980-d7d99f909f18",
-    "main"
+    "main",
+    "834aed10-cd67-4f6b-ba0e-c93568c9a4c5"
   ]
 }

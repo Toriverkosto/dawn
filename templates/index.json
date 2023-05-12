@@ -267,6 +267,7 @@
     },
     "16336738395370bc94": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"reputon-google-reviews-widget\" id=\"bf91f8b0-88a8-11eb-9209-f960a060549e\" ><\/div>"
       }
@@ -289,16 +290,6 @@
     },
     "16681567159a25ad0d": {
       "type": "apps",
-      "blocks": {
-        "56632df0-1540-4fc5-88ce-e54fba428f43": {
-          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "56632df0-1540-4fc5-88ce-e54fba428f43"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -505,6 +496,36 @@
         "full_width": false
       }
     },
+    "1683891361046b7454": {
+      "type": "apps",
+      "blocks": {
+        "4befdab6-509d-467b-9ed5-7f1f8a5ed767": {
+          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "autoscroll": true,
+            "showRating": true,
+            "writeReview": true
+          }
+        },
+        "029d3920-2049-430b-8328-278537477532": {
+          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/sticky-compact-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "verticalPositionId": "bottom",
+            "horizontalPositionId": "right",
+            "minimize": false
+          }
+        }
+      },
+      "block_order": [
+        "4befdab6-509d-467b-9ed5-7f1f8a5ed767",
+        "029d3920-2049-430b-8328-278537477532"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
     "644add83-8314-41d9-a511-351933776664": {
       "type": "featured-blog",
       "settings": {
@@ -655,6 +676,7 @@
     "image_banner",
     "165416468256763b39",
     "1632470234f73d3bc0",
+    "1683891361046b7454",
     "644add83-8314-41d9-a511-351933776664",
     "16627241848ff0f7e4",
     "1655878837fa505e49",

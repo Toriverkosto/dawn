@@ -1,43 +1,5 @@
 {
   "sections": {
-    "8b53c15b-688b-440d-88ec-0dccb3127c51": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "template--18929113956685__8b53c15b-688b-440d-88ec-0dccb3127c51-1683620739e960c163-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "template--18929113956685__8b53c15b-688b-440d-88ec-0dccb3127c51-1683620739e960c163-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>(Images: Laura Vanzo \/ Visit Tampere)<\/p>"
-          }
-        },
-        "template--18929113956685__8b53c15b-688b-440d-88ec-0dccb3127c51-1683620739e960c163-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "template--18929113956685__8b53c15b-688b-440d-88ec-0dccb3127c51-1683620739e960c163-0",
-        "template--18929113956685__8b53c15b-688b-440d-88ec-0dccb3127c51-1683620739e960c163-1",
-        "template--18929113956685__8b53c15b-688b-440d-88ec-0dccb3127c51-1683620739e960c163-2"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
-    },
     "1683619188107c6ab5": {
       "type": "apps",
       "blocks": {
@@ -87,6 +49,44 @@
         "full_width": true
       }
     },
+    "8b53c15b-688b-440d-88ec-0dccb3127c51": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "template--18929113956685__8b53c15b-688b-440d-88ec-0dccb3127c51-1683620739e960c163-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "template--18929113956685__8b53c15b-688b-440d-88ec-0dccb3127c51-1683620739e960c163-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "template--18929113956685__8b53c15b-688b-440d-88ec-0dccb3127c51-1683620739e960c163-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Browse All Sale Items",
+            "button_link": "shopify:\/\/collections\/all-items",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18929113956685__8b53c15b-688b-440d-88ec-0dccb3127c51-1683620739e960c163-0",
+        "template--18929113956685__8b53c15b-688b-440d-88ec-0dccb3127c51-1683620739e960c163-1",
+        "template--18929113956685__8b53c15b-688b-440d-88ec-0dccb3127c51-1683620739e960c163-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "356c09dc-8126-437b-a980-d7d99f909f18": {
       "type": "image-with-text",
       "blocks": {
@@ -129,9 +129,9 @@
     }
   },
   "order": [
-    "8b53c15b-688b-440d-88ec-0dccb3127c51",
     "1683619188107c6ab5",
     "ea082880-1475-4759-b9a6-1fe853d92072",
+    "8b53c15b-688b-440d-88ec-0dccb3127c51",
     "356c09dc-8126-437b-a980-d7d99f909f18",
     "main"
   ]

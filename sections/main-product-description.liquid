@@ -57,7 +57,8 @@
             <hr class="main-product-description shallow" />
           {% endif %}
           <b>{{ host_product.title }}</b>
-          <div>{{ host_product.description }}</div>
+          <div>{{ host_product.description }}
+          </div>
           {% unless host_product.description contains "Battery" or host_product.description contains "battery" %}
             {% if product.metafields.kameratori.batteries and product.metafields.kameratori.batteries.value.size > 0 %}
             <div>
@@ -69,6 +70,19 @@
             </div>
           {% endif %}
           {% endunless %}
+          {% comment %} Filter Size Added {% endcomment %}
+            {% for t in product.tags %}
+            {% assign prefix = t | slice: 0, 12 %}
+              {% if prefix == 'Filter-Size-' %}
+                {% assign filter_size = t | slice: 12, 25 | strip %}
+                <div>
+                  {{ "products.product.filter_info" | t }}{{product.title | remove_first: "-" }}
+                  is:
+                  <br>
+                  <b>{{filter_size}}</b>
+                </div>
+              {% endif %}
+            {% endfor %}
           {% assign previous_content_section_shown = true %}
         {% endif %}
       {%- when 'main_kit_stock' -%}

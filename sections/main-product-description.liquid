@@ -57,8 +57,7 @@
             <hr class="main-product-description shallow" />
           {% endif %}
           <b>{{ host_product.title }}</b>
-          <div>{{ host_product.description }}
-          </div>
+          <div>{{ host_product.description }}</div>
           {% unless host_product.description contains "Battery" or host_product.description contains "battery" %}
             {% if product.metafields.kameratori.batteries and product.metafields.kameratori.batteries.value.size > 0 %}
             <div>

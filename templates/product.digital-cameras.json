@@ -160,6 +160,7 @@
         },
         "65be4e3b-cf86-413f-838e-2f29cfb59fb0": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<br><center>Sold By: <b>Kamerastore<\/b> <div class=\"reputon-google-reviews-widget\" id=\"279cdae0-118f-11ed-b220-85918cb29862\" style=\"display: flex; justify-content: center;\"><\/div>\n<a href=\"\/pages\/company-info\"><div class=\"link\">Registered Business<\/div><\/a><br>"
           }
@@ -249,16 +250,6 @@
     },
     "1636976863088ccff1": {
       "type": "apps",
-      "blocks": {
-        "da280516-5ca3-4f59-885c-83ed48de69cb": {
-          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "da280516-5ca3-4f59-885c-83ed48de69cb"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -310,6 +301,26 @@
         "show_vendor": true,
         "show_rating": false
       }
+    },
+    "1683892623d3542dbd": {
+      "type": "apps",
+      "blocks": {
+        "2907b961-511a-4af2-b4a7-b2544dd281a0": {
+          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/sticky-compact-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "verticalPositionId": "bottom",
+            "horizontalPositionId": "right",
+            "minimize": true
+          }
+        }
+      },
+      "block_order": [
+        "2907b961-511a-4af2-b4a7-b2544dd281a0"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -318,6 +329,7 @@
     "1658753808da38ee31",
     "1636976863088ccff1",
     "16321339467e367887",
-    "product-recommendations"
+    "product-recommendations",
+    "1683892623d3542dbd"
   ]
 }

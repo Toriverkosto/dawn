@@ -70,19 +70,25 @@
             </div>
           {% endif %}
           {% endunless %}
-          {% comment %} Filter Size Added {% endcomment %}
+          {% comment %} Here starts the logic for showing products filter thread size {% endcomment %}
             {% for t in product.tags %}
             {% assign prefix = t | slice: 0, 12 %}
               {% if prefix == 'Filter-Size-' %}
                 {% assign filter_size = t | slice: 12, 25 | strip %}
                 <div>
-                  {{ "products.product.filter_info" | t }}{{product.title | remove_first: "-" }}
+                  {{ "products.product.filter_info" | t }}
+                  {{ product.title }}
+                  {%- assign category_collection = product.metafields.kameratori.category_collection.value -%}
+                  {%- if category_collection.title == "Lenses" -%}
+                  lens
+                  {% endif %}
                   is:
-                  <br>
-                  <b>{{filter_size}}</b>
-                </div>
-              {% endif %}
+                    <br>
+                    <b>{{ filter_size }}</b>
+                  </div>
+                {% endif %}
             {% endfor %}
+            {% comment %} And here it ends {% endcomment %}
           {% assign previous_content_section_shown = true %}
         {% endif %}
       {%- when 'main_kit_stock' -%}

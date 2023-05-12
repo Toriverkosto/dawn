@@ -4,9 +4,28 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "1683892141b0cb0f54": {
+      "type": "apps",
+      "blocks": {
+        "cd6ffa23-0b03-4b5e-a4fd-52d444ba5e38": {
+          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/list-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "writeReview": true
+          }
+        }
+      },
+      "block_order": [
+        "cd6ffa23-0b03-4b5e-a4fd-52d444ba5e38"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1683892141b0cb0f54"
   ]
 }

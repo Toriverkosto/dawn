@@ -83,6 +83,7 @@
         },
         "a56084d7-2640-4571-ac8a-00acd97302f5": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Description, Stock, & Shipping:",
             "text_style": "uppercase"
@@ -90,7 +91,6 @@
         },
         "7a257909-f1dc-40af-8a11-a540c40d8792": {
           "type": "description",
-          "disabled": true,
           "settings": {
           }
         },

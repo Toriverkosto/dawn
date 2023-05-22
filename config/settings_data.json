@@ -240,6 +240,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "8736253677335864337": {
+        "type": "shopify:\/\/apps\/shipzee-shipping-info-banner\/blocks\/app-embed\/b8a84f14-855d-421a-a4e3-e58883525d1f",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },

@@ -310,6 +310,37 @@
         "show_rating": false
       }
     },
+    "1683891361046b7454": {
+      "type": "apps",
+      "blocks": {
+        "4befdab6-509d-467b-9ed5-7f1f8a5ed767": {
+          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "autoscroll": true,
+            "showRating": true,
+            "showReviewPhotos": false,
+            "writeReview": false
+          }
+        },
+        "029d3920-2049-430b-8328-278537477532": {
+          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/sticky-compact-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "verticalPositionId": "bottom",
+            "horizontalPositionId": "right",
+            "minimize": false
+          }
+        }
+      },
+      "block_order": [
+        "4befdab6-509d-467b-9ed5-7f1f8a5ed767",
+        "029d3920-2049-430b-8328-278537477532"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
     "16590912674b072be6": {
       "type": "featured-collection",
       "settings": {
@@ -534,37 +565,6 @@
         "full_width": false
       }
     },
-    "1683891361046b7454": {
-      "type": "apps",
-      "blocks": {
-        "4befdab6-509d-467b-9ed5-7f1f8a5ed767": {
-          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
-          "settings": {
-            "themeId": "light",
-            "autoscroll": true,
-            "showRating": true,
-            "showReviewPhotos": true,
-            "writeReview": true
-          }
-        },
-        "029d3920-2049-430b-8328-278537477532": {
-          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/sticky-compact-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
-          "settings": {
-            "themeId": "light",
-            "verticalPositionId": "bottom",
-            "horizontalPositionId": "right",
-            "minimize": false
-          }
-        }
-      },
-      "block_order": [
-        "4befdab6-509d-467b-9ed5-7f1f8a5ed767",
-        "029d3920-2049-430b-8328-278537477532"
-      ],
-      "settings": {
-        "include_margins": false
-      }
-    },
     "644add83-8314-41d9-a511-351933776664": {
       "type": "featured-blog",
       "settings": {
@@ -706,6 +706,7 @@
     "3c66629c-89ee-411b-ace0-54c61df25f36",
     "multi_column",
     "1660560902df48f128",
+    "1683891361046b7454",
     "16590912674b072be6",
     "16681567159a25ad0d",
     "16590913415aba16e5",
@@ -715,7 +716,6 @@
     "image_banner",
     "165416468256763b39",
     "1632470234f73d3bc0",
-    "1683891361046b7454",
     "644add83-8314-41d9-a511-351933776664",
     "16627241848ff0f7e4",
     "1655878837fa505e49",

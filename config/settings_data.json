@@ -243,7 +243,7 @@
       },
       "7902831097370503076": {
         "type": "shopify:\/\/apps\/estimated-order-delivery-date\/blocks\/estimated-delivery-days\/d8155dd1-6598-4174-aaeb-cbcf85a857bc",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }

@@ -76,6 +76,18 @@
             "show_dynamic_checkout": true
           }
         },
+        "7bc4319f-1ad5-4bae-bff8-ce5265675e4b": {
+          "type": "text",
+          "settings": {
+            "text": "Description, Stock, & Shipping:",
+            "text_style": "uppercase"
+          }
+        },
+        "b78219c2-66ad-487a-8866-6e726c2a4e91": {
+          "type": "description",
+          "settings": {
+          }
+        },
         "d031b056-55bf-4778-a201-0c5d8ab0e178": {
           "type": "custom_liquid",
           "settings": {
@@ -149,6 +161,8 @@
         "variant_picker",
         "ec88d254-bbe8-4b70-a8ba-4e63f56ef136",
         "buy_buttons",
+        "7bc4319f-1ad5-4bae-bff8-ce5265675e4b",
+        "b78219c2-66ad-487a-8866-6e726c2a4e91",
         "d031b056-55bf-4778-a201-0c5d8ab0e178",
         "e44a2970-017f-4a65-9008-2a056066686c",
         "c93981a2-30f3-4294-803c-c2c27ba4890e",
@@ -170,12 +184,14 @@
       "blocks": {
         "3c54629a-3819-4e6c-a800-8fcf3cee8f7e": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Description"
           }
         },
         "377fb4ea-4c27-48d3-aff6-703d9b678bff": {
           "type": "main_stock_description",
+          "disabled": true,
           "settings": {
           }
         },

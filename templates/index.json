@@ -198,13 +198,6 @@
         "show_text_below": true
       }
     },
-    "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<div class=\"page-width page-width--wide\"> <center><H2>Over {{collections['new-last-7-days'].all_products_count}} items added in the last 7 days <\/H2><\/center><\/div>"
-      }
-    },
     "3c66629c-89ee-411b-ace0-54c61df25f36": {
       "type": "multicolumn",
       "blocks": {
@@ -247,6 +240,28 @@
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": true
+      }
+    },
+    "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--wide\"> <center><H2>Over {{collections['new-last-7-days'].all_products_count}} items added in the last 7 days <\/H2><\/center><\/div>"
+      }
+    },
+    "1660560902df48f128": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "collection": "new-last-7-days",
+        "products_to_show": 12,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": false
       }
     },
     "multi_column": {
@@ -292,22 +307,6 @@
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": true
-      }
-    },
-    "1660560902df48f128": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Here's what’s new this week",
-        "collection": "new-last-7-days",
-        "products_to_show": 12,
-        "show_view_all": true,
-        "swipe_on_mobile": true,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": true,
-        "show_rating": false
       }
     },
     "1683891361046b7454": {
@@ -702,10 +701,10 @@
     "b7f435c5-c4b1-48ef-ae36-13d31e15ecb0",
     "f9ddfc6e-43fd-448b-b981-034c96684a0b",
     "ab2bb2f3-2333-4123-98ed-40aacfc16ad6",
-    "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe",
     "3c66629c-89ee-411b-ace0-54c61df25f36",
-    "multi_column",
+    "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe",
     "1660560902df48f128",
+    "multi_column",
     "1683891361046b7454",
     "16590912674b072be6",
     "16681567159a25ad0d",

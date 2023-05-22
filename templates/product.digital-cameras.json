@@ -215,12 +215,14 @@
       "blocks": {
         "1fc7bbcf-57b5-45a1-8a23-2809a90eadf6": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Description"
           }
         },
         "a01f31b5-cfbd-4101-b8c8-6139dc3698ea": {
           "type": "main_stock_description",
+          "disabled": true,
           "settings": {
           }
         },

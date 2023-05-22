@@ -75,6 +75,11 @@
             "show_dynamic_checkout": true
           }
         },
+        "7a257909-f1dc-40af-8a11-a540c40d8792": {
+          "type": "description",
+          "settings": {
+          }
+        },
         "54f26b05-dab7-4626-85fc-f3053650fa51": {
           "type": "shopify:\/\/apps\/arrivesby-delivery-times\/blocks\/delivery-time\/b4f15d36-71f0-4a8c-954f-e485b7529360",
           "disabled": true,
@@ -215,6 +220,7 @@
         "b105008f-85ff-43bc-aa96-e0bce264719b",
         "4f0717e0-34d7-44d7-9543-6fdf50a55941",
         "buy_buttons",
+        "7a257909-f1dc-40af-8a11-a540c40d8792",
         "54f26b05-dab7-4626-85fc-f3053650fa51",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
         "6ff4987b-8f35-4a2e-89e3-3f40f342da38",
@@ -242,12 +248,14 @@
       "blocks": {
         "12286322-2e1b-4eee-adce-8ae8a65a4410": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Description"
           }
         },
         "216f7b39-9422-4414-932d-cbd9b044d926": {
           "type": "main_stock_description",
+          "disabled": true,
           "settings": {
           }
         },

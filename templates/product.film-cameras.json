@@ -137,6 +137,11 @@
             "icon": "star"
           }
         },
+        "b60c169b-ddf8-49fc-9aa3-faf05c4a2f06": {
+          "type": "shopify:\/\/apps\/estimated-delivery-date-plus\/blocks\/delivery_coder_theme\/4a0685bc-c234-45b2-8382-5ad6a8e3e3fd",
+          "settings": {
+          }
+        },
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b": {
           "type": "collapsible_tab",
           "settings": {
@@ -214,12 +219,6 @@
           "settings": {
             "custom_liquid": "<br><center>Sold By: <b>Kamerastore<\/b> <div class=\"reputon-google-reviews-widget\" id=\"279cdae0-118f-11ed-b220-85918cb29862\" style=\"display: flex; justify-content: center;\"><\/div>\n<a href=\"\/pages\/company-info\"><div class=\"link\">Registered Business<\/div><\/a>"
           }
-        },
-        "b60c169b-ddf8-49fc-9aa3-faf05c4a2f06": {
-          "type": "shopify:\/\/apps\/estimated-delivery-date-plus\/blocks\/delivery_coder_theme\/4a0685bc-c234-45b2-8382-5ad6a8e3e3fd",
-          "disabled": true,
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -239,14 +238,14 @@
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
         "6ff4987b-8f35-4a2e-89e3-3f40f342da38",
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
+        "b60c169b-ddf8-49fc-9aa3-faf05c4a2f06",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
         "ac7cacf6-525f-4b65-8e19-6ff4628b62b5",
         "544372e8-f86d-4543-aa94-172d88ad169e",
         "f8962c4a-da22-4a3d-8f73-05ff4d13ed57",
         "0909eb7e-754d-4742-97cf-e483e3248a49",
-        "a61057d7-0270-434a-9a2c-d9dd3332fad7",
-        "b60c169b-ddf8-49fc-9aa3-faf05c4a2f06"
+        "a61057d7-0270-434a-9a2c-d9dd3332fad7"
       ],
       "settings": {
         "product_role": "stock",

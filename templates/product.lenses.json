@@ -67,16 +67,22 @@
             "show_dynamic_checkout": true
           }
         },
-        "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e": {
-          "type": "custom_liquid",
+        "6390337e-fa73-472f-a5f7-2ddbf054cc93": {
+          "type": "text",
           "settings": {
-            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"supplies\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n          <\/div>\n{% endunless %}"
+            "text": "Description, Stock, & Shipping:",
+            "text_style": "uppercase"
           }
         },
         "6d2da93a-18a0-4967-822c-ac2a3fe1a79f": {
           "type": "description",
-          "disabled": true,
           "settings": {
+          }
+        },
+        "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"supplies\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n          <\/div>\n{% endunless %}"
           }
         },
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b": {
@@ -145,13 +151,6 @@
             "page": "",
             "icon": "price_tag"
           }
-        },
-        "19cde100-6dcd-4205-b3f1-bdf7a6f9808a": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "<br><center>Sold By: <b>Kamerastore<\/b> <div class=\"reputon-google-reviews-widget\" id=\"279cdae0-118f-11ed-b220-85918cb29862\" style=\"display: flex; justify-content: center;\"><\/div>\n<a href=\"\/pages\/company-info\"><div class=\"link\">Registered Business<\/div><\/a>"
-          }
         }
       },
       "block_order": [
@@ -164,14 +163,14 @@
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
         "84e5043e-218f-459d-8feb-1bc2c1888825",
         "buy_buttons",
-        "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e",
+        "6390337e-fa73-472f-a5f7-2ddbf054cc93",
         "6d2da93a-18a0-4967-822c-ac2a3fe1a79f",
+        "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "2c639f92-55f6-40f5-8cff-21157d005727",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
         "68432eec-9888-4c80-8923-910130f65bc2",
-        "57f7f440-8529-43fc-b001-797465faabcf",
-        "19cde100-6dcd-4205-b3f1-bdf7a6f9808a"
+        "57f7f440-8529-43fc-b001-797465faabcf"
       ],
       "settings": {
         "product_role": "stock",
@@ -188,12 +187,14 @@
       "blocks": {
         "ab4f859b-f022-4c4a-ab92-f189f7557a56": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Description"
           }
         },
         "1f0b3efd-c98f-482c-b84c-6da7bb0be101": {
           "type": "main_stock_description",
+          "disabled": true,
           "settings": {
           }
         },

@@ -112,6 +112,11 @@
             "cutoff_message": "Order within"
           }
         },
+        "b60c169b-ddf8-49fc-9aa3-faf05c4a2f06": {
+          "type": "shopify:\/\/apps\/estimated-delivery-date-plus\/blocks\/delivery_coder_theme\/4a0685bc-c234-45b2-8382-5ad6a8e3e3fd",
+          "settings": {
+          }
+        },
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb": {
           "type": "custom_liquid",
           "settings": {
@@ -135,11 +140,6 @@
             "content": "<p>Our technicians use the appropriate tools to check every item's function and we use these results to assign ratings of 1 to 5. Cosmetic condition can be determined by each customer by viewing the photos.<\/p><p><a href=\"\/pages\/camera-condition-ratings\" target=\"_blank\" title=\"Camera Condition Ratings\">How we Rate Cameras<\/a><\/p>",
             "page": "",
             "icon": "star"
-          }
-        },
-        "b60c169b-ddf8-49fc-9aa3-faf05c4a2f06": {
-          "type": "shopify:\/\/apps\/estimated-delivery-date-plus\/blocks\/delivery_coder_theme\/4a0685bc-c234-45b2-8382-5ad6a8e3e3fd",
-          "settings": {
           }
         },
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b": {
@@ -235,10 +235,10 @@
         "a56084d7-2640-4571-ac8a-00acd97302f5",
         "7a257909-f1dc-40af-8a11-a540c40d8792",
         "54f26b05-dab7-4626-85fc-f3053650fa51",
+        "b60c169b-ddf8-49fc-9aa3-faf05c4a2f06",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
         "6ff4987b-8f35-4a2e-89e3-3f40f342da38",
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
-        "b60c169b-ddf8-49fc-9aa3-faf05c4a2f06",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
         "ac7cacf6-525f-4b65-8e19-6ff4628b62b5",

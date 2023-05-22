@@ -234,7 +234,7 @@
       "settings": {
         "title": "",
         "image_width": "full",
-        "image_ratio": "square",
+        "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "none",
         "button_label": "",

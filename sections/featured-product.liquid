@@ -6,7 +6,7 @@
 
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
-{%- assign product = section.settings.product -%}
+{%- assign product = section.settings.product -%}{% render "estimated-delivery-days-homepage" | product:product %}
 
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model -%}

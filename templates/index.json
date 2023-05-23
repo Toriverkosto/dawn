@@ -245,7 +245,7 @@
     "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"page-width page-width--wide\"> <center><H2>Over {{collections['new-last-7-days'].all_products_count}} items added in the last 7 days <\/H2><\/center><\/div>"
+        "custom_liquid": "<div class=\"page-width page-width--wide\"> <center><H2>{{ 'sections.featured_collection.over' | t }} {{collections['new-last-7-days'].all_products_count}} {{ 'sections.featured_collection.items_added' | t }} <\/H2><\/center><\/div>"
       }
     },
     "1660560902df48f128": {

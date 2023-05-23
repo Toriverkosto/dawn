@@ -89,8 +89,8 @@
         "48ee7728-8417-4970-8107-c101cf8d940b": {
           "type": "text",
           "settings": {
-            "text": "Description, Shipping, & Availability",
-            "text_style": "subtitle"
+            "text": "Description, Shipping, & Availability:",
+            "text_style": "body"
           }
         },
         "1aaf6d3e-830e-4544-959c-fd0a270a2f13": {

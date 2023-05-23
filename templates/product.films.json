@@ -46,6 +46,11 @@
             "show_dynamic_checkout": true
           }
         },
+        "f1d133ca-bb1a-486d-8546-48fab9f42b3c": {
+          "type": "shopify:\/\/apps\/estimated-delivery-date-plus\/blocks\/delivery_coder_theme\/4a0685bc-c234-45b2-8382-5ad6a8e3e3fd",
+          "settings": {
+          }
+        },
         "ec88d254-bbe8-4b70-a8ba-4e63f56ef136": {
           "type": "shopify:\/\/apps\/cw-back-in-stock-restock-alert\/blocks\/product-restore-email\/b190bced-3b7b-47da-a05f-6ea4821c3a77",
           "settings": {
@@ -161,6 +166,7 @@
         "quantity_selector",
         "3c9d3c18-0a30-49f4-ad09-63143e81c26b",
         "buy_buttons",
+        "f1d133ca-bb1a-486d-8546-48fab9f42b3c",
         "ec88d254-bbe8-4b70-a8ba-4e63f56ef136",
         "ff1bb9c6-eb65-4ae0-a2ab-b42152660aae",
         "d031b056-55bf-4778-a201-0c5d8ab0e178",
@@ -213,16 +219,6 @@
     },
     "1681805765d28fced9": {
       "type": "apps",
-      "blocks": {
-        "1c0e939b-d95e-46ae-b831-68c64c6b2233": {
-          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "1c0e939b-d95e-46ae-b831-68c64c6b2233"
-      ],
       "settings": {
         "include_margins": true
       }

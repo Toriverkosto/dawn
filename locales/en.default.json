@@ -248,7 +248,9 @@
     },
     "featured_collection": {
       "view_all": "View all",
-      "view_all_label": "View all products in the {{ collection_name }} collection"
+      "view_all_label": "View all products in the {{ collection_name }} collection",
+      "over": "Over ",
+      "items_added": "items added in the last 7 days"
     },
     "weekly-news": {
       "popular": "Popular",

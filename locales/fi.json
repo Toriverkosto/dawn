@@ -246,8 +246,8 @@
     "featured_collection": {
       "view_all": "Näytä kaikki",
       "view_all_label": "Näytä kaikki tuotteet kokoelmassa {{ collection_name }}",
-      "over": "Yli ",
-      "items_added": "tuotetta lisätty 7 päivän aikana"
+      "over": " ",
+      "items_added": "tuotetta listattu viimeisen viikon sisään:"
     },
     "collection_list": {
       "view_all": "Näytä kaikki"

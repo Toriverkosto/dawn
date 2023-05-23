@@ -75,6 +75,13 @@
             "show_dynamic_checkout": true
           }
         },
+        "a56084d7-2640-4571-ac8a-00acd97302f5": {
+          "type": "text",
+          "settings": {
+            "text": "Description, Shipping, & Availability",
+            "text_style": "body"
+          }
+        },
         "7a257909-f1dc-40af-8a11-a540c40d8792": {
           "type": "description",
           "settings": {
@@ -89,14 +96,6 @@
           "type": "custom_liquid",
           "settings": {
             "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"film-cameras\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n          <span class=\"inventoryLocationLoading\"> <\/span>\n          <\/div>\n{% endunless %}"
-          }
-        },
-        "a56084d7-2640-4571-ac8a-00acd97302f5": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Description, Stock, & Shipping:",
-            "text_style": "uppercase"
           }
         },
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6": {
@@ -199,10 +198,10 @@
         "b105008f-85ff-43bc-aa96-e0bce264719b",
         "4f0717e0-34d7-44d7-9543-6fdf50a55941",
         "buy_buttons",
+        "a56084d7-2640-4571-ac8a-00acd97302f5",
         "7a257909-f1dc-40af-8a11-a540c40d8792",
         "b60c169b-ddf8-49fc-9aa3-faf05c4a2f06",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
-        "a56084d7-2640-4571-ac8a-00acd97302f5",
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "a4908876-2ec2-4049-8519-f88aac2c716e",

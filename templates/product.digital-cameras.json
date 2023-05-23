@@ -79,8 +79,8 @@
         "d42e2020-eb65-474b-a1b3-ec14c6f0260c": {
           "type": "text",
           "settings": {
-            "text": "Description, Stock, & Shipping:",
-            "text_style": "uppercase"
+            "text": "Description, Shipping, & Availability:",
+            "text_style": "subtitle"
           }
         },
         "0aca0f68-e621-4426-be68-da5725ed0ae3": {
@@ -92,6 +92,11 @@
           "type": "custom_liquid",
           "settings": {
             "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"supplies\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script> {% endif %}{% endif %} \n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n         <\/div>\n{% endunless %}"
+          }
+        },
+        "897a2ec3-fb00-41fe-b868-ae51b8f7f944": {
+          "type": "shopify:\/\/apps\/estimated-delivery-date-plus\/blocks\/delivery_coder_theme\/4a0685bc-c234-45b2-8382-5ad6a8e3e3fd",
+          "settings": {
           }
         },
         "235b8cd5-c263-4cde-9104-81a9203d4384": {
@@ -192,6 +197,7 @@
         "d42e2020-eb65-474b-a1b3-ec14c6f0260c",
         "0aca0f68-e621-4426-be68-da5725ed0ae3",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
+        "897a2ec3-fb00-41fe-b868-ae51b8f7f944",
         "235b8cd5-c263-4cde-9104-81a9203d4384",
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",

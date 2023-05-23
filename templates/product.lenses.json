@@ -70,12 +70,17 @@
         "6390337e-fa73-472f-a5f7-2ddbf054cc93": {
           "type": "text",
           "settings": {
-            "text": "Description, Stock, & Shipping:",
-            "text_style": "uppercase"
+            "text": "Description, Shipping, & Availability:",
+            "text_style": "body"
           }
         },
         "6d2da93a-18a0-4967-822c-ac2a3fe1a79f": {
           "type": "description",
+          "settings": {
+          }
+        },
+        "7c75f502-9e54-4783-a74a-5c3c00f20b91": {
+          "type": "shopify:\/\/apps\/estimated-delivery-date-plus\/blocks\/delivery_coder_theme\/4a0685bc-c234-45b2-8382-5ad6a8e3e3fd",
           "settings": {
           }
         },
@@ -165,6 +170,7 @@
         "buy_buttons",
         "6390337e-fa73-472f-a5f7-2ddbf054cc93",
         "6d2da93a-18a0-4967-822c-ac2a3fe1a79f",
+        "7c75f502-9e54-4783-a74a-5c3c00f20b91",
         "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "2c639f92-55f6-40f5-8cff-21157d005727",

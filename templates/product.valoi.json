@@ -131,8 +131,19 @@
         },
         "94f403ff-3385-43d7-865b-0b0000459f54": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<div class=\"page-width page-width--narrow\">\n<\/h3>{{ product.description }}<\/div>"
+          }
+        },
+        "18a3421d-6422-487a-902a-971fbbce1328": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "6c3046f5-734c-4371-b0f0-16de9e0b39ed": {
+          "type": "shopify:\/\/apps\/estimated-delivery-date-plus\/blocks\/delivery_coder_theme\/4a0685bc-c234-45b2-8382-5ad6a8e3e3fd",
+          "settings": {
           }
         },
         "f8b9a89d-8fdd-4b79-b6e1-80fbde58346d": {
@@ -207,12 +218,6 @@
             "page": "about-valoi",
             "show_button": false
           }
-        },
-        "3fd89d45-91cf-4c28-8380-d3502818c3c6": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<br><center>Sold By: <b>Kamerastore<\/b> <div class=\"reputon-google-reviews-widget\" id=\"279cdae0-118f-11ed-b220-85918cb29862\" style=\"display: flex; justify-content: center;\"><\/div>\n<a href=\"\/pages\/company-info\"><div class=\"link\">Registered Business<\/div><\/a><br>"
-          }
         }
       },
       "block_order": [
@@ -228,13 +233,14 @@
         "buy_buttons",
         "80fbe6e3-0e56-4ee6-be9c-6a5e5c5f985c",
         "94f403ff-3385-43d7-865b-0b0000459f54",
+        "18a3421d-6422-487a-902a-971fbbce1328",
+        "6c3046f5-734c-4371-b0f0-16de9e0b39ed",
         "f8b9a89d-8fdd-4b79-b6e1-80fbde58346d",
         "a5a11cfe-80a9-4294-953b-395acd66d02f",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
         "621c4599-3a2c-4d60-a6f4-630ef05bfba3",
-        "9b20a83b-fe5d-4d60-80fb-5e93ee1a61c2",
-        "3fd89d45-91cf-4c28-8380-d3502818c3c6"
+        "9b20a83b-fe5d-4d60-80fb-5e93ee1a61c2"
       ],
       "settings": {
         "product_role": "stock",
@@ -254,16 +260,6 @@
     },
     "16818063324869b93d": {
       "type": "apps",
-      "blocks": {
-        "ae4d63bf-8818-4db5-a865-861818c84fd6": {
-          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "ae4d63bf-8818-4db5-a865-861818c84fd6"
-      ],
       "settings": {
         "include_margins": true
       }

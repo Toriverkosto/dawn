@@ -198,8 +198,53 @@
         "show_text_below": true
       }
     },
+    "multi_column": {
+      "type": "multicolumn",
+      "blocks": {
+        "column3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tethering_20220916__1042735_WEB.jpg",
+            "title": "Scan Your Film Negatives",
+            "text": "<p>Now you can make professional scans of your film negatives from your own home in just minutes. Save money and save time with Kamerastore's very own Valoi 360 system.<\/p><p><a href=\"\/collections\/valoi-360\" title=\"Valoi 360\">See Products<\/a><\/p>"
+          }
+        },
+        "column1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kamerastore_all_cameras_ad.jpg",
+            "title": "Our Products",
+            "text": "<p>We sell quality used film cameras, lenses, accessories, film, adapters, and digital gear. Over 14,000 items in stock with dozens added daily.<\/p><p><a href=\"\/collections\/all-items\" title=\"All Items\">Newly Listed<\/a><\/p>"
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/flatlayig-111AH.jpg",
+            "title": "Sell or Trade",
+            "text": "<p>We are interested in buying almost all types of camera gear. Get a free quote with no selling commitment. <\/p><p><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\">Get a Quote<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "column3",
+        "column1",
+        "column2"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": true
+      }
+    },
     "3c66629c-89ee-411b-ace0-54c61df25f36": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "template--15243804115142__3c66629c-89ee-411b-ace0-54c61df25f36-168448207203298fd4-0": {
           "type": "column",
@@ -262,51 +307,6 @@
         "show_image_outline": true,
         "show_vendor": true,
         "show_rating": false
-      }
-    },
-    "multi_column": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "column3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Tethering_20220916__1042735_WEB.jpg",
-            "title": "Scan Your Film Negatives",
-            "text": "<p>Now you can make professional scans of your film negatives from your own home in just minutes. Save money and save time with Kamerastore's very own Valoi 360 system.<\/p><p><a href=\"\/collections\/valoi-360\" title=\"Valoi 360\">See Products<\/a><\/p>"
-          }
-        },
-        "column1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Kamerastore_all_cameras_ad.jpg",
-            "title": "Our Products",
-            "text": "<p>We sell quality used film cameras, lenses, accessories, film, adapters, and digital gear. Over 14,000 items in stock with dozens added daily.<\/p><p><a href=\"\/collections\/all-items\" title=\"All Items\">Newly Listed<\/a><\/p>"
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/flatlayig-111AH.jpg",
-            "title": "Sell or Trade",
-            "text": "<p>We are interested in buying almost all types of camera gear. Get a free quote with no selling commitment. <\/p><p><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\">Get a Quote<\/a><\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "column3",
-        "column1",
-        "column2"
-      ],
-      "settings": {
-        "title": "",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": true
       }
     },
     "1683891361046b7454": {
@@ -701,10 +701,10 @@
     "b7f435c5-c4b1-48ef-ae36-13d31e15ecb0",
     "f9ddfc6e-43fd-448b-b981-034c96684a0b",
     "ab2bb2f3-2333-4123-98ed-40aacfc16ad6",
+    "multi_column",
     "3c66629c-89ee-411b-ace0-54c61df25f36",
     "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe",
     "1660560902df48f128",
-    "multi_column",
     "1683891361046b7454",
     "16590912674b072be6",
     "16681567159a25ad0d",

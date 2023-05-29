@@ -272,19 +272,20 @@
     "16818057075a8347c3": {
       "type": "apps",
       "blocks": {
-        "221f0f5b-4ed7-43f2-b356-b6a9c76a73d5": {
-          "type": "shopify:\/\/apps\/tinyicons\/blocks\/icon-blocks\/bc09a887-3864-462a-90ef-3be848234374",
+        "b8db5975-09e5-4ab4-9cbb-8a09c93131df": {
+          "type": "shopify:\/\/apps\/guarantees-features-icons\/blocks\/app-block\/f266baeb-ce2c-482c-9bf1-f719b4920aaa",
+          "disabled": true,
           "settings": {
-            "chicons_block_id": "c04e0eee9021ba9b60c77247e68649",
-            "padding_top": 0,
-            "padding_bottom": 0,
-            "margin_top": 0,
-            "margin_bottom": 0
+            "block_id": "ccddbbb4-f883-4c3c-b666-935c38309c04",
+            "spacing_top": 0,
+            "spacing_bottom": 0,
+            "spacing_left": 0,
+            "spacing_right": 0
           }
         }
       },
       "block_order": [
-        "221f0f5b-4ed7-43f2-b356-b6a9c76a73d5"
+        "b8db5975-09e5-4ab4-9cbb-8a09c93131df"
       ],
       "settings": {
         "include_margins": true

@@ -269,12 +269,49 @@
       "settings": {
       }
     },
+    "17d8b2b8-2ef1-435c-a182-ac2679714d92": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "template--15243804606662__17d8b2b8-2ef1-435c-a182-ac2679714d92-1685347982168e958b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Product Condition",
+            "heading_size": "h1"
+          }
+        },
+        "template--15243804606662__17d8b2b8-2ef1-435c-a182-ac2679714d92-1685347982168e958b-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--15243804606662__17d8b2b8-2ef1-435c-a182-ac2679714d92-1685347982168e958b-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804606662__17d8b2b8-2ef1-435c-a182-ac2679714d92-1685347982168e958b-0",
+        "template--15243804606662__17d8b2b8-2ef1-435c-a182-ac2679714d92-1685347982168e958b-1",
+        "template--15243804606662__17d8b2b8-2ef1-435c-a182-ac2679714d92-1685347982168e958b-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "16818057075a8347c3": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "b8db5975-09e5-4ab4-9cbb-8a09c93131df": {
           "type": "shopify:\/\/apps\/guarantees-features-icons\/blocks\/app-block\/f266baeb-ce2c-482c-9bf1-f719b4920aaa",
-          "disabled": true,
           "settings": {
             "block_id": "ccddbbb4-f883-4c3c-b666-935c38309c04",
             "spacing_top": 0,
@@ -489,6 +526,7 @@
   "order": [
     "main",
     "16579008498f69713d",
+    "17d8b2b8-2ef1-435c-a182-ac2679714d92",
     "16818057075a8347c3",
     "ee23c372-910f-47bd-9d3f-634191bdd9ba",
     "1658753086970be4d5",

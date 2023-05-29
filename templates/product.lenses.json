@@ -262,6 +262,16 @@
     },
     "16818058105c21f955": {
       "type": "apps",
+      "blocks": {
+        "68a03075-ddfd-4115-86d6-8585ff64d33e": {
+          "type": "shopify:\/\/apps\/pretty-product-pages\/blocks\/app-block\/45643823-632e-46d7-999d-83cb9fb0e0c0",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "68a03075-ddfd-4115-86d6-8585ff64d33e"
+      ],
       "settings": {
         "include_margins": true
       }

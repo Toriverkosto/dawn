@@ -91,8 +91,12 @@
   table.rg-table th.number, td.number {
     text-align: right;
   }
-  table.rg-table th.image, td.image {
+  table.rg-table th.image, td.image, th.quality-control, td.quality-control {
     text-align: center;
+  }
+
+  table.rg-table td.quality-control {
+    margin: 0;
   }
 
   /* media queries */
@@ -148,6 +152,9 @@
       border-bottom: 1px dotted #ccc;
       text-align: right;
     }
+    table.rg-table td.quality-control {
+      padding: 0.5em 0 0.2em 0;
+    }
     table.rg-table td[data-title]:before {
       content: attr(data-title);
       font-weight: bold;
@@ -196,9 +203,7 @@
           <tr>
             <th class="text">Date Sold</th>
             <th class="text">SKU</th>
-            <th class="text">Mechanics</th>
-            <th class="text">Optics</th>
-            <th class="text">Cosmetics</th>
+            <th class="quality-control">Quality Control</th>
             <th class="number">Price</th>
             <th class="image">Image</th>
           </tr>
@@ -212,13 +217,9 @@
               <tr class="available-product" onclick="window.location='{{ product.url }}';">
                 <td class="text date-sold" data-title="Date Sold">Available</td>
                 <td class="text" data-title="SKU">{{ product.selected_or_first_available_variant.sku }}</td>
-                {% assign condition = product.metafields.kameratori.condition.value %}
 
-                {% assign mechanical = condition.mechanical | append: "" %}
-                <td class="text" data-title="Mechanics">{{ condition_map[mechanical] }}</td>
-                {% assign optical = condition.optical | append: "" %}
-                <td class="text" data-title="Optics">{{ condition_map[optical] }}</td>
-                <td class="text" data-title="Cosmetics">{{ condition.cosmetic }}/5</td>
+                {% assign quality_control = product.metafields.kameratori.quality_control.value %}
+                <td class="quality-control">{%- render 'qc-badge', value: quality_control -%}</td>
 
                 <td class="number" data-title="Price">{{ product.selected_or_first_available_variant.price | money }}</td>
                 <td class="image" data-title="Image">
@@ -234,11 +235,7 @@
               <tr>
                 <td class="text" data-title="Date Sold">{{ sale.sold_at | date : "%d %b %Y" }}</td>
                 <td class="text" data-title="SKU">{{ sale.sku }}</td>
-                {% assign mechanical = sale.condition.mechanical | append: "" %}
-                <td class="text" data-title="Mechanics">{{ condition_map[mechanical] }}</td>
-                {% assign optical = sale.condition.optical | append: "" %}
-                <td class="text" data-title="Optics">{{ condition_map[optical] }}</td>
-                <td class="text" data-title="Cosmetics">{{ sale.condition.cosmetic }}/5</td>
+                <td class="quality-control">{%- render 'qc-badge', value: sale.quality_control_value -%}</td>
                 <td class="number" data-title="Price">€&nbsp;{{ sale.price | times: 100 | money_without_currency }}</td>
                 <td class="image" data-title="Image">
                   <a href="{{ sale.image.src }}" target="_blank">

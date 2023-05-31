@@ -1,0 +1,65 @@
+{{ 'section-quality-control.css' | asset_url | stylesheet_tag }}
+<div class="quality-control__info">
+  <div class="quality-control__wrapper">
+{%- for block in section.blocks -%}
+{%- case block.type -%}
+  {%- when 'qc_passed_badge' and -%}
+    {%- if block.settings.passed -%}
+    <div class="quality-control__badge">
+        {%- render 'qc-badge', value: "Passed" -%}
+    </div>
+    {%- endif -%}
+  {%- when 'qc_passed_description' -%}
+    <div class="quality-control__container--passed">
+      <div class="quality-control__description">
+        {{ block.settings.passed_text }}
+      </div>
+    </div>
+{%- endcase -%}
+{%- endfor -%}
+  </div>
+</div>
+{% schema %}
+{
+  "name": "QC Passed Section",
+  "presets": [
+    {
+      "name": "QC Passed Section",
+      "category": "ADVANCED LAYOUT",
+    "blocks": [
+        {
+          "type": "qc_passed_badge"
+        },
+        {
+          "type": "qc_passed_description"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "qc_passed_badge",
+      "name": "QC-Passed Badge",
+      "settings": [{
+          "type": "checkbox",
+          "id": "passed",
+          "label": "t:sections.qc_passed.blocks.qc_passed_badge.settings.passed.label",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "qc_passed_description",
+      "name": "QC Passed Description",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "passed_text",
+          "default": "<p> Tested, inspected, cleaned and working with no significant flaws. These items can be considered “ready to use” for their intended purpose. Minor flaws are possible and are noted in the product description. </p>",
+          "label": "t:sections.qc_passed.blocks.qc_passed_description.settings.passed_text.label"
+         }
+        ]
+      }
+    ]
+  }
+{% endschema %}

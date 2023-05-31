@@ -207,6 +207,7 @@
                             </div>
                           </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
                 {%- endif -%}
               {%- endfor -%}
               {% comment %} Here starts the quality_control_new-section, change logic that it shows when item has QC-value {% endcomment %}
@@ -287,6 +288,8 @@
                   {{ block.settings.content_new1 }}
                 </div>
 =======
+=======
+>>>>>>> ccac1f3 (Change language files and accordion styling)
                         </summary>
 
                         <div class="quality-control__description">
@@ -313,7 +316,91 @@
               {%- endif -%}
             {%- endfor -%}
 
+<<<<<<< HEAD
 >>>>>>> 9bdca95 (QC section updates:)
+=======
+=======
+                {%- endif -%}
+              {%- endfor -%}
+              {% comment %} Here starts the quality_control_new-section, change logic that it shows when item has QC-value {% endcomment %}
+              {%- when 'quality_control_new' -%}
+            {% comment %} Remember to add != 'New/Exempt' when decided which tag will be used {% endcomment %}
+
+            {% comment %}
+            {%- if quality_control_value == qc.title -%}
+            <div class="chosen">
+           </div>
+            {%- endif -%}
+            {% endcomment %}
+            {% comment %} if product.metafields.kameratori.quality_control.value != 'Error-QC' and product.metafields.kameratori.quality_control.value != blank {% endcomment %}
+              {%- for t in product.tags -%}
+                  {%- assign tag = t -%}
+                    {%- if tag contains 'QC-' and tag != 'QC-Exempt' -%}
+                      {%- assign quality_control_value = tag | remove_first: "QC-"-%}
+                          <div class="qc-container">
+                                  {%- if quality_control_value=="Passed" -%}
+                                  {% assign qcs = shop.metaobjects.quality_control.values %}
+                                  {% for qc in qcs %}
+                                  {% if quality_control_value == qc.title %}
+                                  <div class="quality-control-dropdown--chosen">
+                                  {% elsif quality_control_value != qc.title%}
+                                  <div class="quality-control-dropdown">
+                                  {% endif %}
+                                      <div class="accordion" {{ block.shopify_attributes }}>
+                                        <div class="quality-control-new">
+                                        <details>
+                                          <summary>
+                                            <div class="quality-control__title-container">
+                                              <div class="badger">      
+                                              {%- if quality_control_value == qc.title and qc.title == "Passed" -%}
+                                              {% render 'qc-badge-small-passed-color' %}
+                                              {%- elsif quality_control_value == qc.title and qc.title == "Not Passed" -%}
+                                              {% render 'qc-badge-small-not-passed-color' %}
+                                              {%- elsif quality_control_value == qc.title and qc.title == "Certified" -%}
+                                              {% render 'qc-badge-small-certified-color' %}
+                                              {%- elsif quality_control_value == qc.title and qc.title == "Restored" -%}
+                                              {% render 'qc-badge-small-restored-color' %}
+                                              {%- elsif quality_control_value != qc.title and qc.title == "Passed" -%}
+                                              {% render 'qc-badge-small-passed' %}
+                                              {%- elsif quality_control_value != qc.title and qc.title == "Not Passed" -%}
+                                              {% render 'qc-badge-small-not-passed' %}
+                                              {%- elsif quality_control_value != qc.title and qc.title == "Certified" -%}
+                                              {% render 'qc-badge-small-certified' %}
+                                              {%- elsif quality_control_value != qc.title and qc.title == "Restored" -%}
+                                              {% render 'qc-badge-small-restored' %}
+                                              {% endif %}
+                                            </div> 
+                                              <div class="quality-control__title">
+                                                {% assign handle = qc.title | downcase|replace: " ", "-" %}
+                                                {% assign collection_handle = "qc-" | append: handle %}
+                                                {% assign qc_collection = collections[collection_handle] %}
+                                              {{ qc.title }}
+                                              <div class="test">(
+                                             <a href="/collections/{{collection_handle}}">{{ qc_collection.all_products_count }}</a>)
+                                            </div>
+                                             </div>
+                                             <div class="quality-control__title-container-badge">
+                                            {%- render 'icon-caret' -%}
+                                            </div>
+                                            </div>
+                                          </summary>
+                                          <div class="quality-control__description_new">
+                                          {{ qc.description_medium }}
+                                         </div>
+                                        </details>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  {% endfor %}                      
+                            </div>
+                  {%- endif -%}
+                  {%- endif -%}
+                {% endfor %}
+                <div class="qc-container">
+                  {{ block.settings.content_new1 }}
+                </div>
+>>>>>>> d36b593 (Add language files and change accordion styling)
+>>>>>>> ccac1f3 (Change language files and accordion styling)
           {%- when 'quantity_selector' -%}
             <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
               <label class="form__label" for="Quantity-{{ section.id }}">

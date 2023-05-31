@@ -1,0 +1,60 @@
+{{ 'section-qc-new.css' | asset_url | stylesheet_tag }}
+{%- for block in section.blocks -%}
+{%- case block.type -%}
+  {%- when 'qc_certified_badge' and -%}
+    {%- if block.settings.certified -%}
+    <div class="testi">
+      {%- render 'qc-badge-certified' -%}
+      <h1>TOIMII</h1>
+    </div>
+    {%- endif -%}
+{%- endcase -%}
+{%- endfor -%}
+<div class="testi">
+    <h1>
+</div>
+{% schema %}
+{
+  "name": "QC New",
+  "presets": [
+    {
+      "name": "QC New Section",
+      "category": "ADVANCED LAYOUT",
+    "blocks": [
+        {
+          "type": "qc_certified_badge"
+        },
+        {
+          "type": "qc_certified_description"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "qc_certified_badge",
+      "name": "QC-Certified Badge",
+      "settings": [{
+          "type": "checkbox",
+          "id": "certified",
+          "label": "t:sections.qc_certified.blocks.qc_certified_badge.settings.certified.label",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "qc_certified_description",
+      "name": "QC Certified Description",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "certified_text",
+          "default": "<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>",
+          "label": "t:sections.qc_certified.blocks.qc_certified_description.settings.certified_text.label"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+

@@ -209,6 +209,11 @@
         "text": "Read more about our ratings"
       }
     },
+    "quality_control_new": {
+      "link": {
+        "text": "Read More"
+      }
+    },
     "cart": {
       "title": "Your cart",
       "caption": "Cart items",

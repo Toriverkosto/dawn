@@ -1471,6 +1471,24 @@
             }
           }
         },
+        "quality_control_new": {
+          "name": "Quality Control New",
+          "settings": {
+            "heading": {
+              "info": "Include a heading that explains the content.",
+              "label": "Heading"
+            },
+            "content_passed": {
+              "label": "Tab content for passed"
+            },
+            "content_not_passed": {
+              "label": "Tab content for not passed"
+            },
+            "content_new1": {
+              "label": "Contents"
+            }
+          }
+        },
         "collapsible_tab": {
           "name": "Collapsible tab",
           "settings": {

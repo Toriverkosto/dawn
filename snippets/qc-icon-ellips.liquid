@@ -1,0 +1,9 @@
+{%- if value == 'Passed' -%}
+  {%- render 'icon-passed-ellips' -%}
+{% elsif value == 'Not Passed' %}
+  {%- render 'icon-not-passed-ellips' -%}
+{% comment %}{% elsif value == 'Certified' %}{% endcomment %}
+  {% comment %}...{% endcomment %}
+{% elsif value == 'Reconditioned' %}
+  {%- render 'icon-reconditioned-ellips' -%}
+{%- endif -%}

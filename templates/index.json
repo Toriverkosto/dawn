@@ -636,82 +636,8 @@
         "custom_liquid": "<div class=\"tagcloud page-width page-width--wide\">\n\t<a class=\"pill\" href=\"\/collections\/canon-ef\">Canon EF ({{ collections['canon-ef'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/canon-ef-s\">Canon EF-S ({{ collections['canon-ef-s'].all_products_count }})<\/a>\n\t<a class=\"pill important\" href=\"\/collections\/canon-fd\">Canon FD ({{ collections['canon-fd'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/contax-g\">Contax G ({{ collections['contax-g'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/contax-yashica\">Contax\/Yashica ({{ collections['contax-yashica'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/fuji-x\">Fuji X ({{ collections['fuji-x'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/hasselblad-h\">Hasselblad H ({{ collections['hasselblad-h'].all_products_count }})<\/a>\n\t<a class=\"pill important\" href=\"\/collections\/hasselblad-v\">Hasselblad V ({{ collections['hasselblad-v'].all_products_count }})<\/a>\n\t<a class=\"pill important\" href=\"\/collections\/leica-m\">Leica M ({{ collections['leica-m'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/leica-ltm-m39\">LTM\/M39 ({{ collections['leica-ltm-m39'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/leica-r\">Leica R ({{ collections['leica-r'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/mamiya-645\">Mamiya 645 ({{ collections['mamiya-645'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/mamiya-rb67\">Mamiya RB67 ({{ collections['mamiya-rb67'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/mamiya-rz67\">Mamiya RZ67 ({{ collections['mamiya-rz67'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/minolta-af\">Minolta AF ({{ collections['minolta-af'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/minolta-md-sr-mount\">Minolta MD\/SR ({{ collections['minolta-md-sr-mount'].all_products_count }})<\/a>\n\n\n<a class=\"pill\" href=\"\/collections\/nikon-dx\">Nikon DX ({{ collections['nikon-dx'].all_products_count }})<\/a>\n\n<a class=\"pill important\" href=\"\/collections\/nikon-f\">Nikon F ({{ collections['nikon-f'].all_products_count }})<\/a>\n\n<a class=\"pill\" href=\"\/collections\/micro-four-thirds-m4-3\">M4\/3 ({{ collections['micro-four-thirds'].all_products_count }})<\/a>\n\n<a class=\"pill important\" href=\"\/collections\/olympus-om\">Olympus OM ({{ collections['olympus-om'].all_products_count }})<\/a>\n\n<a class=\"pill\" href=\"\/collections\/pentax-645\">Pentax 645 ({{ collections['pentax-645'].all_products_count }})<\/a>\n\n<a class=\"pill\" href=\"\/collections\/pentax-6x7\">Pentax 6x7 ({{ collections['pentax-6x7'].all_products_count }})<\/a>\n\n<a class=\"pill important\" href=\"\/collections\/pentax-K\">Pentax K ({{ collections['pentax-k'].all_products_count }})<\/a>\n\n<a class=\"pill\" href=\"\/collections\/m42\">M42 ({{ collections['m42'].all_products_count }})<\/a>\n\n\n<a class=\"pill\" href=\"\/collections\/sony-a\">Sony A({{ collections['sony-a'].all_products_count }})<\/a>\n\n<a class=\"pill\" href=\"\/collections\/sony-e\">Sony E({{ collections['sony-e'].all_products_count }})<\/a>\n\n<a class=\"pill important\" href=\"\/collections\/sony-fe\">Sony FE({{ collections['sony-fe'].all_products_count }})<\/a>\n\n<\/div>"
       }
     },
-    "1632819284873cdad3": {
-      "type": "collection-list",
-      "disabled": true,
-      "blocks": {
-        "1632819284873cdad3-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "slr-dslr-lenses"
-          }
-        },
-        "1632819284873cdad3-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "mirrorless-lenses"
-          }
-        },
-        "1632819284873cdad3-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "rangefinder-lenses"
-          }
-        },
-        "a1900220-f428-4876-879a-09b7173cca60": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "medium-format-lenses"
-          }
-        },
-        "27e6b5e1-3b5d-4687-8312-ec85a94fcd20": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "large-format-lenses"
-          }
-        },
-        "e3fa11ab-0fe0-4425-ac96-a3058b9617b9": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "other-lenses"
-          }
-        }
-      },
-      "block_order": [
-        "1632819284873cdad3-0",
-        "1632819284873cdad3-1",
-        "1632819284873cdad3-2",
-        "a1900220-f428-4876-879a-09b7173cca60",
-        "27e6b5e1-3b5d-4687-8312-ec85a94fcd20",
-        "e3fa11ab-0fe0-4425-ac96-a3058b9617b9"
-      ],
-      "settings": {
-        "title": "Lenses",
-        "image_ratio": "square",
-        "color_scheme": "background-2",
-        "swipe_on_mobile": true,
-        "image_padding": false,
-        "show_view_all": false
-      }
-    },
     "16853512478aabdfe2": {
       "type": "apps",
-      "blocks": {
-        "56dd0f1e-105d-4850-8756-1253e212c1b3": {
-          "type": "shopify:\/\/apps\/guarantees-features-icons\/blocks\/app-block\/f266baeb-ce2c-482c-9bf1-f719b4920aaa",
-          "disabled": true,
-          "settings": {
-            "block_id": "ccddbbb4-f883-4c3c-b666-935c38309c04",
-            "spacing_top": 0,
-            "spacing_bottom": 0,
-            "spacing_left": 0,
-            "spacing_right": 0
-          }
-        }
-      },
-      "block_order": [
-        "56dd0f1e-105d-4850-8756-1253e212c1b3"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -741,7 +667,6 @@
     "16627241848ff0f7e4",
     "1655878837fa505e49",
     "1637242258da800a0c",
-    "1632819284873cdad3",
     "16853512478aabdfe2"
   ]
 }

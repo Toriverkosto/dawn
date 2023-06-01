@@ -39,10 +39,27 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "b86b251c-ef33-47f6-878e-3e4c4440f386": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Products labeled: \"Not Passed\"",
+        "collection": "bargain-cameras-lenses-accessories",
+        "products_to_show": 12,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": false
+      }
     }
   },
   "order": [
     "eb4fda55-89bc-4a91-bd79-e52e19a68b6e",
-    "main"
+    "main",
+    "b86b251c-ef33-47f6-878e-3e4c4440f386"
   ]
 }

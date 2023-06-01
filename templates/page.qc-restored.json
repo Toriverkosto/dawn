@@ -39,10 +39,27 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "04609667-588d-452e-b55c-2b74242494ff": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
     }
   },
   "order": [
     "eb4fda55-89bc-4a91-bd79-e52e19a68b6e",
-    "main"
+    "main",
+    "04609667-588d-452e-b55c-2b74242494ff"
   ]
 }

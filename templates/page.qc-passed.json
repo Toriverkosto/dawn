@@ -6,13 +6,13 @@
         "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-0": {
           "type": "heading",
           "settings": {
-            "heading": "Restored"
+            "heading": "\"Passed\" Camera Gear"
           }
         },
         "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Tested & inspected, special machinery not required. Delivered cleaned and working with no significant flaws. Minor flaws possible, noted in description.<\/p>"
           }
         },
         "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-2": {
@@ -29,8 +29,8 @@
         "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/QC_Images-04238-WEB2048.jpg",
-        "height": "small",
+        "image": "shopify:\/\/shop_images\/QC_Images-04194-WEB2048.jpg",
+        "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first"
       }

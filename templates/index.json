@@ -599,6 +599,7 @@
     },
     "01b71a4b-88ef-4d8e-99e3-4f45077911c9": {
       "type": "featured-product",
+      "disabled": true,
       "blocks": {
         "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-0": {
           "type": "text",
@@ -630,21 +631,10 @@
             "picker_type": "button"
           }
         },
-        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-5": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
         "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-6": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true
-          }
-        },
-        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-7": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
           }
         }
       },
@@ -654,9 +644,7 @@
         "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-2",
         "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-3",
         "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-4",
-        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-5",
-        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-6",
-        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-7"
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-6"
       ],
       "settings": {
         "product": "gift-card",

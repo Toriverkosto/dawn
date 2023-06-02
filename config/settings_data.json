@@ -140,12 +140,12 @@
           "5769cebb-1b61-44a0-b986-fb568a3856a3"
         ],
         "settings": {
-          "color_scheme": "background-2",
+          "color_scheme": "inverse",
           "newsletter_enable": true,
           "newsletter_heading": "Subscribe to our newsletter for upcoming discounts & newly listed products",
           "show_social": true,
-          "enable_country_selector": false,
-          "enable_language_selector": false,
+          "enable_country_selector": true,
+          "enable_language_selector": true,
           "payment_enable": true
         }
       },

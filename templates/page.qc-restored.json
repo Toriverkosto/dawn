@@ -6,13 +6,13 @@
         "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-0": {
           "type": "heading",
           "settings": {
-            "heading": "Kamerastore: Restored Items"
+            "heading": "Restored Used Items"
           }
         },
         "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Tested and inspected with special tools and machinery. Received significant mechanical repairs or service. Delivered cleaned and working with no significant flaws. Minor flaws possible, noted in description. <\/p>"
+            "text": "<p>Restored used camera gear is: {{ page.metafields.custom.quality_control.value.description_medium | metafield_tag }}<\/p>"
           }
         },
         "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-2": {
@@ -29,7 +29,7 @@
         "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/QC_Images-04238-WEB2048.jpg",
+        "image": "{{ page.metafields.custom.quality_control.value.secondary_image.value }}",
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first"

@@ -655,11 +655,11 @@
     },
     "0050133a-c833-42d4-b1eb-95ed3f9f255d": {
       "type": "collage",
-      "disabled": true,
       "blocks": {
         "template--15243804115142__0050133a-c833-42d4-b1eb-95ed3f9f255d-1685710398fada3314-0": {
           "type": "video",
           "settings": {
+            "cover_image": "shopify:\/\/shop_images\/GoodshotswithP_S-00074-WEB1080.jpg",
             "video_url": "https:\/\/youtu.be\/hTmAmLvr1M0",
             "description": "top 10 point and shoot film cameras",
             "image_padding": false
@@ -668,7 +668,7 @@
         "template--15243804115142__0050133a-c833-42d4-b1eb-95ed3f9f255d-1685710398fada3314-1": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "gift-card",
             "second_image": false,
             "image_padding": false,
             "secondary_background": false
@@ -677,7 +677,7 @@
         "template--15243804115142__0050133a-c833-42d4-b1eb-95ed3f9f255d-1685710398fada3314-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "compact-cameras",
             "image_padding": false,
             "color_scheme": "background-1"
           }

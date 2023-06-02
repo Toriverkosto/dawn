@@ -19,7 +19,7 @@
           "type": "button",
           "settings": {
             "button_label": "View Items",
-            "button_link": ""
+            "button_link": "shopify:\/\/collections\/qc-passed"
           }
         }
       },
@@ -39,10 +39,27 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "39c6d652-40ea-4334-bf56-d819492e7e57": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Recently Added \"Passed\" Items",
+        "collection": "qc-passed",
+        "products_to_show": 12,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
     }
   },
   "order": [
     "eb4fda55-89bc-4a91-bd79-e52e19a68b6e",
-    "main"
+    "main",
+    "39c6d652-40ea-4334-bf56-d819492e7e57"
   ]
 }

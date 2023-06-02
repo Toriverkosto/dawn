@@ -29,9 +29,9 @@
         "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/QC_Images-04164-WEB2048.jpg",
+        "image": "{{ page.metafields.custom.quality_control.value.highlight_image.value }}",
         "height": "adapt",
-        "color_scheme": "background-1",
+        "color_scheme": "inverse",
         "layout": "image_first"
       }
     },

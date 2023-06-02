@@ -242,51 +242,6 @@
         "swipe_on_mobile": true
       }
     },
-    "3c66629c-89ee-411b-ace0-54c61df25f36": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "template--15243804115142__3c66629c-89ee-411b-ace0-54c61df25f36-168448207203298fd4-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rhine_BC-97.jpg",
-            "title": "10% Off Your Next Order",
-            "text": "<p>Kamerastore is offering 10% off all orders for subscribers during the 2023 International Ice Hockey Federation (IIHF) World Championship.<\/p><p><a href=\"\/pages\/tampere-finland-home-of-kamerastore\" title=\"\/pages\/tampere-finland-home-of-kamerastore\"><strong>Details<\/strong><\/a><\/p>"
-          }
-        },
-        "template--15243804115142__3c66629c-89ee-411b-ace0-54c61df25f36-168448207203298fd4-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/valoi_kit.jpg",
-            "title": "Scan Your Film Negatives",
-            "text": "<p>Now you can make professional scans of your film negatives from your own home in just minutes. Save money and save time with Kamerastore's very own Valoi 360 system.<\/p><p><a href=\"\/collections\/valoi-360\" title=\"Valoi 360\"><strong>See Products<\/strong><\/a><\/p>"
-          }
-        },
-        "template--15243804115142__3c66629c-89ee-411b-ace0-54c61df25f36-168448207203298fd4-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Kamerastore_all_cameras_ad.jpg",
-            "title": "We Buy Cameras!",
-            "text": "<p>We are interested in buying almost all types of camera gear. Get a free quote with no selling commitment. <\/p><p><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\"><strong>Get a Quote<\/strong><\/a><\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--15243804115142__3c66629c-89ee-411b-ace0-54c61df25f36-168448207203298fd4-0",
-        "template--15243804115142__3c66629c-89ee-411b-ace0-54c61df25f36-168448207203298fd4-1",
-        "template--15243804115142__3c66629c-89ee-411b-ace0-54c61df25f36-168448207203298fd4-2"
-      ],
-      "settings": {
-        "title": "",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": true
-      }
-    },
     "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe": {
       "type": "custom-liquid",
       "settings": {
@@ -641,6 +596,74 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "01b71a4b-88ef-4d8e-99e3-4f45077911c9": {
+      "type": "featured-product",
+      "blocks": {
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-7": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-0",
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-1",
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-2",
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-3",
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-4",
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-5",
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-6",
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-7"
+      ],
+      "settings": {
+        "product": "gift-card",
+        "secondary_background": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
     }
   },
   "order": [
@@ -650,7 +673,6 @@
     "b7f435c5-c4b1-48ef-ae36-13d31e15ecb0",
     "f9ddfc6e-43fd-448b-b981-034c96684a0b",
     "multi_column",
-    "3c66629c-89ee-411b-ace0-54c61df25f36",
     "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe",
     "1660560902df48f128",
     "1683891361046b7454",
@@ -667,6 +689,7 @@
     "16627241848ff0f7e4",
     "1655878837fa505e49",
     "1637242258da800a0c",
-    "16853512478aabdfe2"
+    "16853512478aabdfe2",
+    "01b71a4b-88ef-4d8e-99e3-4f45077911c9"
   ]
 }

@@ -652,6 +652,47 @@
         "hide_variants": false,
         "enable_video_looping": false
       }
+    },
+    "0050133a-c833-42d4-b1eb-95ed3f9f255d": {
+      "type": "collage",
+      "disabled": true,
+      "blocks": {
+        "template--15243804115142__0050133a-c833-42d4-b1eb-95ed3f9f255d-1685710398fada3314-0": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/hTmAmLvr1M0",
+            "description": "top 10 point and shoot film cameras",
+            "image_padding": false
+          }
+        },
+        "template--15243804115142__0050133a-c833-42d4-b1eb-95ed3f9f255d-1685710398fada3314-1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        },
+        "template--15243804115142__0050133a-c833-42d4-b1eb-95ed3f9f255d-1685710398fada3314-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804115142__0050133a-c833-42d4-b1eb-95ed3f9f255d-1685710398fada3314-0",
+        "template--15243804115142__0050133a-c833-42d4-b1eb-95ed3f9f255d-1685710398fada3314-1",
+        "template--15243804115142__0050133a-c833-42d4-b1eb-95ed3f9f255d-1685710398fada3314-2"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
     }
   },
   "order": [
@@ -678,6 +719,7 @@
     "1655878837fa505e49",
     "1637242258da800a0c",
     "16853512478aabdfe2",
-    "01b71a4b-88ef-4d8e-99e3-4f45077911c9"
+    "01b71a4b-88ef-4d8e-99e3-4f45077911c9",
+    "0050133a-c833-42d4-b1eb-95ed3f9f255d"
   ]
 }

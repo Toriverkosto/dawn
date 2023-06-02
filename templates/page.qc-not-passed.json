@@ -30,8 +30,8 @@
       ],
       "settings": {
         "image": "{{ page.metafields.custom.quality_control.value.highlight_image.value }}",
-        "height": "adapt",
-        "color_scheme": "background-1",
+        "height": "small",
+        "color_scheme": "inverse",
         "layout": "image_first"
       }
     },

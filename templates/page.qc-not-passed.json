@@ -31,7 +31,7 @@
       "settings": {
         "image": "{{ page.metafields.custom.quality_control.value.highlight_image.value }}",
         "height": "adapt",
-        "color_scheme": "inverse",
+        "color_scheme": "accent-2",
         "layout": "image_first"
       }
     },

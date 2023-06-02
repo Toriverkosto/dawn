@@ -12,7 +12,7 @@
         "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Untested or: tested, inspected, found to have significant flaws. Might be usable as-is, taking into account the defects. Delivered uncleaned. Product description provides more detail if needed.<\/p>"
+            "text": "<p>{{ page.metafields.custom.quality_control.value.description_medium | metafield_tag }}<\/p>"
           }
         },
         "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-2": {

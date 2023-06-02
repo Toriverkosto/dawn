@@ -29,7 +29,7 @@
         "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-2"
       ],
       "settings": {
-        "image": "{{ page.metafields.custom.quality_control.value.highlight_image.value }}",
+        "image": "{{ page.metafields.custom.quality_control.value.secondary_image.value }}",
         "height": "small",
         "color_scheme": "inverse",
         "layout": "image_first"

@@ -1,0 +1,207 @@
+{{ 'section-qc-cards.css' | asset_url | stylesheet_tag }}
+<div class="qc-container--color-{{ section.settings.bg-color }}">
+  <div class="qc-cards-container">
+{%- for block in section.blocks -%}
+{%- case block.type -%}
+  {%- when 'qc_passed_card' and -%}
+  {% assign qc_values = shop.metaobjects.quality_control.passed %}
+  {%- if block.settings.qc-passed -%}
+    <div class="qc-card">
+      <div class="qc-img">
+          <img
+          src={{ qc_values.highlight_image | file_url }} width="auto" height="auto" loading="lazy" alt={{ qc_values.highlight_image.value.alt }}>
+      </div>
+      <div class="qc-card--heading">
+        <div class="qc-badge-title h3">
+      {%- render 'qc-badge-small-color', value: qc_values.title -%}
+     {{ qc_values.title }}
+        </div>
+        <div class="qc-collection-qty">(
+          <a href={{ qc_values.collection.value.url }}>{{ qc_values.collection.value.all_products_count }}</a>)
+        </div>
+      </div>
+      <div class="qc-card-description">
+        {{ qc_values.description_medium }}
+        <div class="qc-card-link">
+          <a href= {{ qc_values.detail_page.value.url }} target="_blank" rel="noopener noreferrer">{{ "sections.qc_card.link.text" | t }} </a>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  {%- when 'qc_not_passed_card' and -%}
+    {% assign qc_values = shop.metaobjects.quality_control.not-passed %}
+    {%- if block.settings.qc-not-passed -%}
+      <div class="qc-card">
+        <div class="qc-img">
+          <img
+          src={{ qc_values.highlight_image | file_url }} width="auto" height="auto" loading="lazy" alt={{ qc_values.highlight_image.value.alt }}>
+        </div>
+        <div class="qc-card--heading">
+          <div class="qc-badge-title h3">
+          {%- render 'qc-badge-small-color', value: qc_values.title -%}
+          {{ qc_values.title }}
+          </div>
+          <div class="qc-collection-qty">(
+            <a href={{ qc_values.collection.value.url }}>{{ qc_values.collection.value.all_products_count }}</a>)
+          </div>
+        </div>
+        <div class="qc-card-description">
+          {{ qc_values.description_medium }}
+          <div class="qc-card-link">
+            <a href= {{ qc_values.detail_page.value.url }} target="_blank" rel="noopener noreferrer">{{ "sections.qc_card.link.text" | t }}</a>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+  {%- when 'qc_certified_card' and -%}
+    {% assign qc_values = shop.metaobjects.quality_control.certified %}
+    {%- if block.settings.qc-certified -%}
+      <div class="qc-card">
+        <div class="qc-img">
+          <img
+           src={{ qc_values.highlight_image | file_url }} width="auto" height="auto" loading="lazy" alt={{ qc_values.highlight_image.value.alt }}>
+        </div>
+        <div class="qc-card--heading">
+          <div class="qc-badge-title h3">
+        {%- render 'qc-badge-small-color', value: qc_values.title -%}
+        {{ qc_values.title }}
+          </div>
+          <div class="qc-collection-qty">(
+            <a href={{ qc_values.collection.value.url }}>{{ qc_values.collection.value.all_products_count }}</a>)
+          </div>
+        </div>
+        <div class="qc-card-description">
+          {{ qc_values.description_medium }}
+          <div class="qc-card-link">
+            <a href= {{ qc_values.detail_page.value.url }} target="_blank" rel="noopener noreferrer">{{ "sections.qc_card.link.text" | t }}</a>
+          </div>
+        </div>
+    </div>
+      {% endif %}
+  {%- when 'qc_restored_card' and -%}
+  {% assign qc_values = shop.metaobjects.quality_control.restored %}
+    {%- if block.settings.qc-restored -%}
+    <div class="qc-card">
+      <div class="qc-img">
+        <img
+        src={{ qc_values.highlight_image | file_url }} width="auto" height="auto" loading="lazy" alt={{ qc_values.highlight_image.value.alt }}>
+    </div>
+      <div class="qc-card--heading">
+        <div class="qc-badge-title h3">
+      {%- render 'qc-badge-small-color', value: qc_values.title -%}
+      {{ qc_values.title }}
+        </div>
+        <div class="qc-collection-qty">(
+          <a href={{ qc_values.collection.value.url }}>{{ qc_values.collection.value.all_products_count }}</a>)
+        </div>
+      </div>
+      <div class="qc-card-description">
+        {{ qc_values.description_medium }}
+        <div class="qc-card-link">
+          <a href= {{ qc_values.detail_page.value.url }} target="_blank" rel="noopener noreferrer">{{ "sections.qc_card.link.text" | t }}</a>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+{%- endcase -%}
+{%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "QC Cards",
+  "settings":[{
+      "type": "select",
+      "id": "bg-color",
+      "options": [
+        {
+          "value": "background-1",
+          "label": "background-1"
+        },
+        {
+          "value": "background-2",
+          "label": "background-2"
+        },
+        {
+          "value": "no-background",
+          "label": "no-background"
+        }
+      ],
+      "default": "no-background",
+      "label": "no-background"
+    }],
+  "blocks": [
+    {
+      "type": "qc_passed_card",
+      "name": "QC Passed Card",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "qc-passed",
+          "default": true,
+          "label": "t:sections.main-product.blocks.qc_cards.name"
+        }
+      ]
+      },
+      {
+        "type": "qc_not_passed_card",
+        "name": "QC Not Passed Card",
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "qc-not-passed",
+            "default": true,
+            "label": "QC Not Passed"
+          }
+        ]
+        },
+        {
+          "type": "qc_certified_card",
+          "name": "QC Certified Card",
+          "settings": [
+            {
+              "type": "checkbox",
+              "id": "qc-certified",
+              "default": true,
+              "label": "QC Certified"
+            }
+          ]
+          },
+          {
+            "type": "qc_restored_card",
+            "name": "QC Restored Card",
+            "settings": [
+              {
+                "type": "checkbox",
+                "id": "qc-restored",
+                "default": true,
+                "label": "QC Restored"
+              }
+            ]
+            }
+      ],
+      "presets": [
+  {
+    "name": "Quality Control Cards",
+    "category": "ADVANCED LAYOUT",
+  "blocks": [
+      {
+        "type": "qc_restored_card"
+      },
+      {
+        "type": "qc_certified_card"
+      },
+      {
+        "type": "qc_passed_card"
+      },
+      {
+        "type": "qc_not_passed_card"
+      }
+    ]
+    }
+    ]
+    }
+{% endschema %}
+
+

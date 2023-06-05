@@ -39,7 +39,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/QC_Images-04238-WEB2048.jpg",
-        "height": "small",
+        "height": "adapt",
         "color_scheme": "background-2",
         "layout": "image_first"
       }
@@ -132,7 +132,7 @@
         "template--19047896547661__05206b0c-1f2d-4533-acc5-59c372254a74-16859676887548d3eb-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "View Products",
             "button_link": "shopify:\/\/collections\/bargain-cameras-lenses-accessories"
           }
         }
@@ -143,6 +143,7 @@
         "template--19047896547661__05206b0c-1f2d-4533-acc5-59c372254a74-16859676887548d3eb-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/QC_Images-04176-WEB1080.jpg",
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first"

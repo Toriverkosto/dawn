@@ -9,9 +9,13 @@
         "custom_liquid": "<div class=\"restricted\"><center>The content of this page will be in effect beginning June 13th, 2023"
       }
     },
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
     "a4a1707d-fe33-457a-b277-8465eb836b36": {
       "type": "qc-cards",
-      "disabled": true,
       "blocks": {
         "template--19047896547661__a4a1707d-fe33-457a-b277-8465eb836b36-1685968661ea5824e3-0": {
           "type": "qc_restored_card",
@@ -46,11 +50,6 @@
       ],
       "settings": {
         "bg-color": "no-background"
-      }
-    },
-    "main": {
-      "type": "main-page",
-      "settings": {
       }
     },
     "e80010f7-dd1b-464b-8612-3d87bf40655b": {
@@ -200,8 +199,8 @@
   },
   "order": [
     "b2c00e12-e663-406a-b436-e46f0e967ab6",
-    "a4a1707d-fe33-457a-b277-8465eb836b36",
     "main",
+    "a4a1707d-fe33-457a-b277-8465eb836b36",
     "e80010f7-dd1b-464b-8612-3d87bf40655b",
     "b2a7bf95-79bc-4eb7-9a1d-f88cc805e25b",
     "3c3e0a67-a299-4b47-abd4-e09426ba778a",

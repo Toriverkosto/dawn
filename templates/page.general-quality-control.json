@@ -9,24 +9,19 @@
         "custom_liquid": "<div class=\"restricted\"><center>The content of this page will be in effect beginning June 13th, 2023"
       }
     },
-    "main": {
-      "type": "main-page",
-      "settings": {
-      }
-    },
     "e80010f7-dd1b-464b-8612-3d87bf40655b": {
       "type": "image-with-text",
       "blocks": {
         "template--19047896547661__e80010f7-dd1b-464b-8612-3d87bf40655b-16856230288bea78a8-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text"
+            "heading": "Restored"
           }
         },
         "template--19047896547661__e80010f7-dd1b-464b-8612-3d87bf40655b-16856230288bea78a8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Products with the condition label of \"Restored\" are -  Tested and inspected with special tools and machinery. Received significant mechanical repairs or service. Delivered cleaned and working with no significant flaws. Minor flaws possible, noted in description. <\/p>"
           }
         },
         "template--19047896547661__e80010f7-dd1b-464b-8612-3d87bf40655b-16856230288bea78a8-2": {
@@ -43,16 +38,21 @@
         "template--19047896547661__e80010f7-dd1b-464b-8612-3d87bf40655b-16856230288bea78a8-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/QC_Images-04384-WEB2048.jpg",
-        "height": "adapt",
-        "color_scheme": "background-1",
+        "image": "shopify:\/\/shop_images\/QC_Images-04238-WEB2048.jpg",
+        "height": "small",
+        "color_scheme": "inverse",
         "layout": "image_first"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
       }
     }
   },
   "order": [
     "b2c00e12-e663-406a-b436-e46f0e967ab6",
-    "main",
-    "e80010f7-dd1b-464b-8612-3d87bf40655b"
+    "e80010f7-dd1b-464b-8612-3d87bf40655b",
+    "main"
   ]
 }

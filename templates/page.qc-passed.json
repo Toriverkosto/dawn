@@ -55,11 +55,18 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "12443855-b9b2-4882-b5e5-93ffbd18f279": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": ""
+      }
     }
   },
   "order": [
     "eb4fda55-89bc-4a91-bd79-e52e19a68b6e",
     "main",
-    "39c6d652-40ea-4334-bf56-d819492e7e57"
+    "39c6d652-40ea-4334-bf56-d819492e7e57",
+    "12443855-b9b2-4882-b5e5-93ffbd18f279"
   ]
 }

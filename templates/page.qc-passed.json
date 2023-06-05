@@ -7,7 +7,7 @@
         ".restricted {background-color: #fef7ea; color: #3e4447; padding-left: 15px; padding-right: 15px; border: 2px solid #f6dfbb; margin: 10px; border-radius: 5px;}"
       ],
       "settings": {
-        "custom_liquid": "<div class=\"restricted\"><center>This pages information will be effective beginning June 13th, 2023.\n<\/div><\/center>"
+        "custom_liquid": "<div class=\"restricted\"><center>The content of this page will be in effect beginning June 13th, 2023.\n<\/div><\/center>"
       }
     },
     "eb4fda55-89bc-4a91-bd79-e52e19a68b6e": {

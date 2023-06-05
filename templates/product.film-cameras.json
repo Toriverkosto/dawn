@@ -93,12 +93,6 @@
           "settings": {
           }
         },
-        "d5caab0f-8084-4d2c-9f50-f4478f12dbeb": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"film-cameras\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n          <span class=\"inventoryLocationLoading\"> <\/span>\n          <\/div>\n{% endunless %}"
-          }
-        },
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6": {
           "type": "collapsible_tab",
           "disabled": true,
@@ -163,6 +157,12 @@
             "selected_icon_border_color": "#5c6ac4"
           }
         },
+        "d5caab0f-8084-4d2c-9f50-f4478f12dbeb": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"film-cameras\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n          <span class=\"inventoryLocationLoading\"> <\/span>\n          <\/div>\n{% endunless %}"
+          }
+        },
         "f8962c4a-da22-4a3d-8f73-05ff4d13ed57": {
           "type": "collapsible_tab",
           "disabled": true,
@@ -171,20 +171,6 @@
             "content": "<p>We buy & trade cameras, lenses, and accessories on top of selling! If you're looking to upgrade or change your gear, why not sell directly to us?<br\/><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\"><strong>Click here to fill out our form!<\/strong><\/a><\/p>",
             "page": "",
             "icon": "price_tag"
-          }
-        },
-        "0909eb7e-754d-4742-97cf-e483e3248a49": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "{% assign collection_id = '284726493382' %}\n{% assign collection = collections[collection_id] %}\n\n{% if collection %}\n  <p>This <a href=\"{{ collection.url }}\">{{ collection.title }}<\/a> collection contains {{ collection.products | size }} items.<\/p>\n{% endif %}"
-          }
-        },
-        "a61057d7-0270-434a-9a2c-d9dd3332fad7": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "<br><center>Sold By: <b>Kamerastore<\/b> <div class=\"reputon-google-reviews-widget\" id=\"279cdae0-118f-11ed-b220-85918cb29862\" style=\"display: flex; justify-content: center;\"><\/div>\n<a href=\"\/pages\/company-info\"><div class=\"link\">Registered Business<\/div><\/a>"
           }
         }
       },
@@ -202,15 +188,13 @@
         "a56084d7-2640-4571-ac8a-00acd97302f5",
         "7a257909-f1dc-40af-8a11-a540c40d8792",
         "b60c169b-ddf8-49fc-9aa3-faf05c4a2f06",
-        "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
         "ac7cacf6-525f-4b65-8e19-6ff4628b62b5",
         "544372e8-f86d-4543-aa94-172d88ad169e",
-        "f8962c4a-da22-4a3d-8f73-05ff4d13ed57",
-        "0909eb7e-754d-4742-97cf-e483e3248a49",
-        "a61057d7-0270-434a-9a2c-d9dd3332fad7"
+        "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
+        "f8962c4a-da22-4a3d-8f73-05ff4d13ed57"
       ],
       "settings": {
         "product_role": "stock",

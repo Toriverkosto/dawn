@@ -229,8 +229,8 @@
                 </div>
               {%- endif -%}
             {%- endfor -%}
+              
               {% comment %} Here starts the quality_control_new-section, change logic that it shows when item has QC-value {% endcomment %}
-
             {%- when 'quality_control_value_box' -%}
             {% comment %} Remember to add != 'New/Exempt' when decided which tag will be used {% endcomment %}
             {% comment %} if product.metafields.kameratori.quality_control.value != 'Error-QC' and product.metafields.kameratori.quality_control.value != blank {% endcomment %}

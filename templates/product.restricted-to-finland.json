@@ -56,12 +56,6 @@
             "show_dynamic_checkout": true
           }
         },
-        "d031b056-55bf-4778-a201-0c5d8ab0e178": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"restricted-to-finland\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n          <\/div>\n{% endunless %}"
-          }
-        },
         "e44a2970-017f-4a65-9008-2a056066686c": {
           "type": "collapsible_tab",
           "settings": {
@@ -109,10 +103,10 @@
             "selected_icon_border_color": "#5c6ac4"
           }
         },
-        "5ebcf22c-ee85-4f57-b7c3-88fabdf150c5": {
+        "d031b056-55bf-4778-a201-0c5d8ab0e178": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<br><center>Sold By: <b>Kamerastore<\/b> <div class=\"reputon-google-reviews-widget\" id=\"279cdae0-118f-11ed-b220-85918cb29862\" style=\"display: flex; justify-content: center;\"><\/div>\n<a href=\"\/pages\/company-info\"><div class=\"link\">Registered Business<\/div><\/a><br>"
+            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"restricted-to-finland\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n          <\/div>\n{% endunless %}"
           }
         }
       },
@@ -126,11 +120,10 @@
         "3fcfd2be-57f3-4db6-b051-c892e03c2a73",
         "ec88d254-bbe8-4b70-a8ba-4e63f56ef136",
         "buy_buttons",
-        "d031b056-55bf-4778-a201-0c5d8ab0e178",
         "e44a2970-017f-4a65-9008-2a056066686c",
         "c93981a2-30f3-4294-803c-c2c27ba4890e",
         "c1378c8b-8c8b-4c98-b464-f87debde3c6e",
-        "5ebcf22c-ee85-4f57-b7c3-88fabdf150c5"
+        "d031b056-55bf-4778-a201-0c5d8ab0e178"
       ],
       "settings": {
         "product_role": "stock",
@@ -166,16 +159,6 @@
     },
     "163292242191680787": {
       "type": "apps",
-      "blocks": {
-        "d3cf1e1d-8e1b-4033-b74d-704dc2e090fd": {
-          "type": "shopify:\/\/apps\/planet\/blocks\/shopify-planet\/12047591-3a2d-45cc-9dfd-2ce5eaa45dee",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "d3cf1e1d-8e1b-4033-b74d-704dc2e090fd"
-      ],
       "settings": {
         "include_margins": true
       }

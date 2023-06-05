@@ -78,17 +78,12 @@
         "a56084d7-2640-4571-ac8a-00acd97302f5": {
           "type": "text",
           "settings": {
-            "text": "Description, Shipping, & Availability:",
-            "text_style": "body"
+            "text": "Description, Availability, & Shipping:",
+            "text_style": "subtitle"
           }
         },
         "7a257909-f1dc-40af-8a11-a540c40d8792": {
           "type": "description",
-          "settings": {
-          }
-        },
-        "b60c169b-ddf8-49fc-9aa3-faf05c4a2f06": {
-          "type": "shopify:\/\/apps\/estimated-delivery-date-plus\/blocks\/delivery_coder_theme\/4a0685bc-c234-45b2-8382-5ad6a8e3e3fd",
           "settings": {
           }
         },
@@ -112,7 +107,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Shipping Details",
-            "content": "<p><span style=\"text-decoration:underline\"><strong>Handling Time<br\/><\/strong><\/span>0-1 business days (if express priority)<br\/>1-3 business days (all other orders)<\/p><p><span style=\"text-decoration:underline\"><strong>Transit Time<\/strong><\/span> (all orders)<span style=\"text-decoration:underline\"><strong><br\/><\/strong><\/span>🇫🇮 <strong>Finland<\/strong> from 6.90€ | 1-3 days<strong><br\/><\/strong>🇪🇺 <strong>EU<\/strong> from 12.90€ | 1-3 days<br\/>🇺🇸 <strong>USA<\/strong> from 24.90€ | 3-5 days<br\/>Most others from 24.90€ | 3-7 days<\/p><p><a href=\"\/policies\/shipping-policy\" title=\"Shipping Policy\">Shipping Policy<\/a><\/p>",
+            "content": "<p><span style=\"text-decoration:underline\"><strong>Handling Time<br\/><\/strong><\/span>0-1 business days (if express priority)<br\/>1-3 business days (all other orders)<\/p><p><span style=\"text-decoration:underline\"><strong>Transit Time<\/strong><\/span> (all orders)<span style=\"text-decoration:underline\"><strong><br\/><\/strong><\/span>🇫🇮 <strong>Finland<\/strong> from 6.90€ | 1-3 days<strong><br\/><\/strong>🇪🇺 <strong>EU<\/strong> from 11.90€ | 1-3 days<br\/>🇺🇸 <strong>USA<\/strong> from 24.90€ | 3-5 days<br\/>Most others from 24.90€ | 3-7 days<\/p><p><a href=\"\/policies\/shipping-policy\" title=\"Shipping Policy\">Shipping Policy<\/a><\/p>",
             "page": "",
             "icon": "box"
           }
@@ -171,20 +166,6 @@
             "page": "",
             "icon": "price_tag"
           }
-        },
-        "0909eb7e-754d-4742-97cf-e483e3248a49": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "{% assign collection_id = '284726493382' %}\n{% assign collection = collections[collection_id] %}\n\n{% if collection %}\n  <p>This <a href=\"{{ collection.url }}\">{{ collection.title }}<\/a> collection contains {{ collection.products | size }} items.<\/p>\n{% endif %}"
-          }
-        },
-        "a61057d7-0270-434a-9a2c-d9dd3332fad7": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "<br><center>Sold By: <b>Kamerastore<\/b> <div class=\"reputon-google-reviews-widget\" id=\"279cdae0-118f-11ed-b220-85918cb29862\" style=\"display: flex; justify-content: center;\"><\/div>\n<a href=\"\/pages\/company-info\"><div class=\"link\">Registered Business<\/div><\/a>"
-          }
         }
       },
       "block_order": [
@@ -200,16 +181,13 @@
         "buy_buttons",
         "a56084d7-2640-4571-ac8a-00acd97302f5",
         "7a257909-f1dc-40af-8a11-a540c40d8792",
-        "b60c169b-ddf8-49fc-9aa3-faf05c4a2f06",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
         "ac7cacf6-525f-4b65-8e19-6ff4628b62b5",
         "544372e8-f86d-4543-aa94-172d88ad169e",
-        "f8962c4a-da22-4a3d-8f73-05ff4d13ed57",
-        "0909eb7e-754d-4742-97cf-e483e3248a49",
-        "a61057d7-0270-434a-9a2c-d9dd3332fad7"
+        "f8962c4a-da22-4a3d-8f73-05ff4d13ed57"
       ],
       "settings": {
         "product_role": "stock",
@@ -219,6 +197,22 @@
         "show_breadcrumbs": true,
         "show_sku_and_barcode": true,
         "show_image_label": true
+      }
+    },
+    "1685958566c95deaad": {
+      "type": "apps",
+      "blocks": {
+        "24e86f99-dfa3-497e-baa8-5e7bf5abc57c": {
+          "type": "shopify:\/\/apps\/estimated-delivery-date-plus\/blocks\/delivery_coder_theme\/4a0685bc-c234-45b2-8382-5ad6a8e3e3fd",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "24e86f99-dfa3-497e-baa8-5e7bf5abc57c"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "16579008498f69713d": {
@@ -309,21 +303,6 @@
     "16818057075a8347c3": {
       "type": "apps",
       "disabled": true,
-      "blocks": {
-        "b8db5975-09e5-4ab4-9cbb-8a09c93131df": {
-          "type": "shopify:\/\/apps\/guarantees-features-icons\/blocks\/app-block\/f266baeb-ce2c-482c-9bf1-f719b4920aaa",
-          "settings": {
-            "block_id": "ccddbbb4-f883-4c3c-b666-935c38309c04",
-            "spacing_top": 0,
-            "spacing_bottom": 0,
-            "spacing_left": 0,
-            "spacing_right": 0
-          }
-        }
-      },
-      "block_order": [
-        "b8db5975-09e5-4ab4-9cbb-8a09c93131df"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -568,6 +547,7 @@
   },
   "order": [
     "main",
+    "1685958566c95deaad",
     "16579008498f69713d",
     "17d8b2b8-2ef1-435c-a182-ac2679714d92",
     "16818057075a8347c3",

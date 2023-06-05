@@ -1,0 +1,75 @@
+{
+  "sections": {
+    "fc03bcd5-c4d8-43c3-b0ea-22768ab94f49": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".restricted {background-color: #fef7ea; color: #3e4447; padding-left: 15px; padding-right: 15px; border: 2px solid #f6dfbb; margin: 10px; border-radius: 5px;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"restricted\"><center>The content of this page will be in effect beginning June 13th, 2023."
+      }
+    },
+    "eb4fda55-89bc-4a91-bd79-e52e19a68b6e": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Certified Used Items"
+          }
+        },
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Products with the condition label of \"Certified\" are - {{ page.metafields.custom.quality_control.value.description_medium | metafield_tag }}<\/p>"
+          }
+        },
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Items",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-0",
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-1",
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/QC_Images-04380-WEB2048.jpg",
+        "height": "adapt",
+        "color_scheme": "inverse",
+        "layout": "image_first"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "934199b0-c4a0-4358-bd85-3f84fc73e163": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Recently Added Certified Items",
+        "collection": "",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": false
+      }
+    }
+  },
+  "order": [
+    "fc03bcd5-c4d8-43c3-b0ea-22768ab94f49",
+    "eb4fda55-89bc-4a91-bd79-e52e19a68b6e",
+    "main",
+    "934199b0-c4a0-4358-bd85-3f84fc73e163"
+  ]
+}

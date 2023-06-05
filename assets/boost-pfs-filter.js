@@ -103,7 +103,7 @@ var boostPFSFilterConfig = {
 		itemHtml = itemHtml.replace(/{{itemVendorLabel}}/g, productSystem || data.vendor);
 		itemHtml = itemHtml.replace(/{{itemUrl}}/g, Utils.buildProductItemUrl(data));
         itemHtml = itemHtml.replace(/{{itemFlairHtml}}/g, '<div data-flair-product-badge data-product-id="' + data.id.toString() + '"></div>');
-		return itemHtml;
+        return itemHtml;
 	};
 
 	/************************** END BUILD PRODUCT LIST **************************/

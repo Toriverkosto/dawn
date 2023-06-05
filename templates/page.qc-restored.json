@@ -1,0 +1,65 @@
+{
+  "sections": {
+    "eb4fda55-89bc-4a91-bd79-e52e19a68b6e": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Restored Used Items"
+          }
+        },
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Products with the condition label of \"Restored\" are -  {{ page.metafields.custom.quality_control.value.description_medium | metafield_tag }}<\/p>"
+          }
+        },
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Items",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-0",
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-1",
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-2"
+      ],
+      "settings": {
+        "image": "{{ page.metafields.custom.quality_control.value.secondary_image.value }}",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "04609667-588d-452e-b55c-2b74242494ff": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Recently Added Restored Items",
+        "collection": "",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    }
+  },
+  "order": [
+    "eb4fda55-89bc-4a91-bd79-e52e19a68b6e",
+    "main",
+    "04609667-588d-452e-b55c-2b74242494ff"
+  ]
+}

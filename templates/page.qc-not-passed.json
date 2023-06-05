@@ -1,0 +1,65 @@
+{
+  "sections": {
+    "eb4fda55-89bc-4a91-bd79-e52e19a68b6e": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "“Not Passed”"
+          }
+        },
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Products with the condition label of \"Not Passed\" are - {{ page.metafields.custom.quality_control.value.description_medium | metafield_tag }}<\/p>"
+          }
+        },
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Items",
+            "button_link": "shopify:\/\/collections\/bargain-cameras-lenses-accessories"
+          }
+        }
+      },
+      "block_order": [
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-0",
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-1",
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-2"
+      ],
+      "settings": {
+        "image": "{{ page.metafields.custom.quality_control.value.secondary_image.value }}",
+        "height": "small",
+        "color_scheme": "inverse",
+        "layout": "image_first"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "b86b251c-ef33-47f6-878e-3e4c4440f386": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Recently Added \"Not Passed\" Items",
+        "collection": "bargain-cameras-lenses-accessories",
+        "products_to_show": 12,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": false
+      }
+    }
+  },
+  "order": [
+    "eb4fda55-89bc-4a91-bd79-e52e19a68b6e",
+    "main",
+    "b86b251c-ef33-47f6-878e-3e4c4440f386"
+  ]
+}

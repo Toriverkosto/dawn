@@ -81,8 +81,53 @@
         "layout": "image_first"
       }
     },
+    "ab2bb2f3-2333-4123-98ed-40aacfc16ad6": {
+      "type": "image-banner",
+      "blocks": {
+        "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Quality Used Film Photography Gear",
+            "heading_size": "medium"
+          }
+        },
+        "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-1": {
+          "type": "text",
+          "settings": {
+            "text": "\"We make film photography accessible, enjoyable, and sustainable for today & tomorrow.\""
+          }
+        },
+        "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Buy",
+            "button_link_1": "shopify:\/\/collections\/film-cameras",
+            "button_style_secondary_1": false,
+            "button_label_2": "Sell",
+            "button_link_2": "shopify:\/\/pages\/sell-or-trade-your-used-camera-gear",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-0",
+        "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-1",
+        "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/get_attachment_url.jpg",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": false,
+        "image_overlay_opacity": 50,
+        "color_scheme": "inverse",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "b7f435c5-c4b1-48ef-ae36-13d31e15ecb0": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "template--15243804115142__b7f435c5-c4b1-48ef-ae36-13d31e15ecb0-16772286977935d4a9-0": {
           "type": "heading",
@@ -153,51 +198,6 @@
         "full_width": true
       }
     },
-    "ab2bb2f3-2333-4123-98ed-40aacfc16ad6": {
-      "type": "image-banner",
-      "disabled": true,
-      "blocks": {
-        "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Quality Used Film Photography Gear",
-            "heading_size": "medium"
-          }
-        },
-        "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-1": {
-          "type": "text",
-          "settings": {
-            "text": "\"We make film photography accessible, enjoyable, and sustainable for today & tomorrow.\""
-          }
-        },
-        "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Learn More",
-            "button_link_2": "",
-            "button_style_secondary_2": true
-          }
-        }
-      },
-      "block_order": [
-        "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-0",
-        "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-1",
-        "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/get_attachment_url.jpg",
-        "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
-        "show_text_box": false,
-        "image_overlay_opacity": 50,
-        "color_scheme": "inverse",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "multi_column": {
       "type": "multicolumn",
       "blocks": {
@@ -237,51 +237,6 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": true
-      }
-    },
-    "3c66629c-89ee-411b-ace0-54c61df25f36": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "template--15243804115142__3c66629c-89ee-411b-ace0-54c61df25f36-168448207203298fd4-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rhine_BC-97.jpg",
-            "title": "10% Off Your Next Order",
-            "text": "<p>Kamerastore is offering 10% off all orders for subscribers during the 2023 International Ice Hockey Federation (IIHF) World Championship.<\/p><p><a href=\"\/pages\/tampere-finland-home-of-kamerastore\" title=\"\/pages\/tampere-finland-home-of-kamerastore\"><strong>Details<\/strong><\/a><\/p>"
-          }
-        },
-        "template--15243804115142__3c66629c-89ee-411b-ace0-54c61df25f36-168448207203298fd4-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/valoi_kit.jpg",
-            "title": "Scan Your Film Negatives",
-            "text": "<p>Now you can make professional scans of your film negatives from your own home in just minutes. Save money and save time with Kamerastore's very own Valoi 360 system.<\/p><p><a href=\"\/collections\/valoi-360\" title=\"Valoi 360\"><strong>See Products<\/strong><\/a><\/p>"
-          }
-        },
-        "template--15243804115142__3c66629c-89ee-411b-ace0-54c61df25f36-168448207203298fd4-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Kamerastore_all_cameras_ad.jpg",
-            "title": "We Buy Cameras!",
-            "text": "<p>We are interested in buying almost all types of camera gear. Get a free quote with no selling commitment. <\/p><p><a href=\"\/pages\/sell-or-trade-your-used-camera-gear\" title=\"Sell or Trade Your Used Camera Gear\"><strong>Get a Quote<\/strong><\/a><\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--15243804115142__3c66629c-89ee-411b-ace0-54c61df25f36-168448207203298fd4-0",
-        "template--15243804115142__3c66629c-89ee-411b-ace0-54c61df25f36-168448207203298fd4-1",
-        "template--15243804115142__3c66629c-89ee-411b-ace0-54c61df25f36-168448207203298fd4-2"
-      ],
-      "settings": {
-        "title": "",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "none",
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": true
@@ -410,6 +365,47 @@
         "show_rating": false
       }
     },
+    "0050133a-c833-42d4-b1eb-95ed3f9f255d": {
+      "type": "collage",
+      "blocks": {
+        "template--15243804115142__0050133a-c833-42d4-b1eb-95ed3f9f255d-1685710398fada3314-0": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify:\/\/shop_images\/GoodshotswithP_S-00074-WEB1080.jpg",
+            "video_url": "https:\/\/youtu.be\/hTmAmLvr1M0",
+            "description": "top 10 point and shoot film cameras",
+            "image_padding": false
+          }
+        },
+        "template--15243804115142__0050133a-c833-42d4-b1eb-95ed3f9f255d-1685710398fada3314-1": {
+          "type": "product",
+          "settings": {
+            "product": "gift-card",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        },
+        "template--15243804115142__0050133a-c833-42d4-b1eb-95ed3f9f255d-1685710398fada3314-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "compact-cameras",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804115142__0050133a-c833-42d4-b1eb-95ed3f9f255d-1685710398fada3314-0",
+        "template--15243804115142__0050133a-c833-42d4-b1eb-95ed3f9f255d-1685710398fada3314-1",
+        "template--15243804115142__0050133a-c833-42d4-b1eb-95ed3f9f255d-1685710398fada3314-2"
+      ],
+      "settings": {
+        "heading": "Top 10 Point & Shoot Film  Cameras",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
+    },
     "1659091584eaa04e2b": {
       "type": "featured-collection",
       "settings": {
@@ -531,6 +527,7 @@
     },
     "1632470234f73d3bc0": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1632470234f73d3bc0-0": {
           "type": "heading",
@@ -562,19 +559,6 @@
       "settings": {
         "color_scheme": "background-1",
         "full_width": false
-      }
-    },
-    "644add83-8314-41d9-a511-351933776664": {
-      "type": "featured-blog",
-      "settings": {
-        "heading": "Blog posts",
-        "blog": "posts",
-        "post_limit": 3,
-        "show_image": true,
-        "show_date": false,
-        "show_author": false,
-        "soft_background": false,
-        "show_view_all": true
       }
     },
     "16627241848ff0f7e4": {
@@ -636,95 +620,76 @@
         "custom_liquid": "<div class=\"tagcloud page-width page-width--wide\">\n\t<a class=\"pill\" href=\"\/collections\/canon-ef\">Canon EF ({{ collections['canon-ef'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/canon-ef-s\">Canon EF-S ({{ collections['canon-ef-s'].all_products_count }})<\/a>\n\t<a class=\"pill important\" href=\"\/collections\/canon-fd\">Canon FD ({{ collections['canon-fd'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/contax-g\">Contax G ({{ collections['contax-g'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/contax-yashica\">Contax\/Yashica ({{ collections['contax-yashica'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/fuji-x\">Fuji X ({{ collections['fuji-x'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/hasselblad-h\">Hasselblad H ({{ collections['hasselblad-h'].all_products_count }})<\/a>\n\t<a class=\"pill important\" href=\"\/collections\/hasselblad-v\">Hasselblad V ({{ collections['hasselblad-v'].all_products_count }})<\/a>\n\t<a class=\"pill important\" href=\"\/collections\/leica-m\">Leica M ({{ collections['leica-m'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/leica-ltm-m39\">LTM\/M39 ({{ collections['leica-ltm-m39'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/leica-r\">Leica R ({{ collections['leica-r'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/mamiya-645\">Mamiya 645 ({{ collections['mamiya-645'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/mamiya-rb67\">Mamiya RB67 ({{ collections['mamiya-rb67'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/mamiya-rz67\">Mamiya RZ67 ({{ collections['mamiya-rz67'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/minolta-af\">Minolta AF ({{ collections['minolta-af'].all_products_count }})<\/a>\n\t<a class=\"pill\" href=\"\/collections\/minolta-md-sr-mount\">Minolta MD\/SR ({{ collections['minolta-md-sr-mount'].all_products_count }})<\/a>\n\n\n<a class=\"pill\" href=\"\/collections\/nikon-dx\">Nikon DX ({{ collections['nikon-dx'].all_products_count }})<\/a>\n\n<a class=\"pill important\" href=\"\/collections\/nikon-f\">Nikon F ({{ collections['nikon-f'].all_products_count }})<\/a>\n\n<a class=\"pill\" href=\"\/collections\/micro-four-thirds-m4-3\">M4\/3 ({{ collections['micro-four-thirds'].all_products_count }})<\/a>\n\n<a class=\"pill important\" href=\"\/collections\/olympus-om\">Olympus OM ({{ collections['olympus-om'].all_products_count }})<\/a>\n\n<a class=\"pill\" href=\"\/collections\/pentax-645\">Pentax 645 ({{ collections['pentax-645'].all_products_count }})<\/a>\n\n<a class=\"pill\" href=\"\/collections\/pentax-6x7\">Pentax 6x7 ({{ collections['pentax-6x7'].all_products_count }})<\/a>\n\n<a class=\"pill important\" href=\"\/collections\/pentax-K\">Pentax K ({{ collections['pentax-k'].all_products_count }})<\/a>\n\n<a class=\"pill\" href=\"\/collections\/m42\">M42 ({{ collections['m42'].all_products_count }})<\/a>\n\n\n<a class=\"pill\" href=\"\/collections\/sony-a\">Sony A({{ collections['sony-a'].all_products_count }})<\/a>\n\n<a class=\"pill\" href=\"\/collections\/sony-e\">Sony E({{ collections['sony-e'].all_products_count }})<\/a>\n\n<a class=\"pill important\" href=\"\/collections\/sony-fe\">Sony FE({{ collections['sony-fe'].all_products_count }})<\/a>\n\n<\/div>"
       }
     },
-    "1632819284873cdad3": {
-      "type": "collection-list",
-      "disabled": true,
-      "blocks": {
-        "1632819284873cdad3-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "slr-dslr-lenses"
-          }
-        },
-        "1632819284873cdad3-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "mirrorless-lenses"
-          }
-        },
-        "1632819284873cdad3-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "rangefinder-lenses"
-          }
-        },
-        "a1900220-f428-4876-879a-09b7173cca60": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "medium-format-lenses"
-          }
-        },
-        "27e6b5e1-3b5d-4687-8312-ec85a94fcd20": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "large-format-lenses"
-          }
-        },
-        "e3fa11ab-0fe0-4425-ac96-a3058b9617b9": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "other-lenses"
-          }
-        }
-      },
-      "block_order": [
-        "1632819284873cdad3-0",
-        "1632819284873cdad3-1",
-        "1632819284873cdad3-2",
-        "a1900220-f428-4876-879a-09b7173cca60",
-        "27e6b5e1-3b5d-4687-8312-ec85a94fcd20",
-        "e3fa11ab-0fe0-4425-ac96-a3058b9617b9"
-      ],
-      "settings": {
-        "title": "Lenses",
-        "image_ratio": "square",
-        "color_scheme": "background-2",
-        "swipe_on_mobile": true,
-        "image_padding": false,
-        "show_view_all": false
-      }
-    },
     "16853512478aabdfe2": {
       "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "01b71a4b-88ef-4d8e-99e3-4f45077911c9": {
+      "type": "featured-product",
+      "disabled": true,
       "blocks": {
-        "56dd0f1e-105d-4850-8756-1253e212c1b3": {
-          "type": "shopify:\/\/apps\/guarantees-features-icons\/blocks\/app-block\/f266baeb-ce2c-482c-9bf1-f719b4920aaa",
-          "disabled": true,
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-0": {
+          "type": "text",
           "settings": {
-            "block_id": "ccddbbb4-f883-4c3c-b666-935c38309c04",
-            "spacing_top": 0,
-            "spacing_bottom": 0,
-            "spacing_left": 0,
-            "spacing_right": 0
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
           }
         }
       },
       "block_order": [
-        "56dd0f1e-105d-4850-8756-1253e212c1b3"
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-0",
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-1",
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-2",
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-3",
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-4",
+        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-6"
       ],
       "settings": {
-        "include_margins": true
+        "product": "gift-card",
+        "secondary_background": true,
+        "hide_variants": false,
+        "enable_video_looping": false
       }
     }
   },
   "order": [
     "49eda78e-5565-49ec-89cd-114f691cc2b2",
     "e3eec42a-3d9c-41ad-aaa2-fe480384b72b",
+    "ab2bb2f3-2333-4123-98ed-40aacfc16ad6",
     "b7f435c5-c4b1-48ef-ae36-13d31e15ecb0",
     "f9ddfc6e-43fd-448b-b981-034c96684a0b",
-    "ab2bb2f3-2333-4123-98ed-40aacfc16ad6",
     "multi_column",
-    "3c66629c-89ee-411b-ace0-54c61df25f36",
     "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe",
     "1660560902df48f128",
     "1683891361046b7454",
@@ -733,15 +698,15 @@
     "16590913415aba16e5",
     "1659091405f0073c84",
     "1659091458c6563459",
+    "0050133a-c833-42d4-b1eb-95ed3f9f255d",
     "1659091584eaa04e2b",
     "image_banner",
     "165416468256763b39",
     "1632470234f73d3bc0",
-    "644add83-8314-41d9-a511-351933776664",
     "16627241848ff0f7e4",
     "1655878837fa505e49",
     "1637242258da800a0c",
-    "1632819284873cdad3",
-    "16853512478aabdfe2"
+    "16853512478aabdfe2",
+    "01b71a4b-88ef-4d8e-99e3-4f45077911c9"
   ]
 }

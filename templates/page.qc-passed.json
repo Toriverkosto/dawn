@@ -1,0 +1,76 @@
+{
+  "sections": {
+    "12443855-b9b2-4882-b5e5-93ffbd18f279": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "custom_css": [
+        ".restricted {background-color: #fef7ea; color: #3e4447; padding-left: 15px; padding-right: 15px; border: 2px solid #f6dfbb; margin: 10px; border-radius: 5px;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"restricted\"><center>The content of this page will be in effect beginning June 13th, 2023.\n<\/div><\/center>"
+      }
+    },
+    "eb4fda55-89bc-4a91-bd79-e52e19a68b6e": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "\"Passed\""
+          }
+        },
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Products with the condition label of \"Passed\" are - {{ page.metafields.custom.quality_control.value.description_medium | metafield_tag }}<\/p>"
+          }
+        },
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Items",
+            "button_link": "shopify:\/\/collections\/qc-passed"
+          }
+        }
+      },
+      "block_order": [
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-0",
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-1",
+        "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-2"
+      ],
+      "settings": {
+        "image": "{{ page.metafields.custom.quality_control.value.secondary_image.value }}",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "39c6d652-40ea-4334-bf56-d819492e7e57": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Recently Added \"Passed\" Items",
+        "collection": "qc-passed",
+        "products_to_show": 12,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    }
+  },
+  "order": [
+    "12443855-b9b2-4882-b5e5-93ffbd18f279",
+    "eb4fda55-89bc-4a91-bd79-e52e19a68b6e",
+    "main",
+    "39c6d652-40ea-4334-bf56-d819492e7e57"
+  ]
+}

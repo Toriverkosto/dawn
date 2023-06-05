@@ -40,7 +40,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/QC_Images-04238-WEB2048.jpg",
         "height": "small",
-        "color_scheme": "inverse",
+        "color_scheme": "background-2",
         "layout": "image_first"
       }
     },
@@ -75,7 +75,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/QC_Images-04380-WEB2048.jpg",
         "height": "adapt",
-        "color_scheme": "background-1",
+        "color_scheme": "background-2",
         "layout": "text_first"
       }
     },

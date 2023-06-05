@@ -4,7 +4,7 @@
       "type": "custom-liquid",
       "disabled": true,
       "settings": {
-        "custom_liquid": "<p style=\"background-color:red;\"> <center>This pages information will take effect on June 13th, 2023.<\/center><\/p>"
+        "custom_liquid": "<p style=\"background-color:red;\"> <center>This pages information will take effect on June 13th, 2023.<\/center><\/p>\n\n<style>\n.restricted {\n  background-color: #FEF7EA;\n  color: #3E4447;\n  padding-left: 15px;\n  padding-right: 15px;\n  border: 2px solid #F6DFBB;\n  margin: 10px;\n  border-radius: 5px;\n}\n<\/style>\n<\/head>\n<body>\n\n<div class=\"restricted\">\n<h3><\/h3>\n<p>Color film is limited to 10 pcs \/ customer.<\/p>\n<\/div>"
       }
     },
     "eb4fda55-89bc-4a91-bd79-e52e19a68b6e": {

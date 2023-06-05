@@ -214,8 +214,10 @@
         "text": "See our other ratings"
       },
       "info": {
-        "text": "This item & ",
-        "text_2": "others"
+        "text": "This item & "
+      },
+      "info_2": {
+        "text": "others"
       }
     },
     "qc_card": {

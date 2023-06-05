@@ -107,12 +107,6 @@
             "icon": "return"
           }
         },
-        "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"supplies\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n          <\/div>\n{% endunless %}"
-          }
-        },
         "68432eec-9888-4c80-8923-910130f65bc2": {
           "type": "shopify:\/\/apps\/hulk-advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
           "settings": {
@@ -142,6 +136,12 @@
             "selected_icon_border_color": "#5c6ac4"
           }
         },
+        "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"supplies\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n          <\/div>\n{% endunless %}"
+          }
+        },
         "57f7f440-8529-43fc-b001-797465faabcf": {
           "type": "collapsible_tab",
           "disabled": true,
@@ -168,8 +168,8 @@
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "2c639f92-55f6-40f5-8cff-21157d005727",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
-        "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e",
         "68432eec-9888-4c80-8923-910130f65bc2",
+        "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e",
         "57f7f440-8529-43fc-b001-797465faabcf"
       ],
       "settings": {

@@ -212,6 +212,10 @@
     "quality_control_value_box": {
       "link": {
         "text": "See our other ratings"
+      },
+      "info": {
+        "text": "This item & ",
+        "text_2": "others"
       }
     },
     "qc_card": {

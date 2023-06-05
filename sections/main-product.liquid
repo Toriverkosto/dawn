@@ -265,8 +265,8 @@
                                               {% elsif quality_control_value == "Certified" %}
                                                 {% assign qc = shop.metaobjects.quality_control.certified %}
                                               {% endif %}
-                                              <div class="qc-collection-new">(This product & 
-                                                <a href={{ qc.collection.value.url }} > {{ qc.collection.value.all_products_count }}</a> others)
+                                              <div class="qc-collection-new">({{ "sections.quality_control_value_box.info.text" | t }} 
+                                                <a href={{ qc.collection.value.url }} > {{ qc.collection.value.all_products_count }}</a> {{ "sections.quality_control_value_box.info.text_2" | t }})
                                               </div>
                                               </div>
                                               <div class="quality-control-new__title-container-badge">

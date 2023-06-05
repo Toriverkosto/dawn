@@ -88,12 +88,6 @@
           "settings": {
           }
         },
-        "d5caab0f-8084-4d2c-9f50-f4478f12dbeb": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"supplies\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script> {% endif %}{% endif %} \n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n         <\/div>\n{% endunless %}"
-          }
-        },
         "235b8cd5-c263-4cde-9104-81a9203d4384": {
           "type": "condition",
           "disabled": true,
@@ -160,6 +154,12 @@
             "selected_icon_border_color": "#5c6ac4"
           }
         },
+        "d5caab0f-8084-4d2c-9f50-f4478f12dbeb": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"supplies\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script> {% endif %}{% endif %} \n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n         <\/div>\n{% endunless %}"
+          }
+        },
         "781bf0a9-e0c8-47ec-92ab-5829e7802200": {
           "type": "collapsible_tab",
           "disabled": true,
@@ -191,12 +191,12 @@
         "buy_buttons",
         "d42e2020-eb65-474b-a1b3-ec14c6f0260c",
         "0aca0f68-e621-4426-be68-da5725ed0ae3",
-        "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
         "235b8cd5-c263-4cde-9104-81a9203d4384",
         "ad4fef74-222f-422b-a2e1-33623ff7b9e6",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
         "bf97845e-69c0-4bc2-bb2b-a5ed0aefed37",
+        "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",
         "781bf0a9-e0c8-47ec-92ab-5829e7802200",
         "65be4e3b-cf86-413f-838e-2f29cfb59fb0"
       ],

@@ -1,5 +1,14 @@
 {
   "sections": {
+    "fc03bcd5-c4d8-43c3-b0ea-22768ab94f49": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".restricted {background-color: #fef7ea; color: #3e4447; padding-left: 15px; padding-right: 15px; border: 2px solid #f6dfbb; margin: 10px; border-radius: 5px;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"restricted\"><center>The content of this page will be in effect beginning June 13th, 2023."
+      }
+    },
     "eb4fda55-89bc-4a91-bd79-e52e19a68b6e": {
       "type": "image-with-text",
       "blocks": {
@@ -58,6 +67,7 @@
     }
   },
   "order": [
+    "fc03bcd5-c4d8-43c3-b0ea-22768ab94f49",
     "eb4fda55-89bc-4a91-bd79-e52e19a68b6e",
     "main",
     "934199b0-c4a0-4358-bd85-3f84fc73e163"

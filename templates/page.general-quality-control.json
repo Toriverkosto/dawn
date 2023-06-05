@@ -126,14 +126,14 @@
         "template--19047896547661__05206b0c-1f2d-4533-acc5-59c372254a74-16859676887548d3eb-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Products with the condition label of \"Certified\" are - <\/p>"
+            "text": "<p>Products with the condition label of \"Not Passed\" are - Untested or: tested, inspected, found to have significant flaws. Might be usable as-is, taking into account the defects. Delivered uncleaned. Product description provides more detail if needed.<\/p>"
           }
         },
         "template--19047896547661__05206b0c-1f2d-4533-acc5-59c372254a74-16859676887548d3eb-2": {
           "type": "button",
           "settings": {
             "button_label": "Button label",
-            "button_link": ""
+            "button_link": "shopify:\/\/collections\/bargain-cameras-lenses-accessories"
           }
         }
       },

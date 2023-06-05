@@ -71,23 +71,12 @@
           "type": "text",
           "settings": {
             "text": "Description, Shipping, & Availability:",
-            "text_style": "body"
+            "text_style": "subtitle"
           }
         },
         "6d2da93a-18a0-4967-822c-ac2a3fe1a79f": {
           "type": "description",
           "settings": {
-          }
-        },
-        "7c75f502-9e54-4783-a74a-5c3c00f20b91": {
-          "type": "shopify:\/\/apps\/estimated-delivery-date-plus\/blocks\/delivery_coder_theme\/4a0685bc-c234-45b2-8382-5ad6a8e3e3fd",
-          "settings": {
-          }
-        },
-        "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"supplies\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n          <\/div>\n{% endunless %}"
           }
         },
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b": {
@@ -116,6 +105,12 @@
             "content": "<p>Change your mind? Not satisfied? Let us know within 30 days of delivery for a return and refund.<\/p><p><a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"\/policies\/refund-policy\">Read More<\/a><\/p>",
             "page": "",
             "icon": "return"
+          }
+        },
+        "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"supplies\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n          <\/div>\n{% endunless %}"
           }
         },
         "68432eec-9888-4c80-8923-910130f65bc2": {
@@ -170,11 +165,10 @@
         "buy_buttons",
         "6390337e-fa73-472f-a5f7-2ddbf054cc93",
         "6d2da93a-18a0-4967-822c-ac2a3fe1a79f",
-        "7c75f502-9e54-4783-a74a-5c3c00f20b91",
-        "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "2c639f92-55f6-40f5-8cff-21157d005727",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
+        "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e",
         "68432eec-9888-4c80-8923-910130f65bc2",
         "57f7f440-8529-43fc-b001-797465faabcf"
       ],
@@ -186,6 +180,22 @@
         "show_breadcrumbs": true,
         "show_sku_and_barcode": true,
         "show_image_label": true
+      }
+    },
+    "1685958837b5addcd6": {
+      "type": "apps",
+      "blocks": {
+        "210c43e6-04d7-46a9-81d4-b320825c05d0": {
+          "type": "shopify:\/\/apps\/estimated-delivery-date-plus\/blocks\/delivery_coder_theme\/4a0685bc-c234-45b2-8382-5ad6a8e3e3fd",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "210c43e6-04d7-46a9-81d4-b320825c05d0"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "165762036647fa041d": {
@@ -426,6 +436,7 @@
   },
   "order": [
     "main",
+    "1685958837b5addcd6",
     "165762036647fa041d",
     "16818058105c21f955",
     "11db76e5-b32c-44db-a0fd-53ee40cafec8",

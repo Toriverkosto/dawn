@@ -91,7 +91,7 @@
         "template--19047896547661__3c3e0a67-a299-4b47-abd4-e09426ba778a-16859676887548d3eb-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Tested & inspected, special machinery not required. Delivered cleaned and working with no significant flaws. Minor flaws possible, noted in description.<\/p>"
+            "text": "<p>Products with the condition label of \"Passed\" are - Tested & inspected, special machinery not required. Delivered cleaned and working with no significant flaws. Minor flaws possible, noted in description.<\/p>"
           }
         },
         "template--19047896547661__3c3e0a67-a299-4b47-abd4-e09426ba778a-16859676887548d3eb-2": {
@@ -114,6 +114,40 @@
         "layout": "image_first"
       }
     },
+    "05206b0c-1f2d-4533-acc5-59c372254a74": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19047896547661__05206b0c-1f2d-4533-acc5-59c372254a74-16859676887548d3eb-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Not Passed"
+          }
+        },
+        "template--19047896547661__05206b0c-1f2d-4533-acc5-59c372254a74-16859676887548d3eb-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Products with the condition label of \"Certified\" are - <\/p>"
+          }
+        },
+        "template--19047896547661__05206b0c-1f2d-4533-acc5-59c372254a74-16859676887548d3eb-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19047896547661__05206b0c-1f2d-4533-acc5-59c372254a74-16859676887548d3eb-0",
+        "template--19047896547661__05206b0c-1f2d-4533-acc5-59c372254a74-16859676887548d3eb-1",
+        "template--19047896547661__05206b0c-1f2d-4533-acc5-59c372254a74-16859676887548d3eb-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -125,6 +159,7 @@
     "e80010f7-dd1b-464b-8612-3d87bf40655b",
     "b2a7bf95-79bc-4eb7-9a1d-f88cc805e25b",
     "3c3e0a67-a299-4b47-abd4-e09426ba778a",
+    "05206b0c-1f2d-4533-acc5-59c372254a74",
     "main"
   ]
 }

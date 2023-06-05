@@ -79,19 +79,13 @@
         "7bc4319f-1ad5-4bae-bff8-ce5265675e4b": {
           "type": "text",
           "settings": {
-            "text": "Description, Stock, & Shipping:",
-            "text_style": "uppercase"
+            "text": "Description, Shipping, & Availability:",
+            "text_style": "subtitle"
           }
         },
         "b78219c2-66ad-487a-8866-6e726c2a4e91": {
           "type": "description",
           "settings": {
-          }
-        },
-        "d031b056-55bf-4778-a201-0c5d8ab0e178": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"supplies\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n          <\/div>\n{% endunless %}"
           }
         },
         "e44a2970-017f-4a65-9008-2a056066686c": {
@@ -141,11 +135,10 @@
             "selected_icon_border_color": "#5c6ac4"
           }
         },
-        "261a9a2b-f287-4c43-8fce-477e4fc8be46": {
+        "d031b056-55bf-4778-a201-0c5d8ab0e178": {
           "type": "custom_liquid",
-          "disabled": true,
           "settings": {
-            "custom_liquid": "<br><center>Sold By: <b>Kamerastore<\/b> <div class=\"reputon-google-reviews-widget\" id=\"279cdae0-118f-11ed-b220-85918cb29862\" style=\"display: flex; justify-content: center;\"><\/div>\n<a href=\"\/pages\/company-info\"><div class=\"link\">Registered Business<\/div><\/a>"
+            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"supplies\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n          <\/div>\n{% endunless %}"
           }
         }
       },
@@ -163,11 +156,10 @@
         "buy_buttons",
         "7bc4319f-1ad5-4bae-bff8-ce5265675e4b",
         "b78219c2-66ad-487a-8866-6e726c2a4e91",
-        "d031b056-55bf-4778-a201-0c5d8ab0e178",
         "e44a2970-017f-4a65-9008-2a056066686c",
         "c93981a2-30f3-4294-803c-c2c27ba4890e",
         "af332e60-b155-4814-bb18-30757c0c706d",
-        "261a9a2b-f287-4c43-8fce-477e4fc8be46"
+        "d031b056-55bf-4778-a201-0c5d8ab0e178"
       ],
       "settings": {
         "product_role": "stock",
@@ -177,6 +169,22 @@
         "show_breadcrumbs": true,
         "show_sku_and_barcode": true,
         "show_image_label": false
+      }
+    },
+    "168180626803b6c3b8": {
+      "type": "apps",
+      "blocks": {
+        "8ffa4633-d3c7-4984-9760-782e6c173a5a": {
+          "type": "shopify:\/\/apps\/estimated-delivery-date-plus\/blocks\/delivery_coder_theme\/4a0685bc-c234-45b2-8382-5ad6a8e3e3fd",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "8ffa4633-d3c7-4984-9760-782e6c173a5a"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "1657620671c07e2171": {
@@ -225,12 +233,6 @@
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "<br>\n<div class=\"reputon-google-reviews-widget\" id=\"10abb9a0-8e45-11ec-b71b-13d735077cf2\" ><\/div>"
-      }
-    },
-    "168180626803b6c3b8": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
       }
     },
     "16324019941e428b8f": {
@@ -355,9 +357,9 @@
   },
   "order": [
     "main",
+    "168180626803b6c3b8",
     "1657620671c07e2171",
     "1658753665c574aafb",
-    "168180626803b6c3b8",
     "16324019941e428b8f",
     "1633072662af6d667c",
     "product-recommendations",

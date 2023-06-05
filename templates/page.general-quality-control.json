@@ -2,8 +2,11 @@
   "sections": {
     "b2c00e12-e663-406a-b436-e46f0e967ab6": {
       "type": "custom-liquid",
+      "custom_css": [
+        ".restricted {background-color: #fef7ea; color: #3e4447; padding-left: 15px; padding-right: 15px; border: 2px solid #f6dfbb; margin: 10px; border-radius: 5px;}"
+      ],
       "settings": {
-        "custom_liquid": ""
+        "custom_liquid": "<div class=\"restricted\"><center>The content of this page will be in effect beginning June 13th, 2023"
       }
     },
     "main": {

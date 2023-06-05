@@ -55,11 +55,127 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "080ba287-d67a-43fb-b77c-cb1685f3008f": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "template--19048338194765__080ba287-d67a-43fb-b77c-cb1685f3008f-1685970283845b647d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Quality Control"
+          }
+        },
+        "template--19048338194765__080ba287-d67a-43fb-b77c-cb1685f3008f-1685970283845b647d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All used items at Kamerastore go though our in-house quality control process, resulting in a condition label to easily inform you if the item is suitable for use. <\/p><p>Each used camera, lens, or accessory, receives a thorough diagnostic upon arrival to our shop. If the item is not in satisfactory condition we service and\/or repair it when sensible. The final condition of the item is then used to assign 1 of 4 possible condition labels. The definition of each label gives you an overview of the specific items journey though our quality control process.<\/p><p>These labels serve as a starting point to help you browse the right condition of products based on your needs. You can always view an individual item to see unique information about the specific piece.<\/p>"
+          }
+        },
+        "template--19048338194765__080ba287-d67a-43fb-b77c-cb1685f3008f-1685970283845b647d-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19048338194765__080ba287-d67a-43fb-b77c-cb1685f3008f-1685970283845b647d-0",
+        "template--19048338194765__080ba287-d67a-43fb-b77c-cb1685f3008f-1685970283845b647d-1",
+        "template--19048338194765__080ba287-d67a-43fb-b77c-cb1685f3008f-1685970283845b647d-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
+    "80663566-9b5d-44e2-8a93-e7aed9c423fe": {
+      "type": "multicolumn",
+      "disabled": true,
+      "blocks": {
+        "template--19048338194765__80663566-9b5d-44e2-8a93-e7aed9c423fe-16859704302039d08d-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>All used items at Kamerastore go though our in-house quality control process, resulting in a condition label to easily inform you if the item is suitable for use. <\/p><p><\/p>"
+          }
+        },
+        "template--19048338194765__80663566-9b5d-44e2-8a93-e7aed9c423fe-16859704302039d08d-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Each used camera, lens, or accessory, receives a thorough diagnostic upon arrival to our shop. If the item is not in satisfactory condition we service and\/or repair it when sensible. The final condition of the item is then used to assign 1 of 4 possible condition labels. The definition of each label gives you an overview of the specific items journey though our quality control process.<\/p>"
+          }
+        },
+        "template--19048338194765__80663566-9b5d-44e2-8a93-e7aed9c423fe-16859704302039d08d-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>These labels serve as a starting point to help you browse the right condition of products based on your needs. You can always view an individual item to see unique information about the specific piece.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19048338194765__80663566-9b5d-44e2-8a93-e7aed9c423fe-16859704302039d08d-0",
+        "template--19048338194765__80663566-9b5d-44e2-8a93-e7aed9c423fe-16859704302039d08d-1",
+        "template--19048338194765__80663566-9b5d-44e2-8a93-e7aed9c423fe-16859704302039d08d-2"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "e59eabb2-05e0-4033-8c68-c559fb5bfdda": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "template--19048338194765__e59eabb2-05e0-4033-8c68-c559fb5bfdda-168597038093ce0833-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "template--19048338194765__e59eabb2-05e0-4033-8c68-c559fb5bfdda-168597038093ce0833-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All used items at Kamerastore go though our in-house quality control process, resulting in a condition label to easily inform you if the item is suitable for use. <\/p><p>Each used camera, lens, or accessory, receives a thorough diagnostic upon arrival to our shop. If the item is not in satisfactory condition we service and\/or repair it when sensible. The final condition of the item is then used to assign 1 of 4 possible condition labels. The definition of each label gives you an overview of the specific items journey though our quality control process.<\/p><p>These labels serve as a starting point to help you browse the right condition of products based on your needs. You can always view an individual item to see unique information about the specific piece.<\/p>"
+          }
+        },
+        "template--19048338194765__e59eabb2-05e0-4033-8c68-c559fb5bfdda-168597038093ce0833-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19048338194765__e59eabb2-05e0-4033-8c68-c559fb5bfdda-168597038093ce0833-0",
+        "template--19048338194765__e59eabb2-05e0-4033-8c68-c559fb5bfdda-168597038093ce0833-1",
+        "template--19048338194765__e59eabb2-05e0-4033-8c68-c559fb5bfdda-168597038093ce0833-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
     }
   },
   "order": [
     "eb4fda55-89bc-4a91-bd79-e52e19a68b6e",
     "main",
-    "04609667-588d-452e-b55c-2b74242494ff"
+    "04609667-588d-452e-b55c-2b74242494ff",
+    "080ba287-d67a-43fb-b77c-cb1685f3008f",
+    "80663566-9b5d-44e2-8a93-e7aed9c423fe",
+    "e59eabb2-05e0-4033-8c68-c559fb5bfdda"
   ]
 }

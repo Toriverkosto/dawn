@@ -80,7 +80,7 @@
           "type": "text",
           "settings": {
             "text": "Description, Shipping, & Availability:",
-            "text_style": "body"
+            "text_style": "subtitle"
           }
         },
         "0aca0f68-e621-4426-be68-da5725ed0ae3": {

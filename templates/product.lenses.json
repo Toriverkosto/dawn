@@ -70,13 +70,19 @@
         "6390337e-fa73-472f-a5f7-2ddbf054cc93": {
           "type": "text",
           "settings": {
-            "text": "Description, Shipping, & Availability:",
+            "text": "Description, Availability, & Shipping:",
             "text_style": "subtitle"
           }
         },
         "6d2da93a-18a0-4967-822c-ac2a3fe1a79f": {
           "type": "description",
           "settings": {
+          }
+        },
+        "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"supplies\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n          <\/div>\n{% endunless %}"
           }
         },
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b": {
@@ -136,12 +142,6 @@
             "selected_icon_border_color": "#5c6ac4"
           }
         },
-        "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"supplies\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n          <\/div>\n{% endunless %}"
-          }
-        },
         "57f7f440-8529-43fc-b001-797465faabcf": {
           "type": "collapsible_tab",
           "disabled": true,
@@ -165,11 +165,11 @@
         "buy_buttons",
         "6390337e-fa73-472f-a5f7-2ddbf054cc93",
         "6d2da93a-18a0-4967-822c-ac2a3fe1a79f",
+        "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e",
         "0d54122a-b1cd-4ad5-9065-a50ef63c420b",
         "2c639f92-55f6-40f5-8cff-21157d005727",
         "a4908876-2ec2-4049-8519-f88aac2c716e",
         "68432eec-9888-4c80-8923-910130f65bc2",
-        "73a9f5e6-f5fd-4dd0-a296-e9525bf54b0e",
         "57f7f440-8529-43fc-b001-797465faabcf"
       ],
       "settings": {

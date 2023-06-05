@@ -88,6 +88,12 @@
           "settings": {
           }
         },
+        "d031b056-55bf-4778-a201-0c5d8ab0e178": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"supplies\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n          <\/div>\n{% endunless %}"
+          }
+        },
         "e44a2970-017f-4a65-9008-2a056066686c": {
           "type": "collapsible_tab",
           "settings": {
@@ -134,12 +140,6 @@
             "selected_icon_fill_color": "#5c6ac4",
             "selected_icon_border_color": "#5c6ac4"
           }
-        },
-        "d031b056-55bf-4778-a201-0c5d8ab0e178": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% unless product.selected_or_first_available_variant.inventory_management == null %}\nAvailable Stock\n          {% if template == \"supplies\" %}{% assign inventory = product.metafields.tomit_inventory %}{% if inventory.inventory_json.size > 0 %}<script>document.addEventListener('tomitLoaded', function(e) { tomitProductInventoryInfo.productJson = `{{inventory.inventory_json | json}}`; });<\/script>{% endif %}{% endif %}\n          \n          \n          <div id=\"inventoryLocationInformation\">\n              <span class=\"inventoryLocationLoading\"><\/span>\n          <\/div>\n{% endunless %}"
-          }
         }
       },
       "block_order": [
@@ -156,10 +156,10 @@
         "buy_buttons",
         "7bc4319f-1ad5-4bae-bff8-ce5265675e4b",
         "b78219c2-66ad-487a-8866-6e726c2a4e91",
+        "d031b056-55bf-4778-a201-0c5d8ab0e178",
         "e44a2970-017f-4a65-9008-2a056066686c",
         "c93981a2-30f3-4294-803c-c2c27ba4890e",
-        "af332e60-b155-4814-bb18-30757c0c706d",
-        "d031b056-55bf-4778-a201-0c5d8ab0e178"
+        "af332e60-b155-4814-bb18-30757c0c706d"
       ],
       "settings": {
         "product_role": "stock",

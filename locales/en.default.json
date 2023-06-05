@@ -209,6 +209,22 @@
         "text": "Read more about our ratings"
       }
     },
+    "quality_control_value_box": {
+      "link": {
+        "text": "See our other ratings"
+      },
+      "info": {
+        "text": "This item & ",
+        "text_2": "others"
+      }
+    },
+    "qc_card": {
+      "name": "Quality Control Cards",
+      "link": {
+        "text": "Read More"
+      }
+    },
+    
     "cart": {
       "title": "Your cart",
       "caption": "Cart items",

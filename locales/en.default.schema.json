@@ -1471,6 +1471,21 @@
             }
           }
         },
+        "quality_control_value_box": {
+          "name": "Quality Control Value Box",
+          "settings": {
+            "heading": {
+              "info": "Include a heading that explains the content.",
+              "label": "Heading"
+            },
+            "content_passed": {
+              "label": "Tab content for passed"
+            },
+            "content_not_passed": {
+              "label": "Tab content for not passed"
+            }
+          }
+        },
         "collapsible_tab": {
           "name": "Collapsible tab",
           "settings": {
@@ -2072,6 +2087,17 @@
             "certified_text": {
               "label": "Certified description"
             }
+          }
+        }
+      }
+    },
+    "qc_value_cards": {
+      "settings": {
+      },
+      "blocks": {
+        "qc_passed": {
+          "settings": {
+            "label": "Nättä"
           }
         }
       }

@@ -119,7 +119,7 @@
     position: relative;
 }
 
-.accordion details[open] > summary .icon-caret {
+.accordion details[open] > summary > .quality-control-new__title-container >.icon-caret {
     transform: rotate(360deg);
     position: relative;
     right: -1.5rem;

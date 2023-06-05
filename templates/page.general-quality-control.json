@@ -9,8 +9,53 @@
         "custom_liquid": "<div class=\"restricted\"><center>The content of this page will be in effect beginning June 13th, 2023"
       }
     },
+    "a4a1707d-fe33-457a-b277-8465eb836b36": {
+      "type": "qc-cards",
+      "disabled": true,
+      "blocks": {
+        "template--19047896547661__a4a1707d-fe33-457a-b277-8465eb836b36-1685968661ea5824e3-0": {
+          "type": "qc_restored_card",
+          "settings": {
+            "qc-restored": true
+          }
+        },
+        "template--19047896547661__a4a1707d-fe33-457a-b277-8465eb836b36-1685968661ea5824e3-1": {
+          "type": "qc_certified_card",
+          "settings": {
+            "qc-certified": true
+          }
+        },
+        "template--19047896547661__a4a1707d-fe33-457a-b277-8465eb836b36-1685968661ea5824e3-2": {
+          "type": "qc_passed_card",
+          "settings": {
+            "qc-passed": true
+          }
+        },
+        "template--19047896547661__a4a1707d-fe33-457a-b277-8465eb836b36-1685968661ea5824e3-3": {
+          "type": "qc_not_passed_card",
+          "settings": {
+            "qc-not-passed": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19047896547661__a4a1707d-fe33-457a-b277-8465eb836b36-1685968661ea5824e3-0",
+        "template--19047896547661__a4a1707d-fe33-457a-b277-8465eb836b36-1685968661ea5824e3-1",
+        "template--19047896547661__a4a1707d-fe33-457a-b277-8465eb836b36-1685968661ea5824e3-2",
+        "template--19047896547661__a4a1707d-fe33-457a-b277-8465eb836b36-1685968661ea5824e3-3"
+      ],
+      "settings": {
+        "bg-color": "no-background"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
     "e80010f7-dd1b-464b-8612-3d87bf40655b": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "template--19047896547661__e80010f7-dd1b-464b-8612-3d87bf40655b-16856230288bea78a8-0": {
           "type": "heading",
@@ -46,6 +91,7 @@
     },
     "b2a7bf95-79bc-4eb7-9a1d-f88cc805e25b": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "template--19047896547661__b2a7bf95-79bc-4eb7-9a1d-f88cc805e25b-16859676887548d3eb-0": {
           "type": "heading",
@@ -81,6 +127,7 @@
     },
     "3c3e0a67-a299-4b47-abd4-e09426ba778a": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "template--19047896547661__3c3e0a67-a299-4b47-abd4-e09426ba778a-16859676887548d3eb-0": {
           "type": "heading",
@@ -116,6 +163,7 @@
     },
     "05206b0c-1f2d-4533-acc5-59c372254a74": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "template--19047896547661__05206b0c-1f2d-4533-acc5-59c372254a74-16859676887548d3eb-0": {
           "type": "heading",
@@ -148,19 +196,15 @@
         "color_scheme": "background-1",
         "layout": "image_first"
       }
-    },
-    "main": {
-      "type": "main-page",
-      "settings": {
-      }
     }
   },
   "order": [
     "b2c00e12-e663-406a-b436-e46f0e967ab6",
+    "a4a1707d-fe33-457a-b277-8465eb836b36",
+    "main",
     "e80010f7-dd1b-464b-8612-3d87bf40655b",
     "b2a7bf95-79bc-4eb7-9a1d-f88cc805e25b",
     "3c3e0a67-a299-4b47-abd4-e09426ba778a",
-    "05206b0c-1f2d-4533-acc5-59c372254a74",
-    "main"
+    "05206b0c-1f2d-4533-acc5-59c372254a74"
   ]
 }

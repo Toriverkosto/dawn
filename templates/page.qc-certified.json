@@ -12,7 +12,7 @@
         "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Certified used camera gear is: {{ page.metafields.custom.quality_control.value.description_medium | metafield_tag }}<\/p>"
+            "text": "<p>\"Certified\" is 1 of 3 condition labels  given to used items which have passed our Quality Control, they are -{{ page.metafields.custom.quality_control.value.description_medium | metafield_tag }}<\/p>"
           }
         },
         "template--19048338194765__eb4fda55-89bc-4a91-bd79-e52e19a68b6e-16856230288bea78a8-2": {

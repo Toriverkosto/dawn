@@ -1,50 +1,5 @@
 {
   "sections": {
-    "49eda78e-5565-49ec-89cd-114f691cc2b2": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "template--15243804115142__49eda78e-5565-49ec-89cd-114f691cc2b2-1681902495be3a1813-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/NOSPSCB-1366_1500x_jpg.webp",
-            "title": "Get Started with Film Photography",
-            "text": "<p>Your journey into film photography begins with the right camera, a roll of film, and the push of a button. Jump in and see where it takes you.<\/p>"
-          }
-        },
-        "template--15243804115142__49eda78e-5565-49ec-89cd-114f691cc2b2-1681902495be3a1813-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Kamerastore_all_cameras_ad.jpg",
-            "title": "Who is Kamerastore?",
-            "text": "<p> sell quality used film cameras, lenses, accessories, film, adapters, and digital gear. Over 14,000 items in stock with dozens added daily.<\/p><p><\/p>"
-          }
-        },
-        "template--15243804115142__49eda78e-5565-49ec-89cd-114f691cc2b2-1681902495be3a1813-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/CMTestCB-7231_7e29ec2f-492b-4bf4-aaf7-d4d401f9e786.jpg",
-            "title": "I'm Back to See New Items",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--15243804115142__49eda78e-5565-49ec-89cd-114f691cc2b2-1681902495be3a1813-0",
-        "template--15243804115142__49eda78e-5565-49ec-89cd-114f691cc2b2-1681902495be3a1813-1",
-        "template--15243804115142__49eda78e-5565-49ec-89cd-114f691cc2b2-1681902495be3a1813-2"
-      ],
-      "settings": {
-        "title": "",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "swipe_on_mobile": false
-      }
-    },
     "e3eec42a-3d9c-41ad-aaa2-fe480384b72b": {
       "type": "image-with-text",
       "disabled": true,
@@ -121,6 +76,51 @@
         "show_text_box": false,
         "image_overlay_opacity": 50,
         "color_scheme": "inverse",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "aabc153b-fba5-4792-a63f-96736474ff4e": {
+      "type": "image-banner",
+      "disabled": true,
+      "blocks": {
+        "template--15243804115142__aabc153b-fba5-4792-a63f-96736474ff4e-1686048011e4736168-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Restored Used Camera Gear",
+            "heading_size": "large"
+          }
+        },
+        "template--15243804115142__aabc153b-fba5-4792-a63f-96736474ff4e-1686048011e4736168-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "template--15243804115142__aabc153b-fba5-4792-a63f-96736474ff4e-1686048011e4736168-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804115142__aabc153b-fba5-4792-a63f-96736474ff4e-1686048011e4736168-0",
+        "template--15243804115142__aabc153b-fba5-4792-a63f-96736474ff4e-1686048011e4736168-1",
+        "template--15243804115142__aabc153b-fba5-4792-a63f-96736474ff4e-1686048011e4736168-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/QC_Images-04341-WEB2048.jpg",
+        "adapt_height_first_image": true,
+        "desktop_text_box_position": "center",
+        "show_text_box": false,
+        "image_overlay_opacity": 50,
+        "color_scheme": "background-1",
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
@@ -723,9 +723,9 @@
     }
   },
   "order": [
-    "49eda78e-5565-49ec-89cd-114f691cc2b2",
     "e3eec42a-3d9c-41ad-aaa2-fe480384b72b",
     "ab2bb2f3-2333-4123-98ed-40aacfc16ad6",
+    "aabc153b-fba5-4792-a63f-96736474ff4e",
     "348d608d-13af-4ff4-a7a0-021084115c31",
     "b7f435c5-c4b1-48ef-ae36-13d31e15ecb0",
     "f9ddfc6e-43fd-448b-b981-034c96684a0b",

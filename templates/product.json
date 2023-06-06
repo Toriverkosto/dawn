@@ -150,6 +150,21 @@
             "selected_icon_fill_color": "#5c6ac4",
             "selected_icon_border_color": "#5c6ac4"
           }
+        },
+        "5f211713-b689-4ec6-a763-a00c764cfcce": {
+          "type": "shopify:\/\/apps\/alpaca-pack-pickup-deliver\/blocks\/pickup_inventory\/62bc3308-c41b-4dfb-865d-0251e74bd159",
+          "disabled": true,
+          "settings": {
+            "filter_by_distance": false,
+            "show_exact_inventory": true,
+            "hide_out_of_stock_locations": true,
+            "show_location_name": true,
+            "open_in_modal": false,
+            "cta_label": "View inventory",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "css_classes": ""
+          }
         }
       },
       "block_order": [
@@ -168,7 +183,8 @@
         "9797ecb7-ab51-442c-b3d6-6b6d189b0057",
         "e44a2970-017f-4a65-9008-2a056066686c",
         "c93981a2-30f3-4294-803c-c2c27ba4890e",
-        "977b845e-4c7a-4d63-b5f1-d9c5828569d7"
+        "977b845e-4c7a-4d63-b5f1-d9c5828569d7",
+        "5f211713-b689-4ec6-a763-a00c764cfcce"
       ],
       "settings": {
         "product_role": "stock",

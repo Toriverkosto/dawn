@@ -13,8 +13,8 @@
       </div>
       <div class="qc-card--heading">
         <div class="qc-badge-title h3">
-      {%- render 'qc-badge-small-color', value: qc_values.title -%}
-     {{ qc_values.title }}
+          {%- render 'qc-badge-small-color', value: qc_values.title -%}
+          {{ qc_values.title }}
         </div>
         <div class="qc-collection-qty">(
           <a href={{ qc_values.collection.value.url }}>{{ qc_values.collection.value.all_products_count }}</a>)
@@ -22,9 +22,11 @@
       </div>
       <div class="qc-card-description">
         {{ qc_values.description_medium }}
+        {%- if block.settings.qc-passed-link -%}
         <div class="qc-card-link">
-          <a href= {{ qc_values.detail_page.value.url }} target="_blank" rel="noopener noreferrer">{{ "sections.qc_card.link.text" | t }} </a>
+          {{ block.settings.passed-link-text }}
         </div>
+        {% endif %}
       </div>
     </div>
     {% endif %}
@@ -47,9 +49,11 @@
         </div>
         <div class="qc-card-description">
           {{ qc_values.description_medium }}
+          {%- if block.settings.qc-not-passed-link -%}
           <div class="qc-card-link">
-            <a href= {{ qc_values.detail_page.value.url }} target="_blank" rel="noopener noreferrer">{{ "sections.qc_card.link.text" | t }}</a>
+            {{ block.settings.not-passed-link-text }}
           </div>
+          {% endif %}
         </div>
       </div>
       {% endif %}
@@ -63,7 +67,7 @@
         </div>
         <div class="qc-card--heading">
           <div class="qc-badge-title h3">
-        {%- render 'qc-badge-small-color', value: qc_values.title -%}
+              {%- render 'qc-badge-small-color', value: qc_values.title -%}
         {{ qc_values.title }}
           </div>
           <div class="qc-collection-qty">(
@@ -72,9 +76,11 @@
         </div>
         <div class="qc-card-description">
           {{ qc_values.description_medium }}
+          {%- if block.settings.qc-certified-link -%}
           <div class="qc-card-link">
-            <a href= {{ qc_values.detail_page.value.url }} target="_blank" rel="noopener noreferrer">{{ "sections.qc_card.link.text" | t }}</a>
+            {{ block.settings.certified-link-text }}
           </div>
+          {% endif %}
         </div>
     </div>
       {% endif %}
@@ -88,8 +94,8 @@
     </div>
       <div class="qc-card--heading">
         <div class="qc-badge-title h3">
-      {%- render 'qc-badge-small-color', value: qc_values.title -%}
-      {{ qc_values.title }}
+          {%- render 'qc-badge-small-color', value: qc_values.title -%}  
+          {{ qc_values.title }}
         </div>
         <div class="qc-collection-qty">(
           <a href={{ qc_values.collection.value.url }}>{{ qc_values.collection.value.all_products_count }}</a>)
@@ -97,9 +103,11 @@
       </div>
       <div class="qc-card-description">
         {{ qc_values.description_medium }}
+        {%- if block.settings.qc-restored-link -%}
         <div class="qc-card-link">
-          <a href= {{ qc_values.detail_page.value.url }} target="_blank" rel="noopener noreferrer">{{ "sections.qc_card.link.text" | t }}</a>
+          {{ block.settings.restored-link-text }}
         </div>
+        {%- endif -%}
       </div>
     </div>
     {% endif %}
@@ -140,7 +148,19 @@
           "type": "checkbox",
           "id": "qc-passed",
           "default": true,
-          "label": "t:sections.main-product.blocks.qc_cards.name"
+          "label": "QC Passed Card"
+        },
+        {
+          "type": "checkbox",
+          "id": "qc-passed-link",
+          "default": false,
+          "label": "Show QC Passed link"
+        },
+        {
+          "type": "richtext",
+          "id": "passed-link-text",
+          "default": "<p>Add link to QC Passed product card.</p>",
+          "label": "QC Passed link content"
         }
       ]
       },
@@ -152,7 +172,19 @@
             "type": "checkbox",
             "id": "qc-not-passed",
             "default": true,
-            "label": "QC Not Passed"
+            "label": "QC Not Passed Card"
+          },
+          {
+            "type": "checkbox",
+            "id": "qc-not-passed-link",
+            "default": false,
+            "label": "Show QC Not Passed link"
+          },
+          {
+            "type": "richtext",
+            "id": "not-passed-link-text",
+            "default": "<p>Add link to QC Not Passed product card.</p>",
+            "label": "QC Not Passed link content"
           }
         ]
         },
@@ -164,7 +196,19 @@
               "type": "checkbox",
               "id": "qc-certified",
               "default": true,
-              "label": "QC Certified"
+              "label": "QC Certified Card"
+            },
+            {
+              "type": "checkbox",
+              "id": "qc-certified-link",
+              "default": false,
+              "label": "Show QC Certified link"
+            },
+            {
+              "type": "richtext",
+              "id": "certified-link-text",
+              "default": "<p>Add link to QC Certified card.</p>",
+              "label": "QC Certified link content"
             }
           ]
           },
@@ -176,7 +220,19 @@
                 "type": "checkbox",
                 "id": "qc-restored",
                 "default": true,
-                "label": "QC Restored"
+                "label": "QC Restored Card"
+              },
+              {
+                "type": "checkbox",
+                "id": "qc-restored-link",
+                "default": false,
+                "label": "Show QC Restored link"
+              },
+              {
+                "type": "richtext",
+                "id": "restored-link-text",
+                "default": "<p>Add link to QC Restored card.</p>",
+                "label": "QC Restored link content"
               }
             ]
             }

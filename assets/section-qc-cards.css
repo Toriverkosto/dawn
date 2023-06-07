@@ -1,7 +1,7 @@
 /* styling for qc-cards sections */
 
 .qc-cards-container {
-    padding: 1.429rem;
+    padding: 4rem 1.429rem;
     justify-content: center;
     align-items: flex-start;
     gap: 1.143rem;
@@ -15,8 +15,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 1.143rem;
-    gap: 1.143rem;
+    padding: 1.333rem;
+    gap: 1.333rem;
     background: #FFFFFF;
     border: 0.143rem solid #E0E0E0;
     border-radius: 0.429rem;
@@ -57,7 +57,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 0.571rem;
+    gap: 1rem;
     font-family: var(--font-heading-family);
     font-style: var(--font-heading-style);
     font-weight: var(--font-heading-weight);
@@ -89,7 +89,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    gap: 16px;
+    gap: 1.33rem;
 }
 
 .qc-card-link {
@@ -98,23 +98,23 @@
     flex-direction: row;
     justify-content: flex-end;
   }
-  .qc-card-link > a:visited {
+  .qc-card-link > p > a:visited {
     color: #458FFF;
     text-decoration: none;
   }
 
 
- .qc-card-link > a:hover {
+ .qc-card-link > p > a:hover {
     color: rgba(var(--color-link),var(--alpha-link));
     text-decoration: underline;
  }
 
- .qc-card-link > a {
+ .qc-card-link > p > a {
     color: #458FFF;
     text-decoration: none;
  }
 
- .qc-card-link> a:hover {
+ .qc-card-link> p > a:hover {
     color: rgba(var(--color-link),var(--alpha-link));
     text-decoration: underline;
  }

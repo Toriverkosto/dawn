@@ -151,3 +151,28 @@
     text-decoration: underline;
  }
 
+ .quality-control-dropdown > .accordion {
+    border: none;
+    margin: 0px;
+  }
+  
+  .quality-control-dropdown > .accordion[open] > summary .icon-caret {
+    transform: rotate(-90deg);
+  }
+  
+  .quality-control-dropdown--chosen > .accordion {
+    border: none;
+    margin: 0px;
+  }
+  
+  .quality-control-dropdown--chosen > .accordion .icon-caret {
+    transform: rotate(-90deg);
+    height: 12px;
+    color: #9CA2AB;
+    position: relative;
+    right: -1.5rem;
+  }
+  
+  .quality-control-dropdown--chosen > .accordion[open] > summary .icon-caret {
+    transform: rotate(-90deg);
+  }

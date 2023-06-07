@@ -24,22 +24,6 @@
     order: 0;
     flex-grow: 1
  }
- 
- .quality-control-new__title-container > summary > .icon-caret {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    word-break: break-word;
-    order: 0;
-    align-self: stretch;
-    column-gap: 0.9rem;
-    color: #3B4B5B;
-    order: 0;
-    flex-grow: 1
- }
 
  .quality-control-new__title {
     display: flex;

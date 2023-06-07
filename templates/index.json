@@ -469,51 +469,6 @@
         "show_rating": false
       }
     },
-    "image_banner": {
-      "type": "image-banner",
-      "disabled": true,
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Thousands of items added each month.",
-            "heading_size": "medium"
-          }
-        },
-        "e7f26e54-ad71-4089-8715-2c5bed1d5f1f": {
-          "type": "text",
-          "settings": {
-            "text": "Large volume and high quality camera gear! We use period-appropriate, professional-grade testing equipment to provide you with accurate condition ratings."
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop Now",
-            "button_link_1": "shopify:\/\/collections\/all-items",
-            "button_style_secondary_1": false,
-            "button_label_2": "Sell to us",
-            "button_link_2": "shopify:\/\/pages\/sell-or-trade-your-used-camera-gear",
-            "button_style_secondary_2": true
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "e7f26e54-ad71-4089-8715-2c5bed1d5f1f",
-        "button"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/get_attachment_url.jpg",
-        "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
-        "show_text_box": true,
-        "image_overlay_opacity": 0,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": false,
-        "show_text_below": true
-      }
-    },
     "165416468256763b39": {
       "type": "collection-list",
       "disabled": true,
@@ -572,42 +527,6 @@
         "show_view_all": false
       }
     },
-    "1632470234f73d3bc0": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "1632470234f73d3bc0-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Quality Used Products",
-            "heading_size": "h1"
-          }
-        },
-        "1632470234f73d3bc0-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Much like aperture, ISO, and shutter speed must work together to create a balanced image, offering quality used products requires a harmony between testing machinery, purpose-built tools, & knowledgeable technicians.<\/p>"
-          }
-        },
-        "1632470234f73d3bc0-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "About Us",
-            "button_link": "shopify:\/\/pages\/about-kamerastore",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "1632470234f73d3bc0-0",
-        "1632470234f73d3bc0-1",
-        "1632470234f73d3bc0-2"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": false
-      }
-    },
     "16627241848ff0f7e4": {
       "type": "image-with-text",
       "blocks": {
@@ -645,7 +564,6 @@
     },
     "1655878837fa505e49": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
         "title": "{{ section.settings.collection.title }}",
         "collection": "valoi-360",
@@ -672,62 +590,6 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "01b71a4b-88ef-4d8e-99e3-4f45077911c9": {
-      "type": "featured-product",
-      "disabled": true,
-      "blocks": {
-        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-0": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-1": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-2": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
-        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-3": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-4": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-6": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        }
-      },
-      "block_order": [
-        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-0",
-        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-1",
-        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-2",
-        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-3",
-        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-4",
-        "template--15243804115142__01b71a4b-88ef-4d8e-99e3-4f45077911c9-168571025381b88251-6"
-      ],
-      "settings": {
-        "product": "gift-card",
-        "secondary_background": true,
-        "hide_variants": false,
-        "enable_video_looping": false
-      }
     }
   },
   "order": [
@@ -748,13 +610,10 @@
     "1659091458c6563459",
     "0050133a-c833-42d4-b1eb-95ed3f9f255d",
     "1659091584eaa04e2b",
-    "image_banner",
     "165416468256763b39",
-    "1632470234f73d3bc0",
     "16627241848ff0f7e4",
     "1655878837fa505e49",
     "1637242258da800a0c",
-    "16853512478aabdfe2",
-    "01b71a4b-88ef-4d8e-99e3-4f45077911c9"
+    "16853512478aabdfe2"
   ]
 }

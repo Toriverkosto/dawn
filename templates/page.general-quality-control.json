@@ -1,24 +1,78 @@
 {
   "sections": {
+    "b2c00e12-e663-406a-b436-e46f0e967ab6": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "custom_css": [
+        ".restricted {background-color: #fef7ea; color: #3e4447; padding-left: 15px; padding-right: 15px; border: 2px solid #f6dfbb; margin: 10px; border-radius: 5px;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"restricted\"><center>The content of this page will be in effect beginning June 13th, 2023"
+      }
+    },
+    "a4a1707d-fe33-457a-b277-8465eb836b36": {
+      "type": "qc-cards",
+      "blocks": {
+        "template--19047896547661__a4a1707d-fe33-457a-b277-8465eb836b36-1685968661ea5824e3-0": {
+          "type": "qc_restored_card",
+          "settings": {
+            "qc-restored": true
+          }
+        },
+        "template--19047896547661__a4a1707d-fe33-457a-b277-8465eb836b36-1685968661ea5824e3-1": {
+          "type": "qc_certified_card",
+          "settings": {
+            "qc-certified": true
+          }
+        },
+        "template--19047896547661__a4a1707d-fe33-457a-b277-8465eb836b36-1685968661ea5824e3-2": {
+          "type": "qc_passed_card",
+          "settings": {
+            "qc-passed": true
+          }
+        },
+        "template--19047896547661__a4a1707d-fe33-457a-b277-8465eb836b36-1685968661ea5824e3-3": {
+          "type": "qc_not_passed_card",
+          "settings": {
+            "qc-not-passed": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19047896547661__a4a1707d-fe33-457a-b277-8465eb836b36-1685968661ea5824e3-0",
+        "template--19047896547661__a4a1707d-fe33-457a-b277-8465eb836b36-1685968661ea5824e3-1",
+        "template--19047896547661__a4a1707d-fe33-457a-b277-8465eb836b36-1685968661ea5824e3-2",
+        "template--19047896547661__a4a1707d-fe33-457a-b277-8465eb836b36-1685968661ea5824e3-3"
+      ],
+      "settings": {
+        "bg-color": "no-background"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
     "e80010f7-dd1b-464b-8612-3d87bf40655b": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "template--19047896547661__e80010f7-dd1b-464b-8612-3d87bf40655b-16856230288bea78a8-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text"
+            "heading": "Restored"
           }
         },
         "template--19047896547661__e80010f7-dd1b-464b-8612-3d87bf40655b-16856230288bea78a8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Products with the condition label of \"Restored\" are -  Tested and inspected with special tools and machinery. Received significant mechanical repairs or service. Delivered cleaned and working with no significant flaws. Minor flaws possible, noted in description. <\/p>"
           }
         },
         "template--19047896547661__e80010f7-dd1b-464b-8612-3d87bf40655b-16856230288bea78a8-2": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "View Products",
             "button_link": ""
           }
         }
@@ -29,114 +83,128 @@
         "template--19047896547661__e80010f7-dd1b-464b-8612-3d87bf40655b-16856230288bea78a8-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/QC_Images-04384-WEB2048.jpg",
+        "image": "shopify:\/\/shop_images\/QC_Images-04238-WEB2048.jpg",
+        "height": "adapt",
+        "color_scheme": "background-2",
+        "layout": "image_first"
+      }
+    },
+    "b2a7bf95-79bc-4eb7-9a1d-f88cc805e25b": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "template--19047896547661__b2a7bf95-79bc-4eb7-9a1d-f88cc805e25b-16859676887548d3eb-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Certified"
+          }
+        },
+        "template--19047896547661__b2a7bf95-79bc-4eb7-9a1d-f88cc805e25b-16859676887548d3eb-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Products with the condition label of \"Certified\" are - Tested and inspected with special tools and machinery. Delivered cleaned and working with no significant flaws. Minor flaws possible, noted in description.<\/p>"
+          }
+        },
+        "template--19047896547661__b2a7bf95-79bc-4eb7-9a1d-f88cc805e25b-16859676887548d3eb-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Products",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19047896547661__b2a7bf95-79bc-4eb7-9a1d-f88cc805e25b-16859676887548d3eb-0",
+        "template--19047896547661__b2a7bf95-79bc-4eb7-9a1d-f88cc805e25b-16859676887548d3eb-1",
+        "template--19047896547661__b2a7bf95-79bc-4eb7-9a1d-f88cc805e25b-16859676887548d3eb-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/QC_Images-04380-WEB2048.jpg",
+        "height": "adapt",
+        "color_scheme": "background-2",
+        "layout": "image_first"
+      }
+    },
+    "3c3e0a67-a299-4b47-abd4-e09426ba778a": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "template--19047896547661__3c3e0a67-a299-4b47-abd4-e09426ba778a-16859676887548d3eb-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Passed"
+          }
+        },
+        "template--19047896547661__3c3e0a67-a299-4b47-abd4-e09426ba778a-16859676887548d3eb-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Products with the condition label of \"Passed\" are - Tested & inspected, special machinery not required. Delivered cleaned and working with no significant flaws. Minor flaws possible, noted in description.<\/p>"
+          }
+        },
+        "template--19047896547661__3c3e0a67-a299-4b47-abd4-e09426ba778a-16859676887548d3eb-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "View Products",
+            "button_link": "shopify:\/\/collections\/qc-passed"
+          }
+        }
+      },
+      "block_order": [
+        "template--19047896547661__3c3e0a67-a299-4b47-abd4-e09426ba778a-16859676887548d3eb-0",
+        "template--19047896547661__3c3e0a67-a299-4b47-abd4-e09426ba778a-16859676887548d3eb-1",
+        "template--19047896547661__3c3e0a67-a299-4b47-abd4-e09426ba778a-16859676887548d3eb-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/QC_Images-04203-WEB1080.jpg",
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first"
       }
     },
-    "3fefdbdc-69da-4a1b-b418-a5582791d87f": {
-      "type": "image-banner",
+    "05206b0c-1f2d-4533-acc5-59c372254a74": {
+      "type": "image-with-text",
       "disabled": true,
       "blocks": {
-        "template--19047896547661__3fefdbdc-69da-4a1b-b418-a5582791d87f-1685618670b44ae115-0": {
+        "template--19047896547661__05206b0c-1f2d-4533-acc5-59c372254a74-16859676887548d3eb-0": {
           "type": "heading",
           "settings": {
-            "heading": "Certified Used Items",
-            "heading_size": "medium"
+            "heading": "Not Passed"
           }
         },
-        "template--19047896547661__3fefdbdc-69da-4a1b-b418-a5582791d87f-1685618670b44ae115-1": {
+        "template--19047896547661__05206b0c-1f2d-4533-acc5-59c372254a74-16859676887548d3eb-1": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
+            "text": "<p>Products with the condition label of \"Not Passed\" are - Untested or: tested, inspected, found to have significant flaws. Might be usable as-is, taking into account the defects. Delivered uncleaned. Product description provides more detail if needed.<\/p>"
           }
         },
-        "template--19047896547661__3fefdbdc-69da-4a1b-b418-a5582791d87f-1685618670b44ae115-2": {
-          "type": "buttons",
-          "disabled": true,
+        "template--19047896547661__05206b0c-1f2d-4533-acc5-59c372254a74-16859676887548d3eb-2": {
+          "type": "button",
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_label": "View Products",
+            "button_link": "shopify:\/\/collections\/bargain-cameras-lenses-accessories"
           }
         }
       },
       "block_order": [
-        "template--19047896547661__3fefdbdc-69da-4a1b-b418-a5582791d87f-1685618670b44ae115-0",
-        "template--19047896547661__3fefdbdc-69da-4a1b-b418-a5582791d87f-1685618670b44ae115-1",
-        "template--19047896547661__3fefdbdc-69da-4a1b-b418-a5582791d87f-1685618670b44ae115-2"
+        "template--19047896547661__05206b0c-1f2d-4533-acc5-59c372254a74-16859676887548d3eb-0",
+        "template--19047896547661__05206b0c-1f2d-4533-acc5-59c372254a74-16859676887548d3eb-1",
+        "template--19047896547661__05206b0c-1f2d-4533-acc5-59c372254a74-16859676887548d3eb-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/QC_Images-04384-WEB2048.jpg",
-        "adapt_height_first_image": false,
-        "desktop_text_box_position": "flex-end",
-        "show_text_box": true,
-        "image_overlay_opacity": 0,
+        "image": "shopify:\/\/shop_images\/QC_Images-04176-WEB1080.jpg",
+        "height": "adapt",
         "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "2a5c02af-8bf3-4069-8804-0b0dfc0ecc87": {
-      "type": "image-banner",
-      "disabled": true,
-      "blocks": {
-        "template--19047896547661__2a5c02af-8bf3-4069-8804-0b0dfc0ecc87-1685618670b44ae115-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
-          }
-        },
-        "template--19047896547661__2a5c02af-8bf3-4069-8804-0b0dfc0ecc87-1685618670b44ae115-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
-          }
-        },
-        "template--19047896547661__2a5c02af-8bf3-4069-8804-0b0dfc0ecc87-1685618670b44ae115-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--19047896547661__2a5c02af-8bf3-4069-8804-0b0dfc0ecc87-1685618670b44ae115-0",
-        "template--19047896547661__2a5c02af-8bf3-4069-8804-0b0dfc0ecc87-1685618670b44ae115-1",
-        "template--19047896547661__2a5c02af-8bf3-4069-8804-0b0dfc0ecc87-1685618670b44ae115-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Preview-04084-WEB2048.jpg",
-        "adapt_height_first_image": false,
-        "desktop_text_box_position": "flex-end",
-        "show_text_box": true,
-        "image_overlay_opacity": 0,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "main": {
-      "type": "main-page",
-      "settings": {
+        "layout": "image_first"
       }
     }
   },
   "order": [
+    "b2c00e12-e663-406a-b436-e46f0e967ab6",
+    "a4a1707d-fe33-457a-b277-8465eb836b36",
+    "main",
     "e80010f7-dd1b-464b-8612-3d87bf40655b",
-    "3fefdbdc-69da-4a1b-b418-a5582791d87f",
-    "2a5c02af-8bf3-4069-8804-0b0dfc0ecc87",
-    "main"
+    "b2a7bf95-79bc-4eb7-9a1d-f88cc805e25b",
+    "3c3e0a67-a299-4b47-abd4-e09426ba778a",
+    "05206b0c-1f2d-4533-acc5-59c372254a74"
   ]
 }

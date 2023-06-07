@@ -94,7 +94,7 @@
         "template--15243804115142__9fc4d243-8c35-40b9-81b6-fc9d6617cbe2-168614080905abadbf-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Our Kamerastore condition labels help you find the right products faster<\/p>"
+            "text": "<p>Our item condition labels inform you about the functional condition and if any repair or service has been provided. Find the products you want faster, and use them without unwanted surprises. <br\/><\/p>"
           }
         },
         "template--15243804115142__9fc4d243-8c35-40b9-81b6-fc9d6617cbe2-168614080905abadbf-2": {
@@ -115,13 +115,6 @@
       "settings": {
         "color_scheme": "background-2",
         "full_width": true
-      }
-    },
-    "b2c62773-adb6-4f26-9e76-3080817d3623": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": ""
       }
     },
     "348d608d-13af-4ff4-a7a0-021084115c31": {
@@ -640,7 +633,6 @@
     "e3eec42a-3d9c-41ad-aaa2-fe480384b72b",
     "ab2bb2f3-2333-4123-98ed-40aacfc16ad6",
     "9fc4d243-8c35-40b9-81b6-fc9d6617cbe2",
-    "b2c62773-adb6-4f26-9e76-3080817d3623",
     "348d608d-13af-4ff4-a7a0-021084115c31",
     "aabc153b-fba5-4792-a63f-96736474ff4e",
     "b7f435c5-c4b1-48ef-ae36-13d31e15ecb0",

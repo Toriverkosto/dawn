@@ -47,6 +47,14 @@
             "custom_liquid": "<p style=\"color: #ababab\";>{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable_html' | t }}\n{% else %}\n    {{ 'products.product.not_taxable_html' | t }}\n{% endif %}<\/p>"
           }
         },
+        "b105008f-85ff-43bc-aa96-e0bce264719b": {
+          "type": "quality_control_tab",
+          "settings": {
+            "quality_control": "",
+            "content_passed": "<p>Tested, inspected, cleaned and working with no significant flaws. These items can be considered “ready to use” for their intended purpose. Minor flaws are possible and are noted in the product description.<\/p>",
+            "content_not_passed": "<p>Untested or: tested, inspected, and found to have significant flaws that affect or prevent normal use. These items should be considered broken. Repair may or may not be possible.<\/p>"
+          }
+        },
         "8e532b3d-db9e-4dc9-8368-5945b3f41219": {
           "type": "quality_control_value_box",
           "disabled": true,
@@ -54,14 +62,6 @@
             "quality_control_new": "",
             "content_passed_new": "<p>Tested, inspected, cleaned and working with no significant flaws. These items can be considered “ready to use” for their intended purpose. Minor flaws are possible and are noted in the product description.<\/p>",
             "content_not_passed_new": "<p>Untested or: tested, inspected, and found to have significant flaws that affect or prevent normal use. These items should be considered broken. Repair may or may not be possible.<\/p>"
-          }
-        },
-        "b105008f-85ff-43bc-aa96-e0bce264719b": {
-          "type": "quality_control_tab",
-          "settings": {
-            "quality_control": "",
-            "content_passed": "<p>Tested, inspected, cleaned and working with no significant flaws. These items can be considered “ready to use” for their intended purpose. Minor flaws are possible and are noted in the product description.<\/p>",
-            "content_not_passed": "<p>Untested or: tested, inspected, and found to have significant flaws that affect or prevent normal use. These items should be considered broken. Repair may or may not be possible.<\/p>"
           }
         },
         "4f0717e0-34d7-44d7-9543-6fdf50a55941": {
@@ -176,8 +176,8 @@
         "3489098b-b626-48b9-9b69-4aca9ec53063",
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
-        "8e532b3d-db9e-4dc9-8368-5945b3f41219",
         "b105008f-85ff-43bc-aa96-e0bce264719b",
+        "8e532b3d-db9e-4dc9-8368-5945b3f41219",
         "4f0717e0-34d7-44d7-9543-6fdf50a55941",
         "buy_buttons",
         "a56084d7-2640-4571-ac8a-00acd97302f5",
@@ -262,43 +262,6 @@
         "92be0530-c477-4b47-b90d-b7a107f21188"
       ],
       "settings": {
-      }
-    },
-    "17d8b2b8-2ef1-435c-a182-ac2679714d92": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "template--15243804606662__17d8b2b8-2ef1-435c-a182-ac2679714d92-1685347982168e958b-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Product Condition",
-            "heading_size": "h1"
-          }
-        },
-        "template--15243804606662__17d8b2b8-2ef1-435c-a182-ac2679714d92-1685347982168e958b-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>All used items at Kamerastore receive one of four condition labels based on our quality control.<\/p>"
-          }
-        },
-        "template--15243804606662__17d8b2b8-2ef1-435c-a182-ac2679714d92-1685347982168e958b-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "template--15243804606662__17d8b2b8-2ef1-435c-a182-ac2679714d92-1685347982168e958b-0",
-        "template--15243804606662__17d8b2b8-2ef1-435c-a182-ac2679714d92-1685347982168e958b-1",
-        "template--15243804606662__17d8b2b8-2ef1-435c-a182-ac2679714d92-1685347982168e958b-2"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
       }
     },
     "16818057075a8347c3": {
@@ -596,7 +559,6 @@
     "main",
     "1685958566c95deaad",
     "16579008498f69713d",
-    "17d8b2b8-2ef1-435c-a182-ac2679714d92",
     "16818057075a8347c3",
     "ee23c372-910f-47bd-9d3f-634191bdd9ba",
     "d88e7a3e-0508-4437-8274-78c39c41df19",

@@ -194,7 +194,11 @@
                 <div class={{ quality_control_value | downcase|replace: " ", "-" }} {{ block.shopify_attributes }}>
                   <div class="quality-control">
                     <div class="accordion">
-                      <details {%- if quality_control_value == "Not Passed" -%}open{%- endif -%}>
+                      {%- if quality_control_value == "Not Passed" -%}
+                      <details open>
+                      {%- elsif quality_control_value != "Not Passed" -%}
+                      <details>
+                      {%- endif -%}
                         <summary>
                           <div class="quality-control__title-container">
                             <div class="quality-control__title">

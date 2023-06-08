@@ -131,11 +131,12 @@
         "template--15243804115142__e6d89980-87cb-4a0e-a3f0-81a4f49ea05b-168614080905abadbf-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Kamerastore is here to help keep film photography alive. Therefore we sell & price items based on their actual functional condition, rather than how shiny or used it appears to be. Use our condition labels to find the right item for you. If it's broken, certified as working, or has been tediously restored - there is power in knowing.<\/p>"
           }
         },
         "template--15243804115142__e6d89980-87cb-4a0e-a3f0-81a4f49ea05b-168614080905abadbf-2": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Button label",
             "button_link": "",

@@ -224,6 +224,9 @@
       "name": "Quality Control Cards",
       "link": {
         "text": "Read More"
+      },
+      "items_text": {
+        "text": "items"
       }
     },
     "cart": {

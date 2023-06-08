@@ -324,37 +324,6 @@
         "show_rating": false
       }
     },
-    "16838925810f014ebe": {
-      "type": "apps",
-      "blocks": {
-        "9fa3363a-3d46-4c83-8e03-26ca7f5d58ce": {
-          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/sticky-compact-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
-          "settings": {
-            "themeId": "light",
-            "verticalPositionId": "bottom",
-            "horizontalPositionId": "right",
-            "minimize": true
-          }
-        },
-        "0d40fb72-0ab9-424a-a6fd-f5dfd8f30065": {
-          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
-          "settings": {
-            "themeId": "light",
-            "autoscroll": true,
-            "showRating": true,
-            "showReviewPhotos": false,
-            "writeReview": false
-          }
-        }
-      },
-      "block_order": [
-        "9fa3363a-3d46-4c83-8e03-26ca7f5d58ce",
-        "0d40fb72-0ab9-424a-a6fd-f5dfd8f30065"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "d88e7a3e-0508-4437-8274-78c39c41df19": {
       "type": "rich-text",
       "disabled": true,
@@ -437,6 +406,37 @@
       ],
       "settings": {
         "bg-color": "background-1"
+      }
+    },
+    "16838925810f014ebe": {
+      "type": "apps",
+      "blocks": {
+        "9fa3363a-3d46-4c83-8e03-26ca7f5d58ce": {
+          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/sticky-compact-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "verticalPositionId": "bottom",
+            "horizontalPositionId": "right",
+            "minimize": true
+          }
+        },
+        "0d40fb72-0ab9-424a-a6fd-f5dfd8f30065": {
+          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "autoscroll": true,
+            "showRating": true,
+            "showReviewPhotos": false,
+            "writeReview": false
+          }
+        }
+      },
+      "block_order": [
+        "9fa3363a-3d46-4c83-8e03-26ca7f5d58ce",
+        "0d40fb72-0ab9-424a-a6fd-f5dfd8f30065"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "16321391205a6cb4a0": {
@@ -599,9 +599,9 @@
     "17d8b2b8-2ef1-435c-a182-ac2679714d92",
     "16818057075a8347c3",
     "ee23c372-910f-47bd-9d3f-634191bdd9ba",
-    "16838925810f014ebe",
     "d88e7a3e-0508-4437-8274-78c39c41df19",
     "32a59aee-122c-4b8e-ae03-11f6abc655da",
+    "16838925810f014ebe",
     "16321391205a6cb4a0",
     "1659603408f2602b15",
     "product-recommendations",

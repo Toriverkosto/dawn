@@ -50,6 +50,7 @@
     font-size: 1.6rem;
     line-height: 1.69rem;
     width: 100%;
+    gap: 1rem;
 }
 
 
@@ -68,6 +69,8 @@
     flex-direction: row;
     justify-content: flex-end;
     margin-left: auto;
+    margin-bottom: auto;
+    margin-top: auto;
     color: #237AD2;
     font-weight: 400;
     font-family: var(--font-body-family);
@@ -90,6 +93,19 @@
     justify-content: space-between;
     height: 100%;
     gap: 1.33rem;
+    color: #8C9196
+}
+
+.qc-items-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: #8C9196;
+    font-weight: 400;
+    margin-left: -0.25rem;
+    margin-bottom: -1px;
+    font-size: 1.8rem;
 }
 
 .qc-card-link {

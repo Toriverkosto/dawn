@@ -328,10 +328,35 @@
         "bg-color": "background-1"
       }
     },
-    "1658753344fb82cc90": {
-      "type": "custom-liquid",
+    "1683892378f3a3f6b0": {
+      "type": "apps",
+      "blocks": {
+        "d00dc042-c32c-4da2-8ca7-bfee53c33514": {
+          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/sticky-compact-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "verticalPositionId": "bottom",
+            "horizontalPositionId": "right",
+            "minimize": true
+          }
+        },
+        "09de6590-b0ce-4727-a18a-0ec059b3a500": {
+          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "autoscroll": true,
+            "showRating": true,
+            "showReviewPhotos": false,
+            "writeReview": false
+          }
+        }
+      },
+      "block_order": [
+        "d00dc042-c32c-4da2-8ca7-bfee53c33514",
+        "09de6590-b0ce-4727-a18a-0ec059b3a500"
+      ],
       "settings": {
-        "custom_liquid": "<br>\n<div class=\"reputon-google-reviews-widget\" id=\"10abb9a0-8e45-11ec-b71b-13d735077cf2\" ><\/div>"
+        "include_margins": true
       }
     },
     "16324019941e428b8f": {
@@ -416,26 +441,6 @@
         "color_scheme": "inverse",
         "layout": "image_first"
       }
-    },
-    "1683892378f3a3f6b0": {
-      "type": "apps",
-      "blocks": {
-        "d00dc042-c32c-4da2-8ca7-bfee53c33514": {
-          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/sticky-compact-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
-          "settings": {
-            "themeId": "light",
-            "verticalPositionId": "bottom",
-            "horizontalPositionId": "right",
-            "minimize": true
-          }
-        }
-      },
-      "block_order": [
-        "d00dc042-c32c-4da2-8ca7-bfee53c33514"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
@@ -446,10 +451,9 @@
     "1657620235cdd65344",
     "d1705a6b-26b3-4963-8ae3-e1b47bba54d1",
     "e34eed1c-555b-489d-855b-768ba289c0e5",
-    "1658753344fb82cc90",
+    "1683892378f3a3f6b0",
     "16324019941e428b8f",
     "product-recommendations",
-    "163239432974b497b2",
-    "1683892378f3a3f6b0"
+    "163239432974b497b2"
   ]
 }

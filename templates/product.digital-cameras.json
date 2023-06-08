@@ -264,10 +264,119 @@
       "settings": {
       }
     },
-    "1658753808da38ee31": {
-      "type": "custom-liquid",
+    "d60a25a0-62ed-44d1-a8b4-250bf1263450": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "template--15243804016838__d60a25a0-62ed-44d1-a8b4-250bf1263450-1686223482584f2f53-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We Know Cameras & Lenses",
+            "heading_size": "h1"
+          }
+        },
+        "template--15243804016838__d60a25a0-62ed-44d1-a8b4-250bf1263450-1686223482584f2f53-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Kamerastore is here to help keep film photography alive. Therefore we sell & price items based on their actual functional condition, rather than how shiny or used it appears to be. Use our condition labels to find the right item for you. If it's broken, certified as working, or has been tediously restored - there is power in knowing.<\/p>"
+          }
+        },
+        "template--15243804016838__d60a25a0-62ed-44d1-a8b4-250bf1263450-1686223482584f2f53-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804016838__d60a25a0-62ed-44d1-a8b4-250bf1263450-1686223482584f2f53-0",
+        "template--15243804016838__d60a25a0-62ed-44d1-a8b4-250bf1263450-1686223482584f2f53-1",
+        "template--15243804016838__d60a25a0-62ed-44d1-a8b4-250bf1263450-1686223482584f2f53-2"
+      ],
       "settings": {
-        "custom_liquid": "<br>\n<div class=\"reputon-google-reviews-widget\" id=\"10abb9a0-8e45-11ec-b71b-13d735077cf2\" ><\/div>"
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "acda67b0-e3a7-42cc-bab0-290e74b6e31d": {
+      "type": "qc-cards",
+      "disabled": true,
+      "blocks": {
+        "template--15243804016838__acda67b0-e3a7-42cc-bab0-290e74b6e31d-16862232659cae42a9-0": {
+          "type": "qc_restored_card",
+          "settings": {
+            "qc-restored": true,
+            "qc-restored-link": false,
+            "restored-link-text": "<p>Add link to QC Restored card.<\/p>"
+          }
+        },
+        "template--15243804016838__acda67b0-e3a7-42cc-bab0-290e74b6e31d-16862232659cae42a9-1": {
+          "type": "qc_certified_card",
+          "settings": {
+            "qc-certified": true,
+            "qc-certified-link": false,
+            "certified-link-text": "<p>Add link to QC Certified card.<\/p>"
+          }
+        },
+        "template--15243804016838__acda67b0-e3a7-42cc-bab0-290e74b6e31d-16862232659cae42a9-2": {
+          "type": "qc_passed_card",
+          "settings": {
+            "qc-passed": true,
+            "qc-passed-link": false,
+            "passed-link-text": "<p>Add link to QC Passed product card.<\/p>"
+          }
+        },
+        "template--15243804016838__acda67b0-e3a7-42cc-bab0-290e74b6e31d-16862232659cae42a9-3": {
+          "type": "qc_not_passed_card",
+          "settings": {
+            "qc-not-passed": true,
+            "qc-not-passed-link": false,
+            "not-passed-link-text": "<p>Add link to QC Not Passed product card.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804016838__acda67b0-e3a7-42cc-bab0-290e74b6e31d-16862232659cae42a9-0",
+        "template--15243804016838__acda67b0-e3a7-42cc-bab0-290e74b6e31d-16862232659cae42a9-1",
+        "template--15243804016838__acda67b0-e3a7-42cc-bab0-290e74b6e31d-16862232659cae42a9-2",
+        "template--15243804016838__acda67b0-e3a7-42cc-bab0-290e74b6e31d-16862232659cae42a9-3"
+      ],
+      "settings": {
+        "bg-color": "no-background"
+      }
+    },
+    "1683892623d3542dbd": {
+      "type": "apps",
+      "blocks": {
+        "2907b961-511a-4af2-b4a7-b2544dd281a0": {
+          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/sticky-compact-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "verticalPositionId": "bottom",
+            "horizontalPositionId": "right",
+            "minimize": true
+          }
+        },
+        "38633b43-5a41-4708-a017-119b8cb33285": {
+          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "autoscroll": true,
+            "showRating": true,
+            "showReviewPhotos": false,
+            "writeReview": false
+          }
+        }
+      },
+      "block_order": [
+        "2907b961-511a-4af2-b4a7-b2544dd281a0",
+        "38633b43-5a41-4708-a017-119b8cb33285"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "1636976863088ccff1": {
@@ -323,36 +432,17 @@
         "show_vendor": true,
         "show_rating": false
       }
-    },
-    "1683892623d3542dbd": {
-      "type": "apps",
-      "blocks": {
-        "2907b961-511a-4af2-b4a7-b2544dd281a0": {
-          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/sticky-compact-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
-          "settings": {
-            "themeId": "light",
-            "verticalPositionId": "bottom",
-            "horizontalPositionId": "right",
-            "minimize": true
-          }
-        }
-      },
-      "block_order": [
-        "2907b961-511a-4af2-b4a7-b2544dd281a0"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "main",
     "168595869961dfb2a5",
     "165830265535c3ca80",
-    "1658753808da38ee31",
+    "d60a25a0-62ed-44d1-a8b4-250bf1263450",
+    "acda67b0-e3a7-42cc-bab0-290e74b6e31d",
+    "1683892623d3542dbd",
     "1636976863088ccff1",
     "16321339467e367887",
-    "product-recommendations",
-    "1683892623d3542dbd"
+    "product-recommendations"
   ]
 }

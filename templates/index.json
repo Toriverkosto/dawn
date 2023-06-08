@@ -80,43 +80,6 @@
         "show_text_below": true
       }
     },
-    "9fc4d243-8c35-40b9-81b6-fc9d6617cbe2": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "template--15243804115142__9fc4d243-8c35-40b9-81b6-fc9d6617cbe2-168614080905abadbf-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Item Condition",
-            "heading_size": "h1"
-          }
-        },
-        "template--15243804115142__9fc4d243-8c35-40b9-81b6-fc9d6617cbe2-168614080905abadbf-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our item condition labels inform you of products functional condition and if any repair or service has been provided. Find the products you want faster, and use them without unwanted surprises. <br\/><\/p>"
-          }
-        },
-        "template--15243804115142__9fc4d243-8c35-40b9-81b6-fc9d6617cbe2-168614080905abadbf-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "template--15243804115142__9fc4d243-8c35-40b9-81b6-fc9d6617cbe2-168614080905abadbf-0",
-        "template--15243804115142__9fc4d243-8c35-40b9-81b6-fc9d6617cbe2-168614080905abadbf-1",
-        "template--15243804115142__9fc4d243-8c35-40b9-81b6-fc9d6617cbe2-168614080905abadbf-2"
-      ],
-      "settings": {
-        "color_scheme": "background-2",
-        "full_width": true
-      }
-    },
     "e6d89980-87cb-4a0e-a3f0-81a4f49ea05b": {
       "type": "rich-text",
       "disabled": true,
@@ -669,7 +632,6 @@
   "order": [
     "e3eec42a-3d9c-41ad-aaa2-fe480384b72b",
     "ab2bb2f3-2333-4123-98ed-40aacfc16ad6",
-    "9fc4d243-8c35-40b9-81b6-fc9d6617cbe2",
     "e6d89980-87cb-4a0e-a3f0-81a4f49ea05b",
     "348d608d-13af-4ff4-a7a0-021084115c31",
     "aabc153b-fba5-4792-a63f-96736474ff4e",

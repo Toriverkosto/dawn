@@ -117,6 +117,42 @@
         "full_width": true
       }
     },
+    "e6d89980-87cb-4a0e-a3f0-81a4f49ea05b": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "template--15243804115142__e6d89980-87cb-4a0e-a3f0-81a4f49ea05b-168614080905abadbf-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We Know Cameras & Lenses",
+            "heading_size": "h1"
+          }
+        },
+        "template--15243804115142__e6d89980-87cb-4a0e-a3f0-81a4f49ea05b-168614080905abadbf-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--15243804115142__e6d89980-87cb-4a0e-a3f0-81a4f49ea05b-168614080905abadbf-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804115142__e6d89980-87cb-4a0e-a3f0-81a4f49ea05b-168614080905abadbf-0",
+        "template--15243804115142__e6d89980-87cb-4a0e-a3f0-81a4f49ea05b-168614080905abadbf-1",
+        "template--15243804115142__e6d89980-87cb-4a0e-a3f0-81a4f49ea05b-168614080905abadbf-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "348d608d-13af-4ff4-a7a0-021084115c31": {
       "type": "qc-cards",
       "disabled": true,
@@ -161,7 +197,7 @@
         "template--15243804115142__348d608d-13af-4ff4-a7a0-021084115c31-16859666058763b766-3"
       ],
       "settings": {
-        "bg-color": "background-1"
+        "bg-color": "no-background"
       }
     },
     "aabc153b-fba5-4792-a63f-96736474ff4e": {
@@ -633,6 +669,7 @@
     "e3eec42a-3d9c-41ad-aaa2-fe480384b72b",
     "ab2bb2f3-2333-4123-98ed-40aacfc16ad6",
     "9fc4d243-8c35-40b9-81b6-fc9d6617cbe2",
+    "e6d89980-87cb-4a0e-a3f0-81a4f49ea05b",
     "348d608d-13af-4ff4-a7a0-021084115c31",
     "aabc153b-fba5-4792-a63f-96736474ff4e",
     "b7f435c5-c4b1-48ef-ae36-13d31e15ecb0",

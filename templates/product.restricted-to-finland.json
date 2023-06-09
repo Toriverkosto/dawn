@@ -157,8 +157,117 @@
       "settings": {
       }
     },
+    "d91cfe09-3a44-4b83-8e43-a5afa59c9b24": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "template--15243804049606__d91cfe09-3a44-4b83-8e43-a5afa59c9b24-1686300473785da1c5-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We Know Cameras & Lenses",
+            "heading_size": "h1"
+          }
+        },
+        "template--15243804049606__d91cfe09-3a44-4b83-8e43-a5afa59c9b24-1686300473785da1c5-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Kamerastore is here to help keep film photography alive. Therefore we sell & price items based on their actual functional condition, rather than how shiny or used it appears to be. Use our condition labels to find the right item for you. If it's broken, certified as working, or has been tediously restored - there is power in knowing.<\/p>"
+          }
+        },
+        "template--15243804049606__d91cfe09-3a44-4b83-8e43-a5afa59c9b24-1686300473785da1c5-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804049606__d91cfe09-3a44-4b83-8e43-a5afa59c9b24-1686300473785da1c5-0",
+        "template--15243804049606__d91cfe09-3a44-4b83-8e43-a5afa59c9b24-1686300473785da1c5-1",
+        "template--15243804049606__d91cfe09-3a44-4b83-8e43-a5afa59c9b24-1686300473785da1c5-2"
+      ],
+      "settings": {
+        "color_scheme": "background-2",
+        "full_width": true
+      }
+    },
+    "7f423786-c241-417d-a822-b63d7b083007": {
+      "type": "qc-cards",
+      "disabled": true,
+      "blocks": {
+        "template--15243804049606__7f423786-c241-417d-a822-b63d7b083007-16863005424cdddfd5-0": {
+          "type": "qc_restored_card",
+          "settings": {
+            "qc-restored": true,
+            "qc-restored-link": false,
+            "restored-link-text": "<p>Add link to QC Restored card.<\/p>"
+          }
+        },
+        "template--15243804049606__7f423786-c241-417d-a822-b63d7b083007-16863005424cdddfd5-1": {
+          "type": "qc_certified_card",
+          "settings": {
+            "qc-certified": true,
+            "qc-certified-link": false,
+            "certified-link-text": "<p>Add link to QC Certified card.<\/p>"
+          }
+        },
+        "template--15243804049606__7f423786-c241-417d-a822-b63d7b083007-16863005424cdddfd5-2": {
+          "type": "qc_passed_card",
+          "settings": {
+            "qc-passed": true,
+            "qc-passed-link": false,
+            "passed-link-text": "<p>Add link to QC Passed product card.<\/p>"
+          }
+        },
+        "template--15243804049606__7f423786-c241-417d-a822-b63d7b083007-16863005424cdddfd5-3": {
+          "type": "qc_not_passed_card",
+          "settings": {
+            "qc-not-passed": true,
+            "qc-not-passed-link": false,
+            "not-passed-link-text": "<p>Add link to QC Not Passed product card.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804049606__7f423786-c241-417d-a822-b63d7b083007-16863005424cdddfd5-0",
+        "template--15243804049606__7f423786-c241-417d-a822-b63d7b083007-16863005424cdddfd5-1",
+        "template--15243804049606__7f423786-c241-417d-a822-b63d7b083007-16863005424cdddfd5-2",
+        "template--15243804049606__7f423786-c241-417d-a822-b63d7b083007-16863005424cdddfd5-3"
+      ],
+      "settings": {
+        "bg-color": "background-1"
+      }
+    },
     "163292242191680787": {
       "type": "apps",
+      "blocks": {
+        "a13a9451-f751-4412-b645-e2eb74075b1d": {
+          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "autoscroll": true,
+            "showRating": true,
+            "showReviewPhotos": false,
+            "writeReview": false
+          }
+        },
+        "a578d82b-9de6-45d8-a3ff-a0eef97f7e54": {
+          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/sticky-compact-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "verticalPositionId": "bottom",
+            "horizontalPositionId": "right",
+            "minimize": true
+          }
+        }
+      },
+      "block_order": [
+        "a13a9451-f751-4412-b645-e2eb74075b1d",
+        "a578d82b-9de6-45d8-a3ff-a0eef97f7e54"
+      ],
       "settings": {
         "include_margins": true
       }
@@ -192,7 +301,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
-        "background_style": "secondary",
+        "background_style": "primary",
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": true
@@ -266,6 +375,8 @@
   "order": [
     "main",
     "16576208266f7f4237",
+    "d91cfe09-3a44-4b83-8e43-a5afa59c9b24",
+    "7f423786-c241-417d-a822-b63d7b083007",
     "163292242191680787",
     "16324019941e428b8f",
     "1633072662af6d667c",

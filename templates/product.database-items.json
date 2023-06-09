@@ -372,7 +372,7 @@
       "type": "custom-liquid",
       "disabled": true,
       "settings": {
-        "custom_liquid": "{{product.metafields.kameratori.stock_items.value | metafield_list}}\n\n{% assign current_product = product %}\n\n          {% for product in current_product.metafields.kameratori.stock_items.value %}\n            {% if product.available %}\n{{ product.price | money }}\n {% endif %}\n          {% endfor %}"
+        "custom_liquid": "<h2>Featured Collection<\/h2>\n\n{% assign current_product = product %}\n\n          {% for product in current_product.metafields.kameratori.stock_items.value %}\n\n    <ul class=\"product-list\">\n      \n          <li class=\"product\">\n              <a href=\"{{ product.url }}\" title=\"{{ product.title }}\">\n                <img src=\"{{ product.featured_image | img_url: '200x200', crop: 'center', format: 'pjpg' }}\" alt=\"{{ product.title }}\" loading=\"lazy\">\n                <h3>{{ product.title }}<\/h3>\n                <span class=\"price\">{{ product.price | money_with_currency }}<\/span>\n              <\/a>\n            <\/li>\n         \n        \n\n    <\/ul>\n  <\/div>\n            \n          {% endfor %}"
       }
     },
     "76cb82f9-9830-4881-a949-dfe5f094cbc1": {
@@ -380,6 +380,13 @@
       "disabled": true,
       "settings": {
         "custom_liquid": "{%- if product.metafields.kameratori.stock_items.value -%}\n  <p>Currently Available:<\/p>\n  {%- for product in product.metafields.kameratori.stock_items.value -%}\n    {%- if product.available -%}\n  {{product.price | money_with_currency}}<a href=\"{{ alt_product.url }}\" title=\"{{ product.title }}\"><img src=\"{{ product.featured_image | img_url: '200x200', crop: 'center', format: 'pjpg' }}\" alt=\"{{ product.title }}\" loading=\"lazy\"><\/a>\n    {%- endif -%}\n  {%- endfor -%}\n{%- endif -%}"
+      }
+    },
+    "66d542b0-c6aa-459a-802e-79e3752cc203": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "{%- if product.metafields.kameratori.stock_items.value -%}\n  <div class=\"featured-collection\">\n    <h2>Featured Collection<\/h2>\n    <ul class=\"product-list\">\n      {%- for product_handle in product.metafields.kameratori.stock_items.value -%}\n        {%- assign product_meta = all_products[product_handle].metafields.kameratori -%}\n        {%- if product_meta -%}\n          {%- assign product = all_products[product_handle] -%}\n          {%- if product.available -%}\n            <li class=\"product\">\n              <a href=\"{{ product.url }}\" title=\"{{ product.title }}\">\n                <img src=\"{{ product.featured_image | img_url: '200x200', crop: 'center', format: 'pjpg' }}\" alt=\"{{ product.title }}\" loading=\"lazy\">\n                <h3>{{ product.title }}<\/h3>\n                <span class=\"price\">{{ product.price | money_with_currency }}<\/span>\n              <\/a>\n            <\/li>\n          {%- endif -%}\n        {%- endif -%}\n      {%- endfor -%}\n    <\/ul>\n  <\/div>\n{%- endif -%}"
       }
     }
   },
@@ -399,6 +406,7 @@
     "product-recommendations",
     "163239432974b497b2",
     "1656572953ff843f1c",
-    "76cb82f9-9830-4881-a949-dfe5f094cbc1"
+    "76cb82f9-9830-4881-a949-dfe5f094cbc1",
+    "66d542b0-c6aa-459a-802e-79e3752cc203"
   ]
 }

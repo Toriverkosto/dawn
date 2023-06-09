@@ -32,7 +32,7 @@
     color: #202223;
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 1.8rem;
     line-height: 20px;
     
 
@@ -43,11 +43,6 @@
     margin-top: 18px;
     width: auto;
     height: auto;
-    font: normal 400 1.4rem/1.6rem;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
     color: #686868;
     flex: none;
     order: 0;
@@ -75,8 +70,8 @@
 }
 
 .qc-new-badge {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -128,6 +123,7 @@
  .qc-collection-new > a {
     color: #458FFF;
     text-decoration: none;
+    font-size: 1.6rem;
  }
 
  .qc-collection-new > a:hover {

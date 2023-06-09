@@ -27,6 +27,15 @@
     max-width: 500px;
 }
 
+.qc-card-badge {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .qc-img {
     display: flex;
     object-fit: cover;

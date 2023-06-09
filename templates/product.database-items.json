@@ -377,7 +377,6 @@
     },
     "76cb82f9-9830-4881-a949-dfe5f094cbc1": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
         "custom_liquid": "{%- if product.metafields.kameratori.stock_items.value -%}\n  <p>Currently Available:<\/p>\n  {%- for product in product.metafields.kameratori.stock_items.value -%}\n    {%- if product.available -%}\n  {{product.price | money_with_currency}}<a href=\"{{ alt_product.url }}\" title=\"{{ product.title }}\"><img src=\"{{ product.featured_image | img_url: '200x200', crop: 'center', format: 'pjpg' }}\" alt=\"{{ product.title }}\" loading=\"lazy\"><\/a>\n    {%- endif -%}\n  {%- endfor -%}\n{%- endif -%}"
       }

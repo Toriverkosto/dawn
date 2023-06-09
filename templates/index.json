@@ -627,6 +627,12 @@
         "color_scheme": "background-1",
         "full_width": true
       }
+    },
+    "168630386795caa0b7": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -652,6 +658,7 @@
     "1655878837fa505e49",
     "1637242258da800a0c",
     "16853512478aabdfe2",
-    "f9ddfc6e-43fd-448b-b981-034c96684a0b"
+    "f9ddfc6e-43fd-448b-b981-034c96684a0b",
+    "168630386795caa0b7"
   ]
 }

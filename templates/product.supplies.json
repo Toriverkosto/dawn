@@ -59,6 +59,15 @@
             "content_not_passed": "<p>Untested or: tested, inspected, and found to have significant flaws that affect or prevent normal use. These items should be considered broken. Repair may or may not be possible.<\/p>"
           }
         },
+        "fd1e2ac6-aca0-42d2-91e4-6e93ce798698": {
+          "type": "quality_control_value_box",
+          "disabled": true,
+          "settings": {
+            "quality_control_new": "",
+            "content_passed_new": "<p>Tested, inspected, cleaned and working with no significant flaws. These items can be considered “ready to use” for their intended purpose. Minor flaws are possible and are noted in the product description.<\/p>",
+            "content_not_passed_new": "<p>Untested or: tested, inspected, and found to have significant flaws that affect or prevent normal use. These items should be considered broken. Repair may or may not be possible.<\/p>"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -151,6 +160,7 @@
         "f0c9e60b-84e2-4c7b-a294-cab454328d82",
         "quantity_selector",
         "96a40ae9-af35-4428-bb42-ad4fe700f2df",
+        "fd1e2ac6-aca0-42d2-91e4-6e93ce798698",
         "variant_picker",
         "ec88d254-bbe8-4b70-a8ba-4e63f56ef136",
         "buy_buttons",
@@ -229,10 +239,119 @@
       "settings": {
       }
     },
-    "1658753665c574aafb": {
-      "type": "custom-liquid",
+    "1adc94ea-11f7-4dd6-b3c8-570523ae6972": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "template--15243804344518__1adc94ea-11f7-4dd6-b3c8-570523ae6972-1686300473785da1c5-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We Know Cameras & Lenses",
+            "heading_size": "h1"
+          }
+        },
+        "template--15243804344518__1adc94ea-11f7-4dd6-b3c8-570523ae6972-1686300473785da1c5-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Kamerastore is here to help keep film photography alive. Therefore we sell & price items based on their actual functional condition, rather than how shiny or used it appears to be. Use our condition labels to find the right item for you. If it's broken, certified as working, or has been tediously restored - there is power in knowing.<\/p>"
+          }
+        },
+        "template--15243804344518__1adc94ea-11f7-4dd6-b3c8-570523ae6972-1686300473785da1c5-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804344518__1adc94ea-11f7-4dd6-b3c8-570523ae6972-1686300473785da1c5-0",
+        "template--15243804344518__1adc94ea-11f7-4dd6-b3c8-570523ae6972-1686300473785da1c5-1",
+        "template--15243804344518__1adc94ea-11f7-4dd6-b3c8-570523ae6972-1686300473785da1c5-2"
+      ],
       "settings": {
-        "custom_liquid": "<br>\n<div class=\"reputon-google-reviews-widget\" id=\"10abb9a0-8e45-11ec-b71b-13d735077cf2\" ><\/div>"
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "330f4051-5a22-4270-95ac-736a6a942b0a": {
+      "type": "qc-cards",
+      "disabled": true,
+      "blocks": {
+        "template--15243804344518__330f4051-5a22-4270-95ac-736a6a942b0a-16863005424cdddfd5-0": {
+          "type": "qc_restored_card",
+          "settings": {
+            "qc-restored": true,
+            "qc-restored-link": false,
+            "restored-link-text": "<p>Add link to QC Restored card.<\/p>"
+          }
+        },
+        "template--15243804344518__330f4051-5a22-4270-95ac-736a6a942b0a-16863005424cdddfd5-1": {
+          "type": "qc_certified_card",
+          "settings": {
+            "qc-certified": true,
+            "qc-certified-link": false,
+            "certified-link-text": "<p>Add link to QC Certified card.<\/p>"
+          }
+        },
+        "template--15243804344518__330f4051-5a22-4270-95ac-736a6a942b0a-16863005424cdddfd5-2": {
+          "type": "qc_passed_card",
+          "settings": {
+            "qc-passed": true,
+            "qc-passed-link": false,
+            "passed-link-text": "<p>Add link to QC Passed product card.<\/p>"
+          }
+        },
+        "template--15243804344518__330f4051-5a22-4270-95ac-736a6a942b0a-16863005424cdddfd5-3": {
+          "type": "qc_not_passed_card",
+          "settings": {
+            "qc-not-passed": true,
+            "qc-not-passed-link": false,
+            "not-passed-link-text": "<p>Add link to QC Not Passed product card.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804344518__330f4051-5a22-4270-95ac-736a6a942b0a-16863005424cdddfd5-0",
+        "template--15243804344518__330f4051-5a22-4270-95ac-736a6a942b0a-16863005424cdddfd5-1",
+        "template--15243804344518__330f4051-5a22-4270-95ac-736a6a942b0a-16863005424cdddfd5-2",
+        "template--15243804344518__330f4051-5a22-4270-95ac-736a6a942b0a-16863005424cdddfd5-3"
+      ],
+      "settings": {
+        "bg-color": "no-background"
+      }
+    },
+    "16838927169aeab5f2": {
+      "type": "apps",
+      "blocks": {
+        "841a8b5e-c668-4348-a1f4-d709ca6df7f9": {
+          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/sticky-compact-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "verticalPositionId": "bottom",
+            "horizontalPositionId": "right",
+            "minimize": true
+          }
+        },
+        "ae58e9af-4ca9-4e2c-9acb-6acdcbd626d7": {
+          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "autoscroll": true,
+            "showRating": true,
+            "showReviewPhotos": true,
+            "writeReview": true
+          }
+        }
+      },
+      "block_order": [
+        "841a8b5e-c668-4348-a1f4-d709ca6df7f9",
+        "ae58e9af-4ca9-4e2c-9acb-6acdcbd626d7"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "16324019941e428b8f": {
@@ -333,37 +452,18 @@
         "color_scheme": "inverse",
         "layout": "image_first"
       }
-    },
-    "16838927169aeab5f2": {
-      "type": "apps",
-      "blocks": {
-        "841a8b5e-c668-4348-a1f4-d709ca6df7f9": {
-          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/sticky-compact-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
-          "settings": {
-            "themeId": "light",
-            "verticalPositionId": "bottom",
-            "horizontalPositionId": "right",
-            "minimize": true
-          }
-        }
-      },
-      "block_order": [
-        "841a8b5e-c668-4348-a1f4-d709ca6df7f9"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "main",
     "168180626803b6c3b8",
     "1657620671c07e2171",
-    "1658753665c574aafb",
+    "1adc94ea-11f7-4dd6-b3c8-570523ae6972",
+    "330f4051-5a22-4270-95ac-736a6a942b0a",
+    "16838927169aeab5f2",
     "16324019941e428b8f",
     "1633072662af6d667c",
     "product-recommendations",
-    "163239432974b497b2",
-    "16838927169aeab5f2"
+    "163239432974b497b2"
   ]
 }

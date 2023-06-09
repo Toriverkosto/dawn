@@ -565,7 +565,7 @@
     "1655878837fa505e49": {
       "type": "featured-collection",
       "settings": {
-        "title": "{{ section.settings.collection.title }}",
+        "title": "{{ section.settings.collection.title }}: the future of film scanning",
         "collection": "valoi-360",
         "products_to_show": 4,
         "show_view_all": true,

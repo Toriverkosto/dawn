@@ -374,6 +374,13 @@
       "settings": {
         "custom_liquid": "{{product.metafields.kameratori.stock_items.value | metafield_list}}\n\n{% assign current_product = product %}\n\n          {% for product in current_product.metafields.kameratori.stock_items.value %}\n            {% if product.available %}\n{{ product.price | money }}\n {% endif %}\n          {% endfor %}"
       }
+    },
+    "76cb82f9-9830-4881-a949-dfe5f094cbc1": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "{%- if product.metafields.kameratori.stock_items.value -%}\n  <p>Currently Available:<\/p>\n  {%- for product in product.metafields.kameratori.stock_items.value -%}\n    {%- if product.available -%}\n  {{product.price | money_with_currency}}<a href=\"{{ alt_product.url }}\" title=\"{{ product.title }}\"><img src=\"{{ product.featured_image | img_url: '200x200', crop: 'center', format: 'pjpg' }}\" alt=\"{{ product.title }}\" loading=\"lazy\"><\/a>\n    {%- endif -%}\n  {%- endfor -%}\n{%- endif -%}"
+      }
     }
   },
   "order": [
@@ -391,6 +398,7 @@
     "16324019941e428b8f",
     "product-recommendations",
     "163239432974b497b2",
-    "1656572953ff843f1c"
+    "1656572953ff843f1c",
+    "76cb82f9-9830-4881-a949-dfe5f094cbc1"
   ]
 }

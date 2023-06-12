@@ -24,7 +24,8 @@
         },
         "content": {
           "type": "content",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -33,10 +34,28 @@
         "share",
         "content"
       ],
-      "settings": {}
+      "settings": {
+      }
+    },
+    "164bc337-59c3-4ba9-b8e6-9199e846a58f": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "164bc337-59c3-4ba9-b8e6-9199e846a58f"
   ]
 }

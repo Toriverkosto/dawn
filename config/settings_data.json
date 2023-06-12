@@ -98,7 +98,7 @@
           "logo_width": 140,
           "menu": "main-menu",
           "show_line_separator": false,
-          "enable_sticky_header": true
+          "enable_sticky_header": false
         }
       },
       "footer": {
@@ -221,12 +221,6 @@
         "disabled": false,
         "settings": {
           "directionRTL": false
-        }
-      },
-      "12657775114333427046": {
-        "type": "shopify:\/\/apps\/essential-countdown-timer-bar\/blocks\/app_embed\/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
-        "disabled": false,
-        "settings": {
         }
       },
       "17992116214976573926": {

@@ -243,6 +243,28 @@
         "layout": "image_first"
       }
     },
+    "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width page-width--wide\"> <center><H2>{{ 'sections.featured_collection.over' | t }} {{collections['new-last-7-days'].all_products_count}} {{ 'sections.featured_collection.items_added' | t }} <\/H2><\/center><\/div>"
+      }
+    },
+    "1660560902df48f128": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "collection": "new-last-7-days",
+        "products_to_show": 12,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": false
+      }
+    },
     "multi_column": {
       "type": "multicolumn",
       "blocks": {
@@ -281,32 +303,10 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
-        "background_style": "primary",
+        "background_style": "secondary",
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": true
-      }
-    },
-    "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"page-width page-width--wide\"> <center><H2>{{ 'sections.featured_collection.over' | t }} {{collections['new-last-7-days'].all_products_count}} {{ 'sections.featured_collection.items_added' | t }} <\/H2><\/center><\/div>"
-      }
-    },
-    "1660560902df48f128": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "",
-        "collection": "new-last-7-days",
-        "products_to_show": 12,
-        "show_view_all": true,
-        "swipe_on_mobile": true,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": true,
-        "show_rating": false
       }
     },
     "1683891361046b7454": {
@@ -640,9 +640,9 @@
     "348d608d-13af-4ff4-a7a0-021084115c31",
     "aabc153b-fba5-4792-a63f-96736474ff4e",
     "b7f435c5-c4b1-48ef-ae36-13d31e15ecb0",
-    "multi_column",
     "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe",
     "1660560902df48f128",
+    "multi_column",
     "1683891361046b7454",
     "16590912674b072be6",
     "16681567159a25ad0d",

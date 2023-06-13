@@ -159,7 +159,6 @@
     },
     "d91cfe09-3a44-4b83-8e43-a5afa59c9b24": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "template--15243804049606__d91cfe09-3a44-4b83-8e43-a5afa59c9b24-1686300473785da1c5-0": {
           "type": "heading",
@@ -171,7 +170,7 @@
         "template--15243804049606__d91cfe09-3a44-4b83-8e43-a5afa59c9b24-1686300473785da1c5-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Kamerastore is here to help keep film photography alive. Therefore we sell & price items based on their actual functional condition, rather than how shiny or used it appears to be. Use our condition labels to find the right item for you. If it's broken, certified as working, or has been tediously restored - there is power in knowing.<\/p>"
+            "text": "<p>Kamerastore is here to help keep film photography alive. Therefore we sell & price items based on their actual functional condition, rather than how shiny or used they appear to be. Use our condition labels to find the right item for you. If it's broken, certified as working, or has been tediously restored - there is power in knowing.<\/p>"
           }
         },
         "template--15243804049606__d91cfe09-3a44-4b83-8e43-a5afa59c9b24-1686300473785da1c5-2": {
@@ -196,7 +195,6 @@
     },
     "7f423786-c241-417d-a822-b63d7b083007": {
       "type": "qc-cards",
-      "disabled": true,
       "blocks": {
         "template--15243804049606__7f423786-c241-417d-a822-b63d7b083007-16863005424cdddfd5-0": {
           "type": "qc_restored_card",

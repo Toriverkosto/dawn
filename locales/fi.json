@@ -305,6 +305,9 @@
     "qc_card": {
       "link": {
         "text": "Lue lisää"
+      },
+      "items_text": {
+        "text": "tuotteet"
       }
     }
   },

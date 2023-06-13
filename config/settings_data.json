@@ -79,13 +79,26 @@
               "color_text": "#121212",
               "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"
             }
+          },
+          "574040eb-6c74-4f39-8aa1-f5002eaefa1d": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "Our item 'condition labels' are being updated during June 13-14",
+              "color_scheme": "accent-1",
+              "link": "",
+              "use_custom_color": true,
+              "color_text": "#514009",
+              "color_background": "linear-gradient(180deg, rgba(239, 208, 108, 1), rgba(239, 208, 108, 1) 100%)"
+            }
           }
         },
         "block_order": [
           "663bb0d0-2ba9-4b83-89b6-f9d14f01a5ec",
           "9a6f3578-ae3a-432d-bc24-cf9176022645",
           "073ddcaf-d783-4761-85a9-6ef2206cc387",
-          "39d85c5b-b96e-42e4-b90d-5d4e816742eb"
+          "39d85c5b-b96e-42e4-b90d-5d4e816742eb",
+          "574040eb-6c74-4f39-8aa1-f5002eaefa1d"
         ],
         "settings": {
         }

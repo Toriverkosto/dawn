@@ -301,6 +301,11 @@
       "link": {
         "text": "Katso 3 muuta kuntoluokitustamme"
       }
+    },
+    "qc_card": {
+      "link": {
+        "text": "Lue lisää"
+      }
     }
   },
   "localization": {

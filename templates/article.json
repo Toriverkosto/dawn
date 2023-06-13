@@ -16,23 +16,23 @@
             "blog_show_author": false
           }
         },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
             "share_label": "Share"
-          }
-        },
-        "content": {
-          "type": "content",
-          "settings": {
           }
         }
       },
       "block_order": [
         "featured_image",
         "title",
-        "share",
-        "content"
+        "content",
+        "share"
       ],
       "settings": {
       }
@@ -52,10 +52,47 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "d1068869-f8e6-4943-804e-0af193f9939f": {
+      "type": "collection-list",
+      "blocks": {
+        "template--15243803820230__d1068869-f8e6-4943-804e-0af193f9939f-1686642770aaa52628-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "point-shoot-cameras"
+          }
+        },
+        "template--15243803820230__d1068869-f8e6-4943-804e-0af193f9939f-1686642770aaa52628-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "film-cameras"
+          }
+        },
+        "template--15243803820230__d1068869-f8e6-4943-804e-0af193f9939f-1686642770aaa52628-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "lenses"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243803820230__d1068869-f8e6-4943-804e-0af193f9939f-1686642770aaa52628-0",
+        "template--15243803820230__d1068869-f8e6-4943-804e-0af193f9939f-1686642770aaa52628-1",
+        "template--15243803820230__d1068869-f8e6-4943-804e-0af193f9939f-1686642770aaa52628-2"
+      ],
+      "settings": {
+        "title": "Collections",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
+      }
     }
   },
   "order": [
     "main",
-    "164bc337-59c3-4ba9-b8e6-9199e846a58f"
+    "164bc337-59c3-4ba9-b8e6-9199e846a58f",
+    "d1068869-f8e6-4943-804e-0af193f9939f"
   ]
 }

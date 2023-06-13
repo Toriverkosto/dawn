@@ -290,6 +290,14 @@
       "items": "tuotetta",
       "products": "Tuoteryhmä",
       "total_items": "Tuotteita yhteensä"
+    },
+    "quality_control_value_box": {
+      "info": {
+        "text": "Tämä tuote &"
+      },
+      "info_2": {
+        "text": "muuta"
+      }
     }
   },
   "localization": {

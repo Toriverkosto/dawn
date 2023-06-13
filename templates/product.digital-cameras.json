@@ -55,6 +55,7 @@
         },
         "d8c14870-ef9f-4dee-96cf-b484635a1bc4": {
           "type": "quality_control_tab",
+          "disabled": true,
           "settings": {
             "quality_control": "",
             "content_passed": "<p>Tested, inspected, cleaned and working with no significant flaws. These items can be considered “ready to use” for their intended purpose. Minor flaws are possible and are noted in the product description.<\/p>",
@@ -63,7 +64,6 @@
         },
         "64a80ce5-ac7d-41f5-bd24-e110a39a9d0f": {
           "type": "quality_control_value_box",
-          "disabled": true,
           "settings": {
             "quality_control_new": "",
             "content_passed_new": "<p>Tested, inspected, cleaned and working with no significant flaws. These items can be considered “ready to use” for their intended purpose. Minor flaws are possible and are noted in the product description.<\/p>",
@@ -276,7 +276,6 @@
     },
     "d60a25a0-62ed-44d1-a8b4-250bf1263450": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "template--15243804016838__d60a25a0-62ed-44d1-a8b4-250bf1263450-1686223482584f2f53-0": {
           "type": "heading",
@@ -288,7 +287,7 @@
         "template--15243804016838__d60a25a0-62ed-44d1-a8b4-250bf1263450-1686223482584f2f53-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Kamerastore is here to help keep film photography alive. Therefore we sell & price items based on their actual functional condition, rather than how shiny or used it appears to be. Use our condition labels to find the right item for you. If it's broken, certified as working, or has been tediously restored - there is power in knowing.<\/p>"
+            "text": "<p>Kamerastore is here to help keep film photography alive. Therefore we sell & price items based on their actual functional condition, rather than how shiny or used they appear to be. Use our condition labels to find the right item for you. If it's broken, certified as working, or has been tediously restored - there is power in knowing.<\/p>"
           }
         },
         "template--15243804016838__d60a25a0-62ed-44d1-a8b4-250bf1263450-1686223482584f2f53-2": {
@@ -313,7 +312,6 @@
     },
     "acda67b0-e3a7-42cc-bab0-290e74b6e31d": {
       "type": "qc-cards",
-      "disabled": true,
       "blocks": {
         "template--15243804016838__acda67b0-e3a7-42cc-bab0-290e74b6e31d-16862232659cae42a9-0": {
           "type": "qc_restored_card",

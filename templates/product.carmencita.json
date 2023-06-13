@@ -125,7 +125,6 @@
     },
     "dcf03970-5af6-492a-bfab-bd29146468aa": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "template--15243805065414__dcf03970-5af6-492a-bfab-bd29146468aa-1686223482584f2f53-0": {
           "type": "heading",
@@ -162,7 +161,6 @@
     },
     "6a523c00-78ae-40c9-9dd1-afc9751353ab": {
       "type": "qc-cards",
-      "disabled": true,
       "blocks": {
         "template--15243805065414__6a523c00-78ae-40c9-9dd1-afc9751353ab-16862232659cae42a9-0": {
           "type": "qc_restored_card",

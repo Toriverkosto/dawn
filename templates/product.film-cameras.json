@@ -49,6 +49,7 @@
         },
         "b105008f-85ff-43bc-aa96-e0bce264719b": {
           "type": "quality_control_tab",
+          "disabled": true,
           "settings": {
             "quality_control": "",
             "content_passed": "<p>Tested, inspected, cleaned and working with no significant flaws. These items can be considered “ready to use” for their intended purpose. Minor flaws are possible and are noted in the product description.<\/p>",
@@ -57,7 +58,6 @@
         },
         "8e532b3d-db9e-4dc9-8368-5945b3f41219": {
           "type": "quality_control_value_box",
-          "disabled": true,
           "settings": {
             "quality_control_new": "",
             "content_passed_new": "<p>Tested, inspected, cleaned and working with no significant flaws. These items can be considered “ready to use” for their intended purpose. Minor flaws are possible and are noted in the product description.<\/p>",
@@ -289,7 +289,6 @@
     },
     "d88e7a3e-0508-4437-8274-78c39c41df19": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "template--15243804606662__d88e7a3e-0508-4437-8274-78c39c41df19-1686223482584f2f53-0": {
           "type": "heading",
@@ -301,7 +300,7 @@
         "template--15243804606662__d88e7a3e-0508-4437-8274-78c39c41df19-1686223482584f2f53-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Kamerastore is here to help keep film photography alive. Therefore we sell & price items based on their actual functional condition, rather than how shiny or used it appears to be. Use our condition labels to find the right item for you. If it's broken, certified as working, or has been tediously restored - there is power in knowing. See our condition labels below.<\/p>"
+            "text": "<p>Kamerastore is here to help keep film photography alive. Therefore we sell & price items based on their actual functional condition, rather than how shiny or used they appear to be. Use our condition labels to find the right item for you. If it's broken, certified as working, or has been tediously restored - there is power in knowing. See our condition labels below.<\/p>"
           }
         },
         "template--15243804606662__d88e7a3e-0508-4437-8274-78c39c41df19-1686223482584f2f53-2": {
@@ -326,7 +325,6 @@
     },
     "32a59aee-122c-4b8e-ae03-11f6abc655da": {
       "type": "qc-cards",
-      "disabled": true,
       "blocks": {
         "template--15243804606662__32a59aee-122c-4b8e-ae03-11f6abc655da-16862232659cae42a9-0": {
           "type": "qc_restored_card",

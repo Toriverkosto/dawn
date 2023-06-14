@@ -29,7 +29,7 @@
           "type": "button",
           "settings": {
             "button_label": "View Items",
-            "button_link": "shopify:\/\/collections\/qc-passed"
+            "button_link": "shopify:\/\/collections\/kamerastore-passed-used-item-cameras-lenses-accessories"
           }
         }
       },
@@ -54,7 +54,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Recently Added \"Passed\" Items",
-        "collection": "qc-passed",
+        "collection": "kamerastore-passed-used-item-cameras-lenses-accessories",
         "products_to_show": 12,
         "show_view_all": true,
         "swipe_on_mobile": false,

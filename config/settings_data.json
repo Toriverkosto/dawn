@@ -82,6 +82,7 @@
           },
           "574040eb-6c74-4f39-8aa1-f5002eaefa1d": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "We are in the process of updating our used item condition labels (June 13 & 14)",
               "color_scheme": "inverse",

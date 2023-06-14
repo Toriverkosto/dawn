@@ -182,13 +182,6 @@
     transform: rotate(-90deg);
   }
 
-  .qc-collection-icon-row {
-    display: inline;
-    flex-direction: none;
-    column-gap: none;
-    justify-content: none;
-}
-
 .qc-collection-with-badge {
   display: flex;
   flex-direction: row;

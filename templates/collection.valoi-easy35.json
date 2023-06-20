@@ -76,19 +76,20 @@
         "16371563761f101b4d-0": {
           "type": "heading",
           "settings": {
-            "heading": "VALOI"
+            "heading": "VALOI easy35"
           }
         },
         "16371563761f101b4d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Change the way you scan your film to save time and money by jumping into the future of film scanning.<\/p>"
+            "text": "<p>The easy35 is a compact home-scanning solution that attaches to a macro lens a digital camera to create a high-speed quality solution. <\/p><p>The pre-order sale for the easy35 is limited to 300 units and is shipping at the <strong>end of July or start of August 2023<\/strong>.<\/p>"
           }
         },
         "16371563761f101b4d-2": {
           "type": "button",
+          "disabled": true,
           "settings": {
-            "button_label": "What is camera scanning?",
+            "button_label": "",
             "button_link": "shopify:\/\/pages\/what-is-camera-scanning"
           }
         }
@@ -99,7 +100,7 @@
         "16371563761f101b4d-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/flatness.jpg",
+        "image": "shopify:\/\/shop_images\/Easy35_08981_20230315_1.jpg",
         "height": "adapt",
         "color_scheme": "background-2",
         "layout": "image_first"
@@ -142,7 +143,7 @@
         "2fa27346-a405-4929-9764-3c5ce2ee4662"
       ],
       "settings": {
-        "heading": "Featured Kit Options",
+        "heading": "VALOI easy35 Parts",
         "desktop_layout": "left",
         "mobile_layout": "collage"
       }

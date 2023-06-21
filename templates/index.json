@@ -455,7 +455,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Film",
-        "collection": "film",
+        "collection": "popular-film-in-stock",
         "products_to_show": 8,
         "show_view_all": true,
         "swipe_on_mobile": true,

@@ -465,7 +465,7 @@
       },
       "local_pickup": {
         "location_information": {
-          "one": "There is {{ count }} store with stock close to {{ address }}"
+          "one": "There is {{ count }} store with Stock close to {{ address }}"
         }
       }
     },

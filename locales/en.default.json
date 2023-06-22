@@ -465,8 +465,12 @@
       },
       "local_pickup": {
         "location_information": {
-          "one": "There is {{ count }} store with Stock close to {{ address }}"
+          "one": "There is {{ count }} store with stock close to {{ address }}",
+          "other": "There are {{ count }} stores with stock close to {{ address }}"
         }
+      },
+      "online_store_chat": {
+        "title": "There are {{ count }} stores with stock close to {{ address }}"
       }
     },
     "store_availability": {

@@ -462,6 +462,11 @@
         "local_delivery": "Local Delivery: Helsinki",
         "optional_shipping_line_delivery_instructions_label": "(optional)",
         "shipping_line_delivery_instructions": "Additional Information"
+      },
+      "local_pickup": {
+        "location_information": {
+          "one": "There is {{ count }} store with stock close to {{ address }}"
+        }
       }
     },
     "store_availability": {

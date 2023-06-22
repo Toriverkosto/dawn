@@ -102,6 +102,17 @@
               "color_text": "#121212",
               "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"
             }
+          },
+          "44f3181e-3e42-4533-b8a5-149b8e68cd24": {
+            "type": "announcement",
+            "settings": {
+              "text": "☀️ Our operations are closed during Midsummer (23.6.–25.6.) ☀️",
+              "color_scheme": "accent-2",
+              "link": "",
+              "use_custom_color": false,
+              "color_text": "#121212",
+              "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"
+            }
           }
         },
         "block_order": [
@@ -110,7 +121,8 @@
           "073ddcaf-d783-4761-85a9-6ef2206cc387",
           "39d85c5b-b96e-42e4-b90d-5d4e816742eb",
           "574040eb-6c74-4f39-8aa1-f5002eaefa1d",
-          "f7f5eabf-3536-414d-86f7-903eabc15e21"
+          "f7f5eabf-3536-414d-86f7-903eabc15e21",
+          "44f3181e-3e42-4533-b8a5-149b8e68cd24"
         ],
         "settings": {
         }
@@ -154,7 +166,7 @@
             "type": "text",
             "settings": {
               "heading": "Business Hours",
-              "subtext": "<p>☀️ Our operations are closed during Midsummer 23.6.–25.6. ☀️<\/p><p><a href=\"https:\/\/www.google.com\/maps?cid=190194912039482085\" title=\"https:\/\/www.google.com\/maps?cid=190194912039482085\"><span style=\"text-decoration:underline\"><strong>Tampere Customer Service, Delivery, & Pickups<\/strong><\/span><\/a><span style=\"text-decoration:underline\"><strong><br\/><\/strong><\/span>Mon-Fri: 10:00 to 16:00<br\/>Weekends: Closed<\/p><p><a href=\"https:\/\/www.google.com\/maps?cid=544005958638645025\" title=\"Helsinki Kiosk\"><span style=\"text-decoration:underline\"><strong>Helsinki Kiosk<\/strong><\/span><\/a><br\/>Mon-Fri: 12:00 to 18:00<br\/>Weekends: Closed<\/p><p><a href=\"https:\/\/goo.gl\/maps\/jm1HYUtb3whzcm4c7\"><span style=\"text-decoration:underline\"><strong>Espoo Kiosk<\/strong><\/span><\/a><br\/>Mon-Fri: 10:00 to 18:00<br\/>Weekends: Closed<\/p><p>Helsinki, Finland Time Zone<\/p>"
+              "subtext": "<p>☀️ We are closed for Midsummer (23.6.–25.6.) ☀️<\/p><p><a href=\"https:\/\/www.google.com\/maps?cid=190194912039482085\" title=\"https:\/\/www.google.com\/maps?cid=190194912039482085\"><span style=\"text-decoration:underline\"><strong>Tampere Customer Service, Delivery, & Pickups<\/strong><\/span><\/a><span style=\"text-decoration:underline\"><strong><br\/><\/strong><\/span>Mon-Fri: 10:00 to 16:00<br\/>Weekends: Closed<\/p><p><a href=\"https:\/\/www.google.com\/maps?cid=544005958638645025\" title=\"Helsinki Kiosk\"><span style=\"text-decoration:underline\"><strong>Helsinki Kiosk<\/strong><\/span><\/a><br\/>Mon-Fri: 12:00 to 18:00<br\/>Weekends: Closed<\/p><p><a href=\"https:\/\/goo.gl\/maps\/jm1HYUtb3whzcm4c7\"><span style=\"text-decoration:underline\"><strong>Espoo Kiosk<\/strong><\/span><\/a><br\/>Mon-Fri: 10:00 to 18:00<br\/>Weekends: Closed<\/p><p>Helsinki, Finland Time Zone<\/p>"
             }
           }
         },

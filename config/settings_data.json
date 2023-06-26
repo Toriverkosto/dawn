@@ -105,6 +105,7 @@
           },
           "44f3181e-3e42-4533-b8a5-149b8e68cd24": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "☀️ Our operations are closed [Fri-Sun] during Midsummer (23.6.–25.6.) ☀️",
               "color_scheme": "accent-2",

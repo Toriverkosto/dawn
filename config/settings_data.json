@@ -121,7 +121,7 @@
             "settings": {
               "text": "5% off all orders – use the code summer5 at the checkout",
               "color_scheme": "accent-1",
-              "link": "",
+              "link": "shopify:\/\/collections\/all-items",
               "use_custom_color": false,
               "color_text": "#121212",
               "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"

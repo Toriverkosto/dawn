@@ -108,7 +108,7 @@
     "16553912346ad77219": {
       "type": "collage",
       "blocks": {
-        "16553912345d4aa027-1": {
+        "681e3447-15ae-4efe-a295-401d2d814afc": {
           "type": "product",
           "settings": {
             "product": "enthusiast-scanning-kit",
@@ -120,13 +120,13 @@
         "55debb65-e2ad-4448-8f1f-6362b4086b1b": {
           "type": "product",
           "settings": {
-            "product": "advancer-scanning-kit",
+            "product": "valoi-advancer-scanning-kit",
             "second_image": false,
             "image_padding": false,
             "secondary_background": false
           }
         },
-        "2fa27346-a405-4929-9764-3c5ce2ee4662": {
+        "0ec1f54e-2d1c-42a6-89a9-d719ef47b377": {
           "type": "product",
           "settings": {
             "product": "large-scanning-kit",
@@ -137,9 +137,9 @@
         }
       },
       "block_order": [
-        "16553912345d4aa027-1",
+        "681e3447-15ae-4efe-a295-401d2d814afc",
         "55debb65-e2ad-4448-8f1f-6362b4086b1b",
-        "2fa27346-a405-4929-9764-3c5ce2ee4662"
+        "0ec1f54e-2d1c-42a6-89a9-d719ef47b377"
       ],
       "settings": {
         "heading": "Featured Kit Options",

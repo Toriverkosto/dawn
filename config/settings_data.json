@@ -114,6 +114,18 @@
               "color_text": "#121212",
               "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"
             }
+          },
+          "68aaf9a9-163c-4763-b602-5d9bcacce0b2": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "5% off all orders!",
+              "color_scheme": "accent-1",
+              "link": "",
+              "use_custom_color": false,
+              "color_text": "#121212",
+              "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"
+            }
           }
         },
         "block_order": [
@@ -123,7 +135,8 @@
           "39d85c5b-b96e-42e4-b90d-5d4e816742eb",
           "574040eb-6c74-4f39-8aa1-f5002eaefa1d",
           "f7f5eabf-3536-414d-86f7-903eabc15e21",
-          "44f3181e-3e42-4533-b8a5-149b8e68cd24"
+          "44f3181e-3e42-4533-b8a5-149b8e68cd24",
+          "68aaf9a9-163c-4763-b602-5d9bcacce0b2"
         ],
         "settings": {
         }

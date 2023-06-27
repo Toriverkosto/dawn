@@ -119,7 +119,7 @@
             "type": "announcement",
             "disabled": true,
             "settings": {
-              "text": "5% off all orders!",
+              "text": "5% off all orders – use the code summer5 at the checkout",
               "color_scheme": "accent-1",
               "link": "",
               "use_custom_color": false,

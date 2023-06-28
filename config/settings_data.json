@@ -110,9 +110,9 @@
               "text": "NEW: Product Condition Labels - find the right gear, faster",
               "color_scheme": "accent-2",
               "link": "shopify:\/\/pages\/kamerastore-used-item-condition",
-              "use_custom_color": false,
-              "color_text": "#121212",
-              "color_background": "linear-gradient(180deg, rgba(74, 182, 255, 1), rgba(74, 182, 255, 1) 100%)"
+              "use_custom_color": true,
+              "color_text": "#ffffff",
+              "color_background": "linear-gradient(99deg, rgba(67, 146, 136, 1), rgba(45, 77, 152, 1) 97%)"
             }
           }
         },

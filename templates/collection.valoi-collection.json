@@ -1,75 +1,5 @@
 {
   "sections": {
-    "f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f": {
-      "type": "featured-product",
-      "disabled": true,
-      "blocks": {
-        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-0": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-1": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-2": {
-          "type": "text",
-          "settings": {
-            "text": "Offer valid through this weekend only.",
-            "text_style": "subtitle"
-          }
-        },
-        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-3": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-4": {
-          "type": "variant_picker",
-          "disabled": true,
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-5": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-6": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-7": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-0",
-        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-1",
-        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-2",
-        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-3",
-        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-4",
-        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-5",
-        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-6",
-        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-7"
-      ],
-      "settings": {
-        "product": "valoi-singles-day-kit",
-        "secondary_background": false,
-        "hide_variants": false,
-        "enable_video_looping": false
-      }
-    },
     "163715637672ee2874": {
       "type": "image-with-text",
       "blocks": {
@@ -105,6 +35,79 @@
         "layout": "image_first"
       }
     },
+    "f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f": {
+      "type": "featured-product",
+      "blocks": {
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-0": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-2": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Offer valid through this weekend only.",
+            "text_style": "subtitle"
+          }
+        },
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-4": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-5": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-7": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-0",
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-1",
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-2",
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-3",
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-4",
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-5",
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-6",
+        "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-7"
+      ],
+      "settings": {
+        "product": "large-scanning-kit",
+        "secondary_background": false,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
     "16553912346ad77219": {
       "type": "collage",
       "blocks": {
@@ -129,7 +132,7 @@
         "0ec1f54e-2d1c-42a6-89a9-d719ef47b377": {
           "type": "product",
           "settings": {
-            "product": "large-scanning-kit",
+            "product": "starter-kit-1",
             "second_image": false,
             "image_padding": false,
             "secondary_background": false
@@ -142,7 +145,7 @@
         "0ec1f54e-2d1c-42a6-89a9-d719ef47b377"
       ],
       "settings": {
-        "heading": "Featured Kit Options",
+        "heading": "Other Kit Options",
         "desktop_layout": "left",
         "mobile_layout": "collage"
       }
@@ -262,8 +265,8 @@
     }
   },
   "order": [
-    "f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f",
     "163715637672ee2874",
+    "f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f",
     "16553912346ad77219",
     "50d58055-b254-4570-86a4-253f11955c8e",
     "163274530333c96e90",

@@ -175,6 +175,7 @@
     },
     "1657620583d53dcde3": {
       "type": "main-product-description",
+      "disabled": true,
       "blocks": {
         "55d488eb-a634-467d-9bb5-2317f3da131f": {
           "type": "heading",

@@ -107,7 +107,7 @@
             "type": "announcement",
             "settings": {
               "text": "NEW: Product Condition Labels - find the right gear, faster",
-              "color_scheme": "accent-1",
+              "color_scheme": "accent-2",
               "link": "shopify:\/\/pages\/kamerastore-used-item-condition",
               "use_custom_color": false,
               "color_text": "#121212",

@@ -1,5 +1,41 @@
 {
   "sections": {
+    "72bdf521-21a5-4c1e-84cb-4d63f43092eb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15243804377286__72bdf521-21a5-4c1e-84cb-4d63f43092eb-16880350601fc81c0a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.title }}",
+            "heading_size": "h1"
+          }
+        },
+        "template--15243804377286__72bdf521-21a5-4c1e-84cb-4d63f43092eb-16880350601fc81c0a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Availability, details, price history, ratings, & reviews.<\/p>"
+          }
+        },
+        "template--15243804377286__72bdf521-21a5-4c1e-84cb-4d63f43092eb-16880350601fc81c0a-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804377286__72bdf521-21a5-4c1e-84cb-4d63f43092eb-16880350601fc81c0a-0",
+        "template--15243804377286__72bdf521-21a5-4c1e-84cb-4d63f43092eb-16880350601fc81c0a-1",
+        "template--15243804377286__72bdf521-21a5-4c1e-84cb-4d63f43092eb-16880350601fc81c0a-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "fd83893c-9f02-4d63-b487-404daf45eeb7": {
       "type": "featured-collection",
       "disabled": true,
@@ -61,11 +97,6 @@
         "custom_liquid": "<div class=\"page-width page-width--wide\">{%- assign my_fields = product.metafields.my_fields -%}\n<div class=\"hero\">\n{%- assign image_src = my_fields.brand_logo.value.src -%}\n{{ image_src | img_url: '125x125' | img_tag }}<\/div><\/div>"
       }
     },
-    "164543512984681dd4": {
-      "type": "database-product-price-table",
-      "settings": {
-      }
-    },
     "16340245700ec1844e": {
       "type": "apps",
       "settings": {
@@ -91,6 +122,7 @@
         },
         "56d3d8ad-8dcb-4146-bf63-5a3a9862d94b": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Kamerastore Digital Database",
             "text_style": "body"
@@ -98,6 +130,7 @@
         },
         "title": {
           "type": "title",
+          "disabled": true,
           "settings": {
           }
         },
@@ -113,6 +146,7 @@
         },
         "0a9a6be0-2265-416b-b0f3-048e7cfb2dab": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Details, images, availability, price history, ratings, & reviews.",
             "text_style": "subtitle"
@@ -168,6 +202,11 @@
         "show_breadcrumbs": true,
         "show_sku_and_barcode": false,
         "show_image_label": false
+      }
+    },
+    "164543512984681dd4": {
+      "type": "database-product-price-table",
+      "settings": {
       }
     },
     "1657620583d53dcde3": {
@@ -390,12 +429,13 @@
     }
   },
   "order": [
+    "72bdf521-21a5-4c1e-84cb-4d63f43092eb",
     "fd83893c-9f02-4d63-b487-404daf45eeb7",
     "1641816962ad3e2698",
     "1634194655a811a44b",
-    "164543512984681dd4",
     "16340245700ec1844e",
     "main",
+    "164543512984681dd4",
     "1657620583d53dcde3",
     "ee8ebef5-bfd1-4290-97db-94b2936529a4",
     "16450990378461246d",

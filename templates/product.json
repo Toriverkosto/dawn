@@ -32,7 +32,6 @@
         },
         "3e022f72-085a-4854-bf94-64f0bb65bbb1": {
           "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
-          "disabled": true,
           "settings": {
             "stars_fill_color": "#ffc315",
             "star_size": 18,
@@ -70,15 +69,6 @@
           "type": "variant_picker",
           "settings": {
             "picker_type": "button"
-          }
-        },
-        "007af20c-fc86-43f4-9655-950341b4ff0f": {
-          "type": "quality_control_tab",
-          "disabled": true,
-          "settings": {
-            "quality_control": "",
-            "content_passed": "<p>Tested, inspected, cleaned and working with no significant flaws. These items can be considered “ready to use” for their intended purpose. Minor flaws are possible and are noted in the product description.<\/p>",
-            "content_not_passed": "<p>Untested or: tested, inspected, and found to have significant flaws that affect or prevent normal use. These items should be considered broken. Repair may or may not be possible.<\/p>"
           }
         },
         "9646a932-c54c-4f25-b73a-5334bde0ac8b": {
@@ -170,7 +160,6 @@
         "f0c9e60b-84e2-4c7b-a294-cab454328d82",
         "quantity_selector",
         "variant_picker",
-        "007af20c-fc86-43f4-9655-950341b4ff0f",
         "9646a932-c54c-4f25-b73a-5334bde0ac8b",
         "buy_buttons",
         "48ee7728-8417-4970-8107-c101cf8d940b",

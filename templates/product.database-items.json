@@ -36,6 +36,27 @@
         "full_width": true
       }
     },
+    "16340245700ec1844e": {
+      "type": "apps",
+      "blocks": {
+        "a46919e5-05f8-4b6f-9640-5fa29604d9d2": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+            "stars_fill_color": "#ffcb05",
+            "star_size": 15,
+            "text_align": "flex-start",
+            "product": "{{product}}",
+            "stars_text_empty": "No reviews"
+          }
+        }
+      },
+      "block_order": [
+        "a46919e5-05f8-4b6f-9640-5fa29604d9d2"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "fd83893c-9f02-4d63-b487-404daf45eeb7": {
       "type": "featured-collection",
       "disabled": true,
@@ -53,54 +74,11 @@
         "show_rating": false
       }
     },
-    "1641816962ad3e2698": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "16418169621e3e0468-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Kamerastore Product Database (Beta)",
-            "heading_size": "h2"
-          }
-        },
-        "16418169621e3e0468-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Kamerastore Product Database (Beta)<\/strong><\/p><p>Details, images, availability, price history, and reviews for the {{ product.title }}<\/p>"
-          }
-        },
-        "16418169621e3e0468-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "16418169621e3e0468-0",
-        "16418169621e3e0468-1",
-        "16418169621e3e0468-2"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
-    },
     "1634194655a811a44b": {
       "type": "custom-liquid",
       "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"page-width page-width--wide\">{%- assign my_fields = product.metafields.my_fields -%}\n<div class=\"hero\">\n{%- assign image_src = my_fields.brand_logo.value.src -%}\n{{ image_src | img_url: '125x125' | img_tag }}<\/div><\/div>"
-      }
-    },
-    "16340245700ec1844e": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
       }
     },
     "main": {
@@ -111,13 +89,6 @@
           "disabled": true,
           "settings": {
             "custom_liquid": "{% if product.metafields.my_fields.year_introduced != blank %}\n    Year Released: <b>{{ product.metafields.my_fields.year_introduced }}<\/b>\n{% else %}\n{% endif %}"
-          }
-        },
-        "630170a4-891c-4adc-9e5b-984494792005": {
-          "type": "system_and_type",
-          "settings": {
-            "show_system": true,
-            "show_type": false
           }
         },
         "56d3d8ad-8dcb-4146-bf63-5a3a9862d94b": {
@@ -144,6 +115,11 @@
             "stars_text_empty": "No reviews yet"
           }
         },
+        "d92cac30-76cf-4eb3-9a1a-db43110a07e5": {
+          "type": "description",
+          "settings": {
+          }
+        },
         "0a9a6be0-2265-416b-b0f3-048e7cfb2dab": {
           "type": "text",
           "disabled": true,
@@ -154,6 +130,7 @@
         },
         "96c45658-7a4f-4bbe-8af4-a6f32859a982": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{%- assign current_variant = product.selected_or_first_available_variant -%}\n      {% for t in product.tags %}\n        {% assign parts = t | split: '-'%}\n        {% assign prefix = parts | first %}\n        {% assign value = parts | last %}\n        {% if prefix == 'Category'%}\n          {% assign category = value %}\n        {% elsif prefix == 'SubCategory' %}\n          {% assign sub_category = value %}\n{% elsif prefix == 'System' %}\n          {% assign system = value %}\n        {% endif %}\n      {% endfor %}\n      {% if category %}<br>\n<p>• <b> Category:<\/b> {{ category }}{% endif %}\n<br>\n      {% if sub_category %}• <b> Sub Category:<\/b> {{ sub_category }}{% endif %}\n  <br>\n• <b> Type:<\/b> {{ product.type }}<\/a>\n<br>\n{% if system %}• <b> System:<\/b> {{ system }}{% endif %}<br>\n• Database ID# {{ current_variant.sku | upcase}}\n  <br>\n    <\/span><\/p>"
           }
@@ -174,25 +151,33 @@
         },
         "587ddfa6-3235-4da0-be5b-d249ecf8991d": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Sell or Trade your {{ product.vendor }} gear",
             "content": "<p>Do you have a {{ product.title }} you want to sell to us? Fill out our simple form and request a quote from us.<\/p><p><a href=\"https:\/\/app.kamerastore.com\/sell_to_us?language=eng\" target=\"_blank\" title=\"https:\/\/app.kamerastore.com\/sell_to_us?language=eng\"><strong>START QUOTE<\/strong><\/a><\/p>",
             "page": "",
             "icon": "price_tag"
           }
+        },
+        "c29bd057-ab99-46f1-9ffa-7449ab37569b": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- assign current_variant = product.selected_or_first_available_variant -%}\n     \nDatabase ID# {{ current_variant.sku | upcase}}\n  <br>\n    <\/span><\/p>"
+          }
         }
       },
       "block_order": [
         "adb68119-c110-4444-8e79-22a829981fd4",
-        "630170a4-891c-4adc-9e5b-984494792005",
         "56d3d8ad-8dcb-4146-bf63-5a3a9862d94b",
         "title",
         "5c4679de-0254-4571-be14-a70eb36ed4b6",
+        "d92cac30-76cf-4eb3-9a1a-db43110a07e5",
         "0a9a6be0-2265-416b-b0f3-048e7cfb2dab",
         "96c45658-7a4f-4bbe-8af4-a6f32859a982",
         "82004e4e-d026-4c02-b9ee-21d1643d0fa5",
         "b44551dc-08f3-410c-91b5-8893f2b4a2d7",
-        "587ddfa6-3235-4da0-be5b-d249ecf8991d"
+        "587ddfa6-3235-4da0-be5b-d249ecf8991d",
+        "c29bd057-ab99-46f1-9ffa-7449ab37569b"
       ],
       "settings": {
         "product_role": "database",
@@ -430,10 +415,9 @@
   },
   "order": [
     "72bdf521-21a5-4c1e-84cb-4d63f43092eb",
-    "fd83893c-9f02-4d63-b487-404daf45eeb7",
-    "1641816962ad3e2698",
-    "1634194655a811a44b",
     "16340245700ec1844e",
+    "fd83893c-9f02-4d63-b487-404daf45eeb7",
+    "1634194655a811a44b",
     "main",
     "164543512984681dd4",
     "1657620583d53dcde3",

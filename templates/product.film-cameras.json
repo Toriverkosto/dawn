@@ -11,20 +11,19 @@
             "product": "{{product}}"
           }
         },
-        "title": {
-          "type": "title",
-          "settings": {
-          }
-        },
         "0df71d04-5b16-4ca9-a92f-43724c825900": {
           "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
-          "disabled": true,
           "settings": {
             "stars_fill_color": "#ffc315",
             "star_size": 18,
             "text_align": "flex-start",
             "product": "{{ product.metafields.kameratori.host.value }}",
             "stars_text_empty": "No reviews"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
           }
         },
         "3489098b-b626-48b9-9b69-4aca9ec53063": {
@@ -171,8 +170,8 @@
       },
       "block_order": [
         "2eff5c51-e056-4f95-89a0-66cea8f15caf",
-        "title",
         "0df71d04-5b16-4ca9-a92f-43724c825900",
+        "title",
         "3489098b-b626-48b9-9b69-4aca9ec53063",
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",

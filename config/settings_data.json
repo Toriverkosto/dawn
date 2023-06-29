@@ -95,7 +95,7 @@
           "68aaf9a9-163c-4763-b602-5d9bcacce0b2": {
             "type": "announcement",
             "settings": {
-              "text": "Get 5% OFF! Use the code summer5 at the checkout",
+              "text": "Get 5% OFF! Use code summer5 at checkout",
               "color_scheme": "background-2",
               "link": "shopify:\/\/collections\/all-items",
               "use_custom_color": true,

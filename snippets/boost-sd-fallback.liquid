@@ -19,7 +19,10 @@
               title: "{{ collection.title }}"
             },
             pagination: {{ paginate | json }},
-            moneyFormatWithCurrency: {{ shop.money_with_currency_format | replace: "'", '"' | json }}
+            moneyFormatWithCurrency: {{ shop.money_with_currency_format | replace: "'", '"' | json }},
+            sortBy: {{ collection.sort_by | json  }},
+            defaultSortBy: {{collection.default_sort_by | json}},
+            sortOptions: {{ collection.sort_options | json  }}
           };{% endpaginate %}
       {% endif %}
 
@@ -32,7 +35,10 @@
               title: "{{ collection.title }}"
             },
             pagination: {{ paginate | json }},
-            moneyFormatWithCurrency: {{ shop.money_with_currency_format | replace: "'", '"' | json }}
+            moneyFormatWithCurrency: {{ shop.money_with_currency_format | replace: "'", '"' | json }},
+            sortBy: {{ search.sort_by | json  }},
+            defaultSortBy: {{search.default_sort_by | json}},
+            sortOptions: {{ search.sort_options | json  }}
           };{% endpaginate %}
       {% endif %}
 

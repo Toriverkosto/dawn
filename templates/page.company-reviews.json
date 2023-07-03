@@ -8,16 +8,17 @@
     "1683892141b0cb0f54": {
       "type": "apps",
       "blocks": {
-        "cd6ffa23-0b03-4b5e-a4fd-52d444ba5e38": {
-          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/list-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+        "12685638-47df-4255-849d-67ba5398cafc": {
+          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/grid-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
           "settings": {
             "themeId": "light",
+            "showReviewPhotos": true,
             "writeReview": true
           }
         }
       },
       "block_order": [
-        "cd6ffa23-0b03-4b5e-a4fd-52d444ba5e38"
+        "12685638-47df-4255-849d-67ba5398cafc"
       ],
       "settings": {
         "include_margins": true

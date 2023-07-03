@@ -96,11 +96,11 @@
             "type": "announcement",
             "settings": {
               "text": "Get 5% OFF! Use code summer5 at checkout",
-              "color_scheme": "background-2",
+              "color_scheme": "inverse",
               "link": "shopify:\/\/collections\/all-items",
-              "use_custom_color": true,
-              "color_text": "#ffffff",
-              "color_background": "linear-gradient(89deg, rgba(250, 148, 49, 1) 7%, rgba(206, 101, 0, 1) 97%)"
+              "use_custom_color": false,
+              "color_text": "#e92626",
+              "color_background": "linear-gradient(89deg, rgba(255, 254, 254, 1) 7%, rgba(252, 252, 252, 1) 97%)"
             }
           },
           "f7f5eabf-3536-414d-86f7-903eabc15e21": {

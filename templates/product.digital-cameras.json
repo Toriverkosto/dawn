@@ -11,6 +11,13 @@
             "product": "{{product}}"
           }
         },
+        "f94111a6-e6fa-4de0-bfa7-2c589cfceded": {
+          "type": "system_and_type",
+          "settings": {
+            "show_system": true,
+            "show_type": true
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -181,6 +188,7 @@
       },
       "block_order": [
         "de8adb8f-e16f-4888-85f2-e88fc605bbeb",
+        "f94111a6-e6fa-4de0-bfa7-2c589cfceded",
         "title",
         "16d12178-9597-4d03-b381-92e9a5c7ab2e",
         "5dd63250-d7d5-4820-8932-ece16c594707",

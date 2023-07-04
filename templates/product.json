@@ -25,6 +25,13 @@
             "product": "{{product}}"
           }
         },
+        "c3b15ffe-a555-46da-9f3e-873159ea6e76": {
+          "type": "system_and_type",
+          "settings": {
+            "show_system": true,
+            "show_type": true
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -155,6 +162,7 @@
       },
       "block_order": [
         "ab398340-acf2-4a8d-8ddd-e3afa2cc3c1a",
+        "c3b15ffe-a555-46da-9f3e-873159ea6e76",
         "title",
         "3e022f72-085a-4854-bf94-64f0bb65bbb1",
         "a3ca7016-1f16-4d9e-844f-e638eb512a61",

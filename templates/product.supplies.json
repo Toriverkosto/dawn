@@ -46,6 +46,11 @@
             "custom_liquid": "<p style=\"color: #ababab\">{% if product.selected_or_first_available_variant.taxable %}\n    {{ 'products.product.taxable_html' | t }}\n{% else %}\n    {{ 'products.product.not_taxable_html' | t }}\n{% endif %}<\/p>"
           }
         },
+        "b78219c2-66ad-487a-8866-6e726c2a4e91": {
+          "type": "description",
+          "settings": {
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -87,14 +92,10 @@
         },
         "7bc4319f-1ad5-4bae-bff8-ce5265675e4b": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Description, Shipping, & Availability:",
             "text_style": "subtitle"
-          }
-        },
-        "b78219c2-66ad-487a-8866-6e726c2a4e91": {
-          "type": "description",
-          "settings": {
           }
         },
         "d031b056-55bf-4778-a201-0c5d8ab0e178": {
@@ -158,6 +159,7 @@
         "d2f0204f-1c5f-46fd-81d6-a9e4069c2ae4",
         "price",
         "f0c9e60b-84e2-4c7b-a294-cab454328d82",
+        "b78219c2-66ad-487a-8866-6e726c2a4e91",
         "quantity_selector",
         "96a40ae9-af35-4428-bb42-ad4fe700f2df",
         "fd1e2ac6-aca0-42d2-91e4-6e93ce798698",
@@ -165,7 +167,6 @@
         "ec88d254-bbe8-4b70-a8ba-4e63f56ef136",
         "buy_buttons",
         "7bc4319f-1ad5-4bae-bff8-ce5265675e4b",
-        "b78219c2-66ad-487a-8866-6e726c2a4e91",
         "d031b056-55bf-4778-a201-0c5d8ab0e178",
         "e44a2970-017f-4a65-9008-2a056066686c",
         "c93981a2-30f3-4294-803c-c2c27ba4890e",

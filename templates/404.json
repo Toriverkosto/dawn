@@ -2,7 +2,8 @@
   "sections": {
     "main": {
       "type": "main-404",
-      "settings": {}
+      "settings": {
+      }
     },
     "16430946322a93d2ce": {
       "type": "rich-text",
@@ -45,7 +46,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Latest items added to our shop",
-        "collection": "all-items",
+        "collection": "all",
         "products_to_show": 12,
         "show_view_all": true,
         "swipe_on_mobile": false,

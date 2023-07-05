@@ -134,7 +134,7 @@
           "color_scheme": "accent-2",
           "logo": "shopify:\/\/shop_images\/image.png",
           "logo_width": 140,
-          "menu": "main-menu",
+          "menu": "questions-answered",
           "show_line_separator": false,
           "enable_sticky_header": false
         }

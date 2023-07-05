@@ -6,10 +6,46 @@
         "custom_liquid": "<div class=\"page-width page-width--wide\"> <center><H2>{{ 'sections.featured_collection.over' | t }} {{collections['new-last-7-days'].all_products_count}} {{ 'sections.featured_collection.items_added' | t }} <\/H2><\/center><\/div>"
       }
     },
+    "165416468256763b39": {
+      "type": "collection-list",
+      "blocks": {
+        "16541646820345eb76-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "film-cameras"
+          }
+        },
+        "85941df5-a143-4e6a-b5af-97eb8aaa757b": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "digital-cameras"
+          }
+        },
+        "16541646820345eb76-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "lenses"
+          }
+        }
+      },
+      "block_order": [
+        "16541646820345eb76-0",
+        "85941df5-a143-4e6a-b5af-97eb8aaa757b",
+        "16541646820345eb76-1"
+      ],
+      "settings": {
+        "title": "",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": true,
+        "image_padding": true,
+        "show_view_all": false
+      }
+    },
     "1660560902df48f128": {
       "type": "featured-collection",
       "settings": {
-        "title": "",
+        "title": "Just Added",
         "collection": "new-last-7-days",
         "products_to_show": 8,
         "show_view_all": true,
@@ -503,64 +539,6 @@
         "show_rating": false
       }
     },
-    "165416468256763b39": {
-      "type": "collection-list",
-      "disabled": true,
-      "blocks": {
-        "16541646820345eb76-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "film-cameras"
-          }
-        },
-        "85941df5-a143-4e6a-b5af-97eb8aaa757b": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "digital-cameras"
-          }
-        },
-        "16541646820345eb76-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "lenses"
-          }
-        },
-        "16541646820345eb76-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "accessories"
-          }
-        },
-        "f5444e3e-de5a-4313-8503-d0094cdf263a": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "film"
-          }
-        },
-        "7b853353-ae5a-4b5a-a0e9-6f117bbdc39a": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "lab"
-          }
-        }
-      },
-      "block_order": [
-        "16541646820345eb76-0",
-        "85941df5-a143-4e6a-b5af-97eb8aaa757b",
-        "16541646820345eb76-1",
-        "16541646820345eb76-2",
-        "f5444e3e-de5a-4313-8503-d0094cdf263a",
-        "7b853353-ae5a-4b5a-a0e9-6f117bbdc39a"
-      ],
-      "settings": {
-        "title": "",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": true,
-        "image_padding": true,
-        "show_view_all": false
-      }
-    },
     "16627241848ff0f7e4": {
       "type": "image-with-text",
       "blocks": {
@@ -671,6 +649,7 @@
   },
   "order": [
     "3fa91c2f-3b01-4bc7-a3a7-6ec197b0c4fe",
+    "165416468256763b39",
     "1660560902df48f128",
     "e3eec42a-3d9c-41ad-aaa2-fe480384b72b",
     "e6d89980-87cb-4a0e-a3f0-81a4f49ea05b",
@@ -688,7 +667,6 @@
     "1659091458c6563459",
     "0050133a-c833-42d4-b1eb-95ed3f9f255d",
     "1659091584eaa04e2b",
-    "165416468256763b39",
     "16627241848ff0f7e4",
     "1655878837fa505e49",
     "1637242258da800a0c",

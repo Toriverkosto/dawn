@@ -97,7 +97,7 @@
             "settings": {
               "text": "Get 5% OFF! Use code summer5 at checkout",
               "color_scheme": "inverse",
-              "link": "shopify:\/\/collections\/all-items",
+              "link": "shopify:\/\/collections\/all",
               "use_custom_color": false,
               "color_text": "#e92626",
               "color_background": "linear-gradient(89deg, rgba(255, 254, 254, 1) 7%, rgba(252, 252, 252, 1) 97%)"

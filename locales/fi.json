@@ -247,7 +247,7 @@
       "view_all": "Näytä kaikki",
       "view_all_label": "Näytä kaikki tuotteet kokoelmassa {{ collection_name }}",
       "over": " ",
-      "items_added": "tuotetta listattu viimeisen viikon sisään:"
+      "items_added": "tuotetta listattu viimeisen viikon sisään."
     },
     "collection_list": {
       "view_all": "Näytä kaikki"

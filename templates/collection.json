@@ -167,6 +167,25 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "16890595399e5657ce": {
+      "type": "apps",
+      "blocks": {
+        "792cc076-b200-4b95-a523-bb19a3fa98cf": {
+          "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/recommendation\/7fc998ae-a150-4367-bab8-505d8a4503f7",
+          "settings": {
+            "widgetId": "collectionpage-157740",
+            "additional_classes": "",
+            "custom_css": ""
+          }
+        }
+      },
+      "block_order": [
+        "792cc076-b200-4b95-a523-bb19a3fa98cf"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -178,6 +197,7 @@
     "16883893478176d3bb",
     "f055259a-59d3-45f1-8b14-75ddb8e85175",
     "49c46c69-642a-42bd-9f85-c0f818d6c223",
-    "1676452983e1698051"
+    "1676452983e1698051",
+    "16890595399e5657ce"
   ]
 }

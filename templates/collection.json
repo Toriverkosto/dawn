@@ -173,6 +173,7 @@
       "blocks": {
         "792cc076-b200-4b95-a523-bb19a3fa98cf": {
           "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/recommendation\/7fc998ae-a150-4367-bab8-505d8a4503f7",
+          "disabled": true,
           "settings": {
             "widgetId": "collectionpage-157740",
             "additional_classes": "",

@@ -181,7 +181,6 @@
       "blocks": {
         "4befdab6-509d-467b-9ed5-7f1f8a5ed767": {
           "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
-          "disabled": true,
           "settings": {
             "themeId": "light",
             "autoscroll": true,
@@ -192,7 +191,6 @@
         },
         "029d3920-2049-430b-8328-278537477532": {
           "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/sticky-compact-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
-          "disabled": true,
           "settings": {
             "themeId": "light",
             "verticalPositionId": "bottom",

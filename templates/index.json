@@ -195,7 +195,7 @@
             "themeId": "light",
             "verticalPositionId": "bottom",
             "horizontalPositionId": "right",
-            "minimize": false
+            "minimize": true
           }
         }
       },

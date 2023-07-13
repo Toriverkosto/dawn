@@ -262,22 +262,6 @@
         "collapse_on_larger_devices": false,
         "display_database_products": false
       }
-    },
-    "07f69eae-6f1f-4a48-8faf-45db11842c4e": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection",
-        "collection": "valoi-360",
-        "products_to_show": 4,
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": false
-      }
     }
   },
   "order": [
@@ -287,7 +271,6 @@
     "50d58055-b254-4570-86a4-253f11955c8e",
     "163274530333c96e90",
     "banner",
-    "product-grid",
-    "07f69eae-6f1f-4a48-8faf-45db11842c4e"
+    "product-grid"
   ]
 }

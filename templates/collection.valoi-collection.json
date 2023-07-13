@@ -12,7 +12,7 @@
         "16371563761f101b4d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Change the way you scan your film to save time and money by jumping into the future of film scanning.<\/p>"
+            "text": "<p>Change the way you scan your film to save time and money by jumping into the future of film scanning.<br\/><br\/>You can find the easy35 and VALOI 360 products below.<\/p>"
           }
         },
         "16371563761f101b4d-2": {
@@ -32,6 +32,113 @@
         "image": "shopify:\/\/shop_images\/flatness.jpg",
         "height": "adapt",
         "color_scheme": "background-2",
+        "layout": "image_first"
+      }
+    },
+    "65dade78-cb0d-4d36-8e0e-ae0391910e87": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "template--15243804573894__65dade78-cb0d-4d36-8e0e-ae0391910e87-1689254743291c66d0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "VALOI 360 Featured Kits",
+            "heading_size": "h1"
+          }
+        },
+        "template--15243804573894__65dade78-cb0d-4d36-8e0e-ae0391910e87-1689254743291c66d0-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Below you can find kits from the VALOI 360 system put together at different price levels and uses.<\/p>"
+          }
+        },
+        "template--15243804573894__65dade78-cb0d-4d36-8e0e-ae0391910e87-1689254743291c66d0-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804573894__65dade78-cb0d-4d36-8e0e-ae0391910e87-1689254743291c66d0-0",
+        "template--15243804573894__65dade78-cb0d-4d36-8e0e-ae0391910e87-1689254743291c66d0-1",
+        "template--15243804573894__65dade78-cb0d-4d36-8e0e-ae0391910e87-1689254743291c66d0-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "c284bb4d-92db-48f5-907a-06269ca649c8": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "template--15243804573894__c284bb4d-92db-48f5-907a-06269ca649c8-1689254013959454b1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "template--15243804573894__c284bb4d-92db-48f5-907a-06269ca649c8-1689254013959454b1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "template--15243804573894__c284bb4d-92db-48f5-907a-06269ca649c8-1689254013959454b1-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804573894__c284bb4d-92db-48f5-907a-06269ca649c8-1689254013959454b1-0",
+        "template--15243804573894__c284bb4d-92db-48f5-907a-06269ca649c8-1689254013959454b1-1",
+        "template--15243804573894__c284bb4d-92db-48f5-907a-06269ca649c8-1689254013959454b1-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
+    "69b3bf36-0d65-43da-a497-219be27e87cf": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15243804573894__69b3bf36-0d65-43da-a497-219be27e87cf-1689254013959454b1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "VALOI easy35"
+          }
+        },
+        "template--15243804573894__69b3bf36-0d65-43da-a497-219be27e87cf-1689254013959454b1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The easy35 is a compact scanning solution for 35mm film. Go to the collection by clicking the button below and pre-order it now.<\/p>"
+          }
+        },
+        "template--15243804573894__69b3bf36-0d65-43da-a497-219be27e87cf-1689254013959454b1-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "easy35 Pre-Order",
+            "button_link": "shopify:\/\/collections\/valoi-easy35"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804573894__69b3bf36-0d65-43da-a497-219be27e87cf-1689254013959454b1-0",
+        "template--15243804573894__69b3bf36-0d65-43da-a497-219be27e87cf-1689254013959454b1-1",
+        "template--15243804573894__69b3bf36-0d65-43da-a497-219be27e87cf-1689254013959454b1-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Easy35_08981_20230315_1.jpg",
+        "height": "adapt",
+        "color_scheme": "background-1",
         "layout": "image_first"
       }
     },
@@ -121,13 +228,85 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "6f99fb24-641e-416e-8d1b-b4aa91d623da": {
+      "type": "featured-product",
+      "blocks": {
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-7": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-0",
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-1",
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-2",
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-3",
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-4",
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-5",
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-6",
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-7"
+      ],
+      "settings": {
+        "product": "valoi-advancer-scanning-kit",
+        "secondary_background": false,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
     }
   },
   "order": [
     "163715637672ee2874",
+    "65dade78-cb0d-4d36-8e0e-ae0391910e87",
+    "c284bb4d-92db-48f5-907a-06269ca649c8",
+    "69b3bf36-0d65-43da-a497-219be27e87cf",
     "163274530333c96e90",
     "banner",
     "product-grid",
-    "aebda24d-26d7-4e37-be8a-0159ff0ac8df"
+    "aebda24d-26d7-4e37-be8a-0159ff0ac8df",
+    "6f99fb24-641e-416e-8d1b-b4aa91d623da"
   ]
 }

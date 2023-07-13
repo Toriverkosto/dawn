@@ -103,7 +103,7 @@
       ],
       "settings": {
         "product": "professional-scanning-kit",
-        "secondary_background": true,
+        "secondary_background": false,
         "hide_variants": false,
         "enable_video_looping": false
       }
@@ -115,7 +115,7 @@
           "type": "product",
           "settings": {
             "product": "enthusiast-scanning-kit-1",
-            "second_image": false,
+            "second_image": true,
             "image_padding": false,
             "secondary_background": false
           }

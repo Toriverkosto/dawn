@@ -109,49 +109,6 @@
         "enable_video_looping": false
       }
     },
-    "16553912346ad77219": {
-      "type": "collage",
-      "disabled": true,
-      "blocks": {
-        "681e3447-15ae-4efe-a295-401d2d814afc": {
-          "type": "product",
-          "settings": {
-            "product": "enthusiast-scanning-kit-1",
-            "second_image": true,
-            "image_padding": false,
-            "secondary_background": false
-          }
-        },
-        "55debb65-e2ad-4448-8f1f-6362b4086b1b": {
-          "type": "product",
-          "settings": {
-            "product": "valoi-advancer-scanning-kit",
-            "second_image": false,
-            "image_padding": false,
-            "secondary_background": false
-          }
-        },
-        "0ec1f54e-2d1c-42a6-89a9-d719ef47b377": {
-          "type": "product",
-          "settings": {
-            "product": "starter-scanning-kit",
-            "second_image": false,
-            "image_padding": false,
-            "secondary_background": false
-          }
-        }
-      },
-      "block_order": [
-        "681e3447-15ae-4efe-a295-401d2d814afc",
-        "55debb65-e2ad-4448-8f1f-6362b4086b1b",
-        "0ec1f54e-2d1c-42a6-89a9-d719ef47b377"
-      ],
-      "settings": {
-        "heading": "Other Kit Options",
-        "desktop_layout": "left",
-        "mobile_layout": "collage"
-      }
-    },
     "50d58055-b254-4570-86a4-253f11955c8e": {
       "type": "collage",
       "disabled": true,
@@ -265,6 +222,48 @@
         "display_database_products": false
       }
     },
+    "16553912346ad77219": {
+      "type": "collage",
+      "blocks": {
+        "681e3447-15ae-4efe-a295-401d2d814afc": {
+          "type": "product",
+          "settings": {
+            "product": "enthusiast-scanning-kit-1",
+            "second_image": true,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        },
+        "55debb65-e2ad-4448-8f1f-6362b4086b1b": {
+          "type": "product",
+          "settings": {
+            "product": "valoi-advancer-scanning-kit",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        },
+        "0ec1f54e-2d1c-42a6-89a9-d719ef47b377": {
+          "type": "product",
+          "settings": {
+            "product": "starter-scanning-kit",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        }
+      },
+      "block_order": [
+        "681e3447-15ae-4efe-a295-401d2d814afc",
+        "55debb65-e2ad-4448-8f1f-6362b4086b1b",
+        "0ec1f54e-2d1c-42a6-89a9-d719ef47b377"
+      ],
+      "settings": {
+        "heading": "Other Kit Options",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
+    },
     "aebda24d-26d7-4e37-be8a-0159ff0ac8df": {
       "type": "featured-collection",
       "disabled": true,
@@ -286,11 +285,11 @@
   "order": [
     "163715637672ee2874",
     "f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f",
-    "16553912346ad77219",
     "50d58055-b254-4570-86a4-253f11955c8e",
     "163274530333c96e90",
     "banner",
     "product-grid",
+    "16553912346ad77219",
     "aebda24d-26d7-4e37-be8a-0159ff0ac8df"
   ]
 }

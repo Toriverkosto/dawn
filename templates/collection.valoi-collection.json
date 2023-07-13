@@ -262,6 +262,22 @@
         "collapse_on_larger_devices": false,
         "display_database_products": false
       }
+    },
+    "aebda24d-26d7-4e37-be8a-0159ff0ac8df": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "valoi-kits",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
     }
   },
   "order": [
@@ -271,6 +287,7 @@
     "50d58055-b254-4570-86a4-253f11955c8e",
     "163274530333c96e90",
     "banner",
-    "product-grid"
+    "product-grid",
+    "aebda24d-26d7-4e37-be8a-0159ff0ac8df"
   ]
 }

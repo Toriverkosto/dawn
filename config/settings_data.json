@@ -96,7 +96,7 @@
             "type": "announcement",
             "settings": {
               "text": "5% OFF, ends JULY 17th.  Use code summer5 at checkout",
-              "color_scheme": "accent-1",
+              "color_scheme": "inverse",
               "link": "shopify:\/\/collections\/all",
               "use_custom_color": false,
               "color_text": "#ffffff",

@@ -37,6 +37,7 @@
     },
     "f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f": {
       "type": "featured-product",
+      "disabled": true,
       "blocks": {
         "template--15243804573894__f9ca2b8f-0ea9-4066-bbc6-b6bf130e8f2f-16681527635189439a-0": {
           "type": "text",
@@ -110,6 +111,7 @@
     },
     "16553912346ad77219": {
       "type": "collage",
+      "disabled": true,
       "blocks": {
         "681e3447-15ae-4efe-a295-401d2d814afc": {
           "type": "product",
@@ -265,6 +267,7 @@
     },
     "aebda24d-26d7-4e37-be8a-0159ff0ac8df": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "collection": "valoi-kits",

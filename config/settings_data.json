@@ -95,12 +95,12 @@
           "68aaf9a9-163c-4763-b602-5d9bcacce0b2": {
             "type": "announcement",
             "settings": {
-              "text": "Get 5% OFF! Use code summer5 at checkout",
+              "text": "5% OFF, ends JULY 17th.  Use code summer5 at checkout",
               "color_scheme": "inverse",
               "link": "shopify:\/\/collections\/all",
-              "use_custom_color": false,
+              "use_custom_color": true,
               "color_text": "#e92626",
-              "color_background": "linear-gradient(89deg, rgba(255, 254, 254, 1) 7%, rgba(252, 252, 252, 1) 97%)"
+              "color_background": "linear-gradient(89deg, rgba(101, 12, 131, 1) 7%, rgba(15, 43, 158, 1) 97%)"
             }
           },
           "f7f5eabf-3536-414d-86f7-903eabc15e21": {

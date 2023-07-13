@@ -153,8 +153,8 @@
       "label": "Mediagalleria"
     },
     "tax": {
-      "not_taxable_property_name": "(Käytetty tuote",
-      "not_taxable_property_value": " marginaaliverotusmenettely)",
+      "not_taxable_property_name": "Käytetty tuote",
+      "not_taxable_property_value": " marginaaliverotusmenettely",
       "taxable_property_name": "Sis. alv",
       "taxable_property_value": "(EU)"
     }

@@ -65,9 +65,9 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Easy35_08981_20230315_1.jpg",
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "layout": "image_first"
+        "height": "small",
+        "color_scheme": "inverse",
+        "layout": "text_first"
       }
     },
     "6f99fb24-641e-416e-8d1b-b4aa91d623da": {

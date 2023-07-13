@@ -35,6 +35,154 @@
         "layout": "image_first"
       }
     },
+    "69b3bf36-0d65-43da-a497-219be27e87cf": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15243804573894__69b3bf36-0d65-43da-a497-219be27e87cf-1689254013959454b1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "VALOI easy35"
+          }
+        },
+        "template--15243804573894__69b3bf36-0d65-43da-a497-219be27e87cf-1689254013959454b1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The easy35 is a compact scanning solution for 35mm film. Go to the collection by clicking the button below and pre-order it now.<\/p>"
+          }
+        },
+        "template--15243804573894__69b3bf36-0d65-43da-a497-219be27e87cf-1689254013959454b1-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "easy35 Pre-Order",
+            "button_link": "shopify:\/\/collections\/valoi-easy35"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804573894__69b3bf36-0d65-43da-a497-219be27e87cf-1689254013959454b1-0",
+        "template--15243804573894__69b3bf36-0d65-43da-a497-219be27e87cf-1689254013959454b1-1",
+        "template--15243804573894__69b3bf36-0d65-43da-a497-219be27e87cf-1689254013959454b1-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Easy35_08981_20230315_1.jpg",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
+    "6f99fb24-641e-416e-8d1b-b4aa91d623da": {
+      "type": "featured-product",
+      "blocks": {
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-4": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-5": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-7": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-0",
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-1",
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-2",
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-3",
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-4",
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-5",
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-6",
+        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-7"
+      ],
+      "settings": {
+        "product": "professional-scanning-kit",
+        "secondary_background": false,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "85368d7f-77f7-40ce-8510-ece24843805a": {
+      "type": "collage",
+      "blocks": {
+        "template--15243804573894__85368d7f-77f7-40ce-8510-ece24843805a-16892543985f550658-1": {
+          "type": "product",
+          "settings": {
+            "product": "enthusiast-scanning-kit-1",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        },
+        "9e393d0f-1bc0-49d0-8f33-6aef5b5e6af8": {
+          "type": "product",
+          "settings": {
+            "product": "valoi-advancer-scanning-kit",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        },
+        "f3f89e6c-25e4-4873-ae84-83cd5b6080f3": {
+          "type": "product",
+          "settings": {
+            "product": "starter-scanning-kit",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804573894__85368d7f-77f7-40ce-8510-ece24843805a-16892543985f550658-1",
+        "9e393d0f-1bc0-49d0-8f33-6aef5b5e6af8",
+        "f3f89e6c-25e4-4873-ae84-83cd5b6080f3"
+      ],
+      "settings": {
+        "heading": "",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
+    },
     "65dade78-cb0d-4d36-8e0e-ae0391910e87": {
       "type": "rich-text",
       "disabled": true,
@@ -102,41 +250,6 @@
         "template--15243804573894__c284bb4d-92db-48f5-907a-06269ca649c8-1689254013959454b1-2"
       ],
       "settings": {
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "layout": "image_first"
-      }
-    },
-    "69b3bf36-0d65-43da-a497-219be27e87cf": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--15243804573894__69b3bf36-0d65-43da-a497-219be27e87cf-1689254013959454b1-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "VALOI easy35"
-          }
-        },
-        "template--15243804573894__69b3bf36-0d65-43da-a497-219be27e87cf-1689254013959454b1-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>The easy35 is a compact scanning solution for 35mm film. Go to the collection by clicking the button below and pre-order it now.<\/p>"
-          }
-        },
-        "template--15243804573894__69b3bf36-0d65-43da-a497-219be27e87cf-1689254013959454b1-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "easy35 Pre-Order",
-            "button_link": "shopify:\/\/collections\/valoi-easy35"
-          }
-        }
-      },
-      "block_order": [
-        "template--15243804573894__69b3bf36-0d65-43da-a497-219be27e87cf-1689254013959454b1-0",
-        "template--15243804573894__69b3bf36-0d65-43da-a497-219be27e87cf-1689254013959454b1-1",
-        "template--15243804573894__69b3bf36-0d65-43da-a497-219be27e87cf-1689254013959454b1-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Easy35_08981_20230315_1.jpg",
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first"
@@ -211,102 +324,17 @@
         "collapse_on_larger_devices": false,
         "display_database_products": false
       }
-    },
-    "aebda24d-26d7-4e37-be8a-0159ff0ac8df": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Featured collection",
-        "collection": "valoi-kits",
-        "products_to_show": 4,
-        "show_view_all": true,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": false
-      }
-    },
-    "6f99fb24-641e-416e-8d1b-b4aa91d623da": {
-      "type": "featured-product",
-      "blocks": {
-        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-0": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-1": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-2": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
-        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-3": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-4": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-5": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-6": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-7": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-0",
-        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-1",
-        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-2",
-        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-3",
-        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-4",
-        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-5",
-        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-6",
-        "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-7"
-      ],
-      "settings": {
-        "product": "valoi-advancer-scanning-kit",
-        "secondary_background": false,
-        "hide_variants": false,
-        "enable_video_looping": false
-      }
     }
   },
   "order": [
     "163715637672ee2874",
+    "69b3bf36-0d65-43da-a497-219be27e87cf",
+    "6f99fb24-641e-416e-8d1b-b4aa91d623da",
+    "85368d7f-77f7-40ce-8510-ece24843805a",
     "65dade78-cb0d-4d36-8e0e-ae0391910e87",
     "c284bb4d-92db-48f5-907a-06269ca649c8",
-    "69b3bf36-0d65-43da-a497-219be27e87cf",
     "163274530333c96e90",
     "banner",
-    "product-grid",
-    "aebda24d-26d7-4e37-be8a-0159ff0ac8df",
-    "6f99fb24-641e-416e-8d1b-b4aa91d623da"
+    "product-grid"
   ]
 }

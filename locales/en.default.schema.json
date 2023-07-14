@@ -500,6 +500,12 @@
         "name": "Database product price table"
       }
     },
+    "database-product-card": {
+      "name": "Database product card [DB pages only]",
+      "presets": {
+        "name": "Database product card"
+      }
+    },
     "main-product-description": {
       "name": "Product description",
       "presets": {

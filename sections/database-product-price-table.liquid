@@ -181,10 +181,12 @@
 
 {% comment %}Calculate whether any products are available to know if the table should be shown at all{% endcomment %}
 {% assign products_available = false %}
+{% assign amount = 0 %}
 
 {% for product in product.metafields.kameratori.stock_items.value %}
   {% if product.available %}
     {% assign products_available = true %}
+    {% assign amount = amount | plus: 1 %}
   {% endif %}
 {% endfor %}
 
@@ -197,7 +199,12 @@
       <table class="rg-table zebra">
         <caption class="rg-header">
           <span class="rg-hed">{{ product.title }}</span>
-          <span class="rg-dek">Availability & Price History</span>
+          <span class="rg-dek">{% if amount > 3 %}
+            Price History
+            {% else %}
+            Availability & Price History
+            {% endif %}
+          </span>
         </caption>
         <thead>
           <tr>
@@ -213,13 +220,13 @@
           {% assign current_product = product %}
 
           {% for product in current_product.metafields.kameratori.stock_items.value %}
-            {% if product.available %}
+            {% if product.available and amount < 4 %}
               <tr class="available-product" onclick="window.location='{{ product.url }}';">
                 <td class="text date-sold" data-title="Date Sold">Available</td>
                 <td class="text" data-title="SKU">{{ product.selected_or_first_available_variant.sku }}</td>
 
                 {% assign quality_control = product.metafields.kameratori.quality_control.value %}
-                <td class="quality-control">{%- render 'qc-badge', value: quality_control -%}</td>
+                <td class="quality-control" data-title="Quality Control">{%- render 'qc-badge', value: quality_control -%}</td>
 
                 <td class="number" data-title="Price">{{ product.selected_or_first_available_variant.price | money }}</td>
                 <td class="image" data-title="Image">

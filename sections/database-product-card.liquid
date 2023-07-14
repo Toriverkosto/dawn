@@ -1,0 +1,204 @@
+{% comment %} styling for db-cards {% endcomment %}
+
+<style>
+    .db-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        padding: 1rem;
+        transition: border .2s;
+        position: relative;
+        border: 0.1rem solid rgba(10, 10, 10, 0.05);;
+        border-radius: 1.0rem;
+        box-shadow: 0.2rem 0.2rem 0.4rem rgba(18,18,18,0.025);
+        align-items: flex-start;
+        height: 100%;
+        overflow: hidden;
+        margin: auto;
+    }
+    .db-card:hover {
+        border: solid #dddddd 0.1rem;
+        box-shadow: 0rem 0.2rem 0.4rem rgba(18,18,18,0.050);
+        cursor: pointer;
+    }
+    .db-card > .button {
+        border-radius: 0.75rem;
+    }
+    .db-card-qc-img {
+        display: flex;
+        object-fit: cover;
+        object-position: center center;
+        justify-content: center;
+        align-content: center;
+        height: 100%;
+    }
+    
+    .db-card-qc-img > img {
+        transition: transform .2s;
+        width: 100%;
+        height: auto;
+    }
+    
+    .db-card:hover img {
+        transform: scale(1.075);
+    }
+    .db-card-container {
+        padding: 1.7rem 1rem 0.5rem 1rem;
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        flex-grow:1;
+        justify-content: flex-end;
+    }
+    .db-card-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 1rem;
+        color: rgb(18,18,18);
+    }
+    .db-card-link {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .db-card-link > a {
+        color: #237ad2;
+        text-decoration: none;
+    }
+    
+    .db-card-link > a:hover {
+        color: rgb(var(--color-link));
+        text-decoration: underline;
+        text-underline-offset: 0.3rem;
+        text-decoration-thickness: 0.1rem;
+        transition: text-decoration-thickness var(--duration-short) ease;
+        transition: text-decoration var(--duration-short) ease;
+    }
+    .db-card-qc {
+        margin-left: -0.5rem;
+    }
+    .db-card-title {
+      display: flex;
+      flex-direction: row;
+      font-family: var(--font-heading-family);
+      font-style: var(--font-heading-style);
+      font-size: 1.5rem;
+      font-weight: var(--font-heading-weight);
+      line-height: 1.8rem;
+    }
+    .db-card-price {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-size: 1.6rem;
+        color: rgb(18,18,18);
+    }
+</style>
+
+{% comment %} Below html/liquid for db-cards {% endcomment %}
+
+<section class="page-width">
+{% assign products_to_display = product.metafields.kameratori.stock_items.value %}
+{% assign amount = 0 %} 
+
+  {% for variant in products_to_display %}
+    {% if forloop.first %}
+      {% assign lowest_price = variant.price %}
+      {% assign highest_price = variant.price %}
+    {% endif %}
+    {% assign new_price = variant.price %}
+    {% assign new_price_2 = variant.price %}
+    {% if new_price < lowest_price and new_price != 0 %}
+      {% assign lowest_price = new_price %}
+    {% endif %}
+    {% if new_price_2 > highest_price %}
+      {% assign highest_price = new_price_2 %}
+    {% endif %}
+    {% if variant.available %}
+      {% assign amount = amount | plus: 1 %}   
+    {% endif %}
+  {% endfor %}
+
+  {% if amount > 0 %}
+    <h2 style="display: flex; justify-content: flex-start;">{{ "products.database_card.in_stock" | t }} {{ product.title }}</h2>
+    <p> {{ amount }} {{ "products.database_card.available" | t }}
+      {% if amount > 1 %}
+        from {{ lowest_price | money }} to {{ highest_price | money }}
+      {% else %}
+      {{ "products.database_card.at_price" | t }} {{ highest_price | money }}
+      {% endif %}
+     </p>
+    <slider-component class="slider-mobile-gutter">
+      <ul class="grid grid--1-col product-grid grid--2-col-tablet grid--4-col-desktop slider slider--tablet db" role="list">
+  {% else %}
+    <h2 style="display: flex; justify-content: flex-start;">{{ product.title }}: {{ "products.database_card.sold_out" | t }} </h2>
+  {% endif %}
+  {% assign current_product = product %}
+  {% for product in current_product.metafields.kameratori.stock_items.value %}
+    {% if product.available %}
+    {% if amount > 3 %}
+    <li class="grid__item slider__slide">
+        <div class="db-card" onclick="window.location='{{ product.url }}';"">
+          <div class="db-card-qc-img">
+            {% if forloop.first %}
+              {{ product | image_url: width: auto | image_tag: widths: '300, 600, 1200', style: 'width: 100%' }}
+            {% else %}
+            {{ product | image_url: width: 1200 | image_tag: widths: '300, 600, 1200', style: 'width: 100%', loading:"lazy" }}
+            {% endif %}
+          </div>
+          <div class="db-card-container">
+            <div class="db-card-info">
+              {% assign quality_control = product.metafields.kameratori.quality_control.value %}
+              <div class="db-card-qc">
+                {%- render 'qc-badge', value: quality_control -%}
+              </div>
+              <div class="db-card-title">{{ product.title }}</div>
+              <div style="margin-left: 0.1rem">{{ "products.database_card.sku" | t }} {{ product.selected_or_first_available_variant.sku }}</div>
+              </div>
+            <div class="db-card-link">
+              <div class="db-card-price">
+                {{ product.selected_or_first_available_variant.price | money }}
+              </div>
+              <a href={{ product.url }}>{{ "products.database_card.link" | t }}</a>
+            </div>
+          </div>
+        </div>
+    </li>
+    {% endif %}
+    {% endif %}
+  {% endfor %}
+    </ul>
+  {% assign products_to_display = amount %}
+  {% if amount > 3 %}
+  <slider-component>
+    <div class="slider-buttons db no-js-hidden">
+      <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
+        <div class="slider-counter caption">
+          <span class="slider-counter--current">1</span>
+          <span aria-hidden="true"> / </span>
+          <span class="visually-hidden">{{ 'accessibility.of' | t }}</span>
+          <span class="slider-counter--total">{{ products_to_display }}</span>
+        </div>
+      <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
+    </div>
+</slider-component> 
+{% endif %}
+</section>
+{% comment %} schema needs to be added & formatting {% endcomment %}
+{% schema %}
+{
+  "name": "t:sections.database-product-card.name",
+  "tag": "section",
+  "class": "spaced-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "t:sections.database-product-card.presets.name"
+    }
+  ]
+}
+{% endschema %}

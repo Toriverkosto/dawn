@@ -235,7 +235,11 @@
               <tr>
                 <td class="text" data-title="Date Sold">{{ sale.sold_at | date : "%d %b %Y" }}</td>
                 <td class="text" data-title="SKU">{{ sale.sku }}</td>
-                <td class="quality-control">{%- render 'qc-badge', value: sale.quality_control_value -%}</td>
+                <td class="quality-control">{% if sale.quality_control_value %}
+                  {%- render 'qc-badge', value: sale.quality_control_value -%}
+                  {% else %} 
+                  {%- render 'qc-badge', value: sale.quality_control -%}
+                {% endif %}</td>
                 <td class="number" data-title="Price">€&nbsp;{{ sale.price | times: 100 | money_without_currency }}</td>
                 <td class="image" data-title="Image">
                   <a href="{{ sale.image.src }}" target="_blank">

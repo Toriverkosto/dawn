@@ -369,9 +369,30 @@
         "layout": "image_first"
       }
     },
+    "16590912674b072be6": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Film Cameras",
+        "collection": "film-cameras",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": false
+      }
+    },
+    "16681567159a25ad0d": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
     "multi_column": {
       "type": "multicolumn",
-      "disabled": true,
       "blocks": {
         "column3": {
           "type": "column",
@@ -408,32 +429,10 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
-        "background_style": "secondary",
+        "background_style": "none",
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": true
-      }
-    },
-    "16590912674b072be6": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Film Cameras",
-        "collection": "film-cameras",
-        "products_to_show": 8,
-        "show_view_all": true,
-        "swipe_on_mobile": true,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": true,
-        "show_rating": false
-      }
-    },
-    "16681567159a25ad0d": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
       }
     },
     "16590913415aba16e5": {
@@ -661,9 +660,9 @@
     "aabc153b-fba5-4792-a63f-96736474ff4e",
     "ffa2031d-ca74-4a46-83b1-7899fd17284f",
     "b7f435c5-c4b1-48ef-ae36-13d31e15ecb0",
-    "multi_column",
     "16590912674b072be6",
     "16681567159a25ad0d",
+    "multi_column",
     "16590913415aba16e5",
     "1659091405f0073c84",
     "1659091458c6563459",

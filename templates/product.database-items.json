@@ -60,6 +60,11 @@
         "custom_liquid": "<div class=\"page-width page-width--wide\">{%- assign my_fields = product.metafields.my_fields -%}\n<div class=\"hero\">\n{%- assign image_src = my_fields.brand_logo.value.src -%}\n{{ image_src | img_url: '125x125' | img_tag }}<\/div><\/div>"
       }
     },
+    "5a5a47ce-224c-4aff-9780-ab8771302a49": {
+      "type": "database-product-card",
+      "settings": {
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -377,6 +382,7 @@
     "72bdf521-21a5-4c1e-84cb-4d63f43092eb",
     "fd83893c-9f02-4d63-b487-404daf45eeb7",
     "1634194655a811a44b",
+    "5a5a47ce-224c-4aff-9780-ab8771302a49",
     "main",
     "164543512984681dd4",
     "1657620583d53dcde3",

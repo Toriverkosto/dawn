@@ -163,7 +163,7 @@
       "in_stock": "Varastotilanne:",
       "link": "Tuotetiedot",
       "sku": "ID:",
-      "available": "saatavilla:",
+      "available": "saatavilla",
       "at_price": "hintaan"
     }
   },

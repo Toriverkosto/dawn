@@ -161,7 +161,9 @@
       "barcode": "BARCODE:",
       "sku": "ID:",
       "available": "available:",
-      "at_price": "at price "
+      "at_price": "at price ",
+      "from": "from ",
+      "to": "to "
     },
     "modal": {
       "label": "Media gallery"

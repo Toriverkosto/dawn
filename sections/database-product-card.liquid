@@ -127,7 +127,7 @@
     <h2 style="display: flex; justify-content: flex-start;">{{ "products.database_card.in_stock" | t }} {{ product.title }}</h2>
     <p> {{ amount }} {{ "products.database_card.available" | t }}
       {% if amount > 1 %}
-        from {{ lowest_price | money }} to {{ highest_price | money }}
+         {{ "products.database_card.from" | t }} {{ lowest_price | money }}  {{ "products.database_card.to" | t }} {{ highest_price | money }}
       {% else %}
       {{ "products.database_card.at_price" | t }} {{ highest_price | money }}
       {% endif %}

@@ -101,6 +101,7 @@
   "products": {
     "product": {
       "add_to_cart": "Add to cart",
+      "barcode": "Barcode:",
       "description": "Description",
       "on_sale": "Sale",
       "product_variants": "Product variants",
@@ -152,6 +153,15 @@
     },
     "database": {
       "none_available": "No items available currently."
+    },
+    "database_card": {
+      "sold_out": "None available",
+      "in_stock": "In stock: ",
+      "link": "Details",
+      "barcode": "BARCODE:",
+      "sku": "ID:",
+      "available": "available:",
+      "at_price": "at price "
     },
     "modal": {
       "label": "Media gallery"

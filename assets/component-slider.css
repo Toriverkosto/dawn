@@ -50,6 +50,20 @@ slider-component {
   }
 }
 
+@media screen and (max-width: 3200px) {
+  .slider.slider--tablet.db {
+    position: relative;
+    flex-wrap: inherit;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scroll-padding-left: 1rem;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 1rem;
+  }
+
+}
+
 /* Scrollbar */
 
 .slider {
@@ -97,6 +111,12 @@ slider-component {
 @media screen and (min-width: 990px) {
   .slider-buttons {
     display: none;
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 3200px) {
+  .slider-buttons.db {
+    display: flex;
   }
 }
 

@@ -157,6 +157,13 @@
       "not_taxable_property_value": " marginaaliverotusmenettely",
       "taxable_property_name": "Sis. alv",
       "taxable_property_value": "(EU)"
+    },
+    "database_card": {
+      "sold_out": "Ei saatavilla",
+      "in_stock": "Varastotilanne:",
+      "link": "Tuotetiedot",
+      "sku": "ID:",
+      "available": "saatavilla:"
     }
   },
   "templates": {

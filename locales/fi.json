@@ -164,7 +164,9 @@
       "link": "Tuotetiedot",
       "sku": "ID:",
       "available": "saatavilla",
-      "at_price": "hintaan"
+      "at_price": "hintaan",
+      "from": "hintaan",
+      "to": "–"
     },
     "database": {
       "none_available": "Ei tällä hetkellä saatavilla."

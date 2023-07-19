@@ -151,7 +151,7 @@
       "barcode": "Viivakoodi:",
       "product_condition_heading": "Tuotteen kuntoluokitus:",
       "battery_info": "Yhteensopiva paristotyyppi tuotteelle ",
-      "filter_info": "Yhteensopiva filtterikoko"
+      "filter_info": "Yhteensopiva filtterikoko tuotteelle "
     },
     "modal": {
       "label": "Mediagalleria"

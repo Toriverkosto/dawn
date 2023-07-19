@@ -105,6 +105,7 @@
           },
           "f7f5eabf-3536-414d-86f7-903eabc15e21": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "NEW: Product Condition Labels - find the right gear, faster",
               "color_scheme": "accent-2",

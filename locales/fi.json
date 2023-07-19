@@ -149,7 +149,8 @@
       "not_taxable_html": "(Käytetty tuote, marginaaliverotusmenettely<a class=\"link\" href=\"\/pages\/vat\">*<\/a>)",
       "taxable_html": "Sis. alv (tilausmaan mukaan).",
       "barcode": "Viivakoodi:",
-      "product_condition_heading": "Tuotteen kuntoluokitus:"
+      "product_condition_heading": "Tuotteen kuntoluokitus:",
+      "battery_info": "Yhteensopivat paristotyypit"
     },
     "modal": {
       "label": "Mediagalleria"

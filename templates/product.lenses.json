@@ -383,7 +383,7 @@
     "11db76e5-b32c-44db-a0fd-53ee40cafec8": {
       "type": "featured-collection",
       "settings": {
-        "title": "More {{ section.settings.collection.metafields.my_fields.collection_system.value }}",
+        "title": "{{ section.settings.collection.metafields.my_fields.collection_system.value }}",
         "collection": "{{ product.metafields.kameratori.system_collection.value }}",
         "products_to_show": 4,
         "show_view_all": true,

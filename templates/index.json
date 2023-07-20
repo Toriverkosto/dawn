@@ -94,6 +94,61 @@
         "layout": "image_first"
       }
     },
+    "1070e26e-0a03-4ac4-93b6-7a676cc3d6a0": {
+      "type": "featured-product",
+      "blocks": {
+        "template--15243804115142__1070e26e-0a03-4ac4-93b6-7a676cc3d6a0-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--15243804115142__1070e26e-0a03-4ac4-93b6-7a676cc3d6a0-title-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "8bf05056-bbaa-48df-a215-52f94d918348": {
+          "type": "text",
+          "settings": {
+            "text": "In stock. Ready to ship.",
+            "text_style": "subtitle"
+          }
+        },
+        "template--15243804115142__1070e26e-0a03-4ac4-93b6-7a676cc3d6a0-price-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--15243804115142__1070e26e-0a03-4ac4-93b6-7a676cc3d6a0-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--15243804115142__1070e26e-0a03-4ac4-93b6-7a676cc3d6a0-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804115142__1070e26e-0a03-4ac4-93b6-7a676cc3d6a0-text-1",
+        "template--15243804115142__1070e26e-0a03-4ac4-93b6-7a676cc3d6a0-title-1",
+        "8bf05056-bbaa-48df-a215-52f94d918348",
+        "template--15243804115142__1070e26e-0a03-4ac4-93b6-7a676cc3d6a0-price-1",
+        "template--15243804115142__1070e26e-0a03-4ac4-93b6-7a676cc3d6a0-variant_picker-1",
+        "template--15243804115142__1070e26e-0a03-4ac4-93b6-7a676cc3d6a0-buy_buttons-1"
+      ],
+      "settings": {
+        "product": "canon-ae-1-canon-fd-45",
+        "secondary_background": false,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
     "e6d89980-87cb-4a0e-a3f0-81a4f49ea05b": {
       "type": "rich-text",
       "blocks": {
@@ -640,12 +695,6 @@
         "color_scheme": "background-1",
         "full_width": true
       }
-    },
-    "168630386795caa0b7": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
@@ -653,6 +702,7 @@
     "165416468256763b39",
     "1660560902df48f128",
     "e3eec42a-3d9c-41ad-aaa2-fe480384b72b",
+    "1070e26e-0a03-4ac4-93b6-7a676cc3d6a0",
     "e6d89980-87cb-4a0e-a3f0-81a4f49ea05b",
     "348d608d-13af-4ff4-a7a0-021084115c31",
     "1683891361046b7454",
@@ -672,7 +722,6 @@
     "1655878837fa505e49",
     "1637242258da800a0c",
     "16853512478aabdfe2",
-    "f9ddfc6e-43fd-448b-b981-034c96684a0b",
-    "168630386795caa0b7"
+    "f9ddfc6e-43fd-448b-b981-034c96684a0b"
   ]
 }

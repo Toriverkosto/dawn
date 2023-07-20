@@ -231,6 +231,7 @@
         },
         "a725a730-96c5-49e4-b4d2-dd5cf72ab205": {
           "type": "main_kit_stock",
+          "disabled": true,
           "settings": {
           }
         },

@@ -2,6 +2,7 @@
   "sections": {
     "72bdf521-21a5-4c1e-84cb-4d63f43092eb": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "template--15243804377286__72bdf521-21a5-4c1e-84cb-4d63f43092eb-16880350601fc81c0a-0": {
           "type": "heading",
@@ -85,7 +86,6 @@
         },
         "title": {
           "type": "title",
-          "disabled": true,
           "settings": {
           }
         },
@@ -121,6 +121,7 @@
         },
         "82004e4e-d026-4c02-b9ee-21d1643d0fa5": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<a class=\"button\" style=\"display: flex;flex-direction: column;flex-wrap: nowrap;margin-bottom: 1.5rem;\" href=\"\/search?q={{ product.selected_or_first_available_variant.sku}}&options%5Bprefix%5D=last\">Check if Available<\/a>"
           }
@@ -221,6 +222,41 @@
         "show_image_outline": true,
         "show_vendor": true,
         "show_rating": false
+      }
+    },
+    "163239432974b497b2": {
+      "type": "image-with-text",
+      "blocks": {
+        "163239432974b497b2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We Buy Cameras"
+          }
+        },
+        "163239432974b497b2-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Do you have unused camera gear laying around? We buy cameras, lenses, and accessories of all ages. Sell for cash or trade-in for something new.<\/p>"
+          }
+        },
+        "163239432974b497b2-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Quote Request Form",
+            "button_link": "https:\/\/app.kamerastore.com\/sell_to_us?language=eng"
+          }
+        }
+      },
+      "block_order": [
+        "163239432974b497b2-0",
+        "163239432974b497b2-1",
+        "163239432974b497b2-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/minolta-8320-0002.jpg",
+        "height": "adapt",
+        "color_scheme": "background-2",
+        "layout": "image_first"
       }
     },
     "16450990378461246d": {
@@ -341,41 +377,6 @@
         "show_vendor": true,
         "show_rating": false
       }
-    },
-    "163239432974b497b2": {
-      "type": "image-with-text",
-      "blocks": {
-        "163239432974b497b2-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "We Buy Cameras"
-          }
-        },
-        "163239432974b497b2-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Do you have unused camera gear laying around? We buy cameras, lenses, and accessories of all ages. Sell for cash or trade-in for something new.<\/p>"
-          }
-        },
-        "163239432974b497b2-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Quote Request Form",
-            "button_link": "https:\/\/app.kamerastore.com\/sell_to_us?language=eng"
-          }
-        }
-      },
-      "block_order": [
-        "163239432974b497b2-0",
-        "163239432974b497b2-1",
-        "163239432974b497b2-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/minolta-8320-0002.jpg",
-        "height": "adapt",
-        "color_scheme": "background-2",
-        "layout": "image_first"
-      }
     }
   },
   "order": [
@@ -387,11 +388,11 @@
     "164543512984681dd4",
     "1657620583d53dcde3",
     "ee8ebef5-bfd1-4290-97db-94b2936529a4",
+    "163239432974b497b2",
     "16450990378461246d",
     "1645526962d5bc21bf",
     "1645516896bd0ceef6",
     "16324019941e428b8f",
-    "product-recommendations",
-    "163239432974b497b2"
+    "product-recommendations"
   ]
 }

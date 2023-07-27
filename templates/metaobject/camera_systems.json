@@ -1,7 +1,60 @@
 {
   "sections": {
+    "304a9558-fe0f-4e62-8a3d-bb07450092c8": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19354034110797__304a9558-fe0f-4e62-8a3d-bb07450092c8-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ metaobject.ttitle.value }}"
+          }
+        },
+        "template--19354034110797__304a9558-fe0f-4e62-8a3d-bb07450092c8-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ metaobject.description_standard | metafield_tag }}<\/p>"
+          }
+        },
+        "template--19354034110797__304a9558-fe0f-4e62-8a3d-bb07450092c8-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19354034110797__304a9558-fe0f-4e62-8a3d-bb07450092c8-heading-1",
+        "template--19354034110797__304a9558-fe0f-4e62-8a3d-bb07450092c8-text-1",
+        "template--19354034110797__304a9558-fe0f-4e62-8a3d-bb07450092c8-button-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/4.28_IG-5663_a8529da9-f6ae-47f2-a463-fc10b127f6c8.jpg",
+        "height": "large",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
+    "e12a9cd3-4620-4f8d-b3c9-ba3dd45bf315": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop our latest {{ section.settings.collection.title }} items",
+        "collection": "{{ metaobject.related_collection.value }}",
+        "products_to_show": 12,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": false
+      }
+    }
   },
   "order": [
-
+    "304a9558-fe0f-4e62-8a3d-bb07450092c8",
+    "e12a9cd3-4620-4f8d-b3c9-ba3dd45bf315"
   ]
 }

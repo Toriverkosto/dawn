@@ -272,9 +272,9 @@
     "ee23c372-910f-47bd-9d3f-634191bdd9ba": {
       "type": "featured-collection",
       "settings": {
-        "title": "More from this system",
+        "title": "More {{ section.settings.collection.title }}",
         "collection": "{{ product.metafields.kameratori.system_collection.value }}",
-        "products_to_show": 4,
+        "products_to_show": 8,
         "show_view_all": true,
         "swipe_on_mobile": true,
         "image_ratio": "adapt",
@@ -539,7 +539,7 @@
       "settings": {
         "title": "More of this type",
         "collection": "{{ product.metafields.kameratori.product_type_collection.value }}",
-        "products_to_show": 4,
+        "products_to_show": 8,
         "show_view_all": true,
         "swipe_on_mobile": true,
         "image_ratio": "adapt",

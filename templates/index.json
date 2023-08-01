@@ -358,13 +358,13 @@
         "template--15243804115142__ffa2031d-ca74-4a46-83b1-7899fd17284f-1687345087d98bb43a-1": {
           "type": "text",
           "settings": {
-            "text": "<p>High quality film scans are easier than ever with the all-new 'easy35', from our own in-house brand Valoi. Pre-orders are now open for limited introductory quantity of 300 units. <\/p>"
+            "text": "<p>High quality film scans are easier than ever with the all-new 'easy35', from our own in-house brand Valoi. It's now available with a limited introductory quantity of 300 units. <\/p>"
           }
         },
         "template--15243804115142__ffa2031d-ca74-4a46-83b1-7899fd17284f-1687345087d98bb43a-2": {
           "type": "button",
           "settings": {
-            "button_label": "Pre-Order Today",
+            "button_label": "View Product",
             "button_link": "shopify:\/\/collections\/valoi-easy35"
           }
         }

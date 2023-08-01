@@ -47,13 +47,13 @@
         "template--15243804573894__69b3bf36-0d65-43da-a497-219be27e87cf-1689254013959454b1-1": {
           "type": "text",
           "settings": {
-            "text": "<p>The easy35 is a compact scanning solution for 35mm film. Go to the collection by clicking the button below and pre-order it now.<\/p>"
+            "text": "<p>The easy35 is a compact scanning solution for 35mm film. Go to the collection by clicking the button below and order it now.<\/p>"
           }
         },
         "template--15243804573894__69b3bf36-0d65-43da-a497-219be27e87cf-1689254013959454b1-2": {
           "type": "button",
           "settings": {
-            "button_label": "easy35 Pre-Order",
+            "button_label": "easy35 Order Page",
             "button_link": "shopify:\/\/collections\/valoi-easy35"
           }
         }

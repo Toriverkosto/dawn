@@ -373,7 +373,7 @@
           "settings": {
             "themeId": "light",
             "verticalPositionId": "bottom",
-            "horizontalPositionId": "right",
+            "horizontalPositionId": "center",
             "minimize": true
           }
         },

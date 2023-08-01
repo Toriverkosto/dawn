@@ -375,7 +375,7 @@
           "settings": {
             "themeId": "light",
             "verticalPositionId": "bottom",
-            "horizontalPositionId": "right",
+            "horizontalPositionId": "center",
             "minimize": true
           }
         },
@@ -384,7 +384,7 @@
           "settings": {
             "themeId": "light",
             "autoscroll": true,
-            "showRating": true,
+            "showRating": false,
             "showReviewPhotos": false,
             "writeReview": false
           }

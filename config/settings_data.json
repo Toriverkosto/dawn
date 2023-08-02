@@ -105,6 +105,7 @@
           },
           "f7f5eabf-3536-414d-86f7-903eabc15e21": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "NEW: Product Condition Labels - find the right gear, faster",
               "color_scheme": "accent-2",
@@ -263,6 +264,12 @@
       "6406956604159796213": {
         "type": "shopify:\/\/apps\/smartseo\/blocks\/smartseo\/7b0a6064-ca2e-4392-9a1d-8c43c942357b",
         "disabled": true,
+        "settings": {
+        }
+      },
+      "5602652911132133646": {
+        "type": "shopify:\/\/apps\/auction-today\/blocks\/CodeBlockAuction\/3af9f16c-d5a0-475a-93f3-205210e8a9d6",
+        "disabled": false,
         "settings": {
         }
       }

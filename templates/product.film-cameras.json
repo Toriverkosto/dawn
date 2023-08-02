@@ -90,6 +90,11 @@
             "text_style": "subtitle"
           }
         },
+        "39c87774-f521-4eaa-a215-d59bbba393a8": {
+          "type": "shopify:\/\/apps\/webkul-product-auction\/blocks\/product-auction-widget\/d57ddcc5-04e6-4b67-85d2-fa1d71d0e729",
+          "settings": {
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -179,6 +184,7 @@
         "8e532b3d-db9e-4dc9-8368-5945b3f41219",
         "4f0717e0-34d7-44d7-9543-6fdf50a55941",
         "a56084d7-2640-4571-ac8a-00acd97302f5",
+        "39c87774-f521-4eaa-a215-d59bbba393a8",
         "buy_buttons",
         "ac7cacf6-525f-4b65-8e19-6ff4628b62b5",
         "d5caab0f-8084-4d2c-9f50-f4478f12dbeb",

@@ -176,6 +176,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "Page not found",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "No results found for “{{ terms }}”. Check the spelling or use a different word or phrase.",
       "page": "Page",
@@ -200,10 +204,6 @@
         "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
         "error_heading": "Please adjust the following:"
       }
-    },
-    "404": {
-      "title": "Page not found",
-      "subtext": "404"
     }
   },
   "sections": {
@@ -568,5 +568,85 @@
     "review_token_expired": "You're late. The link is expired!",
     "view_on_instagram": "View on Instagram",
     "login_required_to_review": "Please log in to leave your review"
+  },
+  "auction_pro_template": {
+    "js": {
+      "amount": "Amount",
+      "auction_end": "AUCTION HAS ENDED",
+      "automatic_bid_higher": "The entered value must be greater than the current highest bid plus minimum bid increment, please enter another value",
+      "automatic_bid_minimum": "The entered value is lower than the current maximum automatic bid, please enter another value",
+      "automatic_bid_success": "Automatic bid successfully submitted!",
+      "bid": "bid",
+      "bidder": "Bidder",
+      "bids": "bids",
+      "bid_empty": "Bid input cannot be empty",
+      "bid_increment": "Bid increment",
+      "bid_minimum": "Bid amount must be at least",
+      "bid_success": "Bid successfully submitted!",
+      "customer_email_empty": "Your email in your account is empty or invalid.  Please go into your account settings and fill in a valid email address.",
+      "customer_first_name_empty": "Your first name in your account is empty or invalid.  Please go into your account settings and fill in a valid first name.",
+      "customer_last_name_empty": "Your last name in your account is empty or invalid.  Please go into your account settings and fill in a valid last name.",
+      "date": "Date",
+      "end_date": "End date",
+      "enter": "Enter",
+      "error": "An error occurred",
+      "error_bid_highest": "You have already placed the highest bid for this auction",
+      "error_maximum_bid_increment": "The maximum bid increment for this auction is",
+      "error_maximum_bid_increment_after": "You cannot bid more than",
+      "item_already_added": "You have already added this item to your cart",
+      "login_message": {
+        "you_must": "You must",
+        "login": "login",
+        "or": "or",
+        "create_account": "create an account",
+        "place_bid": "to place bids"
+      },
+      "or_more": "or more",
+      "outbid_automatic": "Someone has placed a higher automatic bid, please submit a higher bid",
+      "outbid_regular": "You were outbid, please refresh the page to see the current state of the auction",
+      "reserve_price_met": "Reserve met",
+      "timer": {
+        "days": "d",
+        "hours": "h",
+        "minutes": "m",
+        "seconds": "s"
+      }
+    },
+    "template": {
+      "automatic_bid_message": "Enter the maximum amount you are willing to pay and bids will be automatically placed for you up to the specified amount.  If someone has placed a higher maximum bid than you, your bid will not be registered.",
+      "automatic_bid_place": "Place automatic bid",
+      "automatic_bid_tooltip": "Enter the maximum amount you are willing to pay and bids will be automatically placed for you up to the specified amount",
+      "bids": "Bids",
+      "bid_amount": "Bid amount",
+      "bid_current": "Current bid",
+      "bid_enter": "Enter bid",
+      "bid_starting": "Starting bid",
+      "bid_submit": "Submit bid",
+      "bid_submitting": "Submitting bid ...",
+      "bid_submit_confirm": "Are you sure you want to submit your bid?",
+      "bid_verb": "Bid",
+      "bid_winning": "Winning bid",
+      "buy_it_now": "Buy it now",
+      "buy_it_now_price": "Buy it now price",
+      "cancel": "Cancel",
+      "close": "Close",
+      "confirm": "Confirm",
+      "reserve_price_not_met": "Reserve not met"
+    }
+  },
+  "collection_auctions": {
+    "auction_title": "Auctions",
+    "auction_description": "",
+    "empty": "No products found",
+    "search": "Search",
+    "search_no_results": "No search results",
+    "sort": "Sort",
+    "sort_bids_highest": "Bids: highest",
+    "sort_bids_lowest": "Bids: lowest",
+    "sort_price_highest": "Price: highest",
+    "sort_price_lowest": "Price: lowest",
+    "sort_time_ending_soonest": "Time: ending soonest",
+    "sort_time_newly_listed": "Time: newly listed",
+    "title": "Collection"
   }
 }

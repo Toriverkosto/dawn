@@ -92,6 +92,7 @@
         },
         "39c87774-f521-4eaa-a215-d59bbba393a8": {
           "type": "shopify:\/\/apps\/webkul-product-auction\/blocks\/product-auction-widget\/d57ddcc5-04e6-4b67-85d2-fa1d71d0e729",
+          "disabled": true,
           "settings": {
           }
         },

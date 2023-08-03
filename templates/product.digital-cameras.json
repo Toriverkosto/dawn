@@ -65,15 +65,6 @@
           "settings": {
           }
         },
-        "d8c14870-ef9f-4dee-96cf-b484635a1bc4": {
-          "type": "quality_control_tab",
-          "disabled": true,
-          "settings": {
-            "quality_control": "",
-            "content_passed": "<p>Tested, inspected, cleaned and working with no significant flaws. These items can be considered “ready to use” for their intended purpose. Minor flaws are possible and are noted in the product description.<\/p>",
-            "content_not_passed": "<p>Untested or: tested, inspected, and found to have significant flaws that affect or prevent normal use. These items should be considered broken. Repair may or may not be possible.<\/p>"
-          }
-        },
         "64a80ce5-ac7d-41f5-bd24-e110a39a9d0f": {
           "type": "quality_control_value_box",
           "settings": {
@@ -195,7 +186,6 @@
         "price",
         "853cea71-8e8d-4b3a-8d41-fda13fdf751d",
         "0aca0f68-e621-4426-be68-da5725ed0ae3",
-        "d8c14870-ef9f-4dee-96cf-b484635a1bc4",
         "64a80ce5-ac7d-41f5-bd24-e110a39a9d0f",
         "0cffe7b5-b771-473e-bee0-fb83094d383c",
         "buy_buttons",

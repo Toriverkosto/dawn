@@ -1,0 +1,206 @@
+{
+  "sections": {
+    "16528584685f19cc5f": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div class=\"tagcloud page-width page-width--wide\">\n\tAll Items: <a class=\"pill important\" href=\"\/collections\/new-products-in-last-24-hours\">Today: <b>{{ collections['new-products-in-last-24-hours'].all_products_count }}<\/b><\/a>\n\t<a class=\"pill\" href=\"\/collections\/new-last-7-days\">This week: <b>{{ collections['new-last-7-days'].all_products_count }}<\/b><\/a>\n<\/div>"
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true
+      }
+    },
+    "1652858265324f2f78": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div class=\"tagcloud page-width page-width--wide\">\n\tKamerastore Statistics: <a class=\"pill important\" href=\"\/collections\/new-products-in-last-24-hours\"><b>{{ collections['new-products-in-last-24-hours'].all_products_count }}<\/b> Items added today<\/a>\n\t<a class=\"pill\" href=\"\/collections\/new-last-7-days\"><b>{{ collections['new-last-7-days'].all_products_count }}<\/b> Added this week<\/a>\n<\/div>"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "show_collection_prices": true,
+        "enable_filtering": false,
+        "enable_sorting": true,
+        "collapse_on_larger_devices": false,
+        "display_database_products": true
+      }
+    },
+    "1682427181b9d765a3": {
+      "type": "apps",
+      "blocks": {
+        "ac304426-d531-4f7a-923c-af6f396571ef": {
+          "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/recommendation\/7fc998ae-a150-4367-bab8-505d8a4503f7",
+          "disabled": true,
+          "settings": {
+            "widgetId": "collectionpage-157740",
+            "space_top": 30,
+            "space_bottom": 30,
+            "additional_classes": "",
+            "custom_css": ""
+          }
+        }
+      },
+      "block_order": [
+        "ac304426-d531-4f7a-923c-af6f396571ef"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "16883893478176d3bb": {
+      "type": "apps",
+      "blocks": {
+        "c36f219a-abf2-4f7e-9972-78bf3d97fc1e": {
+          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "settings": {
+            "themeId": "light",
+            "autoscroll": true,
+            "showRating": true,
+            "showReviewPhotos": false,
+            "writeReview": false
+          }
+        }
+      },
+      "block_order": [
+        "c36f219a-abf2-4f7e-9972-78bf3d97fc1e"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "f055259a-59d3-45f1-8b14-75ddb8e85175": {
+      "type": "collection-list",
+      "blocks": {
+        "template--15243804541126__f055259a-59d3-45f1-8b14-75ddb8e85175-1683022091535de9c3-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "canon-ef"
+          }
+        },
+        "template--15243804541126__f055259a-59d3-45f1-8b14-75ddb8e85175-1683022091535de9c3-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nikon-f"
+          }
+        },
+        "template--15243804541126__f055259a-59d3-45f1-8b14-75ddb8e85175-1683022091535de9c3-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "leica-m"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804541126__f055259a-59d3-45f1-8b14-75ddb8e85175-1683022091535de9c3-1",
+        "template--15243804541126__f055259a-59d3-45f1-8b14-75ddb8e85175-1683022091535de9c3-0",
+        "template--15243804541126__f055259a-59d3-45f1-8b14-75ddb8e85175-1683022091535de9c3-2"
+      ],
+      "settings": {
+        "title": "Popular",
+        "image_ratio": "portrait",
+        "color_scheme": "inverse",
+        "swipe_on_mobile": true,
+        "image_padding": false,
+        "show_view_all": false
+      }
+    },
+    "49c46c69-642a-42bd-9f85-c0f818d6c223": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15243804541126__49c46c69-642a-42bd-9f85-c0f818d6c223-1675932029a6a92e9b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Want to sell or upgrade?"
+          }
+        },
+        "template--15243804541126__49c46c69-642a-42bd-9f85-c0f818d6c223-1675932029a6a92e9b-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Do you have unused camera gear laying around? We buy cameras, lenses, and accessories of all ages - <strong>film & digital<\/strong>. Sell for flat payment or trade-in for something new.<\/p>"
+          }
+        },
+        "template--15243804541126__49c46c69-642a-42bd-9f85-c0f818d6c223-1675932029a6a92e9b-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get Started",
+            "button_link": "shopify:\/\/pages\/sell-or-trade-your-used-camera-gear"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804541126__49c46c69-642a-42bd-9f85-c0f818d6c223-1675932029a6a92e9b-0",
+        "template--15243804541126__49c46c69-642a-42bd-9f85-c0f818d6c223-1675932029a6a92e9b-1",
+        "template--15243804541126__49c46c69-642a-42bd-9f85-c0f818d6c223-1675932029a6a92e9b-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/DigiSale_July2022-1337.jpg",
+        "height": "adapt",
+        "color_scheme": "inverse",
+        "layout": "image_first"
+      }
+    },
+    "1676452983e1698051": {
+      "type": "apps",
+      "blocks": {
+        "62222df4-6833-417c-b9ed-23299ee7635d": {
+          "type": "shopify:\/\/apps\/flair-product-badges-labels\/blocks\/banners\/51d5ae10-f90f-4540-9ec6-f09f14107bf4",
+          "settings": {
+            "heading": "Flair Badge",
+            "layout": ""
+          }
+        }
+      },
+      "block_order": [
+        "62222df4-6833-417c-b9ed-23299ee7635d"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "16890595399e5657ce": {
+      "type": "apps",
+      "blocks": {
+        "792cc076-b200-4b95-a523-bb19a3fa98cf": {
+          "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/recommendation\/7fc998ae-a150-4367-bab8-505d8a4503f7",
+          "disabled": true,
+          "settings": {
+            "widgetId": "collectionpage-157740",
+            "additional_classes": "",
+            "custom_css": ""
+          }
+        }
+      },
+      "block_order": [
+        "792cc076-b200-4b95-a523-bb19a3fa98cf"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "16528584685f19cc5f",
+    "banner",
+    "1652858265324f2f78",
+    "product-grid",
+    "1682427181b9d765a3",
+    "16883893478176d3bb",
+    "f055259a-59d3-45f1-8b14-75ddb8e85175",
+    "49c46c69-642a-42bd-9f85-c0f818d6c223",
+    "1676452983e1698051",
+    "16890595399e5657ce"
+  ]
+}

@@ -25,14 +25,14 @@
       "type": "main-collection-product-grid",
       "settings": {
         "products_per_page": 24,
-        "image_ratio": "square",
+        "image_ratio": "adapt",
         "show_secondary_image": true,
         "add_image_padding": false,
         "show_image_outline": false,
         "show_vendor": true,
         "show_rating": false,
-        "show_collection_prices": true,
-        "enable_filtering": false,
+        "show_collection_prices": false,
+        "enable_filtering": true,
         "enable_sorting": true,
         "collapse_on_larger_devices": false,
         "display_database_products": true
@@ -60,22 +60,17 @@
         "include_margins": true
       }
     },
-    "16883893478176d3bb": {
+    "1691063781a49bda67": {
       "type": "apps",
       "blocks": {
-        "c36f219a-abf2-4f7e-9972-78bf3d97fc1e": {
-          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+        "0c23145b-50af-48d5-93d3-d0678a4ec3fc": {
+          "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/product-filter\/7fc998ae-a150-4367-bab8-505d8a4503f7",
           "settings": {
-            "themeId": "light",
-            "autoscroll": true,
-            "showRating": true,
-            "showReviewPhotos": false,
-            "writeReview": false
           }
         }
       },
       "block_order": [
-        "c36f219a-abf2-4f7e-9972-78bf3d97fc1e"
+        "0c23145b-50af-48d5-93d3-d0678a4ec3fc"
       ],
       "settings": {
         "include_margins": true
@@ -169,26 +164,6 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "16890595399e5657ce": {
-      "type": "apps",
-      "blocks": {
-        "792cc076-b200-4b95-a523-bb19a3fa98cf": {
-          "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/recommendation\/7fc998ae-a150-4367-bab8-505d8a4503f7",
-          "disabled": true,
-          "settings": {
-            "widgetId": "collectionpage-157740",
-            "additional_classes": "",
-            "custom_css": ""
-          }
-        }
-      },
-      "block_order": [
-        "792cc076-b200-4b95-a523-bb19a3fa98cf"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
@@ -197,10 +172,9 @@
     "1652858265324f2f78",
     "product-grid",
     "1682427181b9d765a3",
-    "16883893478176d3bb",
+    "1691063781a49bda67",
     "f055259a-59d3-45f1-8b14-75ddb8e85175",
     "49c46c69-642a-42bd-9f85-c0f818d6c223",
-    "1676452983e1698051",
-    "16890595399e5657ce"
+    "1676452983e1698051"
   ]
 }

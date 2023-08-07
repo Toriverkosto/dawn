@@ -94,54 +94,6 @@
         "layout": "image_first"
       }
     },
-    "1070e26e-0a03-4ac4-93b6-7a676cc3d6a0": {
-      "type": "featured-product",
-      "blocks": {
-        "template--15243804115142__1070e26e-0a03-4ac4-93b6-7a676cc3d6a0-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "template--15243804115142__1070e26e-0a03-4ac4-93b6-7a676cc3d6a0-title-1": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "8bf05056-bbaa-48df-a215-52f94d918348": {
-          "type": "text",
-          "settings": {
-            "text": "In stock. Ready to ship.",
-            "text_style": "subtitle"
-          }
-        },
-        "template--15243804115142__1070e26e-0a03-4ac4-93b6-7a676cc3d6a0-price-1": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "template--15243804115142__1070e26e-0a03-4ac4-93b6-7a676cc3d6a0-buy_buttons-1": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        }
-      },
-      "block_order": [
-        "template--15243804115142__1070e26e-0a03-4ac4-93b6-7a676cc3d6a0-text-1",
-        "template--15243804115142__1070e26e-0a03-4ac4-93b6-7a676cc3d6a0-title-1",
-        "8bf05056-bbaa-48df-a215-52f94d918348",
-        "template--15243804115142__1070e26e-0a03-4ac4-93b6-7a676cc3d6a0-price-1",
-        "template--15243804115142__1070e26e-0a03-4ac4-93b6-7a676cc3d6a0-buy_buttons-1"
-      ],
-      "settings": {
-        "product": "canon-ae-1-canon-fd-45",
-        "secondary_background": true,
-        "hide_variants": false,
-        "enable_video_looping": false
-      }
-    },
     "e6d89980-87cb-4a0e-a3f0-81a4f49ea05b": {
       "type": "rich-text",
       "blocks": {
@@ -222,6 +174,23 @@
       ],
       "settings": {
         "bg-color": "no-background"
+      }
+    },
+    "3676038e-1769-4bdc-87a1-6e1086107a2b": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Popular Cameras",
+        "collection": "popular-items",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
       }
     },
     "1683891361046b7454": {
@@ -695,9 +664,9 @@
     "165416468256763b39",
     "1660560902df48f128",
     "e3eec42a-3d9c-41ad-aaa2-fe480384b72b",
-    "1070e26e-0a03-4ac4-93b6-7a676cc3d6a0",
     "e6d89980-87cb-4a0e-a3f0-81a4f49ea05b",
     "348d608d-13af-4ff4-a7a0-021084115c31",
+    "3676038e-1769-4bdc-87a1-6e1086107a2b",
     "1683891361046b7454",
     "ab2bb2f3-2333-4123-98ed-40aacfc16ad6",
     "aabc153b-fba5-4792-a63f-96736474ff4e",

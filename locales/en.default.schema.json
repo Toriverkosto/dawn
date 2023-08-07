@@ -643,7 +643,9 @@
         "show_rating": {
           "label": "Show product rating",
           "info": "To display a rating, add a product rating app. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn\/sections#featured-collection-show-product-rating)"
-        }
+        },
+        "show_price": {
+          "label": "Show product price"}
       },
       "presets": {
         "name": "Featured collection"

@@ -38,7 +38,7 @@
             show_vendor: section.settings.show_vendor,
             show_image_outline: section.settings.show_image_outline,
             show_rating: section.settings.show_rating,
-            show_price: true
+            show_price: section.settings.show_price
           %}
         </li>
       {%- else -%}
@@ -168,6 +168,12 @@
       "default": false,
       "label": "t:sections.featured-collection.settings.show_rating.label",
       "info": "t:sections.featured-collection.settings.show_rating.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_price",
+      "default": true,
+      "label": "t:sections.featured-collection.settings.show_price.label"
     }
   ],
   "presets": [

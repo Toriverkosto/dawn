@@ -270,51 +270,6 @@
         "show_text_below": true
       }
     },
-    "aabc153b-fba5-4792-a63f-96736474ff4e": {
-      "type": "image-banner",
-      "disabled": true,
-      "blocks": {
-        "template--15243804115142__aabc153b-fba5-4792-a63f-96736474ff4e-1686048011e4736168-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Restored Used Camera Gear",
-            "heading_size": "large"
-          }
-        },
-        "template--15243804115142__aabc153b-fba5-4792-a63f-96736474ff4e-1686048011e4736168-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
-          }
-        },
-        "template--15243804115142__aabc153b-fba5-4792-a63f-96736474ff4e-1686048011e4736168-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--15243804115142__aabc153b-fba5-4792-a63f-96736474ff4e-1686048011e4736168-0",
-        "template--15243804115142__aabc153b-fba5-4792-a63f-96736474ff4e-1686048011e4736168-1",
-        "template--15243804115142__aabc153b-fba5-4792-a63f-96736474ff4e-1686048011e4736168-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/QC_Images-04341-WEB2048.jpg",
-        "adapt_height_first_image": true,
-        "desktop_text_box_position": "center",
-        "show_text_box": false,
-        "image_overlay_opacity": 50,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "ffa2031d-ca74-4a46-83b1-7899fd17284f": {
       "type": "image-with-text",
       "blocks": {
@@ -400,12 +355,6 @@
         "show_image_outline": true,
         "show_vendor": true,
         "show_rating": false
-      }
-    },
-    "16681567159a25ad0d": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
       }
     },
     "multi_column": {
@@ -669,11 +618,9 @@
     "3676038e-1769-4bdc-87a1-6e1086107a2b",
     "1683891361046b7454",
     "ab2bb2f3-2333-4123-98ed-40aacfc16ad6",
-    "aabc153b-fba5-4792-a63f-96736474ff4e",
     "ffa2031d-ca74-4a46-83b1-7899fd17284f",
     "b7f435c5-c4b1-48ef-ae36-13d31e15ecb0",
     "16590912674b072be6",
-    "16681567159a25ad0d",
     "multi_column",
     "16590913415aba16e5",
     "1659091405f0073c84",

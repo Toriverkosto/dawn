@@ -51,7 +51,8 @@
         "add_image_padding": false,
         "show_image_outline": true,
         "show_vendor": true,
-        "show_rating": false
+        "show_rating": false,
+        "show_price": true
       }
     },
     "1634194655a811a44b": {
@@ -174,6 +175,22 @@
         "show_image_label": false
       }
     },
+    "16450990378461246d": {
+      "type": "apps",
+      "blocks": {
+        "55545f6d-f5ae-4003-ba1b-076dd3ac0bed": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "55545f6d-f5ae-4003-ba1b-076dd3ac0bed"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "164543512984681dd4": {
       "type": "database-product-price-table",
       "settings": {
@@ -221,7 +238,8 @@
         "add_image_padding": false,
         "show_image_outline": true,
         "show_vendor": true,
-        "show_rating": false
+        "show_rating": false,
+        "show_price": true
       }
     },
     "163239432974b497b2": {
@@ -257,22 +275,6 @@
         "height": "adapt",
         "color_scheme": "background-2",
         "layout": "image_first"
-      }
-    },
-    "16450990378461246d": {
-      "type": "apps",
-      "blocks": {
-        "55545f6d-f5ae-4003-ba1b-076dd3ac0bed": {
-          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "55545f6d-f5ae-4003-ba1b-076dd3ac0bed"
-      ],
-      "settings": {
-        "include_margins": true
       }
     },
     "1645526962d5bc21bf": {
@@ -385,11 +387,11 @@
     "1634194655a811a44b",
     "5a5a47ce-224c-4aff-9780-ab8771302a49",
     "main",
+    "16450990378461246d",
     "164543512984681dd4",
     "1657620583d53dcde3",
     "ee8ebef5-bfd1-4290-97db-94b2936529a4",
     "163239432974b497b2",
-    "16450990378461246d",
     "1645526962d5bc21bf",
     "1645516896bd0ceef6",
     "16324019941e428b8f",

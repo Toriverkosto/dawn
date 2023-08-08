@@ -219,12 +219,6 @@
 
     ],
     "blocks": {
-      "15323590465973626552": {
-        "type": "shopify:\/\/apps\/translate-currency-langshop\/blocks\/langshop\/84899e01-2b29-42af-99d6-46d16daa2111",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "15351435345818755577": {
         "type": "shopify:\/\/apps\/gdpr-compliance-center\/blocks\/banner\/58c0baa2-6cc1-480c-9ea6-38d6d559556a",
         "disabled": false,

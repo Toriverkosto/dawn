@@ -314,7 +314,7 @@
         "products_per_page": 24,
         "image_ratio": "square",
         "show_secondary_image": true,
-        "add_image_padding": false,
+        "add_image_padding": true,
         "show_image_outline": false,
         "show_vendor": true,
         "show_rating": false,

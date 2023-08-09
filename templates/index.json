@@ -9,6 +9,12 @@
     "165416468256763b39": {
       "type": "collection-list",
       "blocks": {
+        "b6c32ec1-d327-499a-b1e0-2afd18c93f39": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "discounted-cameras-lenses-accessories"
+          }
+        },
         "16541646820345eb76-0": {
           "type": "featured_collection",
           "settings": {
@@ -27,19 +33,13 @@
           "settings": {
             "collection": "lenses"
           }
-        },
-        "b6c32ec1-d327-499a-b1e0-2afd18c93f39": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "discounted-cameras-lenses-accessories"
-          }
         }
       },
       "block_order": [
+        "b6c32ec1-d327-499a-b1e0-2afd18c93f39",
         "16541646820345eb76-0",
         "85941df5-a143-4e6a-b5af-97eb8aaa757b",
-        "16541646820345eb76-1",
-        "b6c32ec1-d327-499a-b1e0-2afd18c93f39"
+        "16541646820345eb76-1"
       ],
       "settings": {
         "title": "",

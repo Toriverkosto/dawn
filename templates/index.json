@@ -17,6 +17,7 @@
         },
         "85941df5-a143-4e6a-b5af-97eb8aaa757b": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "digital-cameras"
           }
@@ -26,12 +27,19 @@
           "settings": {
             "collection": "lenses"
           }
+        },
+        "b6c32ec1-d327-499a-b1e0-2afd18c93f39": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "discounted-cameras-lenses-accessories"
+          }
         }
       },
       "block_order": [
         "16541646820345eb76-0",
         "85941df5-a143-4e6a-b5af-97eb8aaa757b",
-        "16541646820345eb76-1"
+        "16541646820345eb76-1",
+        "b6c32ec1-d327-499a-b1e0-2afd18c93f39"
       ],
       "settings": {
         "title": "",

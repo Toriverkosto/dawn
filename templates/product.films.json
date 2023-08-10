@@ -34,12 +34,6 @@
           "settings": {
           }
         },
-        "3c9d3c18-0a30-49f4-ad09-63143e81c26b": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<style>\n.restricted {\n  background-color: #FEF7EA;\n  color: #3E4447;\n  padding-left: 15px;\n  padding-right: 15px;\n  border: 2px solid #F6DFBB;\n  margin: 10px;\n  border-radius: 5px;\n}\n<\/style>\n<\/head>\n<body>\n\n<div class=\"restricted\">\n<h3><\/h3>\n<p>Color film is limited to 10 pcs \/ customer.<\/p>\n<\/div>"
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -84,8 +78,6 @@
         "5221b8a7-4db2-4a4d-bf04-5d9cb7e5a0f4": {
           "type": "shopify:\/\/apps\/hulk-advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
           "settings": {
-            "is_new_icon_settings": false,
-            "theme_color": "#f15975",
             "button_style": "style_3",
             "button_border": 0,
             "button_font_size": 16,
@@ -99,6 +91,7 @@
             "hover_button_text_color": "#ffffff",
             "hover_button_background_color": "#5c6ac4",
             "hover_button_border_color": "#5c6ac4",
+            "is_new_icon_settings": false,
             "icon_type": "outline",
             "icon_size": 16,
             "icon_background_type": "icon_round_background",
@@ -117,7 +110,6 @@
         "price",
         "f0c9e60b-84e2-4c7b-a294-cab454328d82",
         "quantity_selector",
-        "3c9d3c18-0a30-49f4-ad09-63143e81c26b",
         "buy_buttons",
         "ec88d254-bbe8-4b70-a8ba-4e63f56ef136",
         "d031b056-55bf-4778-a201-0c5d8ab0e178",
@@ -330,7 +322,8 @@
         "add_image_padding": false,
         "show_image_outline": true,
         "show_vendor": true,
-        "show_rating": false
+        "show_rating": false,
+        "show_price": true
       }
     },
     "product-recommendations": {

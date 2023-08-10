@@ -47,6 +47,7 @@
         },
         "b78219c2-66ad-487a-8866-6e726c2a4e91": {
           "type": "description",
+          "disabled": true,
           "settings": {
           }
         },
@@ -150,6 +151,12 @@
         "show_breadcrumbs": true,
         "show_sku_and_barcode": true,
         "show_image_label": false
+      }
+    },
+    "878cc0a9-3610-4999-8015-bbae8078731f": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width\">\n  {{ product.description }}\n<\/div>"
       }
     },
     "cdf4edb3-67e8-442a-9c19-b7ecb0b08c6b": {
@@ -384,6 +391,7 @@
   },
   "order": [
     "main",
+    "878cc0a9-3610-4999-8015-bbae8078731f",
     "cdf4edb3-67e8-442a-9c19-b7ecb0b08c6b",
     "7e499c21-c4e7-4adf-8045-79fe5318e73b",
     "eba9b395-ca18-4e54-b7a7-cc7995fc80f4",

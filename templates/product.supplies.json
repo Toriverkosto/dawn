@@ -17,7 +17,6 @@
         },
         "1205e67f-ba58-4cb7-9cba-ebad9222146c": {
           "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
-          "disabled": true,
           "settings": {
             "stars_fill_color": "#ffc315",
             "star_size": 18,
@@ -39,7 +38,7 @@
           "type": "custom_liquid",
           "disabled": true,
           "settings": {
-            "custom_liquid": "<p>Ships from: {% if product.tags contains 'From-Kameratori' %}\n          \nTampere, Finland<\/p>\n{% elsif product.tags contains 'From-Fototapio' %}\n          \nEspoo, Finland      \n{% else %}\nTampere, Finland\n{% endif %}\n\n{% comment %}\nNow section two\n{% endcomment %}\n\n<div id=\"variant-inventory\">\n{% if product.selected_or_first_available_variant.inventory_management == \"shopify\" and product.selected_or_first_available_variant.inventory_quantity> 0 %}\nIn stock: <b>{{product.selected_or_first_available_variant.inventory_quantity}}<\/b> available\n{% endif %}\n<\/div>"
+            "custom_liquid": "<p>Ships from: {% if product.tags contains 'From-Kameratori' %}\n          \nTampere, Finland<\/p>\n{% elsif product.tags contains 'From-Fototapio' %}\n          \nEspoo, Finland      \n{% else %}\nTampere, Finland\n{% endif %}\n\n{% comment %}\nNow section two\n{% endcomment %}\n\n<div id=\"variant-inventory\">\n{% if product.selected_or_first_available_variant.inventory_management == \"shopify\" and product.selected_or_first_available_variant.inventory_quantity> 0 %}\n<b>{{product.selected_or_first_available_variant.inventory_quantity}}<\/b> available\n{% endif %}\n<\/div>"
           }
         },
         "price": {
@@ -63,23 +62,6 @@
           "settings": {
           }
         },
-        "96a40ae9-af35-4428-bb42-ad4fe700f2df": {
-          "type": "quality_control_tab",
-          "disabled": true,
-          "settings": {
-            "quality_control": "",
-            "content_passed": "<p>Tested, inspected, cleaned and working with no significant flaws. These items can be considered “ready to use” for their intended purpose. Minor flaws are possible and are noted in the product description.<\/p>",
-            "content_not_passed": "<p>Untested or: tested, inspected, and found to have significant flaws that affect or prevent normal use. These items should be considered broken. Repair may or may not be possible.<\/p>"
-          }
-        },
-        "fd1e2ac6-aca0-42d2-91e4-6e93ce798698": {
-          "type": "quality_control_value_box",
-          "settings": {
-            "quality_control_new": "",
-            "content_passed_new": "<p>Tested, inspected, cleaned and working with no significant flaws. These items can be considered “ready to use” for their intended purpose. Minor flaws are possible and are noted in the product description.<\/p>",
-            "content_not_passed_new": "<p>Untested or: tested, inspected, and found to have significant flaws that affect or prevent normal use. These items should be considered broken. Repair may or may not be possible.<\/p>"
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -95,14 +77,6 @@
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true
-          }
-        },
-        "7bc4319f-1ad5-4bae-bff8-ce5265675e4b": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Description, Shipping, & Availability:",
-            "text_style": "subtitle"
           }
         },
         "d031b056-55bf-4778-a201-0c5d8ab0e178": {
@@ -132,8 +106,6 @@
         "af332e60-b155-4814-bb18-30757c0c706d": {
           "type": "shopify:\/\/apps\/hulk-advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
           "settings": {
-            "is_new_icon_settings": false,
-            "theme_color": "#f15975",
             "button_style": "style_3",
             "button_border": 0,
             "button_font_size": 16,
@@ -142,15 +114,16 @@
             "button_vertical_space": 9,
             "button_horizontal_space": 16,
             "button_text_color": "#ffffff",
-            "button_background": "#5c6ac4",
-            "border_color": "#5c6ac4",
+            "button_background": "#ee3400",
+            "border_color": "#ee3400",
             "hover_button_text_color": "#ffffff",
-            "hover_button_background_color": "#5c6ac4",
-            "hover_button_border_color": "#5c6ac4",
+            "hover_button_background_color": "#ee3400",
+            "hover_button_border_color": "#ee3400",
+            "is_new_icon_settings": false,
             "icon_type": "outline",
             "icon_size": 16,
             "icon_background_type": "icon_round_background",
-            "icon_background_color": "#5c6ac4",
+            "icon_background_color": "#ee3400",
             "icon_fill_color": "#ffffff",
             "icon_border_color": "#ffffff",
             "icon_hover_color": "#5c6ac4",
@@ -169,12 +142,9 @@
         "f0c9e60b-84e2-4c7b-a294-cab454328d82",
         "b78219c2-66ad-487a-8866-6e726c2a4e91",
         "quantity_selector",
-        "96a40ae9-af35-4428-bb42-ad4fe700f2df",
-        "fd1e2ac6-aca0-42d2-91e4-6e93ce798698",
         "variant_picker",
         "ec88d254-bbe8-4b70-a8ba-4e63f56ef136",
         "buy_buttons",
-        "7bc4319f-1ad5-4bae-bff8-ce5265675e4b",
         "d031b056-55bf-4778-a201-0c5d8ab0e178",
         "e44a2970-017f-4a65-9008-2a056066686c",
         "c93981a2-30f3-4294-803c-c2c27ba4890e",
@@ -190,62 +160,55 @@
         "show_image_label": false
       }
     },
-    "168180626803b6c3b8": {
-      "type": "apps",
-      "blocks": {
-        "8ffa4633-d3c7-4984-9760-782e6c173a5a": {
-          "type": "shopify:\/\/apps\/estimated-delivery-date-plus\/blocks\/delivery_coder_theme\/4a0685bc-c234-45b2-8382-5ad6a8e3e3fd",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "8ffa4633-d3c7-4984-9760-782e6c173a5a"
-      ],
+    "cdf4edb3-67e8-442a-9c19-b7ecb0b08c6b": {
+      "type": "featured-collection",
       "settings": {
-        "include_margins": true
+        "title": "Popular Cameras",
+        "collection": "popular-items",
+        "products_to_show": 12,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "show_price": false
       }
     },
-    "1657620671c07e2171": {
-      "type": "main-product-description",
-      "blocks": {
-        "3c54629a-3819-4e6c-a800-8fcf3cee8f7e": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Description"
-          }
-        },
-        "377fb4ea-4c27-48d3-aff6-703d9b678bff": {
-          "type": "main_stock_description",
-          "disabled": true,
-          "settings": {
-          }
-        },
-        "751f4c6a-dfa4-4095-8fc4-a2c506d3cf4e": {
-          "type": "main_kit_stock",
-          "settings": {
-          }
-        },
-        "96219f3f-e446-499c-b291-e5d7e92b407c": {
-          "type": "main_database",
-          "settings": {
-          }
-        },
-        "06eafaeb-bd98-4b7e-a696-499323ec5794": {
-          "type": "main_kit_database",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "3c54629a-3819-4e6c-a800-8fcf3cee8f7e",
-        "377fb4ea-4c27-48d3-aff6-703d9b678bff",
-        "751f4c6a-dfa4-4095-8fc4-a2c506d3cf4e",
-        "96219f3f-e446-499c-b291-e5d7e92b407c",
-        "06eafaeb-bd98-4b7e-a696-499323ec5794"
-      ],
+    "7e499c21-c4e7-4adf-8045-79fe5318e73b": {
+      "type": "featured-collection",
       "settings": {
+        "title": "Lenses",
+        "collection": "lenses",
+        "products_to_show": 12,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_price": true
+      }
+    },
+    "eba9b395-ca18-4e54-b7a7-cc7995fc80f4": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Just Added this Week",
+        "collection": "new-last-7-days",
+        "products_to_show": 12,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "show_price": true
       }
     },
     "1adc94ea-11f7-4dd6-b3c8-570523ae6972": {
@@ -361,41 +324,6 @@
         "include_margins": true
       }
     },
-    "16324019941e428b8f": {
-      "type": "multicolumn",
-      "blocks": {
-        "16324019941e428b8f-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/UfFOGKO5nDNXP4Y4Vh1-I4OTnVunoLVd231IQzWAq_QPNeODpi1NNN1deY53R2dhfRVI6E0iGD0P-NsVaWpePhJ9YUoD6tDAEXanFNU9JCpNP4mYdCQWUGldnvSQcL6QV-PyASh2NoeZSA94QjQoIg08OFjCQs0-d-e1-ft-1000x562.jpg",
-            "title": "Why Kamerastore?",
-            "text": "<p>We are a real business with a real <a href=\"https:\/\/g.page\/Kamerastore?share\">shop<\/a> and real camera professionals inside. We have helped over 30,000 customers since 2010 and have a <a href=\"https:\/\/g.page\/Kamerastore?share\" title=\"Kamerastore - Google Maps\">4.8 star rating on Google<\/a>.<\/p>"
-          }
-        },
-        "16324019941e428b8f-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2021-09-23_at_16.14.55_Cropped.png",
-            "title": "Need help with an order?",
-            "text": "<p>Email: <a href=\"mailto:info@kamerastore.com?subject=Ordering%20inquiry\" target=\"_blank\">info@kamerastore.com<\/a><br\/>or Call: +358 10 2311777<br\/>Weekdays 10:00-16:00 (GMT+2)<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "16324019941e428b8f-0",
-        "16324019941e428b8f-1"
-      ],
-      "settings": {
-        "title": "Quality Service Since 2010",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "secondary",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": true
-      }
-    },
     "1633072662af6d667c": {
       "type": "featured-collection",
       "settings": {
@@ -409,7 +337,8 @@
         "add_image_padding": false,
         "show_image_outline": true,
         "show_vendor": true,
-        "show_rating": false
+        "show_rating": false,
+        "show_price": true
       }
     },
     "product-recommendations": {
@@ -463,12 +392,12 @@
   },
   "order": [
     "main",
-    "168180626803b6c3b8",
-    "1657620671c07e2171",
+    "cdf4edb3-67e8-442a-9c19-b7ecb0b08c6b",
+    "7e499c21-c4e7-4adf-8045-79fe5318e73b",
+    "eba9b395-ca18-4e54-b7a7-cc7995fc80f4",
     "1adc94ea-11f7-4dd6-b3c8-570523ae6972",
     "330f4051-5a22-4270-95ac-736a6a942b0a",
     "16838927169aeab5f2",
-    "16324019941e428b8f",
     "1633072662af6d667c",
     "product-recommendations",
     "163239432974b497b2"

@@ -367,6 +367,23 @@
         "layout": "image_first"
       }
     },
+    "1659091405f0073c84": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Lenses",
+        "collection": "lenses",
+        "products_to_show": 8,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "show_price": true
+      }
+    },
     "16590912674b072be6": {
       "type": "featured-collection",
       "settings": {
@@ -433,23 +450,6 @@
       "settings": {
         "title": "Digital Cameras",
         "collection": "digital-cameras",
-        "products_to_show": 8,
-        "show_view_all": true,
-        "swipe_on_mobile": true,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": true,
-        "show_rating": false,
-        "show_price": true
-      }
-    },
-    "1659091405f0073c84": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Lenses",
-        "collection": "lenses",
         "products_to_show": 8,
         "show_view_all": true,
         "swipe_on_mobile": true,
@@ -653,10 +653,10 @@
     "ab2bb2f3-2333-4123-98ed-40aacfc16ad6",
     "ffa2031d-ca74-4a46-83b1-7899fd17284f",
     "b7f435c5-c4b1-48ef-ae36-13d31e15ecb0",
+    "1659091405f0073c84",
     "16590912674b072be6",
     "multi_column",
     "16590913415aba16e5",
-    "1659091405f0073c84",
     "1659091458c6563459",
     "0050133a-c833-42d4-b1eb-95ed3f9f255d",
     "1659091584eaa04e2b",

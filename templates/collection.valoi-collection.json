@@ -147,7 +147,7 @@
         "template--15243804573894__85368d7f-77f7-40ce-8510-ece24843805a-16892543985f550658-1": {
           "type": "product",
           "settings": {
-            "product": "enthusiast-scanning-kit-1",
+            "product": "enthusiast-scanning-kit",
             "second_image": false,
             "image_padding": false,
             "secondary_background": false
@@ -156,7 +156,7 @@
         "9e393d0f-1bc0-49d0-8f33-6aef5b5e6af8": {
           "type": "product",
           "settings": {
-            "product": "valoi-advancer-scanning-kit",
+            "product": "advancer-scanning-kit",
             "second_image": false,
             "image_padding": false,
             "secondary_background": false
@@ -165,7 +165,7 @@
         "f3f89e6c-25e4-4873-ae84-83cd5b6080f3": {
           "type": "product",
           "settings": {
-            "product": "starter-scanning-kit",
+            "product": "starter-kit-1",
             "second_image": false,
             "image_padding": false,
             "secondary_background": false

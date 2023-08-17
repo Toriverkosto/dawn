@@ -134,11 +134,54 @@
         "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-6",
         "template--15243804573894__6f99fb24-641e-416e-8d1b-b4aa91d623da-1689255032b1f8c27d-7"
       ],
+      "disabled": true,
       "settings": {
         "product": "professional-scanning-kit-1",
         "secondary_background": false,
         "hide_variants": false,
         "enable_video_looping": false
+      }
+    },
+    "1041b702-334a-43d8-86a2-0b6aee072806": {
+      "type": "collage",
+      "blocks": {
+        "template--15243804573894__1041b702-334a-43d8-86a2-0b6aee072806-video-1": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video",
+            "image_padding": false
+          }
+        },
+        "template--15243804573894__1041b702-334a-43d8-86a2-0b6aee072806-product-1": {
+          "type": "product",
+          "settings": {
+            "product": "professional-scanning-kit-1",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        },
+        "template--15243804573894__1041b702-334a-43d8-86a2-0b6aee072806-collection-1": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "template--15243804573894__1041b702-334a-43d8-86a2-0b6aee072806-video-1",
+        "template--15243804573894__1041b702-334a-43d8-86a2-0b6aee072806-product-1",
+        "template--15243804573894__1041b702-334a-43d8-86a2-0b6aee072806-collection-1"
+      ],
+      "settings": {
+        "heading": "Kit Options with Bundle Pricing",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
       }
     },
     "85368d7f-77f7-40ce-8510-ece24843805a": {
@@ -330,6 +373,7 @@
     "163715637672ee2874",
     "69b3bf36-0d65-43da-a497-219be27e87cf",
     "6f99fb24-641e-416e-8d1b-b4aa91d623da",
+    "1041b702-334a-43d8-86a2-0b6aee072806",
     "85368d7f-77f7-40ce-8510-ece24843805a",
     "65dade78-cb0d-4d36-8e0e-ae0391910e87",
     "c284bb4d-92db-48f5-907a-06269ca649c8",

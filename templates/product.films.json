@@ -130,16 +130,6 @@
     },
     "1681805765d28fced9": {
       "type": "apps",
-      "blocks": {
-        "a0b4c215-6cd3-4896-8967-f48a3ff89ad8": {
-          "type": "shopify:\/\/apps\/estimated-delivery-date-plus\/blocks\/delivery_coder_theme\/4a0685bc-c234-45b2-8382-5ad6a8e3e3fd",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "a0b4c215-6cd3-4896-8967-f48a3ff89ad8"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -181,20 +171,11 @@
           "settings": {
             "text": "<p>Kamerastore is here to help keep film photography alive. Therefore we sell & price items based on their actual functional condition, rather than how shiny or used they appear to be. Use our condition labels to find the right item for you. If it's broken, certified as working, or has been tediously restored - there is power in knowing.<\/p>"
           }
-        },
-        "template--15243804180678__6dc96b2b-cb91-4b23-a852-35561c7f0c9d-1686223482584f2f53-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "template--15243804180678__6dc96b2b-cb91-4b23-a852-35561c7f0c9d-1686223482584f2f53-0",
-        "template--15243804180678__6dc96b2b-cb91-4b23-a852-35561c7f0c9d-1686223482584f2f53-1",
-        "template--15243804180678__6dc96b2b-cb91-4b23-a852-35561c7f0c9d-1686223482584f2f53-2"
+        "template--15243804180678__6dc96b2b-cb91-4b23-a852-35561c7f0c9d-1686223482584f2f53-1"
       ],
       "settings": {
         "color_scheme": "background-2",

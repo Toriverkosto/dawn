@@ -9,7 +9,7 @@
       "login_form_submit": "Enter",
       "modal": "Password modal",
       "admin_link_html": "Are you the store owner? <a href=\"\/admin\" class=\"link underlined-link\">Log in here<\/a>",
-      "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
+      "powered_by_shopify_html": " "
     },
     "social": {
       "alt_text": {
@@ -483,6 +483,9 @@
       },
       "online_store_chat": {
         "title": "There are {{ count }} stores with stock close to {{ address }}"
+      },
+      "general": {
+        "autocomplete_powered_by_google": " "
       }
     },
     "store_availability": {
@@ -492,6 +495,9 @@
     },
     "errors": {
       "reset_password_html": "It seems you already made an account here and do not need to create a new one, you can simply <a href=\"\/account\/login\">Login<\/a> or <a href=\"\/account\/login#recover\">reset your password<\/a>."
+    },
+    "links": {
+      "powered_by_shopify": " "
     }
   },
   "expand_description": {

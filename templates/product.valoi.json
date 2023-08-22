@@ -2,7 +2,6 @@
   "sections": {
     "1632824788edf71f2f": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "1632824788edf71f2f-0": {
           "type": "heading",
@@ -33,6 +32,7 @@
         "1632824788edf71f2f-1",
         "1632824788edf71f2f-2"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "background-1",
         "full_width": true
@@ -173,8 +173,6 @@
         "621c4599-3a2c-4d60-a6f4-630ef05bfba3": {
           "type": "shopify:\/\/apps\/hulk-advanced-wishlist\/blocks\/wishlist-btn\/330d9272-08ea-4193-b3e0-475a69fa65fa",
           "settings": {
-            "is_new_icon_settings": false,
-            "theme_color": "#f15975",
             "button_style": "style_3",
             "button_border": 0,
             "button_font_size": 16,
@@ -188,6 +186,7 @@
             "hover_button_text_color": "#ffffff",
             "hover_button_background_color": "#5c6ac4",
             "hover_button_border_color": "#5c6ac4",
+            "is_new_icon_settings": false,
             "icon_type": "outline",
             "icon_size": 16,
             "icon_background_type": "icon_round_background",
@@ -240,16 +239,6 @@
     },
     "16818063324869b93d": {
       "type": "apps",
-      "blocks": {
-        "7d61878e-fe4c-430a-bcbd-2993072e624d": {
-          "type": "shopify:\/\/apps\/estimated-delivery-date-plus\/blocks\/delivery_coder_theme\/4a0685bc-c234-45b2-8382-5ad6a8e3e3fd",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "7d61878e-fe4c-430a-bcbd-2993072e624d"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -278,7 +267,6 @@
     },
     "16321391205a6cb4a0": {
       "type": "multicolumn",
-      "disabled": true,
       "blocks": {
         "6ac9b599-c067-409f-818e-24aa63217351": {
           "type": "column",
@@ -319,6 +307,7 @@
         "16321391205a6cb4a0-2",
         "16321391205a6cb4a0-0"
       ],
+      "disabled": true,
       "settings": {
         "title": "Camera Scanning",
         "image_width": "full",
@@ -342,6 +331,15 @@
         "show_vendor": true,
         "show_rating": false
       }
+    },
+    "e35ad36f-58bd-4c65-8891-657ebcf7a31c": {
+      "type": "video",
+      "settings": {
+        "heading": "VALOI Playlist",
+        "video_url": "https:\/\/youtu.be\/f-pmhYQCuus",
+        "description": "",
+        "full_width": false
+      }
     }
   },
   "order": [
@@ -352,6 +350,7 @@
     "16587538834d2716f8",
     "16461179422d882da6",
     "16321391205a6cb4a0",
-    "product-recommendations"
+    "product-recommendations",
+    "e35ad36f-58bd-4c65-8891-657ebcf7a31c"
   ]
 }

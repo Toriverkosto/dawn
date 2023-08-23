@@ -16,7 +16,7 @@
 * Flair: https://apps.shopify.com/flair
 * Copyright Brainy Atom LLC, All Rights Reserved.
 *
-* Last updated: 2023-08-23T12:12:20Z
+* Last updated: 2023-08-23T20:30:08Z
 ************************************************************************
 {%- endcomment -%}
 {%- liquid
@@ -154,11 +154,8 @@ else
     endif
   endif
 endif
-assign flair_num = 0
 assign flair_mfs = shop.metafields["flair-badges"]
-for flair_mf in flair_mfs
-  assign flair_num = flair_num | plus: 1
-  assign flair_mf_key = "badges" | append: flair_num
+for flair_mf_key in flair_config.badge_metafield_keys
   for flair_badge in flair_mfs[flair_mf_key]
     if flair_badge_count >= flair_layout_badge_max
       break

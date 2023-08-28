@@ -163,7 +163,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Popular Cameras",
-        "collection": "popular-items",
+        "collection": "popular-film-cameras",
         "products_to_show": 12,
         "show_view_all": true,
         "swipe_on_mobile": true,

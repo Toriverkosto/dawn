@@ -69,7 +69,6 @@
     },
     "e3eec42a-3d9c-41ad-aaa2-fe480384b72b": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "template--15243804115142__e3eec42a-3d9c-41ad-aaa2-fe480384b72b-1681895757085548d9-0": {
           "type": "heading",
@@ -96,6 +95,7 @@
         "template--15243804115142__e3eec42a-3d9c-41ad-aaa2-fe480384b72b-1681895757085548d9-1",
         "template--15243804115142__e3eec42a-3d9c-41ad-aaa2-fe480384b72b-1681895757085548d9-2"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/NOSPSCB-1366_copy.jpg",
         "height": "adapt",
@@ -206,7 +206,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Popular Cameras",
-        "collection": "popular-items",
+        "collection": "popular-film-cameras",
         "products_to_show": 8,
         "show_view_all": true,
         "swipe_on_mobile": true,
@@ -253,7 +253,6 @@
     },
     "ab2bb2f3-2333-4123-98ed-40aacfc16ad6": {
       "type": "image-banner",
-      "disabled": true,
       "blocks": {
         "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-0": {
           "type": "heading",
@@ -285,6 +284,7 @@
         "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-1",
         "template--15243804115142__ab2bb2f3-2333-4123-98ed-40aacfc16ad6-1677225253c55754ca-2"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/canon--0047.jpg",
         "adapt_height_first_image": false,
@@ -333,7 +333,6 @@
     },
     "b7f435c5-c4b1-48ef-ae36-13d31e15ecb0": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "template--15243804115142__b7f435c5-c4b1-48ef-ae36-13d31e15ecb0-16772286977935d4a9-0": {
           "type": "heading",
@@ -360,6 +359,7 @@
         "template--15243804115142__b7f435c5-c4b1-48ef-ae36-13d31e15ecb0-16772286977935d4a9-1",
         "template--15243804115142__b7f435c5-c4b1-48ef-ae36-13d31e15ecb0-16772286977935d4a9-2"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/AE1Alt-4.jpg",
         "height": "small",
@@ -604,7 +604,6 @@
     },
     "f9ddfc6e-43fd-448b-b981-034c96684a0b": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "template--15243804115142__f9ddfc6e-43fd-448b-b981-034c96684a0b-16772276250f41d069-0": {
           "type": "heading",
@@ -634,6 +633,7 @@
         "template--15243804115142__f9ddfc6e-43fd-448b-b981-034c96684a0b-16772276250f41d069-1",
         "template--15243804115142__f9ddfc6e-43fd-448b-b981-034c96684a0b-16772276250f41d069-2"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "background-1",
         "full_width": true

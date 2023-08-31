@@ -334,6 +334,7 @@
     },
     "e35ad36f-58bd-4c65-8891-657ebcf7a31c": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "VALOI Playlist",
         "video_url": "https:\/\/youtu.be\/f-pmhYQCuus",

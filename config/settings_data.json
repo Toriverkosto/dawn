@@ -268,12 +268,6 @@
         "settings": {
         }
       },
-      "5602652911132133646": {
-        "type": "shopify:\/\/apps\/auction-today\/blocks\/CodeBlockAuction\/3af9f16c-d5a0-475a-93f3-205210e8a9d6",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "18146506648094396618": {
         "type": "shopify:\/\/apps\/langshop\/blocks\/sdk\/84899e01-2b29-42af-99d6-46d16daa2111",
         "disabled": false,

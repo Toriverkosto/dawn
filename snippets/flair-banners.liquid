@@ -17,7 +17,7 @@
 * Flair: https://apps.shopify.com/flair
 * Copyright Brainy Atom LLC, All Rights Reserved.
 *
-* Last updated: 2023-08-23T20:30:08Z
+* Last updated: 2023-09-05T07:42:45Z
 ************************************************************************
 {%- endcomment -%}
 {%- liquid
@@ -58,7 +58,7 @@ else
 endif
 
 assign flair_banner_count = 0
-assign flair_collection_ids = product.collections | map: "id"
+assign flair_collection_id_string = product.collections | map: "id" | join: "|" | prepend: "|" | append: "|"
 assign flair_product_tag_string = product.tags | join: "|" | prepend: "|" | append: "|" | downcase
 assign flair_customer_tag_string = customer.tags | join: "|" | prepend: "|" | append: "|" | downcase
 assign flair_mfs = shop.metafields["flair-banners"]
@@ -94,21 +94,27 @@ for flair_mf_key in flair_config.banner_metafield_keys
       assign flair_rule_result = false
       case flair_rule.rule_type
       when "collection"
-        assign _flair_collection_ids = flair_rule.collections | map: "id"
-        for item in _flair_collection_ids
+        assign _flair_rule_ids = flair_rule.collections | map: "id"
+        for _rule_id in _flair_rule_ids
           case flair_rule.match_type
-          when "product"
-            if flair_collection_ids contains item
+          when "collection"
+            assign _collection_id_s = collection.id | append: ""
+            assign _rule_id_s = _rule_id | append: ""
+            if _collection_id_s == _rule_id_s
               assign flair_rule_result = true
               break
             endif
-          when "collection"
-            if collection.id == item
+          when "product"
+            assign _rule_id_match = _rule_id | prepend: "|" | append: "|"
+            if flair_collection_id_string contains _rule_id_match
               assign flair_rule_result = true
               break
             endif
           else
-            if collection.id == item or flair_collection_ids contains item
+            assign _collection_id_s = collection.id | append: ""
+            assign _rule_id_s = _rule_id | append: ""
+            assign _rule_id_match = _rule_id | prepend: "|" | append: "|"
+            if _collection_id_s == _rule_id_s or flair_collection_id_string contains _rule_id_match
               assign flair_rule_result = true
               break
             endif
@@ -240,8 +246,9 @@ for flair_mf_key in flair_config.banner_metafield_keys
           endif
         endif
       when "product"
-        assign _flair_product_ids = flair_rule.products | map: "id"
-        if _flair_product_ids contains product.id
+        assign _flair_rule_ids = flair_rule.products | map: "id" | join: "|" | prepend: "|" | append: "|"
+        assign _product_id_match = product.id | prepend: "|" | append: "|"
+        if _flair_rule_ids contains _product_id_match
           assign flair_rule_result = true
         endif
         if flair_rule.operator == "neq"

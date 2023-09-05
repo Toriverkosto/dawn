@@ -103,23 +103,6 @@
         "layout": "image_first"
       }
     },
-    "bd496468-5144-4bff-92e7-0006a79da5e3": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "On Sale Now",
-        "collection": "discounted-cameras-lenses-accessories",
-        "products_to_show": 8,
-        "show_view_all": true,
-        "swipe_on_mobile": true,
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": true,
-        "show_rating": false,
-        "show_price": true
-      }
-    },
     "e6d89980-87cb-4a0e-a3f0-81a4f49ea05b": {
       "type": "rich-text",
       "blocks": {
@@ -645,7 +628,6 @@
     "165416468256763b39",
     "1660560902df48f128",
     "e3eec42a-3d9c-41ad-aaa2-fe480384b72b",
-    "bd496468-5144-4bff-92e7-0006a79da5e3",
     "e6d89980-87cb-4a0e-a3f0-81a4f49ea05b",
     "348d608d-13af-4ff4-a7a0-021084115c31",
     "3676038e-1769-4bdc-87a1-6e1086107a2b",

@@ -11,6 +11,7 @@
       "blocks": {
         "b6c32ec1-d327-499a-b1e0-2afd18c93f39": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "discounted-cameras-lenses-accessories"
           }
@@ -23,7 +24,6 @@
         },
         "85941df5-a143-4e6a-b5af-97eb8aaa757b": {
           "type": "featured_collection",
-          "disabled": true,
           "settings": {
             "collection": "digital-cameras"
           }

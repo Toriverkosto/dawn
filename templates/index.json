@@ -95,7 +95,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Newly Listed",
-        "collection": "all",
+        "collection": "all-products",
         "products_to_show": 8,
         "show_view_all": true,
         "swipe_on_mobile": true,
@@ -338,7 +338,6 @@
     },
     "1631783246bd86182c": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "1631783246bd86182c-0": {
           "type": "heading",
@@ -365,6 +364,7 @@
         "1631783246bd86182c-1",
         "1631783246bd86182c-2"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Valoi_35mm.png",
         "height": "adapt",

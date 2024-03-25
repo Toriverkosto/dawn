@@ -197,7 +197,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Just Added this Week",
-        "collection": "new-last-7-days",
+        "collection": "new-arrivals",
         "products_to_show": 12,
         "show_view_all": true,
         "swipe_on_mobile": true,
@@ -296,7 +296,7 @@
       "type": "apps",
       "blocks": {
         "ae58e9af-4ca9-4e2c-9acb-6acdcbd626d7": {
-          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "type": "shopify:\/\/apps\/google-reviews\/blocks\/carousel-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
           "settings": {
             "themeId": "light",
             "autoscroll": true,
@@ -306,7 +306,7 @@
           }
         },
         "841a8b5e-c668-4348-a1f4-d709ca6df7f9": {
-          "type": "shopify:\/\/apps\/reputon-for-google-reviews\/blocks\/sticky-compact-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
+          "type": "shopify:\/\/apps\/google-reviews\/blocks\/sticky-compact-widget-block\/8b378e9e-c56d-47ce-a754-feca5e0caf59",
           "settings": {
             "themeId": "light",
             "verticalPositionId": "bottom",
